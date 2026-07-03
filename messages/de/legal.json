@@ -1,0 +1,69 @@
+{
+  "Legal": {
+    "templateNotice": "Vorlage — bitte die mit [ ] markierten Angaben rechtsverbindlich ergänzen (ggf. anwaltlich prüfen lassen).",
+    "imprint": {
+      "meta": { "title": "Impressum" },
+      "eyebrow": "Rechtliches",
+      "title": "Impressum",
+      "sections": [
+        {
+          "heading": "Angaben gemäß § 5 TMG",
+          "body": "[Firmenname / Inhaber]\n[Straße und Hausnummer]\n74564 Crailsheim\nDeutschland"
+        },
+        {
+          "heading": "Vertreten durch",
+          "body": "[Name der vertretungsberechtigten Person]"
+        },
+        {
+          "heading": "Kontakt",
+          "body": "Telefon: 0176 20147646\nE-Mail: mbt@nex-a-i.com"
+        },
+        {
+          "heading": "Registereintrag",
+          "body": "[Sofern zutreffend: Eintragung im Handelsregister\nRegistergericht: …\nRegisternummer: HRB …]"
+        },
+        {
+          "heading": "Umsatzsteuer-ID",
+          "body": "[Sofern vorhanden: Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG: DE …]"
+        },
+        {
+          "heading": "Verantwortlich für den Inhalt (§ 55 Abs. 2 RStV)",
+          "body": "[Name]\n[Anschrift wie oben]"
+        }
+      ]
+    },
+    "privacy": {
+      "meta": { "title": "Datenschutz" },
+      "eyebrow": "Rechtliches",
+      "title": "Datenschutzerklärung",
+      "updatedLabel": "Stand",
+      "updated": "Juli 2026",
+      "sections": [
+        {
+          "heading": "1. Verantwortlicher",
+          "body": "Verantwortlich für die Datenverarbeitung auf dieser Website ist [Firmenname / Inhaber], [Anschrift], 74564 Crailsheim. Bei Fragen zum Datenschutz erreichen Sie uns unter mbt@nex-a-i.com."
+        },
+        {
+          "heading": "2. Erhebung und Verarbeitung",
+          "body": "Wir verarbeiten personenbezogene Daten nur, soweit dies für die Bereitstellung der Website und unserer Leistungen erforderlich ist — insbesondere Daten, die Sie uns über das Kontaktformular übermitteln (Name, E-Mail, Unternehmen, Nachricht)."
+        },
+        {
+          "heading": "3. Rechtsgrundlage",
+          "body": "Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. a, b und f DSGVO (Einwilligung, Vertragsanbahnung, berechtigtes Interesse)."
+        },
+        {
+          "heading": "4. Speicherdauer",
+          "body": "Wir speichern personenbezogene Daten nur so lange, wie es für die genannten Zwecke erforderlich ist oder gesetzliche Aufbewahrungsfristen bestehen."
+        },
+        {
+          "heading": "5. Ihre Rechte",
+          "body": "Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit sowie Widerspruch. Zudem besteht ein Beschwerderecht bei einer Aufsichtsbehörde."
+        },
+        {
+          "heading": "6. Hosting & Drittanbieter",
+          "body": "Diese Website wird bei [Hosting-Anbieter] gehostet. Sofern Analyse- oder Drittdienste eingesetzt werden, informieren wir hier gesondert und holen — soweit erforderlich — Ihre Einwilligung ein."
+        }
+      ]
+    }
+  }
+}

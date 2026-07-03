@@ -1,0 +1,69 @@
+{
+  "Legal": {
+    "templateNotice": "Template — please complete the details marked with [ ] with legally binding information (have them reviewed by a lawyer if needed).",
+    "imprint": {
+      "meta": { "title": "Imprint" },
+      "eyebrow": "Legal",
+      "title": "Imprint",
+      "sections": [
+        {
+          "heading": "Information pursuant to § 5 TMG",
+          "body": "[Company name / owner]\n[Street and number]\n74564 Crailsheim\nGermany"
+        },
+        {
+          "heading": "Represented by",
+          "body": "[Name of the authorised representative]"
+        },
+        {
+          "heading": "Contact",
+          "body": "Phone: 0176 20147646\nEmail: mbt@nex-a-i.com"
+        },
+        {
+          "heading": "Register entry",
+          "body": "[If applicable: entry in the commercial register\nRegistering court: …\nRegistration number: HRB …]"
+        },
+        {
+          "heading": "VAT ID",
+          "body": "[If available: VAT identification number pursuant to § 27a UStG: DE …]"
+        },
+        {
+          "heading": "Responsible for content (§ 55 (2) RStV)",
+          "body": "[Name]\n[Address as above]"
+        }
+      ]
+    },
+    "privacy": {
+      "meta": { "title": "Privacy" },
+      "eyebrow": "Legal",
+      "title": "Privacy Policy",
+      "updatedLabel": "Last updated",
+      "updated": "July 2026",
+      "sections": [
+        {
+          "heading": "1. Controller",
+          "body": "The controller for data processing on this website is [company name / owner], [address], 74564 Crailsheim. For privacy questions, reach us at mbt@nex-a-i.com."
+        },
+        {
+          "heading": "2. Collection and processing",
+          "body": "We process personal data only to the extent necessary to provide the website and our services — in particular data you submit via the contact form (name, email, company, message)."
+        },
+        {
+          "heading": "3. Legal basis",
+          "body": "Processing is based on Art. 6(1)(a), (b) and (f) GDPR (consent, contract initiation, legitimate interest)."
+        },
+        {
+          "heading": "4. Retention period",
+          "body": "We store personal data only as long as necessary for the stated purposes or as required by statutory retention periods."
+        },
+        {
+          "heading": "5. Your rights",
+          "body": "You have the right to access, rectification, erasure, restriction of processing, data portability and objection. You also have the right to lodge a complaint with a supervisory authority."
+        },
+        {
+          "heading": "6. Hosting & third parties",
+          "body": "This website is hosted by [hosting provider]. If analytics or third-party services are used, we will inform you separately here and obtain your consent where required."
+        }
+      ]
+    }
+  }
+}

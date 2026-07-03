@@ -1,0 +1,117 @@
+{
+  "Hero": {
+    "eyebrow": "KI-Agentur · Digitale Mitarbeiter",
+    "title": "Digitale Mitarbeiter, die für Ihr Unternehmen arbeiten.",
+    "subtitle": "Wir entwickeln intelligente KI-Agenten — Voice, Chat, Vertrieb und Automatisierung — individuell auf Ihr Unternehmen zugeschnitten und vollständig in Ihre Abläufe integriert.",
+    "ctaPrimary": "Projekt starten",
+    "ctaSecondary": "Leistungen ansehen",
+    "trust": "Für Unternehmen, die mit KI schneller wachsen wollen",
+    "console": {
+      "label": "nexai · voice-agent",
+      "status": "LIVE",
+      "prompt": "Eingehender Anruf — Termin vereinbaren",
+      "steps": [
+        "Anrufer begrüßt & Anliegen erkannt",
+        "Verfügbarkeit im Kalender geprüft",
+        "Termin gebucht & Bestätigung versendet",
+        "CRM aktualisiert"
+      ],
+      "result": "Termin gebucht · 38 s · rund um die Uhr erreichbar"
+    }
+  },
+  "Home": {
+    "trust": { "label": "Vertraut von wachstumsorientierten Unternehmen" },
+    "services": {
+      "eyebrow": "Was wir bauen",
+      "title": "Digitale Mitarbeiter für jeden Bereich.",
+      "description": "Keine Standard-Chatbots — intelligente KI-Agenten, die wie echte Mitarbeiter arbeiten, individuell für Ihre Branche entwickelt und voll integriert.",
+      "cta": "Alle Leistungen ansehen",
+      "items": [
+        {
+          "name": "AI Voice Agents",
+          "description": "Telefonassistenten, die rund um die Uhr Anrufe annehmen, beraten, Termine vereinbaren und Leads qualifizieren."
+        },
+        {
+          "name": "AI Chatbots",
+          "description": "Moderne Chatbots für Webseite, App oder interne Systeme — beraten, empfehlen und übernehmen den Support."
+        },
+        {
+          "name": "Social Media AI",
+          "description": "Agenten, die Nachrichten und Kommentare beantworten, Leads qualifizieren und Inhalte vorbereiten."
+        },
+        {
+          "name": "Vertriebs- & Akquise-Agenten",
+          "description": "Recherchieren Unternehmen, finden Ansprechpartner, bewerten Leads und bereiten personalisierte Ansprache vor."
+        },
+        {
+          "name": "Automatisierungen",
+          "description": "Wir automatisieren nahezu jeden digitalen Geschäftsprozess — von E-Mail und Kalender bis CRM und ERP."
+        },
+        {
+          "name": "Webseiten & digitale Präsenz",
+          "description": "Moderne, schnelle und conversionstarke Webseiten — auf Wunsch direkt mit Ihren KI-Agenten verbunden."
+        }
+      ],
+      "custom": {
+        "tag": "Individuelle KI-Agenten",
+        "title": "Sie haben eine besondere Idee?",
+        "description": "Jedes Unternehmen arbeitet anders. Für Spezialfälle prüfen wir gemeinsam die technische Machbarkeit und entwickeln einen maßgeschneiderten KI-Agenten. Es gibt nahezu keine festen Grenzen.",
+        "cta": "Machbarkeit besprechen"
+      }
+    },
+    "capabilities": {
+      "eyebrow": "Wie wir arbeiten",
+      "title": "Ein Team. Von der Idee bis zum Betrieb.",
+      "items": [
+        { "title": "Analyse & Beratung", "description": "Wir finden die Prozesse, in denen KI den größten Hebel hat." },
+        { "title": "Individuelle Entwicklung", "description": "Jeder Agent wird exakt auf Ihre Abläufe zugeschnitten." },
+        { "title": "Volle Integration", "description": "Nahtlos verbunden mit Telefon, CRM, Kalender, E-Mail & Co." },
+        { "title": "Sicher & DSGVO-konform", "description": "Datenschutz, Zugriffskontrolle und Nachvollziehbarkeit inklusive." },
+        { "title": "Mehrsprachig", "description": "Ihre Agenten sprechen mit Kunden in mehreren Sprachen." },
+        { "title": "Betrieb & Optimierung", "description": "Wir überwachen, warten und verbessern kontinuierlich." }
+      ]
+    },
+    "process": {
+      "eyebrow": "Vorgehen",
+      "title": "Von der Idee zum digitalen Mitarbeiter.",
+      "description": "Ein klarer, risikoarmer Weg — in Wochen, nicht Monaten.",
+      "steps": [
+        { "n": "01", "title": "Analyse", "description": "Wir verstehen Ihre Prozesse und definieren den passenden KI-Agenten." },
+        { "n": "02", "title": "Entwicklung", "description": "Wir bauen den Agenten individuell und trainieren ihn auf Ihre Anforderungen." },
+        { "n": "03", "title": "Integration", "description": "Sichere Anbindung an Ihre Systeme — Telefon, CRM, Kalender und mehr." },
+        { "n": "04", "title": "Betrieb", "description": "Live-Betrieb mit Monitoring, Optimierung und laufender Weiterentwicklung." }
+      ]
+    },
+    "metrics": {
+      "items": [
+        { "value": "24/7", "label": "erreichbar — ohne Pausen" },
+        { "value": "70%", "label": "weniger manuelle Arbeit" },
+        { "value": "3×", "label": "schnellere Reaktionszeiten" },
+        { "value": "100%", "label": "individuell entwickelt" }
+      ]
+    },
+    "cases": {
+      "eyebrow": "Ausgewählte Arbeiten",
+      "title": "Ergebnisse, die man messen kann.",
+      "description": "Ein Auszug aus Projekten, in denen digitale Mitarbeiter echte Entlastung schaffen.",
+      "cta": "Alle Cases ansehen",
+      "items": [
+        { "tag": "Dienstleistung", "title": "KI-Telefonassistent mit Terminbuchung", "result": "24/7 erreichbar" },
+        { "tag": "B2B-Vertrieb", "title": "Automatisierte Lead-Recherche & Ansprache", "result": "5× mehr qualifizierte Leads" },
+        { "tag": "Verwaltung", "title": "Automatisierte Angebots- & Rechnungsprozesse", "result": "−80% manueller Aufwand" }
+      ]
+    },
+    "testimonial": {
+      "quote": "Unser KI-Telefonassistent nimmt jeden Anruf an — auch abends und am Wochenende. Kein verpasster Lead mehr, und das Team hat endlich den Kopf frei für die wichtigen Dinge.",
+      "author": "Alex Berger",
+      "role": "Geschäftsführer",
+      "company": "Berger & Partner"
+    },
+    "cta": {
+      "title": "Bereit für Ihren ersten digitalen Mitarbeiter?",
+      "description": "Lassen Sie uns in einem unverbindlichen Gespräch herausfinden, wo KI bei Ihnen den größten Hebel hat.",
+      "primary": "Projekt starten",
+      "secondary": "Leistungen entdecken"
+    }
+  }
+}

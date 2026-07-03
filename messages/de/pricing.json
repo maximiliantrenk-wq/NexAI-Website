@@ -1,0 +1,65 @@
+{
+  "Pricing": {
+    "meta": { "title": "Pricing" },
+    "hero": {
+      "eyebrow": "Pricing",
+      "title": "Engagement-Modelle, die zu Ihrem Vorhaben passen.",
+      "description": "Ob schneller Piloten-Sprint oder langfristige Partnerschaft — wir arbeiten in klaren, planbaren Modellen. Keine versteckten Kosten."
+    },
+    "popular": "Beliebt",
+    "cta": "Gespräch vereinbaren",
+    "tiers": [
+      {
+        "name": "Sprint",
+        "price": "ab 8.000 €",
+        "period": "/ Festpreis",
+        "description": "Ein fokussierter Piloten-Sprint, um KI-Potenzial an echten Daten zu beweisen.",
+        "features": [
+          "2–4 Wochen Laufzeit",
+          "1 klar definierter Use-Case",
+          "Funktionierender Prototyp",
+          "Ergebnis-Bewertung & Roadmap"
+        ],
+        "highlighted": false
+      },
+      {
+        "name": "Build",
+        "price": "ab 20.000 €",
+        "period": "/ Projekt",
+        "description": "Vom Prototyp zum produktiven System — sicher integriert und ausgeliefert.",
+        "features": [
+          "Produktionsreife Entwicklung",
+          "Integration in Ihre Systeme",
+          "Guardrails, Monitoring & Tests",
+          "Schulung & Übergabe",
+          "Support nach Go-live"
+        ],
+        "highlighted": true
+      },
+      {
+        "name": "Partner",
+        "price": "individuell",
+        "period": "/ monatlich",
+        "description": "Ihr langfristiges KI-Team für kontinuierliche Entwicklung und Betrieb.",
+        "features": [
+          "Dediziertes Team",
+          "Laufende Weiterentwicklung",
+          "Betrieb & Optimierung",
+          "Priorisierter Support",
+          "Strategische Roadmap"
+        ],
+        "highlighted": false
+      }
+    ],
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Fragen zu Zusammenarbeit & Preisen.",
+      "items": [
+        { "q": "Warum Festpreis beim Sprint?", "a": "Weil der Umfang klar definiert ist. So tragen Sie kein Risiko und wissen genau, was Sie bekommen." },
+        { "q": "Was ist im Build-Modell enthalten?", "a": "Alles von der produktionsreifen Entwicklung über Integration und Tests bis zu Schulung und Support nach dem Go-live." },
+        { "q": "Können wir klein starten und später skalieren?", "a": "Genau dafür ist der Sprint da. Viele Kunden starten dort und gehen dann in Build oder Partner über." },
+        { "q": "Gibt es laufende Kosten?", "a": "Nur für Betrieb, Hosting und optionalen Support — transparent ausgewiesen und vorab abgestimmt." }
+      ]
+    }
+  }
+}

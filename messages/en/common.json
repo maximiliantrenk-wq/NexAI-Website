@@ -1,0 +1,47 @@
+{
+  "Meta": {
+    "titleDefault": "NEXAI — Digital Employees & AI Automation",
+    "titleTemplate": "%s — NEXAI",
+    "description": "NEXAI builds intelligent AI employees — voice agents, chatbots, sales agents and custom automations that save time, cut costs and grow revenue. Based in Crailsheim, working across Germany."
+  },
+  "Nav": {
+    "services": "Services",
+    "cases": "Cases",
+    "pricing": "Pricing",
+    "about": "About",
+    "careers": "Careers",
+    "contact": "Contact",
+    "imprint": "Imprint",
+    "privacy": "Privacy",
+    "cta": "Start a project",
+    "menu": "Menu",
+    "close": "Close"
+  },
+  "Footer": {
+    "tagline": "We build digital employees — AI agents that take work off your team and move your business forward.",
+    "product": "Services",
+    "company": "Company",
+    "legal": "Legal",
+    "contactLabel": "Contact",
+    "email": "mbt@nex-a-i.com",
+    "phone": "0176 20147646",
+    "imprint": "Imprint",
+    "privacy": "Privacy",
+    "rights": "All rights reserved.",
+    "location": "Crailsheim · Working across Germany",
+    "newsletterTitle": "Stay in the loop",
+    "newsletterText": "Insights on applied AI — once or twice a month, no spam.",
+    "newsletterCta": "Subscribe",
+    "newsletterPlaceholder": "Email address"
+  },
+  "Common": {
+    "getStarted": "Start a project",
+    "learnMore": "Learn more",
+    "readCase": "View case",
+    "backHome": "Back to home"
+  },
+  "NotFound": {
+    "title": "Page not found",
+    "description": "This page doesn't exist or has been moved."
+  }
+}

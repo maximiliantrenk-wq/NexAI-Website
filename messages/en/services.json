@@ -1,0 +1,140 @@
+{
+  "Services": {
+    "meta": { "title": "Services" },
+    "hero": {
+      "eyebrow": "Services",
+      "title": "Intelligent AI employees for every area.",
+      "description": "From voice agents to chatbots, sales and custom automations — every solution is built bespoke and fully integrated into your existing workflows."
+    },
+    "list": {
+      "eyebrow": "Our services",
+      "title": "Seven ways to take work off your plate.",
+      "capabilitiesLabel": "What's possible",
+      "items": [
+        {
+          "name": "AI Voice Agents",
+          "summary": "Intelligent phone assistants that are available around the clock and work like real employees — built for any industry.",
+          "features": [
+            "Take incoming calls",
+            "Advise customers & answer questions",
+            "Book appointments",
+            "Take reservations",
+            "Route calls",
+            "Qualify leads",
+            "Capture customer data",
+            "Manage calendars",
+            "Update CRM systems",
+            "Query internal databases",
+            "Send emails",
+            "Handle multilingual conversations"
+          ]
+        },
+        {
+          "name": "AI Chatbots",
+          "summary": "Modern AI chatbots for websites, apps or internal systems that advise, sell and support.",
+          "features": [
+            "Advise customers",
+            "Recommend products",
+            "Generate leads",
+            "Book appointments",
+            "Handle support",
+            "Explain offers",
+            "Collect information",
+            "Search documents",
+            "Assist employees"
+          ]
+        },
+        {
+          "name": "Social Media AI",
+          "summary": "AI agents that run your social channels and automate the busywork.",
+          "features": [
+            "Answer messages",
+            "Reply to comments",
+            "Qualify leads",
+            "Plan content",
+            "Prepare posts",
+            "Support community management",
+            "Automate social media processes"
+          ]
+        },
+        {
+          "name": "Sales & Outreach Agents",
+          "summary": "AI agents that find, score and prepare outreach to potential customers — fully automated.",
+          "features": [
+            "Research companies",
+            "Find potential customers",
+            "Score leads",
+            "Research contacts",
+            "Prepare personalised emails",
+            "Create call scripts",
+            "Automate outreach",
+            "Update CRM systems"
+          ]
+        },
+        {
+          "name": "Automations",
+          "summary": "We automate almost any digital business process and connect your tools into smooth workflows.",
+          "features": [
+            "Google Workspace & Microsoft 365",
+            "Gmail & Outlook",
+            "Google Calendar",
+            "CRM & ERP systems",
+            "Booking systems",
+            "Databases & APIs",
+            "Email workflows",
+            "WhatsApp",
+            "Forms",
+            "Invoicing processes",
+            "Document management",
+            "Notifications"
+          ]
+        },
+        {
+          "name": "Custom AI Agents",
+          "summary": "For special cases we build fully bespoke solutions. We assess what's possible together — there are almost no limits.",
+          "features": [
+            "Inventory & stock management",
+            "Production & quality control",
+            "Recruiting & HR",
+            "Knowledge bases & internal assistants",
+            "Project management",
+            "Quoting & invoicing",
+            "Document analysis & contract review",
+            "Reporting & data analysis",
+            "Industry-specific solutions"
+          ]
+        },
+        {
+          "name": "Websites & Digital Presence",
+          "summary": "Modern company websites and landing pages, perfectly aligned with your AI automations.",
+          "features": [
+            "Modern & responsive",
+            "Fast & performant",
+            "SEO-optimised",
+            "Conversion-focused",
+            "Professionally designed",
+            "Landing pages",
+            "Connected directly to AI agents"
+          ]
+        }
+      ]
+    },
+    "philosophy": {
+      "eyebrow": "Our philosophy",
+      "lead": "We don't sell software.",
+      "headline": "We build digital employees.",
+      "body": "Our AI agents take over repetitive tasks, support existing teams and free up time for what really matters. Every solution is planned individually and tailored precisely to your processes — with the goal of making your business more successful for the long term."
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Frequently asked questions.",
+      "items": [
+        { "q": "How quickly is an AI agent ready?", "a": "Typically we build a working first version within 2–4 weeks — tested against your real workflows before it goes live." },
+        { "q": "Can the agent work with our existing systems?", "a": "Yes. We integrate your agents seamlessly with your phone system, CRM, calendar, email and almost any other tool via APIs." },
+        { "q": "Is it GDPR-compliant and secure?", "a": "Yes. Data protection, access control and traceability are built into every solution — with EU data residency on request." },
+        { "q": "What if we have a very specific requirement?", "a": "Then we assess technical feasibility together and, where it makes sense, build a fully bespoke AI agent. There are almost no fixed limits." },
+        { "q": "What does an AI agent cost?", "a": "It depends on scope. You'll find our engagement models on the pricing page — from a focused start to a long-term partnership." }
+      ]
+    }
+  }
+}

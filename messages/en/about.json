@@ -1,0 +1,36 @@
+{
+  "About": {
+    "meta": { "title": "About" },
+    "hero": {
+      "eyebrow": "About",
+      "title": "We build digital employees — not software.",
+      "description": "NEXAI, based in Crailsheim, builds intelligent AI agents that save companies time, cut costs and help them grow — planned individually and fully integrated."
+    },
+    "mission": {
+      "eyebrow": "Mission",
+      "title": "Technology that takes work off people's plates.",
+      "body": "Too many AI projects end as a gimmick. We build digital employees that hold up in real operations — reliable, secure and genuinely useful. Every solution is planned individually and tailored precisely to the company's processes. Our goal isn't to sell as many off-the-shelf products as possible, but to make businesses more successful for the long term through intelligent automation."
+    },
+    "values": {
+      "eyebrow": "Values",
+      "title": "What we hold ourselves to.",
+      "items": [
+        { "title": "Outcomes over hype", "description": "We deliver measurable value, not buzzwords." },
+        { "title": "Bespoke over standard", "description": "Every solution is tailored precisely to your business." },
+        { "title": "Security first", "description": "Data protection, guardrails and traceability aren't an add-on." },
+        { "title": "Speed with substance", "description": "Fast to a first version — clean all the way to operations." },
+        { "title": "Honest advice", "description": "We'll also tell you when AI isn't the answer." },
+        { "title": "Partnership", "description": "We think long-term, not project by project." }
+      ]
+    },
+    "team": {
+      "eyebrow": "Team",
+      "title": "The people behind NEXAI.",
+      "description": "Founded and led by two managing directors with one clear mission: AI that genuinely works for businesses.",
+      "members": [
+        { "name": "Maximilian Trenk", "role": "Managing Director" },
+        { "name": "Jason Brian Merklein", "role": "Managing Director" }
+      ]
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "Careers": {
+    "meta": { "title": "Karriere" },
+    "hero": {
+      "eyebrow": "Karriere",
+      "title": "Bauen Sie mit uns die Zukunft angewandter KI.",
+      "description": "Wir sind ein kleines, hoch spezialisiertes Team mit großem Anspruch. Wenn Sie KI nicht nur beeindruckend, sondern nützlich machen wollen, sollten wir reden."
+    },
+    "benefits": {
+      "eyebrow": "Warum NEXAI",
+      "title": "Was Sie bei uns erwartet.",
+      "items": [
+        { "title": "Echte Wirkung", "description": "Ihre Arbeit geht in Produktion und macht einen Unterschied." },
+        { "title": "Neueste Technologie", "description": "Sie arbeiten mit den fähigsten Modellen und Tools." },
+        { "title": "Flexibles Arbeiten", "description": "Remote-first, mit Büro in Berlin für alle, die es mögen." },
+        { "title": "Lernbudget", "description": "Zeit und Budget für Weiterbildung und Konferenzen." },
+        { "title": "Faire Vergütung", "description": "Wettbewerbsfähig, transparent und mit Beteiligung." },
+        { "title": "Kleines Team", "description": "Kurze Wege, echte Verantwortung, kein Konzern-Overhead." }
+      ]
+    },
+    "roles": {
+      "eyebrow": "Offene Stellen",
+      "title": "Aktuelle Positionen.",
+      "applyLabel": "Bewerben",
+      "items": [
+        { "title": "Senior AI Engineer", "type": "Vollzeit", "location": "Remote / Berlin" },
+        { "title": "Full-Stack Engineer (KI-Produkte)", "type": "Vollzeit", "location": "Remote / Berlin" },
+        { "title": "Product Designer", "type": "Vollzeit", "location": "Remote / Berlin" },
+        { "title": "AI Solutions Consultant", "type": "Vollzeit", "location": "Remote / Berlin" }
+      ],
+      "empty": "Aktuell keine passende Stelle? Schreiben Sie uns trotzdem — wir freuen uns über Initiativbewerbungen."
+    },
+    "cta": {
+      "title": "Keine passende Stelle dabei?",
+      "description": "Wir lernen immer gerne talentierte Menschen kennen. Schreiben Sie uns.",
+      "primary": "Initiativ bewerben"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "About": {
+    "meta": { "title": "Über uns" },
+    "hero": {
+      "eyebrow": "Über uns",
+      "title": "Wir entwickeln digitale Mitarbeiter — keine Software.",
+      "description": "NEXAI aus Crailsheim entwickelt intelligente KI-Agenten, die Unternehmen Zeit sparen, Kosten senken und beim Wachstum helfen — individuell geplant und vollständig integriert."
+    },
+    "mission": {
+      "eyebrow": "Mission",
+      "title": "Technologie, die Menschen entlastet.",
+      "body": "Zu viele KI-Projekte enden als Spielerei. Wir entwickeln digitale Mitarbeiter, die im echten Betrieb bestehen — zuverlässig, sicher und mit klarem Nutzen. Jede Lösung planen wir individuell und stimmen sie exakt auf die Prozesse des Unternehmens ab. Unser Ziel ist nicht, möglichst viele Standardprodukte zu verkaufen, sondern Unternehmen mit intelligenter Automatisierung langfristig erfolgreicher zu machen."
+    },
+    "values": {
+      "eyebrow": "Werte",
+      "title": "Woran wir uns messen lassen.",
+      "items": [
+        { "title": "Ergebnis vor Hype", "description": "Wir liefern messbaren Nutzen, keine Buzzwords." },
+        { "title": "Individuell statt Standard", "description": "Jede Lösung wird exakt auf Ihr Unternehmen zugeschnitten." },
+        { "title": "Sicherheit zuerst", "description": "Datenschutz, Guardrails und Nachvollziehbarkeit sind kein Add-on." },
+        { "title": "Tempo mit Substanz", "description": "Schnell zur ersten Version — sauber bis in den Betrieb." },
+        { "title": "Ehrliche Beratung", "description": "Wir sagen auch, wenn KI nicht die Antwort ist." },
+        { "title": "Partnerschaft", "description": "Wir denken langfristig, nicht projektweise." }
+      ]
+    },
+    "team": {
+      "eyebrow": "Team",
+      "title": "Die Menschen hinter NEXAI.",
+      "description": "Gegründet und geführt von zwei Geschäftsführern mit einer klaren Mission: KI, die für Unternehmen wirklich arbeitet.",
+      "members": [
+        { "name": "Maximilian Trenk", "role": "Geschäftsführer" },
+        { "name": "Jason Brian Merklein", "role": "Geschäftsführer" }
+      ]
+    }
+  }
+}

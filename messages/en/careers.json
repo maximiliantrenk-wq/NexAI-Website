@@ -1,0 +1,39 @@
+{
+  "Careers": {
+    "meta": { "title": "Careers" },
+    "hero": {
+      "eyebrow": "Careers",
+      "title": "Build the future of applied AI with us.",
+      "description": "We're a small, highly specialised team with big ambitions. If you want to make AI not just impressive but useful, we should talk."
+    },
+    "benefits": {
+      "eyebrow": "Why NEXAI",
+      "title": "What to expect with us.",
+      "items": [
+        { "title": "Real impact", "description": "Your work ships to production and makes a difference." },
+        { "title": "Latest technology", "description": "You work with the most capable models and tools." },
+        { "title": "Flexible work", "description": "Remote-first, with a Berlin office for those who like it." },
+        { "title": "Learning budget", "description": "Time and budget for growth and conferences." },
+        { "title": "Fair compensation", "description": "Competitive, transparent and with equity." },
+        { "title": "Small team", "description": "Short paths, real ownership, no corporate overhead." }
+      ]
+    },
+    "roles": {
+      "eyebrow": "Open roles",
+      "title": "Current positions.",
+      "applyLabel": "Apply",
+      "items": [
+        { "title": "Senior AI Engineer", "type": "Full-time", "location": "Remote / Berlin" },
+        { "title": "Full-Stack Engineer (AI products)", "type": "Full-time", "location": "Remote / Berlin" },
+        { "title": "Product Designer", "type": "Full-time", "location": "Remote / Berlin" },
+        { "title": "AI Solutions Consultant", "type": "Full-time", "location": "Remote / Berlin" }
+      ],
+      "empty": "No matching role right now? Reach out anyway — we welcome open applications."
+    },
+    "cta": {
+      "title": "Nothing that fits?",
+      "description": "We always love meeting talented people. Drop us a line.",
+      "primary": "Send an open application"
+    }
+  }
+}

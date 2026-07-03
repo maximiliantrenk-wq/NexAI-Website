@@ -1,0 +1,65 @@
+{
+  "Pricing": {
+    "meta": { "title": "Pricing" },
+    "hero": {
+      "eyebrow": "Pricing",
+      "title": "Engagement models that fit your ambition.",
+      "description": "Whether a fast pilot sprint or a long-term partnership — we work in clear, predictable models. No hidden costs."
+    },
+    "popular": "Popular",
+    "cta": "Book a call",
+    "tiers": [
+      {
+        "name": "Sprint",
+        "price": "from €8,000",
+        "period": "/ fixed price",
+        "description": "A focused pilot sprint to prove AI potential on real data.",
+        "features": [
+          "2–4 weeks duration",
+          "1 clearly defined use case",
+          "A working prototype",
+          "Results assessment & roadmap"
+        ],
+        "highlighted": false
+      },
+      {
+        "name": "Build",
+        "price": "from €20,000",
+        "period": "/ project",
+        "description": "From prototype to production system — securely integrated and shipped.",
+        "features": [
+          "Production-ready development",
+          "Integration into your systems",
+          "Guardrails, monitoring & tests",
+          "Training & handover",
+          "Post go-live support"
+        ],
+        "highlighted": true
+      },
+      {
+        "name": "Partner",
+        "price": "custom",
+        "period": "/ monthly",
+        "description": "Your long-term AI team for continuous development and operations.",
+        "features": [
+          "Dedicated team",
+          "Ongoing development",
+          "Operations & optimisation",
+          "Prioritised support",
+          "Strategic roadmap"
+        ],
+        "highlighted": false
+      }
+    ],
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Questions about working together & pricing.",
+      "items": [
+        { "q": "Why a fixed price for the sprint?", "a": "Because the scope is clearly defined. You carry no risk and know exactly what you get." },
+        { "q": "What's included in the Build model?", "a": "Everything from production-ready development through integration and testing to training and post go-live support." },
+        { "q": "Can we start small and scale later?", "a": "That's exactly what the sprint is for. Many clients start there and then move to Build or Partner." },
+        { "q": "Are there ongoing costs?", "a": "Only for operations, hosting and optional support — transparently listed and agreed upfront." }
+      ]
+    }
+  }
+}

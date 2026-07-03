@@ -1,0 +1,117 @@
+{
+  "Hero": {
+    "eyebrow": "AI Agency · Digital Employees",
+    "title": "Digital employees that work for your business.",
+    "subtitle": "We build intelligent AI agents — voice, chat, sales and automation — tailored to your company and fully integrated into your workflows.",
+    "ctaPrimary": "Start a project",
+    "ctaSecondary": "Explore services",
+    "trust": "For companies that want to grow faster with AI",
+    "console": {
+      "label": "nexai · voice-agent",
+      "status": "LIVE",
+      "prompt": "Incoming call — book an appointment",
+      "steps": [
+        "Greeted caller & understood request",
+        "Checked calendar availability",
+        "Booked appointment & sent confirmation",
+        "Updated the CRM"
+      ],
+      "result": "Appointment booked · 38s · available around the clock"
+    }
+  },
+  "Home": {
+    "trust": { "label": "Trusted by growth-minded companies" },
+    "services": {
+      "eyebrow": "What we build",
+      "title": "Digital employees for every area.",
+      "description": "Not off-the-shelf chatbots — intelligent AI agents that work like real employees, built for your industry and fully integrated.",
+      "cta": "See all services",
+      "items": [
+        {
+          "name": "AI Voice Agents",
+          "description": "Phone assistants that take calls around the clock, advise customers, book appointments and qualify leads."
+        },
+        {
+          "name": "AI Chatbots",
+          "description": "Modern chatbots for your website, app or internal systems — they advise, recommend and handle support."
+        },
+        {
+          "name": "Social Media AI",
+          "description": "Agents that answer messages and comments, qualify leads and prepare content."
+        },
+        {
+          "name": "Sales & Outreach Agents",
+          "description": "They research companies, find contacts, score leads and prepare personalised outreach."
+        },
+        {
+          "name": "Automations",
+          "description": "We automate almost any digital business process — from email and calendar to CRM and ERP."
+        },
+        {
+          "name": "Websites & Digital Presence",
+          "description": "Modern, fast, conversion-focused websites — connected directly to your AI agents on request."
+        }
+      ],
+      "custom": {
+        "tag": "Custom AI Agents",
+        "title": "Got a special idea?",
+        "description": "Every business works differently. For special cases we assess technical feasibility together and build a fully bespoke AI agent. There are almost no fixed limits.",
+        "cta": "Discuss feasibility"
+      }
+    },
+    "capabilities": {
+      "eyebrow": "How we work",
+      "title": "One team. From idea to operations.",
+      "items": [
+        { "title": "Analysis & advice", "description": "We find the processes where AI has the biggest leverage." },
+        { "title": "Custom development", "description": "Every agent is tailored precisely to your workflows." },
+        { "title": "Full integration", "description": "Seamlessly connected to phone, CRM, calendar, email & more." },
+        { "title": "Secure & GDPR-compliant", "description": "Data protection, access control and traceability included." },
+        { "title": "Multilingual", "description": "Your agents talk to customers in multiple languages." },
+        { "title": "Operations & optimisation", "description": "We monitor, maintain and continuously improve." }
+      ]
+    },
+    "process": {
+      "eyebrow": "How we work",
+      "title": "From idea to digital employee.",
+      "description": "A clear, low-risk path — in weeks, not months.",
+      "steps": [
+        { "n": "01", "title": "Analysis", "description": "We understand your processes and define the right AI agent." },
+        { "n": "02", "title": "Development", "description": "We build the agent bespoke and train it on your requirements." },
+        { "n": "03", "title": "Integration", "description": "Secure connection to your systems — phone, CRM, calendar and more." },
+        { "n": "04", "title": "Operations", "description": "Live operation with monitoring, optimisation and ongoing improvement." }
+      ]
+    },
+    "metrics": {
+      "items": [
+        { "value": "24/7", "label": "available — no breaks" },
+        { "value": "70%", "label": "less manual work" },
+        { "value": "3×", "label": "faster response times" },
+        { "value": "100%", "label": "custom-built" }
+      ]
+    },
+    "cases": {
+      "eyebrow": "Selected work",
+      "title": "Results you can measure.",
+      "description": "A selection of projects where digital employees create real relief.",
+      "cta": "View all cases",
+      "items": [
+        { "tag": "Services", "title": "AI phone assistant with appointment booking", "result": "24/7 availability" },
+        { "tag": "B2B Sales", "title": "Automated lead research & outreach", "result": "5× more qualified leads" },
+        { "tag": "Admin", "title": "Automated quoting & invoicing", "result": "−80% manual effort" }
+      ]
+    },
+    "testimonial": {
+      "quote": "Our AI phone assistant answers every call — even evenings and weekends. No more missed leads, and the team finally has headspace for what matters.",
+      "author": "Alex Berger",
+      "role": "Managing Director",
+      "company": "Berger & Partner"
+    },
+    "cta": {
+      "title": "Ready for your first digital employee?",
+      "description": "Let's find out where AI has the biggest leverage in your business — in a free, no-obligation call.",
+      "primary": "Start a project",
+      "secondary": "Explore services"
+    }
+  }
+}

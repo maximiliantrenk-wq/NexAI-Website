@@ -1,0 +1,70 @@
+{
+  "Cases": {
+    "meta": { "title": "Cases" },
+    "hero": {
+      "eyebrow": "Cases",
+      "title": "Digital employees with measurable impact.",
+      "description": "Selected work across voice agents, sales and process automation — with real results."
+    },
+    "labels": {
+      "challenge": "Challenge",
+      "approach": "Approach",
+      "outcome": "Outcome",
+      "results": "Results",
+      "back": "All cases",
+      "next": "Next case"
+    },
+    "items": [
+      {
+        "slug": "voice-agent-terminbuchung",
+        "tag": "Services",
+        "title": "AI phone assistant with appointment booking",
+        "summary": "A voice agent that answers every call, advises and books appointments straight into the calendar.",
+        "result": "24/7 availability",
+        "challenge": "Calls outside business hours went unanswered and the team was tied up with constant callbacks — missed calls meant lost customers.",
+        "approach": "We built an AI voice agent that answers calls, understands the request, checks calendar availability, books appointments and sends confirmations — connected to the existing CRM.",
+        "outcome": "No call goes unanswered anymore, appointments are booked around the clock and the team has headspace for the actual work.",
+        "metrics": [
+          { "value": "24/7", "label": "availability" },
+          { "value": "−68%", "label": "missed calls" },
+          { "value": "100%", "label": "calls captured" }
+        ]
+      },
+      {
+        "slug": "vertriebsagent-leadrecherche",
+        "tag": "B2B Sales",
+        "title": "Automated lead research & outreach",
+        "summary": "A sales agent that finds the right companies, scores leads and prepares outreach.",
+        "result": "5× more qualified leads",
+        "challenge": "Manually researching and contacting potential customers cost the sales team hours every day — with modest results.",
+        "approach": "We built an AI agent that researches target companies, finds contacts, scores leads by fit and drafts personalised emails and call scripts.",
+        "outcome": "Sales starts every day with a full, prioritised pipeline and focuses on conversations instead of research.",
+        "metrics": [
+          { "value": "5×", "label": "more qualified leads" },
+          { "value": "−75%", "label": "research time" },
+          { "value": "daily", "label": "fresh pipeline" }
+        ]
+      },
+      {
+        "slug": "prozess-automatisierung",
+        "tag": "Admin",
+        "title": "Automated quoting & invoicing",
+        "summary": "An automation that creates, sends and books quotes and invoices.",
+        "result": "−80% manual effort",
+        "challenge": "Quotes and invoices were created, sent and tracked manually — time-consuming and error-prone.",
+        "approach": "We automated the entire process: merge data from forms and CRM, generate documents, send them, monitor payments and book everything cleanly.",
+        "outcome": "Quotes and invoices now run almost by themselves — faster, error-free and fully traceable.",
+        "metrics": [
+          { "value": "−80%", "label": "manual effort" },
+          { "value": "0", "label": "transfer errors" },
+          { "value": "minutes", "label": "instead of hours" }
+        ]
+      }
+    ],
+    "cta": {
+      "title": "Your project could be next.",
+      "description": "Let's talk about your use case.",
+      "primary": "Start a project"
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "Meta": {
+    "titleDefault": "NEXAI — Digitale Mitarbeiter & KI-Automatisierung",
+    "titleTemplate": "%s — NEXAI",
+    "description": "NEXAI entwickelt intelligente KI-Mitarbeiter — Voice Agents, Chatbots, Vertriebs-Agenten und individuelle Automatisierungen, die Zeit sparen, Kosten senken und Umsatz steigern. Aus Crailsheim, deutschlandweit."
+  },
+  "Nav": {
+    "services": "Leistungen",
+    "cases": "Cases",
+    "pricing": "Pricing",
+    "about": "Über uns",
+    "careers": "Karriere",
+    "contact": "Kontakt",
+    "imprint": "Impressum",
+    "privacy": "Datenschutz",
+    "cta": "Projekt starten",
+    "menu": "Menü",
+    "close": "Schließen"
+  },
+  "Footer": {
+    "tagline": "Wir entwickeln digitale Mitarbeiter — KI-Agenten, die Ihr Unternehmen entlasten und voranbringen.",
+    "product": "Leistungen",
+    "company": "Unternehmen",
+    "legal": "Rechtliches",
+    "contactLabel": "Kontakt",
+    "email": "mbt@nex-a-i.com",
+    "phone": "0176 20147646",
+    "imprint": "Impressum",
+    "privacy": "Datenschutz",
+    "rights": "Alle Rechte vorbehalten.",
+    "location": "Crailsheim · Deutschlandweit tätig",
+    "newsletterTitle": "Bleiben Sie informiert",
+    "newsletterText": "Insights zu angewandter KI — ein bis zwei Mal im Monat, kein Spam.",
+    "newsletterCta": "Abonnieren",
+    "newsletterPlaceholder": "E-Mail-Adresse"
+  },
+  "Common": {
+    "getStarted": "Projekt starten",
+    "learnMore": "Mehr erfahren",
+    "readCase": "Case ansehen",
+    "backHome": "Zurück zur Startseite"
+  },
+  "NotFound": {
+    "title": "Seite nicht gefunden",
+    "description": "Diese Seite existiert nicht oder wurde verschoben."
+  }
+}

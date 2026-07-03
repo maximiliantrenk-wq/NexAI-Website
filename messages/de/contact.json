@@ -1,0 +1,39 @@
+{
+  "Contact": {
+    "meta": { "title": "Kontakt" },
+    "hero": {
+      "eyebrow": "Kontakt",
+      "title": "Lassen Sie uns über Ihren digitalen Mitarbeiter sprechen.",
+      "description": "Erzählen Sie uns kurz, woran Sie arbeiten. Wir melden uns innerhalb eines Werktags."
+    },
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Ihr Name",
+      "email": "E-Mail",
+      "emailPlaceholder": "sie@unternehmen.de",
+      "company": "Unternehmen",
+      "companyPlaceholder": "Firmenname (optional)",
+      "message": "Nachricht",
+      "messagePlaceholder": "Woran arbeiten Sie? Was möchten Sie erreichen?",
+      "submit": "Nachricht senden",
+      "submitting": "Wird gesendet …",
+      "successTitle": "Danke!",
+      "success": "Ihre Nachricht ist angekommen. Wir melden uns innerhalb eines Werktags.",
+      "errorRequired": "Bitte füllen Sie dieses Feld aus.",
+      "errorEmail": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+      "errorGeneric": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder schreiben Sie uns direkt."
+    },
+    "info": {
+      "emailLabel": "E-Mail",
+      "email": "mbt@nex-a-i.com",
+      "phoneLabel": "Telefon",
+      "phone": "0176 20147646",
+      "bookLabel": "Lieber direkt sprechen?",
+      "book": "Termin buchen",
+      "locationLabel": "Standort",
+      "location": "Crailsheim, Deutschland · Deutschlandweit tätig",
+      "responseLabel": "Antwortzeit",
+      "response": "In der Regel innerhalb eines Werktags"
+    }
+  }
+}

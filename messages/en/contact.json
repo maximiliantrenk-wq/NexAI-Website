@@ -1,0 +1,39 @@
+{
+  "Contact": {
+    "meta": { "title": "Contact" },
+    "hero": {
+      "eyebrow": "Contact",
+      "title": "Let's talk about your digital employee.",
+      "description": "Tell us briefly what you're working on. We'll get back to you within one business day."
+    },
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "you@company.com",
+      "company": "Company",
+      "companyPlaceholder": "Company name (optional)",
+      "message": "Message",
+      "messagePlaceholder": "What are you working on? What do you want to achieve?",
+      "submit": "Send message",
+      "submitting": "Sending …",
+      "successTitle": "Thank you!",
+      "success": "Your message has arrived. We'll get back to you within one business day.",
+      "errorRequired": "Please fill in this field.",
+      "errorEmail": "Please enter a valid email address.",
+      "errorGeneric": "Something went wrong. Please try again or email us directly."
+    },
+    "info": {
+      "emailLabel": "Email",
+      "email": "mbt@nex-a-i.com",
+      "phoneLabel": "Phone",
+      "phone": "0176 20147646",
+      "bookLabel": "Prefer to talk directly?",
+      "book": "Book a call",
+      "locationLabel": "Location",
+      "location": "Crailsheim, Germany · Working across Germany",
+      "responseLabel": "Response time",
+      "response": "Usually within one business day"
+    }
+  }
+}
