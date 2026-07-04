@@ -29,6 +29,9 @@ export async function POST(request: Request) {
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
+        // FormSubmit rejects requests without a site origin (anti-spam).
+        Origin: "https://nex-a-i.com",
+        Referer: "https://nex-a-i.com/contact",
       },
       body: JSON.stringify({
         name,
