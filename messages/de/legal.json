@@ -1,6 +1,5 @@
 {
   "Legal": {
-    "templateNotice": "Vorlage — bitte die mit [ ] markierten Angaben rechtsverbindlich ergänzen (ggf. anwaltlich prüfen lassen).",
     "imprint": {
       "meta": { "title": "Impressum" },
       "eyebrow": "Rechtliches",
@@ -8,27 +7,19 @@
       "sections": [
         {
           "heading": "Angaben gemäß § 5 TMG",
-          "body": "[Firmenname / Inhaber]\n[Straße und Hausnummer]\n74564 Crailsheim\nDeutschland"
+          "body": "NEXAI\nInhaber: Maximilian Trenk und Jason Brian Merklein\nUntere Bergstraße 13\n74586 Frankenhardt\nDeutschland"
         },
         {
           "heading": "Vertreten durch",
-          "body": "[Name der vertretungsberechtigten Person]"
+          "body": "Maximilian Trenk"
         },
         {
           "heading": "Kontakt",
           "body": "Telefon: 0176 20147646\nE-Mail: mbt@nex-a-i.com"
         },
         {
-          "heading": "Registereintrag",
-          "body": "[Sofern zutreffend: Eintragung im Handelsregister\nRegistergericht: …\nRegisternummer: HRB …]"
-        },
-        {
-          "heading": "Umsatzsteuer-ID",
-          "body": "[Sofern vorhanden: Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG: DE …]"
-        },
-        {
-          "heading": "Verantwortlich für den Inhalt (§ 55 Abs. 2 RStV)",
-          "body": "[Name]\n[Anschrift wie oben]"
+          "heading": "Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV",
+          "body": "Maximilian Trenk\nUntere Bergstraße 13\n74586 Frankenhardt"
         }
       ]
     },
@@ -38,10 +29,11 @@
       "title": "Datenschutzerklärung",
       "updatedLabel": "Stand",
       "updated": "Juli 2026",
+      "note": "Hinweis: Bitte den Hosting-Anbieter und ggf. eingesetzte Analyse- oder Drittdienste ergänzen (ggf. anwaltlich prüfen lassen).",
       "sections": [
         {
           "heading": "1. Verantwortlicher",
-          "body": "Verantwortlich für die Datenverarbeitung auf dieser Website ist [Firmenname / Inhaber], [Anschrift], 74564 Crailsheim. Bei Fragen zum Datenschutz erreichen Sie uns unter mbt@nex-a-i.com."
+          "body": "Verantwortlich für die Datenverarbeitung auf dieser Website ist NEXAI, Inhaber Maximilian Trenk und Jason Brian Merklein, Untere Bergstraße 13, 74586 Frankenhardt. Bei Fragen zum Datenschutz erreichen Sie uns unter mbt@nex-a-i.com."
         },
         {
           "heading": "2. Erhebung und Verarbeitung",

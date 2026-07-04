@@ -78,7 +78,9 @@ export default async function LocaleLayout({
               areaServed: "DE",
               address: {
                 "@type": "PostalAddress",
-                addressLocality: "Crailsheim",
+                streetAddress: "Untere Bergstraße 13",
+                postalCode: "74586",
+                addressLocality: "Frankenhardt",
                 addressCountry: "DE",
               },
               sameAs: [

@@ -29,7 +29,7 @@
       "items": [
         {
           "name": "AI Voice Agents",
-          "description": "Telefonassistenten, die rund um die Uhr Anrufe annehmen, beraten, Termine vereinbaren und Leads qualifizieren."
+          "description": "Telefonassistenten, die rund um die Uhr jeden Anruf annehmen und Termine zuverlässig buchen — damit kein Anruf und kein Termin mehr verloren geht."
         },
         {
           "name": "AI Chatbots",
@@ -102,10 +102,10 @@
       ]
     },
     "testimonial": {
-      "quote": "Unser KI-Telefonassistent nimmt jeden Anruf an — auch abends und am Wochenende. Kein verpasster Lead mehr, und das Team hat endlich den Kopf frei für die wichtigen Dinge.",
-      "author": "Alex Berger",
+      "quote": "Für uns zählt nicht, wie beeindruckend eine KI wirkt, sondern was sie im Alltag wirklich abnimmt. Wir entwickeln digitale Mitarbeiter, die ab dem ersten Tag messbar entlasten — kein verpasster Anruf, kein verpasster Termin mehr.",
+      "author": "Maximilian Trenk",
       "role": "Geschäftsführer",
-      "company": "Berger & Partner"
+      "company": "NEXAI"
     },
     "cta": {
       "title": "Bereit für Ihren ersten digitalen Mitarbeiter?",

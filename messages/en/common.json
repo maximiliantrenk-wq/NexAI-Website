@@ -2,7 +2,7 @@
   "Meta": {
     "titleDefault": "NEXAI — Digital Employees & AI Automation",
     "titleTemplate": "%s — NEXAI",
-    "description": "NEXAI builds intelligent AI employees — voice agents, chatbots, sales agents and custom automations that save time, cut costs and grow revenue. Based in Crailsheim, working across Germany."
+    "description": "NEXAI builds intelligent AI employees — voice agents, chatbots, sales agents and custom automations that save time, cut costs and grow revenue. Based in Frankenhardt, working across Germany."
   },
   "Nav": {
     "services": "Services",
@@ -28,7 +28,7 @@
     "imprint": "Imprint",
     "privacy": "Privacy",
     "rights": "All rights reserved.",
-    "location": "Crailsheim · Working across Germany",
+    "location": "Frankenhardt · Working across Germany",
     "newsletterTitle": "Stay in the loop",
     "newsletterText": "Insights on applied AI — once or twice a month, no spam.",
     "newsletterCta": "Subscribe",

@@ -7,9 +7,9 @@ type LegalSection = { heading: string; body: string };
 
 export function LegalContent({ namespace }: { namespace: string }) {
   const t = useTranslations(namespace);
-  const legal = useTranslations("Legal");
   const sections = t.raw("sections") as LegalSection[];
   const hasUpdated = t.has("updated");
+  const hasNote = t.has("note");
 
   return (
     <>
@@ -22,9 +22,11 @@ export function LegalContent({ namespace }: { namespace: string }) {
                 {t("updatedLabel")}: {t("updated")}
               </p>
             )}
-            <div className="mt-4 rounded-xl border border-line bg-white/[0.02] px-4 py-3 text-sm text-muted">
-              {legal("templateNotice")}
-            </div>
+            {hasNote && (
+              <div className="mt-4 rounded-xl border border-line bg-white/[0.02] px-4 py-3 text-sm text-muted">
+                {t("note")}
+              </div>
+            )}
 
             <div className="mt-10 space-y-10">
               {sections.map((s) => (

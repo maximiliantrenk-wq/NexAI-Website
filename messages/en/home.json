@@ -29,7 +29,7 @@
       "items": [
         {
           "name": "AI Voice Agents",
-          "description": "Phone assistants that take calls around the clock, advise customers, book appointments and qualify leads."
+          "description": "Phone assistants that answer every call around the clock and reliably book appointments — so no call and no appointment is ever missed again."
         },
         {
           "name": "AI Chatbots",
@@ -102,10 +102,10 @@
       ]
     },
     "testimonial": {
-      "quote": "Our AI phone assistant answers every call — even evenings and weekends. No more missed leads, and the team finally has headspace for what matters.",
-      "author": "Alex Berger",
+      "quote": "What matters to us isn't how impressive an AI looks, but what it actually takes off your plate. We build digital employees that measurably help from day one — no more missed calls, no more missed appointments.",
+      "author": "Maximilian Trenk",
       "role": "Managing Director",
-      "company": "Berger & Partner"
+      "company": "NEXAI"
     },
     "cta": {
       "title": "Ready for your first digital employee?",

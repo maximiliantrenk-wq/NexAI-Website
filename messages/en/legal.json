@@ -1,6 +1,5 @@
 {
   "Legal": {
-    "templateNotice": "Template — please complete the details marked with [ ] with legally binding information (have them reviewed by a lawyer if needed).",
     "imprint": {
       "meta": { "title": "Imprint" },
       "eyebrow": "Legal",
@@ -8,27 +7,19 @@
       "sections": [
         {
           "heading": "Information pursuant to § 5 TMG",
-          "body": "[Company name / owner]\n[Street and number]\n74564 Crailsheim\nGermany"
+          "body": "NEXAI\nOwners: Maximilian Trenk and Jason Brian Merklein\nUntere Bergstraße 13\n74586 Frankenhardt\nGermany"
         },
         {
           "heading": "Represented by",
-          "body": "[Name of the authorised representative]"
+          "body": "Maximilian Trenk"
         },
         {
           "heading": "Contact",
           "body": "Phone: 0176 20147646\nEmail: mbt@nex-a-i.com"
         },
         {
-          "heading": "Register entry",
-          "body": "[If applicable: entry in the commercial register\nRegistering court: …\nRegistration number: HRB …]"
-        },
-        {
-          "heading": "VAT ID",
-          "body": "[If available: VAT identification number pursuant to § 27a UStG: DE …]"
-        },
-        {
-          "heading": "Responsible for content (§ 55 (2) RStV)",
-          "body": "[Name]\n[Address as above]"
+          "heading": "Responsible for content pursuant to § 18 (2) MStV",
+          "body": "Maximilian Trenk\nUntere Bergstraße 13\n74586 Frankenhardt"
         }
       ]
     },
@@ -38,10 +29,11 @@
       "title": "Privacy Policy",
       "updatedLabel": "Last updated",
       "updated": "July 2026",
+      "note": "Note: Please complete the hosting provider and any analytics or third-party services used (have them reviewed by a lawyer if needed).",
       "sections": [
         {
           "heading": "1. Controller",
-          "body": "The controller for data processing on this website is [company name / owner], [address], 74564 Crailsheim. For privacy questions, reach us at mbt@nex-a-i.com."
+          "body": "The controller for data processing on this website is NEXAI, owners Maximilian Trenk and Jason Brian Merklein, Untere Bergstraße 13, 74586 Frankenhardt, Germany. For privacy questions, reach us at mbt@nex-a-i.com."
         },
         {
           "heading": "2. Collection and processing",
