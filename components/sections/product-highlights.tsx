@@ -5,21 +5,16 @@ import { Container } from "@/components/ui/container";
 import { Section, SectionHeading } from "@/components/ui/section";
 import { Reveal, RevealGroup, RevealItem } from "@/components/ui/reveal";
 import { Button } from "@/components/ui/button";
+import { productGradients } from "@/content/products";
 
-type CaseItem = { tag: string; title: string; result: string };
+type Item = { slug: string; tag: string; title: string; result: string };
 
-const GRADIENTS = [
-  "conic-gradient(from 200deg at 40% 30%, #3a6bff, #a855f7, #22d3ee, #7c3aed, #3a6bff)",
-  "conic-gradient(from 40deg at 60% 40%, #a855f7, #3a6bff, #38d0e8, #7c3aed, #a855f7)",
-  "conic-gradient(from 120deg at 50% 60%, #38d0e8, #7c3aed, #3a6bff, #a855f7, #38d0e8)",
-];
-
-export function CaseHighlights() {
-  const t = useTranslations("Home.cases");
-  const items = t.raw("items") as CaseItem[];
+export function ProductHighlights() {
+  const t = useTranslations("Home.products");
+  const items = t.raw("items") as Item[];
 
   return (
-    <Section id="cases-preview">
+    <Section id="products-preview">
       <Container>
         <div className="flex flex-col gap-8 sm:flex-row sm:items-end sm:justify-between">
           <SectionHeading
@@ -29,7 +24,7 @@ export function CaseHighlights() {
             className="sm:max-w-2xl"
           />
           <Reveal className="shrink-0">
-            <Button href="/cases" variant="secondary" size="sm" withArrow>
+            <Button href="/produkte" variant="secondary" size="sm" withArrow>
               {t("cta")}
             </Button>
           </Reveal>
@@ -37,16 +32,16 @@ export function CaseHighlights() {
 
         <RevealGroup className="mt-14 grid gap-6 md:grid-cols-3">
           {items.map((c, i) => (
-            <RevealItem key={c.title}>
+            <RevealItem key={c.slug}>
               <Link
-                href="/cases"
+                href={`/produkte/${c.slug}`}
                 className="surface-card group flex h-full flex-col overflow-hidden rounded-2xl transition-colors duration-300 hover:border-white/20"
               >
                 <div className="relative aspect-[16/10] overflow-hidden">
                   <div
                     className="absolute inset-0 opacity-80 transition-transform duration-700 group-hover:scale-105"
                     style={{
-                      background: GRADIENTS[i % GRADIENTS.length],
+                      background: productGradients[i % productGradients.length],
                       maskImage:
                         "radial-gradient(120% 90% at 50% 20%, #000 45%, transparent 92%)",
                       WebkitMaskImage:

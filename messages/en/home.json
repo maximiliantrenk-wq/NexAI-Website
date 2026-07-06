@@ -14,7 +14,7 @@
         "Greeted caller & understood request",
         "Checked calendar availability",
         "Booked appointment & sent confirmation",
-        "Updated the CRM"
+        "Saved customer data"
       ],
       "result": "Appointment booked · 38s · available around the clock"
     }
@@ -90,15 +90,15 @@
         { "value": "100%", "label": "custom-built" }
       ]
     },
-    "cases": {
-      "eyebrow": "Selected work",
-      "title": "Results you can measure.",
-      "description": "A selection of projects where digital employees create real relief.",
-      "cta": "View all cases",
+    "products": {
+      "eyebrow": "Products",
+      "title": "Digital employees for every area.",
+      "description": "Ready-made AI solutions that take work off your team — from phone to automation.",
+      "cta": "View all products",
       "items": [
-        { "tag": "Services", "title": "AI phone assistant with appointment booking", "result": "24/7 availability" },
-        { "tag": "B2B Sales", "title": "Automated lead research & outreach", "result": "5× more qualified leads" },
-        { "tag": "Admin", "title": "Automated quoting & invoicing", "result": "−80% manual effort" }
+        { "slug": "voice-agent", "tag": "Phone", "title": "Voice Agent", "result": "Available 24/7" },
+        { "slug": "chat-agent", "tag": "Website & Chat", "title": "Chat Agent", "result": "Answers in seconds" },
+        { "slug": "automatisierung", "tag": "Automation", "title": "Automation", "result": "−80% manual work" }
       ]
     },
     "testimonial": {

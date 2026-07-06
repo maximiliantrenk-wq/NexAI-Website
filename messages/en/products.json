@@ -1,0 +1,123 @@
+{
+  "Products": {
+    "meta": { "title": "Products" },
+    "hero": {
+      "eyebrow": "Products",
+      "title": "Digital employees that start right away.",
+      "description": "Six ready-made AI solutions for your business — each tailored to you and built into your workflows."
+    },
+    "labels": {
+      "what": "What it does",
+      "benefit": "What you get",
+      "example": "Example",
+      "canDo": "What it can do",
+      "back": "All products",
+      "next": "Next product"
+    },
+    "items": [
+      {
+        "slug": "voice-agent",
+        "tag": "Phone",
+        "title": "Voice Agent",
+        "summary": "A phone assistant that answers around the clock, advises and books appointments.",
+        "result": "Available 24/7",
+        "what": "The Voice Agent answers every call, understands the request, answers questions, books appointments and, if needed, forwards to the right person — day and night and, on request, in several languages.",
+        "benefit": "No more missed calls and no more missed appointments. Your team is freed from routine calls and can focus on what matters.",
+        "example": "A customer calls in the evening wanting an appointment. The agent checks the calendar, books it, sends the confirmation and logs everything in your customer system — in under a minute.",
+        "features": [
+          "Answers calls around the clock",
+          "Answers questions and advises",
+          "Books appointments",
+          "Forwards calls",
+          "Speaks several languages"
+        ]
+      },
+      {
+        "slug": "chat-agent",
+        "tag": "Website & Chat",
+        "title": "Chat Agent",
+        "summary": "A chatbot for your website that advises, recommends and answers instantly.",
+        "result": "Answers in seconds",
+        "what": "The Chat Agent greets visitors on your website, answers questions, recommends the right offer, collects contact details and books appointments — instantly, with no waiting.",
+        "benefit": "Website visitors turn into enquiries. Your customers get help right away, and your team no longer answers every standard question by hand.",
+        "example": "A visitor asks about pricing. The Chat Agent explains the packages, recommends the right one and offers an appointment — the lead is qualified before your team even steps in.",
+        "features": [
+          "Advises visitors around the clock",
+          "Recommends the right offers",
+          "Wins new enquiries",
+          "Books appointments",
+          "Handles support"
+        ]
+      },
+      {
+        "slug": "social-media-agent",
+        "tag": "Social Media",
+        "title": "Social Media Agent",
+        "summary": "Runs your channels: replies to messages and comments and prepares posts.",
+        "result": "Always reachable",
+        "what": "The Social Media Agent replies to messages and comments, spots genuine prospects, plans posts and supports your day-to-day community management.",
+        "benefit": "You stay present on your channels without having to be online all the time — and never miss an enquiry.",
+        "example": "Someone comments under a post asking for more info. The agent replies kindly, sends the details by message and flags the hot lead to you.",
+        "features": [
+          "Replies to messages & comments",
+          "Spots genuine prospects",
+          "Plans and prepares posts",
+          "Supports community management"
+        ]
+      },
+      {
+        "slug": "vertriebs-agent",
+        "tag": "Sales",
+        "title": "Sales & Outreach Agent",
+        "summary": "Finds the right customers, scores them and prepares the personal outreach.",
+        "result": "More right-fit customers",
+        "what": "The Sales Agent researches matching companies, finds the right contacts, scores how well they fit and prepares personal emails and call notes.",
+        "benefit": "Your sales team starts every day with a full list of promising contacts — and spends its time on conversations instead of research.",
+        "example": "Instead of searching for companies for hours, your team opens a ready-made list each morning: matching contacts, a short assessment and a prepared message to send.",
+        "features": [
+          "Finds matching companies",
+          "Researches contacts",
+          "Scores how well they fit",
+          "Prepares personal outreach"
+        ]
+      },
+      {
+        "slug": "automatisierung",
+        "tag": "Automation",
+        "title": "Automation",
+        "summary": "Takes over repetitive tasks and connects your programs with each other.",
+        "result": "−80% manual work",
+        "what": "We automate repetitive workflows and connect your programs — from email and calendar to your customer system and quotes and invoices. It all runs by itself in the background.",
+        "benefit": "Less copying, fewer mistakes, more time. Tasks that take hours today get done in minutes — reliably and traceably.",
+        "example": "A new form comes in: the customer is created automatically, a confirmation is sent, a quote is generated and everything is filed neatly — without anyone typing a thing.",
+        "features": [
+          "Connects your programs",
+          "Handles repetitive tasks",
+          "Creates quotes & invoices",
+          "Runs reliably in the background"
+        ]
+      },
+      {
+        "slug": "website",
+        "tag": "Website",
+        "title": "Website Creation",
+        "summary": "Modern, fast websites that turn visitors into customers — connected to your agents on request.",
+        "result": "Modern & fast",
+        "what": "We build modern, fast websites and landing pages that look perfect on phone and computer, get found on Google and turn visitors into customers — connected directly to your AI agents on request.",
+        "benefit": "A professional presence that not only looks great but actively brings in new enquiries — and works seamlessly with your digital employees.",
+        "example": "This website is an example: fast, modern, great on every device — with a contact form that delivers enquiries directly, and room for your chat agent.",
+        "features": [
+          "Modern & great on every device",
+          "Fast and easy to find on Google",
+          "Built for more enquiries",
+          "Connected to your agents"
+        ]
+      }
+    ],
+    "cta": {
+      "title": "Which product fits you?",
+      "description": "Let's have a quick chat — together we'll find the right solution.",
+      "primary": "Book a call"
+    }
+  }
+}

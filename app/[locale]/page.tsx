@@ -5,7 +5,7 @@ import { Services } from "@/components/sections/services";
 import { Capabilities } from "@/components/sections/capabilities";
 import { Process } from "@/components/sections/process";
 import { Metrics } from "@/components/sections/metrics";
-import { CaseHighlights } from "@/components/sections/case-highlights";
+import { ProductHighlights } from "@/components/sections/product-highlights";
 import { Testimonial } from "@/components/sections/testimonial";
 import { CTASection } from "@/components/sections/cta";
 
@@ -25,7 +25,7 @@ export default async function HomePage({
       <Capabilities />
       <Process />
       <Metrics />
-      <CaseHighlights />
+      <ProductHighlights />
       <Testimonial />
       <CTASection />
     </>

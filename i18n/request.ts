@@ -6,7 +6,7 @@ const NAMESPACES = [
   "common",
   "home",
   "services",
-  "cases",
+  "products",
   "about",
   "pricing",
   "careers",

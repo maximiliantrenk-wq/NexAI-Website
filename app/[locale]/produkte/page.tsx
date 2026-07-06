@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { useTranslations } from "next-intl";
 import { PageHero } from "@/components/sections/page-hero";
-import { CaseGrid } from "@/components/sections/case-grid";
+import { ProductGrid } from "@/components/sections/product-grid";
 import { CTASection } from "@/components/sections/cta";
 
 export async function generateMetadata({
@@ -11,22 +11,22 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "Cases" });
+  const t = await getTranslations({ locale, namespace: "Products" });
   return { title: t("meta.title") };
 }
 
-export default async function CasesPage({
+export default async function ProduktePage({
   params,
 }: {
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  return <CasesContent />;
+  return <ProdukteContent />;
 }
 
-function CasesContent() {
-  const t = useTranslations("Cases.hero");
+function ProdukteContent() {
+  const t = useTranslations("Products.hero");
   return (
     <>
       <PageHero
@@ -34,8 +34,8 @@ function CasesContent() {
         title={t("title")}
         description={t("description")}
       />
-      <CaseGrid />
-      <CTASection namespace="Cases.cta" />
+      <ProductGrid />
+      <CTASection namespace="Products.cta" />
     </>
   );
 }

@@ -3,62 +3,62 @@
     "meta": { "title": "Pricing" },
     "hero": {
       "eyebrow": "Pricing",
-      "title": "Engagement models that fit your ambition.",
-      "description": "Whether a fast pilot sprint or a long-term partnership — we work in clear, predictable models. No hidden costs."
+      "title": "Clear packages. Fixed prices. No surprises.",
+      "description": "Pick the package that fits — cancel monthly. For anything bigger, we tailor an individual offer."
     },
     "popular": "Popular",
     "cta": "Book a call",
     "tiers": [
       {
-        "name": "Sprint",
-        "price": "from €8,000",
-        "period": "/ fixed price",
-        "description": "A focused pilot sprint to prove AI potential on real data.",
+        "name": "Standard",
+        "price": "€500",
+        "period": "/ month",
+        "description": "The easy start — an AI assistant that answers questions and books appointments.",
         "features": [
-          "2–4 weeks duration",
-          "1 clearly defined use case",
-          "A working prototype",
-          "Results assessment & roadmap"
+          "Assistant for common questions",
+          "Connection to your customer system (CRM)",
+          "Automatic appointment booking"
         ],
         "highlighted": false
       },
       {
-        "name": "Build",
-        "price": "from €20,000",
-        "period": "/ project",
-        "description": "From prototype to production system — securely integrated and shipped.",
+        "name": "Premium",
+        "price": "€1,000",
+        "period": "/ month",
+        "description": "Everything included — your digital employees for phone, chat, social media and sales.",
         "features": [
-          "Production-ready development",
-          "Integration into your systems",
-          "Guardrails, monitoring & tests",
-          "Training & handover",
-          "Post go-live support"
+          "Everything in Standard",
+          "Voice, chat & social media agent",
+          "Sales & outreach agent",
+          "Automation of your workflows",
+          "Priority support"
         ],
         "highlighted": true
       },
       {
-        "name": "Partner",
+        "name": "Individual",
         "price": "custom",
-        "period": "/ monthly",
-        "description": "Your long-term AI team for continuous development and operations.",
+        "period": "/ on request",
+        "description": "Entirely your way — services, scope and billing (monthly or yearly) fully flexible.",
         "features": [
-          "Dedicated team",
-          "Ongoing development",
-          "Operations & optimisation",
-          "Prioritised support",
-          "Strategic roadmap"
+          "Tailor-made solution",
+          "Freely chosen services",
+          "Monthly or yearly",
+          "Dedicated contact",
+          "Ongoing support"
         ],
         "highlighted": false
       }
     ],
     "faq": {
       "eyebrow": "FAQ",
-      "title": "Questions about working together & pricing.",
+      "title": "Common questions about packages & pricing.",
       "items": [
-        { "q": "Why a fixed price for the sprint?", "a": "Because the scope is clearly defined. You carry no risk and know exactly what you get." },
-        { "q": "What's included in the Build model?", "a": "Everything from production-ready development through integration and testing to training and post go-live support." },
-        { "q": "Can we start small and scale later?", "a": "That's exactly what the sprint is for. Many clients start there and then move to Build or Partner." },
-        { "q": "Are there ongoing costs?", "a": "Only for operations, hosting and optional support — transparently listed and agreed upfront." }
+        { "q": "Can I cancel monthly?", "a": "Yes. Standard and Premium can be cancelled monthly — no long commitment." },
+        { "q": "What's included in the Premium package?", "a": "Everything: voice, chat and social media agent, the sales agent and the automation of your workflows — plus everything in Standard." },
+        { "q": "Can I start small and expand later?", "a": "Of course. Many start with Standard and later move to Premium or an individual solution." },
+        { "q": "What if I need something special?", "a": "Then Individual is right: we put together services, scope and billing exactly to your wishes." },
+        { "q": "Are there hidden costs?", "a": "No. The monthly price is clear. Any one-time setup or special requests are agreed transparently upfront." }
       ]
     }
   }

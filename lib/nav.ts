@@ -1,6 +1,6 @@
 export const navItems = [
   { href: "/services", key: "services" },
-  { href: "/cases", key: "cases" },
+  { href: "/produkte", key: "products" },
   { href: "/pricing", key: "pricing" },
   { href: "/about", key: "about" },
   { href: "/careers", key: "careers" },
@@ -9,7 +9,7 @@ export const navItems = [
 export const footerNav = {
   product: [
     { href: "/services", key: "services" },
-    { href: "/cases", key: "cases" },
+    { href: "/produkte", key: "products" },
     { href: "/pricing", key: "pricing" },
   ],
   company: [

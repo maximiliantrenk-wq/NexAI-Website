@@ -4,117 +4,108 @@
     "hero": {
       "eyebrow": "Services",
       "title": "Intelligent AI employees for every area.",
-      "description": "From voice agents to chatbots, sales and custom automations — every solution is built bespoke and fully integrated into your existing workflows."
+      "description": "From phone and chat to social media, sales and the automation of your workflows — we tailor every solution to you and build it into your day-to-day."
     },
     "list": {
       "eyebrow": "Our services",
       "title": "Seven ways to take work off your plate.",
-      "capabilitiesLabel": "What's possible",
+      "capabilitiesLabel": "What it can do",
       "items": [
         {
-          "name": "AI Voice Agents",
-          "summary": "Intelligent phone assistants that answer every call around the clock — so no appointment and no customer is ever lost again. They work like real employees, built for any industry.",
+          "name": "Voice Agent",
+          "summary": "A phone assistant that answers every call around the clock — so no appointment and no customer is ever lost. It works like a real employee, for any industry.",
           "features": [
-            "Take incoming calls",
-            "Advise customers & answer questions",
-            "Book appointments",
-            "Take reservations",
-            "Route calls",
-            "Qualify leads",
-            "Capture customer data",
-            "Manage calendars",
-            "Update CRM systems",
-            "Query internal databases",
-            "Send emails",
-            "Handle multilingual conversations"
+            "Answers calls",
+            "Advises customers & answers questions",
+            "Books appointments",
+            "Takes reservations",
+            "Forwards calls",
+            "Spots prospects",
+            "Captures customer data",
+            "Manages the calendar",
+            "Keeps customer data up to date",
+            "Handles calls in several languages"
           ]
         },
         {
-          "name": "AI Chatbots",
-          "summary": "Modern AI chatbots for websites, apps or internal systems that advise, sell and support.",
+          "name": "Chat Agent",
+          "summary": "A modern chatbot for your website or app that advises, sells and answers enquiries instantly.",
           "features": [
-            "Advise customers",
-            "Recommend products",
-            "Generate leads",
-            "Book appointments",
-            "Handle support",
-            "Explain offers",
-            "Collect information",
-            "Search documents",
-            "Assist employees"
+            "Advises customers",
+            "Recommends the right offers",
+            "Wins new enquiries",
+            "Books appointments",
+            "Handles support",
+            "Explains offers",
+            "Collects contact details",
+            "Searches your documents"
           ]
         },
         {
-          "name": "Social Media AI",
-          "summary": "AI agents that run your social channels and automate the busywork.",
+          "name": "Social Media Agent",
+          "summary": "An agent that runs your social channels and takes over the daily work.",
           "features": [
-            "Answer messages",
-            "Reply to comments",
-            "Qualify leads",
-            "Plan content",
-            "Prepare posts",
-            "Support community management",
-            "Automate social media processes"
+            "Replies to messages",
+            "Replies to comments",
+            "Spots genuine prospects",
+            "Plans posts",
+            "Prepares posts",
+            "Helps with community management"
           ]
         },
         {
-          "name": "Sales & Outreach Agents",
-          "summary": "AI agents that find, score and prepare outreach to potential customers — fully automated.",
+          "name": "Sales & Outreach Agent",
+          "summary": "An agent that finds the right customers, scores them and prepares the personal outreach — all by itself.",
           "features": [
-            "Research companies",
-            "Find potential customers",
-            "Score leads",
-            "Research contacts",
-            "Prepare personalised emails",
-            "Create call scripts",
-            "Automate outreach",
-            "Update CRM systems"
+            "Finds matching companies",
+            "Researches contacts",
+            "Scores how well they fit",
+            "Prepares personal emails",
+            "Creates call notes",
+            "Keeps customer data up to date"
           ]
         },
         {
-          "name": "Automations",
-          "summary": "We automate almost any digital business process and connect your tools into smooth workflows.",
+          "name": "Automation",
+          "summary": "We take over repetitive tasks and connect your programs into smooth workflows.",
           "features": [
             "Google Workspace & Microsoft 365",
             "Gmail & Outlook",
-            "Google Calendar",
-            "CRM & ERP systems",
+            "Calendar",
+            "Your customer & inventory system",
             "Booking systems",
-            "Databases & APIs",
-            "Email workflows",
-            "WhatsApp",
-            "Forms",
-            "Invoicing processes",
-            "Document management",
-            "Notifications"
+            "WhatsApp & forms",
+            "Quotes & invoices",
+            "Filing documents",
+            "Automatic notifications"
           ]
         },
         {
           "name": "Custom AI Agents",
-          "summary": "For special cases we build fully bespoke solutions. We assess what's possible together — there are almost no limits.",
+          "summary": "For special cases we build a solution entirely your way. We check together what's possible — there are almost no limits.",
           "features": [
             "Inventory & stock management",
             "Production & quality control",
             "Recruiting & HR",
-            "Knowledge bases & internal assistants",
+            "Knowledge base & internal assistants",
             "Project management",
-            "Quoting & invoicing",
-            "Document analysis & contract review",
-            "Reporting & data analysis",
-            "Industry-specific solutions"
+            "Create quotes & invoices",
+            "Check documents & contracts",
+            "Reports & insights",
+            "Solutions for your industry"
           ]
         },
         {
-          "name": "Websites & Digital Presence",
-          "summary": "Modern company websites and landing pages, perfectly aligned with your AI automations.",
+          "name": "Website Creation",
+          "summary": "Modern company websites and landing pages that turn visitors into customers — connected to your agents on request.",
           "features": [
-            "Modern & responsive",
-            "Fast & performant",
-            "SEO-optimised",
-            "Conversion-focused",
+            "Modern & great on every device",
+            "Fast loading",
+            "Easy to find on Google",
+            "Built for more enquiries",
             "Professionally designed",
-            "Landing pages",
-            "Connected directly to AI agents"
+            "Campaign & landing pages",
+            "Connected to your agents"
           ]
         }
       ]
@@ -123,17 +114,17 @@
       "eyebrow": "Our philosophy",
       "lead": "We don't sell software.",
       "headline": "We build digital employees.",
-      "body": "Our AI agents take over repetitive tasks, support existing teams and free up time for what really matters. Every solution is planned individually and tailored precisely to your processes — with the goal of making your business more successful for the long term."
+      "body": "Our AI agents take over repetitive tasks, support your team and free up time for what really matters. Every solution is planned individually and tailored precisely to your day-to-day — with the goal of making your business more successful for the long term."
     },
     "faq": {
       "eyebrow": "FAQ",
       "title": "Frequently asked questions.",
       "items": [
-        { "q": "How quickly is an AI agent ready?", "a": "Typically we build a working first version within 2–4 weeks — tested against your real workflows before it goes live." },
-        { "q": "Can the agent work with our existing systems?", "a": "Yes. We integrate your agents seamlessly with your phone system, CRM, calendar, email and almost any other tool via APIs." },
-        { "q": "Is it GDPR-compliant and secure?", "a": "Yes. Data protection, access control and traceability are built into every solution — with EU data residency on request." },
-        { "q": "What if we have a very specific requirement?", "a": "Then we assess technical feasibility together and, where it makes sense, build a fully bespoke AI agent. There are almost no fixed limits." },
-        { "q": "What does an AI agent cost?", "a": "It depends on scope. You'll find our engagement models on the pricing page — from a focused start to a long-term partnership." }
+        { "q": "How quickly is an AI agent ready?", "a": "Usually there's a first working version within 2–4 weeks — tested against your real workflows before it goes live." },
+        { "q": "Does it work with our existing programs?", "a": "Yes. We connect your agents to your phone, customer system, calendar, email and almost any other program you use." },
+        { "q": "Is it secure and privacy-compliant?", "a": "Yes. Data protection, clear access rights and traceability are part of every solution — with data kept in Germany/EU on request." },
+        { "q": "What if we need something very specific?", "a": "Then we check together whether it's feasible and, if needed, build a fully custom solution. There are almost no limits." },
+        { "q": "What does an AI agent cost?", "a": "It depends on the scope. You'll find our packages on the pricing page — Standard, Premium or an individual solution." }
       ]
     }
   }

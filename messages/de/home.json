@@ -14,7 +14,7 @@
         "Anrufer begrüßt & Anliegen erkannt",
         "Verfügbarkeit im Kalender geprüft",
         "Termin gebucht & Bestätigung versendet",
-        "CRM aktualisiert"
+        "Kundendaten gespeichert"
       ],
       "result": "Termin gebucht · 38 s · rund um die Uhr erreichbar"
     }
@@ -90,15 +90,15 @@
         { "value": "100%", "label": "individuell entwickelt" }
       ]
     },
-    "cases": {
-      "eyebrow": "Ausgewählte Arbeiten",
-      "title": "Ergebnisse, die man messen kann.",
-      "description": "Ein Auszug aus Projekten, in denen digitale Mitarbeiter echte Entlastung schaffen.",
-      "cta": "Alle Cases ansehen",
+    "products": {
+      "eyebrow": "Produkte",
+      "title": "Digitale Mitarbeiter für jeden Bereich.",
+      "description": "Fertige KI-Lösungen, die Ihr Team entlasten — vom Telefon bis zur Automatisierung.",
+      "cta": "Alle Produkte ansehen",
       "items": [
-        { "tag": "Dienstleistung", "title": "KI-Telefonassistent mit Terminbuchung", "result": "24/7 erreichbar" },
-        { "tag": "B2B-Vertrieb", "title": "Automatisierte Lead-Recherche & Ansprache", "result": "5× mehr qualifizierte Leads" },
-        { "tag": "Verwaltung", "title": "Automatisierte Angebots- & Rechnungsprozesse", "result": "−80% manueller Aufwand" }
+        { "slug": "voice-agent", "tag": "Telefon", "title": "Voice Agent", "result": "24/7 erreichbar" },
+        { "slug": "chat-agent", "tag": "Website & Chat", "title": "Chat Agent", "result": "Antwort in Sekunden" },
+        { "slug": "automatisierung", "tag": "Automatisierung", "title": "Automatisierung", "result": "−80% Handarbeit" }
       ]
     },
     "testimonial": {

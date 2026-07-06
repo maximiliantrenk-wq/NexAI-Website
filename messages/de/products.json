@@ -1,0 +1,123 @@
+{
+  "Products": {
+    "meta": { "title": "Produkte" },
+    "hero": {
+      "eyebrow": "Produkte",
+      "title": "Digitale Mitarbeiter, die sofort loslegen.",
+      "description": "Sechs fertige KI-Lösungen für Ihr Unternehmen — jede passen wir an Sie an und binden sie in Ihre Abläufe ein."
+    },
+    "labels": {
+      "what": "Was es macht",
+      "benefit": "Was es Ihnen bringt",
+      "example": "Beispiel",
+      "canDo": "Das kann es",
+      "back": "Alle Produkte",
+      "next": "Nächstes Produkt"
+    },
+    "items": [
+      {
+        "slug": "voice-agent",
+        "tag": "Telefon",
+        "title": "Voice Agent",
+        "summary": "Ein Telefonassistent, der rund um die Uhr abnimmt, berät und Termine bucht.",
+        "result": "24/7 erreichbar",
+        "what": "Der Voice Agent nimmt jeden Anruf entgegen, versteht das Anliegen, beantwortet Fragen, vereinbart Termine und leitet bei Bedarf an die richtige Person weiter — Tag und Nacht und auf Wunsch in mehreren Sprachen.",
+        "benefit": "Kein verpasster Anruf und kein verpasster Termin mehr. Ihr Team wird von Routineanrufen befreit und hat den Kopf frei für das Wichtige.",
+        "example": "Ein Kunde ruft abends an und möchte einen Termin. Der Agent schaut in den Kalender, bucht den Termin, schickt die Bestätigung und trägt alles ins Kundensystem ein — in unter einer Minute.",
+        "features": [
+          "Nimmt Anrufe rund um die Uhr an",
+          "Beantwortet Fragen und berät",
+          "Vereinbart Termine",
+          "Leitet Anrufe weiter",
+          "Spricht mehrere Sprachen"
+        ]
+      },
+      {
+        "slug": "chat-agent",
+        "tag": "Website & Chat",
+        "title": "Chat Agent",
+        "summary": "Ein Chatbot für Ihre Website, der berät, empfiehlt und Anfragen sofort beantwortet.",
+        "result": "Antwort in Sekunden",
+        "what": "Der Chat Agent begrüßt Besucher auf Ihrer Website, beantwortet Fragen, empfiehlt passende Angebote, sammelt Kontaktdaten und vereinbart Termine — sofort und ohne Wartezeit.",
+        "benefit": "Aus Website-Besuchern werden Anfragen. Ihre Kunden bekommen sofort Hilfe, und Ihr Team muss nicht mehr jede Standardfrage selbst beantworten.",
+        "example": "Ein Besucher fragt nach Preisen. Der Chat Agent erklärt die Pakete, empfiehlt das passende und bietet direkt einen Termin an — der Interessent ist qualifiziert, bevor Ihr Team überhaupt eingreift.",
+        "features": [
+          "Berät Besucher rund um die Uhr",
+          "Empfiehlt passende Angebote",
+          "Gewinnt neue Anfragen",
+          "Vereinbart Termine",
+          "Übernimmt den Support"
+        ]
+      },
+      {
+        "slug": "social-media-agent",
+        "tag": "Social Media",
+        "title": "Social-Media-Agent",
+        "summary": "Betreut Ihre Kanäle: beantwortet Nachrichten und Kommentare und bereitet Beiträge vor.",
+        "result": "Immer erreichbar",
+        "what": "Der Social-Media-Agent beantwortet Nachrichten und Kommentare, erkennt echte Interessenten, plant Beiträge und unterstützt Sie beim täglichen Community-Management.",
+        "benefit": "Sie sind auf Ihren Kanälen präsent, ohne ständig selbst online sein zu müssen — und verpassen keine Anfrage mehr.",
+        "example": "Jemand kommentiert unter einem Beitrag und fragt nach mehr Infos. Der Agent antwortet freundlich, schickt die Details per Nachricht und meldet Ihnen den heißen Kontakt.",
+        "features": [
+          "Beantwortet Nachrichten & Kommentare",
+          "Erkennt echte Interessenten",
+          "Plant und bereitet Beiträge vor",
+          "Unterstützt das Community-Management"
+        ]
+      },
+      {
+        "slug": "vertriebs-agent",
+        "tag": "Vertrieb",
+        "title": "Vertriebs- & Akquise-Agent",
+        "summary": "Findet passende Kunden, bewertet sie und bereitet die persönliche Ansprache vor.",
+        "result": "Mehr passende Kunden",
+        "what": "Der Vertriebs-Agent recherchiert passende Unternehmen, findet die richtigen Ansprechpartner, bewertet, wie gut sie passen, und bereitet persönliche E-Mails und Gesprächsleitfäden vor.",
+        "benefit": "Ihr Vertrieb startet jeden Tag mit einer gefüllten Liste vielversprechender Kontakte — und verbringt die Zeit mit Gesprächen statt mit Recherche.",
+        "example": "Statt stundenlang Firmen zu suchen, öffnet Ihr Vertriebsteam morgens eine fertige Liste: passende Ansprechpartner, kurze Einschätzung und ein vorbereiteter Text zum Losschreiben.",
+        "features": [
+          "Findet passende Unternehmen",
+          "Recherchiert Ansprechpartner",
+          "Bewertet, wie gut sie passen",
+          "Bereitet persönliche Ansprache vor"
+        ]
+      },
+      {
+        "slug": "automatisierung",
+        "tag": "Automatisierung",
+        "title": "Automatisierung",
+        "summary": "Nimmt Ihnen wiederkehrende Aufgaben ab und verbindet Ihre Programme miteinander.",
+        "result": "−80% Handarbeit",
+        "what": "Wir automatisieren wiederkehrende Abläufe und verbinden Ihre Programme — von E-Mail und Kalender über Ihr Kundensystem bis zu Angeboten und Rechnungen. Alles läuft im Hintergrund von selbst.",
+        "benefit": "Weniger Kopieren, weniger Fehler, mehr Zeit. Aufgaben, die heute Stunden kosten, erledigen sich in Minuten — zuverlässig und nachvollziehbar.",
+        "example": "Ein neues Formular geht ein: Der Kunde wird automatisch angelegt, eine Bestätigung verschickt, ein Angebot erstellt und alles sauber abgelegt — ohne dass jemand etwas eintippt.",
+        "features": [
+          "Verbindet Ihre Programme",
+          "Erledigt wiederkehrende Aufgaben",
+          "Erstellt Angebote & Rechnungen",
+          "Läuft zuverlässig im Hintergrund"
+        ]
+      },
+      {
+        "slug": "website",
+        "tag": "Website",
+        "title": "Website-Erstellung",
+        "summary": "Moderne, schnelle Websites, die zu Kunden führen — auf Wunsch direkt mit Ihren Agenten verbunden.",
+        "result": "Modern & schnell",
+        "what": "Wir gestalten moderne, schnelle Websites und Landingpages, die auf Handy und Computer perfekt aussehen, bei Google gefunden werden und Besucher zu Kunden machen — auf Wunsch direkt mit Ihren KI-Agenten verbunden.",
+        "benefit": "Ein professioneller Auftritt, der nicht nur gut aussieht, sondern aktiv neue Anfragen bringt — und nahtlos mit Ihren digitalen Mitarbeitern zusammenarbeitet.",
+        "example": "Diese Website ist ein Beispiel: schnell, modern, auf jedem Gerät — mit einem Kontaktformular, das Anfragen direkt zustellt, und Platz für Ihren Chat-Agenten.",
+        "features": [
+          "Modern & auf jedem Gerät gut",
+          "Schnell und bei Google auffindbar",
+          "Auf mehr Anfragen ausgelegt",
+          "Direkt mit Ihren Agenten verbunden"
+        ]
+      }
+    ],
+    "cta": {
+      "title": "Welches Produkt passt zu Ihnen?",
+      "description": "Lassen Sie uns kurz sprechen — wir finden gemeinsam die passende Lösung.",
+      "primary": "Gespräch vereinbaren"
+    }
+  }
+}

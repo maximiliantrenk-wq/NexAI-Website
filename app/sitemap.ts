@@ -1,20 +1,20 @@
 import type { MetadataRoute } from "next";
 import { routing } from "@/i18n/routing";
-import { caseSlugs } from "@/content/cases";
+import { productSlugs } from "@/content/products";
 
 const BASE = "https://nex-a-i.com";
 
 const paths = [
   "",
   "/services",
-  "/cases",
+  "/produkte",
   "/pricing",
   "/about",
   "/careers",
   "/contact",
   "/imprint",
   "/privacy",
-  ...caseSlugs.map((s) => `/cases/${s}`),
+  ...productSlugs.map((s) => `/produkte/${s}`),
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

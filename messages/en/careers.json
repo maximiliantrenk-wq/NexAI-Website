@@ -12,7 +12,7 @@
       "items": [
         { "title": "Real impact", "description": "Your work ships to production and makes a difference." },
         { "title": "Latest technology", "description": "You work with the most capable models and tools." },
-        { "title": "Flexible work", "description": "Remote-first, with a Berlin office for those who like it." },
+        { "title": "Flexible work", "description": "Remote-first, with a Frankenhardt office for those who like it." },
         { "title": "Learning budget", "description": "Time and budget for growth and conferences." },
         { "title": "Fair compensation", "description": "Competitive, transparent and with equity." },
         { "title": "Small team", "description": "Short paths, real ownership, no corporate overhead." }
@@ -23,10 +23,10 @@
       "title": "Current positions.",
       "applyLabel": "Apply",
       "items": [
-        { "title": "Senior AI Engineer", "type": "Full-time", "location": "Remote / Berlin" },
-        { "title": "Full-Stack Engineer (AI products)", "type": "Full-time", "location": "Remote / Berlin" },
-        { "title": "Product Designer", "type": "Full-time", "location": "Remote / Berlin" },
-        { "title": "AI Solutions Consultant", "type": "Full-time", "location": "Remote / Berlin" }
+        { "title": "Senior AI Engineer", "type": "Full-time", "location": "Remote / Frankenhardt" },
+        { "title": "Full-Stack Engineer (AI products)", "type": "Full-time", "location": "Remote / Frankenhardt" },
+        { "title": "Product Designer", "type": "Full-time", "location": "Remote / Frankenhardt" },
+        { "title": "AI Solutions Consultant", "type": "Full-time", "location": "Remote / Frankenhardt" }
       ],
       "empty": "No matching role right now? Reach out anyway — we welcome open applications."
     },

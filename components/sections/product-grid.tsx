@@ -4,27 +4,27 @@ import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/ui/container";
 import { Section } from "@/components/ui/section";
 import { RevealGroup, RevealItem } from "@/components/ui/reveal";
-import { caseGradients, type CaseItem } from "@/content/cases";
+import { productGradients, type ProductItem } from "@/content/products";
 
-export function CaseGrid() {
-  const t = useTranslations("Cases");
-  const items = t.raw("items") as CaseItem[];
+export function ProductGrid() {
+  const t = useTranslations("Products");
+  const items = t.raw("items") as ProductItem[];
 
   return (
     <Section className="pt-8 sm:pt-10">
       <Container>
-        <RevealGroup className="grid gap-6 md:grid-cols-2">
-          {items.map((c, i) => (
-            <RevealItem key={c.slug}>
+        <RevealGroup className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {items.map((p, i) => (
+            <RevealItem key={p.slug}>
               <Link
-                href={`/cases/${c.slug}`}
+                href={`/produkte/${p.slug}`}
                 className="surface-card group flex h-full flex-col overflow-hidden rounded-2xl transition-colors duration-300 hover:border-white/20"
               >
-                <div className="relative aspect-[16/9] overflow-hidden">
+                <div className="relative aspect-[16/10] overflow-hidden">
                   <div
                     className="absolute inset-0 opacity-80 transition-transform duration-700 group-hover:scale-105"
                     style={{
-                      background: caseGradients[i % caseGradients.length],
+                      background: productGradients[i % productGradients.length],
                       maskImage:
                         "radial-gradient(120% 90% at 50% 15%, #000 45%, transparent 92%)",
                       WebkitMaskImage:
@@ -38,16 +38,16 @@ export function CaseGrid() {
                 </div>
                 <div className="flex flex-1 flex-col p-7">
                   <span className="font-mono text-[11px] uppercase tracking-[0.14em] text-subtle">
-                    {c.tag}
+                    {p.tag}
                   </span>
                   <h3 className="mt-2.5 text-xl font-semibold tracking-tight">
-                    {c.title}
+                    {p.title}
                   </h3>
                   <p className="mt-2 text-sm leading-relaxed text-muted">
-                    {c.summary}
+                    {p.summary}
                   </p>
                   <p className="text-gradient mt-auto pt-6 text-2xl font-semibold tracking-tight">
-                    {c.result}
+                    {p.result}
                   </p>
                 </div>
               </Link>

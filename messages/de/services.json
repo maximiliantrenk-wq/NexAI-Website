@@ -4,117 +4,108 @@
     "hero": {
       "eyebrow": "Leistungen",
       "title": "Intelligente KI-Mitarbeiter für jeden Bereich.",
-      "description": "Von Voice Agents über Chatbots und Vertrieb bis zu individuellen Automatisierungen — jede Lösung wird individuell entwickelt und vollständig in Ihre bestehenden Abläufe integriert."
+      "description": "Vom Telefon über den Chat und Social Media bis zum Vertrieb und der Automatisierung Ihrer Abläufe — jede Lösung passen wir an Sie an und binden sie in Ihren Alltag ein."
     },
     "list": {
       "eyebrow": "Unsere Leistungen",
       "title": "Sieben Wege, Ihr Unternehmen zu entlasten.",
-      "capabilitiesLabel": "Möglichkeiten",
+      "capabilitiesLabel": "Das kann es",
       "items": [
         {
-          "name": "AI Voice Agents",
-          "summary": "Intelligente Telefonassistenten, die rund um die Uhr jeden Anruf annehmen — damit kein Termin und kein Kunde mehr verloren geht. Sie arbeiten wie echte Mitarbeiter, individuell für jede Branche.",
+          "name": "Voice Agent",
+          "summary": "Ein Telefonassistent, der rund um die Uhr jeden Anruf annimmt — damit kein Termin und kein Kunde mehr verloren geht. Er arbeitet wie ein echter Mitarbeiter, passend für jede Branche.",
           "features": [
-            "Telefonate entgegennehmen",
+            "Anrufe entgegennehmen",
             "Kunden beraten & Fragen beantworten",
             "Termine vereinbaren",
             "Reservierungen annehmen",
             "Anrufe weiterleiten",
-            "Leads qualifizieren",
+            "Interessenten erkennen",
             "Kundendaten erfassen",
             "Kalender verwalten",
-            "CRM-Systeme aktualisieren",
-            "Interne Datenbanken abfragen",
-            "E-Mails versenden",
-            "Mehrsprachige Gespräche führen"
+            "Kundendaten aktuell halten",
+            "Mehrsprachig telefonieren"
           ]
         },
         {
-          "name": "AI Chatbots",
-          "summary": "Moderne KI-Chatbots für Webseiten, Apps oder interne Systeme, die beraten, verkaufen und unterstützen.",
+          "name": "Chat Agent",
+          "summary": "Ein moderner Chatbot für Ihre Website oder App, der berät, verkauft und Anfragen sofort beantwortet.",
           "features": [
             "Kunden beraten",
-            "Produkte empfehlen",
-            "Leads generieren",
+            "Passende Angebote empfehlen",
+            "Neue Anfragen gewinnen",
             "Termine vereinbaren",
             "Support übernehmen",
             "Angebote erklären",
-            "Informationen sammeln",
-            "Dokumente durchsuchen",
-            "Mitarbeiter unterstützen"
+            "Kontaktdaten sammeln",
+            "In Ihren Unterlagen suchen"
           ]
         },
         {
-          "name": "Social Media AI",
-          "summary": "KI-Agenten, die Ihre Social-Media-Kanäle betreuen und Prozesse automatisieren.",
+          "name": "Social-Media-Agent",
+          "summary": "Ein Agent, der Ihre Social-Media-Kanäle betreut und die tägliche Arbeit übernimmt.",
           "features": [
             "Nachrichten beantworten",
             "Kommentare beantworten",
-            "Leads qualifizieren",
-            "Inhalte planen",
+            "Echte Interessenten erkennen",
+            "Beiträge planen",
             "Beiträge vorbereiten",
-            "Community Management unterstützen",
-            "Social-Media-Prozesse automatisieren"
+            "Beim Community-Management helfen"
           ]
         },
         {
-          "name": "Vertriebs- & Akquise-Agenten",
-          "summary": "KI-Agenten, die potenzielle Kunden finden, bewerten und die Ansprache vorbereiten — vollautomatisch.",
+          "name": "Vertriebs- & Akquise-Agent",
+          "summary": "Ein Agent, der passende Kunden findet, bewertet und die persönliche Ansprache vorbereitet — ganz von selbst.",
           "features": [
-            "Unternehmen recherchieren",
-            "Potenzielle Kunden finden",
-            "Leads bewerten",
+            "Passende Unternehmen finden",
             "Ansprechpartner recherchieren",
-            "Personalisierte E-Mails vorbereiten",
+            "Bewerten, wie gut sie passen",
+            "Persönliche E-Mails vorbereiten",
             "Gesprächsleitfäden erstellen",
-            "Akquise-Prozesse automatisieren",
-            "CRM-Systeme aktualisieren"
+            "Kundendaten aktuell halten"
           ]
         },
         {
-          "name": "Automatisierungen",
-          "summary": "Wir automatisieren nahezu jeden digitalen Geschäftsprozess und verbinden Ihre Tools zu reibungslosen Abläufen.",
+          "name": "Automatisierung",
+          "summary": "Wir nehmen Ihnen wiederkehrende Aufgaben ab und verbinden Ihre Programme zu reibungslosen Abläufen.",
           "features": [
             "Google Workspace & Microsoft 365",
             "Gmail & Outlook",
-            "Google Kalender",
-            "CRM- & ERP-Systeme",
+            "Kalender",
+            "Ihr Kunden- & Warensystem",
             "Buchungssysteme",
-            "Datenbanken & APIs",
-            "E-Mail-Workflows",
-            "WhatsApp",
-            "Formulare",
-            "Rechnungsprozesse",
-            "Dokumentenverwaltung",
-            "Benachrichtigungen"
+            "WhatsApp & Formulare",
+            "Angebote & Rechnungen",
+            "Dokumente ablegen",
+            "Automatische Benachrichtigungen"
           ]
         },
         {
           "name": "Individuelle KI-Agenten",
-          "summary": "Für Spezialfälle entwickeln wir vollständig maßgeschneiderte Lösungen. Was möglich ist, prüfen wir gemeinsam — Grenzen gibt es nahezu keine.",
+          "summary": "Für Spezialfälle entwickeln wir eine Lösung ganz nach Ihren Wünschen. Was möglich ist, prüfen wir gemeinsam — Grenzen gibt es fast keine.",
           "features": [
             "Lagerverwaltung & Inventur",
             "Produktion & Qualitätskontrolle",
-            "Recruiting & Personalmanagement",
-            "Wissensdatenbanken & interne Assistenten",
+            "Recruiting & Personal",
+            "Wissensablage & interne Assistenten",
             "Projektmanagement",
-            "Angebots- & Rechnungserstellung",
-            "Dokumentenanalyse & Vertragsprüfung",
-            "Reporting & Datenanalyse",
-            "Branchenspezifische Speziallösungen"
+            "Angebote & Rechnungen erstellen",
+            "Dokumente & Verträge prüfen",
+            "Auswertungen & Berichte",
+            "Speziallösungen für Ihre Branche"
           ]
         },
         {
-          "name": "Webseiten & digitale Präsenz",
-          "summary": "Moderne Unternehmenswebseiten und Landingpages, perfekt abgestimmt auf Ihre KI-Automatisierungen.",
+          "name": "Website-Erstellung",
+          "summary": "Moderne Unternehmenswebsites und Aktionsseiten, die zu Kunden führen — auf Wunsch direkt mit Ihren Agenten verbunden.",
           "features": [
-            "Modern & responsiv",
-            "Schnell & performant",
-            "SEO-optimiert",
-            "Conversionstark",
+            "Modern & auf jedem Gerät gut",
+            "Schnell geladen",
+            "Bei Google auffindbar",
+            "Auf mehr Anfragen ausgelegt",
             "Professionell gestaltet",
-            "Landingpages",
-            "Direkt mit KI-Agenten verbunden"
+            "Aktions- & Landingpages",
+            "Direkt mit Ihren Agenten verbunden"
           ]
         }
       ]
@@ -123,17 +114,17 @@
       "eyebrow": "Unsere Philosophie",
       "lead": "Wir verkaufen keine Software.",
       "headline": "Wir entwickeln digitale Mitarbeiter.",
-      "body": "Unsere KI-Agenten übernehmen wiederkehrende Aufgaben, unterstützen bestehende Teams und schaffen Freiräume für das, was wirklich zählt. Jede Lösung wird individuell geplant und exakt auf Ihre Prozesse abgestimmt — mit dem Ziel, Ihr Unternehmen langfristig erfolgreicher zu machen."
+      "body": "Unsere KI-Agenten übernehmen wiederkehrende Aufgaben, unterstützen Ihr Team und schaffen Freiräume für das, was wirklich zählt. Jede Lösung planen wir individuell und stimmen sie genau auf Ihren Alltag ab — mit dem Ziel, Ihr Unternehmen langfristig erfolgreicher zu machen."
     },
     "faq": {
       "eyebrow": "FAQ",
       "title": "Häufige Fragen.",
       "items": [
-        { "q": "Wie schnell ist ein KI-Agent einsatzbereit?", "a": "In der Regel entwickeln wir innerhalb von 2–4 Wochen eine einsatzfähige erste Version — getestet an Ihren echten Abläufen, bevor sie live geht." },
-        { "q": "Kann der Agent mit unseren bestehenden Systemen arbeiten?", "a": "Ja. Wir integrieren Ihre Agenten nahtlos in Telefonanlage, CRM, Kalender, E-Mail und nahezu jedes weitere Tool über APIs." },
-        { "q": "Ist das DSGVO-konform und sicher?", "a": "Ja. Datenschutz, Zugriffskontrolle und Nachvollziehbarkeit sind fester Bestandteil jeder Lösung — auf Wunsch mit Datenhaltung in der EU." },
-        { "q": "Was, wenn wir eine sehr spezielle Anforderung haben?", "a": "Dann prüfen wir gemeinsam die technische Machbarkeit und entwickeln bei Bedarf einen komplett individuellen KI-Agenten. Es gibt nahezu keine festen Grenzen." },
-        { "q": "Was kostet ein KI-Agent?", "a": "Das hängt vom Umfang ab. Unsere Engagement-Modelle finden Sie auf der Pricing-Seite — von einem fokussierten Start bis zur langfristigen Partnerschaft." }
+        { "q": "Wie schnell ist ein KI-Agent einsatzbereit?", "a": "In der Regel steht innerhalb von 2–4 Wochen eine erste einsatzfähige Version — an Ihren echten Abläufen getestet, bevor sie live geht." },
+        { "q": "Funktioniert das mit unseren bestehenden Programmen?", "a": "Ja. Wir verbinden Ihre Agenten mit Telefon, Kundensystem, Kalender, E-Mail und nahezu jedem weiteren Programm, das Sie nutzen." },
+        { "q": "Ist das sicher und datenschutzkonform?", "a": "Ja. Datenschutz, klare Zugriffsrechte und Nachvollziehbarkeit gehören zu jeder Lösung — auf Wunsch mit Datenhaltung in Deutschland/EU." },
+        { "q": "Was, wenn wir etwas sehr Spezielles brauchen?", "a": "Dann prüfen wir gemeinsam, ob es umsetzbar ist, und bauen bei Bedarf eine komplett individuelle Lösung. Grenzen gibt es fast keine." },
+        { "q": "Was kostet ein KI-Agent?", "a": "Das hängt vom Umfang ab. Unsere Pakete finden Sie auf der Preise-Seite — Standard, Premium oder eine individuelle Lösung." }
       ]
     }
   }

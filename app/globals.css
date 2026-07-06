@@ -65,6 +65,9 @@
     -webkit-text-size-adjust: 100%;
     scroll-behavior: smooth;
     scrollbar-color: #2a2c3a transparent;
+    /* Reserve the scrollbar space so locking body scroll (e.g. mobile menu)
+       doesn't shift the layout sideways. */
+    scrollbar-gutter: stable;
   }
 
   body {

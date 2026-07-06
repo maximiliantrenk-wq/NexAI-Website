@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import { ArrowLeft, ArrowRight, Check } from "lucide-react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
@@ -9,10 +9,14 @@ import { Section } from "@/components/ui/section";
 import { Badge } from "@/components/ui/badge";
 import { Reveal } from "@/components/ui/reveal";
 import { CTASection } from "@/components/sections/cta";
-import { caseGradients, caseSlugs, type CaseItem } from "@/content/cases";
+import {
+  productGradients,
+  productSlugs,
+  type ProductItem,
+} from "@/content/products";
 
 export function generateStaticParams() {
-  return caseSlugs.map((slug) => ({ slug }));
+  return productSlugs.map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({
@@ -21,35 +25,35 @@ export async function generateMetadata({
   params: Promise<{ locale: string; slug: string }>;
 }): Promise<Metadata> {
   const { locale, slug } = await params;
-  const t = await getTranslations({ locale, namespace: "Cases" });
-  const items = t.raw("items") as CaseItem[];
-  const item = items.find((c) => c.slug === slug);
+  const t = await getTranslations({ locale, namespace: "Products" });
+  const items = t.raw("items") as ProductItem[];
+  const item = items.find((p) => p.slug === slug);
   return { title: item ? item.title : t("meta.title") };
 }
 
-export default async function CaseDetailPage({
+export default async function ProductDetailPage({
   params,
 }: {
   params: Promise<{ locale: string; slug: string }>;
 }) {
   const { locale, slug } = await params;
   setRequestLocale(locale);
-  return <CaseDetail slug={slug} />;
+  return <ProductDetail slug={slug} />;
 }
 
-function CaseDetail({ slug }: { slug: string }) {
-  const t = useTranslations("Cases");
-  const items = t.raw("items") as CaseItem[];
-  const index = items.findIndex((c) => c.slug === slug);
+function ProductDetail({ slug }: { slug: string }) {
+  const t = useTranslations("Products");
+  const items = t.raw("items") as ProductItem[];
+  const index = items.findIndex((p) => p.slug === slug);
   if (index === -1) notFound();
   const item = items[index];
   const next = items[(index + 1) % items.length];
-  const gradient = caseGradients[index % caseGradients.length];
+  const gradient = productGradients[index % productGradients.length];
 
   const blocks = [
-    { label: t("labels.challenge"), body: item.challenge },
-    { label: t("labels.approach"), body: item.approach },
-    { label: t("labels.outcome"), body: item.outcome },
+    { label: t("labels.what"), body: item.what },
+    { label: t("labels.benefit"), body: item.benefit },
+    { label: t("labels.example"), body: item.example },
   ];
 
   return (
@@ -70,7 +74,7 @@ function CaseDetail({ slug }: { slug: string }) {
         <Container>
           <Reveal>
             <Link
-              href="/cases"
+              href="/produkte"
               className="inline-flex items-center gap-1.5 text-sm text-muted transition-colors hover:text-fg"
             >
               <ArrowLeft className="size-4" />
@@ -95,18 +99,25 @@ function CaseDetail({ slug }: { slug: string }) {
         </Container>
       </section>
 
-      {/* Metrics */}
-      <Section className="py-12">
+      {/* What it can do */}
+      <Section className="py-10">
         <Container>
-          <div className="grid gap-8 rounded-3xl border border-line bg-white/[0.015] px-8 py-10 sm:grid-cols-3 sm:px-12">
-            {item.metrics.map((m) => (
-              <div key={m.label} className="text-center sm:text-left">
-                <div className="text-gradient text-[2.5rem] font-semibold leading-none tracking-[-0.03em]">
-                  {m.value}
-                </div>
-                <p className="mt-2 text-sm text-muted">{m.label}</p>
-              </div>
-            ))}
+          <div className="surface-card rounded-3xl p-8 sm:p-10">
+            <p className="eyebrow mb-6">{t("labels.canDo")}</p>
+            <ul className="grid gap-x-8 gap-y-3 sm:grid-cols-2">
+              {item.features.map((f) => (
+                <li
+                  key={f}
+                  className="flex items-start gap-3 text-[15px] text-muted"
+                >
+                  <Check
+                    className="mt-0.5 size-4 shrink-0 text-violet"
+                    strokeWidth={2.5}
+                  />
+                  {f}
+                </li>
+              ))}
+            </ul>
           </div>
         </Container>
       </Section>
@@ -117,7 +128,7 @@ function CaseDetail({ slug }: { slug: string }) {
           <div className="mx-auto max-w-3xl space-y-12">
             {blocks.map((b) => (
               <Reveal key={b.label}>
-                <div className="grid gap-3 sm:grid-cols-[180px_1fr] sm:gap-8">
+                <div className="grid gap-3 sm:grid-cols-[200px_1fr] sm:gap-8">
                   <p className="eyebrow pt-1">{b.label}</p>
                   <p className="text-[17px] leading-relaxed text-muted">
                     {b.body}
@@ -129,11 +140,11 @@ function CaseDetail({ slug }: { slug: string }) {
         </Container>
       </Section>
 
-      {/* Next case */}
+      {/* Next product */}
       <Section className="py-12">
         <Container>
           <Link
-            href={`/cases/${next.slug}`}
+            href={`/produkte/${next.slug}`}
             className="surface-card group flex items-center justify-between gap-6 rounded-2xl p-7 transition-colors hover:border-white/20"
           >
             <div>
@@ -147,7 +158,7 @@ function CaseDetail({ slug }: { slug: string }) {
         </Container>
       </Section>
 
-      <CTASection namespace="Cases.cta" />
+      <CTASection namespace="Products.cta" />
     </>
   );
 }

@@ -1,64 +1,64 @@
 {
   "Pricing": {
-    "meta": { "title": "Pricing" },
+    "meta": { "title": "Preise" },
     "hero": {
-      "eyebrow": "Pricing",
-      "title": "Engagement-Modelle, die zu Ihrem Vorhaben passen.",
-      "description": "Ob schneller Piloten-Sprint oder langfristige Partnerschaft — wir arbeiten in klaren, planbaren Modellen. Keine versteckten Kosten."
+      "eyebrow": "Preise",
+      "title": "Klare Pakete. Feste Preise. Keine Überraschungen.",
+      "description": "Wählen Sie das Paket, das zu Ihnen passt — monatlich kündbar. Für alles Größere schneidern wir ein individuelles Angebot."
     },
     "popular": "Beliebt",
     "cta": "Gespräch vereinbaren",
     "tiers": [
       {
-        "name": "Sprint",
-        "price": "ab 8.000 €",
-        "period": "/ Festpreis",
-        "description": "Ein fokussierter Piloten-Sprint, um KI-Potenzial an echten Daten zu beweisen.",
+        "name": "Standard",
+        "price": "500 €",
+        "period": "/ Monat",
+        "description": "Der einfache Einstieg — ein KI-Assistent, der Fragen beantwortet und Termine vereinbart.",
         "features": [
-          "2–4 Wochen Laufzeit",
-          "1 klar definierter Use-Case",
-          "Funktionierender Prototyp",
-          "Ergebnis-Bewertung & Roadmap"
+          "Assistent für häufige Fragen",
+          "Anbindung an Ihr Kundensystem (CRM)",
+          "Termine automatisch vereinbaren"
         ],
         "highlighted": false
       },
       {
-        "name": "Build",
-        "price": "ab 20.000 €",
-        "period": "/ Projekt",
-        "description": "Vom Prototyp zum produktiven System — sicher integriert und ausgeliefert.",
+        "name": "Premium",
+        "price": "1.000 €",
+        "period": "/ Monat",
+        "description": "Alles inklusive — Ihre digitalen Mitarbeiter für Telefon, Chat, Social Media und Vertrieb.",
         "features": [
-          "Produktionsreife Entwicklung",
-          "Integration in Ihre Systeme",
-          "Guardrails, Monitoring & Tests",
-          "Schulung & Übergabe",
-          "Support nach Go-live"
+          "Alles aus dem Standard-Paket",
+          "Voice-, Chat- & Social-Media-Agent",
+          "Vertriebs- & Akquise-Agent",
+          "Automatisierung Ihrer Abläufe",
+          "Bevorzugter Support"
         ],
         "highlighted": true
       },
       {
-        "name": "Partner",
+        "name": "Individual",
         "price": "individuell",
-        "period": "/ monatlich",
-        "description": "Ihr langfristiges KI-Team für kontinuierliche Entwicklung und Betrieb.",
+        "period": "/ nach Absprache",
+        "description": "Ganz nach Ihren Wünschen — Leistungen, Umfang und Abrechnung (monatlich oder jährlich) frei wählbar.",
         "features": [
-          "Dediziertes Team",
-          "Laufende Weiterentwicklung",
-          "Betrieb & Optimierung",
-          "Priorisierter Support",
-          "Strategische Roadmap"
+          "Maßgeschneiderte Lösung",
+          "Frei wählbare Leistungen",
+          "Monatlich oder jährlich",
+          "Fester Ansprechpartner",
+          "Laufende Betreuung"
         ],
         "highlighted": false
       }
     ],
     "faq": {
       "eyebrow": "FAQ",
-      "title": "Fragen zu Zusammenarbeit & Preisen.",
+      "title": "Häufige Fragen zu Paketen & Preisen.",
       "items": [
-        { "q": "Warum Festpreis beim Sprint?", "a": "Weil der Umfang klar definiert ist. So tragen Sie kein Risiko und wissen genau, was Sie bekommen." },
-        { "q": "Was ist im Build-Modell enthalten?", "a": "Alles von der produktionsreifen Entwicklung über Integration und Tests bis zu Schulung und Support nach dem Go-live." },
-        { "q": "Können wir klein starten und später skalieren?", "a": "Genau dafür ist der Sprint da. Viele Kunden starten dort und gehen dann in Build oder Partner über." },
-        { "q": "Gibt es laufende Kosten?", "a": "Nur für Betrieb, Hosting und optionalen Support — transparent ausgewiesen und vorab abgestimmt." }
+        { "q": "Kann ich monatlich kündigen?", "a": "Ja. Standard und Premium sind monatlich kündbar — keine lange Bindung." },
+        { "q": "Was ist im Premium-Paket enthalten?", "a": "Alles: Voice-, Chat- und Social-Media-Agent, der Vertriebs-Agent und die Automatisierung Ihrer Abläufe — plus alles aus dem Standard-Paket." },
+        { "q": "Kann ich klein starten und später erweitern?", "a": "Natürlich. Viele starten mit Standard und wechseln später zu Premium oder einer individuellen Lösung." },
+        { "q": "Was, wenn ich etwas Spezielles brauche?", "a": "Dann ist Individual richtig: Wir stellen Leistungen, Umfang und Abrechnung genau nach Ihren Wünschen zusammen." },
+        { "q": "Kommen versteckte Kosten dazu?", "a": "Nein. Der Monatspreis ist klar. Einmalige Einrichtung oder Sonderwünsche besprechen wir vorher transparent." }
       ]
     }
   }
