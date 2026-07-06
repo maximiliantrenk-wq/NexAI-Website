@@ -120,11 +120,11 @@
       "eyebrow": "FAQ",
       "title": "Häufige Fragen.",
       "items": [
-        { "q": "Wie schnell ist ein KI-Agent einsatzbereit?", "a": "In der Regel steht innerhalb von 2–4 Wochen eine erste einsatzfähige Version — an Ihren echten Abläufen getestet, bevor sie live geht." },
+        { "q": "Wie schnell ist ein KI-Agent einsatzbereit?", "a": "In der Regel innerhalb von 3 Werktagen. Bei individueller Gestaltung kann es bis zu 10 Werktage dauern." },
         { "q": "Funktioniert das mit unseren bestehenden Programmen?", "a": "Ja. Wir verbinden Ihre Agenten mit Telefon, Kundensystem, Kalender, E-Mail und nahezu jedem weiteren Programm, das Sie nutzen." },
         { "q": "Ist das sicher und datenschutzkonform?", "a": "Ja. Datenschutz, klare Zugriffsrechte und Nachvollziehbarkeit gehören zu jeder Lösung — auf Wunsch mit Datenhaltung in Deutschland/EU." },
         { "q": "Was, wenn wir etwas sehr Spezielles brauchen?", "a": "Dann prüfen wir gemeinsam, ob es umsetzbar ist, und bauen bei Bedarf eine komplett individuelle Lösung. Grenzen gibt es fast keine." },
-        { "q": "Was kostet ein KI-Agent?", "a": "Das hängt vom Umfang ab. Unsere Pakete finden Sie auf der Preise-Seite — Standard, Premium oder eine individuelle Lösung." }
+        { "q": "Was kostet ein KI-Agent?", "a": "Das lässt sich nicht pauschal sagen — die Preise unterscheiden sich von Agent zu Agent, je nach Umfang und Aufwand. Für ein konkretes Angebot melden Sie sich einfach bei uns." }
       ]
     }
   }

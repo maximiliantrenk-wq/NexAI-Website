@@ -18,11 +18,17 @@ type Tier = {
 export function PricingTiers() {
   const t = useTranslations("Pricing");
   const tiers = t.raw("tiers") as Tier[];
+  const single = tiers.length === 1;
 
   return (
     <Section className="pt-8 sm:pt-10">
       <Container>
-        <div className="grid items-start gap-6 lg:grid-cols-3">
+        <div
+          className={cn(
+            "grid items-start gap-6",
+            single ? "mx-auto w-full max-w-md" : "lg:grid-cols-3",
+          )}
+        >
           {tiers.map((tier, i) => (
             <Reveal key={tier.name} delay={i * 0.08}>
               <div
@@ -39,9 +45,11 @@ export function PricingTiers() {
                       aria-hidden
                       className="pointer-events-none absolute inset-0 -z-10 rounded-2xl bg-gradient-to-b from-blue/60 via-violet/40 to-purple/50 p-px [mask:linear-gradient(#000_0_0)_content-box,linear-gradient(#000_0_0)] [mask-composite:exclude]"
                     />
-                    <span className="absolute -top-3 left-8 rounded-full bg-gradient-to-r from-blue to-purple px-3 py-1 text-[11px] font-medium uppercase tracking-wider text-white">
-                      {t("popular")}
-                    </span>
+                    {!single && (
+                      <span className="absolute -top-3 left-8 rounded-full bg-gradient-to-r from-blue to-purple px-3 py-1 text-[11px] font-medium uppercase tracking-wider text-white">
+                        {t("popular")}
+                      </span>
+                    )}
                   </>
                 )}
 
