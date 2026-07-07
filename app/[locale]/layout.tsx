@@ -7,6 +7,7 @@ import { GeistMono } from "geist/font/mono";
 import { routing } from "@/i18n/routing";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
+import { Aurora } from "@/components/sections/aurora";
 import "../globals.css";
 
 export function generateStaticParams() {
@@ -63,6 +64,17 @@ export default async function LocaleLayout({
       suppressHydrationWarning
     >
       <body className="flex min-h-dvh flex-col antialiased">
+        {/* Subtle site-wide animated aurora backdrop (reuses the hero shader,
+            heavily dimmed) so inner pages aren't a flat, heavy black. Fixed =
+            calm ambient; the homepage hero paints its own, more present aurora
+            on top within its own stacking context. */}
+        <div
+          aria-hidden
+          className="pointer-events-none fixed inset-0 -z-10"
+        >
+          <Aurora className="h-full w-full opacity-[0.3]" />
+          <div className="absolute inset-0 bg-[radial-gradient(125%_90%_at_50%_0%,transparent_42%,var(--color-bg)_92%)]" />
+        </div>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
