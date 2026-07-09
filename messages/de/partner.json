@@ -1,0 +1,317 @@
+{
+  "Partner": {
+    "meta": { "title": "Partner werden" },
+    "hero": {
+      "eyebrow": "Partnerprogramm",
+      "title": "Gemeinsam mehr Umsatz für Ihre Kunden.",
+      "description": "Sie bringen Ihren Kunden mehr Anfragen und bessere Ergebnisse. NexAI sorgt dafür, dass aus diesen Anfragen echte Termine und Aufträge werden — automatisiert, rund um die Uhr. Werden Sie Partner und erweitern Sie Ihr Leistungsangebot ohne eigene Entwicklung.",
+      "reassurance": "Keine Konkurrenz — wir erweitern Ihr Angebot.",
+      "primary": "Partnergespräch vereinbaren",
+      "secondary": "So funktioniert's"
+    },
+    "positioning": {
+      "eyebrow": "Das Prinzip",
+      "lead": "NexAI ist keine Konkurrenz.",
+      "headline": "Wir erweitern Ihr Angebot.",
+      "body": "Ihre Stärke ist es, Kunden mehr Sichtbarkeit, mehr Leads und bessere Prozesse zu verschaffen. Unsere Stärke ist es, diese Leads effizient zu bearbeiten — mit KI-Voice-Agenten, Chatbots, Terminbuchung, Leadqualifizierung und Automatisierungen. Zusammen entsteht für Ihren Kunden eine komplette End-to-End-Lösung."
+    },
+    "problem": {
+      "eyebrow": "Warum eine Partnerschaft?",
+      "title": "Mehr Leads bringen wenig, wenn sie liegen bleiben.",
+      "description": "Viele Unternehmen erzeugen für ihre Kunden mehr Anfragen als je zuvor. Doch genau an der Schnittstelle zum Abschluss geht Potenzial verloren:",
+      "items": [
+        {
+          "title": "Anrufe gehen verloren",
+          "description": "Interessenten rufen an, wenn gerade niemand Zeit hat — und melden sich kein zweites Mal."
+        },
+        {
+          "title": "Niemand ist erreichbar",
+          "description": "Außerhalb der Geschäftszeiten, in Stoßzeiten oder im Urlaub bleibt das Telefon stumm."
+        },
+        {
+          "title": "Termine werden vergessen",
+          "description": "Ohne automatische Buchung und Erinnerung platzen Termine oder werden gar nicht erst vereinbart."
+        },
+        {
+          "title": "Interessenten springen ab",
+          "description": "Wer nicht sofort eine Antwort bekommt, ist beim nächsten Anbieter — der Lead ist verbrannt."
+        }
+      ],
+      "bridge": "NexAI schließt genau diese Lücke — und macht die Ergebnisse Ihrer Arbeit sichtbar."
+    },
+    "flow": {
+      "eyebrow": "So funktioniert's",
+      "title": "Zwei Stärken, ein Ergebnis.",
+      "description": "Sie und NexAI greifen nahtlos ineinander — Ihr Kunde merkt nur, dass plötzlich alles läuft.",
+      "steps": [
+        {
+          "n": "01",
+          "title": "Sie liefern die Leads",
+          "description": "Durch Ihre Arbeit — Marketing, SEO, Ads, Social Media, Beratung oder Software — entstehen beim Kunden mehr Anfragen."
+        },
+        {
+          "n": "02",
+          "title": "NexAI bearbeitet sie automatisch",
+          "description": "KI-Agenten nehmen jeden Anruf an, beantworten Fragen, qualifizieren Interessenten, buchen Termine und übergeben alles sauber ins CRM."
+        },
+        {
+          "n": "03",
+          "title": "Ihr Kunde gewinnt mehr Aufträge",
+          "description": "Kein Lead geht verloren, die Reaktionszeit sinkt auf Sekunden — aus mehr Anfragen werden mehr Abschlüsse."
+        }
+      ]
+    },
+    "partnerBenefits": {
+      "eyebrow": "Für unsere Partner",
+      "title": "Ihr Vorteil als NexAI-Partner.",
+      "description": "Ein modernes KI-Angebot, das Ihre Kunden begeistert — ohne dass Sie eine Zeile Code schreiben.",
+      "items": [
+        {
+          "title": "Zusätzliches Leistungsangebot",
+          "description": "Erweitern Sie Ihr Portfolio um KI-Automatisierung — ohne eigene Entwicklung, Technik oder Personal."
+        },
+        {
+          "title": "Mehr Umsatz pro Kunde",
+          "description": "Cross- und Upselling mit einem gefragten Zusatzprodukt — und wiederkehrende statt einmaliger Umsätze."
+        },
+        {
+          "title": "White-Label möglich",
+          "description": "Auf Wunsch bieten Sie die Lösung unter Ihrer eigenen Marke an — NexAI bleibt im Hintergrund."
+        },
+        {
+          "title": "Bessere Ergebnisse für Ihre Kunden",
+          "description": "Mehr abgeschlossene Anfragen aus denselben Leads — Ihre Arbeit wirkt sichtbar und messbar."
+        },
+        {
+          "title": "Stärkere Kundenbindung",
+          "description": "Wer bessere Ergebnisse liefert, bleibt unverzichtbar. Zufriedene Kunden bleiben länger."
+        },
+        {
+          "title": "Klarer Wettbewerbsvorteil",
+          "description": "Heben Sie sich mit einem modernen KI-Angebot von Mitbewerbern ab, die es (noch) nicht haben."
+        },
+        {
+          "title": "Technischer Support & gemeinsame Projekte",
+          "description": "Wir übernehmen Einrichtung, Betrieb und Optimierung — Sie behalten die Kundenbeziehung."
+        },
+        {
+          "title": "Individuelle Lösungen",
+          "description": "Vom fertigen Agenten bis zur maßgeschneiderten Automatisierung — passend zu jedem Kundenprojekt."
+        }
+      ]
+    },
+    "customerBenefits": {
+      "eyebrow": "Für die Kunden unserer Partner",
+      "title": "Was am Ende beim Kunden ankommt.",
+      "description": "Am Ende zählt, was der Endkunde spürt: mehr Erreichbarkeit, mehr Abschlüsse, weniger Aufwand.",
+      "items": [
+        {
+          "title": "Rund um die Uhr erreichbar",
+          "description": "24/7 für Anrufe und Nachrichten erreichbar — auch nachts, am Wochenende und in Stoßzeiten."
+        },
+        {
+          "title": "Keine verlorenen Anrufe",
+          "description": "Jeder Anruf wird angenommen und beantwortet — kein Lead geht mehr verloren."
+        },
+        {
+          "title": "Automatische Terminvereinbarung",
+          "description": "Termine werden direkt gebucht, bestätigt und im Kalender eingetragen — inklusive Erinnerung."
+        },
+        {
+          "title": "Schnellere Reaktionszeiten",
+          "description": "Interessenten bekommen in Sekunden eine Antwort, nicht erst nach Stunden."
+        },
+        {
+          "title": "Weniger Personalaufwand",
+          "description": "Routineanfragen erledigt die KI — das Team konzentriert sich auf das Wesentliche."
+        },
+        {
+          "title": "Mehr abgeschlossene Anfragen",
+          "description": "Qualifizierte, vorbereitete Leads landen sofort im CRM — bereit für den Abschluss."
+        },
+        {
+          "title": "Automatisierte Prozesse & Zeitersparnis",
+          "description": "Wiederkehrende Abläufe laufen von selbst — das spart täglich Zeit und Kosten."
+        },
+        {
+          "title": "Skalierbar mitwachsend",
+          "description": "Ob 10 oder 1.000 Anfragen am Tag — die Lösung wächst ohne zusätzliches Personal mit."
+        }
+      ]
+    },
+    "audience": {
+      "eyebrow": "Für wen?",
+      "title": "Passt eine Partnerschaft zu Ihnen?",
+      "description": "Grundsätzlich für alle Unternehmen, deren Kunden durch KI-Automatisierung einen echten Mehrwert gewinnen. Zum Beispiel:",
+      "items": [
+        { "title": "Marketing-Agenturen" },
+        { "title": "SEO-Agenturen" },
+        { "title": "Google-Ads-Agenturen" },
+        { "title": "Social-Media-Agenturen" },
+        { "title": "Webdesign-Agenturen" },
+        { "title": "Digitalagenturen" },
+        { "title": "IT-Dienstleister & Systemhäuser" },
+        { "title": "Softwareunternehmen" },
+        { "title": "CRM-Anbieter" },
+        { "title": "Unternehmens- & Digitalisierungsberater" },
+        { "title": "Automatisierungsagenturen" },
+        { "title": "Telekommunikation & Callcenter" },
+        { "title": "Franchise-Systeme" }
+      ]
+    },
+    "example": {
+      "eyebrow": "Beispiel",
+      "title": "Vom Lead zum Auftrag — ein realistisches Szenario.",
+      "description": "Eine Marketing-Agentur liefert einem Dachdecker 120 neue Anfragen pro Monat. Was danach passiert, entscheidet über den Erfolg.",
+      "without": {
+        "title": "Ohne NexAI",
+        "items": [
+          "Viele Anrufe gehen verloren",
+          "Kunden warten auf einen Rückruf",
+          "Termine werden vergessen",
+          "Interessenten springen zur Konkurrenz ab"
+        ]
+      },
+      "with": {
+        "title": "Mit NexAI",
+        "items": [
+          "Jeder Anruf wird sofort angenommen",
+          "Termine werden automatisch gebucht",
+          "Interessenten werden qualifiziert",
+          "Alle Daten landen automatisch im CRM"
+        ]
+      },
+      "resultValue": "120",
+      "resultLabel": "Anfragen pro Monat — keine geht mehr verloren.",
+      "resultText": "Die Agentur liefert messbar bessere Ergebnisse, der Dachdecker gewinnt mehr Aufträge. Beide gewinnen — und die Zusammenarbeit wird unverzichtbar."
+    },
+    "why": {
+      "eyebrow": "Warum NexAI?",
+      "title": "Ein Partner, auf den Sie sich verlassen können.",
+      "description": "Moderne KI-Technologie, persönlich betreut und sauber in bestehende Systeme integriert.",
+      "items": [
+        "Rund um die Uhr erreichbar",
+        "Unbegrenzt skalierbar",
+        "DSGVO-konforme Prozesse (soweit technisch und organisatorisch umgesetzt)",
+        "Individuelle Entwicklung statt Lösung von der Stange",
+        "Persönliche Betreuung mit festem Ansprechpartner",
+        "Schnelle Einrichtung",
+        "Laufende Optimierung",
+        "Moderne KI-Technologie",
+        "Integration in bestehende Systeme"
+      ]
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Häufige Fragen zur Partnerschaft.",
+      "items": [
+        {
+          "q": "Ist NexAI eine Konkurrenz für uns?",
+          "a": "Nein. NexAI ersetzt Ihr Angebot nicht, sondern erweitert es. Sie bleiben der Ansprechpartner Ihres Kunden — wir liefern die KI-Technologie im Hintergrund."
+        },
+        {
+          "q": "Was kostet mich die Partnerschaft?",
+          "a": "Die Partnerschaft selbst ist unkompliziert. Das konkrete Modell — Empfehlung, gemeinsame Projekte, Provision oder White-Label — stimmen wir individuell im Partnergespräch ab."
+        },
+        {
+          "q": "Verdiene ich an der Partnerschaft?",
+          "a": "Ja. Je nach Modell durch Cross- und Upselling in Ihrem Portfolio, wiederkehrende Umsätze oder eine Vergütung für vermittelte Kunden. Die Details klären wir gemeinsam."
+        },
+        {
+          "q": "Kann ich die Lösung unter meiner eigenen Marke anbieten?",
+          "a": "Ja, White-Label ist möglich. Auf Wunsch tritt NexAI komplett im Hintergrund auf, und Sie bieten die Lösung unter Ihrem Namen an."
+        },
+        {
+          "q": "Muss ich technisches Know-how mitbringen?",
+          "a": "Nein. Wir übernehmen Konzeption, Einrichtung, Betrieb und Optimierung. Sie brauchen keine Entwickler und kein KI-Wissen."
+        },
+        {
+          "q": "Wie läuft die Zusammenarbeit ab?",
+          "a": "Erst ein unverbindliches Partnergespräch, dann ein passendes Konzept für Ihre Kunden, anschließend Umsetzung und laufender Betrieb — Sie behalten dabei stets die Kundenbeziehung."
+        },
+        {
+          "q": "Für welche Kunden eignet sich NexAI?",
+          "a": "Für nahezu jedes Unternehmen mit eingehenden Anfragen oder Anrufen — vom Handwerksbetrieb über Praxen und Kanzleien bis zu Dienstleistern und Onlineshops."
+        },
+        {
+          "q": "Wie schnell ist eine Lösung beim Kunden einsatzbereit?",
+          "a": "In der Regel innerhalb weniger Werktage. Bei individueller Gestaltung kann es bis zu 10 Werktage dauern."
+        },
+        {
+          "q": "Wer betreut die Kunden technisch?",
+          "a": "Das übernimmt NexAI: Einrichtung, Betrieb und laufende Optimierung. So haben Sie keinen zusätzlichen Aufwand."
+        },
+        {
+          "q": "Wie ist der Datenschutz geregelt?",
+          "a": "Datenschutz nach DSGVO hat für uns hohe Priorität — soweit technisch und organisatorisch umgesetzt. Eine Datenhaltung in Deutschland bzw. der EU ist auf Wunsch möglich."
+        },
+        {
+          "q": "Welche Systeme lassen sich anbinden?",
+          "a": "Telefonanlage, CRM, Kalender, E-Mail und viele weitere Tools. Bestehende Prozesse Ihrer Kunden binden wir sauber ein."
+        },
+        {
+          "q": "Was kostet die Lösung für den Endkunden?",
+          "a": "Die Preise unterscheiden sich von Agent zu Agent, je nach Umfang und Aufwand. Für jedes Projekt erstellen wir ein transparentes Angebot."
+        },
+        {
+          "q": "Gibt es Mindestmengen oder lange Vertragslaufzeiten?",
+          "a": "Nein. Sie bringen so viele oder wenige Kunden ein, wie Sie möchten — flexibel und ohne lange Bindung."
+        },
+        {
+          "q": "Wie unterscheidet sich das von Standard-Chatbots?",
+          "a": "NexAI liefert keine Baukasten-Bots, sondern echte KI-Agenten: individuell entwickelt, in Ihre Systeme integriert und darauf ausgelegt, im echten Betrieb zuverlässig zu bestehen."
+        },
+        {
+          "q": "Was passiert nach dem Partnergespräch?",
+          "a": "Sie erhalten ein unverbindliches Konzept mit konkreten nächsten Schritten. Erst wenn es für beide Seiten passt, starten wir."
+        }
+      ]
+    },
+    "form": {
+      "eyebrow": "Partner werden",
+      "title": "Lassen Sie uns gemeinsam Ihren Kunden noch mehr Mehrwert bieten.",
+      "description": "Erzählen Sie uns kurz von Ihrem Unternehmen und Ihren Kunden. Wir melden uns für ein unverbindliches Partnergespräch.",
+      "assurances": [
+        "Unverbindliches Erstgespräch",
+        "Antwort in der Regel innerhalb eines Werktags",
+        "Fester Ansprechpartner"
+      ],
+      "name": "Name",
+      "namePlaceholder": "Ihr Name",
+      "email": "E-Mail",
+      "emailPlaceholder": "name@unternehmen.de",
+      "company": "Unternehmen",
+      "companyPlaceholder": "Name Ihres Unternehmens",
+      "website": "Website (optional)",
+      "websitePlaceholder": "www.ihre-website.de",
+      "companyType": "Art des Unternehmens",
+      "companyTypePlaceholder": "Bitte wählen",
+      "companyTypeOptions": [
+        "Marketing-/Werbeagentur",
+        "SEO-Agentur",
+        "Google-Ads-Agentur",
+        "Social-Media-Agentur",
+        "Webdesign-Agentur",
+        "Digitalagentur",
+        "IT-Dienstleister / Systemhaus",
+        "Softwareunternehmen",
+        "CRM-Anbieter",
+        "Unternehmens-/Digitalisierungsberatung",
+        "Automatisierungsagentur",
+        "Telekommunikation / Callcenter",
+        "Franchise-System",
+        "Sonstiges"
+      ],
+      "message": "Nachricht",
+      "messagePlaceholder": "Worum geht es? Erzählen Sie uns kurz von Ihren Kunden und Ihrem Ziel.",
+      "submit": "Partneranfrage senden",
+      "submitting": "Wird gesendet …",
+      "successTitle": "Vielen Dank für Ihr Interesse!",
+      "success": "Ihre Partneranfrage ist bei uns eingegangen. Wir melden uns in der Regel innerhalb eines Werktags.",
+      "errorRequired": "Bitte füllen Sie dieses Feld aus.",
+      "errorEmail": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+      "errorSelect": "Bitte wählen Sie eine Option.",
+      "errorGeneric": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder schreiben Sie an mbt@nex-a-i.com."
+    }
+  }
+}

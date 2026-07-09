@@ -1,0 +1,317 @@
+{
+  "Partner": {
+    "meta": { "title": "Become a partner" },
+    "hero": {
+      "eyebrow": "Partner programme",
+      "title": "More revenue for your clients — together.",
+      "description": "You bring your clients more enquiries and better results. NexAI makes sure those enquiries turn into real appointments and jobs — automated, around the clock. Become a partner and extend your offering without building anything yourself.",
+      "reassurance": "Not competition — we extend your offering.",
+      "primary": "Book a partner call",
+      "secondary": "How it works"
+    },
+    "positioning": {
+      "eyebrow": "The principle",
+      "lead": "NexAI is not your competition.",
+      "headline": "We extend your offering.",
+      "body": "Your strength is giving clients more visibility, more leads and better processes. Our strength is handling those leads efficiently — with AI voice agents, chatbots, appointment booking, lead qualification and automations. Together you deliver a complete end-to-end solution for your client."
+    },
+    "problem": {
+      "eyebrow": "Why partner up?",
+      "title": "More leads are worth little if they slip away.",
+      "description": "Many companies generate more enquiries for their clients than ever. But right at the point of closing, potential gets lost:",
+      "items": [
+        {
+          "title": "Calls get missed",
+          "description": "Prospects call when no one is available — and they don't try a second time."
+        },
+        {
+          "title": "No one is reachable",
+          "description": "After hours, at peak times or during holidays, the phone simply stays silent."
+        },
+        {
+          "title": "Appointments are forgotten",
+          "description": "Without automatic booking and reminders, appointments fall through or never get made."
+        },
+        {
+          "title": "Prospects drop off",
+          "description": "Anyone who doesn't get an instant answer is already with the next provider — the lead is burned."
+        }
+      ],
+      "bridge": "NexAI closes exactly this gap — and makes the results of your work visible."
+    },
+    "flow": {
+      "eyebrow": "How it works",
+      "title": "Two strengths, one result.",
+      "description": "You and NexAI mesh seamlessly — your client just notices that everything suddenly runs.",
+      "steps": [
+        {
+          "n": "01",
+          "title": "You deliver the leads",
+          "description": "Through your work — marketing, SEO, ads, social media, consulting or software — your client gets more enquiries."
+        },
+        {
+          "n": "02",
+          "title": "NexAI handles them automatically",
+          "description": "AI agents answer every call, respond to questions, qualify prospects, book appointments and hand everything cleanly to the CRM."
+        },
+        {
+          "n": "03",
+          "title": "Your client wins more jobs",
+          "description": "No lead is lost, response time drops to seconds — more enquiries turn into more deals."
+        }
+      ]
+    },
+    "partnerBenefits": {
+      "eyebrow": "For our partners",
+      "title": "Your advantage as a NexAI partner.",
+      "description": "A modern AI offering that delights your clients — without you writing a single line of code.",
+      "items": [
+        {
+          "title": "An extra service to offer",
+          "description": "Add AI automation to your portfolio — with no development, tech or staff of your own."
+        },
+        {
+          "title": "More revenue per client",
+          "description": "Cross- and up-sell an in-demand add-on — and earn recurring instead of one-off revenue."
+        },
+        {
+          "title": "White-label ready",
+          "description": "Offer the solution under your own brand if you like — NexAI stays in the background."
+        },
+        {
+          "title": "Better results for your clients",
+          "description": "More closed enquiries from the same leads — your work becomes visible and measurable."
+        },
+        {
+          "title": "Stronger client retention",
+          "description": "Deliver better results and you become indispensable. Happy clients stay longer."
+        },
+        {
+          "title": "A clear competitive edge",
+          "description": "Stand out with a modern AI offering that competitors don't (yet) have."
+        },
+        {
+          "title": "Technical support & joint projects",
+          "description": "We handle setup, operation and optimisation — you keep the client relationship."
+        },
+        {
+          "title": "Tailored solutions",
+          "description": "From a ready-made agent to bespoke automation — a fit for every client project."
+        }
+      ]
+    },
+    "customerBenefits": {
+      "eyebrow": "For your clients' customers",
+      "title": "What the customer actually gets.",
+      "description": "In the end it's about what the customer feels: more availability, more closed deals, less effort.",
+      "items": [
+        {
+          "title": "Available around the clock",
+          "description": "Reachable 24/7 for calls and messages — at night, on weekends and at peak times."
+        },
+        {
+          "title": "No missed calls",
+          "description": "Every call is answered and handled — no lead is lost anymore."
+        },
+        {
+          "title": "Automatic appointment booking",
+          "description": "Appointments are booked, confirmed and added to the calendar — reminders included."
+        },
+        {
+          "title": "Faster response times",
+          "description": "Prospects get an answer in seconds, not hours later."
+        },
+        {
+          "title": "Less workload for staff",
+          "description": "The AI handles routine enquiries — the team focuses on what matters."
+        },
+        {
+          "title": "More closed enquiries",
+          "description": "Qualified, prepared leads land in the CRM instantly — ready to close."
+        },
+        {
+          "title": "Automated processes & time saved",
+          "description": "Repetitive workflows run on their own — saving time and cost every day."
+        },
+        {
+          "title": "Scales as they grow",
+          "description": "Whether 10 or 1,000 enquiries a day — the solution scales without extra staff."
+        }
+      ]
+    },
+    "audience": {
+      "eyebrow": "Who is it for?",
+      "title": "Is a partnership right for you?",
+      "description": "Broadly, for any company whose clients gain real value from AI automation. For example:",
+      "items": [
+        { "title": "Marketing agencies" },
+        { "title": "SEO agencies" },
+        { "title": "Google Ads agencies" },
+        { "title": "Social media agencies" },
+        { "title": "Web design agencies" },
+        { "title": "Digital agencies" },
+        { "title": "IT service providers & system houses" },
+        { "title": "Software companies" },
+        { "title": "CRM providers" },
+        { "title": "Business & digitalisation consultants" },
+        { "title": "Automation agencies" },
+        { "title": "Telecoms & call centres" },
+        { "title": "Franchise systems" }
+      ]
+    },
+    "example": {
+      "eyebrow": "Example",
+      "title": "From lead to job — a realistic scenario.",
+      "description": "A marketing agency delivers a roofing company 120 new enquiries per month. What happens next decides the outcome.",
+      "without": {
+        "title": "Without NexAI",
+        "items": [
+          "Many calls get missed",
+          "Customers wait for a callback",
+          "Appointments are forgotten",
+          "Prospects drop off to competitors"
+        ]
+      },
+      "with": {
+        "title": "With NexAI",
+        "items": [
+          "Every call is answered instantly",
+          "Appointments are booked automatically",
+          "Prospects are qualified",
+          "All data lands in the CRM automatically"
+        ]
+      },
+      "resultValue": "120",
+      "resultLabel": "enquiries a month — not a single one lost.",
+      "resultText": "The agency delivers measurably better results, the roofer wins more jobs. Everyone wins — and the partnership becomes indispensable."
+    },
+    "why": {
+      "eyebrow": "Why NexAI?",
+      "title": "A partner you can rely on.",
+      "description": "Modern AI technology, personally supported and cleanly integrated into existing systems.",
+      "items": [
+        "Available around the clock",
+        "Unlimited scalability",
+        "GDPR-compliant processes (as far as technically and organisationally implemented)",
+        "Bespoke development, not off-the-shelf",
+        "Personal support with a dedicated contact",
+        "Fast setup",
+        "Ongoing optimisation",
+        "Modern AI technology",
+        "Integration into existing systems"
+      ]
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Common questions about the partnership.",
+      "items": [
+        {
+          "q": "Is NexAI a competitor to us?",
+          "a": "No. NexAI doesn't replace your offering, it extends it. You stay your client's point of contact — we deliver the AI technology in the background."
+        },
+        {
+          "q": "What does the partnership cost me?",
+          "a": "The partnership itself is straightforward. We agree the exact model — referral, joint projects, commission or white-label — individually in the partner call."
+        },
+        {
+          "q": "Do I earn from the partnership?",
+          "a": "Yes. Depending on the model, through cross- and up-selling in your portfolio, recurring revenue, or a commission for referred clients. We work out the details together."
+        },
+        {
+          "q": "Can I offer the solution under my own brand?",
+          "a": "Yes, white-label is possible. On request, NexAI stays entirely in the background and you offer the solution under your own name."
+        },
+        {
+          "q": "Do I need technical know-how?",
+          "a": "No. We handle concept, setup, operation and optimisation. You need no developers and no AI expertise."
+        },
+        {
+          "q": "How does the collaboration work?",
+          "a": "First a no-obligation partner call, then a fitting concept for your clients, followed by implementation and ongoing operation — and you always keep the client relationship."
+        },
+        {
+          "q": "Which clients is NexAI suited for?",
+          "a": "Almost any business with inbound enquiries or calls — from trades and practices to law firms, service providers and online shops."
+        },
+        {
+          "q": "How quickly is a solution ready for a client?",
+          "a": "Usually within a few business days. With custom development it can take up to 10 business days."
+        },
+        {
+          "q": "Who supports the clients technically?",
+          "a": "NexAI does: setup, operation and ongoing optimisation. That means no extra workload for you."
+        },
+        {
+          "q": "How is data protection handled?",
+          "a": "Data protection under GDPR is a high priority for us — as far as technically and organisationally implemented. Data hosting in Germany or the EU is available on request."
+        },
+        {
+          "q": "Which systems can be integrated?",
+          "a": "Phone systems, CRM, calendar, email and many more tools. We cleanly connect your clients' existing processes."
+        },
+        {
+          "q": "What does the solution cost the end customer?",
+          "a": "Prices vary from agent to agent, depending on scope and effort. We prepare a transparent offer for every project."
+        },
+        {
+          "q": "Are there minimum volumes or long contracts?",
+          "a": "No. You bring in as many or as few clients as you like — flexibly and without a long commitment."
+        },
+        {
+          "q": "How is this different from standard chatbots?",
+          "a": "NexAI doesn't ship template bots but real AI agents: custom-built, integrated into your systems and designed to hold up reliably in real operation."
+        },
+        {
+          "q": "What happens after the partner call?",
+          "a": "You receive a no-obligation concept with concrete next steps. We only start once it's a fit for both sides."
+        }
+      ]
+    },
+    "form": {
+      "eyebrow": "Become a partner",
+      "title": "Let's give your clients even more value — together.",
+      "description": "Tell us briefly about your company and your clients. We'll get in touch for a no-obligation partner call.",
+      "assurances": [
+        "No-obligation first call",
+        "Reply usually within one business day",
+        "A dedicated contact"
+      ],
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "name@company.com",
+      "company": "Company",
+      "companyPlaceholder": "Your company name",
+      "website": "Website (optional)",
+      "websitePlaceholder": "www.your-website.com",
+      "companyType": "Type of company",
+      "companyTypePlaceholder": "Please select",
+      "companyTypeOptions": [
+        "Marketing/advertising agency",
+        "SEO agency",
+        "Google Ads agency",
+        "Social media agency",
+        "Web design agency",
+        "Digital agency",
+        "IT service provider / system house",
+        "Software company",
+        "CRM provider",
+        "Business/digitalisation consultancy",
+        "Automation agency",
+        "Telecoms / call centre",
+        "Franchise system",
+        "Other"
+      ],
+      "message": "Message",
+      "messagePlaceholder": "What's it about? Tell us briefly about your clients and your goal.",
+      "submit": "Send partner request",
+      "submitting": "Sending …",
+      "successTitle": "Thank you for your interest!",
+      "success": "Your partner request has reached us. We usually reply within one business day.",
+      "errorRequired": "Please fill in this field.",
+      "errorEmail": "Please enter a valid email address.",
+      "errorSelect": "Please choose an option.",
+      "errorGeneric": "Something went wrong. Please try again or email mbt@nex-a-i.com."
+    }
+  }
+}

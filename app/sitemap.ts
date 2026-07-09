@@ -11,6 +11,7 @@ const paths = [
   "/pricing",
   "/about",
   "/careers",
+  "/partner",
   "/contact",
   "/imprint",
   "/privacy",

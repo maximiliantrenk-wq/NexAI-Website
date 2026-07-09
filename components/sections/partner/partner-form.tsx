@@ -1,0 +1,266 @@
+"use client";
+
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { z } from "zod";
+import { motion, AnimatePresence } from "motion/react";
+import { Check, ChevronDown, Loader2 } from "lucide-react";
+import { useTranslations } from "next-intl";
+import { Container } from "@/components/ui/container";
+import { Section } from "@/components/ui/section";
+import { Reveal } from "@/components/ui/reveal";
+import { cn } from "@/lib/utils";
+import { easeOutExpo } from "@/lib/motion";
+
+export function PartnerForm() {
+  const t = useTranslations("Partner.form");
+  const options = t.raw("companyTypeOptions") as string[];
+  const assurances = t.raw("assurances") as string[];
+
+  const schema = z.object({
+    name: z.string().min(1, t("errorRequired")),
+    email: z.string().email(t("errorEmail")),
+    company: z.string().min(1, t("errorRequired")),
+    website: z.string().optional(),
+    companyType: z.string().min(1, t("errorSelect")),
+    message: z.string().min(10, t("errorRequired")),
+  });
+  type FormValues = z.infer<typeof schema>;
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors, isSubmitting, isSubmitSuccessful },
+    setError,
+  } = useForm<FormValues>({ resolver: zodResolver(schema) });
+
+  async function onSubmit(values: FormValues) {
+    try {
+      // Submit straight to FormSubmit from the browser — same endpoint as the
+      // contact form (already activated for this domain), distinct subject.
+      const res = await fetch("https://formsubmit.co/ajax/mbt@nex-a-i.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          name: values.name,
+          email: values.email,
+          company: values.company,
+          website: values.website?.trim() ? values.website : "—",
+          companyType: values.companyType,
+          message: values.message,
+          _subject: `Neue Partneranfrage von ${values.name}`,
+          _template: "table",
+          _captcha: "false",
+        }),
+      });
+      const data = await res.json().catch(() => null);
+      if (!res.ok || (data && String(data.success) !== "true")) {
+        throw new Error("request failed");
+      }
+    } catch {
+      setError("root", { message: t("errorGeneric") });
+    }
+  }
+
+  const field =
+    "w-full rounded-xl border border-line bg-white/[0.02] px-4 py-3 text-sm text-fg placeholder:text-subtle transition-colors focus-visible:border-blue/60 focus-visible:outline-none";
+  const label = "mb-2 block text-sm font-medium text-fg";
+  const errCls = "mt-1.5 text-xs text-red-400";
+
+  return (
+    <Section id="partner-form">
+      <Container>
+        <div className="grid gap-12 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] lg:gap-16">
+          <div>
+            <Reveal>
+              <p className="eyebrow">{t("eyebrow")}</p>
+            </Reveal>
+            <Reveal delay={0.05}>
+              <h2 className="mt-5 text-balance text-4xl font-semibold leading-[1.08] tracking-[-0.02em] sm:text-[2.75rem]">
+                {t("title")}
+              </h2>
+            </Reveal>
+            <Reveal delay={0.1}>
+              <p className="mt-5 max-w-md text-[17px] leading-relaxed text-muted">
+                {t("description")}
+              </p>
+            </Reveal>
+            <Reveal delay={0.15}>
+              <ul className="mt-8 space-y-3.5">
+                {assurances.map((a) => (
+                  <li key={a} className="flex items-center gap-3 text-[15px]">
+                    <span className="grid size-6 shrink-0 place-items-center rounded-full bg-gradient-to-br from-blue to-purple">
+                      <Check className="size-3.5 text-white" strokeWidth={3} />
+                    </span>
+                    {a}
+                  </li>
+                ))}
+              </ul>
+            </Reveal>
+          </div>
+
+          <Reveal delay={0.1}>
+            {isSubmitSuccessful && !errors.root ? (
+              <motion.div
+                initial={{ opacity: 0, y: 12 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ ease: easeOutExpo }}
+                className="surface-card flex h-full flex-col items-center justify-center rounded-2xl px-8 py-16 text-center"
+              >
+                <span className="grid size-14 place-items-center rounded-full bg-gradient-to-br from-blue to-purple">
+                  <Check className="size-7 text-white" strokeWidth={2.5} />
+                </span>
+                <h3 className="mt-6 text-xl font-semibold tracking-tight">
+                  {t("successTitle")}
+                </h3>
+                <p className="mt-2 max-w-sm text-sm text-muted">
+                  {t("success")}
+                </p>
+              </motion.div>
+            ) : (
+              <form
+                onSubmit={handleSubmit(onSubmit)}
+                noValidate
+                className="surface-card rounded-2xl p-7 sm:p-8"
+              >
+                <div className="grid gap-5">
+                  <div className="grid gap-5 sm:grid-cols-2">
+                    <div>
+                      <label htmlFor="p-name" className={label}>
+                        {t("name")}
+                      </label>
+                      <input
+                        id="p-name"
+                        {...register("name")}
+                        placeholder={t("namePlaceholder")}
+                        className={field}
+                        aria-invalid={!!errors.name}
+                      />
+                      {errors.name && (
+                        <p className={errCls}>{errors.name.message}</p>
+                      )}
+                    </div>
+                    <div>
+                      <label htmlFor="p-email" className={label}>
+                        {t("email")}
+                      </label>
+                      <input
+                        id="p-email"
+                        type="email"
+                        {...register("email")}
+                        placeholder={t("emailPlaceholder")}
+                        className={field}
+                        aria-invalid={!!errors.email}
+                      />
+                      {errors.email && (
+                        <p className={errCls}>{errors.email.message}</p>
+                      )}
+                    </div>
+                  </div>
+
+                  <div className="grid gap-5 sm:grid-cols-2">
+                    <div>
+                      <label htmlFor="p-company" className={label}>
+                        {t("company")}
+                      </label>
+                      <input
+                        id="p-company"
+                        {...register("company")}
+                        placeholder={t("companyPlaceholder")}
+                        className={field}
+                        aria-invalid={!!errors.company}
+                      />
+                      {errors.company && (
+                        <p className={errCls}>{errors.company.message}</p>
+                      )}
+                    </div>
+                    <div>
+                      <label htmlFor="p-website" className={label}>
+                        {t("website")}
+                      </label>
+                      <input
+                        id="p-website"
+                        {...register("website")}
+                        placeholder={t("websitePlaceholder")}
+                        className={field}
+                      />
+                    </div>
+                  </div>
+
+                  <div>
+                    <label htmlFor="p-type" className={label}>
+                      {t("companyType")}
+                    </label>
+                    <div className="relative">
+                      <select
+                        id="p-type"
+                        {...register("companyType")}
+                        defaultValue=""
+                        aria-invalid={!!errors.companyType}
+                        className={cn(field, "cursor-pointer appearance-none pr-10")}
+                      >
+                        <option value="" disabled>
+                          {t("companyTypePlaceholder")}
+                        </option>
+                        {options.map((o) => (
+                          <option key={o} value={o} className="bg-elevated text-fg">
+                            {o}
+                          </option>
+                        ))}
+                      </select>
+                      <ChevronDown className="pointer-events-none absolute right-3.5 top-1/2 size-4 -translate-y-1/2 text-subtle" />
+                    </div>
+                    {errors.companyType && (
+                      <p className={errCls}>{errors.companyType.message}</p>
+                    )}
+                  </div>
+
+                  <div>
+                    <label htmlFor="p-message" className={label}>
+                      {t("message")}
+                    </label>
+                    <textarea
+                      id="p-message"
+                      rows={5}
+                      {...register("message")}
+                      placeholder={t("messagePlaceholder")}
+                      className={cn(field, "resize-none")}
+                      aria-invalid={!!errors.message}
+                    />
+                    {errors.message && (
+                      <p className={errCls}>{errors.message.message}</p>
+                    )}
+                  </div>
+
+                  <AnimatePresence>
+                    {errors.root && (
+                      <motion.p
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        className="text-sm text-red-400"
+                      >
+                        {errors.root.message}
+                      </motion.p>
+                    )}
+                  </AnimatePresence>
+
+                  <button
+                    type="submit"
+                    disabled={isSubmitting}
+                    className="mt-1 inline-flex h-12 items-center justify-center gap-2 rounded-full bg-gradient-to-r from-blue via-violet to-purple text-sm font-medium text-white shadow-[0_10px_34px_-12px_rgba(124,58,237,0.75)] transition-[transform,box-shadow,filter] hover:brightness-[1.08] active:scale-[0.99] disabled:opacity-70"
+                  >
+                    {isSubmitting && <Loader2 className="size-4 animate-spin" />}
+                    {isSubmitting ? t("submitting") : t("submit")}
+                  </button>
+                </div>
+              </form>
+            )}
+          </Reveal>
+        </div>
+      </Container>
+    </Section>
+  );
+}
