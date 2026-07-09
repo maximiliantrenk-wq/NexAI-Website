@@ -79,9 +79,9 @@
         "operation": "getAll",
         "calendar": {
           "__rl": true,
-          "value": "REPLACE_WITH_GOOGLE_CALENDAR_ID",
-          "mode": "id",
-          "cachedResultName": "NEXAI Kalender (bitte auswählen)"
+          "value": "primary",
+          "mode": "list",
+          "cachedResultName": "Primary Calendar"
         },
         "returnAll": true,
         "options": {
@@ -165,9 +165,9 @@
         "operation": "create",
         "calendar": {
           "__rl": true,
-          "value": "REPLACE_WITH_GOOGLE_CALENDAR_ID",
-          "mode": "id",
-          "cachedResultName": "NEXAI Kalender (bitte auswählen)"
+          "value": "primary",
+          "mode": "list",
+          "cachedResultName": "Primary Calendar"
         },
         "start": "={{ $json.startISO }}",
         "end": "={{ $json.endISO }}",

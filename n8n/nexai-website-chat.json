@@ -75,18 +75,21 @@
     {
       "parameters": {
         "descriptionType": "manual",
-        "toolDescription": "Prüft im Google Kalender, ob ein Zeitraum frei ist. Übergib timeMin und timeMax als ISO 8601 (Europe/Berlin). Gibt die belegten Zeitfenster zurück – ist die Liste leer, ist der Zeitraum frei.",
-        "resource": "calendar",
-        "operation": "availability",
+        "toolDescription": "Prüft im Google Kalender, ob ein Zeitraum frei ist. Übergib timeMin und timeMax als ISO 8601 (Europe/Berlin). Gibt die Termine im Zeitraum zurück – ist die Liste leer, ist der Zeitraum frei.",
+        "resource": "event",
+        "operation": "getAll",
         "calendar": {
           "__rl": true,
-          "value": "REPLACE_WITH_GOOGLE_CALENDAR_ID",
-          "mode": "id",
-          "cachedResultName": "NEXAI Kalender (bitte auswählen)"
+          "value": "primary",
+          "mode": "list",
+          "cachedResultName": "Primary Calendar"
         },
-        "timeMin": "={{ $fromAI('timeMin', 'Beginn des zu prüfenden Zeitraums, ISO 8601 Europe/Berlin') }}",
-        "timeMax": "={{ $fromAI('timeMax', 'Ende des zu prüfenden Zeitraums, ISO 8601 Europe/Berlin') }}",
-        "options": {}
+        "returnAll": false,
+        "limit": 20,
+        "options": {
+          "timeMin": "={{ $fromAI('timeMin', 'Beginn des zu prüfenden Zeitraums, ISO 8601 Europe/Berlin') }}",
+          "timeMax": "={{ $fromAI('timeMax', 'Ende des zu prüfenden Zeitraums, ISO 8601 Europe/Berlin') }}"
+        }
       },
       "id": "googleCalendarTool-018",
       "name": "check_availability",
