@@ -1,6 +1,6 @@
 # NEXAI — Website
 
-Premium, bilingual (DE/EN) marketing site for **NEXAI**, an AI agency from Crailsheim that builds **"digital employees"** — AI voice agents, chatbots, social-media AI, sales/outreach agents, automations, custom agents and websites. Dark-first, minimalist, world-class design language inspired by OpenAI / Linear / Stripe / Vercel. Contact: mbt@nex-a-i.com · 0176 20147646 · domain nex-a-i.com.
+Premium, bilingual (DE/EN) marketing site for **NEXAI**, an AI agency from Crailsheim that builds **"digital employees"** — AI voice agents, chatbots, social-media AI, sales/outreach agents, automations, custom agents and websites. Dark-first, minimalist, world-class design language inspired by OpenAI / Linear / Stripe / Vercel. Contact: mbt@nex-a-i.com · 0176 80714816 · domain nex-a-i.com.
 
 ## Stack
 
@@ -32,7 +32,11 @@ app/[locale]/            # all pages (root layout with <html>, Header/Footer liv
   services|cases|pricing|about|careers|contact|imprint|privacy/
   cases/[slug]/          # case detail (generateStaticParams from content/cases.ts)
   [...rest]/             # catch-all → notFound()
-app/api/contact/         # form endpoint (stub — wire Resend here)
+app/api/contact/         # contact form endpoint (wired to Resend via lib/email.ts)
+app/api/partner/         # partner form endpoint (Resend)
+app/api/chat/            # chatbot proxy → n8n webhook (see n8n/SETUP.md)
+components/chat/         # floating chat widget (chat-widget.tsx + use-chat.ts)
+n8n/                     # importable chatbot workflows + setup guide
 app/sitemap.ts, robots.ts
 components/ui/            # primitives: Button, Section, Container, Badge, Reveal, Faq, Marquee, Glow, GradientText
 components/layout/        # Header, Footer, MobileNav, LocaleSwitcher
@@ -55,6 +59,7 @@ proxy.ts                 # next-intl middleware (Next 16 renamed middleware → 
 ## Known follow-ups
 
 - Replace placeholder content with real company facts, cases, team, logos.
-- Fill `messages/*/legal.json` imprint/privacy with real legal details (currently a template).
-- Wire the contact form to Resend (or another provider) in `app/api/contact/route.ts`.
+- Fill `messages/*/legal.json` imprint/privacy with real legal details (currently a template). A ready-made chatbot privacy paragraph is in `n8n/privacy-snippet.md`.
+- The contact & partner forms are already wired to Resend (`lib/email.ts`); set `RESEND_API_KEY` in Vercel.
+- The chatbot needs `N8N_CHAT_WEBHOOK_URL` + `N8N_CHAT_SECRET` in Vercel and an active n8n workflow — see `n8n/SETUP.md`.
 - Optional: per-page hreflang link tags (sitemap already emits hreflang alternates).

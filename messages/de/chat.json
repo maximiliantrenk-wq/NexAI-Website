@@ -1,0 +1,20 @@
+{
+  "Chat": {
+    "launcher": "Chat öffnen",
+    "title": "NEXAI Assistent",
+    "status": "Online · Antwortet meist sofort",
+    "greeting": "Hallo! 👋 Ich bin der digitale Assistent von NEXAI. Fragen Sie mich zu unseren KI-Lösungen – oder vereinbaren Sie direkt einen Beratungstermin.",
+    "placeholder": "Nachricht schreiben …",
+    "send": "Nachricht senden",
+    "close": "Chat schließen",
+    "minimize": "Chat minimieren",
+    "typing": "NEXAI schreibt …",
+    "quickReplies": {
+      "services": "Was macht NEXAI?",
+      "appointment": "Termin vereinbaren",
+      "human": "Mit Mitarbeiter sprechen"
+    },
+    "error": "Entschuldigung, gerade gibt es ein technisches Problem. Bitte versuchen Sie es in einem Moment erneut – oder rufen Sie uns direkt an: 0176 80714816.",
+    "disclaimer": "KI-Assistent · Kann Fehler machen"
+  }
+}

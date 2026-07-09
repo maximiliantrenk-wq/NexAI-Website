@@ -8,6 +8,7 @@ import { routing } from "@/i18n/routing";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { Aurora } from "@/components/sections/aurora";
+import { ChatWidget } from "@/components/chat/chat-widget";
 import "../globals.css";
 
 export function generateStaticParams() {
@@ -107,6 +108,7 @@ export default async function LocaleLayout({
           <Header />
           <main className="flex-1">{children}</main>
           <Footer />
+          <ChatWidget />
         </NextIntlClientProvider>
       </body>
     </html>

@@ -1,0 +1,429 @@
+{
+  "name": "NEXAI – Book Appointment (Sub-Workflow)",
+  "nodes": [
+    {
+      "parameters": {
+        "inputSource": "passthrough"
+      },
+      "id": "executeWorkflowTrigger-001",
+      "name": "When Executed by Another Workflow",
+      "type": "n8n-nodes-base.executeWorkflowTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        0,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Deterministische Validierung – niemals dem LLM überlassen.\nconst input = $input.first().json || {};\nconst src = (input.query && typeof input.query === 'object') ? input.query : input;\n\nconst name = String(src.name ?? '').trim();\nconst email = String(src.email ?? '').trim();\nconst phone = String(src.phone ?? '').trim();\nconst topic = String(src.topic ?? '').trim();\nconst rawStart = String(src.startISO ?? '').trim();\n\nconst TZ = 'Europe/Berlin';\nconst now = $now.setZone(TZ);\nconst problems = [];\n\nif (!name) problems.push('Name fehlt');\nif (!email && !phone) problems.push('E-Mail oder Telefonnummer fehlt');\nif (email && !/^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$/.test(email)) problems.push('E-Mail ungültig');\n\nlet start = DateTime.fromISO(rawStart, { zone: TZ });\nif (!start.isValid) start = DateTime.fromISO(rawStart).setZone(TZ);\nif (!rawStart || !start.isValid) problems.push('Startdatum ungültig');\n\nif (problems.length === 0) {\n  if (start < now.plus({ minutes: 60 })) problems.push('Termin zu kurzfristig oder in der Vergangenheit');\n  if (start > now.plus({ days: 180 })) problems.push('Termin zu weit in der Zukunft');\n}\n\nif (problems.length > 0) {\n  return [{ json: {\n    valid: false,\n    action: 'invalid',\n    response: {\n      ok: false,\n      error: 'invalid_input',\n      message: 'Bitte nennen Sie einen gültigen Namen, eine Kontaktmöglichkeit (E-Mail oder Telefon) und einen konkreten Wunschtermin mit Datum und Uhrzeit.',\n      problems,\n    },\n  }}];\n}\n\nconst end = start.plus({ minutes: 30 });\nreturn [{ json: {\n  valid: true,\n  name, email, phone, topic,\n  startISO: start.toISO(),\n  endISO: end.toISO(),\n  startLabel: start.setLocale('de').toFormat(\"cccc, dd.LL.yyyy, HH:mm\") + ' Uhr',\n  windowMinISO: now.toISO(),\n  windowMaxISO: start.plus({ days: 14 }).toISO(),\n  tz: TZ,\n}}];"
+      },
+      "id": "code-002",
+      "name": "Validate & Normalize",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        220,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "combinator": "and",
+          "conditions": [
+            {
+              "id": "cond-003",
+              "leftValue": "={{ $json.valid }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "if-004",
+      "name": "Is Valid",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        440,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "return [{ json: $json.response }];"
+      },
+      "id": "code-005",
+      "name": "Return: Invalid",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        660,
+        460
+      ]
+    },
+    {
+      "parameters": {
+        "resource": "event",
+        "operation": "getAll",
+        "calendar": {
+          "__rl": true,
+          "value": "REPLACE_WITH_GOOGLE_CALENDAR_ID",
+          "mode": "id",
+          "cachedResultName": "NEXAI Kalender (bitte auswählen)"
+        },
+        "returnAll": true,
+        "options": {
+          "timeMin": "={{ $json.windowMinISO }}",
+          "timeMax": "={{ $json.windowMaxISO }}",
+          "singleEvents": true,
+          "orderBy": "startTime"
+        }
+      },
+      "id": "googleCalendar-006",
+      "name": "Get Events (14d window)",
+      "type": "n8n-nodes-base.googleCalendar",
+      "typeVersion": 1.3,
+      "position": [
+        660,
+        200
+      ],
+      "alwaysOutputData": true
+    },
+    {
+      "parameters": {
+        "jsCode": "// Verfügbarkeit prüfen, Doppelbuchung erkennen, Alternativen deterministisch berechnen.\nconst v = $('Validate & Normalize').first().json;\nconst TZ = v.tz || 'Europe/Berlin';\nconst reqStart = DateTime.fromISO(v.startISO).setZone(TZ);\nconst reqEnd = DateTime.fromISO(v.endISO).setZone(TZ);\nconst overlaps = (aS, aE, bS, bE) => aS < bE && bS < aE;\n\n// Kalender-Events aus dem Fenster einsammeln (Get Events liefert bei leer ein {}).\nconst events = [];\nfor (const item of $input.all()) {\n  const e = item.json || {};\n  const s = e.start && (e.start.dateTime || e.start.date);\n  const en = e.end && (e.end.dateTime || e.end.date);\n  if (!s || !en) continue;\n  if (e.status === 'cancelled') continue;\n  const es = DateTime.fromISO(s).setZone(TZ);\n  const ee = DateTime.fromISO(en).setZone(TZ);\n  if (!es.isValid || !ee.isValid) continue;\n  const attendees = Array.isArray(e.attendees) ? e.attendees.map(a => a.email || '').join(' ') : '';\n  const text = ((e.summary || '') + ' ' + (e.description || '') + ' ' + attendees).toLowerCase();\n  events.push({ es, ee, text });\n}\n\nconst email = (v.email || '').toLowerCase();\nconst slotEvents = events.filter(ev => overlaps(reqStart, reqEnd, ev.es, ev.ee));\n\n// Dedupe: identischer Lead im selben Slot -> nicht doppelt buchen.\nif (email && slotEvents.some(ev => ev.text.includes(email))) {\n  return [{ json: { action: 'already', response: {\n    ok: true, alreadyBooked: true, label: v.startLabel,\n    message: 'Für diese E-Mail besteht zu diesem Zeitpunkt bereits ein Termin.',\n  }}}];\n}\n\n// Slot frei -> anlegen.\nif (slotEvents.length === 0) {\n  return [{ json: { action: 'create', ...v } }];\n}\n\n// Slot belegt -> bis zu 3 freie Alternativen (30-Min-Raster, Mo–Fr 8–18) berechnen.\nconst now = $now.setZone(TZ);\nlet cursor = (reqStart > now.plus({ minutes: 60 }) ? reqStart : now.plus({ minutes: 60 }))\n  .set({ second: 0, millisecond: 0 });\nconst m = cursor.minute;\nif (m > 0 && m < 30) cursor = cursor.set({ minute: 30 });\nelse if (m > 30) cursor = cursor.plus({ hours: 1 }).set({ minute: 0 });\n\nconst limit = reqStart.plus({ days: 14 });\nconst alternatives = [];\nlet guard = 0;\nwhile (alternatives.length < 3 && cursor < limit && guard < 3000) {\n  guard++;\n  const wd = cursor.weekday; // 1=Mo .. 7=So\n  const h = cursor.hour + cursor.minute / 60;\n  const inHours = wd >= 1 && wd <= 5 && h >= 8 && h + 0.5 <= 18;\n  if (inHours) {\n    const cEnd = cursor.plus({ minutes: 30 });\n    const busy = events.some(ev => overlaps(cursor, cEnd, ev.es, ev.ee));\n    if (!busy) {\n      alternatives.push({\n        startISO: cursor.toISO(),\n        label: cursor.setLocale('de').toFormat(\"cccc, dd.LL.yyyy, HH:mm\") + ' Uhr',\n      });\n    }\n  }\n  cursor = cursor.plus({ minutes: 30 });\n}\n\nreturn [{ json: { action: 'alternatives', response: {\n  ok: false, reason: 'busy',\n  message: 'Der gewünschte Termin ist leider belegt. Hier sind freie Alternativen:',\n  alternatives,\n}}}];"
+      },
+      "id": "code-007",
+      "name": "Evaluate Availability",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        880,
+        200
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "combinator": "and",
+          "conditions": [
+            {
+              "id": "cond-008",
+              "leftValue": "={{ $json.action }}",
+              "rightValue": "create",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "if-009",
+      "name": "Should Create",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        1100,
+        200
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "return [{ json: $json.response }];"
+      },
+      "id": "code-010",
+      "name": "Return: Busy or Already",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1320,
+        360
+      ]
+    },
+    {
+      "parameters": {
+        "resource": "event",
+        "operation": "create",
+        "calendar": {
+          "__rl": true,
+          "value": "REPLACE_WITH_GOOGLE_CALENDAR_ID",
+          "mode": "id",
+          "cachedResultName": "NEXAI Kalender (bitte auswählen)"
+        },
+        "start": "={{ $json.startISO }}",
+        "end": "={{ $json.endISO }}",
+        "additionalFields": {
+          "summary": "=Beratung NEXAI – {{ $json.name }}",
+          "description": "=Name: {{ $json.name }}\\nE-Mail: {{ $json.email }}\\nTelefon: {{ $json.phone }}\\nAnliegen: {{ $json.topic }}\\nQuelle: Website-Chat"
+        }
+      },
+      "id": "googleCalendar-011",
+      "name": "Create Event",
+      "type": "n8n-nodes-base.googleCalendar",
+      "typeVersion": 1.3,
+      "position": [
+        1320,
+        120
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "REPLACE_WITH_GOOGLE_SHEET_ID",
+          "mode": "id",
+          "cachedResultName": "Master-Leads-Sheet (bitte auswählen)"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "Website-Chat",
+          "mode": "name",
+          "cachedResultName": "Website-Chat"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "Timestamp",
+              "displayName": "Timestamp",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Name",
+              "displayName": "Name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "E-Mail",
+              "displayName": "E-Mail",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Telefon",
+              "displayName": "Telefon",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Anliegen",
+              "displayName": "Anliegen",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Termin",
+              "displayName": "Termin",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Status",
+              "displayName": "Status",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Quelle",
+              "displayName": "Quelle",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            }
+          ],
+          "value": {
+            "Timestamp": "={{ $now.setZone('Europe/Berlin').toFormat('yyyy-LL-dd HH:mm') }}",
+            "Name": "={{ $('Validate & Normalize').item.json.name }}",
+            "E-Mail": "={{ $('Validate & Normalize').item.json.email }}",
+            "Telefon": "={{ $('Validate & Normalize').item.json.phone }}",
+            "Anliegen": "={{ $('Validate & Normalize').item.json.topic }}",
+            "Termin": "={{ $('Validate & Normalize').item.json.startLabel }}",
+            "Status": "Termin gebucht",
+            "Quelle": "Website-Chat"
+          }
+        },
+        "options": {}
+      },
+      "id": "googleSheets-012",
+      "name": "Append Lead Row",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        1540,
+        120
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const v = $('Validate & Normalize').first().json;\nreturn [{ json: { ok: true, booked: true, label: v.startLabel, startISO: v.startISO } }];"
+      },
+      "id": "code-013",
+      "name": "Return: Booked",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1760,
+        120
+      ]
+    }
+  ],
+  "connections": {
+    "When Executed by Another Workflow": {
+      "main": [
+        [
+          {
+            "node": "Validate & Normalize",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Validate & Normalize": {
+      "main": [
+        [
+          {
+            "node": "Is Valid",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Is Valid": {
+      "main": [
+        [
+          {
+            "node": "Get Events (14d window)",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Return: Invalid",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Events (14d window)": {
+      "main": [
+        [
+          {
+            "node": "Evaluate Availability",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Evaluate Availability": {
+      "main": [
+        [
+          {
+            "node": "Should Create",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Should Create": {
+      "main": [
+        [
+          {
+            "node": "Create Event",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Return: Busy or Already",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create Event": {
+      "main": [
+        [
+          {
+            "node": "Append Lead Row",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Append Lead Row": {
+      "main": [
+        [
+          {
+            "node": "Return: Booked",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "pinData": {},
+  "meta": {
+    "templateId": "nexai-book-appointment"
+  },
+  "tags": []
+}
