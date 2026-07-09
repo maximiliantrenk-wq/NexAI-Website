@@ -5,7 +5,9 @@ import { fieldsToHtml, fieldsToText, sendMail } from "@/lib/email";
 const schema = z.object({
   name: z.string().min(1),
   email: z.string().email(),
-  company: z.string().optional(),
+  company: z.string().min(1),
+  website: z.string().optional(),
+  companyType: z.string().min(1),
   message: z.string().min(10),
 });
 
@@ -23,23 +25,24 @@ export async function POST(request: Request) {
     return NextResponse.json({ ok: false }, { status: 400 });
   }
 
-  const { name, email, company, message } = parsed.data;
+  const { name, email, company, website, companyType, message } = parsed.data;
   const fields = {
     Name: name,
     "E-Mail": email,
-    Unternehmen: company?.trim() ? company : "—",
+    Unternehmen: company,
+    Website: website?.trim() ? website : "—",
+    "Art des Unternehmens": companyType,
     Nachricht: message,
   };
 
   const result = await sendMail({
-    subject: `Neue Kontaktanfrage von ${name}`,
+    subject: `Neue Partneranfrage von ${name}`,
     replyTo: email,
     html: fieldsToHtml(fields),
     text: fieldsToText(fields),
   });
 
   if (!result.ok) {
-    // Missing API key = server misconfiguration (500); send failure = upstream (502).
     return NextResponse.json(
       { ok: false },
       { status: result.error === "not_configured" ? 500 : 502 },

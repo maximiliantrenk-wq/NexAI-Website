@@ -29,26 +29,18 @@ export function ContactForm() {
 
   async function onSubmit(values: FormValues) {
     try {
-      // Submit straight to FormSubmit from the browser — it needs the real
-      // site origin (sent automatically by the browser) to accept the request.
-      const res = await fetch("https://formsubmit.co/ajax/mbt@nex-a-i.com", {
+      const res = await fetch("/api/contact", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           name: values.name,
           email: values.email,
-          company: values.company?.trim() ? values.company : "—",
+          company: values.company ?? "",
           message: values.message,
-          _subject: `Neue Kontaktanfrage von ${values.name}`,
-          _template: "table",
-          _captcha: "false",
         }),
       });
       const data = await res.json().catch(() => null);
-      if (!res.ok || (data && String(data.success) !== "true")) {
+      if (!res.ok || !data?.ok) {
         throw new Error("request failed");
       }
     } catch {

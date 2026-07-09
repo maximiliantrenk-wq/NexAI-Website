@@ -36,28 +36,20 @@ export function PartnerForm() {
 
   async function onSubmit(values: FormValues) {
     try {
-      // Submit straight to FormSubmit from the browser — same endpoint as the
-      // contact form (already activated for this domain), distinct subject.
-      const res = await fetch("https://formsubmit.co/ajax/mbt@nex-a-i.com", {
+      const res = await fetch("/api/partner", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           name: values.name,
           email: values.email,
           company: values.company,
-          website: values.website?.trim() ? values.website : "—",
+          website: values.website ?? "",
           companyType: values.companyType,
           message: values.message,
-          _subject: `Neue Partneranfrage von ${values.name}`,
-          _template: "table",
-          _captcha: "false",
         }),
       });
       const data = await res.json().catch(() => null);
-      if (!res.ok || (data && String(data.success) !== "true")) {
+      if (!res.ok || !data?.ok) {
         throw new Error("request failed");
       }
     } catch {
