@@ -1,0 +1,178 @@
+{
+ "filename": "07_SEPA-Firmenlastschriftmandat",
+ "doc_title": "SEPA-Firmenlastschriftmandat (B2B)",
+ "blocks": [
+  {
+   "t": "title",
+   "text": "SEPA-Firmenlastschriftmandat (B2B)"
+  },
+  {
+   "t": "subtitle",
+   "text": "Mandat für wiederkehrende Zahlungen im SEPA-Firmenlastschriftverfahren (SEPA Business-to-Business Direct Debit Mandate)"
+  },
+  {
+   "t": "meta",
+   "text": "Stand: Juli 2026"
+  },
+  {
+   "t": "spacer",
+   "h": 6
+  },
+  {
+   "t": "p",
+   "text": "Dieses Mandat ergänzt den zwischen NexAI und dem Kunden geschlossenen Rahmenvertrag sowie das zugehörige Auftragsformular/den Leistungsschein. Es berechtigt NexAI, die dort vereinbarten wiederkehrenden Beiträge (monatlicher bzw. jährlicher Beitrag) sowie den abgerechneten Mehrverbrauch (Overage) im Wege der SEPA-Firmenlastschrift von dem nachstehend bezeichneten Konto des Kunden einzuziehen. Im Übrigen gelten die Zahlungsbestimmungen des Rahmenvertrages und der AGB (B2B) fort."
+  },
+  {
+   "t": "h1",
+   "num": "1.",
+   "text": "Zahlungsempfänger / Gläubiger"
+  },
+  {
+   "t": "p",
+   "text": "**NexAI – Next Generation Intelligence GbR**\nUntere Bergstraße 13, 74586 Frankenhardt-Honhardt, Deutschland\nVertreten durch die Gesellschafter Maximilian Trenk und Jason Brian Merklein\nE-Mail: mbt@nex-a-i.com · Telefon: 0176 20147646\n— nachfolgend \"NexAI\" oder \"Gläubiger\" —"
+  },
+  {
+   "t": "fill",
+   "label": "Gläubiger-Identifikationsnummer (Creditor Identifier)",
+   "value": "____"
+  },
+  {
+   "t": "fill",
+   "label": "Mandatsreferenz",
+   "value": "____"
+  },
+  {
+   "t": "note",
+   "text": "Wird die Mandatsreferenz bei Mandatserteilung noch nicht vergeben, teilt NexAI sie dem Kunden spätestens mit der ersten Vorabankündigung (Pre-Notification) gesondert in Textform mit. Die Mandatsreferenz bildet zusammen mit der Gläubiger-Identifikationsnummer die eindeutige Kennung dieses Mandats."
+  },
+  {
+   "t": "h1",
+   "num": "2.",
+   "text": "Zahler / Kunde"
+  },
+  {
+   "t": "fill",
+   "label": "Name / Firma des Zahlers (Kontoinhaber)",
+   "value": ""
+  },
+  {
+   "t": "fill",
+   "label": "Anschrift (Straße, Hausnummer)",
+   "value": ""
+  },
+  {
+   "t": "fill",
+   "label": "PLZ, Ort, Land",
+   "value": ""
+  },
+  {
+   "t": "fill",
+   "label": "Kreditinstitut (Name der Bank)",
+   "value": ""
+  },
+  {
+   "t": "fill",
+   "label": "IBAN",
+   "value": ""
+  },
+  {
+   "t": "fill",
+   "label": "BIC",
+   "value": ""
+  },
+  {
+   "t": "note",
+   "text": "Der Zahler ist Nichtverbraucher (Unternehmer, juristische Person oder rechtsfähige Personengesellschaft) und damit zur Teilnahme am SEPA-Firmenlastschriftverfahren zugelassen. Das Firmenlastschriftverfahren ist Verbrauchern nicht eröffnet. Ist der Kontoinhaber nicht mit dem Kunden aus dem Rahmenvertrag identisch, sichert der Kunde zu, zur Erteilung dieses Mandats über das vorstehende Konto berechtigt zu sein."
+  },
+  {
+   "t": "h1",
+   "num": "3.",
+   "text": "Mandatstext (SEPA-Firmenlastschrift)"
+  },
+  {
+   "t": "p",
+   "text": "Ich/Wir ermächtige(n) NexAI, Zahlungen von meinem/unserem vorstehend bezeichneten Konto mittels **SEPA-Firmenlastschrift** einzuziehen. Zugleich weise(n) ich/wir mein/unser Kreditinstitut an, die von NexAI auf mein/unser Konto gezogenen SEPA-Firmenlastschriften einzulösen."
+  },
+  {
+   "t": "p",
+   "text": "Dieses Mandat gilt für **wiederkehrende Zahlungen** – insbesondere die vereinbarten monatlichen bzw. jährlichen Beiträge sowie den abgerechneten Mehrverbrauch (Overage) – und bleibt bis auf Widerruf gültig."
+  },
+  {
+   "t": "num",
+   "items": [
+    "**Kein Erstattungsanspruch nach Einlösung:** Im SEPA-Firmenlastschriftverfahren besteht – anders als bei der SEPA-Basislastschrift – nach erfolgter Einlösung kein Anspruch auf Erstattung des belasteten Betrages. Mit Belastung meines/unseres Kontos ist die Zahlung endgültig; ein Erstattungsverlangen ist ausgeschlossen (§ 675x Abs. 1 i. V. m. § 675e Abs. 4 BGB). Einwendungen gegen die Berechtigung der Forderung sind unmittelbar gegenüber NexAI geltend zu machen und lassen die Endgültigkeit der Zahlung unberührt.",
+    "**Registrierungspflicht bei der Bank:** Ich/Wir verpflichte(n) mich/uns, dieses Mandat unverzüglich, spätestens jedoch vor dem ersten Einzug, bei meinem/unserem Kreditinstitut zu bestätigen bzw. registrieren zu lassen. Ohne diese Registrierung kann die Bank den Einzug zurückweisen; hierdurch bedingte Rücklastschriften, Kosten und Verzögerungen gehen zu Lasten des Zahlers (Abschnitt 5).",
+    "**Prüfung durch die Bank:** Mein/Unser Kreditinstitut ist nicht verpflichtet, die Lastschrift einzulösen, insbesondere wenn das Konto nicht die erforderliche Deckung aufweist. Eine nur teilweise Einlösung erfolgt nicht.",
+    "**Änderungen der Kontoverbindung:** Änderungen der Kontoverbindung (IBAN, BIC, Kreditinstitut) oder der Kontoinhaberschaft sind NexAI unverzüglich in Textform mitzuteilen. Bei Änderung der Kontoverbindung ist auf Verlangen von NexAI ein neues Mandat zu erteilen.",
+    "**Widerruf:** Das Mandat kann jederzeit mit Wirkung für die Zukunft widerrufen werden. Der Widerruf ist gegenüber NexAI in Textform (z. B. E-Mail an mbt@nex-a-i.com) zu erklären; er lässt bereits fällige oder bereits eingezogene Forderungen sowie die Zahlungspflicht aus dem Rahmenvertrag unberührt. Bei Wegfall des Mandats erfolgt die Zahlung per Überweisung nach Abschnitt 6."
+   ]
+  },
+  {
+   "t": "h1",
+   "num": "4.",
+   "text": "Vorabankündigung (Pre-Notification)"
+  },
+  {
+   "t": "p",
+   "text": "NexAI kündigt jeden Einzug per SEPA-Firmenlastschrift vorab an (Pre-Notification). Die Frist für die Vorabankündigung wird einvernehmlich auf **einen (1) Kalendertag** vor Fälligkeit verkürzt. Die Vorabankündigung kann in Textform erfolgen, insbesondere per E-Mail oder als Bestandteil der Rechnung, und enthält Betrag und Fälligkeitsdatum. Bei wiederkehrenden Beiträgen gleichbleibender Höhe genügt eine einmalige Vorabankündigung unter Angabe von Betrag, Fälligkeitsturnus und Mandatsreferenz; ändert sich der Betrag (z. B. durch Mehrverbrauch/Overage), wird der geänderte Betrag rechtzeitig unter Wahrung der vorgenannten Frist angekündigt."
+  },
+  {
+   "t": "h1",
+   "num": "5.",
+   "text": "Rücklastschriften"
+  },
+  {
+   "t": "p",
+   "text": "Wird eine Lastschrift aus einem vom Kunden zu vertretenden Grund zurückgegeben – insbesondere mangels Kontodeckung, wegen fehlender oder nicht registrierter Mandatsbestätigung bei der Bank, wegen Widerspruchs oder Auflösung des Kontos –, so trägt der Kunde die hierdurch entstehenden Kosten. Der Kunde erstattet NexAI die **tatsächlich angefallenen Bankentgelte** der Rücklastschrift sowie eine **angemessene Bearbeitungspauschale** für den entstandenen Verwaltungsaufwand. Dem Kunden bleibt der Nachweis vorbehalten, dass ein Schaden oder eine Wertminderung überhaupt nicht oder in wesentlich geringerer Höhe entstanden ist. Die Geltendmachung eines weitergehenden Schadens sowie etwaiger Verzugsansprüche durch NexAI bleibt unberührt."
+  },
+  {
+   "t": "h1",
+   "num": "6.",
+   "text": "Zahlung per Überweisung (Fallback)"
+  },
+  {
+   "t": "p",
+   "text": "Erteilt der Kunde kein Firmenlastschriftmandat, ist ein solches unwirksam, wird es widerrufen oder scheitert der Einzug wiederholt aus vom Kunden zu vertretenden Gründen, so erfolgt die Zahlung per **Überweisung**. In diesem Fall sind die geschuldeten Beträge ohne Abzug so rechtzeitig auf das in der Rechnung angegebene Konto von NexAI zu überweisen, dass sie spätestens am **dritten (3.) Werktag vor Fälligkeit** angewiesen sind und NexAI fristgerecht gutgeschrieben werden."
+  },
+  {
+   "t": "h1",
+   "num": "7.",
+   "text": "Ort, Datum, Unterschrift des Zahlers"
+  },
+  {
+   "t": "p",
+   "text": "Mit meiner/unserer Unterschrift bestätige(n) ich/wir die Richtigkeit der vorstehenden Angaben, erteile(n) das SEPA-Firmenlastschriftmandat zugunsten von NexAI und erkenne(n) die vorstehenden Bedingungen an."
+  },
+  {
+   "t": "spacer",
+   "h": 10
+  },
+  {
+   "t": "sig",
+   "cols": [
+    {
+     "role": "Für den Kunden (Zahler / Kontoinhaber)",
+     "lines": [
+      "Ort, Datum",
+      "",
+      "Name / Funktion",
+      "",
+      "Unterschrift und ggf. Firmenstempel"
+     ]
+    }
+   ]
+  },
+  {
+   "t": "spacer",
+   "h": 8
+  },
+  {
+   "t": "note",
+   "text": "Hinweis: Zur Nutzung des SEPA-Firmenlastschriftverfahrens ist eine Gläubiger-Identifikationsnummer (Creditor Identifier) erforderlich. Diese ist bei der Deutschen Bundesbank zu beantragen und in Abschnitt 1 einzutragen."
+  },
+  {
+   "t": "note",
+   "text": "Dies ist ein sorgfältig erstellter Entwurf. Er ersetzt keine Rechtsberatung und sollte für den Einzelfall anwaltlich geprüft werden."
+  }
+ ]
+}

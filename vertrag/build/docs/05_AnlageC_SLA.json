@@ -1,0 +1,322 @@
+{
+ "filename": "05_AnlageC_SLA",
+ "doc_title": "Anlage C – Service Level Agreement (SLA)",
+ "doc_subtitle": "zum Rahmenvertrag zwischen NexAI und dem Kunden",
+ "blocks": [
+  {
+   "t": "title",
+   "text": "Anlage C – Service Level Agreement (SLA)"
+  },
+  {
+   "t": "subtitle",
+   "text": "Support- und Servicebedingungen für den laufenden Betrieb der Agenten"
+  },
+  {
+   "t": "meta",
+   "text": "Stand: Juli 2026"
+  },
+  {
+   "t": "spacer",
+   "h": 6
+  },
+  {
+   "t": "h1",
+   "num": "1.",
+   "text": "Zweck und Geltung"
+  },
+  {
+   "t": "p",
+   "text": "Diese Anlage C (Service Level Agreement, nachfolgend \"SLA\") regelt die Support- und Servicebedingungen für die von der **NexAI – Next Generation Intelligence GbR**, Untere Bergstraße 13, 74586 Frankenhardt-Honhardt, vertreten durch die Gesellschafter Maximilian Trenk und Jason Brian Merklein (nachfolgend \"NexAI\"), gegenüber dem im Auftragsformular bezeichneten Kunden (nachfolgend \"Kunde\") erbrachten Betriebsleistungen, insbesondere Betrieb, Wartung, Hosting und Support der Agenten."
+  },
+  {
+   "t": "num",
+   "items": [
+    "Diese Anlage C ist Bestandteil der Vertragsdokumente und ergänzt den Rahmenvertrag. Sie gilt für die Dauer des jeweiligen Betriebsverhältnisses und ausschließlich für Betriebsleistungen im Sinne des Dienstvertragsrechts; für Projektleistungen (einmalige Werkleistungen) gilt sie nicht.",
+    "Bei Widersprüchen zwischen dieser Anlage C und dem Rahmenvertrag gehen die Regelungen des Rahmenvertrags vor, soweit dort nicht ausdrücklich auf diese Anlage verwiesen wird.",
+    "Die in dieser Anlage genannten Support- und Reaktionszeiten setzen ein bestehendes, nicht gekündigtes und nicht (durch Zahlungsverzug oder aus anderem Grund berechtigt) ausgesetztes Vertragsverhältnis sowie die vollständige Erfüllung der fälligen Zahlungspflichten des Kunden voraus.",
+    "Die in den Vertragsdokumenten (insbesondere Rahmenvertrag, Anlage A und Anlage B (AVV)) definierten Begriffe gelten in dieser Anlage einheitlich fort."
+   ]
+  },
+  {
+   "t": "h1",
+   "num": "2.",
+   "text": "Servicezeiten"
+  },
+  {
+   "t": "num",
+   "items": [
+    "Die regulären **Servicezeiten** von NexAI sind Montag bis Freitag von **08:00 bis 17:00 Uhr** (gesetzliche Zeit in Deutschland, MEZ/MESZ), ausgenommen die gesetzlichen Feiertage am Sitz von NexAI im Bundesland **Baden-Württemberg**.",
+    "Als **Werktage** im Sinne dieser Anlage gelten Montag bis Freitag mit Ausnahme der vorgenannten gesetzlichen Feiertage.",
+    "Supportanfragen, die außerhalb der Servicezeiten eingehen, gelten als am nächsten Werktag zu Beginn der Servicezeiten (08:00 Uhr) eingegangen. Die in Abschnitt 4 genannten Reaktionszeiten beginnen erst mit diesem Zeitpunkt zu laufen und werden ausschließlich innerhalb der Servicezeiten berechnet.",
+    "NexAI ist nicht zu einer über die Servicezeiten hinausgehenden Erreichbarkeit, Rufbereitschaft oder Überwachung verpflichtet. Ein 24/7-Support oder eine 24/7-Überwachung wird nicht geschuldet."
+   ]
+  },
+  {
+   "t": "h1",
+   "num": "3.",
+   "text": "Supportkanäle"
+  },
+  {
+   "t": "p",
+   "text": "Support wird über die nachfolgenden Kanäle erbracht. NexAI ist berechtigt, den für die jeweilige Anfrage geeigneten Kanal zu bestimmen:"
+  },
+  {
+   "t": "bullets",
+   "items": [
+    "**E-Mail** an mbt@nex-a-i.com (bevorzugter Kanal für die Meldung und Dokumentation von Störungen);",
+    "**Telefon** unter 0176 20147646 innerhalb der Servicezeiten;",
+    "**Videokonferenz** nach vorheriger Terminvereinbarung;",
+    "**Fernwartung** (Remote-Zugriff) nach vorheriger Abstimmung und Freigabe durch den Kunden;",
+    "sofern von NexAI bereitgestellt: ein **Ticketsystem** zur strukturierten Erfassung und Nachverfolgung von Anfragen."
+   ]
+  },
+  {
+   "t": "num",
+   "items": [
+    "Maßgeblich für die Fristberechnung ist der Eingang der Anfrage über den jeweils von NexAI benannten oder genutzten Supportkanal. NexAI kann verlangen, dass Störungsmeldungen zur Nachvollziehbarkeit in Textform (insbesondere per E-Mail oder Ticketsystem) erfolgen.",
+    "Der Kunde benennt NexAI mindestens einen fachkundigen Ansprechpartner, der zur Meldung und Bearbeitung von Supportanfragen berechtigt ist."
+   ]
+  },
+  {
+   "t": "pagebreak"
+  },
+  {
+   "t": "h1",
+   "num": "4.",
+   "text": "Prioritäten und Reaktionszeiten"
+  },
+  {
+   "t": "p",
+   "text": "NexAI kategorisiert gemeldete Störungen nach den nachfolgenden Prioritätsstufen. Die Einordnung nimmt NexAI nach pflichtgemäßem Ermessen anhand der tatsächlichen Auswirkung auf den Betrieb und unter angemessener Berücksichtigung der Angaben des Kunden vor. Die genannten Zeiten sind **Erstreaktionszeiten** und laufen ausschließlich innerhalb der Servicezeiten (Abschnitt 2)."
+  },
+  {
+   "t": "h2",
+   "text": "4.1 Prioritätsstufen und Beispiele"
+  },
+  {
+   "t": "table",
+   "header": [
+    "Priorität",
+    "Definition",
+    "Beispiele",
+    "Erstreaktion"
+   ],
+   "rows": [
+    [
+     "P1 – Kritisch",
+     "Totalausfall; ein Agent ist vollständig funktionsunfähig und es besteht keine nutzbare Ausweichmöglichkeit.",
+     "Voice Agent nimmt keine Anrufe mehr entgegen; Chat Agent ist vollständig nicht erreichbar; kompletter Ausfall aller Agenten.",
+     "innerhalb von **8 Stunden**"
+    ],
+    [
+     "P2 – Hoch",
+     "Ausfall oder erhebliche Störung einer wesentlichen Funktion; die Kernnutzung ist stark beeinträchtigt, ein eingeschränkter Betrieb bleibt aber möglich.",
+     "Terminbuchung schlägt systematisch fehl; wesentliche Integration (z. B. Kalender/CRM) liefert keine Daten; wiederkehrende Abbrüche im Gesprächsverlauf.",
+     "innerhalb von **1 Werktag**"
+    ],
+    [
+     "P3 – Mittel",
+     "Störung einer Teilfunktion; einzelne, nicht geschäftskritische Funktionen sind beeinträchtigt, der Gesamtbetrieb ist im Wesentlichen nutzbar.",
+     "Fehlerhafte Formulierung in einer Ansage; einzelne Automatisierungsschritte mit Verzögerung; kosmetische oder nicht kritische Fehler.",
+     "innerhalb von **2 Werktagen**"
+    ],
+    [
+     "P4 – Niedrig",
+     "Allgemeine Anfrage, Auskunft oder Änderungswunsch ohne Störungscharakter.",
+     "Fragen zur Bedienung; Wunsch nach kleiner Anpassung; Auswertungs- oder Konfigurationsanfragen.",
+     "innerhalb von **3 Werktagen**"
+    ]
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "4.2 Art der Reaktionszeit"
+  },
+  {
+   "t": "num",
+   "items": [
+    "Die **Erstreaktionszeit** bezeichnet den Zeitraum bis zur ersten inhaltlichen Rückmeldung von NexAI, mit der die Bearbeitung aufgenommen und das weitere Vorgehen mitgeteilt wird. Eine automatisierte Eingangsbestätigung stellt keine Erstreaktion dar.",
+    "NexAI schuldet die Erstreaktion innerhalb der genannten Zeiten als Bemühensschuld. Eine bestimmte **Wiederherstellungs-, Lösungs- oder Behebungszeit wird ausdrücklich nicht garantiert.** NexAI wird sich bemühen, gemeldete Störungen mit der nach den Umständen gebotenen Sorgfalt und in einer der Priorität angemessenen Weise zu bearbeiten und zu beheben.",
+    "Ursachen, die außerhalb des Einflussbereichs von NexAI liegen – insbesondere Störungen, Ausfälle, Wartungen oder Änderungen bei Subunternehmern und Drittdiensten (z. B. Vapi, Twilio, Make, OpenAI, ElevenLabs, Google, Hoster) sowie Ereignisse höherer Gewalt – hemmen den Lauf der Reaktionszeiten für die Dauer ihres Bestehens. NexAI wird den Kunden über solche Umstände, sobald erkannt, unterrichten.",
+    "Die Reaktionszeiten werden ferner gehemmt, solange NexAI auf die erforderliche Mitwirkung des Kunden (Abschnitt 10) wartet, insbesondere auf eine Fehlerbeschreibung, Rückfragenbeantwortung oder Bereitstellung von Zugängen."
+   ]
+  },
+  {
+   "t": "h1",
+   "num": "5.",
+   "text": "Enthaltener und nicht enthaltener Support"
+  },
+  {
+   "t": "h2",
+   "text": "5.1 Enthaltener Support"
+  },
+  {
+   "t": "p",
+   "text": "Im laufenden Beitrag enthalten sind – im Rahmen der Servicezeiten und der vereinbarten Freikontingente – insbesondere:"
+  },
+  {
+   "t": "bullets",
+   "items": [
+    "die Entgegennahme, Kategorisierung und Bearbeitung von Störungsmeldungen zu den beauftragten Agenten;",
+    "die Analyse und, im Rahmen der Bemühensschuld, die Behebung von Störungen im Verantwortungsbereich von NexAI;",
+    "die laufende Betreuung, Wartung und Pflege der beauftragten Agenten im vertraglich vereinbarten Umfang;",
+    "geringfügige Konfigurationsanpassungen bestehender Agenten ohne wesentliche Änderung des Leistungsumfangs;",
+    "Auskünfte zur Bedienung und zum vereinbarten Funktionsumfang."
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "5.2 Nicht enthaltener, gesondert zu vergütender Support"
+  },
+  {
+   "t": "p",
+   "text": "Nicht vom laufenden Beitrag umfasst und nur nach gesonderter Beauftragung und Vergütung geschuldet sind insbesondere:"
+  },
+  {
+   "t": "bullets",
+   "items": [
+    "die Entwicklung, Einrichtung oder Freischaltung **neuer Funktionen** oder wesentlicher Erweiterungen bestehender Agenten;",
+    "die Erstellung, Einrichtung und Inbetriebnahme **weiterer oder neuer Agenten**;",
+    "die Anbindung, Änderung oder Erweiterung von **Integrationen** und Schnittstellen zu Dritt- oder Kundensystemen;",
+    "**Schulungen**, Workshops und Einweisungen;",
+    "die Behebung von Störungen, die auf Ursachen im Verantwortungsbereich des Kunden, Dritter oder auf höhere Gewalt zurückzuführen sind (Aufwandsvergütung zu den jeweils gültigen Sätzen);",
+    "Leistungen außerhalb der Servicezeiten, soweit nicht gesondert vereinbart."
+   ]
+  },
+  {
+   "t": "num",
+   "items": [
+    "Nicht enthaltene Leistungen werden nach Aufwand zu den jeweils gültigen Netto-Stundensätzen von NexAI oder nach gesondertem Angebot abgerechnet. Alle Sätze verstehen sich netto zzgl. gesetzlicher Umsatzsteuer. NexAI wird den Kunden vor Aufnahme solcher Leistungen auf die Vergütungspflicht hinweisen."
+   ]
+  },
+  {
+   "t": "pagebreak"
+  },
+  {
+   "t": "h1",
+   "num": "6.",
+   "text": "Wartung und Wartungsfenster"
+  },
+  {
+   "t": "num",
+   "items": [
+    "NexAI ist berechtigt, zur Aufrechterhaltung und Verbesserung des Betriebs planbare Wartungsarbeiten durchzuführen. **Planbare Wartungen** werden nach Möglichkeit außerhalb der üblichen Geschäftszeiten des Kunden durchgeführt.",
+    "Planbare Wartungsarbeiten, die zu einer voraussichtlichen Beeinträchtigung der Erreichbarkeit der Agenten führen, kündigt NexAI mit einer Frist von mindestens **48 Stunden** in Textform (z. B. per E-Mail) an.",
+    "**Notfall- und Sicherheitswartungen** – insbesondere zur Abwehr akuter Sicherheitsrisiken, zur Behebung schwerwiegender Störungen oder aufgrund zwingender Vorgaben von Subunternehmern – darf NexAI ohne Vorankündigung und jederzeit durchführen. NexAI wird den Kunden hierüber unverzüglich informieren.",
+    "Angekündigte planbare Wartungsfenster sowie kurzzeitige, wartungsbedingte Unterbrechungen oder Beeinträchtigungen gelten nicht als Nichtverfügbarkeit im Sinne von Abschnitt 7 und stellen keine Pflichtverletzung dar. Die zwingende gesetzliche Haftung von NexAI, insbesondere bei Vorsatz und grober Fahrlässigkeit sowie bei der Verletzung von Leben, Körper oder Gesundheit, bleibt unberührt."
+   ]
+  },
+  {
+   "t": "h1",
+   "num": "7.",
+   "text": "Verfügbarkeit"
+  },
+  {
+   "t": "num",
+   "items": [
+    "NexAI schuldet **keine garantierte Verfügbarkeit (Uptime)** der Agenten. Als **unverbindliche Zielkennzahl** strebt NexAI für die von ihr selbst betriebene Orchestrierungsschicht eine Verfügbarkeit von **99 % im Monatsmittel** an.",
+    "Bei der Berechnung dieser Zielkennzahl bleiben unberücksichtigt: (a) Ausfälle, Störungen und Wartungen von Subunternehmern und Drittdiensten, (b) angekündigte und Notfall-Wartungsfenster (Abschnitt 6), (c) Ereignisse höherer Gewalt sowie (d) Störungen aus dem Verantwortungsbereich des Kunden oder Dritter.",
+    "Die Zielkennzahl stellt eine **Bemühensschuld** und **keine Beschaffenheits- oder Verfügbarkeitsgarantie** und keine zugesicherte Eigenschaft dar. Aus dem bloßen Nichterreichen der Zielkennzahl ergeben sich keine Vertragsstrafen, Gutschriften oder Minderungsansprüche, soweit nicht ausdrücklich abweichend vereinbart. Zwingende gesetzliche Ansprüche des Kunden bleiben unberührt.",
+    "Die Agenten beruhen auf wahrscheinlichkeitsbasierter KI-Technologie und sind naturgemäß nicht fehlerfrei; hierauf wird ausdrücklich hingewiesen. Eine Erfolgs-, Lead- oder Umsatzgarantie übernimmt NexAI nicht."
+   ]
+  },
+  {
+   "t": "h1",
+   "num": "8.",
+   "text": "Störungsmeldung, Fallback und Business Continuity"
+  },
+  {
+   "t": "num",
+   "items": [
+    "NexAI führt **keine 24/7-Überwachung** der Agenten durch und sagt eine solche nicht zu. Die Erkennung und Meldung von Störungen erfolgt im Rahmen der Servicezeiten sowie durch Meldungen des Kunden.",
+    "Der Kunde ist selbst dafür verantwortlich, für den Fall einer Nichtverfügbarkeit oder Störung der Agenten ein **angemessenes Ausweich- und Notfallverfahren (Fallback / Business Continuity)** vorzuhalten, das die Fortführung seiner geschäftskritischen Prozesse sicherstellt (z. B. Rufumleitung, manuelle Bearbeitung, alternative Kontaktwege).",
+    "Der Kunde ist verpflichtet, Störungen unverzüglich nach Kenntnis zu melden und den Schaden im Rahmen des Zumutbaren gering zu halten (**Schadensminderungsobliegenheit gemäß § 254 BGB**). Eine schuldhafte Verletzung dieser Obliegenheit kann Ansprüche des Kunden mindern oder ausschließen."
+   ]
+  },
+  {
+   "t": "h1",
+   "num": "9.",
+   "text": "Datensicherung"
+  },
+  {
+   "t": "num",
+   "items": [
+    "Der Kunde ist für die **Sicherung seiner eigenen Daten** selbst verantwortlich. Führendes System für Geschäftsdaten ist das jeweilige **Kundensystem**.",
+    "NexAI schuldet keine über die vertraglich vereinbarten Betriebsleistungen hinausgehende Datensicherung. Soweit eine Speicherung technisch abschaltbar ist, erfolgt keine Speicherung; im Übrigen gelten die Regelungen der Vertragsdokumente, insbesondere zur Aufbewahrung (regelmäßig sechs Monate) sowie zum 30-tägigen Export vor Löschung bei Vertragsende.",
+    "Vor Eingriffen, die mit einem Risiko für Datenbestände verbunden sein können, obliegt es dem Kunden, im Rahmen des Zumutbaren aktuelle Sicherungen der in seinen Systemen geführten Daten vorzuhalten."
+   ]
+  },
+  {
+   "t": "h1",
+   "num": "10.",
+   "text": "Drittanbieter und Mitwirkungspflichten des Kunden"
+  },
+  {
+   "t": "num",
+   "items": [
+    "Die Erbringung der Betriebsleistungen setzt die Verfügbarkeit und Funktionsfähigkeit von **Subunternehmern und Drittdiensten** voraus. NexAI hat auf deren Verfügbarkeit, Leistungsfähigkeit und Änderungen keinen Einfluss und übernimmt hierfür keine Gewähr. Störungen dieser Dienste liegen außerhalb des Verantwortungsbereichs von NexAI.",
+    "Der Kunde wirkt bei der Bearbeitung von Störungen im erforderlichen Umfang mit. Dazu gehört insbesondere: die Bereitstellung einer nachvollziehbaren **Fehlerbeschreibung** (Zeitpunkt, betroffener Agent, Auswirkung, gegebenenfalls Beispiele und Reproduktionsschritte), die zeitnahe Beantwortung von Rückfragen, die Benennung eines Ansprechpartners sowie die Bereitstellung erforderlicher **Zugänge**, Informationen und Freigaben.",
+    "Verzögerungen und Mehraufwände, die auf eine unzureichende oder verspätete Mitwirkung des Kunden zurückzuführen sind, gehen nicht zu Lasten von NexAI und hemmen den Lauf der Reaktionszeiten (Abschnitt 4.2 Ziffer 4)."
+   ]
+  },
+  {
+   "t": "h1",
+   "num": "11.",
+   "text": "Änderungsvorbehalt"
+  },
+  {
+   "t": "num",
+   "items": [
+    "NexAI ist berechtigt, dieses SLA mit Wirkung für die Zukunft anzupassen, soweit dies aus sachlichen Gründen – insbesondere aufgrund technischer Weiterentwicklungen, geänderter Leistungen von Subunternehmern oder geänderter rechtlicher Rahmenbedingungen – erforderlich ist und die Anpassung den Kunden nicht unangemessen benachteiligt. Der wesentliche Kern der geschuldeten Leistung bleibt unberührt.",
+    "Änderungen kündigt NexAI mindestens **sechs Wochen** vor ihrem Wirksamwerden in Textform an; dabei werden die geänderten Regelungen mitgeteilt oder in konsolidierter Fassung übermittelt.",
+    "Beeinträchtigt die Änderung die Interessen des Kunden nicht nur unerheblich, steht dem Kunden ein **Sonderkündigungsrecht** hinsichtlich des betroffenen Betriebsverhältnisses zum Zeitpunkt des Wirksamwerdens der Änderung zu. Kündigt der Kunde nicht, wird die Änderung zum angekündigten Zeitpunkt wirksam. Eine **Zustimmungsfiktion** wird nicht vereinbart; auf das Sonderkündigungsrecht und die Bedeutung eines Unterbleibens der Kündigung wird in der Änderungsankündigung gesondert hingewiesen."
+   ]
+  },
+  {
+   "t": "spacer",
+   "h": 6
+  },
+  {
+   "t": "note",
+   "text": "Dieses Dokument ist ein sorgfältig erstellter Entwurf und ersetzt keine Rechtsberatung im Einzelfall. Es sollte vor Verwendung für den konkreten Einzelfall anwaltlich geprüft werden."
+  },
+  {
+   "t": "spacer",
+   "h": 10
+  },
+  {
+   "t": "h1",
+   "num": "12.",
+   "text": "Unterschriften"
+  },
+  {
+   "t": "sig",
+   "cols": [
+    {
+     "role": "Für NexAI",
+     "lines": [
+      "Ort, Datum",
+      "",
+      "Maximilian Trenk (Gesellschafter)"
+     ]
+    },
+    {
+     "role": "Für NexAI",
+     "lines": [
+      "Ort, Datum",
+      "",
+      "Jason Brian Merklein (Gesellschafter)"
+     ]
+    },
+    {
+     "role": "Für den Kunden",
+     "lines": [
+      "Ort, Datum",
+      "",
+      "Name / Funktion"
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1255 @@
+{
+ "filename": "NexAI-Vertragswerk_einfach-erklaert",
+ "doc_title": "NexAI-Vertragswerk – einfach erklärt",
+ "blocks": [
+  {
+   "t": "title",
+   "text": "NexAI-Vertragswerk – einfach erklärt"
+  },
+  {
+   "t": "meta",
+   "text": "Stand: Juli 2026 · Jeder Paragraph in 3 Sätzen, ohne Juristendeutsch"
+  },
+  {
+   "t": "note",
+   "text": "Diese Fassung erklärt das Vertragswerk in einfacher Sprache. Rechtlich verbindlich sind allein die unterschriebenen Vertragsdokumente."
+  },
+  {
+   "t": "hr"
+  },
+  {
+   "t": "h1",
+   "text": "01 · Rahmen-Dienstleistungsvertrag"
+  },
+  {
+   "t": "p",
+   "text": "Das ist euer Grundvertrag mit jedem Kunden: Er regelt ein für alle Mal die allgemeinen Spielregeln der Zusammenarbeit, während die konkrete Leistung und der Preis später im separaten Auftragsformular und den Anlagen A–D festgelegt werden."
+  },
+  {
+   "t": "h2",
+   "text": "Anbieter / Kunde (Kopf des Vertrags)"
+  },
+  {
+   "t": "p",
+   "text": "Hier stehen oben ihr als NexAI GbR (mit Max und Jason als Gesellschafter) fest eingetragen, darunter kommen die Felder für die Kundendaten. Beim Ausfüllen tragt ihr Firma, Adresse, Ansprechpartner und Steuernummer des Kunden ein. Achtet darauf, dass wirklich die vertretungsberechtigte Person unterschreibt, sonst ist der Vertrag im Zweifel angreifbar."
+  },
+  {
+   "t": "h2",
+   "text": "§ 1 Vertragsgegenstand, Vertragsdokumente und Rangfolge"
+  },
+  {
+   "t": "p",
+   "text": "Hier steht, was ihr überhaupt macht (KI-Agenten und Websites) und dass jeder Einzelauftrag über ein Auftragsformular läuft, für das dann dieser Rahmenvertrag plus Anlagen gelten. Praktisch heißt das: Dieser Vertrag ist euer Fundament, das konkrete Projekt regelt ihr immer extra im Auftragsformular. Wichtig ist die Rangfolge bei Widersprüchen – zuerst gilt das Auftragsformular, dann dieser Rahmenvertrag, und beim Datenschutz hat immer die Anlage B (AVV) Vorrang."
+  },
+  {
+   "t": "h2",
+   "text": "§ 2 Vertragsschluss und Nachweis"
+  },
+  {
+   "t": "p",
+   "text": "Ein Vertrag kommt zustande, wenn beide unterschreiben oder sich per E-Mail/Textform einig sind – eine digitale Signatur reicht also aus. Im laufenden Betrieb genügen für Freigaben und Weisungen des Kunden E-Mail oder euer Ticketsystem, es muss nicht alles per Post kommen. Wichtig für euch: Ihr müsst wichtige Freigaben und Weisungen sauber dokumentieren, damit ihr später beweisen könnt, dass der Kunde etwas so wollte."
+  },
+  {
+   "t": "h2",
+   "text": "§ 3 Leistungen: Projekt- und Betriebsleistungen"
+  },
+  {
+   "t": "p",
+   "text": "Der Vertrag trennt zwei Arten von Leistung: einmalige Projekte (Website, Ersteinrichtung) als Werkvertrag mit geschuldetem Ergebnis, und laufenden Betrieb als Dienstvertrag, bei dem ihr nur gute Arbeit, aber keinen Erfolg schuldet. Das ist für euch enorm wichtig: Beim laufenden Betrieb müsst ihr keine bestimmte Zahl an Terminen, Leads oder Umsätzen liefern. Achtet darauf, dass Projekte formal abgenommen werden (Anlage D) – nutzt der Kunde die Leistung produktiv, gilt sie automatisch als abgenommen, und ab da läuft nur 1 Jahr Gewährleistung."
+  },
+  {
+   "t": "h2",
+   "text": "§ 4 KI-Systeme, Funktionsweise und KI-Transparenz"
+  },
+  {
+   "t": "p",
+   "text": "Hier steht klar, dass KI-Ausgaben nicht immer fehlerfrei sind und ihr keine Fehlerfreiheit schuldet, während der Kunde kritische Ergebnisse selbst prüfen muss. Das schützt euch, weil der Kunde für den richtigen Einsatz der Agenten verantwortlich ist. Ganz wichtig: Die KI-Kennzeichnung nach dem AI Act (Hinweis, dass man mit einer KI spricht) ist Pflicht und darf nicht abgeschaltet werden – wenn der Kunde das umgeht, dürft ihr den Agenten abschalten."
+  },
+  {
+   "t": "h2",
+   "text": "§ 5 Aufzeichnung und Transkription"
+  },
+  {
+   "t": "p",
+   "text": "Gespräche werden standardmäßig nicht aufgezeichnet oder transkribiert – nur wenn der Kunde das ausdrücklich schriftlich verlangt. Wird es aktiviert, kommt zwingend eine Pflicht-Ansage an den Anrufer, die nicht abschaltbar ist. Achtet darauf: Die Verantwortung für die Rechtsgrundlage (z. B. Einwilligung der Anrufer) liegt beim Kunden, nicht bei euch."
+  },
+  {
+   "t": "h2",
+   "text": "§ 6 Automatisierte Erklärungen der Agenten"
+  },
+  {
+   "t": "p",
+   "text": "Die Agenten dürfen informieren, Termine machen und vorqualifizieren, aber keine rechtsverbindlichen Zusagen, Preise oder Bestellungen abgeben. Das schützt euch und den Kunden davor, dass die KI aus Versehen einen Vertrag abschließt. Wichtig: Was der Agent im Kundenauftrag sagt, wird dem Kunden zugerechnet – ihr haftet dafür nur nach den engen Grenzen von § 12."
+  },
+  {
+   "t": "h2",
+   "text": "§ 7 Vergütung und Zahlung"
+  },
+  {
+   "t": "p",
+   "text": "Alle Preise sind netto, es gibt keine Setup-Gebühr, sondern nur einen monatlichen oder jährlichen Beitrag mit einem enthaltenen Freikontingent; Mehrverbrauch wird extra abgerechnet. Für euch heißt das: Overage rechnet ihr nachträglich mit dem Folgemonat ab, und ihr könnt pro Agent ein Ausgaben-Limit (Spend-Cap) setzen und bei Erreichen die Leistung pausieren. Rechnungen sind in 14 Tagen fällig, und bei Zahlungsverzug bekommt ihr 9 % über Basiszins plus 40 EUR Pauschale – zahlbar per Lastschrift oder Überweisung."
+  },
+  {
+   "t": "h2",
+   "text": "§ 7 (9) Preisanpassung"
+  },
+  {
+   "t": "p",
+   "text": "Ihr dürft Preise an gestiegene Kosten anpassen, müsst Kostensenkungen aber genauso weitergeben. Ankündigen müsst ihr eine Erhöhung 6 Wochen vorher in Textform, und der Kunde muss nicht extra zustimmen. Achtet darauf: Steigt der Preis um mehr als 5 %, darf der Kunde deswegen sonderkündigen – bis dahin gilt der alte Preis."
+  },
+  {
+   "t": "h2",
+   "text": "§ 7 (10) Leistungsaussetzung bei Verzug"
+  },
+  {
+   "t": "p",
+   "text": "Wenn der Kunde nicht zahlt, dürft ihr den Betrieb aussetzen, aber erst nach Ankündigung und 7 Tagen Nachfrist. Wichtig: Beim Aussetzen dürft ihr keine Daten oder Konfigurationen löschen. Sobald der Kunde die Schulden begleicht, müsst ihr sofort wieder anschalten."
+  },
+  {
+   "t": "h2",
+   "text": "§ 7 (11) Aufrechnung und Zurückbehaltung"
+  },
+  {
+   "t": "p",
+   "text": "Der Kunde darf gegen eure Rechnung nur mit Forderungen aufrechnen, die unbestritten oder gerichtlich festgestellt sind. Ebenso darf er Zahlungen nur wegen Ansprüchen aus demselben Vertrag zurückhalten. Das schützt euch davor, dass ein Kunde mit behaupteten Gegenforderungen einfach die Zahlung verweigert."
+  },
+  {
+   "t": "h2",
+   "text": "§ 8 Laufzeit und Kündigung"
+  },
+  {
+   "t": "p",
+   "text": "Beim Monatsmodell kann der Kunde mit 1 Monat zum Monatsende kündigen; beim Jahresmodell gibt es 12 Monate Mindestlaufzeit, danach verlängert es sich automatisch um je 12 Monate, wenn nicht 1 Monat vorher gekündigt wird. Für euch wichtig: Der Jahresrabatt wird bei vorzeitigem Ausstieg nicht anteilig zurückgezahlt. Ihr dürft außerordentlich kündigen, wenn der Kunde mehr als 2 Monatsbeiträge schuldet oder die Agenten trotz Abmahnung rechtswidrig nutzt – jede Kündigung braucht mindestens Textform."
+  },
+  {
+   "t": "h2",
+   "text": "§ 9 Mitwirkungspflichten des Kunden"
+  },
+  {
+   "t": "p",
+   "text": "Der Kunde muss euch rechtzeitig alle Infos, Zugänge, Freigaben und einen entscheidungsbefugten Ansprechpartner liefern und haftet dafür, dass seine Inhalte und Kontaktlisten rechtmäßig sind. Das ist eure Absicherung, wenn ein Projekt hängt, weil der Kunde nicht liefert. Achtet darauf: Wenn der Kunde nicht mitwirkt, verschieben sich eure Fristen und ihr dürft den Mehraufwand nach Ankündigung extra berechnen."
+  },
+  {
+   "t": "h2",
+   "text": "§ 10 Nutzungsrechte"
+  },
+  {
+   "t": "p",
+   "text": "Alles, was ihr baut – Prompts, Workflows, Konfigurationen, Code, Vorlagen – bleibt euer Eigentum, auch wenn es individuell für den Kunden erstellt wurde. Der Kunde bekommt nur ein einfaches Nutzungsrecht für die Vertragsdauer, das bei Vertragsende erlischt. Wichtig: Die im Betrieb entstehenden Ergebnisdaten (Leads, Termine, Transkripte) gehören inhaltlich dem Kunden und werden ihm beim Offboarding herausgegeben."
+  },
+  {
+   "t": "h2",
+   "text": "§ 11 Betriebsinfrastruktur und Accounts"
+  },
+  {
+   "t": "p",
+   "text": "Die Accounts, API-Schlüssel, Rufnummern und Infrastruktur, mit denen ihr arbeitet, sind eure Betriebsmittel – der Kunde hat darauf keinen Herausgabeanspruch. Ihr sichert nur zu, die Daten verschiedener Kunden logisch getrennt zu halten (Details in Anlage B). Achtet darauf: Wenn der Kunde eigene Accounts will, gehören diese ihm, und ihr müsst sie am Vertragsende nach § 21 übergeben."
+  },
+  {
+   "t": "h2",
+   "text": "§ 12 Haftung"
+  },
+  {
+   "t": "p",
+   "text": "Eure Haftung ist in drei Stufen begrenzt: unbeschränkt nur bei Vorsatz, grober Fahrlässigkeit oder Personenschäden, bei einfacher Fahrlässigkeit nur für zentrale Vertragspflichten und der Höhe nach gedeckelt, und ansonsten ausgeschlossen. Ganz wichtig für euch: Ihr gebt ausdrücklich keine Erfolgs-, Lead- oder Umsatzgarantie. Beim Ausfüllen müsst ihr die Beträge einsetzen (Mindesthaftung je Fall und Jahres-Obergrenze) – lasst die Felder nicht leer, sonst ist die Deckelung unklar."
+  },
+  {
+   "t": "h2",
+   "text": "§ 13 Datenschutz und Auftragsverarbeitung"
+  },
+  {
+   "t": "p",
+   "text": "Für den Datenschutz gilt vorrangig die Anlage B (AVV), wobei der Kunde der Verantwortliche ist und ihr nur Auftragsverarbeiter seid. Das ist wichtig, weil die Hauptverantwortung für die Rechtmäßigkeit der Daten beim Kunden liegt. Achtet darauf: Behördliche Bußgelder übernehmt ihr nicht für den Kunden – jede Partei bleibt für ihren eigenen Bereich verantwortlich."
+  },
+  {
+   "t": "h2",
+   "text": "§ 14 Datenspeicherung und Transparenz"
+  },
+  {
+   "t": "p",
+   "text": "Der Kunde stimmt zu, dass Daten bei euch und bei euren Dienstleistern (Vapi, Twilio, Make, OpenAI, ElevenLabs, Google, Hoster) gespeichert werden, wobei so wenig wie möglich gespeichert und Unvermeidbares nach 6 Monaten gelöscht wird. Das Kundensystem bleibt dabei das führende System. Wichtig: Der Kunde muss die Endnutzer selbst nach DSGVO informieren – tut er das nicht, muss er euch von Ansprüchen Dritter freistellen (also im Ernstfall eure Kosten tragen)."
+  },
+  {
+   "t": "h2",
+   "text": "§ 15 Akquise und Direktwerbung (UWG)"
+  },
+  {
+   "t": "p",
+   "text": "Wenn der Kunde die Agenten für Kaltakquise nutzt, darf nur rechtlich erlaubte Ansprache stattfinden, und der Kunde sichert die Rechtsgrundlage zu. Ihr recherchiert teils selbst Kontakte und haltet euch dabei streng an B2B-Regeln und Opt-out-Dokumentation. Achtet darauf: Ihr dürft erkennbar rechtswidrige Kampagnen ablehnen oder stoppen – das ist eure Notbremse gegen Ärger mit dem UWG."
+  },
+  {
+   "t": "h2",
+   "text": "§ 16 Stimm- und Namensrechte, Deepfake-Kennzeichnung"
+  },
+  {
+   "t": "p",
+   "text": "Standardmäßig nutzt ihr synthetische Stimmen, an denen niemand Rechte hat. Will der Kunde eine echte Person klonen (Stimme oder Name), muss er euch eine dokumentierte Einwilligung dieser Person vorlegen. Wichtig: Bei Problemen durch eine vom Kunden gewünschte Stimm- oder Namensnutzung stellt der Kunde euch von allen Ansprüchen frei – bestellt euch also immer den Nachweis der Einwilligung, bevor ihr klont."
+  },
+  {
+   "t": "h2",
+   "text": "§ 17 Rechtmäßige Nutzung, Freistellung und vorübergehende Deaktivierung"
+  },
+  {
+   "t": "p",
+   "text": "Der Kunde darf die Agenten nur legal einsetzen und muss euch von Ansprüchen Dritter freistellen, wenn er sie rechtswidrig nutzt. Bei konkreten Hinweisen auf rechtswidrige Nutzung dürft ihr den Agenten sofort vorübergehend abschalten und informiert den Kunden danach. Wichtig für euch: Ist die Abschaltung vom Kunden verschuldet, läuft seine Zahlungspflicht weiter."
+  },
+  {
+   "t": "h2",
+   "text": "§ 18 Vertraulichkeit"
+  },
+  {
+   "t": "p",
+   "text": "Beide Seiten müssen vertrauliche Informationen der anderen geheim halten und nur für den Vertrag nutzen. Das gilt nicht für öffentlich bekannte Infos oder wenn ein Gesetz die Offenlegung verlangt. Achtet darauf: Diese Geheimhaltung gilt auch noch 3 Jahre nach Vertragsende weiter."
+  },
+  {
+   "t": "h2",
+   "text": "§ 19 Referenznutzung"
+  },
+  {
+   "t": "p",
+   "text": "Ihr dürft den Kunden nur dann mit Name und Logo als Referenz auf eurer Website nennen, wenn er hier aktiv zustimmt (Opt-in-Kästchen). Ohne angekreuztes Kästchen dürft ihr ihn nicht als Referenz zeigen. Achtet darauf: Der Kunde kann diese Zustimmung jederzeit für die Zukunft widerrufen – fragt also aktiv nach dem Häkchen, wenn ihr die Referenz haben wollt."
+  },
+  {
+   "t": "h2",
+   "text": "§ 20 Drittanbieter und Drittdienste"
+  },
+  {
+   "t": "p",
+   "text": "Ihr dürft Dienstleister wie Vapi, Twilio, Make, OpenAI, ElevenLabs, Google und Hoster einsetzen, deren Datenschutz über die Anlage B geregelt ist. Für Ausfälle dieser Dienste haftet ihr nicht pauschal, sondern nur, wenn euch selbst ein Verschulden trifft. Achtet darauf: Laufende Kosten von Drittdiensten, die durch die vom Kunden gewählte Nutzung entstehen, trägt der Kunde."
+  },
+  {
+   "t": "h2",
+   "text": "§ 21 Vertragsende und Offboarding"
+  },
+  {
+   "t": "p",
+   "text": "Nach Vertragsende stellt ihr dem Kunden seine Ergebnisdaten 30 Tage lang zum Export als CSV/JSON bereit und löscht sie danach (mit Löschbestätigung auf Wunsch). Rufnummern portiert ihr auf Wunsch zurück und haltet sie bis dahin am Leben. Bei kundeneigenen Accounts läuft das Offboarding in fester Reihenfolge: erst Daten exportieren, dann euer geistiges Eigentum entfernen, dann eure Zugriffe entziehen – im Jahresmodell gibt es dabei keine anteilige Rückerstattung."
+  },
+  {
+   "t": "h2",
+   "text": "§ 22 Höhere Gewalt"
+  },
+  {
+   "t": "p",
+   "text": "Bei höherer Gewalt (Cyberangriffe, Provider-Ausfälle, behördliche Sperren, Strom-/Netzausfälle, Naturereignisse, Pandemie, Streik, Krieg) haftet keine Partei für die Nichterfüllung. Für die Dauer des Ereignisses ruhen sowohl eure Leistungs- als auch die Zahlungspflichten. Achtet darauf: Dauert es länger als 30 Tage, darf jede Seite kündigen, und schon gezahlte Beiträge für nicht erbrachte Zeiträume müsst ihr anteilig zurückzahlen."
+  },
+  {
+   "t": "h2",
+   "text": "§ 23 Verfügbarkeit"
+  },
+  {
+   "t": "p",
+   "text": "Ihr garantiert keine feste Verfügbarkeit, sondern schuldet nur ein fachgerechtes Bemühen um störungsfreien Betrieb. Konkrete Verfügbarkeitsziele und Wartungsfenster stehen, falls vereinbart, in der Anlage C (SLA). Das schützt euch davor, für jede kurze Störung sofort haftbar zu sein."
+  },
+  {
+   "t": "h2",
+   "text": "§ 24 Schlussbestimmungen"
+  },
+  {
+   "t": "p",
+   "text": "Hier stehen die üblichen Rechts-Standardregeln: Kündigungen brauchen Textform, individuelle Absprachen gehen dem Vertrag vor, die Einkaufsbedingungen des Kunden gelten nicht, und der Kunde darf den Vertrag nur mit eurer Zustimmung übertragen. Es gilt deutsches Recht ohne UN-Kaufrecht, und Gerichtsstand ist euer Sitz, wenn der Kunde ein Unternehmen ist. Die salvatorische Klausel sorgt dafür, dass der Rest des Vertrags gültig bleibt, falls eine einzelne Regelung unwirksam sein sollte."
+  },
+  {
+   "t": "h2",
+   "text": "Hinweis, Unterschriften und Ausfüllfelder"
+  },
+  {
+   "t": "p",
+   "text": "Am Ende steht der Hinweis, dass dieser Vertrag ein sorgfältiger Entwurf ist und keine Rechtsberatung ersetzt – lasst ihn also vor dem echten Einsatz einmal anwaltlich prüfen. Danach folgt der Unterschriftsblock: Ort/Datum und Unterschrift für Max, für Jason und für den Kunden. Achtet darauf, dass wirklich alle drei unterschreiben und beim Kunden Name und Funktion der unterschreibenden Person eingetragen sind."
+  },
+  {
+   "t": "pagebreak"
+  },
+  {
+   "t": "h1",
+   "text": "02 · Auftragsformular / Leistungsschein"
+  },
+  {
+   "t": "p",
+   "text": "Dieses Dokument ist das konkrete Bestellformular: Hier tragt ihr mit dem Kunden ein, welche Agenten er genau bucht, was das kostet und unter welchen Bedingungen — als Ergänzung zum großen Rahmenvertrag."
+  },
+  {
+   "t": "h2",
+   "text": "Einleitung: Was dieser Leistungsschein ist"
+  },
+  {
+   "t": "p",
+   "text": "Hier steht, dass dieses Formular die konkret bestellten Leistungen, Preise und Bedingungen festhält und ein offizieller Teil des Rahmenvertrags ist. Für euch heißt das: Was ihr hier individuell mit dem Kunden ausmacht, hat immer Vorrang vor den allgemeinen AGB. Achtet darauf, dass ihr Widersprüche vermeidet — bei Streit gilt die Rangfolge aus dem Rahmenvertrag, und das hier Vereinbarte schlägt die AGB."
+  },
+  {
+   "t": "h2",
+   "num": "1.",
+   "text": "Vertragsparteien"
+  },
+  {
+   "t": "p",
+   "text": "Hier stehen eure Firmendaten (NexAI GbR, beide Gründer, Kontakt) fest drin, und der Kunde füllt seine Daten aus. Praktisch tragt ihr also nur einmal eure Seite ein, der Kunde füllt Firma, Anschrift, Ansprechpartner, USt-IdNr. usw. aus. Wichtig ist die Bestätigung, dass der Kunde Unternehmer ist (B2B) — nur so gelten die strengeren AGB und der Verbraucherschutz greift nicht."
+  },
+  {
+   "t": "h2",
+   "num": "2.",
+   "text": "Bezug zum Rahmenvertrag"
+  },
+  {
+   "t": "p",
+   "text": "Hier bestätigt der Kunde, dass ihm der Rahmenvertrag, die AGB und alle Anlagen (A bis D) vorliegen und Vertragsbestandteil sind. Für euch ist das eure Absicherung: Der Kunde kann später nicht sagen, er habe die Regeln nicht gekannt. Tragt unbedingt Datum und Version des Rahmenvertrags ein, damit klar ist, auf welche Fassung sich alles bezieht."
+  },
+  {
+   "t": "h2",
+   "num": "3.",
+   "text": "Beauftragte Leistungen"
+  },
+  {
+   "t": "p",
+   "text": "Hier kreuzt ihr zusammen mit dem Kunden an, was genau gebucht wird — Betriebsleistungen (Voice-, Chat-, Social-, Vertriebs-Agent, Automatisierung, individuelle Agenten) oder Projektleistungen (Website). Wichtig ist der Unterschied: Laufende Agenten sind Dienstleistung, die Website ist eine Werkleistung mit Abnahme. Beim Vertriebs-/Akquise-Agenten müsst ihr besonders aufpassen — dort muss der Kunde zusichern, dass die Kontaktaufnahme rechtlich erlaubt ist (Datenschutz, Opt-out)."
+  },
+  {
+   "t": "h2",
+   "num": "4.",
+   "text": "Einsatzzweck und KI-VO-Einstufung je Agent"
+  },
+  {
+   "t": "p",
+   "text": "Für jeden Agenten wird ein fester Einsatzzweck eingetragen und der Kunde bestätigt, dass es kein Hochrisiko-KI-Einsatz nach dem EU-KI-Gesetz ist. Für euch ist wichtig: Ihr seid rechtlich der Anbieter, der Kunde der Betreiber — er ist also für den zweckkonformen Einsatz und die menschliche Aufsicht verantwortlich. Lasst diese Kreuze wirklich vom Kunden bestätigen, denn damit schiebt ihr das Risiko einer falschen Nutzung sauber auf seine Seite; bei mehr als drei Agenten braucht ihr ein Beiblatt."
+  },
+  {
+   "t": "h2",
+   "num": "5.",
+   "text": "Vergütung"
+  },
+  {
+   "t": "p",
+   "text": "Hier steht, dass es keine Setup-Gebühr gibt, sondern nur einen monatlichen oder jährlichen Beitrag, und Projektleistungen wie die Website extra einmalig kosten. In die Tabelle tragt ihr die einzelnen Posten und die Summe ein — alle Preise immer netto plus Mehrwertsteuer. Achtet darauf, den Abrechnungsturnus (z. B. monatlich im Voraus) einzutragen, und denkt daran, bis zur USt-IdNr. eure Steuernummer auf die Rechnung zu schreiben."
+  },
+  {
+   "t": "h2",
+   "num": "6.",
+   "text": "Freikontingent und Mehrverbrauch (Overage)"
+  },
+  {
+   "t": "p",
+   "text": "Im Beitrag ist pro Agent eine bestimmte Menge inklusive (z. B. Minuten pro Monat), und alles darüber wird extra pro Einheit berechnet. Für euch heißt das: Der Kunde zahlt Mehrverbrauch im Folgemonat, und ihr müsst auf Wunsch einen Einzelnachweis liefern können. Tragt Freikontingent und den Overage-Preis klar ein, damit es später keinen Streit über die Zusatzkosten gibt."
+  },
+  {
+   "t": "h2",
+   "num": "7.",
+   "text": "Technisches EUR-Spend-Cap je Agent"
+  },
+  {
+   "t": "p",
+   "text": "Pro Agent wird ein technisches Ausgabenlimit in Euro festgelegt, bei dem der Agent automatisch gedrosselt oder gestoppt wird. Das schützt vor allem euch (und den Kunden) vor plötzlich explodierenden Kosten. Wichtig: Das Limit hochzusetzen geht nur mit einer schriftlich dokumentierten Anweisung des Kunden — hebt es nie einfach so an."
+  },
+  {
+   "t": "h2",
+   "num": "8.",
+   "text": "Zahlungsweise"
+  },
+  {
+   "t": "p",
+   "text": "Hier wird angekreuzt, ob der Kunde per SEPA-Firmenlastschrift oder per Überweisung zahlt. Für euren Cashflow ist die Lastschrift meist die bessere Wahl, weil ihr das Geld selbst einzieht. Bei Lastschrift braucht ihr zusätzlich ein separates Mandat, bei Überweisung achtet auf die Zahlungsfrist aus dem Rahmenvertrag."
+  },
+  {
+   "t": "h2",
+   "num": "9.",
+   "text": "Laufzeitmodell"
+  },
+  {
+   "t": "p",
+   "text": "Der Kunde wählt genau ein Modell: Monatsmodell (monatlich kündbar) oder Jahresmodell (12 Monate Mindestlaufzeit mit Rabatt, keine Rückerstattung). Für euch ist das Jahresmodell attraktiver wegen der festen Bindung — dafür gebt ihr den Rabatt als Gegenleistung. Stellt sicher, dass wirklich nur ein Kästchen angekreuzt ist; das Recht zur außerordentlichen Kündigung aus wichtigem Grund bleibt für beide Seiten immer bestehen."
+  },
+  {
+   "t": "h2",
+   "num": "10.",
+   "text": "Befugnisse der Agenten"
+  },
+  {
+   "t": "p",
+   "text": "Hier bestätigt der Kunde, dass die Agenten keine rechtsverbindlichen Zusagen machen dürfen — sie geben nur Auskunft und vereinbaren Termine. Das ist eure Absicherung: Wenn ein Agent mal etwas Falsches sagt, entsteht daraus kein bindender Vertrag oder Preisversprechen. Lasst dieses Kästchen unbedingt ankreuzen, es begrenzt eure Haftung erheblich."
+  },
+  {
+   "t": "h2",
+   "num": "11.",
+   "text": "KI-Transparenz und Aufzeichnung"
+  },
+  {
+   "t": "p",
+   "text": "Hier steht, dass Endnutzer immer darauf hingewiesen werden, dass sie mit einer KI sprechen (Pflicht nach EU-Gesetz), und dass Gesprächsaufzeichnung standardmäßig aus ist. Für euch heißt das: Die KI-Kennzeichnung ist nicht abschaltbar, da gibt es keine Ausnahme. Aufzeichnung aktiviert ihr nur auf ausdrückliche Anweisung des Kunden — und dann ist er selbst dafür verantwortlich, dass er das rechtlich darf."
+  },
+  {
+   "t": "h2",
+   "num": "12.",
+   "text": "Rufnummern"
+  },
+  {
+   "t": "p",
+   "text": "Hier wird geklärt, ob die Telefonnummern vom Kunden kommen oder von euch gestellt werden. Wichtiger Punkt: Wenn ihr die Nummer stellt, gehört sie euch als Betriebsmittel — der Kunde bekommt sie nach Vertragsende nicht heraus. Tragt die betroffenen Nummern und den Registrierungsinhaber genau ein, damit später klar ist, wem was gehört."
+  },
+  {
+   "t": "h2",
+   "num": "13.",
+   "text": "Notfall- und Rückfallkontakt"
+  },
+  {
+   "t": "p",
+   "text": "Hier trägt der Kunde einen Notfallkontakt und optional eine Rückfallnummer ein, an die weitergeleitet wird, falls der Agent nicht erreichbar ist. Das ist praktisch wichtig, damit im Störungsfall niemand ins Leere läuft. Holt euch diese Daten aktiv vom Kunden, sonst steht ihr bei einem Ausfall ohne Ansprechpartner da."
+  },
+  {
+   "t": "h2",
+   "num": "14.",
+   "text": "Einrichtung und Start"
+  },
+  {
+   "t": "p",
+   "text": "Hier wird ein geplanter Startzeitpunkt eingetragen, üblich sind 3 bis 10 Werktage nach vollständiger Mitwirkung des Kunden. Wichtig für euch: Dieser Termin ist ausdrücklich nur ein unverbindliches Ziel, kein fixer Liefertermin. So könnt ihr nicht in Verzug geraten, wenn der Kunde seine Zugänge zu spät liefert — die Uhr läuft erst, wenn er alles bereitgestellt hat."
+  },
+  {
+   "t": "h2",
+   "num": "15.",
+   "text": "Optionale Ablösesumme (Prompt-Weiternutzung)"
+  },
+  {
+   "t": "p",
+   "text": "Optional könnt ihr eine einmalige Summe vereinbaren, gegen die der Kunde die für ihn erstellten Prompts/Konfigurationen auch nach Vertragsende weiter nutzen darf. Der Standard ist: ohne diese Vereinbarung gehört euch euer Know-how und der Kunde bekommt nach Vertragsende nichts heraus. Nutzt das als zusätzliche Einnahmequelle, aber kreuzt es nur an, wenn ihr die Weiternutzung wirklich zulassen wollt, und tragt dann die Summe ein."
+  },
+  {
+   "t": "h2",
+   "num": "16.",
+   "text": "Schlussbestätigung und Unterschriften"
+  },
+  {
+   "t": "p",
+   "text": "Zum Schluss bestätigen beide Seiten, dass die Angaben stimmen, und der Leistungsschein wird erst mit den Unterschriften wirksam. Unterschreiben müssen beide Gründer (Maximilian und Jason) für NexAI sowie der Kunde. Denkt daran: Ohne alle Unterschriften gilt der Auftrag nicht, und der Schlusshinweis empfiehlt zu Recht, das Dokument im Ernstfall noch anwaltlich prüfen zu lassen."
+  },
+  {
+   "t": "pagebreak"
+  },
+  {
+   "t": "h1",
+   "text": "03 · Anlage A – Leistungsbeschreibung"
+  },
+  {
+   "t": "p",
+   "text": "Dieses Dokument beschreibt genau, welche KI-Agenten und Leistungen NexAI für einen Kunden anbieten und liefern kann und wo die Grenzen liegen."
+  },
+  {
+   "t": "h2",
+   "num": "1.",
+   "text": "Vorbemerkung und Rangfolge"
+  },
+  {
+   "t": "p",
+   "text": "Diese Anlage listet den kompletten möglichen Leistungskatalog auf, aber gebucht ist immer nur das, was im jeweiligen Auftragsformular angekreuzt wurde. Für euch heißt das: ihr müsst nur genau das liefern, was im Auftragsformular steht, alles andere ist nur gegen extra schriftliche Beauftragung (Change Request) fällig. Achtet darauf, dass bei Widersprüchen das Auftragsformular vorgeht, damit klar ist, was wirklich geschuldet ist."
+  },
+  {
+   "t": "h2",
+   "num": "2.",
+   "text": "Gegenstand und Leistungskategorien"
+  },
+  {
+   "t": "p",
+   "text": "Eure Leistungen teilen sich in zwei rechtliche Kategorien: einmalige Projektleistungen (Website und Ersteinrichtung, Werkvertrag mit Abnahme) und laufende Betriebsleistungen (Betrieb, Wartung, Hosting, Support, Dienstvertrag mit SLA). Für euch ist das wichtig, weil bei Projektleistungen ein Ergebnis abgenommen wird, beim laufenden Betrieb dagegen nur eine ordentliche Dienstleistung geschuldet ist. Merkt euch, dass Preise, Freikontingente, Overage-Kosten und der EUR-Spend-Cap pro Agent immer im Auftragsformular festgelegt werden, nicht hier."
+  },
+  {
+   "t": "h2",
+   "num": "3.",
+   "text": "Voice Agent (KI-Telefonassistent)"
+  },
+  {
+   "t": "p",
+   "text": "Der Voice Agent nimmt Anrufe an oder ruft raus und kann FAQ beantworten, Termine buchen/verschieben, weiterleiten, Leads erfassen, Rückrufe aufnehmen und mehrsprachig sprechen. Praktisch heißt das: ihr betreibt einen KI-Telefonisten, der rund um die Uhr arbeiten kann, im Rahmen der vom Kunden gelieferten Wissensbasis. Achtet darauf, dass am Gesprächsanfang immer die Pflicht-KI-Ansage kommt und Aufzeichnung standardmäßig aus ist."
+  },
+  {
+   "t": "h2",
+   "num": "4.",
+   "text": "Chat Agent (Website-/App-Chatassistent)"
+  },
+  {
+   "t": "p",
+   "text": "Der Chat Agent führt Textgespräche auf Website oder App, berät, empfiehlt Produkte, erfasst Leads, bucht Termine und sucht in Kundendokumenten. Für euch bedeutet das ein Chat-Widget, das ähnlich wie der Voice Agent arbeitet, nur schriftlich. Wichtig: der Chat darf keine verbindlichen Preis- oder Vertragszusagen machen und muss sichtbar als KI gekennzeichnet sein."
+  },
+  {
+   "t": "h2",
+   "num": "5.",
+   "text": "Social-Media-Agent"
+  },
+  {
+   "t": "p",
+   "text": "Der Social-Media-Agent beantwortet DMs und Kommentare, erkennt Interessenten, bereitet Beitragsentwürfe vor und übergibt qualifizierte Kontakte. Für euch heißt das: ihr unterstützt beim Community-Management, aber die endgültige Freigabe und redaktionelle Verantwortung bleibt beim Kunden. Achtet darauf, dass ihr keine echte Content-Strategie oder Redaktion schuldet, außer es ist ausdrücklich vereinbart."
+  },
+  {
+   "t": "h2",
+   "num": "6.",
+   "text": "Vertriebs-/Akquise-Agent"
+  },
+  {
+   "t": "p",
+   "text": "Dieser Agent sucht im B2B passende Firmen, recherchiert Ansprechpartner, bewertet die Passung und erstellt personalisierte Ansprache-Entwürfe, teils auch zum automatischen Versand. Für euch ist das der heikelste Baustein, weil Kaltakquise per Mail und Telefon rechtlich stark eingeschränkt ist (UWG, DSGVO Art. 14). Achtet unbedingt auf Opt-out in jeder Ansprache, dokumentiert Widersprüche und lehnt Kampagnen ab, die klar rechtswidrig wären."
+  },
+  {
+   "t": "h2",
+   "num": "7.",
+   "text": "Automatisierungen"
+  },
+  {
+   "t": "p",
+   "text": "Ihr richtet Workflows ein, die Systeme wie CRM, Google Workspace, Microsoft 365, Kalender, E-Mail und Tabellen verbinden und Aufgaben wie Benachrichtigungen und Lead-Routing automatisieren. Praktisch verkettet ihr damit wiederkehrende Kundenprozesse über Schnittstellen und Webhooks. Achtet darauf, dass ihr auf fremde Systeme (Subunternehmer) angewiesen seid und der Kunde selbst die nötigen Zugänge und Berechtigungen liefern muss."
+  },
+  {
+   "t": "h2",
+   "num": "8.",
+   "text": "Individuelle KI-Agenten"
+  },
+  {
+   "t": "p",
+   "text": "Wenn beauftragt, baut und betreibt ihr maßgeschneiderte Agenten, deren Ziele, Datenquellen und Abnahmekriterien gesondert je Projekt festgelegt werden. Für euch heißt das: der genaue Umfang steht nicht hier, sondern wird pro Projekt beschrieben und wird dann Teil dieser Anlage. Achtet darauf, dass auch für diese Sonderagenten die Regeln zu Transparenz, Aufzeichnung und Guardrails (Ziffern 11 bis 13) voll gelten."
+  },
+  {
+   "t": "h2",
+   "num": "9.",
+   "text": "Website-Erstellung (Projektleistung)"
+  },
+  {
+   "t": "p",
+   "text": "Ihr baut eine moderne, responsive Website mit technischer SEO-Basis, Landingpages und Anbindung der Agenten, als klassische Werkleistung. Für euch heißt das: es gibt eine echte Abnahme nach Anlage D, und der Kunde liefert Texte, Bilder, Logos und Zugänge. Achtet darauf, dass laufende SEO-Betreuung, redaktionelle Pflege und fremdes Hosting hier NICHT enthalten sind."
+  },
+  {
+   "t": "h2",
+   "num": "10.",
+   "text": "Ersteinrichtung"
+  },
+  {
+   "t": "p",
+   "text": "Die Ersteinrichtung der Agenten (Grundkonfiguration, Wissensbasis, Workflows, Anbindungen, Tests) ist ebenfalls eine Werkleistung. Wichtig für euch: dafür wird KEINE separate Setup-Gebühr verlangt, sie ist mit dem monatlichen oder jährlichen Beitrag abgegolten. Achtet darauf, dass eine Ausnahme davon nur gilt, wenn das Auftragsformular ausdrücklich etwas anderes festlegt."
+  },
+  {
+   "t": "h2",
+   "num": "11.",
+   "text": "KI-Kennzeichnung und Pflicht-Ansage (Transparenz)"
+  },
+  {
+   "t": "p",
+   "text": "Jeder Endnutzer muss zu Gesprächsbeginn erfahren, dass er mit einer KI spricht, das ist nach dem EU AI Act Pflicht und nicht abschaltbar. Für euch heißt das: der Voice Agent sagt am Anfang eine feste Ansage, Chat und Social zeigen den KI-Hinweis sichtbar an. Achtet darauf, dass ihr Kundenwünsche, die Ansage zu entfernen oder zu verschleiern, nicht befolgt und den Agenten notfalls stilllegen dürft."
+  },
+  {
+   "t": "h2",
+   "num": "12.",
+   "text": "Aufzeichnungen und Transkripte"
+  },
+  {
+   "t": "p",
+   "text": "Gespräche werden standardmäßig NICHT aufgezeichnet oder transkribiert, das geht nur auf dokumentierte Weisung des Kunden, der dann für die Zulässigkeit sorgt. Für euch heißt das: wenn aufgezeichnet wird, kommt ein Aufzeichnungshinweis, und die Daten werden nach sechs Monaten gelöscht. Achtet darauf, dass keine Speicherung in privaten Endnutzer-Accounts erfolgt und weitere Lösch- und Exportregeln aus dem Rahmenvertrag und Anlage B (AVV) gelten."
+  },
+  {
+   "t": "h2",
+   "num": "13.",
+   "text": "Guardrails und Themenausschlüsse"
+  },
+  {
+   "t": "p",
+   "text": "Die Agenten dürfen keine verbindlichen Zusagen und keine medizinische, rechtliche oder steuerliche Beratung geben, eskalieren bei unklaren Fällen an Menschen und prüfen Termine gegen den Kalender. Für euch heißt das: diese Leitplanken schützen euch vor Haftung, weil die KI nur unverbindlich informiert. Achtet darauf, dass die Pflege und Richtigkeit der Wissensbasis (Preise, Öffnungszeiten usw.) beim Kunden liegt, nicht bei euch."
+  },
+  {
+   "t": "h2",
+   "num": "14.",
+   "text": "Nicht geschuldete Leistungen"
+  },
+  {
+   "t": "p",
+   "text": "Diese Liste sagt klar, was NICHT dabei ist: bezahlte Werbekampagnen, laufende SEO, redaktioneller Content, Grafik-/Logo-Design, fremdes Hosting, Schulungen und Lizenzbeschaffung. Für euch ist das eure wichtigste Abgrenzung gegen unbezahlte Zusatzarbeit und Erwartungen des Kunden. Achtet darauf, dass ihr solche Extras nur macht, wenn sie ausdrücklich im Auftragsformular vereinbart und bezahlt sind."
+  },
+  {
+   "t": "h2",
+   "num": "15.",
+   "text": "Keine Erfolgs-, Lead- oder Umsatzgarantie (Beschaffenheit)"
+  },
+  {
+   "t": "p",
+   "text": "Ihr schuldet den ordentlichen Betrieb der Agenten, aber keinen wirtschaftlichen Erfolg und keine bestimmte Zahl an Leads, Terminen oder Umsatz. Für euch ist das ein zentraler Haftungsschutz, weil KI wahrscheinlichkeitsbasiert arbeitet und nicht immer fehlerfrei ist. Achtet darauf, dass einzelne Fehler oder unbeantwortete Anfragen kein Mangel sind, solange die Agenten im vereinbarten Rahmen und mit den Guardrails laufen."
+  },
+  {
+   "t": "pagebreak"
+  },
+  {
+   "t": "h1",
+   "text": "04 · Anlage B – AVV (Datenschutz)"
+  },
+  {
+   "t": "p",
+   "text": "Dieses Dokument ist der Datenschutz-Vertrag (Auftragsverarbeitung nach Art. 28 DSGVO), der regelt, wie ihr die personenbezogenen Daten eurer Kunden im Rahmen eurer KI-Agenten verarbeiten dürft."
+  },
+  {
+   "t": "h2",
+   "text": "Parteien"
+  },
+  {
+   "t": "p",
+   "text": "Hier stehen ihr (NexAI GbR mit euren beiden Namen als Verarbeiter) und der Kunde (Verantwortlicher), dessen Felder beim Abschluss ausgefüllt werden. Praktisch heißt das: der Kunde bestimmt, was mit den Daten passiert, ihr führt es nur aus. Achtet darauf, dass die Kundenfelder (Firma, Anschrift, Vertreter, E-Mail, Telefon) vor Unterschrift vollständig ausgefüllt sind."
+  },
+  {
+   "t": "h2",
+   "num": "§ 1",
+   "text": "Präambel, Gegenstand und Rollenverteilung"
+  },
+  {
+   "t": "p",
+   "text": "Hier wird festgelegt, dass ihr für den Kunden KI-Agenten betreibt und dabei dessen Daten nur weisungsgebunden verarbeitet – der Kunde ist \"Verantwortlicher\", ihr seid \"Auftragsverarbeiter\". Praktisch bedeutet das: bei allen normalen Agenten seid ihr nur ausführende Hand und dürft die Daten nicht für Eigenes nutzen. Wichtig: bei Datenschutzfragen schlägt dieser AVV alle anderen Verträge, und beim Vertriebs-/Akquise-Agenten gilt die Sonderregel in § 15."
+  },
+  {
+   "t": "h2",
+   "num": "§ 2",
+   "text": "Art, Umfang, Zweck und Dauer der Verarbeitung"
+  },
+  {
+   "t": "p",
+   "text": "Hier steht, was ihr mit den Daten macht (erheben, speichern, weiterleiten, löschen usw.), wofür (Betrieb der Agenten, Termine, Anfragen) und wie lange (bis Vertragsende plus Löschregeln). Praktisch grenzt das euren erlaubten Handlungsrahmen ab: nur das, was für den Betrieb der bestellten Agenten nötig ist. Achtet darauf, dass der tatsächliche Einsatz immer zum Auftragsformular und zur Leistungsbeschreibung (Anlage A) passt – darüber hinaus dürft ihr nichts tun."
+  },
+  {
+   "t": "h2",
+   "num": "§ 3",
+   "text": "Kategorien betroffener Personen und personenbezogener Daten"
+  },
+  {
+   "t": "p",
+   "text": "Hier wird aufgelistet, wessen Daten (Kundenmitarbeiter, Endnutzer/Anrufer, genannte Dritte) und welche Datenarten (Kontaktdaten, Gesprächsinhalte, Transkripte, Termine, Metadaten) verarbeitet werden. Praktisch ist das die Bestandsaufnahme, damit klar ist, worüber ihr redet – kein Freibrief für mehr. Wichtig: sensible Daten (Gesundheit, Religion usw.) sind ausdrücklich ausgeschlossen, deshalb müsst ihr die Agenten so konfigurieren, dass sie solche Daten nicht gezielt abfragen."
+  },
+  {
+   "t": "h2",
+   "num": "§ 4",
+   "text": "Weisungsbindung"
+  },
+  {
+   "t": "p",
+   "text": "Ihr dürft Daten nur auf dokumentierte Weisung des Kunden verarbeiten, nicht nach eigenem Gutdünken. Praktisch heißt das: mündliche Zurufe des Kunden lasst ihr euch in Textform bestätigen, und Weisungen laufen über eure Kontaktstelle (mbt@nex-a-i.com). Wichtig: haltet ihr eine Weisung für rechtswidrig, müsst ihr das melden und dürft sie bis zur Klärung aussetzen – die Rechtmäßigkeit selbst verantwortet aber der Kunde."
+  },
+  {
+   "t": "h2",
+   "num": "§ 5",
+   "text": "Vertraulichkeit"
+  },
+  {
+   "t": "p",
+   "text": "Alle Personen, die mit den Daten arbeiten, müssen zur Verschwiegenheit verpflichtet sein – auch nach Ende der Tätigkeit. Praktisch seid ihr beide als Gesellschafter automatisch unmittelbar verpflichtet. Sobald ihr Mitarbeiter oder Freelancer einsetzt, müsst ihr sie schriftlich auf Vertraulichkeit verpflichten, sonst verstoßt ihr gegen diesen Punkt."
+  },
+  {
+   "t": "h2",
+   "num": "§ 6",
+   "text": "Technische und organisatorische Maßnahmen (Art. 32 DSGVO)"
+  },
+  {
+   "t": "p",
+   "text": "Ihr müsst angemessene technische und organisatorische Schutzmaßnahmen treffen, die in Anhang 1 beschrieben sind. Praktisch dürft ihr diese Maßnahmen an den Stand der Technik anpassen, solange das Schutzniveau nicht sinkt. Wichtig: dokumentiert wesentliche Änderungen und überprüft regelmäßig, ob die Maßnahmen wirklich wirken – der Kunde kann Nachweise verlangen."
+  },
+  {
+   "t": "h2",
+   "num": "§ 7",
+   "text": "Zweckbindung, kein Modelltraining"
+  },
+  {
+   "t": "p",
+   "text": "Ihr nutzt die Kundendaten nur für den vereinbarten Zweck und ausdrücklich nicht zum Trainieren oder Verbessern von KI-Modellen. Praktisch müsst ihr eure Dienstleister (z. B. OpenAI, Vapi) so einstellen, dass sie die Daten nicht zum Training nutzen und möglichst wenig speichern (No-Training/Zero-Retention). Wichtig: eigene Nutzung zur Produktverbesserung ist nur mit anonymisierten Daten oder auf gesonderter Rechtsgrundlage erlaubt – das ist ein starkes Verkaufsargument, aber ihr müsst es auch technisch einhalten."
+  },
+  {
+   "t": "h2",
+   "num": "§ 8",
+   "text": "Speicherorte, Speicherdauer und Löschung"
+  },
+  {
+   "t": "p",
+   "text": "Hier steht, wo Daten liegen (teils bei euch, teils bei Subunternehmern) und dass sie möglichst gar nicht dauerhaft gespeichert werden, sonst spätestens nach 6 Monaten gelöscht werden. Praktisch heißt das: Speicherung ausschalten wo möglich, und Aufzeichnung/Transkription ist standardmäßig aus. Wichtig: Aufzeichnung dürft ihr nur auf ausdrückliche Kundenweisung und mit der Pflicht-Ansage (KI-Hinweis) aktivieren; gesetzliche Aufbewahrungspflichten sind eine erlaubte Ausnahme."
+  },
+  {
+   "t": "h2",
+   "num": "§ 9",
+   "text": "Unterauftragsverarbeiter"
+  },
+  {
+   "t": "p",
+   "text": "Der Kunde genehmigt allgemein, dass ihr Subunternehmer (Anhang 2) einsetzt. Praktisch müsst ihr geplante Wechsel oder neue Subunternehmer mindestens 14 Tage vorher in Textform ankündigen, und der Kunde darf aus wichtigem Grund widersprechen. Wichtig: ihr müsst jeden Subunternehmer vertraglich auf die gleichen Datenschutzpflichten verpflichten und haftet gegenüber dem Kunden, wenn er sich nicht daran hält."
+  },
+  {
+   "t": "h2",
+   "num": "§ 10",
+   "text": "Drittlandtransfer"
+  },
+  {
+   "t": "p",
+   "text": "Wenn Daten in Länder außerhalb der EU (v. a. USA) fließen, müsst ihr für rechtlich saubere Grundlagen sorgen. Praktisch stützt ihr das bevorzugt auf das EU-US Data Privacy Framework, sonst auf EU-Standardvertragsklauseln plus Zusatzmaßnahmen und eine Transfer-Prüfung (TIA). Wichtig: für Dienste ohne DPF-Zertifizierung (z. B. Vapi, ElevenLabs) braucht ihr vorsorglich den SCC-Weg, und der Kunde kann Nachweise verlangen."
+  },
+  {
+   "t": "h2",
+   "num": "§ 11",
+   "text": "Unterstützungspflichten"
+  },
+  {
+   "t": "p",
+   "text": "Ihr müsst dem Kunden helfen: bei Betroffenenrechten (Auskunft, Löschung usw.), bei Datenpannen-Meldungen und bei Datenschutz-Folgenabschätzungen. Praktisch leitet ihr Anfragen betroffener Personen an den Kunden weiter, statt selbst zu antworten, und eine Datenpanne meldet ihr binnen 24 Stunden in Textform. Wichtig: die gesetzliche Grundunterstützung ist kostenlos, darüber hinausgehenden Aufwand dürft ihr nach Ankündigung abrechnen."
+  },
+  {
+   "t": "h2",
+   "num": "§ 12",
+   "text": "Löschung und Rückgabe nach Beendigung"
+  },
+  {
+   "t": "p",
+   "text": "Am Vertragsende löscht ihr alle Daten oder gebt sie zurück, je nach Wahl des Kunden. Praktisch gebt ihr dem Kunden vorher 30 Tage Zeit zum Export in einem gängigen Format und bestätigt die Löschung auf Wunsch schriftlich. Wichtig: Daten mit gesetzlicher Aufbewahrungspflicht (Steuer/Handel) werden nicht gelöscht, sondern gesperrt und erst nach Fristablauf gelöscht."
+  },
+  {
+   "t": "h2",
+   "num": "§ 13",
+   "text": "Nachweis- und Kontrollrechte (Audit)"
+  },
+  {
+   "t": "p",
+   "text": "Der Kunde darf überprüfen, ob ihr den Datenschutz einhaltet, notfalls auch vor Ort. Praktisch reicht meist Dokumentation oder ein Testat; eine Vor-Ort-Prüfung muss mindestens 14 Tage vorher angekündigt werden und den Betrieb nicht unnötig stören. Wichtig: mehr als eine reguläre Prüfung pro Jahr ohne konkreten Anlass dürft ihr in Rechnung stellen, der Prüfer darf kein Wettbewerber sein und muss zur Vertraulichkeit verpflichtet werden."
+  },
+  {
+   "t": "h2",
+   "num": "§ 14",
+   "text": "Datenschutzbeauftragter, Verzeichnis, Kontaktstelle"
+  },
+  {
+   "t": "p",
+   "text": "Ihr benennt einen Datenschutzbeauftragten nur, falls gesetzlich Pflicht, und führt ein Verzeichnis eurer Verarbeitungstätigkeiten. Praktisch ist eure Kontaktstelle für Datenschutz mbt@nex-a-i.com, und das Verarbeitungsverzeichnis (Art. 30) müsst ihr tatsächlich pflegen. Wichtig: das Kundenfeld für den Datenschutzkontakt sollte beim Abschluss ausgefüllt werden, damit ein Ansprechpartner feststeht."
+  },
+  {
+   "t": "h2",
+   "num": "§ 15",
+   "text": "Rollenmatrix nach Leistungsart"
+  },
+  {
+   "t": "p",
+   "text": "Diese Tabelle legt fest, dass ihr bei fast allen Agenten reiner Auftragsverarbeiter seid – nur beim Vertriebs-/Akquise-Agenten, wo ihr selbst Kontakte recherchiert, kann die Rolle abweichen (gemeinsame oder getrennte Verantwortlichkeit). Praktisch heißt das: sobald ihr selbst Leads recherchiert, müsst ihr die genaue Rolle im Auftragsformular festlegen und ggf. eine Extra-Vereinbarung (Art. 26) schließen. Wichtig: bei eigener Recherche tragt ihr eigene Verantwortung für saubere B2B-Ansprache, Informationspflichten und Opt-outs und dürft rechtswidrige Kampagnenwünsche ablehnen."
+  },
+  {
+   "t": "h2",
+   "num": "§ 16",
+   "text": "Haftung und Innenausgleich"
+  },
+  {
+   "t": "p",
+   "text": "Nach außen gegenüber betroffenen Personen gilt das Gesetz (Art. 82 DSGVO), intern trägt jede Partei den Schaden nach ihrem eigenen Verschuldensanteil. Praktisch heißt das: zahlt einer mehr, als er verschuldet hat, kann er sich den Rest vom anderen zurückholen. Wichtig: die übrigen Haftungsgrenzen aus dem Rahmenvertrag gelten ergänzend weiter, soweit sie dem zwingenden Datenschutzrecht nicht widersprechen."
+  },
+  {
+   "t": "h2",
+   "num": "§ 17",
+   "text": "Schlussbestimmungen"
+  },
+  {
+   "t": "p",
+   "text": "Änderungen brauchen Textform, ein unwirksamer Teil macht nicht den ganzen Vertrag ungültig, und es gilt deutsches Recht mit Gerichtsstand an eurem Sitz. Praktisch heißt das: Nebenabreden per WhatsApp gelten nicht, festhalten müsst ihr alles schriftlich. Wichtig: die Anhänge 1 (Schutzmaßnahmen) und 2 (Subunternehmer) sind fester Bestandteil des Vertrags und müssen aktuell gehalten werden."
+  },
+  {
+   "t": "h2",
+   "num": "Anhang 1",
+   "text": "Technische und organisatorische Maßnahmen (Art. 32 DSGVO)"
+  },
+  {
+   "t": "p",
+   "text": "Dieser Anhang listet konkret eure Schutzmaßnahmen auf: getrennte Projekte je Kunde, MFA und minimale Berechtigungen, Verschlüsselung, Protokollierung, ausfallsichere Cloud, Datenminimierung/Löschroutinen und Vertraulichkeitsverpflichtungen. Praktisch ist das eure Checkliste, die ihr wirklich umsetzen und einhalten müsst – nicht nur ein Papier. Wichtig: gerade getrennte Workspaces/API-Keys je Kunde, aktivierte Löschroutinen und die No-Training-Einstellung müssen tatsächlich so eingerichtet sein, weil der Kunde sich darauf verlässt."
+  },
+  {
+   "t": "h2",
+   "num": "Anhang 2",
+   "text": "Unterauftragsverarbeiter"
+  },
+  {
+   "t": "p",
+   "text": "Diese Tabelle nennt eure aktuellen Subunternehmer (Vapi, Twilio, Make, OpenAI, ElevenLabs, Google, Hosting) mit Sitz, Leistung, Datenarten und Transfermechanismus. Praktisch müsst ihr diese Liste aktuell halten und beim Hosting-Provider noch Land/Name eintragen. Wichtig: Änderungen an dieser Liste lösen die 14-Tage-Ankündigung aus § 9 aus, und die genannten Transferwege (DPF bzw. SCC) müssen für jeden Dienst wirklich vorliegen."
+  },
+  {
+   "t": "h2",
+   "text": "Unterschriften"
+  },
+  {
+   "t": "p",
+   "text": "Zum Schluss unterschreiben beide Gesellschafter für NexAI und der Kunde, samt Ort und Datum. Praktisch wird der Vertrag erst mit allen Unterschriften verbindlich, inklusive der beiden Anhänge. Wichtig: der Schlusshinweis stellt klar, dass dies ein sorgfältiger Entwurf ist und vor echtem Einsatz einmal anwaltlich geprüft werden sollte."
+  },
+  {
+   "t": "pagebreak"
+  },
+  {
+   "t": "h1",
+   "text": "05 · Anlage C – SLA (Support)"
+  },
+  {
+   "t": "p",
+   "text": "Dieses Dokument legt fest, wie NexAI die laufend betriebenen Agenten unterstützt: wann ihr erreichbar seid, wie schnell ihr auf Störungen reagiert, was im Preis enthalten ist und was nicht – und dass ihr bewusst keine harten Garantien gebt."
+  },
+  {
+   "t": "h2",
+   "num": "1.",
+   "text": "Zweck und Geltung"
+  },
+  {
+   "t": "p",
+   "text": "Hier steht, dass diese Anlage C nur für den laufenden Betrieb (Hosting, Wartung, Support der Agenten) gilt und nicht für einmalige Projektarbeiten, und dass sie nur greift, solange der Kunde bezahlt und der Vertrag läuft. Praktisch heißt das: Support-Zeiten gelten nur bei einem aktiven, nicht gekündigten Vertrag ohne offene Rechnungen. Achtet darauf, dass bei Widersprüchen immer der Rahmenvertrag Vorrang hat – das SLA ist die Ergänzung, nicht das Hauptdokument."
+  },
+  {
+   "t": "h2",
+   "num": "2.",
+   "text": "Servicezeiten"
+  },
+  {
+   "t": "p",
+   "text": "Ihr seid Montag bis Freitag von 08:00 bis 17:00 Uhr erreichbar, außer an baden-württembergischen Feiertagen, und Anfragen nach Feierabend zählen erst am nächsten Werktag ab 08:00 als eingegangen. Das schützt euch davor, nachts oder am Wochenende reagieren zu müssen – die Uhr für Reaktionszeiten läuft nur innerhalb dieser Fenster. Wichtig: Ihr schuldet ausdrücklich keinen 24/7-Support und keine Rund-um-die-Uhr-Überwachung, das solltet ihr auch so kommunizieren."
+  },
+  {
+   "t": "h2",
+   "num": "3.",
+   "text": "Supportkanäle"
+  },
+  {
+   "t": "p",
+   "text": "Support läuft über E-Mail (bevorzugt), Telefon in den Servicezeiten, Videocall nach Termin, Fernwartung nach Freigabe und optional ein Ticketsystem – und ihr dürft selbst wählen, welcher Kanal passt. Ihr könnt verlangen, dass Störungen schriftlich (per E-Mail/Ticket) gemeldet werden, damit alles dokumentiert und nachvollziehbar ist. Achtet darauf, dass der Kunde euch mindestens einen fachkundigen Ansprechpartner benennt, sonst wird die Zusammenarbeit im Störungsfall zäh."
+  },
+  {
+   "t": "h2",
+   "num": "4.",
+   "text": "Prioritäten und Reaktionszeiten"
+  },
+  {
+   "t": "p",
+   "text": "Ihr teilt gemeldete Störungen selbst in vier Prioritätsstufen ein, je nachdem wie stark der Betrieb betroffen ist, und die genannten Zeiten sind nur Erstreaktionszeiten. Praktisch bedeutet das: Ihr entscheidet nach eigenem Ermessen, wie dringend ein Fall ist, und die Fristen laufen nur in den Servicezeiten. Wichtig ist die Unterscheidung, die in 4.1 und 4.2 genauer erklärt wird – hier geht es nur um die erste Rückmeldung, nicht um die Lösung."
+  },
+  {
+   "t": "h2",
+   "text": "4.1 Prioritätsstufen und Beispiele"
+  },
+  {
+   "t": "p",
+   "text": "Die Tabelle definiert vier Stufen: P1 Kritisch (Totalausfall) mit Erstreaktion in 8 Stunden, P2 Hoch (wichtige Funktion gestört) in 1 Werktag, P3 Mittel (Teilfunktion) in 2 Werktagen und P4 Niedrig (allgemeine Anfrage) in 3 Werktagen. So wisst ihr genau, wie schnell ihr euch je nach Schweregrad melden müsst – ein toter Voice Agent ist P1, ein Tippfehler in einer Ansage nur P3. Nutzt die Beispiele als Richtschnur bei der Einstufung, damit ihr im Streitfall begründen könnt, warum ein Fall welche Priorität hatte."
+  },
+  {
+   "t": "h2",
+   "text": "4.2 Art der Reaktionszeit"
+  },
+  {
+   "t": "p",
+   "text": "Hier wird klargestellt, dass die Erstreaktion nur die erste echte inhaltliche Rückmeldung ist (eine Auto-Antwort zählt nicht) und dass ihr ausdrücklich keine Lösungs- oder Wiederherstellungszeit garantiert. Für euch ist das der wichtigste Schutz: Ihr schuldet nur das Bemühen, nicht das Ergebnis bis zu einem festen Zeitpunkt. Merkt euch, dass die Uhr stoppt, wenn Drittdienste (Vapi, Twilio, OpenAI usw.) oder höhere Gewalt schuld sind oder ihr auf Zuarbeit des Kunden wartet – das nimmt euch den Druck bei fremdverursachten Problemen."
+  },
+  {
+   "t": "h2",
+   "num": "5.",
+   "text": "Enthaltener und nicht enthaltener Support"
+  },
+  {
+   "t": "p",
+   "text": "Dieser Abschnitt trennt sauber, was im monatlichen Beitrag steckt und was extra kostet. Das ist wichtig für eure Marge: Kleinkram und Betreuung sind drin, größere Arbeiten nicht. Die genaue Aufteilung folgt in 5.1 und 5.2 – haltet euch daran, damit ihr Zusatzaufwand auch wirklich abrechnen könnt."
+  },
+  {
+   "t": "h2",
+   "text": "5.1 Enthaltener Support"
+  },
+  {
+   "t": "p",
+   "text": "Im Beitrag enthalten sind Störungsmeldungen bearbeiten, Fehler im eigenen Verantwortungsbereich beheben, die laufende Wartung und Pflege, kleine Konfig-Anpassungen und Bedien-Auskünfte. Das ist das, was der Kunde ohne Extrarechnung erwarten darf. Achtet auf die Formulierung geringfügige Anpassungen ohne wesentliche Änderung – alles darüber hinaus fällt bewusst in 5.2 und darf berechnet werden."
+  },
+  {
+   "t": "h2",
+   "text": "5.2 Nicht enthaltener, gesondert zu vergütender Support"
+  },
+  {
+   "t": "p",
+   "text": "Extra kosten: neue Funktionen, zusätzliche Agenten, neue oder geänderte Integrationen, Schulungen, Fehler die der Kunde oder Dritte verursacht haben, sowie Arbeit außerhalb der Servicezeiten. Diese Leistungen rechnet ihr nach Aufwand zu euren Netto-Stundensätzen (zzgl. USt.) oder per separatem Angebot ab. Wichtig ist die Pflicht, den Kunden vorher auf die Kostenpflicht hinzuweisen – tut das immer schriftlich, bevor ihr loslegt, sonst gibt es Streit über die Rechnung."
+  },
+  {
+   "t": "h2",
+   "num": "6.",
+   "text": "Wartung und Wartungsfenster"
+  },
+  {
+   "t": "p",
+   "text": "Ihr dürft geplante Wartungen durchführen und kündigt sie mindestens 48 Stunden vorher schriftlich an, während Notfall- und Sicherheitswartungen jederzeit ohne Vorwarnung erlaubt sind. Angekündigte Wartungen zählen ausdrücklich nicht als Ausfall und sind keine Pflichtverletzung. Denkt daran, die 48-Stunden-Ankündigung wirklich einzuhalten (am besten per E-Mail dokumentiert) – nur dann greift der Schutz, dass es kein Ausfall ist; die gesetzliche Haftung bei grober Fahrlässigkeit bleibt trotzdem bestehen."
+  },
+  {
+   "t": "h2",
+   "num": "7.",
+   "text": "Verfügbarkeit"
+  },
+  {
+   "t": "p",
+   "text": "Ihr gebt keine garantierte Verfügbarkeit, sondern nur ein unverbindliches Ziel von 99 % im Monatsmittel für eure eigene Orchestrierungsschicht, und Ausfälle von Drittdiensten, Wartungen und Kundenfehler werden dabei herausgerechnet. Das schützt euch: Wird das Ziel nicht erreicht, gibt es keine Vertragsstrafe, Gutschrift oder Minderung. Weist den Kunden aktiv darauf hin, dass KI wahrscheinlichkeitsbasiert und nie fehlerfrei ist und ihr keine Erfolgs-, Lead- oder Umsatzgarantie gebt – das ist eine bewusste Absicherung gegen überzogene Erwartungen."
+  },
+  {
+   "t": "h2",
+   "num": "8.",
+   "text": "Störungsmeldung, Fallback und Business Continuity"
+  },
+  {
+   "t": "p",
+   "text": "Ihr überwacht die Agenten nicht rund um die Uhr, und der Kunde muss selbst für einen Notfallplan sorgen (z. B. Rufumleitung oder manuelle Bearbeitung), falls ein Agent ausfällt. Das verlagert die Verantwortung für den Ausfall-Notfall klar auf den Kunden. Wichtig: Der Kunde muss Störungen sofort melden und den Schaden gering halten – tut er das nicht, können seine Ansprüche gegen euch gekürzt werden oder entfallen."
+  },
+  {
+   "t": "h2",
+   "num": "9.",
+   "text": "Datensicherung"
+  },
+  {
+   "t": "p",
+   "text": "Der Kunde ist selbst für die Sicherung seiner Daten verantwortlich, und das führende System für Geschäftsdaten ist immer sein eigenes System, nicht eures. Ihr schuldet keine darüber hinausgehende Datensicherung; wo Speicherung technisch abschaltbar ist, speichert ihr nicht, sonst gelten die üblichen Fristen (rund sechs Monate Aufbewahrung, 30 Tage Export vor Löschung). Erinnert den Kunden vor riskanten Eingriffen daran, selbst ein aktuelles Backup zu haben – so seid ihr abgesichert, falls dabei Daten verloren gehen."
+  },
+  {
+   "t": "h2",
+   "num": "10.",
+   "text": "Drittanbieter und Mitwirkungspflichten des Kunden"
+  },
+  {
+   "t": "p",
+   "text": "Der Betrieb hängt von Drittdiensten ab, auf die ihr keinen Einfluss habt und für die ihr keine Gewähr übernehmt, und der Kunde muss bei der Fehlersuche aktiv mitwirken. Konkret braucht ihr vom Kunden eine gute Fehlerbeschreibung, schnelle Antworten, einen Ansprechpartner und nötige Zugänge. Merkt euch: Verzögert der Kunde diese Mitwirkung, stoppt die Reaktionszeit-Uhr und der Mehraufwand geht nicht zu euren Lasten – dokumentiert solche Verzögerungen, falls es später Diskussionen gibt."
+  },
+  {
+   "t": "h2",
+   "num": "11.",
+   "text": "Änderungsvorbehalt"
+  },
+  {
+   "t": "p",
+   "text": "Ihr dürft dieses SLA für die Zukunft anpassen, wenn es sachliche Gründe gibt (Technik, Drittdienste, Recht) und der Kunde nicht unangemessen benachteiligt wird, müsst Änderungen aber mindestens sechs Wochen vorher schriftlich ankündigen. Der Kunde bekommt bei nicht nur unerheblichen Änderungen ein Sonderkündigungsrecht, und Schweigen gilt nicht automatisch als Zustimmung. Achtet darauf, in jeder Änderungsankündigung ausdrücklich auf dieses Kündigungsrecht hinzuweisen – sonst ist die Änderung angreifbar."
+  },
+  {
+   "t": "h2",
+   "num": "12.",
+   "text": "Unterschriften"
+  },
+  {
+   "t": "p",
+   "text": "Am Ende unterschreiben beide NexAI-Gesellschafter (Maximilian Trenk und Jason Brian Merklein) sowie der Kunde, jeweils mit Ort und Datum. Das macht die Anlage C rechtsverbindlich und Teil des Vertragswerks. Achtet darauf, dass wirklich alle drei Felder ausgefüllt und datiert sind, bevor der Betrieb startet, und beachtet den Hinweis, dass dies ein Entwurf ist, der vor dem echten Einsatz anwaltlich geprüft werden sollte."
+  },
+  {
+   "t": "pagebreak"
+  },
+  {
+   "t": "h1",
+   "text": "06 · Anlage D – Abnahmeprotokoll"
+  },
+  {
+   "t": "p",
+   "text": "Dieses Dokument ist das Formular, mit dem ein Kunde offiziell bestaetigt, dass ihr eine einmalige Projektleistung (z. B. eine Website oder die Ersteinrichtung eines Agenten) fertig und vertragsgemaess geliefert habt."
+  },
+  {
+   "t": "h2",
+   "text": "Einleitung: Worum geht es in diesem Protokoll?"
+  },
+  {
+   "t": "p",
+   "text": "Hier steht, dass dieses Protokoll die Abnahme eurer einmaligen Werkleistungen dokumentiert, also fertige Projekte wie Website-Erstellung oder Ersteinrichtung. Praktisch heisst das: mit diesem unterschriebenen Blatt ist ein Projekt offiziell abgenommen und wird Teil eures Vertrags mit dem Kunden. Achtet darauf, dass es nur einmalige Projekte betrifft, nicht den laufenden Betrieb, und dass es immer zusammen mit Rahmenvertrag und Auftragsformular gilt."
+  },
+  {
+   "t": "h2",
+   "num": "1.",
+   "text": "Parteien (Auftragnehmer / Kunde)"
+  },
+  {
+   "t": "p",
+   "text": "Hier stehen die Vertragspartner: ihr als NexAI GbR (mit euren beiden Namen und Kontaktdaten) und der Kunde, dessen Daten in die Felder eingetragen werden. Das legt eindeutig fest, wer die Leistung erbracht hat und wer sie abnimmt. Achtet darauf, die Kundenfelder (Firma, Ansprechpartner, Anschrift, E-Mail, Telefon) vollstaendig auszufuellen, damit klar ist, wer unterschreibt und wer im Streitfall gemeint ist."
+  },
+  {
+   "t": "h2",
+   "num": "2.",
+   "text": "Projekt-/Feldangaben"
+  },
+  {
+   "t": "p",
+   "text": "Hier tragt ihr die konkreten Eckdaten des Projekts ein: Bezeichnung, Nummer des Auftragsformulars, Start, Datum der Fertigmeldung, Abnahmedatum und Ort. Damit ist genau dokumentiert, welches Projekt abgenommen wird und wann das passiert. Wichtig ist vor allem das Abnahmedatum, denn ab da laufen Fristen und Zahlungen, also sorgfaeltig und korrekt eintragen."
+  },
+  {
+   "t": "h2",
+   "num": "3.",
+   "text": "Gegenstand der Abnahme"
+  },
+  {
+   "t": "p",
+   "text": "Hier wird festgelegt, dass nur die im Auftragsformular und in Anlage A beschriebenen Projektleistungen abgenommen werden und dass dafuer Werkvertragsrecht gilt, waehrend laufender Betrieb (Wartung, Hosting, Support) ausdruecklich nicht dazugehoert. Fuer euch heisst das: die Abnahme deckt nur das ab, was schriftlich vereinbart war, und Extrawuensche werden separat beauftragt und bezahlt. Achtet darauf, dass ihr bei mehreren Teilen auch Teilabnahmen mit eigenem Protokoll machen koennt, wenn Sachen zu verschiedenen Zeitpunkten fertig werden."
+  },
+  {
+   "t": "h2",
+   "num": "4.",
+   "text": "Gelieferte Leistungen"
+  },
+  {
+   "t": "p",
+   "text": "Das ist eine Ankreuzliste aller moeglichen Leistungen (Voice Agent, Chatbot, Website, Automatisierungen usw.), von denen ihr das Gelieferte markiert. So ist schwarz auf weiss festgehalten, was genau zur Abnahme vorgelegt wird. Achtet darauf, wirklich nur das anzukreuzen, was ihr auch geliefert habt, und Besonderes unter 'Sonstige' klar zu beschreiben, damit es spaeter keinen Streit gibt."
+  },
+  {
+   "t": "h2",
+   "num": "5.",
+   "text": "Dokumentation und Übergabe"
+  },
+  {
+   "t": "p",
+   "text": "Hier hakt ihr ab, was ihr bei der Uebergabe bereitgestellt habt, z. B. Zugaenge, Schulung, Bedienhinweise, KI-Kennzeichnung und Support-Ansprechpartner. Das dokumentiert, dass der Kunde alles Noetige bekommen hat, um das Ergebnis zu nutzen. Wichtig: der Punkt haelt fest, dass Accounts und Infrastruktur als eure Betriebsmittel bei euch bleiben und der Kunde keinen Herausgabeanspruch hat, und die KI-Kennzeichnung nach EU-Recht muss aktiv sein."
+  },
+  {
+   "t": "h2",
+   "num": "6.",
+   "text": "Restarbeiten"
+  },
+  {
+   "t": "p",
+   "text": "Hier wird angekreuzt, ob es bei der Abnahme noch offene Restarbeiten gibt, und falls ja, werden diese mit Frist beschrieben. Das trennt sauber 'im Grunde fertig' von 'kleine Dinge fehlen noch'. Achtet darauf, offene Punkte ehrlich und konkret mit einer realistischen Erledigungsfrist einzutragen, denn diese Liste ist eure verbindliche Zusage, was ihr noch nachliefert."
+  },
+  {
+   "t": "h2",
+   "num": "7.",
+   "text": "Mängel"
+  },
+  {
+   "t": "p",
+   "text": "Hier wird festgehalten, ob bei der Abnahme Maengel bestehen, und diese muessen konkret beschrieben werden. Wichtig fuer euch: wenn der Kunde einen ihm bekannten Mangel hier nicht ausdruecklich vorbehaelt, verliert er dafuer teilweise seine Nachbesserungs- und Minderungsrechte. Das ist also ein Schutz fuer euch, aber achtet darauf, dass wirklich alle bekannten Punkte notiert werden, damit spaeter niemand behauptet, etwas sei verschwiegen worden."
+  },
+  {
+   "t": "h2",
+   "num": "8.",
+   "text": "Abnahmeerklärung"
+  },
+  {
+   "t": "p",
+   "text": "Mit der Unterschrift bestaetigt der Kunde, dass die Leistung im Wesentlichen vertragsgemaess ist und abgenommen wird, und es wird geregelt, dass kleine Maengel die Abnahme nicht verhindern und dass eine nicht rechtzeitige Reaktion des Kunden auf eure Fertigmeldung als Abnahme gilt. Fuer euch besonders wichtig: ab der Abnahme laeuft die auf ein Jahr verkuerzte Gewaehrleistungsfrist, die Gefahr geht auf den Kunden ueber und eure Bezahlung wird faellig. Achtet darauf, in der Fertigstellungsanzeige den Hinweis auf die Abnahmefiktion mitzuschicken, sonst greift diese Regel nicht."
+  },
+  {
+   "t": "h2",
+   "text": "Unterschriften und Schlusshinweis"
+  },
+  {
+   "t": "p",
+   "text": "Am Ende unterschreiben beide Gesellschafter fuer NexAI und der Kunde, jeweils mit Ort und Datum. Damit wird das Protokoll rechtlich wirksam und die Abnahme ist verbindlich dokumentiert. Beachtet den Schlusshinweis: das ist ein sorgfaeltiger Entwurf, aber keine Rechtsberatung, also lasst ihn im Zweifel vor dem echten Einsatz einmal anwaltlich pruefen."
+  },
+  {
+   "t": "pagebreak"
+  },
+  {
+   "t": "h1",
+   "text": "07 · SEPA-Firmenlastschriftmandat"
+  },
+  {
+   "t": "p",
+   "text": "Mit diesem Formular erlaubt euch der Kunde, die vereinbarten Beiträge automatisch von seinem Firmenkonto per Lastschrift einzuziehen, statt dass ihr jeder Zahlung hinterherlaufen müsst."
+  },
+  {
+   "t": "h2",
+   "text": "Einleitung: Wozu dieses Mandat gehört"
+  },
+  {
+   "t": "p",
+   "text": "Dieses Blatt ist eine Ergänzung zum Hauptvertrag und zum Auftragsformular und regelt nur das Bezahlen per Lastschrift. Es erlaubt euch, die monatlichen bzw. jährlichen Beiträge und den Mehrverbrauch (Overage) direkt vom Kundenkonto abzubuchen. Ihr müsst wissen: Die eigentlichen Zahlungsregeln stehen weiterhin im Rahmenvertrag und in den AGB, dieses Mandat ist nur das technische Werkzeug dafür."
+  },
+  {
+   "t": "h2",
+   "num": "1.",
+   "text": "Zahlungsempfänger / Gläubiger"
+  },
+  {
+   "t": "p",
+   "text": "Hier steht, dass ihr (NexAI GbR mit Adresse, den beiden Gesellschaftern und Kontaktdaten) das Geld bekommt und der Einzieher seid. Zwei Felder müssen von euch noch ausgefüllt werden: die Gläubiger-ID und die Mandatsreferenz, die zusammen dieses Mandat eindeutig kennzeichnen. Wichtig: Die Gläubiger-ID müsst ihr bei der Deutschen Bundesbank beantragen, sonst könnt ihr gar nicht einziehen; die Mandatsreferenz könnt ihr auch später mit der ersten Ankündigung nachreichen."
+  },
+  {
+   "t": "h2",
+   "num": "2.",
+   "text": "Zahler / Kunde"
+  },
+  {
+   "t": "p",
+   "text": "Hier trägt der Kunde seine Firmendaten und vor allem seine Bankverbindung ein (Bank, IBAN, BIC). Für euch bedeutet das: Der Kunde muss ein Unternehmen sein, denn das Firmenlastschriftverfahren ist für Privatpersonen gar nicht erlaubt. Achtet darauf, dass der Kontoinhaber wirklich berechtigt ist, dieses Konto freizugeben, falls Kontoinhaber und Vertragspartner nicht dieselbe Person sind."
+  },
+  {
+   "t": "h2",
+   "num": "3.",
+   "text": "Mandatstext (SEPA-Firmenlastschrift)"
+  },
+  {
+   "t": "p",
+   "text": "Mit diesem Text erlaubt der Kunde euch offiziell, das Geld einzuziehen, und weist seine Bank an, die Abbuchungen einzulösen. Das Mandat gilt für alle wiederkehrenden Zahlungen (Beiträge und Overage) und läuft, bis der Kunde es widerruft. Besonders wichtig für euch: Beim Firmenlastschriftverfahren kann der Kunde nach der Abbuchung sein Geld NICHT einfach zurückholen (kein Erstattungsrecht wie bei Privat-Lastschrift), der Kunde muss sein Mandat aber vor dem ersten Einzug bei seiner Bank registrieren lassen, sonst platzt die Abbuchung, und Kontoänderungen oder ein Widerruf müssen euch schriftlich mitgeteilt werden."
+  },
+  {
+   "t": "h2",
+   "num": "4.",
+   "text": "Vorabankündigung (Pre-Notification)"
+  },
+  {
+   "t": "p",
+   "text": "Ihr müsst dem Kunden jede Abbuchung vorher ankündigen, aber die Frist ist auf nur einen Tag vor Fälligkeit verkürzt. Diese Ankündigung darf ganz einfach per E-Mail oder direkt auf der Rechnung stehen und muss Betrag und Datum nennen. Praktisch für euch: Bei gleichbleibenden Beiträgen reicht eine einzige Ankündigung am Anfang, nur wenn sich der Betrag ändert (z. B. durch Overage), müsst ihr den neuen Betrag rechtzeitig neu ankündigen."
+  },
+  {
+   "t": "h2",
+   "num": "5.",
+   "text": "Rücklastschriften"
+  },
+  {
+   "t": "p",
+   "text": "Wenn eine Abbuchung platzt, weil der Kunde schuld ist (kein Geld auf dem Konto, Mandat nicht registriert, Konto aufgelöst), muss der Kunde die Kosten tragen. Ihr dürft ihm die echten Bankgebühren der Rücklastschrift plus eine angemessene Bearbeitungspauschale in Rechnung stellen. Beachtet: Der Kunde darf beweisen, dass euer tatsächlicher Schaden geringer war, und weitergehende Schäden oder Verzugszinsen könnt ihr trotzdem zusätzlich geltend machen."
+  },
+  {
+   "t": "h2",
+   "num": "6.",
+   "text": "Zahlung per Überweisung (Fallback)"
+  },
+  {
+   "t": "p",
+   "text": "Falls es kein gültiges Mandat gibt oder der Einzug immer wieder scheitert, muss der Kunde stattdessen ganz normal überweisen. Das Geld muss dann so rechtzeitig raus, dass es spätestens am dritten Werktag vor Fälligkeit angewiesen ist und bei euch pünktlich ankommt. Für euch heißt das: Ihr bekommt euer Geld auch dann, wenn die Lastschrift nicht klappt, es wird nur umständlicher."
+  },
+  {
+   "t": "h2",
+   "num": "7.",
+   "text": "Ort, Datum, Unterschrift des Zahlers"
+  },
+  {
+   "t": "p",
+   "text": "Mit der Unterschrift bestätigt der Kunde, dass alle Angaben stimmen, und erteilt euch offiziell das Lastschriftmandat. Darunter ist ein Unterschriftsfeld für den Kunden (Ort/Datum, Name, Unterschrift und ggf. Firmenstempel). Wichtig für euch: Ohne diese Unterschrift ist das Mandat nicht gültig, und ganz am Ende steht der Hinweis, dass ihr für das ganze Verfahren zwingend eure Gläubiger-ID braucht und dieser Entwurf im Zweifel noch anwaltlich geprüft werden sollte."
+  },
+  {
+   "t": "pagebreak"
+  },
+  {
+   "t": "h1",
+   "text": "08 · AGB (B2B)"
+  },
+  {
+   "t": "p",
+   "text": "Das sind eure allgemeinen Geschäftsbedingungen für Geschäftskunden — die Standard-Spielregeln, die im Hintergrund für jeden Auftrag gelten, wenn im konkreten Vertrag nichts anderes steht."
+  },
+  {
+   "t": "h2",
+   "text": "§ 1 Geltungsbereich und Vorrang der Individualabreden"
+  },
+  {
+   "t": "p",
+   "text": "Hier steht, dass diese AGB nur für Firmenkunden gelten (nicht für Privatleute) und in welcher Reihenfolge eure Dokumente zählen: Auftragsformular vor Rahmenvertrag vor AGB. Praktisch heißt das: was ihr individuell mit einem Kunden vereinbart, schlägt immer diese AGB, und ihr müsst die AGB nicht bei jedem neuen Auftrag neu vorlegen. Achtet darauf, dass Gegen-AGB des Kunden (z. B. dessen Einkaufsbedingungen) nur gelten, wenn ihr ausdrücklich schriftlich zustimmt — bloßes Weiterarbeiten zählt nicht als Zustimmung."
+  },
+  {
+   "t": "h2",
+   "text": "§ 2 Leistungen"
+  },
+  {
+   "t": "p",
+   "text": "Hier wird beschrieben, was ihr liefert: Voice-, Chat-, Social- und Vertriebs-Agenten, Automatisierungen und Websites — einmalige Einrichtung (Werkvertrag) und laufender Betrieb (Dienstvertrag). Für euch wichtig: die Agenten dürfen keine rechtsverbindlichen Zusagen im Namen des Kunden machen (keine Preise, Bestellungen, Verträge), und der Pflicht-KI-Hinweis an Endnutzer ist fest eingebaut und nicht abschaltbar. Der genaue Umfang steht immer in Auftragsformular und Anlage A, damit klar ist, was geschuldet ist und was nicht."
+  },
+  {
+   "t": "h2",
+   "text": "§ 3 Angebot und Vertragsschluss"
+  },
+  {
+   "t": "p",
+   "text": "Eure Angebote sind unverbindlich, solange ihr sie nicht ausdrücklich als verbindlich markiert, und ein Vertrag entsteht erst, wenn der Kunde das Auftragsformular in Textform annimmt und ihr bestätigt oder anfangt zu arbeiten. Das schützt euch davor, dass ein Kunde ein altes Angebot Monate später einfach annimmt. Denkt daran: Änderungen am Vertrag brauchen immer Textform (z. B. E-Mail), mündliche Zusagen zählen nicht."
+  },
+  {
+   "t": "h2",
+   "text": "§ 4 Preise und Zahlungsbedingungen"
+  },
+  {
+   "t": "p",
+   "text": "Es gibt keine Setup-Gebühr, sondern nur einen monatlichen oder jährlichen Beitrag mit einem enthaltenen Freikontingent; Mehrverbrauch wird extra mit dem Folgemonat abgerechnet. Rechnungen sind netto plus Umsatzsteuer und innerhalb von 14 Tagen fällig; bei Zahlungsverzug dürft ihr Verzugszinsen und 40 EUR Pauschale verlangen und nach Vorwarnung sogar den Betrieb pausieren. Praktisch könnt ihr pro Agent ein Ausgaben-Limit (Spend-Cap) einrichten, damit euch der Mehrverbrauch nicht aus dem Ruder läuft — der Kunde kann außerdem nur mit unstrittigen Forderungen aufrechnen."
+  },
+  {
+   "t": "h2",
+   "text": "§ 5 Änderung von Preisen und Bedingungen"
+  },
+  {
+   "t": "p",
+   "text": "Ihr dürft Preise und AGB ändern, müsst das aber 6 Wochen vorher in Textform ankündigen und den Kunden auf sein Kündigungsrecht hinweisen. Wichtig: Schweigen gilt nicht als Zustimmung — die Änderung wird nur wirksam, wenn der Kunde ausdrücklich zustimmt oder danach die Leistung vorbehaltlos weiter nutzt. Wenn der Kunde widerspricht, darf jede Seite zum Änderungstermin kündigen; bis dahin gelten die alten Preise weiter."
+  },
+  {
+   "t": "h2",
+   "text": "§ 6 Mitwirkungspflichten und Änderungswünsche"
+  },
+  {
+   "t": "p",
+   "text": "Der Kunde muss euch rechtzeitig alle Infos, Inhalte, Zugänge und Freigaben liefern und einen festen Ansprechpartner benennen. Liefert er zu spät, verschieben sich eure Fristen und ihr könnt Mehraufwand extra abrechnen. Zusatzwünsche, die über das Vereinbarte hinausgehen, sind separat zu vereinbaren und werden nach Aufwand vergütet — das schützt euch vor unbezahltem Scope-Creep."
+  },
+  {
+   "t": "h2",
+   "text": "§ 7 Nutzungsrechte"
+  },
+  {
+   "t": "p",
+   "text": "Alle eure Systeme, Prompts, Skripte, Workflows und die Infrastruktur bleiben euer Eigentum; der Kunde bekommt nur ein befristetes Nutzungsrecht für die Vertragslaufzeit. Nach Vertragsende erlischt dieses Recht wieder, und der Kunde kann eure Accounts und Technik nicht herausverlangen — seine eigenen Inhalte und Geschäftsdaten bleiben natürlich seine. Achtet darauf: euer Know-how bleibt bei euch, aber wenn ein Kunde eigene Accounts nutzen will, ist das ausdrücklich möglich."
+  },
+  {
+   "t": "h2",
+   "text": "§ 8 Drittanbieter und Subunternehmer"
+  },
+  {
+   "t": "p",
+   "text": "Ihr dürft Drittdienste wie Vapi, Twilio, Make, OpenAI, ElevenLabs und Google einsetzen, und der Kunde ist damit einverstanden. Für Ausfälle, Preis- oder Leistungsänderungen dieser Dienste, die ihr nicht verschuldet habt, haftet ihr nicht — das ist wichtig, weil ihr auf diese Anbieter kaum Einfluss habt. Achtet darauf, laufende Drittkosten, die der Kunde tragen soll, im Auftragsformular sauber als durchlaufende Posten auszuweisen."
+  },
+  {
+   "t": "h2",
+   "text": "§ 9 KI-Systeme und Eigenverantwortung"
+  },
+  {
+   "t": "p",
+   "text": "Hier steht klar, dass KI-Agenten fehlerhafte oder unerwartete Antworten geben können und ihr keinen bestimmten Erfolg schuldet — keine Garantie für Leads, Termine oder Umsätze. Der Kunde bleibt selbst verantwortlich dafür, wie er die Ergebnisse nutzt, und muss geschäftskritische Fälle prüfen. Wichtig für euch: Aufzeichnung/Transkription ist standardmäßig aus und wird nur auf dokumentierte Weisung aktiviert — das schützt euch datenschutzrechtlich."
+  },
+  {
+   "t": "h2",
+   "text": "§ 10 Verfügbarkeit, Wartung und Support"
+  },
+  {
+   "t": "p",
+   "text": "Ihr schuldet den Betrieb nur als sorgfältiges Bemühen, eine feste Verfügbarkeit nur dann, wenn sie im SLA (Anlage C) ausdrücklich vereinbart ist. Geplante Wartung, Updates und Störungen bei Drittanbietern oder höherer Gewalt gelten nicht als Mangel. Das heißt: ohne extra vereinbartes SLA könnt ihr nicht auf eine bestimmte Uptime festgenagelt werden — versprecht Zahlen wie 99,9 % also nur, wenn ihr sie halten könnt."
+  },
+  {
+   "t": "h2",
+   "text": "§ 11 Haftung"
+  },
+  {
+   "t": "p",
+   "text": "Die Haftung ist gestuft: unbegrenzt nur bei Vorsatz, grober Fahrlässigkeit, Personenschäden oder Garantien — bei leichter Fahrlässigkeit nur für wesentliche Pflichten und begrenzt auf einen einzutragenden Höchstbetrag pro Schadensfall. Sonstige leichte Fahrlässigkeit ist ganz ausgeschlossen. Wichtig: In § 11 Abs. 2 steht noch eine Lücke ('____ EUR') — diesen Haftungshöchstbetrag müsst ihr unbedingt konkret einsetzen, sonst greift die Deckelung im Streitfall womöglich nicht."
+  },
+  {
+   "t": "h2",
+   "text": "§ 12 Datenschutz"
+  },
+  {
+   "t": "p",
+   "text": "Ihr haltet euch an die DSGVO, und wo ihr Daten im Auftrag verarbeitet, gilt zusätzlich der AVV (Anlage B). Wo technisch möglich werden Gesprächsdaten nicht gespeichert; ist Speicherung unvermeidbar, wird nach 6 Monaten gelöscht, und nach Vertragsende gebt ihr die Daten binnen 30 Tagen zum Export frei und löscht sie dann. Bei Vertriebs-Agenten müsst ihr die Regeln zulässiger B2B-Ansprache einhalten — und ihr dürft erkennbar rechtswidrige Kampagnen ablehnen, was euch schützt."
+  },
+  {
+   "t": "h2",
+   "text": "§ 13 Vertraulichkeit"
+  },
+  {
+   "t": "p",
+   "text": "Beide Seiten müssen vertrauliche Informationen geheim halten und nur für den Vertrag nutzen. Die Pflicht gilt während der Zusammenarbeit und noch drei Jahre danach; allgemein bekannte oder rechtmäßig anderswo erhaltene Infos sind ausgenommen. An Subunternehmer dürft ihr weitergeben, solange die selbst zur Vertraulichkeit verpflichtet sind — das braucht ihr für euren Tech-Stack."
+  },
+  {
+   "t": "h2",
+   "text": "§ 14 Höhere Gewalt"
+  },
+  {
+   "t": "p",
+   "text": "Bei Ereignissen wie Naturkatastrophen, Pandemien, Krieg, Streik oder großen Infrastruktur-Ausfällen seid ihr für deren Dauer von der Leistungspflicht befreit. Auch schwere, unverschuldete Störungen bei Subunternehmern zählen dazu. Praktisch heißt das: für Dinge, die außerhalb eurer Kontrolle liegen, könnt ihr nicht haftbar gemacht werden — ihr müsst den Kunden aber unverzüglich informieren."
+  },
+  {
+   "t": "h2",
+   "text": "§ 15 Referenzen"
+  },
+  {
+   "t": "p",
+   "text": "Ihr dürft den Kunden samt Name und Logo als Referenz nennen, aber nur mit vorheriger Zustimmung in Textform. Der Kunde kann diese Zustimmung jederzeit für die Zukunft widerrufen. Wenn ihr also einen Kunden auf eurer Website zeigen wollt, holt euch vorher kurz per E-Mail das Okay."
+  },
+  {
+   "t": "h2",
+   "text": "§ 16 Textform für Kundenerklärungen"
+  },
+  {
+   "t": "p",
+   "text": "Wichtige Erklärungen des Kunden — Kündigungen, Weisungen, Freigaben, Widersprüche — brauchen mindestens Textform (z. B. E-Mail). Mündliches am Telefon reicht nicht. Das gibt euch bei jedem Kunden einen klaren, nachweisbaren Papierweg für alle vertragsrelevanten Schritte."
+  },
+  {
+   "t": "h2",
+   "text": "§ 17 Schlussbestimmungen"
+  },
+  {
+   "t": "p",
+   "text": "Es gilt deutsches Recht, Gerichtsstand ist euer Sitz, und der Kunde darf den Vertrag nur mit eurer Zustimmung an Dritte abtreten. Sollte eine Klausel unwirksam sein, bleibt der Rest gültig und die gesetzliche Regelung tritt an ihre Stelle. Für euch praktisch: Streitigkeiten landen vor eurem Heimatgericht, nicht irgendwo beim Kunden."
+  },
+  {
+   "t": "h2",
+   "text": "Hinweis, Unterschriften und Entwurfsstatus"
+  },
+  {
+   "t": "p",
+   "text": "Am Ende steht der Hinweis, dass dies ein sorgfältiger Entwurf ist, der vor echter Verwendung anwaltlich geprüft werden sollte, gefolgt von den Unterschriftsfeldern für beide Gesellschafter (Maximilian Trenk, Jason Brian Merklein) und den Kunden. Das ist reiner Ausfüll-Teil ohne inhaltliche Regelung. Nehmt den Prüfhinweis ernst und lasst besonders die offene Haftungssumme in § 11 vor dem ersten echten Einsatz anwaltlich absegnen."
+  }
+ ]
+}

@@ -1,0 +1,353 @@
+{
+ "filename": "06_AnlageD_Abnahmeprotokoll",
+ "doc_title": "Anlage D – Abnahmeprotokoll (Projekt-/Werkleistungen)",
+ "blocks": [
+  {
+   "t": "title",
+   "text": "Anlage D – Abnahmeprotokoll (Projekt-/Werkleistungen)"
+  },
+  {
+   "t": "subtitle",
+   "text": "Abnahme einmaliger Werkleistungen gemäß Rahmenvertrag und Auftragsformular"
+  },
+  {
+   "t": "meta",
+   "text": "Stand: Juli 2026"
+  },
+  {
+   "t": "p",
+   "text": "Dieses Abnahmeprotokoll dokumentiert die Abnahme der von NexAI erbrachten **Projektleistungen** (einmalige Werkleistungen, insbesondere Website-Erstellung und Ersteinrichtung) im Sinne der Vertragsdokumente. Es ergänzt den zwischen den Parteien geschlossenen Rahmenvertrag und das zugehörige Auftragsformular/den Leistungsschein und wird nach seiner Unterzeichnung Bestandteil der Vertragsdokumente."
+  },
+  {
+   "t": "h1",
+   "num": "1.",
+   "text": "Parteien"
+  },
+  {
+   "t": "h2",
+   "text": "Auftragnehmer"
+  },
+  {
+   "t": "p",
+   "text": "**NexAI – Next Generation Intelligence GbR**, Untere Bergstraße 13, 74586 Frankenhardt-Honhardt, Deutschland, vertreten durch die Gesellschafter Maximilian Trenk und Jason Brian Merklein, E-Mail mbt@nex-a-i.com, Telefon 0176 20147646 — nachfolgend „NexAI\"."
+  },
+  {
+   "t": "h2",
+   "text": "Kunde"
+  },
+  {
+   "t": "fill",
+   "label": "Firma",
+   "value": ""
+  },
+  {
+   "t": "fill",
+   "label": "Ansprechpartner",
+   "value": ""
+  },
+  {
+   "t": "fill",
+   "label": "Anschrift",
+   "value": ""
+  },
+  {
+   "t": "fill",
+   "label": "E-Mail",
+   "value": ""
+  },
+  {
+   "t": "fill",
+   "label": "Telefon",
+   "value": ""
+  },
+  {
+   "t": "p",
+   "text": "— nachfolgend „Kunde\"."
+  },
+  {
+   "t": "h1",
+   "num": "2.",
+   "text": "Projekt-/Feldangaben"
+  },
+  {
+   "t": "fill",
+   "label": "Projekt / Bezeichnung",
+   "value": ""
+  },
+  {
+   "t": "fill",
+   "label": "Auftragsformular / Leistungsschein Nr.",
+   "value": ""
+  },
+  {
+   "t": "fill",
+   "label": "Projektbeginn",
+   "value": ""
+  },
+  {
+   "t": "fill",
+   "label": "Datum Fertigstellungsanzeige",
+   "value": ""
+  },
+  {
+   "t": "fill",
+   "label": "Abnahmedatum",
+   "value": ""
+  },
+  {
+   "t": "fill",
+   "label": "Ort der Abnahme",
+   "value": ""
+  },
+  {
+   "t": "h1",
+   "num": "3.",
+   "text": "Gegenstand der Abnahme"
+  },
+  {
+   "t": "num",
+   "items": [
+    "Gegenstand dieses Protokolls ist die Abnahme der im vorgenannten Auftragsformular/Leistungsschein sowie in Anlage A (Leistungsbeschreibung) beschriebenen Projektleistungen. Es gelten ergänzend die Regelungen des Rahmenvertrages, insbesondere zu Abnahme, Vergütung und Gewährleistung, sowie der AGB (B2B).",
+    "Die Projektleistungen unterliegen dem Werkvertragsrecht (§§ 631 ff. BGB). Laufende Betriebsleistungen (Betrieb, Wartung, Hosting und Support der Agenten) sind nicht Gegenstand dieser Abnahme; sie richten sich nach den dienstvertraglichen Regelungen des Rahmenvertrages und der Anlage C (SLA).",
+    "Maßgeblich für den geschuldeten Leistungsumfang sind die vertraglich vereinbarten Spezifikationen gemäß Auftragsformular und Anlage A (Leistungsbeschreibung). Ergänzungs- oder Änderungswünsche außerhalb dieses Umfangs werden gesondert beauftragt und abgerechnet.",
+    "Werden mehrere Projektleistungen zu unterschiedlichen Zeitpunkten fertiggestellt, kann die Abnahme in sich abgeschlossener Teilleistungen mittels gesondertem Protokoll erfolgen (Teilabnahme); die Regelungen dieses Protokolls gelten für Teilabnahmen entsprechend."
+   ]
+  },
+  {
+   "t": "h1",
+   "num": "4.",
+   "text": "Gelieferte Leistungen"
+  },
+  {
+   "t": "p",
+   "text": "Die nachfolgend angekreuzten Leistungen wurden erbracht und werden zur Abnahme vorgelegt:"
+  },
+  {
+   "t": "checkbox",
+   "text": "Voice Agent (KI-Telefonassistent)",
+   "checked": false
+  },
+  {
+   "t": "checkbox",
+   "text": "Chat Agent (Website-/Messaging-Chatbot)",
+   "checked": false
+  },
+  {
+   "t": "checkbox",
+   "text": "Social-Media-Agent",
+   "checked": false
+  },
+  {
+   "t": "checkbox",
+   "text": "Vertriebs-/Akquise-Agent",
+   "checked": false
+  },
+  {
+   "t": "checkbox",
+   "text": "Terminbuchung / Kalender-Automatisierung",
+   "checked": false
+  },
+  {
+   "t": "checkbox",
+   "text": "CRM-Anbindung",
+   "checked": false
+  },
+  {
+   "t": "checkbox",
+   "text": "Kalender-Integration",
+   "checked": false
+  },
+  {
+   "t": "checkbox",
+   "text": "Google Sheets / Tabellen-Integration",
+   "checked": false
+  },
+  {
+   "t": "checkbox",
+   "text": "E-Mail-Automatisierung",
+   "checked": false
+  },
+  {
+   "t": "checkbox",
+   "text": "API-Integration",
+   "checked": false
+  },
+  {
+   "t": "checkbox",
+   "text": "Workflow-Automatisierung",
+   "checked": false
+  },
+  {
+   "t": "checkbox",
+   "text": "Website (Erstellung / Relaunch)",
+   "checked": false
+  },
+  {
+   "t": "checkbox",
+   "text": "Individuelle Entwicklung / individueller KI-Agent",
+   "checked": false
+  },
+  {
+   "t": "checkbox",
+   "text": "Sonstige:",
+   "checked": false
+  },
+  {
+   "t": "fill",
+   "label": "Sonstige (Beschreibung)",
+   "value": ""
+  },
+  {
+   "t": "h1",
+   "num": "5.",
+   "text": "Dokumentation und Übergabe"
+  },
+  {
+   "t": "p",
+   "text": "Im Rahmen der Übergabe wurden die nachfolgend angekreuzten Positionen bereitgestellt:"
+  },
+  {
+   "t": "checkbox",
+   "text": "Zugangsdaten / Zugänge übergeben bzw. eingerichtet (soweit vereinbart; Accounts und Infrastruktur laufen im Übrigen als Betriebsmittel über NexAI, ohne Herausgabeanspruch des Kunden)",
+   "checked": false
+  },
+  {
+   "t": "checkbox",
+   "text": "Einweisung / Schulung des Kunden durchgeführt",
+   "checked": false
+  },
+  {
+   "t": "checkbox",
+   "text": "Dokumentation / Bedienhinweise übergeben",
+   "checked": false
+  },
+  {
+   "t": "checkbox",
+   "text": "KI-Kennzeichnung / Transparenzhinweise (Art. 50 KI-VO) eingerichtet und aktiv",
+   "checked": false
+  },
+  {
+   "t": "checkbox",
+   "text": "Support-Ansprechpartner benannt",
+   "checked": false
+  },
+  {
+   "t": "fill",
+   "label": "Support-Ansprechpartner",
+   "value": ""
+  },
+  {
+   "t": "h1",
+   "num": "6.",
+   "text": "Restarbeiten"
+  },
+  {
+   "t": "p",
+   "text": "Bestehen zum Zeitpunkt der Abnahme noch offene Restarbeiten?"
+  },
+  {
+   "t": "checkbox",
+   "text": "Nein",
+   "checked": false
+  },
+  {
+   "t": "checkbox",
+   "text": "Ja – nachfolgend beschrieben, mit vereinbarter Erledigungsfrist",
+   "checked": false
+  },
+  {
+   "t": "fill",
+   "label": "Beschreibung der Restarbeiten",
+   "value": ""
+  },
+  {
+   "t": "fill",
+   "label": "Erledigung bis",
+   "value": ""
+  },
+  {
+   "t": "h1",
+   "num": "7.",
+   "text": "Mängel"
+  },
+  {
+   "t": "p",
+   "text": "Bestehen zum Zeitpunkt der Abnahme Mängel?"
+  },
+  {
+   "t": "checkbox",
+   "text": "Nein",
+   "checked": false
+  },
+  {
+   "t": "checkbox",
+   "text": "Ja – nachfolgend beschrieben",
+   "checked": false
+  },
+  {
+   "t": "fill",
+   "label": "Beschreibung der Mängel",
+   "value": ""
+  },
+  {
+   "t": "p",
+   "text": "Etwaige vorbehaltene Mängel sind vorstehend konkret zu bezeichnen. Behält sich der Kunde die Geltendmachung eines bei der Abnahme bekannten Mangels nicht vor, so stehen ihm die Rechte aus §§ 634 Nr. 1 bis 3 BGB insoweit nur zu, wenn er sich diese bei der Abnahme vorbehält (§ 640 Abs. 3 BGB); die weiteren Gewährleistungsrechte bleiben hiervon unberührt."
+  },
+  {
+   "t": "h1",
+   "num": "8.",
+   "text": "Abnahmeerklärung"
+  },
+  {
+   "t": "num",
+   "items": [
+    "Der Kunde bestätigt mit seiner Unterschrift, dass die vorgelegten Projektleistungen abgenommen werden. Die Parteien sind sich einig, dass die Leistungen im Wesentlichen vertragsgemäß erbracht wurden.",
+    "**Unwesentliche Mängel** berechtigen den Kunden nicht zur Verweigerung der Abnahme (§ 640 Abs. 1 Satz 2 BGB). Etwaige unter Ziffer 6 (Restarbeiten) und Ziffer 7 (Mängel) bezeichnete Positionen werden von NexAI im vereinbarten Rahmen und innerhalb angemessener Frist nachgeholt bzw. beseitigt; die diesbezüglichen Gewährleistungsrechte des Kunden bleiben unberührt.",
+    "**Abnahmefiktion (§ 640 Abs. 2 BGB):** Zeigt NexAI die Fertigstellung der Werkleistung an und setzt dem Kunden eine angemessene Frist zur Abnahme, so gilt die Werkleistung nach Ablauf dieser Frist als abgenommen, wenn der Kunde die Abnahme nicht innerhalb der Frist unter Angabe mindestens eines Mangels verweigert hat. Auf diese Rechtsfolge weist NexAI den Kunden in der Fertigstellungsanzeige gesondert hin.",
+    "**Beginn der Gewährleistungsfrist:** Mit der Abnahme – einschließlich der Fälle der Abnahmefiktion nach vorstehender Ziffer (3) sowie einer etwaigen Teilabnahme gemäß Ziffer 3 (4) – beginnt die auf **ein (1) Jahr** verkürzte Verjährungsfrist für Mängelansprüche des Kunden hinsichtlich der abgenommenen Werkleistungen. Die gesetzlich zwingenden Ausnahmen (Vorsatz, Arglist, Schäden aus der Verletzung des Lebens, des Körpers oder der Gesundheit sowie grobes Verschulden) bleiben unberührt; im Übrigen gelten die Regelungen des Rahmenvertrages und der AGB (B2B).",
+    "Mit der Abnahme geht die Gefahr auf den Kunden über und die Vergütung für die abgenommenen Projektleistungen wird gemäß den Regelungen der Vertragsdokumente fällig. Die Abnahme lässt die vertraglich vereinbarten Vergütungs-, Haftungs- und sonstigen Regelungen der Vertragsdokumente im Übrigen unberührt."
+   ]
+  },
+  {
+   "t": "spacer",
+   "h": 12
+  },
+  {
+   "t": "sig",
+   "cols": [
+    {
+     "role": "Für NexAI",
+     "lines": [
+      "Ort, Datum",
+      "",
+      "Maximilian Trenk (Gesellschafter)"
+     ]
+    },
+    {
+     "role": "Für NexAI",
+     "lines": [
+      "Ort, Datum",
+      "",
+      "Jason Brian Merklein (Gesellschafter)"
+     ]
+    },
+    {
+     "role": "Für den Kunden",
+     "lines": [
+      "Ort, Datum",
+      "",
+      "Name / Funktion"
+     ]
+    }
+   ]
+  },
+  {
+   "t": "spacer",
+   "h": 10
+  },
+  {
+   "t": "note",
+   "text": "Dieses Abnahmeprotokoll ist Teil eines sorgfältig erstellten Vertragsentwurfs. Es ersetzt keine Rechtsberatung und sollte für den konkreten Einzelfall anwaltlich geprüft werden."
+  }
+ ]
+}

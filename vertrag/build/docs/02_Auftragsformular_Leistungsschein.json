@@ -1,0 +1,624 @@
+{
+ "filename": "02_Auftragsformular_Leistungsschein",
+ "doc_title": "Auftragsformular / Leistungsschein",
+ "doc_subtitle": "Individualabrede zum Rahmenvertrag über KI-Agenten und digitale Assistenten",
+ "blocks": [
+  {
+   "t": "title",
+   "text": "Auftragsformular / Leistungsschein"
+  },
+  {
+   "t": "subtitle",
+   "text": "Individualabrede zum Rahmenvertrag über KI-Agenten und digitale Assistenten"
+  },
+  {
+   "t": "meta",
+   "text": "Stand: Juli 2026"
+  },
+  {
+   "t": "spacer",
+   "h": 6
+  },
+  {
+   "t": "p",
+   "text": "Dieses Auftragsformular (nachfolgend \"Leistungsschein\") konkretisiert die konkret beauftragten Leistungen, Beträge und Rahmenbedingungen zwischen den nachstehenden Parteien. Er ist ein **Vertragsdokument** im Sinne des Rahmenvertrags und stellt eine **Individualabrede** dar. Bei Widersprüchen zwischen diesem Leistungsschein, dem Rahmenvertrag, den Anlagen und den AGB (B2B) gilt die im Rahmenvertrag festgelegte Rangfolge. Die in diesem Leistungsschein getroffenen individuellen Vereinbarungen gehen den AGB (B2B) als Individualabrede nach § 305b BGB vor."
+  },
+  {
+   "t": "spacer",
+   "h": 4
+  },
+  {
+   "t": "h1",
+   "num": "1.",
+   "text": "Vertragsparteien"
+  },
+  {
+   "t": "h2",
+   "text": "Auftragnehmer (\"NexAI\")"
+  },
+  {
+   "t": "p",
+   "text": "NexAI – Next Generation Intelligence GbR, Untere Bergstraße 13, 74586 Frankenhardt-Honhardt, Deutschland, vertreten durch die Gesellschafter Maximilian Trenk und Jason Brian Merklein, E-Mail mbt@nex-a-i.com, Telefon 0176 20147646."
+  },
+  {
+   "t": "h2",
+   "text": "Auftraggeber (\"Kunde\")"
+  },
+  {
+   "t": "fill",
+   "label": "Firma / Unternehmen",
+   "value": ""
+  },
+  {
+   "t": "fill",
+   "label": "Rechtsform",
+   "value": ""
+  },
+  {
+   "t": "fill",
+   "label": "Ansprechpartner / Funktion",
+   "value": ""
+  },
+  {
+   "t": "fill",
+   "label": "Anschrift (Straße, Hausnr.)",
+   "value": ""
+  },
+  {
+   "t": "fill",
+   "label": "PLZ / Ort",
+   "value": ""
+  },
+  {
+   "t": "fill",
+   "label": "Land",
+   "value": ""
+  },
+  {
+   "t": "fill",
+   "label": "E-Mail",
+   "value": ""
+  },
+  {
+   "t": "fill",
+   "label": "Telefon",
+   "value": ""
+  },
+  {
+   "t": "fill",
+   "label": "USt-IdNr. / Steuernummer",
+   "value": ""
+  },
+  {
+   "t": "fill",
+   "label": "Handelsregister / Registergericht (soweit vorhanden)",
+   "value": ""
+  },
+  {
+   "t": "note",
+   "text": "Der Kunde bestätigt, den Vertrag als Unternehmer im Sinne des § 14 BGB in Ausübung seiner gewerblichen oder selbständigen beruflichen Tätigkeit abzuschließen (B2B)."
+  },
+  {
+   "t": "spacer",
+   "h": 4
+  },
+  {
+   "t": "h1",
+   "num": "2.",
+   "text": "Bezug zum Rahmenvertrag"
+  },
+  {
+   "t": "num",
+   "items": [
+    "Diesem Leistungsschein liegt der zwischen den Parteien geschlossene Rahmenvertrag über die Bereitstellung und den Betrieb von KI-Agenten (nachfolgend \"Rahmenvertrag\") nebst seinen Anlagen zugrunde. Die dort definierten Begriffe gelten in diesem Leistungsschein einheitlich.",
+    "Mit Unterzeichnung dieses Leistungsscheins bestätigt der Kunde, dass ihm der Rahmenvertrag, die AGB (B2B) sowie die Anlagen A (Leistungsbeschreibung), B (AVV), C (SLA) und D (Abnahmeprotokoll) vorliegen und Vertragsbestandteil sind.",
+    "Die datenschutzrechtliche Rollenverteilung (Verantwortlicher / Auftragsverarbeiter) richtet sich nach Anlage B (AVV); die Rollenverteilung nach der KI-VO ergibt sich aus Ziffer 4 dieses Leistungsscheins."
+   ]
+  },
+  {
+   "t": "fill",
+   "label": "Rahmenvertrag vom / Version",
+   "value": ""
+  },
+  {
+   "t": "spacer",
+   "h": 4
+  },
+  {
+   "t": "h1",
+   "num": "3.",
+   "text": "Beauftragte Leistungen"
+  },
+  {
+   "t": "p",
+   "text": "Der Kunde beauftragt die nachfolgend angekreuzten Leistungen. Die nähere Beschreibung ergibt sich aus Anlage A (Leistungsbeschreibung)."
+  },
+  {
+   "t": "h2",
+   "text": "3.1 Betriebsleistungen (laufender Betrieb von Agenten)"
+  },
+  {
+   "t": "checkbox",
+   "text": "**Voice Agent** (KI-Telefonassistent für ein- und/oder ausgehende Gespräche)",
+   "checked": false
+  },
+  {
+   "t": "checkbox",
+   "text": "**Chat Agent** (KI-Chatassistent für Website, Messenger o. Ä.)",
+   "checked": false
+  },
+  {
+   "t": "checkbox",
+   "text": "**Social-Media-Agent** (KI-gestützte Betreuung von Social-Media-Kanälen)",
+   "checked": false
+  },
+  {
+   "t": "checkbox",
+   "text": "**Vertriebs-/Akquise-Agent** (KI-gestützte B2B-Kontaktansprache)",
+   "checked": false
+  },
+  {
+   "t": "checkbox",
+   "text": "**Automatisierung** (Prozess-/Workflow-Automatisierungen)",
+   "checked": false
+  },
+  {
+   "t": "checkbox",
+   "text": "**Individuelle KI-Agenten** (kundenspezifisch entwickelte Agenten)",
+   "checked": false
+  },
+  {
+   "t": "h2",
+   "text": "3.2 Projektleistungen (einmalige Werkleistungen)"
+  },
+  {
+   "t": "checkbox",
+   "text": "**Website-Erstellung** (Erstellung/Bereitstellung einer Website als Werkleistung; Abnahme nach Anlage D)",
+   "checked": false
+  },
+  {
+   "t": "note",
+   "text": "Projektleistungen unterliegen dem Werkvertragsrecht, Betriebsleistungen dem Dienstvertragsrecht. Für den Vertriebs-/Akquise-Agenten gelten die besonderen Compliance-Zusicherungen des Kunden nach dem Rahmenvertrag (zulässige B2B-Ansprache, Informationspflichten nach Art. 14 DSGVO, Opt-out-Dokumentation)."
+  },
+  {
+   "t": "spacer",
+   "h": 4
+  },
+  {
+   "t": "h1",
+   "num": "4.",
+   "text": "Einsatzzweck und KI-VO-Einstufung je Agent"
+  },
+  {
+   "t": "p",
+   "text": "Für jeden beauftragten Agenten ist der verbindliche Einsatzzweck festzulegen. Der Kunde bestätigt für jeden Agenten, dass **kein Hochrisiko-Einsatz nach Anhang III der Verordnung (EU) 2024/1689 (KI-VO)** vorliegt und die Agenten ausschließlich für die angegebenen Zwecke eingesetzt werden. NexAI ist für die Bereitstellung und den Betrieb **Anbieter**, der Kunde als bestimmungsgemäßer Einsetzender **Betreiber** im Sinne der KI-VO; die Betreiberpflichten (u. a. zweckkonforme Verwendung, menschliche Aufsicht) obliegen dem Kunden."
+  },
+  {
+   "t": "h2",
+   "text": "Agent 1"
+  },
+  {
+   "t": "fill",
+   "label": "Bezeichnung / Typ des Agenten",
+   "value": ""
+  },
+  {
+   "t": "fill",
+   "label": "Verbindlicher Einsatzzweck",
+   "value": ""
+  },
+  {
+   "t": "checkbox",
+   "text": "Der Kunde bestätigt: **KEIN Hochrisiko-Einsatz** nach Anhang III KI-VO.",
+   "checked": false
+  },
+  {
+   "t": "checkbox",
+   "text": "Rollenzuordnung KI-VO: **NexAI = Anbieter**, **Kunde = Betreiber**.",
+   "checked": false
+  },
+  {
+   "t": "h2",
+   "text": "Agent 2"
+  },
+  {
+   "t": "fill",
+   "label": "Bezeichnung / Typ des Agenten",
+   "value": ""
+  },
+  {
+   "t": "fill",
+   "label": "Verbindlicher Einsatzzweck",
+   "value": ""
+  },
+  {
+   "t": "checkbox",
+   "text": "Der Kunde bestätigt: **KEIN Hochrisiko-Einsatz** nach Anhang III KI-VO.",
+   "checked": false
+  },
+  {
+   "t": "checkbox",
+   "text": "Rollenzuordnung KI-VO: **NexAI = Anbieter**, **Kunde = Betreiber**.",
+   "checked": false
+  },
+  {
+   "t": "h2",
+   "text": "Agent 3"
+  },
+  {
+   "t": "fill",
+   "label": "Bezeichnung / Typ des Agenten",
+   "value": ""
+  },
+  {
+   "t": "fill",
+   "label": "Verbindlicher Einsatzzweck",
+   "value": ""
+  },
+  {
+   "t": "checkbox",
+   "text": "Der Kunde bestätigt: **KEIN Hochrisiko-Einsatz** nach Anhang III KI-VO.",
+   "checked": false
+  },
+  {
+   "t": "checkbox",
+   "text": "Rollenzuordnung KI-VO: **NexAI = Anbieter**, **Kunde = Betreiber**.",
+   "checked": false
+  },
+  {
+   "t": "note",
+   "text": "Bei mehr als drei Agenten ist eine gleichlautende Fortsetzung als Beiblatt zu diesem Leistungsschein zu verwenden."
+  },
+  {
+   "t": "spacer",
+   "h": 4
+  },
+  {
+   "t": "pagebreak"
+  },
+  {
+   "t": "h1",
+   "num": "5.",
+   "text": "Vergütung"
+  },
+  {
+   "t": "p",
+   "text": "Für die Ersteinrichtung der Agenten wird **keine Einrichtungs- oder Setup-Gebühr** erhoben. Für Betriebsleistungen fällt ausschließlich der nachstehend vereinbarte monatliche **oder** jährliche Beitrag an. Projektleistungen (insbesondere die Website-Erstellung) werden, soweit beauftragt, gesondert und einmalig vergütet. Alle Beträge verstehen sich **netto zzgl. der gesetzlichen Umsatzsteuer**."
+  },
+  {
+   "t": "table",
+   "header": [
+    "Position / Leistung",
+    "Modell (monatlich / jährlich / einmalig)",
+    "Netto-Betrag (EUR)"
+   ],
+   "rows": [
+    [
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     ""
+    ],
+    [
+     "**Summe (netto)**",
+     "",
+     "____ EUR"
+    ]
+   ]
+  },
+  {
+   "t": "fill",
+   "label": "Abrechnungsturnus / Fälligkeit (z. B. monatlich im Voraus, jährlich im Voraus)",
+   "value": ""
+  },
+  {
+   "t": "note",
+   "text": "Umsatzsteuer: Regelbesteuerung; alle Preise netto zzgl. gesetzlicher USt. Bis zur Erteilung der USt-IdNr. wird die Steuernummer auf der Rechnung ausgewiesen."
+  },
+  {
+   "t": "spacer",
+   "h": 4
+  },
+  {
+   "t": "h1",
+   "num": "6.",
+   "text": "Freikontingent und Mehrverbrauch (Overage)"
+  },
+  {
+   "t": "p",
+   "text": "Im Beitrag ist je Agent ein **Freikontingent** enthalten. Darüber hinausgehender **Mehrverbrauch (Overage)** wird zum nachstehenden Netto-Einheitspreis abgerechnet und mit dem Beitrag des Folgemonats in Rechnung gestellt. Auf Verlangen des Kunden wird ein Einzelverbindungsnachweis bereitgestellt."
+  },
+  {
+   "t": "fill",
+   "label": "Freikontingent",
+   "value": "____ Min./Monat"
+  },
+  {
+   "t": "fill",
+   "label": "Mehrverbrauch (Overage)",
+   "value": "____ EUR/Min. netto"
+  },
+  {
+   "t": "fill",
+   "label": "Weiteres Kontingent / Einheit (optional, z. B. Nachrichten/Kontakte)",
+   "value": ""
+  },
+  {
+   "t": "spacer",
+   "h": 4
+  },
+  {
+   "t": "h1",
+   "num": "7.",
+   "text": "Technisches EUR-Spend-Cap je Agent"
+  },
+  {
+   "t": "p",
+   "text": "Zur Kostenbegrenzung wird je Agent ein technisches Ausgabenlimit (EUR-Spend-Cap) hinterlegt. Bei Erreichen des Limits kann der Betrieb des betreffenden Agenten technisch gedrosselt oder ausgesetzt werden. Eine Anhebung des Limits bedarf einer dokumentierten Weisung des Kunden."
+  },
+  {
+   "t": "fill",
+   "label": "EUR-Spend-Cap Agent 1",
+   "value": "____ EUR/Monat"
+  },
+  {
+   "t": "fill",
+   "label": "EUR-Spend-Cap Agent 2",
+   "value": "____ EUR/Monat"
+  },
+  {
+   "t": "fill",
+   "label": "EUR-Spend-Cap Agent 3",
+   "value": "____ EUR/Monat"
+  },
+  {
+   "t": "spacer",
+   "h": 4
+  },
+  {
+   "t": "h1",
+   "num": "8.",
+   "text": "Zahlungsweise"
+  },
+  {
+   "t": "checkbox",
+   "text": "**SEPA-Firmenlastschrift (B2B)** — ein gesondertes SEPA-Firmenlastschriftmandat wird erteilt.",
+   "checked": false
+  },
+  {
+   "t": "checkbox",
+   "text": "**Überweisung** — Zahlung nach Rechnungserhalt innerhalb der im Rahmenvertrag / den AGB (B2B) genannten Frist.",
+   "checked": false
+  },
+  {
+   "t": "spacer",
+   "h": 4
+  },
+  {
+   "t": "h1",
+   "num": "9.",
+   "text": "Laufzeitmodell"
+  },
+  {
+   "t": "p",
+   "text": "Es ist genau eines der folgenden Modelle zu wählen."
+  },
+  {
+   "t": "checkbox",
+   "text": "**Monatsmodell** — monatlich kündbar mit einer Frist von einem Monat zum Monatsende.",
+   "checked": false
+  },
+  {
+   "t": "checkbox",
+   "text": "**Jahresmodell** — Mindestlaufzeit 12 Monate, keine anteilige Rückerstattung (der gewährte Rabatt ist Gegenleistung für die Bindung); Verlängerung um jeweils 12 Monate, Kündigung mit einer Frist von einem Monat zum Laufzeitende.",
+   "checked": false
+  },
+  {
+   "t": "note",
+   "text": "Das Recht zur außerordentlichen Kündigung aus wichtigem Grund bleibt für beide Parteien unberührt."
+  },
+  {
+   "t": "spacer",
+   "h": 4
+  },
+  {
+   "t": "h1",
+   "num": "10.",
+   "text": "Befugnisse der Agenten"
+  },
+  {
+   "t": "checkbox",
+   "text": "Der Kunde bestätigt: Die Agenten geben **KEINE rechtsverbindlichen Zusagen** ab (keine verbindlichen Preise, Bestellungen oder Vertragsabschlüsse). Sie sind auf **Auskunft und Terminvereinbarung** beschränkt (**keine Abschlussvollmacht**).",
+   "checked": false
+  },
+  {
+   "t": "spacer",
+   "h": 4
+  },
+  {
+   "t": "h1",
+   "num": "11.",
+   "text": "KI-Transparenz und Aufzeichnung"
+  },
+  {
+   "t": "p",
+   "text": "Die **KI-Kennzeichnung/Transparenzpflicht nach Art. 50 KI-VO** ist verbindlicher, nicht abschaltbarer Leistungsbestandteil: Endnutzer werden stets darauf hingewiesen, dass sie mit einem KI-System interagieren."
+  },
+  {
+   "t": "p",
+   "text": "**Aufzeichnung/Transkription** von Gesprächen ist **standardmäßig deaktiviert** und wird nur auf dokumentierte Weisung des Kunden aktiviert. Bei aktivierter Aufzeichnung erfolgt zusätzlich zur KI-Ansage ein Aufzeichnungshinweis. Der Kunde ist für das Vorliegen einer tragfähigen Rechtsgrundlage der Aufzeichnung verantwortlich."
+  },
+  {
+   "t": "checkbox",
+   "text": "Aufzeichnung/Transkription **deaktiviert (Standard)**.",
+   "checked": false
+  },
+  {
+   "t": "checkbox",
+   "text": "Aufzeichnung/Transkription **auf Weisung aktiviert** (Pflicht-Ansage mit Aufzeichnungshinweis).",
+   "checked": false
+  },
+  {
+   "t": "spacer",
+   "h": 4
+  },
+  {
+   "t": "h1",
+   "num": "12.",
+   "text": "Rufnummern"
+  },
+  {
+   "t": "checkbox",
+   "text": "Rufnummer(n) **vom Kunden mitgebracht** (Kundeneigentum).",
+   "checked": false
+  },
+  {
+   "t": "checkbox",
+   "text": "Rufnummer(n) **von NexAI gestellt** (Betriebsmittel; kein Herausgabeanspruch).",
+   "checked": false
+  },
+  {
+   "t": "fill",
+   "label": "Betroffene Rufnummer(n)",
+   "value": ""
+  },
+  {
+   "t": "fill",
+   "label": "Registrierungsinhaber der Rufnummer(n)",
+   "value": ""
+  },
+  {
+   "t": "spacer",
+   "h": 4
+  },
+  {
+   "t": "h1",
+   "num": "13.",
+   "text": "Notfall- und Rückfallkontakt"
+  },
+  {
+   "t": "fill",
+   "label": "Notfallkontakt (Name)",
+   "value": ""
+  },
+  {
+   "t": "fill",
+   "label": "Notfallkontakt (Telefon / E-Mail)",
+   "value": ""
+  },
+  {
+   "t": "fill",
+   "label": "Optionale Rückfallnummer (Fallback bei Nichterreichbarkeit des Agenten)",
+   "value": ""
+  },
+  {
+   "t": "spacer",
+   "h": 4
+  },
+  {
+   "t": "h1",
+   "num": "14.",
+   "text": "Einrichtung und Start"
+  },
+  {
+   "t": "fill",
+   "label": "Geplanter Einrichtungs-/Startzeitpunkt",
+   "value": ""
+  },
+  {
+   "t": "note",
+   "text": "Übliche Einrichtungsdauer ab vollständiger Bereitstellung der erforderlichen Mitwirkung und Zugänge: 3–10 Werktage. Der genannte Zeitpunkt ist ein unverbindlicher Zielwert, kein Fixtermin im Sinne des § 323 Abs. 2 Nr. 2 BGB."
+  },
+  {
+   "t": "spacer",
+   "h": 4
+  },
+  {
+   "t": "h1",
+   "num": "15.",
+   "text": "Optionale Ablösesumme (Prompt-Weiternutzung)"
+  },
+  {
+   "t": "p",
+   "text": "Optional kann eine einmalige Ablösesumme für die dauerhafte Weiternutzung der für den Kunden erstellten Prompts/Konfigurationen nach Vertragsende vereinbart werden. Ohne eine solche Vereinbarung besteht kein Anspruch auf Herausgabe oder Weiternutzung der Prompts/Konfigurationen."
+  },
+  {
+   "t": "checkbox",
+   "text": "Ablösesumme für dauerhafte Prompt-Weiternutzung nach Vertragsende **vereinbart**.",
+   "checked": false
+  },
+  {
+   "t": "fill",
+   "label": "Ablösesumme (netto)",
+   "value": "____ EUR"
+  },
+  {
+   "t": "spacer",
+   "h": 4
+  },
+  {
+   "t": "h1",
+   "num": "16.",
+   "text": "Schlussbestätigung"
+  },
+  {
+   "t": "p",
+   "text": "Die Parteien bestätigen die Richtigkeit der vorstehenden Angaben. Dieser Leistungsschein wird mit beidseitiger Unterzeichnung wirksam und ist Bestandteil des Rahmenvertrags."
+  },
+  {
+   "t": "spacer",
+   "h": 8
+  },
+  {
+   "t": "sig",
+   "cols": [
+    {
+     "role": "Für NexAI",
+     "lines": [
+      "Ort, Datum",
+      "",
+      "Maximilian Trenk (Gesellschafter)"
+     ]
+    },
+    {
+     "role": "Für NexAI",
+     "lines": [
+      "Ort, Datum",
+      "",
+      "Jason Brian Merklein (Gesellschafter)"
+     ]
+    },
+    {
+     "role": "Für den Kunden",
+     "lines": [
+      "Ort, Datum",
+      "",
+      "Name / Funktion"
+     ]
+    }
+   ]
+  },
+  {
+   "t": "spacer",
+   "h": 6
+  },
+  {
+   "t": "note",
+   "text": "Dieser Leistungsschein ist ein sorgfältig erstellter Entwurf und sollte für den konkreten Einzelfall anwaltlich geprüft werden."
+  }
+ ]
+}

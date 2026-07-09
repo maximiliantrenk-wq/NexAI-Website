@@ -1,0 +1,639 @@
+{
+ "filename": "04_AnlageB_AVV_Auftragsverarbeitung",
+ "doc_title": "Anlage B – Vertrag zur Auftragsverarbeitung (AVV) gemäß Art. 28 DSGVO",
+ "blocks": [
+  {
+   "t": "title",
+   "text": "Anlage B – Vertrag zur Auftragsverarbeitung (AVV) gemäß Art. 28 DSGVO"
+  },
+  {
+   "t": "meta",
+   "text": "Stand: Juli 2026"
+  },
+  {
+   "t": "p",
+   "text": "Dieser Vertrag zur Auftragsverarbeitung (nachfolgend \"AVV\") ist Anlage B zum Rahmenvertrag zwischen den nachstehenden Parteien und konkretisiert die datenschutzrechtlichen Pflichten bei der Verarbeitung personenbezogener Daten im Auftrag."
+  },
+  {
+   "t": "h2",
+   "text": "Parteien"
+  },
+  {
+   "t": "p",
+   "text": "**Auftragsverarbeiter:** NexAI – Next Generation Intelligence GbR, Untere Bergstraße 13, 74586 Frankenhardt-Honhardt, Deutschland, vertreten durch die Gesellschafter Maximilian Trenk und Jason Brian Merklein, E-Mail mbt@nex-a-i.com, Telefon 0176 20147646 — nachfolgend \"NexAI\"."
+  },
+  {
+   "t": "p",
+   "text": "**Verantwortlicher (Kunde):**"
+  },
+  {
+   "t": "fill",
+   "label": "Firma / Rechtsform",
+   "value": ""
+  },
+  {
+   "t": "fill",
+   "label": "Anschrift",
+   "value": ""
+  },
+  {
+   "t": "fill",
+   "label": "Vertreten durch",
+   "value": ""
+  },
+  {
+   "t": "fill",
+   "label": "E-Mail",
+   "value": ""
+  },
+  {
+   "t": "fill",
+   "label": "Telefon",
+   "value": ""
+  },
+  {
+   "t": "p",
+   "text": "— nachfolgend \"Kunde\". NexAI und der Kunde nachfolgend gemeinsam \"Parteien\", einzeln \"Partei\"."
+  },
+  {
+   "t": "hr"
+  },
+  {
+   "t": "h1",
+   "num": "§ 1",
+   "text": "Präambel, Gegenstand und Rollenverteilung"
+  },
+  {
+   "t": "num",
+   "items": [
+    "NexAI erbringt für den Kunden Leistungen im Zusammenhang mit der Bereitstellung und dem Betrieb KI-gestützter Agenten (Voice Agent, Chat Agent, Social-Media-Agent, Vertriebs-/Akquise-Agent, Automatisierungen, individuelle KI-Agenten – nachfolgend \"Agenten\") sowie zugehöriger Projekt- und Betriebsleistungen. Im Rahmen dieser Leistungen verarbeitet NexAI personenbezogene Daten im Auftrag des Kunden.",
+    "Der Kunde ist hinsichtlich der im Auftrag verarbeiteten personenbezogenen Daten **Verantwortlicher** im Sinne des Art. 4 Nr. 7 DSGVO. NexAI ist insoweit **Auftragsverarbeiter** im Sinne des Art. 4 Nr. 8 DSGVO und verarbeitet die Daten ausschließlich weisungsgebunden nach Maßgabe dieses AVV.",
+    "Gegenstand dieses AVV ist die Konkretisierung der datenschutzrechtlichen Rechte und Pflichten der Parteien nach Art. 28 DSGVO. Für die abweichende oder ergänzende Rollenverteilung bei einzelnen Leistungsarten – insbesondere bei der Vertriebs-/Akquise-Leistung – gilt die Rollenmatrix in § 15.",
+    "Bei Widersprüchen zwischen diesem AVV und den übrigen Vertragsdokumenten (Rahmenvertrag, Auftragsformular/Leistungsschein, Anlage A, Anlage C, Anlage D, AGB) gehen in **datenschutzrechtlichen Fragen** die Regelungen dieses AVV vor (Sachvorrang). Im Übrigen gelten die Regelungen des Rahmenvertrags und seiner Anlagen fort.",
+    "Die eigene straf-, ordnungswidrigkeiten- und bußgeldrechtliche Verantwortlichkeit von NexAI sowie eine etwaige eigene datenschutzrechtliche Verantwortlichkeit von NexAI für Zwecke, die NexAI selbst bestimmt, bleiben von diesem AVV unberührt."
+   ]
+  },
+  {
+   "t": "h1",
+   "num": "§ 2",
+   "text": "Art, Umfang, Zweck und Dauer der Verarbeitung"
+  },
+  {
+   "t": "num",
+   "items": [
+    "**Art der Verarbeitung:** Erheben, Erfassen, Organisieren, Speichern, Anpassen, Auslesen, Abfragen, Verwenden, Übermitteln, Bereitstellen, Kombinieren, Einschränken und Löschen personenbezogener Daten mittels automatisierter Verfahren im Rahmen des Betriebs der Agenten (u. a. Sprachdialog, Chatdialog, Terminvereinbarung, Weiterleitung, Automatisierungen, Kontaktaufnahme).",
+    "**Zweck der Verarbeitung:** Bereitstellung, Einrichtung, Betrieb, Wartung und Support der Agenten für den Kunden, insbesondere die Beantwortung von Anfragen von Endnutzern, die Vereinbarung und Verwaltung von Terminen, die Weiterleitung von Anliegen sowie – nach Maßgabe der jeweiligen Beauftragung – die Kontaktaufnahme mit vom Kunden bestimmten Zielgruppen.",
+    "**Umfang der Verarbeitung:** bestimmt sich nach den im Auftragsformular/Leistungsschein und in Anlage A (Leistungsbeschreibung) festgelegten Agenten und Funktionen sowie nach den dokumentierten Weisungen des Kunden.",
+    "**Dauer der Verarbeitung:** Die Verarbeitung beginnt mit der Aufnahme der Leistungserbringung und endet mit Beendigung des Rahmenvertrags bzw. der jeweiligen Leistung, vorbehaltlich der Regelungen zu Löschung und Rückgabe (§ 12) und etwaiger gesetzlicher Aufbewahrungspflichten. Dieser AVV gilt für die Dauer der Verarbeitung personenbezogener Daten im Auftrag."
+   ]
+  },
+  {
+   "t": "h1",
+   "num": "§ 3",
+   "text": "Kategorien betroffener Personen und personenbezogener Daten"
+  },
+  {
+   "t": "p",
+   "text": "Gegenstand der Verarbeitung sind – abhängig von den beauftragten Agenten – die folgenden Kategorien:"
+  },
+  {
+   "t": "h2",
+   "text": "3.1 Kategorien betroffener Personen"
+  },
+  {
+   "t": "bullets",
+   "items": [
+    "Ansprechpartner, Beschäftigte und Vertreter des Kunden (Nutzer der Verwaltungs-/Konfigurationsfunktionen, Kontaktpersonen);",
+    "**Endnutzer** – Personen, die mit den Agenten interagieren, insbesondere Anrufer (Voice Agent), Chat-Kontakte (Chat Agent), über Social-Media-Kanäle kommunizierende Personen sowie im Rahmen der Vertriebs-/Akquise-Leistung angesprochene Kontakte;",
+    "Dritte, deren Daten von Endnutzern im Verlauf einer Interaktion mitgeteilt werden (z. B. genannte Kontaktpersonen)."
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "3.2 Kategorien personenbezogener Daten"
+  },
+  {
+   "t": "bullets",
+   "items": [
+    "Kontakt- und Stammdaten (Name, Anrede, Firma/Funktion, Telefonnummer, E-Mail-Adresse, Anschrift);",
+    "Gesprächs- und Kommunikationsinhalte (Inhalte von Anrufen, Chats, Nachrichten);",
+    "Transkripte und – nur bei ausdrücklich aktivierter Funktion – Aufzeichnungen von Gesprächen;",
+    "Termindaten (Terminwünsche, Datum/Uhrzeit, Anlass, Status);",
+    "Anliegen-, Vorgangs- und Statusdaten (Anfrage, Kategorie, Ergebnis, Weiterleitung);",
+    "Metadaten und technische Daten (Verbindungs-/Nutzungsdaten, Zeitstempel, Kennungen, Kanal, Dauer, technische Protokolldaten)."
+   ]
+  },
+  {
+   "t": "note",
+   "text": "Besondere Kategorien personenbezogener Daten (Art. 9 DSGVO) sind nicht Gegenstand der beauftragten Verarbeitung. Der Kunde stellt durch geeignete Konfiguration und Weisung sicher, dass die Agenten nicht gezielt zur Erhebung solcher Daten eingesetzt werden. Werden derartige Daten durch Endnutzer unaufgefordert mitgeteilt, verarbeitet NexAI sie ausschließlich im Rahmen der dokumentierten Weisungen und der Löschroutinen dieses AVV."
+  },
+  {
+   "t": "h1",
+   "num": "§ 4",
+   "text": "Weisungsbindung"
+  },
+  {
+   "t": "num",
+   "items": [
+    "NexAI verarbeitet personenbezogene Daten ausschließlich auf **dokumentierte Weisung** des Kunden, es sei denn, NexAI ist nach Unionsrecht oder dem Recht eines Mitgliedstaats zur Verarbeitung verpflichtet (Art. 28 Abs. 3 lit. a DSGVO). In diesem Fall teilt NexAI dem Kunden diese rechtliche Anforderung vor der Verarbeitung mit, sofern das betreffende Recht eine solche Mitteilung nicht wegen eines wichtigen öffentlichen Interesses verbietet.",
+    "Die maßgeblichen Weisungen sind in diesem AVV und den übrigen Vertragsdokumenten festgelegt (Erstweisung). Weitergehende Einzelweisungen erteilt der Kunde in Textform gegenüber der in § 14 genannten Kontaktstelle. Mündliche Weisungen bestätigt der Kunde unverzüglich in Textform.",
+    "NexAI informiert den Kunden unverzüglich, wenn NexAI der Auffassung ist, dass eine Weisung gegen datenschutzrechtliche Vorschriften verstößt (Art. 28 Abs. 3 Satz 3 DSGVO). NexAI ist berechtigt, die Durchführung der betreffenden Weisung bis zu deren Bestätigung oder Änderung durch den Kunden auszusetzen.",
+    "Der Kunde trägt die Verantwortung für die Rechtmäßigkeit der Weisungen und der Verarbeitung, insbesondere für das Vorliegen einer tragfähigen Rechtsgrundlage."
+   ]
+  },
+  {
+   "t": "h1",
+   "num": "§ 5",
+   "text": "Vertraulichkeit"
+  },
+  {
+   "t": "num",
+   "items": [
+    "NexAI verpflichtet die mit der Verarbeitung befassten Personen zur Vertraulichkeit, soweit sie nicht bereits einer angemessenen gesetzlichen Verschwiegenheitspflicht unterliegen (Art. 28 Abs. 3 lit. b, Art. 29, Art. 32 Abs. 4 DSGVO).",
+    "NexAI stellt sicher, dass Personen, die zur Verarbeitung der personenbezogenen Daten befugt sind, mit den einschlägigen datenschutzrechtlichen Anforderungen vertraut sind und Daten nur auf Weisung verarbeiten. Die Verpflichtung besteht auch nach Beendigung der Tätigkeit fort.",
+    "Als Gesellschafter der NexAI GbR sind Maximilian Trenk und Jason Brian Merklein unmittelbar zur Vertraulichkeit verpflichtet."
+   ]
+  },
+  {
+   "t": "h1",
+   "num": "§ 6",
+   "text": "Technische und organisatorische Maßnahmen (Art. 32 DSGVO)"
+  },
+  {
+   "t": "num",
+   "items": [
+    "NexAI trifft die zur Gewährleistung eines dem Risiko angemessenen Schutzniveaus erforderlichen technischen und organisatorischen Maßnahmen nach Art. 32 DSGVO. Die zum Zeitpunkt des Vertragsschlusses getroffenen Maßnahmen sind in **Anhang 1 (Technische und organisatorische Maßnahmen)** beschrieben und sind Bestandteil dieses AVV.",
+    "NexAI ist berechtigt, die Maßnahmen an den Stand der Technik und an geänderte tatsächliche Verhältnisse anzupassen, sofern das vereinbarte Schutzniveau nicht unterschritten wird. Wesentliche Änderungen dokumentiert NexAI und stellt sie dem Kunden auf Anfrage zur Verfügung.",
+    "NexAI überprüft die Wirksamkeit der Maßnahmen in angemessenen Abständen."
+   ]
+  },
+  {
+   "t": "h1",
+   "num": "§ 7",
+   "text": "Zweckbindung, kein Modelltraining"
+  },
+  {
+   "t": "num",
+   "items": [
+    "NexAI verarbeitet die personenbezogenen Daten des Kunden ausschließlich zu den in § 2 genannten Zwecken und nicht für eigene Zwecke.",
+    "NexAI verwendet die im Auftrag verarbeiteten personenbezogenen Daten **nicht zum Training, zur Weiterentwicklung, zum Fine-Tuning oder zur Verbesserung eigener oder fremder KI-Modelle**.",
+    "NexAI konfiguriert die eingesetzten Subunternehmer, soweit technisch möglich, so, dass eine Nutzung der übermittelten Daten zu Trainingszwecken ausgeschlossen ist und die Daten nicht oder nur für den kürzest möglichen, technisch vorgegebenen Zeitraum gespeichert werden (Zero-Retention- bzw. No-Training-Konfiguration). Soweit ein Subunternehmer Daten über die Erbringung der Leistung hinaus zu eigenen Zwecken verarbeitet, geschieht dies außerhalb des Auftragsverhältnisses; § 15 (Rollenmatrix) bleibt unberührt.",
+    "Eine über die Auftragserfüllung hinausgehende Verarbeitung durch NexAI zu eigenen Zwecken – insbesondere zur Produktverbesserung – erfolgt nur nach Anonymisierung oder auf gesonderter, dokumentierter Rechtsgrundlage (Art. 28 Abs. 10 DSGVO)."
+   ]
+  },
+  {
+   "t": "pagebreak"
+  },
+  {
+   "t": "h1",
+   "num": "§ 8",
+   "text": "Speicherorte, Speicherdauer und Löschung"
+  },
+  {
+   "t": "num",
+   "items": [
+    "Die Verarbeitung erfolgt teils intern bei NexAI, teils extern bei den in **Anhang 2 (Unterauftragsverarbeiter)** genannten Subunternehmern, ggf. auch in Drittländern nach Maßgabe von § 10.",
+    "**Grundsatz der Nichtspeicherung:** Wo eine Speicherung technisch abschaltbar ist, wird sie deaktiviert; personenbezogene Daten werden dann nur flüchtig zur Durchführung der jeweiligen Interaktion verarbeitet.",
+    "Soweit eine Speicherung technisch erforderlich ist oder auf dokumentierter Weisung des Kunden erfolgt, werden die Daten **spätestens sechs (6) Monate nach ihrer Erhebung** gelöscht, sofern nicht der Kunde eine abweichende (insbesondere kürzere) Frist weist oder eine Ausnahme nach Absatz 4 greift. Der Kunde als Verantwortlicher kann jederzeit eine frühere Löschung anweisen.",
+    "Von der Löschung ausgenommen sind Daten, deren weitere Aufbewahrung zur Erfüllung gesetzlicher Aufbewahrungspflichten oder zu Nachweiszwecken bis zum Ablauf der einschlägigen Verjährungsfristen erforderlich ist; solche Daten werden in ihrer Verarbeitung eingeschränkt (gesperrt) und nach Wegfall des Aufbewahrungsgrundes gelöscht.",
+    "**Aufzeichnung und Transkription** von Gesprächen sind standardmäßig **deaktiviert**. Sie werden nur auf ausdrückliche, dokumentierte Weisung des Kunden aktiviert und stets mit der vertraglich vorgesehenen Pflicht-Ansage (KI-Hinweis sowie ggf. Aufzeichnungshinweis) verbunden. Der Kunde verantwortet die Rechtsgrundlage einer solchen Aufzeichnung.",
+    "Führendes System für Geschäfts- und Vorgangsdaten sind die Systeme des Kunden; NexAI hält Daten insoweit nur zur Leistungserbringung vor."
+   ]
+  },
+  {
+   "t": "h1",
+   "num": "§ 9",
+   "text": "Unterauftragsverarbeiter"
+  },
+  {
+   "t": "num",
+   "items": [
+    "Der Kunde erteilt NexAI die **allgemeine schriftliche Genehmigung** zur Beauftragung von Unterauftragsverarbeitern (Art. 28 Abs. 2 Satz 2 DSGVO). Die zum Zeitpunkt des Vertragsschlusses eingesetzten Subunternehmer sind in **Anhang 2 (Unterauftragsverarbeiter)** aufgeführt und werden hiermit genehmigt.",
+    "NexAI informiert den Kunden über beabsichtigte Änderungen in Bezug auf die Hinzuziehung oder Ersetzung von Unterauftragsverarbeitern **mindestens vierzehn (14) Tage vorab in Textform** (Art. 28 Abs. 2 Satz 1 DSGVO).",
+    "Der Kunde kann einer beabsichtigten Änderung binnen der Frist aus wichtigem, datenschutzbezogenem Grund in Textform **widersprechen**. Im Fall eines berechtigten Widerspruchs bemühen sich die Parteien um eine einvernehmliche Lösung. Kann diese nicht gefunden werden und ist NexAI die Erbringung der betroffenen Leistung ohne den Subunternehmer nicht mit zumutbarem Aufwand möglich, steht jeder Partei ein **Sonderkündigungsrecht** hinsichtlich der betroffenen Leistung mit angemessener Frist zu.",
+    "NexAI verpflichtet jeden Unterauftragsverarbeiter durch Vertrag oder anderes Rechtsinstrument auf Datenschutzpflichten, die den Pflichten dieses AVV im Wesentlichen entsprechen, insbesondere auf hinreichende Garantien nach Art. 28 Abs. 3 und Abs. 4 DSGVO. Kommt der Unterauftragsverarbeiter seinen Datenschutzpflichten nicht nach, haftet NexAI gegenüber dem Kunden für die Einhaltung dieser Pflichten.",
+    "Nicht als Unterauftragsverarbeitung im Sinne dieser Regelung gelten Nebenleistungen, die NexAI als Nebenleistung in Anspruch nimmt (z. B. Telekommunikations-, Post-/Transport-, Wartungsleistungen), sofern dabei kein Zugriff auf die im Auftrag verarbeiteten Daten zum Zweck der Verarbeitung erfolgt."
+   ]
+  },
+  {
+   "t": "h1",
+   "num": "§ 10",
+   "text": "Drittlandtransfer"
+  },
+  {
+   "t": "num",
+   "items": [
+    "Erfolgt eine Verarbeitung durch einen Unterauftragsverarbeiter in einem Drittland, stellt NexAI sicher, dass die Anforderungen der Art. 44 ff. DSGVO eingehalten werden.",
+    "Vorrangig stützt sich der Transfer auf einen **Angemessenheitsbeschluss** der Europäischen Kommission, insbesondere das EU-U.S. Data Privacy Framework (DPF), sofern der jeweilige Empfänger zertifiziert ist.",
+    "Hilfsweise – insbesondere wenn keine DPF-Zertifizierung vorliegt (bei den in Anhang 2 gekennzeichneten Empfängern, etwa Vapi und ElevenLabs, vorsorglich der SCC-Weg) – werden die **EU-Standardvertragsklauseln** (Durchführungsbeschluss (EU) 2021/914), **Modul 3 (Auftragsverarbeiter an Unterauftragsverarbeiter)**, abgeschlossen, ergänzt um erforderliche **Zusatzmaßnahmen** und eine **Transfer-Folgenabschätzung (Transfer Impact Assessment, TIA)**.",
+    "NexAI stellt dem Kunden auf Anfrage Nachweise über die getroffenen Transfergarantien in geeigneter Form zur Verfügung."
+   ]
+  },
+  {
+   "t": "h1",
+   "num": "§ 11",
+   "text": "Unterstützungspflichten"
+  },
+  {
+   "t": "h2",
+   "text": "11.1 Betroffenenrechte"
+  },
+  {
+   "t": "num",
+   "items": [
+    "NexAI unterstützt den Kunden mit geeigneten technischen und organisatorischen Maßnahmen, soweit möglich, bei der Erfüllung von Anträgen betroffener Personen auf Wahrnehmung ihrer Rechte nach Art. 12–23 DSGVO (Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit, Widerspruch).",
+    "Wendet sich eine betroffene Person unmittelbar an NexAI, leitet NexAI das Anliegen unverzüglich an den Kunden weiter und beantwortet es nicht selbständig, es sei denn, der Kunde weist dies an."
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "11.2 Meldung von Datenschutzverletzungen"
+  },
+  {
+   "t": "num",
+   "items": [
+    "NexAI meldet dem Kunden jede Verletzung des Schutzes personenbezogener Daten **unverzüglich, spätestens jedoch innerhalb von vierundzwanzig (24) Stunden nach Kenntniserlangung**, in Textform (Art. 33 Abs. 2 DSGVO).",
+    "Die Meldung enthält, soweit verfügbar, eine Beschreibung der Art der Verletzung, die Kategorien und die ungefähre Zahl der betroffenen Personen und Datensätze, die wahrscheinlichen Folgen sowie die ergriffenen oder vorgeschlagenen Abhilfemaßnahmen. Soweit die Informationen nicht zeitgleich bereitgestellt werden können, dürfen sie ohne unangemessene weitere Verzögerung schrittweise nachgereicht werden.",
+    "NexAI unterstützt den Kunden bei dessen Melde- und Benachrichtigungspflichten nach Art. 33 und Art. 34 DSGVO und ergreift angemessene Maßnahmen zur Eindämmung und Behebung."
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "11.3 Datenschutz-Folgenabschätzung"
+  },
+  {
+   "t": "num",
+   "items": [
+    "NexAI unterstützt den Kunden unter Berücksichtigung der Art der Verarbeitung und der verfügbaren Informationen bei einer Datenschutz-Folgenabschätzung (Art. 35 DSGVO) sowie bei einer vorherigen Konsultation der Aufsichtsbehörde (Art. 36 DSGVO)."
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "11.4 Vergütung von Unterstützungsleistungen"
+  },
+  {
+   "t": "p",
+   "text": "Unterstützungsleistungen nach diesem § 11, die über den vertraglich geschuldeten Umfang hinausgehen und nicht auf einem NexAI zuzurechnenden Umstand beruhen, kann NexAI nach vorheriger Ankündigung zu den vereinbarten bzw., soweit nicht vereinbart, den üblichen Sätzen abrechnen. Die gesetzlich geschuldeten Grundunterstützungspflichten nach Art. 28 Abs. 3 DSGVO bleiben unentgeltlich."
+  },
+  {
+   "t": "pagebreak"
+  },
+  {
+   "t": "h1",
+   "num": "§ 12",
+   "text": "Löschung und Rückgabe nach Beendigung"
+  },
+  {
+   "t": "num",
+   "items": [
+    "Nach Abschluss der Erbringung der Verarbeitungsleistungen löscht NexAI nach Wahl des Kunden alle personenbezogenen Daten oder gibt sie zurück und löscht vorhandene Kopien, sofern nicht nach Unionsrecht oder mitgliedstaatlichem Recht eine Verpflichtung zur Speicherung besteht (Art. 28 Abs. 3 lit. g DSGVO).",
+    "NexAI stellt dem Kunden vor der Löschung für einen Zeitraum von **dreißig (30) Tagen** die Möglichkeit zum **Export** der Daten in einem gängigen, strukturierten Format bereit. Nach Ablauf dieser Frist bzw. nach erfolgtem Export werden die Daten gelöscht.",
+    "NexAI bestätigt die Löschung auf Verlangen in **Textform** (Löschbestätigung).",
+    "Unterliegen Daten gesetzlichen Aufbewahrungspflichten (insbesondere § 147 AO, § 257 HGB), werden diese nicht gelöscht, sondern in ihrer Verarbeitung **eingeschränkt (gesperrt)** (Art. 18 DSGVO) und nach Ablauf der Aufbewahrungsfrist gelöscht."
+   ]
+  },
+  {
+   "t": "h1",
+   "num": "§ 13",
+   "text": "Nachweis- und Kontrollrechte (Audit)"
+  },
+  {
+   "t": "num",
+   "items": [
+    "NexAI stellt dem Kunden alle erforderlichen Informationen zum Nachweis der Einhaltung der Pflichten aus Art. 28 DSGVO zur Verfügung und ermöglicht Überprüfungen – einschließlich Inspektionen –, die vom Kunden oder einem von diesem beauftragten Prüfer durchgeführt werden, und trägt zu diesen bei (Art. 28 Abs. 3 lit. h DSGVO).",
+    "Der Nachweis kann durch geeignete Dokumentation, aktuelle Testate, Zertifizierungen oder Berichte unabhängiger Stellen erbracht werden. Reichen diese zur Ausräumung eines konkreten Prüfbedarfs nicht aus, kann der Kunde nach rechtzeitiger Vorankündigung (in der Regel mindestens vierzehn (14) Tage vorab) und zu üblichen Geschäftszeiten eine Vor-Ort-Prüfung durchführen, ohne den Betriebsablauf unverhältnismäßig zu beeinträchtigen und unter Wahrung der Vertraulichkeit sowie der Rechte Dritter.",
+    "Der beauftragte Prüfer darf nicht in einem Wettbewerbsverhältnis zu NexAI stehen und ist zur Vertraulichkeit zu verpflichten.",
+    "Prüfungen, die über eine (1) reguläre Prüfung pro Jahr hinausgehen oder auf Verlangen des Kunden ohne konkreten Anlass erfolgen, kann NexAI den hierdurch entstehenden angemessenen Aufwand zu den üblichen Sätzen in Rechnung stellen. Prüfungen aus konkretem Anlass sowie die gesetzlich geschuldete Bereitstellung von Nachweisen bleiben hiervon unberührt."
+   ]
+  },
+  {
+   "t": "h1",
+   "num": "§ 14",
+   "text": "Datenschutzbeauftragter, Verzeichnis, Kontaktstelle"
+  },
+  {
+   "t": "num",
+   "items": [
+    "NexAI benennt einen Datenschutzbeauftragten, sofern und soweit eine gesetzliche Benennungspflicht besteht. Kontaktstelle für Datenschutzangelegenheiten und für Weisungen nach § 4 Abs. 2 ist mbt@nex-a-i.com.",
+    "NexAI führt ein Verzeichnis aller Kategorien von im Auftrag durchgeführten Verarbeitungstätigkeiten (Art. 30 Abs. 2 DSGVO)."
+   ]
+  },
+  {
+   "t": "fill",
+   "label": "Datenschutzkontakt des Kunden (Name, E-Mail)",
+   "value": ""
+  },
+  {
+   "t": "h1",
+   "num": "§ 15",
+   "text": "Rollenmatrix nach Leistungsart"
+  },
+  {
+   "t": "p",
+   "text": "Die datenschutzrechtliche Rolle von NexAI richtet sich nach der jeweils beauftragten Leistung. Die im Auftragsformular je Agent getroffene Zuordnung ist maßgeblich; im Zweifel gilt die nachstehende Matrix:"
+  },
+  {
+   "t": "table",
+   "header": [
+    "Leistung / Agent",
+    "Rolle NexAI",
+    "Rechtsrahmen"
+   ],
+   "rows": [
+    [
+     "Voice Agent (Inbound)",
+     "Auftragsverarbeiter",
+     "Art. 28 DSGVO / dieser AVV"
+    ],
+    [
+     "Chat Agent",
+     "Auftragsverarbeiter",
+     "Art. 28 DSGVO / dieser AVV"
+    ],
+    [
+     "Social-Media-Agent",
+     "Auftragsverarbeiter",
+     "Art. 28 DSGVO / dieser AVV"
+    ],
+    [
+     "Automatisierungen",
+     "Auftragsverarbeiter",
+     "Art. 28 DSGVO / dieser AVV"
+    ],
+    [
+     "Individuelle KI-Agenten",
+     "Auftragsverarbeiter",
+     "Art. 28 DSGVO / dieser AVV"
+    ],
+    [
+     "Vertriebs-/Akquise-Agent – NexAI recherchiert Kontakte selbst",
+     "Auftragsverarbeitung; im Einzelfall gemeinsame Verantwortlichkeit (Art. 26) oder getrennte Verantwortlichkeit",
+     "Art. 28 bzw. Art. 26 DSGVO – Festlegung im Auftragsformular"
+    ]
+   ]
+  },
+  {
+   "t": "num",
+   "items": [
+    "Für die Vertriebs-/Akquise-Leistung, bei der NexAI Kontaktdaten teilweise selbst recherchiert, legen die Parteien die konkrete Rolle im Auftragsformular fest. Wird eine **gemeinsame Verantwortlichkeit** begründet, schließen die Parteien eine gesonderte Vereinbarung nach Art. 26 DSGVO, die die jeweiligen Pflichten – insbesondere zur Information nach Art. 14 DSGVO und zur Wahrnehmung von Betroffenenrechten – festlegt.",
+    "NexAI unterhält für die selbst durchgeführte Kontaktrecherche eine eigene Compliance (nur zulässige B2B-Ansprache, Erfüllung der Informationspflichten nach Art. 14 DSGVO, Dokumentation von Widersprüchen/Opt-outs) und ist berechtigt, rechtswidrige Kampagnenvorgaben abzulehnen. Der Kunde sichert die Rechtmäßigkeit der von ihm vorgegebenen Zielgruppen und Ansprachen zu.",
+    "Die Klarstellung in § 1 Abs. 5 (eigene Verantwortlichkeit von NexAI) bleibt unberührt."
+   ]
+  },
+  {
+   "t": "h1",
+   "num": "§ 16",
+   "text": "Haftung und Innenausgleich"
+  },
+  {
+   "t": "num",
+   "items": [
+    "Für die Haftung im Außenverhältnis gegenüber betroffenen Personen gilt Art. 82 DSGVO. Im Innenverhältnis tragen die Parteien einen etwaigen Schaden bzw. eine Geldbuße nach dem **Maß ihres jeweiligen Verantwortungsanteils** an dem zugrunde liegenden Verstoß (Art. 82 Abs. 5 DSGVO).",
+    "Hat eine Partei an eine betroffene Person Schadensersatz geleistet, der über ihren Verantwortungsanteil hinausgeht, kann sie von der anderen Partei den auf deren Anteil entfallenden Teil zurückfordern.",
+    "Die übrigen Haftungsregelungen des Rahmenvertrags (dort § Haftung/Haftungsbeschränkung) gelten für das Verhältnis der Parteien untereinander ergänzend, soweit sie zwingendem Datenschutzrecht nicht entgegenstehen."
+   ]
+  },
+  {
+   "t": "h1",
+   "num": "§ 17",
+   "text": "Schlussbestimmungen"
+  },
+  {
+   "t": "num",
+   "items": [
+    "Änderungen und Ergänzungen dieses AVV bedürfen der Textform. Dies gilt auch für die Aufhebung dieses Textformerfordernisses. Vorrangige Individualabreden (§ 305b BGB) bleiben unberührt.",
+    "Sollte eine Bestimmung dieses AVV unwirksam sein oder werden, bleibt die Wirksamkeit der übrigen Bestimmungen unberührt.",
+    "Es gilt das Recht der Bundesrepublik Deutschland unter Ausschluss des UN-Kaufrechts. Ausschließlicher Gerichtsstand für alle Streitigkeiten aus oder im Zusammenhang mit diesem AVV ist – soweit gesetzlich zulässig – der Sitz von NexAI.",
+    "Die Anhänge 1 (TOM) und 2 (Unterauftragsverarbeiter) sind Bestandteil dieses AVV."
+   ]
+  },
+  {
+   "t": "pagebreak"
+  },
+  {
+   "t": "h1",
+   "num": "Anhang 1",
+   "text": "Technische und organisatorische Maßnahmen (Art. 32 DSGVO)"
+  },
+  {
+   "t": "h2",
+   "text": "1. Mandantentrennung / Trennungskontrolle"
+  },
+  {
+   "t": "bullets",
+   "items": [
+    "getrennte Projekte, Workspaces und API-Keys je Kunde bei den eingesetzten Diensten;",
+    "logische Trennung der Datenbestände; keine kundenübergreifende Zusammenführung;",
+    "getrennte Verarbeitung von Test-/Entwicklungs- und Produktivdaten."
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "2. Zugangs- und Zugriffskontrolle"
+  },
+  {
+   "t": "bullets",
+   "items": [
+    "Multi-Faktor-Authentifizierung (MFA) für administrative Zugänge;",
+    "Least-Privilege-Prinzip: rollenbasierte, auf das Erforderliche beschränkte Berechtigungen;",
+    "kein Produktivbetrieb über rein private Endnutzer-Accounts; Nutzung dedizierter Betriebs-Accounts;",
+    "Passwort-Richtlinien und sichere Verwahrung von Geheimnissen/Schlüsseln;",
+    "regelmäßige Überprüfung und Entzug nicht mehr benötigter Berechtigungen."
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "3. Verschlüsselung / Weitergabekontrolle"
+  },
+  {
+   "t": "bullets",
+   "items": [
+    "Transportverschlüsselung (TLS) bei der Übertragung personenbezogener Daten;",
+    "Verschlüsselung ruhender Daten, soweit von den eingesetzten Diensten unterstützt;",
+    "gesicherte Schnittstellen (authentifizierte APIs/Webhooks)."
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "4. Eingabe- und Protokollierungskontrolle"
+  },
+  {
+   "t": "bullets",
+   "items": [
+    "Zugriffs- und Aktivitätsprotokollierung in den administrativen Systemen;",
+    "Nachvollziehbarkeit wesentlicher Konfigurations- und Verarbeitungsvorgänge."
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "5. Verfügbarkeit und Belastbarkeit"
+  },
+  {
+   "t": "bullets",
+   "items": [
+    "Nutzung etablierter, ausfallsicherer Cloud-Infrastruktur der Subunternehmer;",
+    "Maßnahmen zur Wiederherstellbarkeit im Rahmen der Möglichkeiten der genutzten Dienste."
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "6. Datenminimierung und Löschung"
+  },
+  {
+   "t": "bullets",
+   "items": [
+    "Deaktivierung der Speicherung, wo technisch möglich (Grundsatz der Nichtspeicherung);",
+    "standardmäßig deaktivierte Aufzeichnung/Transkription;",
+    "automatisierte Löschroutinen (Löschung spätestens sechs Monate nach Erhebung, soweit keine Ausnahme greift);",
+    "Zero-Retention-/No-Training-Konfiguration der Subunternehmer, soweit technisch verfügbar."
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "7. Auftragskontrolle und Organisation"
+  },
+  {
+   "t": "bullets",
+   "items": [
+    "Verpflichtung der beteiligten Personen auf Vertraulichkeit;",
+    "vertragliche Bindung der Unterauftragsverarbeiter auf entsprechende Schutzpflichten;",
+    "dokumentierte Weisungslage; Verzeichnis der Verarbeitungstätigkeiten (Art. 30 Abs. 2 DSGVO)."
+   ]
+  },
+  {
+   "t": "pagebreak"
+  },
+  {
+   "t": "h1",
+   "num": "Anhang 2",
+   "text": "Unterauftragsverarbeiter"
+  },
+  {
+   "t": "p",
+   "text": "Die folgenden Unterauftragsverarbeiter sind zum Zeitpunkt des Vertragsschlusses eingesetzt und werden vom Kunden allgemein genehmigt (§ 9). Der konkrete Einsatz richtet sich nach den beauftragten Agenten. Nicht bei jedem Kunden kommen sämtliche Dienste zum Einsatz."
+  },
+  {
+   "t": "table",
+   "header": [
+    "Name",
+    "Sitz / Land",
+    "Leistung",
+    "Datenkategorien",
+    "Transfermechanismus"
+   ],
+   "rows": [
+    [
+     "Vapi Inc.",
+     "USA",
+     "Voice-Agent-Plattform (Sprachdialog, Telefonie-Orchestrierung)",
+     "Gesprächsinhalte, Metadaten, ggf. Kontaktdaten",
+     "EU-SCC Modul 3 + Zusatzmaßnahmen + TIA (vorsorglich)"
+    ],
+    [
+     "Twilio Inc.",
+     "USA",
+     "Telefonie / Messaging (Verbindungsaufbau, SMS)",
+     "Rufnummern, Verbindungs-/Metadaten, ggf. Nachrichteninhalte",
+     "DPF, hilfsweise EU-SCC Modul 3"
+    ],
+    [
+     "Make (Celonis / Integromat s.r.o.)",
+     "EU (Tschechien)",
+     "Automatisierungen / Workflow-Orchestrierung",
+     "Vorgangs-, Kontakt-, Termindaten, Metadaten",
+     "EU-intern; kein Drittlandtransfer"
+    ],
+    [
+     "OpenAI Ireland Ltd. / OpenAI, L.L.C.",
+     "EU / USA",
+     "Sprachmodell / KI-Verarbeitung (Textverstehen, Antwortgenerierung)",
+     "Gesprächs-/Textinhalte, Metadaten",
+     "DPF, hilfsweise EU-SCC Modul 3; No-Training-Konfiguration"
+    ],
+    [
+     "ElevenLabs Inc.",
+     "USA",
+     "Sprachsynthese / Text-to-Speech (und ggf. STT)",
+     "Textinhalte, Audio-/Metadaten",
+     "EU-SCC Modul 3 + Zusatzmaßnahmen + TIA (vorsorglich)"
+    ],
+    [
+     "Google LLC / Google Ireland Ltd.",
+     "EU / USA",
+     "Cloud-, Kalender-, Workspace- und ggf. Sprachdienste",
+     "Termin-, Kontakt-, Vorgangsdaten, Metadaten",
+     "DPF, hilfsweise EU-SCC Modul 3"
+    ],
+    [
+     "Hosting-Provider",
+     "____ (EU, soweit möglich)",
+     "Hosting / Betrieb Website und Anwendungen",
+     "je nach Anwendung: Kontakt-, Vorgangs-, Protokolldaten",
+     "EU-intern bzw. DPF/SCC je nach Standort"
+    ]
+   ]
+  },
+  {
+   "t": "fill",
+   "label": "Ergänzende / abweichende Subunternehmer (kundenspezifisch)",
+   "value": ""
+  },
+  {
+   "t": "note",
+   "text": "Sitzangaben und Transfermechanismen können sich ändern; maßgeblich ist die jeweils aktuelle, dem Kunden nach § 9 Abs. 2 mitgeteilte Fassung. Bei Diensten mit EU-Niederlassung wird die Verarbeitung vorrangig über die EU-Entität abgewickelt."
+  },
+  {
+   "t": "pagebreak"
+  },
+  {
+   "t": "h1",
+   "num": "",
+   "text": "Unterschriften"
+  },
+  {
+   "t": "p",
+   "text": "Die Parteien schließen diesen Vertrag zur Auftragsverarbeitung einschließlich seiner Anhänge 1 und 2 verbindlich ab."
+  },
+  {
+   "t": "spacer",
+   "h": 12
+  },
+  {
+   "t": "sig",
+   "cols": [
+    {
+     "role": "Für NexAI",
+     "lines": [
+      "Ort, Datum",
+      "",
+      "Maximilian Trenk (Gesellschafter)"
+     ]
+    },
+    {
+     "role": "Für NexAI",
+     "lines": [
+      "Ort, Datum",
+      "",
+      "Jason Brian Merklein (Gesellschafter)"
+     ]
+    },
+    {
+     "role": "Für den Kunden",
+     "lines": [
+      "Ort, Datum",
+      "",
+      "Name / Funktion"
+     ]
+    }
+   ]
+  },
+  {
+   "t": "spacer",
+   "h": 12
+  },
+  {
+   "t": "note",
+   "text": "Dieser AVV ist ein sorgfältig erstellter Entwurf. Er ersetzt keine Rechtsberatung und sollte vor Verwendung im Einzelfall anwaltlich geprüft und an die konkrete Verarbeitungssituation angepasst werden."
+  }
+ ]
+}

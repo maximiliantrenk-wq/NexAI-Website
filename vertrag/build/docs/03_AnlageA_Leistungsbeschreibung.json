@@ -1,0 +1,358 @@
+{
+ "filename": "03_AnlageA_Leistungsbeschreibung",
+ "doc_title": "Anlage A – Leistungsbeschreibung",
+ "doc_subtitle": "Anlage zum Rahmenvertrag zwischen NexAI und dem Kunden",
+ "blocks": [
+  {
+   "t": "title",
+   "text": "Anlage A – Leistungsbeschreibung"
+  },
+  {
+   "t": "subtitle",
+   "text": "Anlage zum Rahmenvertrag über die Bereitstellung und den Betrieb KI-gestützter digitaler Assistenten zwischen NexAI und dem Kunden"
+  },
+  {
+   "t": "meta",
+   "text": "Stand: Juli 2026"
+  },
+  {
+   "t": "spacer",
+   "h": 6
+  },
+  {
+   "t": "h1",
+   "num": "1.",
+   "text": "Vorbemerkung und Rangfolge"
+  },
+  {
+   "t": "p",
+   "text": "Diese Anlage A (Leistungsbeschreibung) konkretisiert den Gegenstand und den Umfang der von der **NexAI – Next Generation Intelligence GbR**, Untere Bergstraße 13, 74586 Frankenhardt-Honhardt, Deutschland, vertreten durch die Gesellschafter Maximilian Trenk und Jason Brian Merklein (nachfolgend \"NexAI\"), gegenüber dem Kunden (nachfolgend \"Kunde\") erbrachten Leistungen. Sie ist Bestandteil des Rahmenvertrages und gilt nur in Verbindung mit dem jeweils unterzeichneten Auftragsformular/Leistungsschein."
+  },
+  {
+   "t": "num",
+   "items": [
+    "Maßgeblich für den im Einzelfall geschuldeten Leistungsumfang sind ausschließlich das jeweils unterzeichnete **Auftragsformular/Leistungsschein** in Verbindung mit dieser Anlage A. Diese Anlage beschreibt den möglichen Leistungskatalog; geschuldet ist nur, was im Auftragsformular ausdrücklich als beauftragt gekennzeichnet ist.",
+    "Leistungen, die weder im Auftragsformular noch in dieser Anlage A ausdrücklich aufgeführt sind, sind **nicht geschuldet**. Sie können durch gesonderte schriftliche Vereinbarung (Change Request) beauftragt werden.",
+    "Bei Widersprüchen zwischen den Vertragsdokumenten gilt die im Rahmenvertrag festgelegte Rangfolge. Das Auftragsformular geht dieser Anlage A vor, soweit es abweichende oder ergänzende Festlegungen zum Leistungsumfang trifft.",
+    "Die in dieser Anlage verwendeten definierten Begriffe (insbesondere \"Agenten\", \"Endnutzer\", \"Projektleistungen\", \"Betriebsleistungen\", \"Freikontingent\", \"Mehrverbrauch\", \"Subunternehmer\") haben die im Rahmenvertrag festgelegte Bedeutung."
+   ]
+  },
+  {
+   "t": "h1",
+   "num": "2.",
+   "text": "Gegenstand und Leistungskategorien"
+  },
+  {
+   "t": "p",
+   "text": "NexAI stellt dem Kunden **Agenten** (KI-gestützte digitale Assistenten) bereit und betreibt diese. Die Leistungen gliedern sich in zwei rechtlich unterschiedlich einzuordnende Kategorien:"
+  },
+  {
+   "t": "num",
+   "items": [
+    "**Projektleistungen** – einmalige Werkleistungen mit definiertem Erfolg, insbesondere die Website-Erstellung (Ziffer 9) sowie die Ersteinrichtung der Agenten (Ziffer 10). Es gilt Werkvertragsrecht; die Abnahme richtet sich nach Anlage D (Abnahmeprotokoll).",
+    "**Betriebsleistungen** – laufender Betrieb, Konfigurationspflege, Wartung, Hosting/Bereitstellung der erforderlichen Infrastruktur sowie Support der Agenten. Es gilt Dienstvertragsrecht; die Verfügbarkeit richtet sich nach Anlage C (SLA)."
+   ]
+  },
+  {
+   "t": "p",
+   "text": "Welche der nachstehend in den Ziffern 3 bis 9 beschriebenen Agenten und Leistungen konkret beauftragt sind, ergibt sich aus dem Auftragsformular. Der jeweils in einem Modul enthaltene Funktionsumfang, das Freikontingent, der Netto-Einheitspreis für Mehrverbrauch (Overage) sowie etwaige mengen- oder verbrauchsabhängige Grenzen einschließlich eines technischen EUR-Spend-Caps je Agent werden im Auftragsformular festgelegt."
+  },
+  {
+   "t": "pagebreak"
+  },
+  {
+   "t": "h1",
+   "num": "3.",
+   "text": "Voice Agent (KI-Telefonassistent)"
+  },
+  {
+   "t": "p",
+   "text": "Der Voice Agent nimmt Sprachanrufe entgegen und/oder tätigt ausgehende Anrufe und interagiert im Rahmen der konfigurierten Wissensbasis und Dialoglogik mit Endnutzern. Der Funktionsumfang umfasst – soweit im Auftragsformular beauftragt – insbesondere:"
+  },
+  {
+   "t": "bullets",
+   "items": [
+    "Annahme eingehender Anrufe rund um die Uhr sowie – bei entsprechender Beauftragung – Tätigung ausgehender Anrufe im Rahmen zulässiger Kampagnen (vgl. Ziffer 6 und die dortigen Compliance-Hinweise)",
+    "Beantwortung häufiger Fragen (FAQ) auf Grundlage der vom Kunden bereitgestellten Wissensbasis (Öffnungszeiten, Leistungen, Anfahrt, Konditionen und vergleichbare Auskünfte)",
+    "Vereinbaren, Verschieben und Absagen von Terminen unter Anbindung an das vom Kunden genutzte Kalender-/Buchungssystem, einschließlich Rückbestätigung des Termins (Read-Back) zur Vermeidung von Doppelbuchungen",
+    "Weiterleitung (Transfer) an eine vom Kunden benannte Rufnummer oder Durchwahl bei komplexen Anliegen oder auf Wunsch des Endnutzers",
+    "Erfassung von Leads und Anliegen (Name, Kontaktdaten, Anliegen) sowie strukturierte Übergabe an das vom Kunden benannte Zielsystem",
+    "Qualifizierung von Anliegen anhand vereinbarter Kriterien (z. B. Kategorisierung, Priorisierung, Weiterleitungslogik)",
+    "Aufnahme von Rückrufwünschen und Weitergabe von Nachrichten",
+    "Mehrsprachige Gesprächsführung nach Maßgabe der im Auftragsformular festgelegten Sprachen"
+   ]
+  },
+  {
+   "t": "note",
+   "text": "Zu Beginn jedes Gesprächs – eingehend wie ausgehend – erfolgt die verpflichtende KI-Ansage nach Ziffer 11. Aufzeichnung und Transkription sind standardmäßig deaktiviert (Ziffer 12)."
+  },
+  {
+   "t": "h1",
+   "num": "4.",
+   "text": "Chat Agent (Website-/App-Chatassistent)"
+  },
+  {
+   "t": "p",
+   "text": "Der Chat Agent führt textbasierte Dialoge über den Chat einer Website, eines Portals oder einer App und unterstützt Endnutzer im Rahmen der konfigurierten Wissensbasis und Dialoglogik. Der Funktionsumfang umfasst – soweit im Auftragsformular beauftragt – insbesondere:"
+  },
+  {
+   "t": "bullets",
+   "items": [
+    "Einbindung als Chat-Widget auf der Website oder in einer App des Kunden",
+    "Beratung und Beantwortung von Fragen auf Grundlage der vom Kunden bereitgestellten Wissensbasis",
+    "Empfehlung passender Produkte, Leistungen oder Angebote im Rahmen unverbindlicher Auskünfte (keine verbindlichen Preis- oder Vertragszusagen, vgl. Ziffer 13)",
+    "Erfassung von Leads (Name, Kontaktdaten, Anliegen) und strukturierte Übergabe an das vom Kunden benannte Zielsystem",
+    "Terminvereinbarung unter Anbindung an das vom Kunden genutzte Kalender-/Buchungssystem",
+    "Suche in und Auskunft aus vom Kunden bereitgestellten Unterlagen und Dokumenten (z. B. Preislisten, Datenblätter, FAQ-Sammlungen)",
+    "Weiterleitung an einen menschlichen Ansprechpartner oder Übergabe des Vorgangs bei komplexen Anliegen",
+    "Mehrsprachige Kommunikation nach Maßgabe der im Auftragsformular festgelegten Sprachen"
+   ]
+  },
+  {
+   "t": "note",
+   "text": "Der KI-Hinweis nach Ziffer 11 wird im Chat deutlich sichtbar ausgewiesen."
+  },
+  {
+   "t": "h1",
+   "num": "5.",
+   "text": "Social-Media-Agent"
+  },
+  {
+   "t": "p",
+   "text": "Der Social-Media-Agent unterstützt den Kunden bei der Betreuung seiner Social-Media-Kanäle im Rahmen der beauftragten Plattformen und der vom Kunden erteilten Freigaben. Der Funktionsumfang umfasst – soweit im Auftragsformular beauftragt – insbesondere:"
+  },
+  {
+   "t": "bullets",
+   "items": [
+    "Bearbeitung eingehender Direktnachrichten und Kommentare auf den vereinbarten Plattformen im Rahmen der konfigurierten Wissensbasis",
+    "Erkennen von Interessenten und kaufbezogenen Anliegen sowie deren Übergabe zur weiteren Bearbeitung",
+    "Planung und inhaltliche Vorbereitung von Beiträgen (Entwürfe) zur Freigabe durch den Kunden",
+    "Unterstützung im Community-Management (z. B. Standardantworten, Moderationshinweise) im Rahmen der vereinbarten Vorgaben",
+    "Strukturierte Übergabe qualifizierter Kontakte an das vom Kunden benannte Zielsystem"
+   ]
+  },
+  {
+   "t": "note",
+   "text": "Die redaktionelle Endverantwortung, die Veröffentlichungsfreigabe sowie die Einhaltung der jeweiligen Plattform-Nutzungsbedingungen verbleiben beim Kunden. Die inhaltliche Redaktion und Content-Strategie sind nicht geschuldet, soweit nicht ausdrücklich vereinbart (Ziffer 14)."
+  },
+  {
+   "t": "pagebreak"
+  },
+  {
+   "t": "h1",
+   "num": "6.",
+   "text": "Vertriebs-/Akquise-Agent"
+  },
+  {
+   "t": "p",
+   "text": "Der Vertriebs-/Akquise-Agent unterstützt den Kunden bei der Anbahnung von Geschäftskontakten im B2B-Bereich. Der Funktionsumfang umfasst – soweit im Auftragsformular beauftragt – insbesondere:"
+  },
+  {
+   "t": "bullets",
+   "items": [
+    "Identifikation potenziell passender Unternehmen anhand der mit dem Kunden vereinbarten Zielkriterien (Branche, Größe, Region u. a.)",
+    "Recherche öffentlich zugänglicher Informationen zu Unternehmen und geeigneten Ansprechpartnern",
+    "Bewertung der Passung (Fit-Scoring) anhand vereinbarter Kriterien",
+    "Erstellung personalisierter Ansprache-Entwürfe (E-Mails, Gesprächsleitfäden) zur Verwendung durch den Kunden bzw. – bei entsprechender Beauftragung – zum automatisierten Versand im Namen des Kunden",
+    "Aufbereitung und Übergabe der Rechercheergebnisse an das vom Kunden benannte Zielsystem"
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Compliance-Hinweise zur Akquise"
+  },
+  {
+   "t": "num",
+   "items": [
+    "Ausgehende Werbeansprache erfolgt ausschließlich im rechtlich zulässigen Rahmen. Für **E-Mail-Werbung** ohne vorherige ausdrückliche Einwilligung ist § 7 UWG zu beachten; eine Ansprache kommt danach nur unter den engen Voraussetzungen einer mutmaßlichen Einwilligung bzw. der Ausnahme für Bestandskunden in Betracht. **Telefonwerbung** gegenüber sonstigen Marktteilnehmern setzt zumindest deren mutmaßliche Einwilligung voraus.",
+    "Recherchiert NexAI Kontaktdaten selbst aus Drittquellen, erfüllt NexAI – soweit NexAI die Ansprache im Auftrag des Kunden durchführt – die Informationspflicht nach **Art. 14 DSGVO** gegenüber den betroffenen Personen und dokumentiert die zulässige Herkunft der Daten.",
+    "Jede Ansprache enthält eine unmittelbare und einfache **Widerspruchs-/Opt-out-Möglichkeit**. Widersprüche werden dokumentiert und beachtet; angesprochene Kontakte werden bei Widerspruch für weitere Kampagnen gesperrt.",
+    "NexAI ist berechtigt, die Durchführung von Kampagnen abzulehnen, auszusetzen oder zu beenden, die nach vertretbarer Einschätzung von NexAI gegen geltendes Recht (insbesondere UWG oder DSGVO) verstoßen würden. Die weitergehenden Zusicherungen und Mitwirkungspflichten des Kunden – insbesondere zur Zulässigkeit der Zielkriterien und der Ansprache – ergeben sich aus dem Rahmenvertrag und den AGB (B2B)."
+   ]
+  },
+  {
+   "t": "h1",
+   "num": "7.",
+   "text": "Automatisierungen"
+  },
+  {
+   "t": "p",
+   "text": "NexAI richtet Automatisierungen (Workflows) ein und betreibt diese, um wiederkehrende Prozesse des Kunden zu verbinden und zu automatisieren. Der Funktionsumfang umfasst – soweit im Auftragsformular beauftragt – insbesondere:"
+  },
+  {
+   "t": "bullets",
+   "items": [
+    "Anbindung an CRM-Systeme, Google Workspace oder Microsoft 365 im Rahmen der verfügbaren Schnittstellen",
+    "Anbindung an Kalender-, E-Mail- und Tabellensysteme (z. B. Google Sheets, Microsoft Excel)",
+    "Anbindung weiterer Systeme über verfügbare Programmierschnittstellen (APIs) und Webhooks",
+    "Automatisierte Benachrichtigungen (z. B. per E-Mail oder Messaging) bei definierten Ereignissen",
+    "Automatisierte Erfassung, Verteilung und Zuordnung von Leads (Lead-Routing)",
+    "Automatisierung wiederkehrender Prozessschritte nach vereinbarter Ablauflogik"
+   ]
+  },
+  {
+   "t": "note",
+   "text": "Umfang und Verfügbarkeit der Anbindungen hängen von den Schnittstellen und Nutzungsbedingungen der jeweiligen Drittsysteme (Subunternehmer) ab und stehen insoweit unter dem Vorbehalt deren technischer und rechtlicher Verfügbarkeit. Die erforderlichen Zugänge und Berechtigungen zu kundeneigenen Systemen stellt der Kunde bereit."
+  },
+  {
+   "t": "h1",
+   "num": "8.",
+   "text": "Individuelle KI-Agenten"
+  },
+  {
+   "t": "p",
+   "text": "Sofern im Auftragsformular beauftragt, entwickelt und betreibt NexAI individuelle, projektspezifisch zugeschnittene Agenten. Der konkrete Leistungsumfang, die Ziele, die einzubindenden Datenquellen und Systeme sowie etwaige Abnahmekriterien werden im Auftragsformular oder in einer gesonderten Leistungsbeschreibung je Projekt festgelegt und sind als solche Bestandteil dieser Anlage A. Die vorstehenden Regelungen dieser Anlage (insbesondere zu Transparenz, Aufzeichnungen und Guardrails, Ziffern 11 bis 13) gelten für individuelle Agenten entsprechend."
+  },
+  {
+   "t": "h1",
+   "num": "9.",
+   "text": "Website-Erstellung (Projektleistung)"
+  },
+  {
+   "t": "p",
+   "text": "Die Website-Erstellung ist eine **Projektleistung** (Werkleistung). Der Funktionsumfang umfasst – soweit im Auftragsformular beauftragt – insbesondere:"
+  },
+  {
+   "t": "bullets",
+   "items": [
+    "Konzeption und Umsetzung einer modernen, responsiven und performanten Website nach den im Auftragsformular festgelegten Vorgaben (Seitenumfang, Struktur, Umfang)",
+    "Umsetzung technischer SEO-Grundlagen (u. a. saubere Seitenstruktur, Meta-Angaben, Ladezeitoptimierung, mobile Optimierung)",
+    "Erstellung von Landingpages im vereinbarten Umfang",
+    "Anbindung der beauftragten Agenten (z. B. Voice- oder Chat-Agent) an die Website",
+    "Übergabe/Bereitstellung der fertiggestellten Website nach Maßgabe des Auftragsformulars"
+   ]
+  },
+  {
+   "t": "note",
+   "text": "Die Abnahme erfolgt nach Anlage D (Abnahmeprotokoll). Inhalte (Texte, Bilder, Logos), die Rechte an Dritt-Inhalten sowie erforderliche Zugänge stellt der Kunde bereit, soweit nicht ausdrücklich anders vereinbart. Laufende SEO-Betreuung, redaktionelle Pflege und das Hosting fremder Systeme sind nicht geschuldet (Ziffer 14)."
+  },
+  {
+   "t": "pagebreak"
+  },
+  {
+   "t": "h1",
+   "num": "10.",
+   "text": "Ersteinrichtung"
+  },
+  {
+   "t": "p",
+   "text": "Die Ersteinrichtung der Agenten ist eine **Projektleistung** (Werkleistung) und umfasst – soweit im Auftragsformular beauftragt – insbesondere:"
+  },
+  {
+   "t": "bullets",
+   "items": [
+    "Grundkonfiguration der beauftragten Agenten (Persona, Sprache(n), Dialoglogik, Rahmenparameter)",
+    "Aufbau der Wissensbasis auf Grundlage der vom Kunden bereitgestellten Informationen und Unterlagen",
+    "Einrichtung der vereinbarten Workflows und Automatisierungen",
+    "Anbindung an die vereinbarten Systeme und Schnittstellen des Kunden (z. B. Kalender, CRM, Telefonie)",
+    "Funktionstests und Feinjustierung vor Inbetriebnahme"
+   ]
+  },
+  {
+   "t": "p",
+   "text": "Für die Ersteinrichtung wird **keine gesonderte Einrichtungs- oder Setup-Gebühr** erhoben; sie ist mit dem vereinbarten monatlichen oder jährlichen Beitrag abgegolten, soweit im Auftragsformular nicht ausdrücklich anders bestimmt."
+  },
+  {
+   "t": "h1",
+   "num": "11.",
+   "text": "KI-Kennzeichnung und Pflicht-Ansage (Transparenz)"
+  },
+  {
+   "t": "p",
+   "text": "Die Kennzeichnung der Agenten als künstliche Intelligenz ist gemäß **Art. 50 der Verordnung (EU) 2024/1689 (KI-VO / AI Act)** ein **verbindlicher, nicht abschaltbarer Bestandteil** der Leistung. Jeder Endnutzer wird zu Beginn der Interaktion darüber informiert, dass er mit einem KI-System interagiert."
+  },
+  {
+   "t": "num",
+   "items": [
+    "Beim **Voice Agent** erfolgt zu Beginn jedes Gesprächs eine Pflicht-Ansage. Der Standard-Wortlaut lautet – anpassbar an den Kundennamen, inhaltlich jedoch verbindlich: **\"Guten Tag, Sie sprechen mit einem KI-Assistenten der [Firma des Kunden]. Wie kann ich Ihnen helfen?\"**",
+    "Beim **Chat Agent** und beim **Social-Media-Agent** wird der KI-Hinweis in der Benutzeroberfläche deutlich sichtbar ausgewiesen (z. B. \"KI-Assistent\").",
+    "Ist die Aufzeichnung eines Gesprächs im Ausnahmefall auf dokumentierte Weisung des Kunden aktiviert (Ziffer 12), wird die Ansage um einen **Aufzeichnungshinweis** ergänzt, z. B.: **\"Dieses Gespräch wird zu Qualitätszwecken aufgezeichnet. Wenn Sie damit nicht einverstanden sind, teilen Sie mir dies bitte mit.\"**",
+    "Die Ansage bzw. der Hinweis kann durch den Kunden nicht deaktiviert werden. Weisungen, die auf eine Entfernung oder Verschleierung der KI-Kennzeichnung gerichtet sind, wird NexAI nicht befolgen; NexAI ist berechtigt, den Betrieb eines Agenten auszusetzen, solange eine solche Weisung aufrechterhalten wird."
+   ]
+  },
+  {
+   "t": "h1",
+   "num": "12.",
+   "text": "Aufzeichnungen und Transkripte"
+  },
+  {
+   "t": "num",
+   "items": [
+    "Die **Aufzeichnung und Transkription** von Gesprächen ist **standardmäßig deaktiviert**. Eine Aktivierung erfolgt ausschließlich auf **dokumentierte Weisung** des Kunden (Betreiber im Sinne der KI-VO) und nur, soweit der Kunde die datenschutz- und sonstige rechtliche Zulässigkeit sicherstellt.",
+    "Ist die Aufzeichnung/Transkription aktiviert, erfolgt stets der Aufzeichnungshinweis nach Ziffer 11 Absatz (3). Die Aufbewahrung der Aufzeichnungen und Transkripte beträgt **sechs (6) Monate** ab Erstellung; danach werden sie gelöscht, soweit keine gesetzliche Aufbewahrungspflicht entgegensteht.",
+    "Eine **Speicherung in privaten Endnutzer-Accounts** findet nicht statt. Die Verarbeitung erfolgt im Rahmen der von NexAI eingesetzten Betriebsmittel und der in Anlage B (AVV) benannten Subunternehmer.",
+    "Aufzeichnungen und Transkripte werden dem Kunden auf Anfrage im Rahmen der technischen Möglichkeiten bereitgestellt.",
+    "Die weiteren Regelungen zur Datenspeicherung – keine Speicherung, soweit technisch abschaltbar; Aufbewahrung von sechs Monaten, soweit nicht abschaltbar; führendes Kundensystem für Geschäftsdaten; 30-tägiger Export vor Löschung bei Vertragsende nebst Löschbestätigung – ergeben sich aus dem Rahmenvertrag und Anlage B (AVV)."
+   ]
+  },
+  {
+   "t": "pagebreak"
+  },
+  {
+   "t": "h1",
+   "num": "13.",
+   "text": "Guardrails und Themenausschlüsse"
+  },
+  {
+   "t": "p",
+   "text": "Zur Sicherstellung eines verantwortungsvollen Betriebs unterliegen die Agenten den folgenden verbindlichen Leitplanken (Guardrails):"
+  },
+  {
+   "t": "bullets",
+   "items": [
+    "**Keine rechtsverbindlichen Zusagen:** Die Agenten geben keine verbindlichen Zusagen zu Preisen, Bestellungen oder Verträgen ab. Sie erteilen ausschließlich unverbindliche Auskünfte und vereinbaren Termine.",
+    "**Keine Fachberatung:** Die Agenten erteilen keine medizinische, rechtliche oder steuerliche Beratung. Bei entsprechenden Anliegen erfolgt ein Hinweis auf fachkundige Stellen bzw. eine Weiterleitung.",
+    "**Eskalations- und Rückfragelogik:** Bei unklaren, komplexen oder außerhalb der Wissensbasis liegenden Anliegen stellt der Agent Rückfragen oder eskaliert an einen menschlichen Ansprechpartner bzw. an eine vom Kunden benannte Stelle.",
+    "**Kalender-Read-Back:** Zur Vermeidung von Doppelbuchungen erfolgt vor der Terminbestätigung ein Abgleich mit dem angebundenen Kalender (Read-Back) im Rahmen der technischen Möglichkeiten des angebundenen Systems.",
+    "**Themen- und Verhaltensausschlüsse:** Der Agent verweigert die Bearbeitung unzulässiger, diskriminierender oder gegen die vereinbarten Vorgaben verstoßender Anliegen."
+   ]
+  },
+  {
+   "t": "p",
+   "text": "Die **Pflege und Aktualität der Wissensbasis** (z. B. Preise, Öffnungszeiten, Produktinformationen, FAQ) obliegt dem **Kunden**. NexAI verarbeitet die vom Kunden bereitgestellten Inhalte; für deren Richtigkeit, Vollständigkeit und Aktualität ist der Kunde verantwortlich."
+  },
+  {
+   "t": "h1",
+   "num": "14.",
+   "text": "Nicht geschuldete Leistungen"
+  },
+  {
+   "t": "p",
+   "text": "Nicht Gegenstand des Vertrages sind, soweit nicht ausdrücklich im Auftragsformular vereinbart, insbesondere die folgenden Leistungen:"
+  },
+  {
+   "t": "bullets",
+   "items": [
+    "Planung, Schaltung und Betreuung bezahlter Werbekampagnen (z. B. Google Ads, Social Ads) sowie das damit verbundene Mediabudget",
+    "Laufende SEO-Betreuung und Suchmaschinen-Optimierung über die technischen SEO-Grundlagen der Website-Erstellung (Ziffer 9) hinaus",
+    "Redaktionelle Content-Erstellung und Social-Media-Redaktion (Redaktionsplan, Texterstellung, Bildredaktion) über die in Ziffer 5 beschriebene Vorbereitung hinaus",
+    "Grafik-, Logo- und Corporate-Design-Leistungen",
+    "Hosting, Wartung oder Betrieb kundeneigener oder fremder Systeme, die nicht Bestandteil der von NexAI bereitgestellten Betriebsmittel sind",
+    "Schulungen, Workshops und Einweisungen, soweit nicht ausdrücklich vereinbart",
+    "Beschaffung von Lizenzen, Guthaben oder Zugängen zu Drittdiensten, soweit nicht im Beitrag enthalten oder ausdrücklich vereinbart"
+   ]
+  },
+  {
+   "t": "h1",
+   "num": "15.",
+   "text": "Keine Erfolgs-, Lead- oder Umsatzgarantie (Beschaffenheit)"
+  },
+  {
+   "t": "num",
+   "items": [
+    "NexAI schuldet die vertragsgemäße Bereitstellung und den vertragsgemäßen Betrieb der Agenten nach Maßgabe dieser Anlage A und des Auftragsformulars. NexAI schuldet **keinen wirtschaftlichen Erfolg**.",
+    "Es wird **keine Garantie** für eine bestimmte Anzahl an Leads, Terminen, Abschlüssen, Reichweiten oder für einen bestimmten Umsatz übernommen. Eine dahingehende Beschaffenheit wird nicht als geschuldet vereinbart.",
+    "Die Agenten beruhen auf **wahrscheinlichkeitsbasierten KI-Verfahren** und sind naturgemäß **nicht in jedem Einzelfall fehlerfrei**. Die Parteien vereinbaren als geschuldete Beschaffenheit den Betrieb der Agenten im Rahmen des vereinbarten Leistungsbildes und der Guardrails (Ziffer 13). Vereinzelte inhaltliche Unrichtigkeiten, Missverständnisse oder nicht abschließend bearbeitete Anfragen begründen für sich genommen keinen Mangel, solange die Agenten im Rahmen dieses Leistungsbildes arbeiten; die gesetzlichen Mängelrechte des Kunden bei einem Abweichen von der vereinbarten Beschaffenheit bleiben unberührt.",
+    "Die Verfügbarkeit richtet sich nach Anlage C (SLA); die Haftung richtet sich nach den Regelungen des Rahmenvertrages (§ Haftung) und der AGB (B2B)."
+   ]
+  },
+  {
+   "t": "spacer",
+   "h": 8
+  },
+  {
+   "t": "note",
+   "text": "Diese Anlage A ist Bestandteil des Rahmenvertrages und gilt nur in Verbindung mit dem jeweiligen Auftragsformular. Es handelt sich um einen sorgfältig erstellten Entwurf, der für den konkreten Einzelfall anwaltlich geprüft werden sollte."
+  }
+ ]
+}
