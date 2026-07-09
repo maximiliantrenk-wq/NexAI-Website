@@ -17,7 +17,13 @@ const ENDPOINT =
 
 export async function POST(request: Request) {
   try {
-    const data = await request.json();
+    let data: unknown;
+    try {
+      data = await request.json();
+    } catch {
+      // Malformed / non-JSON body → bad request, not a server error.
+      return NextResponse.json({ ok: false }, { status: 400 });
+    }
     const parsed = schema.safeParse(data);
     if (!parsed.success) {
       return NextResponse.json({ ok: false }, { status: 400 });

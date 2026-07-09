@@ -72,7 +72,7 @@ export default async function LocaleLayout({
           aria-hidden
           className="pointer-events-none fixed inset-0 -z-10"
         >
-          <Aurora className="h-full w-full opacity-[0.3]" />
+          <Aurora className="opacity-[0.3]" />
           <div className="absolute inset-0 bg-[radial-gradient(125%_90%_at_50%_0%,transparent_42%,var(--color-bg)_92%)]" />
         </div>
         <script

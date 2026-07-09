@@ -22,7 +22,6 @@ export default function AppleIcon() {
           background: "#08090d",
         }}
       >
-        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={nDataUri} width={116} height={116} alt="NEXAI" />
       </div>
     ),
