@@ -9,7 +9,6 @@ const NAMESPACES = [
   "products",
   "about",
   "pricing",
-  "careers",
   "contact",
   "legal",
   "partner",
