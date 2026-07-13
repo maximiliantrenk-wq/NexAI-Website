@@ -1,0 +1,17 @@
+<!--
+  NEXAI Chat Widget — Einbett-Snippet für Kundenseiten.
+  Direkt vor dem schließenden </body>-Tag der Kundenwebsite einfügen.
+  Pro Kunde die Werte in window.NexaiChat anpassen (mindestens: webhook, name, accent, greeting).
+-->
+<script>
+  window.NexaiChat = {
+    webhook:      "https://n8n.nex-a-i.com/webhook/KUNDE-chat", // Production-URL des Kunden-Workflows
+    name:         "Musterfirma Assistent",                     // Titel im Chat-Header
+    accent:       "#4d7cff",                                    // Markenfarbe des Kunden (Hex)
+    greeting:     "Hallo! Wie kann ich Ihnen helfen?",          // erste Bot-Nachricht
+    placeholder:  "Nachricht schreiben …",
+    locale:       "de",                                         // "de" oder "en"
+    fallbackPhone:"0000 0000000"                                // wird bei technischen Fehlern angezeigt
+  };
+</script>
+<script src="https://nex-a-i.com/chat-widget.js" async></script>

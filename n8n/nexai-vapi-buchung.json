@@ -1,0 +1,346 @@
+{
+  "name": "NEXAI Voice · Termin buchen (Vapi)",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "nexai-vapi-booking",
+        "responseMode": "responseNode",
+        "authentication": "none",
+        "options": {}
+      },
+      "id": "webhook-b1",
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        0,
+        300
+      ],
+      "webhookId": "nexai-vapi-booking-webhook"
+    },
+    {
+      "parameters": {
+        "jsCode": "// NEXAI Voice · Buchung — Payload lesen (flach ODER Vapi-Envelope) + Datum robust parsen (v4-Port)\nconst TZ = 'Europe/Berlin';\nconst nowDt = $now.setZone(TZ);\nconst today = { year: nowDt.year, month: nowDt.month, day: nowDt.day, dow: nowDt.weekday };\n\nconst root = $input.first().json || {};\nconst body = (root.body && typeof root.body === 'object') ? root.body : root;\nlet toolCallId = '';\nlet a = {};\nif (body && body.message && Array.isArray(body.message.toolCalls) && body.message.toolCalls[0]) {\n  const tc = body.message.toolCalls[0];\n  toolCallId = tc.id || '';\n  let ar = tc.function && tc.function.arguments;\n  if (typeof ar === 'string') { try { ar = JSON.parse(ar); } catch (e) { ar = {}; } }\n  a = ar || {};\n} else {\n  a = body || {};\n  toolCallId = body.toolCallId || '';\n}\n\nconst name = String(a.name ?? '').trim();\nconst email = String(a.email ?? '').trim();\nconst telefon = String(a.telefon ?? a.phone ?? '').trim();\nconst anliegen = String(a.anliegen ?? a.topic ?? '').trim();\nconst notizen = String(a.notizen ?? '').trim();\nconst terminRaw = String(a.termin ?? a.start ?? a.startISO ?? '').trim();\n\n// ---- verifizierter Datums-Parser (Port aus parse_test4.js) ----\nconst pad = n => String(n).padStart(2, '0');\nfunction addDaysFmt(off){ const d=new Date(Date.UTC(today.year,today.month-1,today.day)); d.setUTCDate(d.getUTCDate()+off); return pad(d.getUTCDate())+'.'+pad(d.getUTCMonth()+1)+'.'+d.getUTCFullYear(); }\nfunction wdOffset(W){ let o=W-today.dow; if(o<=0)o+=7; return o; }\nconst TODAY_MMDD = pad(today.month)+pad(today.day);\nconst WEEKDAYS=[['montag',1],['dienstag',2],['mittwoch',3],['donnerstag',4],['freitag',5],['sonnabend',6],['samstag',6],['sonntag',7]];\nconst MONTH_ALT='januar|februar|maerz|märz|april|mai|juni|juli|august|september|oktober|november|dezember|jan|feb|mär|mrz|apr|jun|jul|aug|sept|sep|okt|nov|dez';\nconst MONTHS=[['januar|jan','01'],['februar|feb','02'],['maerz|märz|mär|mrz','03'],['april|apr','04'],['mai','05'],['juni|jun','06'],['juli|jul','07'],['august|aug','08'],['september|sept|sep','09'],['oktober|okt','10'],['november|nov','11'],['dezember|dez','12']];\nfunction hasConcreteDate(s){ return new RegExp('(\\\\d{1,2}\\\\.\\\\d{1,2}|'+MONTH_ALT+')').test(s); }\nfunction resolveRel(t){ const low=t.toLowerCase(); if(hasConcreteDate(low))return t; let s=low;\n  s=s.replace(/übermorgen/g,addDaysFmt(2)+' '); s=s.replace(/morgen/g,addDaysFmt(1)+' '); s=s.replace(/heute/g,addDaysFmt(0)+' ');\n  for(const wp of WEEKDAYS)s=s.replace(new RegExp(wp[0],'g'),addDaysFmt(wdOffset(wp[1]))+' '); return s; }\nfunction runMarked(input){ let s=input.toLowerCase();\n  s=s.replace(/(^|\\D)(\\d{1,2})[.:](\\d{2})\\s*uhr/g,'$1$2:$3'); s=s.replace(/(^|\\D)(\\d{1,2})\\s*uhr/g,'$1$2:00');\n  for(const mp of MONTHS)s=s.replace(new RegExp('(^|\\\\D)(\\\\d{1,2})\\\\s*\\\\.?\\\\s*(?:'+mp[0]+')\\\\s*\\\\.?\\\\s*','g'),'$1$2.'+mp[1]+'.');\n  s=s.replace(/[^0-9.: ]/g,''); s=s.replace(/ +/g,' ').trim();\n  s=s.replace(/( )(\\d{1,2})\\.(\\d{2})$/g,'$1$2:$3');\n  s=s.replace(/(\\d{1,2})\\.(\\d{1,2})\\.(\\d{1,2})\\.(\\d{2})(?=\\s|$)/g,'$1.$2.@YEAR@ $3:$4');\n  s=s.replace(/(\\d{1,2})\\.(\\d{1,2})\\.(\\d{2})(?=\\s|$)/g,'$1.$2.20$3');\n  s=s.replace(/(\\d{1,2})\\.(\\d{1,2})\\.?\\s*(\\d{1,2}:\\d{2})/g,'$1.$2.@YEAR@ $3'); return s.trim(); }\nfunction smartClean(m){ if(!m.includes('@YEAR@'))return m; const mt=m.match(/^(\\d{1,2})\\.(\\d{1,2})\\.@YEAR@/);\n  if(!mt)return m.replace(/@YEAR@/g,String(today.year));\n  const mm=mt[2].padStart(2,'0'),dd=mt[1].padStart(2,'0'); const yr=((mm+dd)<TODAY_MMDD)?today.year+1:today.year;\n  return m.replace(/@YEAR@/g,String(yr)); }\n\nlet clean = terminRaw ? smartClean(runMarked(resolveRel(terminRaw))) : '';\nconst FINAL=/^\\d{1,2}\\.\\d{1,2}\\.\\d{4} \\d{1,2}:\\d{2}$/;\n\nlet valid=false, startISO='', endISO='', startLabel='';\nif (FINAL.test(clean)) {\n  const start = DateTime.fromFormat(clean, 'd.M.yyyy H:mm', { zone: TZ });\n  if (start.isValid) {\n    valid = true;\n    const end = start.plus({ minutes: 30 });\n    startISO = start.toISO();\n    endISO = end.toISO();\n    startLabel = start.setLocale('de').toFormat(\"dd.LL.yyyy 'um' HH:mm\");\n  }\n}\nreturn [{ json: { valid, toolCallId, name, email, telefon, anliegen, notizen, terminRaw, clean, startISO, endISO, startLabel } }];"
+      },
+      "id": "code-b2",
+      "name": "Parse & Normalize",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        220,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "combinator": "and",
+          "conditions": [
+            {
+              "id": "cond-b3",
+              "leftValue": "={{ $json.valid }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "if-b3",
+      "name": "Is Valid",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        440,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "resource": "event",
+        "operation": "create",
+        "calendar": {
+          "__rl": true,
+          "value": "primary",
+          "mode": "list",
+          "cachedResultName": "Primary Calendar"
+        },
+        "start": "={{ $json.startISO }}",
+        "end": "={{ $json.endISO }}",
+        "additionalFields": {
+          "summary": "=NEXAI · {{ $json.anliegen }} – {{ $json.name }}",
+          "description": "=Gebucht über den NEXAI Voice Agent (Jarvis).\\nKunde: {{ $json.name }}\\nTelefon: {{ $json.telefon }}\\nAnliegen: {{ $json.anliegen }}\\nNotizen: {{ $json.notizen }}"
+        }
+      },
+      "id": "gcal-b4",
+      "name": "Create Event",
+      "type": "n8n-nodes-base.googleCalendar",
+      "typeVersion": 1.3,
+      "position": [
+        660,
+        200
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "1VN8nDRSKuPRXLwAsVMqLezcWLirnFSYMiDKGTi7NrJk",
+          "mode": "id",
+          "cachedResultName": "Lead Tabelle"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "Voice-Termine",
+          "mode": "name",
+          "cachedResultName": "Voice-Termine"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "Timestamp",
+              "displayName": "Timestamp",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Name",
+              "displayName": "Name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "E-Mail",
+              "displayName": "E-Mail",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Telefon",
+              "displayName": "Telefon",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Anliegen",
+              "displayName": "Anliegen",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Termin",
+              "displayName": "Termin",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Status",
+              "displayName": "Status",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Quelle",
+              "displayName": "Quelle",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            }
+          ],
+          "value": {
+            "Timestamp": "={{ $now.setZone('Europe/Berlin').toFormat('yyyy-LL-dd HH:mm') }}",
+            "Name": "={{ $('Parse & Normalize').item.json.name }}",
+            "E-Mail": "={{ $('Parse & Normalize').item.json.email }}",
+            "Telefon": "={{ $('Parse & Normalize').item.json.telefon }}",
+            "Anliegen": "={{ $('Parse & Normalize').item.json.anliegen }}",
+            "Termin": "={{ $('Parse & Normalize').item.json.startLabel }}",
+            "Status": "Termin gebucht",
+            "Quelle": "Voice Agent Jarvis"
+          }
+        },
+        "options": {}
+      },
+      "id": "gsheet-b5",
+      "name": "Append Lead Row",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        880,
+        200
+      ],
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "jsCode": "const p = $('Parse & Normalize').first().json;\nconst result = 'Perfekt, der Termin am ' + p.startLabel + ' Uhr ist verbindlich gebucht. Der Kunde erhält eine Kalendereinladung. Bestätige dem Anrufer den Termin freundlich und verabschiede dich.';\nreturn [{ json: { results: [{ toolCallId: p.toolCallId, result }] } }];"
+      },
+      "id": "code-b6",
+      "name": "Return: Booked",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1100,
+        200
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const p = $('Parse & Normalize').first().json;\nconst result = 'Ich habe das gewünschte Datum leider nicht sicher verstanden. Sag dem Anrufer freundlich, dass du Tag, Monat und Uhrzeit brauchst, und frag nach einem konkreten Termin, zum Beispiel: am fünfzehnten Juli um elf Uhr.';\nreturn [{ json: { results: [{ toolCallId: p.toolCallId, result }] } }];"
+      },
+      "id": "code-b7",
+      "name": "Return: Invalid",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        660,
+        420
+      ]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ $json }}",
+        "options": {}
+      },
+      "id": "resp-b8",
+      "name": "Respond to Webhook",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        1320,
+        300
+      ]
+    }
+  ],
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Parse & Normalize",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse & Normalize": {
+      "main": [
+        [
+          {
+            "node": "Is Valid",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Is Valid": {
+      "main": [
+        [
+          {
+            "node": "Create Event",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Return: Invalid",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create Event": {
+      "main": [
+        [
+          {
+            "node": "Append Lead Row",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Append Lead Row": {
+      "main": [
+        [
+          {
+            "node": "Return: Booked",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Return: Booked": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Return: Invalid": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "pinData": {},
+  "meta": {
+    "templateId": "nexai-vapi-buchung"
+  },
+  "tags": []
+}

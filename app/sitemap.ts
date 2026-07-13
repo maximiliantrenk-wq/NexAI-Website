@@ -10,7 +10,6 @@ const paths = [
   "/produkte",
   "/pricing",
   "/about",
-  "/careers",
   "/partner",
   "/contact",
   "/imprint",
