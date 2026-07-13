@@ -16,20 +16,29 @@ und Wochentage). Er liest den Vapi-Body **flach** (`{"termin":…}`) ODER versch
 
 1. **Workflows → Import from File** → beide JSONs importieren.
 
-2. **Google-Credentials zuweisen** (Konto `maximiliantrenk@gmail.com` — dieselbe wie beim bisherigen
-   Kalender, damit Web & Voice sich nicht kollidieren):
+2. **Google-Calendar-Credential zuweisen** (Konto `mbt@nex-a-i.com` — der Geschäftskalender, Google
+   Workspace):
    - Verfügbarkeit: Node **„Get Events (14d window)"** → Google-Calendar-Credential.
-   - Buchung: Node **„Create Event"** → Google-Calendar-Credential; Node **„Append Lead Row"** →
-     Google-Sheets-Credential.
-   - Kalender steht auf **`primary`** → das ist der Hauptkalender des verbundenen Kontos. Falls der
-     Voice-Kalender ein anderer ist, im Node den richtigen Kalender auswählen.
+   - Buchung: Node **„Create Event"** → Google-Calendar-Credential.
+   - Kalender steht auf **`primary`** = Hauptkalender des verbundenen Kontos (mbt).
 
-3. **Sheet-Tab anlegen:** In der „Lead Tabelle"
-   (`1VN8nDRSKuPRXLwAsVMqLezcWLirnFSYMiDKGTi7NrJk`) einen Tab **`Voice-Termine`** erstellen mit
-   Kopfzeile (Zeile 1, exakt):
-   `Timestamp | Name | E-Mail | Telefon | Anliegen | Termin | Status | Quelle`
-   (Der Append-Node ist auf „continue on error" gesetzt: falls der Tab fehlt, wird der Termin trotzdem
-   gebucht — nur die Zeile fehlt dann.)
+3. **Leads DSGVO-konform in einer n8n-Data-Table speichern** (statt Google Sheets — die Daten bleiben
+   auf eurem eigenen EU-Server, kein zusätzlicher US-Dienstleister):
+   a. In n8n links auf **Data Tables** (Projekt-Overview) → **Create Data Table** → Name `Leads`,
+      Spalten (alle Typ `String`): `Zeitstempel · Name · Telefon · Anliegen · Termin · Status · Quelle`.
+   b. Im Buchungs-Workflow zwischen **„Create Event"** und **„Return: Booked"** einen Node
+      **„Data Table"** (Operation **Insert row**) einfügen, Tabelle `Leads` wählen, Felder mappen:
+      - `Zeitstempel` = `={{ $now.setZone('Europe/Berlin').toFormat('yyyy-LL-dd HH:mm') }}`
+      - `Name` = `={{ $('Parse & Normalize').item.json.name }}`
+      - `Telefon` = `={{ $('Parse & Normalize').item.json.telefon }}`
+      - `Anliegen` = `={{ $('Parse & Normalize').item.json.anliegen }}`
+      - `Termin` = `={{ $('Parse & Normalize').item.json.startLabel }}`
+      - `Status` = `Termin gebucht`
+      - `Quelle` = `Voice Agent Jarvis`
+      Danach beim Node **Settings → On Error → Continue (using regular output)** setzen (dann bucht es
+      auch, falls das Loggen mal hakt).
+   c. Der frühere **Google-Sheets-Node ist entfernt** — kein Google-Sheets-Zugriff / keine Freigabe mehr nötig.
+      Datenschutz-Textbaustein für die Datenschutzerklärung: `n8n/privacy-snippet-voice.md`.
 
 4. **Beide Workflows aktivieren** (Toggle „Active"). Erst dann existiert die **Production**-Webhook-URL.
 

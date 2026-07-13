@@ -93,121 +93,6 @@
     },
     {
       "parameters": {
-        "operation": "append",
-        "documentId": {
-          "__rl": true,
-          "value": "1VN8nDRSKuPRXLwAsVMqLezcWLirnFSYMiDKGTi7NrJk",
-          "mode": "id",
-          "cachedResultName": "Lead Tabelle"
-        },
-        "sheetName": {
-          "__rl": true,
-          "value": "Voice-Termine",
-          "mode": "name",
-          "cachedResultName": "Voice-Termine"
-        },
-        "columns": {
-          "mappingMode": "defineBelow",
-          "matchingColumns": [],
-          "schema": [
-            {
-              "id": "Timestamp",
-              "displayName": "Timestamp",
-              "required": false,
-              "defaultMatch": false,
-              "display": true,
-              "type": "string",
-              "canBeUsedToMatch": true
-            },
-            {
-              "id": "Name",
-              "displayName": "Name",
-              "required": false,
-              "defaultMatch": false,
-              "display": true,
-              "type": "string",
-              "canBeUsedToMatch": true
-            },
-            {
-              "id": "E-Mail",
-              "displayName": "E-Mail",
-              "required": false,
-              "defaultMatch": false,
-              "display": true,
-              "type": "string",
-              "canBeUsedToMatch": true
-            },
-            {
-              "id": "Telefon",
-              "displayName": "Telefon",
-              "required": false,
-              "defaultMatch": false,
-              "display": true,
-              "type": "string",
-              "canBeUsedToMatch": true
-            },
-            {
-              "id": "Anliegen",
-              "displayName": "Anliegen",
-              "required": false,
-              "defaultMatch": false,
-              "display": true,
-              "type": "string",
-              "canBeUsedToMatch": true
-            },
-            {
-              "id": "Termin",
-              "displayName": "Termin",
-              "required": false,
-              "defaultMatch": false,
-              "display": true,
-              "type": "string",
-              "canBeUsedToMatch": true
-            },
-            {
-              "id": "Status",
-              "displayName": "Status",
-              "required": false,
-              "defaultMatch": false,
-              "display": true,
-              "type": "string",
-              "canBeUsedToMatch": true
-            },
-            {
-              "id": "Quelle",
-              "displayName": "Quelle",
-              "required": false,
-              "defaultMatch": false,
-              "display": true,
-              "type": "string",
-              "canBeUsedToMatch": true
-            }
-          ],
-          "value": {
-            "Timestamp": "={{ $now.setZone('Europe/Berlin').toFormat('yyyy-LL-dd HH:mm') }}",
-            "Name": "={{ $('Parse & Normalize').item.json.name }}",
-            "E-Mail": "={{ $('Parse & Normalize').item.json.email }}",
-            "Telefon": "={{ $('Parse & Normalize').item.json.telefon }}",
-            "Anliegen": "={{ $('Parse & Normalize').item.json.anliegen }}",
-            "Termin": "={{ $('Parse & Normalize').item.json.startLabel }}",
-            "Status": "Termin gebucht",
-            "Quelle": "Voice Agent Jarvis"
-          }
-        },
-        "options": {}
-      },
-      "id": "gsheet-b5",
-      "name": "Append Lead Row",
-      "type": "n8n-nodes-base.googleSheets",
-      "typeVersion": 4.5,
-      "position": [
-        880,
-        200
-      ],
-      "onError": "continueRegularOutput"
-    },
-    {
-      "parameters": {
         "jsCode": "const p = $('Parse & Normalize').first().json;\nconst result = 'Perfekt, der Termin am ' + p.startLabel + ' Uhr ist verbindlich gebucht. Der Kunde erhält eine Kalendereinladung. Bestätige dem Anrufer den Termin freundlich und verabschiede dich.';\nreturn [{ json: { results: [{ toolCallId: p.toolCallId, result }] } }];"
       },
       "id": "code-b6",
@@ -290,17 +175,6 @@
       ]
     },
     "Create Event": {
-      "main": [
-        [
-          {
-            "node": "Append Lead Row",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Append Lead Row": {
       "main": [
         [
           {

@@ -96,22 +96,6 @@
           "Erstellt Angebote & Rechnungen",
           "Läuft zuverlässig im Hintergrund"
         ]
-      },
-      {
-        "slug": "website",
-        "tag": "Website",
-        "title": "Website-Erstellung",
-        "summary": "Moderne, schnelle Websites, die zu Kunden führen — auf Wunsch direkt mit Ihren Agenten verbunden.",
-        "result": "Modern & schnell",
-        "what": "Wir gestalten moderne, schnelle Websites und Landingpages, die auf Handy und Computer perfekt aussehen, bei Google gefunden werden und Besucher zu Kunden machen — auf Wunsch direkt mit Ihren KI-Agenten verbunden.",
-        "benefit": "Ein professioneller Auftritt, der nicht nur gut aussieht, sondern aktiv neue Anfragen bringt — und nahtlos mit Ihren digitalen Mitarbeitern zusammenarbeitet.",
-        "example": "Diese Website ist ein Beispiel: schnell, modern, auf jedem Gerät — mit einem Kontaktformular, das Anfragen direkt zustellt, und Platz für Ihren Chat-Agenten.",
-        "features": [
-          "Modern & auf jedem Gerät gut",
-          "Schnell und bei Google auffindbar",
-          "Auf mehr Anfragen ausgelegt",
-          "Direkt mit Ihren Agenten verbunden"
-        ]
       }
     ],
     "cta": {
