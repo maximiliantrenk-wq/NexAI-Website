@@ -96,22 +96,6 @@
           "Creates quotes & invoices",
           "Runs reliably in the background"
         ]
-      },
-      {
-        "slug": "website",
-        "tag": "Website",
-        "title": "Website Creation",
-        "summary": "Modern, fast websites that turn visitors into customers — connected to your agents on request.",
-        "result": "Modern & fast",
-        "what": "We build modern, fast websites and landing pages that look perfect on phone and computer, get found on Google and turn visitors into customers — connected directly to your AI agents on request.",
-        "benefit": "A professional presence that not only looks great but actively brings in new enquiries — and works seamlessly with your digital employees.",
-        "example": "This website is an example: fast, modern, great on every device — with a contact form that delivers enquiries directly, and room for your chat agent.",
-        "features": [
-          "Modern & great on every device",
-          "Fast and easy to find on Google",
-          "Built for more enquiries",
-          "Connected to your agents"
-        ]
       }
     ],
     "cta": {

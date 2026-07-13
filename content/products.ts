@@ -5,7 +5,6 @@ export const productSlugs = [
   "social-media-agent",
   "vertriebs-agent",
   "automatisierung",
-  "website",
 ] as const;
 
 export type ProductSlug = (typeof productSlugs)[number];
