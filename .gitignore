@@ -42,3 +42,6 @@ next-env.d.ts
 
 # local tooling / machine-specific preview config
 /.claude/
+
+# team photo originals (only the optimized public/team/*.jpg are committed)
+/.team-src/

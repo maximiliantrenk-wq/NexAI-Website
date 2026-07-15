@@ -1,0 +1,24 @@
+<!-- NEXAI Voice-Agent: Kunden-Bestätigungsmail.
+     In den n8n Gmail-Node → Feld "Message" (Expression-Modus, HTML) einfügen.
+     Nutzt Felder aus dem "Parse & Normalize"-Node. -->
+<div style="font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#f4f5f7;padding:32px 16px;">
+  <div style="max-width:560px;margin:0 auto;background:#ffffff;border-radius:16px;overflow:hidden;border:1px solid #ececf1;">
+    <div style="background:linear-gradient(135deg,#2563eb,#7c3aed);padding:26px 32px;">
+      <div style="color:#ffffff;font-size:20px;font-weight:700;">NEXAI</div>
+      <div style="color:rgba(255,255,255,.85);font-size:13px;margin-top:2px;">Digitale Mitarbeiter · KI-Agentur</div>
+    </div>
+    <div style="padding:32px;">
+      <h1 style="margin:0 0 8px;font-size:22px;color:#0b0b0f;">Ihr Termin ist bestätigt ✅</h1>
+      <p style="margin:0 0 20px;color:#4b4b57;font-size:15px;line-height:1.6;">Hallo {{ $('Parse & Normalize').item.json.name }},<br>vielen Dank für Ihre Anfrage. Ihr Termin bei NEXAI wurde erfolgreich eingetragen – wir freuen uns auf das Gespräch!</p>
+      <div style="background:#f7f8fa;border:1px solid #ececf1;border-radius:12px;padding:8px 20px;margin-bottom:22px;">
+        <table style="width:100%;font-size:14px;color:#0b0b0f;border-collapse:collapse;">
+          <tr><td style="padding:8px 0;color:#8a8a99;">📅 Termin</td><td style="padding:8px 0;text-align:right;font-weight:600;">{{ $('Parse & Normalize').item.json.startLabel }} Uhr</td></tr>
+          <tr><td style="padding:8px 0;color:#8a8a99;">⏱️ Dauer</td><td style="padding:8px 0;text-align:right;font-weight:600;">30 Minuten</td></tr>
+          <tr><td style="padding:8px 0;color:#8a8a99;">💬 Thema</td><td style="padding:8px 0;text-align:right;font-weight:600;">{{ $('Parse & Normalize').item.json.anliegen }}</td></tr>
+        </table>
+      </div>
+      <p style="margin:0;color:#8a8a99;font-size:13px;line-height:1.6;">Müssen Sie verschieben oder absagen? Antworten Sie einfach auf diese E-Mail oder rufen Sie uns an: 0176 80714816.</p>
+    </div>
+    <div style="padding:18px 32px;border-top:1px solid #ececf1;color:#a1a1ad;font-size:12px;">NEXAI · Crailsheim · mbt@nex-a-i.com · nex-a-i.com<br>Automatisch erstellt von unserem KI-Assistenten.</div>
+  </div>
+</div>
