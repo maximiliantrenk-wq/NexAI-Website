@@ -28,8 +28,8 @@
       "title": "Die Menschen hinter NEXAI.",
       "description": "Gegründet und geführt von zwei Geschäftsführern mit einer klaren Mission: KI, die für Unternehmen wirklich arbeitet.",
       "members": [
-        { "name": "Maximilian Trenk", "role": "Geschäftsführer" },
-        { "name": "Jason Brian Merklein", "role": "Geschäftsführer" }
+        { "name": "Maximilian Trenk", "role": "Geschäftsführer", "image": "/team/maximilian.jpg" },
+        { "name": "Jason Brian Merklein", "role": "Geschäftsführer", "image": "/team/jason.jpg" }
       ]
     }
   }

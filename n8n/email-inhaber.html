@@ -1,0 +1,14 @@
+<!-- NEXAI Voice-Agent: Inhaber-Benachrichtigung an mbt@nex-a-i.com.
+     In den n8n Gmail-Node (Inhaber) → Feld "Message" (Expression-Modus, HTML) einfügen. -->
+<div style="font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#0b0b0f;font-size:15px;line-height:1.6;">
+  <h2 style="margin:0 0 12px;">🗓️ Neuer Termin über den Voice Agent</h2>
+  <p style="margin:0 0 16px;color:#4b4b57;">Der NEXAI Voice Agent hat soeben einen neuen Termin gebucht:</p>
+  <table style="border-collapse:collapse;font-size:14px;">
+    <tr><td style="padding:4px 16px 4px 0;color:#8a8a99;">Kunde</td><td style="padding:4px 0;font-weight:600;">{{ $('Parse & Normalize').item.json.name }}</td></tr>
+    <tr><td style="padding:4px 16px 4px 0;color:#8a8a99;">Termin</td><td style="padding:4px 0;font-weight:600;">{{ $('Parse & Normalize').item.json.startLabel }} Uhr</td></tr>
+    <tr><td style="padding:4px 16px 4px 0;color:#8a8a99;">Anliegen</td><td style="padding:4px 0;">{{ $('Parse & Normalize').item.json.anliegen }}</td></tr>
+    <tr><td style="padding:4px 16px 4px 0;color:#8a8a99;">E-Mail</td><td style="padding:4px 0;">{{ $('Parse & Normalize').item.json.email }}</td></tr>
+    <tr><td style="padding:4px 16px 4px 0;color:#8a8a99;">Telefon</td><td style="padding:4px 0;">{{ $('Parse & Normalize').item.json.telefon }}</td></tr>
+  </table>
+  <p style="margin:16px 0 0;color:#a1a1ad;font-size:12px;">Der Termin liegt im Kalender mbt@nex-a-i.com.</p>
+</div>

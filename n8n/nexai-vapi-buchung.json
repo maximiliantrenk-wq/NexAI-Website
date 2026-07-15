@@ -79,7 +79,7 @@
         "end": "={{ $json.endISO }}",
         "additionalFields": {
           "summary": "=NEXAI · {{ $json.anliegen }} – {{ $json.name }}",
-          "description": "=Gebucht über den NEXAI Voice Agent (Jarvis).\\nKunde: {{ $json.name }}\\nTelefon: {{ $json.telefon }}\\nAnliegen: {{ $json.anliegen }}\\nNotizen: {{ $json.notizen }}"
+          "description": "={{ '🤖 Gebucht über den NEXAI Voice Agent' + '\\n👤 Kunde: ' + $json.name + ($json.telefon ? '\\n📞 Telefon: ' + $json.telefon : '') + '\\n💬 Anliegen: ' + ($json.anliegen || '—') + ($json.notizen ? '\\n📝 Notizen: ' + $json.notizen : '') }}"
         }
       },
       "id": "gcal-b4",
