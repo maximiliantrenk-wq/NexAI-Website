@@ -73,16 +73,24 @@ Bestätigung an den Kunden und eine Info an dich (mbt@nex-a-i.com). Einrichtung:
 1. **Gmail-Credential in n8n anlegen:** Credentials → **Gmail OAuth2** → mit **mbt@nex-a-i.com**
    anmelden (Google Workspace). (Falls die vorhandene Google-Credential nur Kalender-Rechte hat,
    eine separate Gmail-Credential erstellen.)
-2. Im Buchungs-Workflow zwischen **„Create Event"** und **„Return: Booked"** zwei **Gmail**-Nodes
-   (Operation **Send a message**) einfügen:
-   - **Kunden-Bestätigung:** To = `={{ $('Parse & Normalize').item.json.email }}` · Subject =
-     `Ihr Termin bei NEXAI ist bestätigt ✅` · Email Type = **HTML** · Message = Inhalt aus
-     `n8n/email-kunde.html` (Expression-Modus). **Settings → On Error → Continue** setzen (falls der
-     Kunde keine E-Mail nennt, bucht es trotzdem).
-   - **Inhaber-Info:** To = `mbt@nex-a-i.com` · Subject =
+2. Im Buchungs-Workflow nach **„Create Event"** einen **IF**-Node + zwei **Gmail**-Nodes einfügen.
+   Nennt der Kunde keine E-Mail, wird **keine** Kunden-Mail verschickt (sauber, ohne Fehler im Log):
+
+   ```
+   Create Event → IF "Hat E-Mail?" ──true──→ Kunden-Bestätigung ──┐
+                        └──────────false────────────────────────→ Inhaber-Info → Return: Booked
+   ```
+
+   - **IF-Node „Hat E-Mail?"**: Bedingung → linker Wert `={{ $('Parse & Normalize').item.json.email }}`,
+     Typ **String**, Operator **is not empty**.
+   - **Kunden-Bestätigung** (Gmail, Operation **Send a message**, nur im **true**-Zweig):
+     To = `={{ $('Parse & Normalize').item.json.email }}` · Subject = `Ihr Termin bei NEXAI ist bestätigt ✅`
+     · Email Type = **HTML** · Message = Inhalt aus `n8n/email-kunde.html` (Expression-Modus).
+   - **Inhaber-Info** (Gmail, Send a message): To = `mbt@nex-a-i.com` · Subject =
      `=🗓️ Neuer Termin: {{ $('Parse & Normalize').item.json.name }} – {{ $('Parse & Normalize').item.json.startLabel }}`
      · Email Type = **HTML** · Message = Inhalt aus `n8n/email-inhaber.html`.
-   Reihenfolge: `Create Event → Kunden-Bestätigung → Inhaber-Info → Return: Booked`.
+     **Beide Zweige** (true über die Kunden-Mail, false direkt) auf **Inhaber-Info** verbinden,
+     danach **Inhaber-Info → Return: Booked**.
 3. **Vapi-Prompt:** Der Agent muss nach der E-Mail fragen (Schritt „E-Mail für die Bestätigung",
    siehe Chat) und im Erfolgssatz „Bestätigung kommt per E-Mail" sagen. `book_appointment_make`
    übergibt `email` bereits.
