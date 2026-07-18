@@ -49,14 +49,13 @@ export function Header() {
           <div className="hidden sm:block">
             <LocaleSwitcher />
           </div>
-          <Button
-            href="/contact"
-            size="sm"
-            className="hidden sm:inline-flex"
-            withArrow
-          >
-            {t("cta")}
-          </Button>
+          {/* Wrapper statt `hidden` am Button: `cn` merged nicht, das
+              `inline-flex` der Button-Basis wuerde `hidden` ueberstimmen. */}
+          <div className="hidden sm:block">
+            <Button href="/contact" size="sm" withArrow>
+              {t("cta")}
+            </Button>
+          </div>
           <MobileNav />
         </div>
       </div>

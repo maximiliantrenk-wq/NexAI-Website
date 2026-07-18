@@ -43,7 +43,7 @@ export function Services() {
           </Reveal>
         </div>
 
-        <RevealGroup className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <RevealGroup className="mt-10 sm:mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((item, i) => {
             const Icon = ICONS[i] ?? PhoneCall;
             return (

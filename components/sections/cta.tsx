@@ -16,7 +16,7 @@ export function CTASection({
   return (
     <Section>
       <Container>
-        <div className="relative isolate overflow-hidden rounded-[28px] border border-line bg-gradient-to-b from-white/[0.05] to-white/[0.01] px-8 py-20 text-center sm:px-16 sm:py-24">
+        <div className="relative isolate overflow-hidden rounded-[28px] border border-line bg-gradient-to-b from-white/[0.05] to-white/[0.01] px-6 py-12 text-center sm:px-16 sm:py-24">
           <Glow
             className="left-1/2 top-1/3 h-[420px] w-[640px] -translate-x-1/2 -translate-y-1/2"
             intensity={0.34}

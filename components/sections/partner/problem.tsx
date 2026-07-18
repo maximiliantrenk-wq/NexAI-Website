@@ -21,7 +21,7 @@ export function PartnerProblem() {
           description={t("description")}
         />
 
-        <RevealGroup className="mt-14 grid gap-px overflow-hidden rounded-2xl border border-line bg-line sm:grid-cols-2 lg:grid-cols-4">
+        <RevealGroup className="mt-10 sm:mt-14 grid gap-px overflow-hidden rounded-2xl border border-line bg-line sm:grid-cols-2 lg:grid-cols-4">
           {items.map((item, i) => {
             const Icon = ICONS[i] ?? PhoneMissed;
             return (

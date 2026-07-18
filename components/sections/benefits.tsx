@@ -13,7 +13,7 @@ export function Benefits() {
     <Section>
       <Container>
         <SectionHeading eyebrow={t("eyebrow")} title={t("title")} />
-        <RevealGroup className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <RevealGroup className="mt-10 sm:mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((b) => (
             <RevealItem
               key={b.title}

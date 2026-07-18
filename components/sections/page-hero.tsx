@@ -14,7 +14,7 @@ export function PageHero({
   children?: React.ReactNode;
 }) {
   return (
-    <section className="relative isolate overflow-hidden pb-16 pt-36 sm:pb-20 sm:pt-44">
+    <section className="relative isolate overflow-hidden pb-12 pt-28 sm:pb-20 sm:pt-44">
       <div className="absolute inset-0 -z-10">
         <div
           aria-hidden

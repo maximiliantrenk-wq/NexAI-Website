@@ -1,10 +1,13 @@
 {
   "Hero": {
     "eyebrow": "AI Agency · Digital Employees",
-    "title": "Digital employees that work for your business.",
+    "title": "AI employees that automate your processes — effortlessly.",
     "subtitle": "We build intelligent AI agents — voice, chat, sales and automation — tailored to your company and fully integrated into your workflows.",
-    "ctaPrimary": "Start a project",
+    "ctaPrimary": "Free intro call",
     "ctaSecondary": "Explore services",
+    "ctaDemo": "Live demo: call our AI now",
+    "demoPhone": "+49 7959 3100191",
+    "demoHint": "available around the clock",
     "trust": "For companies that want to grow faster with AI",
     "console": {
       "label": "nexai · voice-agent",
@@ -110,7 +113,7 @@
     "cta": {
       "title": "Ready for your first digital employee?",
       "description": "Let's find out where AI has the biggest leverage in your business — in a free, no-obligation call.",
-      "primary": "Start a project",
+      "primary": "Free intro call",
       "secondary": "Explore services"
     }
   }

@@ -18,7 +18,7 @@ export function Team() {
           title={t("title")}
           description={t("description")}
         />
-        <RevealGroup className="mx-auto mt-14 grid max-w-3xl gap-6 sm:grid-cols-2">
+        <RevealGroup className="mx-auto mt-10 sm:mt-14 grid max-w-3xl gap-6 sm:grid-cols-2">
           {members.map((m) => (
             <RevealItem key={m.name} className="group">
               <div className="surface-card overflow-hidden rounded-2xl p-6">
