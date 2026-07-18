@@ -20,7 +20,7 @@ export function PartnerExample() {
           description={t("description")}
         />
 
-        <div className="mt-14 grid gap-6 lg:grid-cols-2">
+        <div className="mt-10 sm:mt-14 grid gap-6 lg:grid-cols-2">
           <Reveal className="surface-card rounded-2xl p-7 sm:p-8">
             <h3 className="text-lg font-semibold tracking-tight text-muted">
               {without.title}

@@ -30,7 +30,7 @@ export function ProductHighlights() {
           </Reveal>
         </div>
 
-        <RevealGroup className="mt-14 grid gap-6 md:grid-cols-3">
+        <RevealGroup className="mt-10 sm:mt-14 grid gap-6 md:grid-cols-3">
           {items.map((c, i) => (
             <RevealItem key={c.slug}>
               <Link

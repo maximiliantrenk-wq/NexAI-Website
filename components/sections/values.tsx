@@ -13,7 +13,7 @@ export function Values() {
     <Section>
       <Container>
         <SectionHeading eyebrow={t("eyebrow")} title={t("title")} />
-        <RevealGroup className="mt-14 grid gap-px overflow-hidden rounded-2xl border border-line bg-line sm:grid-cols-2 lg:grid-cols-3">
+        <RevealGroup className="mt-10 sm:mt-14 grid gap-px overflow-hidden rounded-2xl border border-line bg-line sm:grid-cols-2 lg:grid-cols-3">
           {items.map((v) => (
             <RevealItem
               key={v.title}

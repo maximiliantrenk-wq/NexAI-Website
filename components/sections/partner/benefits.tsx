@@ -27,7 +27,7 @@ export function PartnerBenefits({
           description={t("description")}
         />
 
-        <RevealGroup className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <RevealGroup className="mt-10 sm:mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((item, i) => {
             const Icon = icons[i % icons.length];
             return (

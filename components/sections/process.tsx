@@ -18,7 +18,7 @@ export function Process() {
           description={t("description")}
         />
 
-        <RevealGroup className="mt-16 grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-4">
+        <RevealGroup className="mt-10 grid gap-x-8 gap-y-8 sm:mt-16 sm:gap-y-12 sm:grid-cols-2 lg:grid-cols-4">
           {steps.map((step) => (
             <RevealItem key={step.n} className="relative">
               <div className="flex items-center gap-3">

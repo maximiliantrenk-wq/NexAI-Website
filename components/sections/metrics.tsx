@@ -12,7 +12,7 @@ export function Metrics() {
   return (
     <Section className="py-16 sm:py-20">
       <Container>
-        <div className="grid gap-10 rounded-3xl border border-line bg-white/[0.015] px-8 py-12 sm:grid-cols-2 sm:px-12 lg:grid-cols-4 lg:px-16">
+        <div className="grid gap-6 rounded-3xl border border-line bg-white/[0.015] px-8 py-10 sm:grid-cols-2 sm:gap-10 sm:px-12 sm:py-12 lg:grid-cols-4 lg:px-16">
           {items.map((m, i) => (
             <Reveal
               key={m.label}

@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import { Phone } from "lucide-react";
 import { Container } from "@/components/ui/container";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -19,7 +20,7 @@ export function Hero() {
         <div className="absolute inset-x-0 bottom-0 h-72 bg-gradient-to-t from-bg via-bg/85 to-transparent" />
       </div>
 
-      <Container className="relative flex flex-col items-center pb-24 pt-40 text-center sm:pt-48">
+      <Container className="relative flex flex-col items-center pb-14 pt-28 text-center sm:pb-24 sm:pt-48">
         <Reveal>
           <Badge dot>{t("eyebrow")}</Badge>
         </Reveal>
@@ -36,23 +37,55 @@ export function Hero() {
           </p>
         </Reveal>
 
-        <Reveal delay={0.18}>
-          <div className="mt-9 flex flex-wrap items-center justify-center gap-3">
-            <Button href="/contact" size="lg" withArrow>
+        <Reveal delay={0.18} className="mt-8 w-full sm:mt-9">
+          <div className="mx-auto flex max-w-md flex-col items-stretch gap-3 sm:max-w-none sm:flex-row sm:flex-wrap sm:items-center sm:justify-center">
+            <Button
+              href="/contact"
+              size="lg"
+              className="w-full sm:w-auto"
+              withArrow
+            >
               {t("ctaPrimary")}
             </Button>
-            <Button href="/services" size="lg" variant="secondary">
+            <Button
+              href="tel:+4979593100191"
+              size="lg"
+              variant="secondary"
+              className="w-full sm:w-auto"
+            >
+              <Phone className="size-4" />
+              {t("ctaDemo")}
+            </Button>
+            <Button
+              href="/services"
+              size="lg"
+              variant="ghost"
+              className="w-full sm:w-auto"
+            >
               {t("ctaSecondary")}
             </Button>
           </div>
         </Reveal>
 
-        <Reveal delay={0.26} className="mt-20 w-full">
+        <Reveal delay={0.22}>
+          <p className="mt-4 text-[13px] text-subtle">
+            <a
+              href="tel:+4979593100191"
+              className="font-mono text-muted transition-colors hover:text-blue-bright"
+            >
+              {t("demoPhone")}
+            </a>
+            {" · "}
+            {t("demoHint")}
+          </p>
+        </Reveal>
+
+        <Reveal delay={0.26} className="mt-12 w-full sm:mt-20">
           <HeroArtifact />
         </Reveal>
 
         <Reveal delay={0.15}>
-          <p className="eyebrow mt-14">{t("trust")}</p>
+          <p className="eyebrow mt-10 sm:mt-14">{t("trust")}</p>
         </Reveal>
       </Container>
     </section>

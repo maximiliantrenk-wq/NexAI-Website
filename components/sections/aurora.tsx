@@ -12,7 +12,11 @@ void main() {
 }`;
 
 const FRAG = `
+#ifdef GL_FRAGMENT_PRECISION_HIGH
 precision highp float;
+#else
+precision mediump float;
+#endif
 varying vec2 vUv;
 uniform float uTime;
 uniform vec2 uRes;
@@ -36,7 +40,11 @@ float fbm(vec2 p){
 
 void main(){
   vec2 uv = vUv;
-  vec2 p = (uv - 0.5) * vec2(uRes.x / uRes.y, 1.0) * 2.4;
+  // Kurzseiten-Normierung: im Querformat identisch zu vec2(uRes.x / uRes.y, 1.0),
+  // im Hochformat verhindert sie, dass nur ein schmaler Streifen des Rauschfelds
+  // sichtbar ist. Die max() an den Nennern schuetzen vor einer 0x0-Canvas.
+  float a = max(uRes.x, 1.0) / max(uRes.y, 1.0);
+  vec2 p = (uv - 0.5) * vec2(max(a, 1.0), max(1.0 / a, 1.0)) * 2.4;
   float t = uTime * 0.035;
 
   vec2 q = vec2(fbm(p + t), fbm(p + vec2(3.1, 1.7) - t));
@@ -68,6 +76,10 @@ void main(){
   gl_FragColor = vec4(col, 1.0);
 }`;
 
+const MOBILE_QUERY = "(max-width: 767px)";
+/** Zeitpunkt des einen Standbilds, das bei "prefers-reduced-motion" gezeichnet wird. */
+const STATIC_TIME = 8.0;
+
 function compile(gl: WebGLRenderingContext, type: number, src: string) {
   const sh = gl.createShader(type);
   if (!sh) return null;
@@ -80,13 +92,38 @@ function compile(gl: WebGLRenderingContext, type: number, src: string) {
   return sh;
 }
 
-export function Aurora({ className }: { className?: string }) {
+/**
+ * Animierter Aurora-Hintergrund.
+ *
+ * Der lila CSS-Verlauf (.aurora-fallback) liegt permanent hinter der Canvas.
+ * Weil der Kontext mit `alpha: true` erzeugt wird, ist eine nie gezeichnete,
+ * geleerte oder verlorene Canvas transparent — der Verlauf traegt dann. Damit
+ * kann kein Fehlerpfad einen flachen, grauen Hintergrund erzeugen.
+ *
+ * `mobileStatic` verzichtet unterhalb von 768px ganz auf WebGL.
+ */
+export function Aurora({
+  className,
+  mobileStatic = false,
+}: {
+  className?: string;
+  mobileStatic?: boolean;
+}) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const [failed, setFailed] = useState(false);
+  const [epoch, setEpoch] = useState(0);
 
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
+
+    const rebuild = () => setEpoch((n) => n + 1);
+
+    // Auf dem Handy traegt der statische Verlauf. Das spart den zweiten
+    // WebGL-Kontext und damit die Hauptursache fuer Kontextverluste unter iOS.
+    const mq = mobileStatic ? window.matchMedia(MOBILE_QUERY) : null;
+    mq?.addEventListener("change", rebuild);
+    const stop = () => mq?.removeEventListener("change", rebuild);
+    if (mq?.matches) return stop;
 
     const prefersReduced = window.matchMedia(
       "(prefers-reduced-motion: reduce)",
@@ -94,29 +131,28 @@ export function Aurora({ className }: { className?: string }) {
 
     const gl = canvas.getContext("webgl", {
       antialias: false,
-      alpha: false,
-      premultipliedAlpha: false,
+      alpha: true,
+      premultipliedAlpha: true,
       powerPreference: "low-power",
     });
-    if (!gl) {
-      setFailed(true);
-      return;
-    }
+    if (!gl) return stop;
+
+    // Ohne echtes fp32 im Fragment-Shader kollabiert hash() zu einer Konstanten
+    // und die Aurora faellt zu einer flachen Flaeche zusammen. Dann ist der
+    // statische Verlauf das bessere Ergebnis als ein kaputtes Bild.
+    const hp = gl.getShaderPrecisionFormat(gl.FRAGMENT_SHADER, gl.HIGH_FLOAT);
+    if (!hp || hp.precision < 23) return stop;
 
     const vs = compile(gl, gl.VERTEX_SHADER, VERT);
     const fs = compile(gl, gl.FRAGMENT_SHADER, FRAG);
-    if (!vs || !fs) {
-      setFailed(true);
-      return;
-    }
+    if (!vs || !fs) return stop;
+
     const prog = gl.createProgram();
+    if (!prog) return stop;
     gl.attachShader(prog, vs);
     gl.attachShader(prog, fs);
     gl.linkProgram(prog);
-    if (!gl.getProgramParameter(prog, gl.LINK_STATUS)) {
-      setFailed(true);
-      return;
-    }
+    if (!gl.getProgramParameter(prog, gl.LINK_STATUS)) return stop;
     gl.useProgram(prog);
 
     const buf = gl.createBuffer();
@@ -134,19 +170,26 @@ export function Aurora({ className }: { className?: string }) {
     const uRes = gl.getUniformLocation(prog, "uRes");
 
     const dpr = Math.min(window.devicePixelRatio || 1, 1.5);
+
+    /** Gibt zurueck, ob der Zeichenpuffer dabei geleert wurde. */
     function resize() {
-      if (!canvas) return;
-      const w = Math.floor(canvas.clientWidth * dpr);
-      const h = Math.floor(canvas.clientHeight * dpr);
-      if (canvas.width !== w || canvas.height !== h) {
-        canvas.width = w;
-        canvas.height = h;
+      const w = Math.floor(canvas!.clientWidth * dpr);
+      const h = Math.floor(canvas!.clientHeight * dpr);
+      const wiped = canvas!.width !== w || canvas!.height !== h;
+      if (wiped) {
+        canvas!.width = w;
+        canvas!.height = h;
       }
-      gl!.viewport(0, 0, canvas.width, canvas.height);
-      gl!.uniform2f(uRes, canvas.width, canvas.height);
+      gl!.viewport(0, 0, canvas!.width, canvas!.height);
+      gl!.uniform2f(uRes, canvas!.width, canvas!.height);
+      return wiped;
     }
-    resize();
-    window.addEventListener("resize", resize);
+
+    function drawStatic() {
+      resize();
+      gl!.uniform1f(uTime, STATIC_TIME);
+      gl!.drawArrays(gl!.TRIANGLES, 0, 3);
+    }
 
     let raf = 0;
     let running = true;
@@ -157,22 +200,31 @@ export function Aurora({ className }: { className?: string }) {
       resize();
       gl!.uniform1f(uTime, (now - start) / 1000);
       gl!.drawArrays(gl!.TRIANGLES, 0, 3);
-      if (!prefersReduced) raf = requestAnimationFrame(frame);
-    }
-
-    if (prefersReduced) {
-      frame(start + 8000); // one static, evolved frame
-    } else {
       raf = requestAnimationFrame(frame);
     }
 
+    // Einmal synchron dimensionieren, damit uRes auch dann gesetzt ist, wenn die
+    // Seite in einem Hintergrund-Tab laedt und rAF vorerst nicht feuert.
+    resize();
+    if (prefersReduced) drawStatic();
+    else raf = requestAnimationFrame(frame);
+
+    // Ein Neusetzen von canvas.width leert den Puffer. Unter Reduce-Motion
+    // laeuft keine Schleife, die das nachzeichnet — also von Hand.
+    const onResize = () => {
+      if (resize() && prefersReduced) drawStatic();
+    };
+    window.addEventListener("resize", onResize);
+
     const io = new IntersectionObserver(
       ([entry]) => {
-        const visible = entry.isIntersecting;
-        if (visible && !running && !prefersReduced) {
-          running = true;
-          raf = requestAnimationFrame(frame);
-        } else if (!visible) {
+        if (entry.isIntersecting) {
+          if (prefersReduced) drawStatic();
+          else if (!running) {
+            running = true;
+            raf = requestAnimationFrame(frame);
+          }
+        } else {
           running = false;
           cancelAnimationFrame(raf);
         }
@@ -185,35 +237,47 @@ export function Aurora({ className }: { className?: string }) {
       if (document.hidden) {
         running = false;
         cancelAnimationFrame(raf);
-      } else if (!prefersReduced) {
+      } else if (prefersReduced) {
+        drawStatic();
+      } else if (!running) {
         running = true;
         raf = requestAnimationFrame(frame);
       }
     };
     document.addEventListener("visibilitychange", onVisibility);
 
+    // Ohne preventDefault() ist der Kontext dauerhaft verloren und die Canvas
+    // bliebe fuer immer leer.
+    const onLost = (e: Event) => {
+      e.preventDefault();
+      running = false;
+      cancelAnimationFrame(raf);
+    };
+    canvas.addEventListener("webglcontextlost", onLost);
+    canvas.addEventListener("webglcontextrestored", rebuild);
+
     return () => {
       running = false;
       cancelAnimationFrame(raf);
       io.disconnect();
-      window.removeEventListener("resize", resize);
+      window.removeEventListener("resize", onResize);
       document.removeEventListener("visibilitychange", onVisibility);
+      canvas.removeEventListener("webglcontextlost", onLost);
+      canvas.removeEventListener("webglcontextrestored", rebuild);
+      stop();
       gl.deleteProgram(prog);
       gl.deleteShader(vs);
       gl.deleteShader(fs);
       gl.deleteBuffer(buf);
     };
-  }, []);
-
-  if (failed) {
-    return <div aria-hidden className={cn("aurora-fallback", className)} />;
-  }
+  }, [epoch, mobileStatic]);
 
   return (
-    <canvas
-      ref={canvasRef}
+    <div
       aria-hidden
-      className={cn("block h-full w-full", className)}
-    />
+      className={cn("aurora-fallback block h-full w-full", className)}
+    >
+      <canvas ref={canvasRef} className="block h-full w-full" />
+    </div>
   );
 }

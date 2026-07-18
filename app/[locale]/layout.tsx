@@ -73,8 +73,8 @@ export default async function LocaleLayout({
           aria-hidden
           className="pointer-events-none fixed inset-0 -z-10"
         >
-          <Aurora className="opacity-[0.3]" />
-          <div className="absolute inset-0 bg-[radial-gradient(125%_90%_at_50%_0%,transparent_42%,var(--color-bg)_92%)]" />
+          <Aurora mobileStatic className="opacity-[0.45] md:opacity-[0.3]" />
+          <div className="absolute inset-0 bg-[radial-gradient(150%_115%_at_50%_0%,transparent_55%,var(--color-bg)_100%)] md:bg-[radial-gradient(125%_90%_at_50%_0%,transparent_42%,var(--color-bg)_92%)]" />
         </div>
         <script
           type="application/ld+json"

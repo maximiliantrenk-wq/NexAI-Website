@@ -59,15 +59,18 @@ export function MobileNav() {
                   </Link>
                 </motion.div>
               ))}
-              <div className="mt-8 flex items-center justify-between">
-                <LocaleSwitcher />
+              <div className="mt-8 flex flex-col items-stretch gap-4">
                 <Button
                   href="/contact"
                   onClick={() => setOpen(false)}
+                  className="w-full"
                   withArrow
                 >
                   {t("cta")}
                 </Button>
+                <div className="flex justify-center">
+                  <LocaleSwitcher />
+                </div>
               </div>
             </nav>
           </motion.div>

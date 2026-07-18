@@ -1,10 +1,13 @@
 {
   "Hero": {
     "eyebrow": "KI-Agentur · Digitale Mitarbeiter",
-    "title": "Digitale Mitarbeiter, die für Ihr Unternehmen arbeiten.",
+    "title": "KI-Mitarbeiter, die Prozesse automatisieren – ohne Aufwand.",
     "subtitle": "Wir entwickeln intelligente KI-Agenten — Voice, Chat, Vertrieb und Automatisierung — individuell auf Ihr Unternehmen zugeschnitten und vollständig in Ihre Abläufe integriert.",
-    "ctaPrimary": "Projekt starten",
+    "ctaPrimary": "Kostenloses Erstgespräch",
     "ctaSecondary": "Leistungen ansehen",
+    "ctaDemo": "Live Demo: KI jetzt anrufen",
+    "demoPhone": "07959 3100191",
+    "demoHint": "rund um die Uhr erreichbar",
     "trust": "Für Unternehmen, die mit KI schneller wachsen wollen",
     "console": {
       "label": "nexai · voice-agent",
@@ -110,7 +113,7 @@
     "cta": {
       "title": "Bereit für Ihren ersten digitalen Mitarbeiter?",
       "description": "Lassen Sie uns in einem unverbindlichen Gespräch herausfinden, wo KI bei Ihnen den größten Hebel hat.",
-      "primary": "Projekt starten",
+      "primary": "Kostenloses Erstgespräch",
       "secondary": "Leistungen entdecken"
     }
   }

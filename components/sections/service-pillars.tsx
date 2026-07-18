@@ -38,7 +38,7 @@ export function ServicePillars() {
       <Container>
         <SectionHeading eyebrow={t("eyebrow")} title={t("title")} />
 
-        <div className="mt-14 space-y-5">
+        <div className="mt-10 sm:mt-14 space-y-5">
           {items.map((item, i) => {
             const Icon = ICONS[i] ?? Sparkles;
             return (

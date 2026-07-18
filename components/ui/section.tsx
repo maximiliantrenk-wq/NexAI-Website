@@ -13,7 +13,7 @@ export function Section({
   return (
     <section
       id={id}
-      className={cn("relative scroll-mt-24 py-24 sm:py-28 lg:py-32", className)}
+      className={cn("relative scroll-mt-24 py-14 sm:py-28 lg:py-32", className)}
     >
       {children}
     </section>
