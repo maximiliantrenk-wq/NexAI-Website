@@ -4,6 +4,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { useTranslations } from "next-intl";
 import { PageHero } from "@/components/sections/page-hero";
 import { ContactForm } from "@/components/sections/contact-form";
+import { Booking } from "@/components/sections/booking";
 import { Container } from "@/components/ui/container";
 import { Section } from "@/components/ui/section";
 
@@ -80,13 +81,21 @@ function ContactContent() {
                   {info("bookLabel")}
                 </p>
                 <a
-                  href="#"
+                  href="#termin"
                   className="mt-3 inline-flex items-center gap-1.5 text-sm font-medium text-blue-bright hover:underline"
                 >
                   {info("book")} →
                 </a>
               </div>
             </div>
+          </div>
+        </Container>
+      </Section>
+
+      <Section id="termin" className="pt-0">
+        <Container>
+          <div className="mx-auto max-w-2xl">
+            <Booking />
           </div>
         </Container>
       </Section>
