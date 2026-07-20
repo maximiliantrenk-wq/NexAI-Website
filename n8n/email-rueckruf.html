@@ -1,0 +1,14 @@
+<!-- NEXAI Voice-Agent: Rückruf-Benachrichtigung an mbt@nex-a-i.com (+ ggf. Jason).
+     In den n8n Gmail-Node (Rückruf) → Feld "Message" (Expression-Modus, HTML) einfügen. -->
+<div style="font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#0b0b0f;background:#ffffff;padding:20px;font-size:15px;line-height:1.6;">
+  <h2 style="margin:0 0 12px;">📞 Rückruf gewünscht</h2>
+  <p style="margin:0 0 16px;color:#4b4b57;">Ein Anrufer wollte eine Person sprechen. Der Voice Agent hat den Rückrufwunsch aufgenommen — <strong>bitte zeitnah zurückrufen.</strong></p>
+  <table style="border-collapse:collapse;font-size:14px;">
+    <tr><td style="padding:4px 16px 4px 0;color:#8a8a99;">Name</td><td style="padding:4px 0;font-weight:600;">{{ $('Parse & Normalize').item.json.name }}</td></tr>
+    <tr><td style="padding:4px 16px 4px 0;color:#8a8a99;">Rückrufnummer</td><td style="padding:4px 0;font-weight:600;font-size:16px;">{{ $('Parse & Normalize').item.json.rueckrufnummer }}</td></tr>
+    <tr><td style="padding:4px 16px 4px 0;color:#8a8a99;">Anliegen</td><td style="padding:4px 0;">{{ $('Parse & Normalize').item.json.anliegen }}</td></tr>
+    <tr><td style="padding:4px 16px 4px 0;color:#8a8a99;">E-Mail</td><td style="padding:4px 0;">{{ $('Parse & Normalize').item.json.email }}</td></tr>
+    <tr><td style="padding:4px 16px 4px 0;color:#8a8a99;">Anruf eingegangen</td><td style="padding:4px 0;">{{ $('Parse & Normalize').item.json.eingegangen }} Uhr</td></tr>
+  </table>
+  <p style="margin:16px 0 0;color:#a1a1ad;font-size:12px;">Automatisch erzeugt vom NEXAI Voice Agent · Quelle: Telefon 07959 3100191</p>
+</div>

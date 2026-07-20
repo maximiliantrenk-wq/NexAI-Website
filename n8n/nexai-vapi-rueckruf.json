@@ -1,0 +1,183 @@
+{
+  "name": "NEXAI Voice · Rückruf-Wunsch (Vapi)",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "nexai-vapi-rueckruf",
+        "responseMode": "responseNode",
+        "authentication": "none",
+        "options": {}
+      },
+      "id": "webhook-r1",
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        0,
+        300
+      ],
+      "webhookId": "nexai-vapi-rueckruf-webhook"
+    },
+    {
+      "parameters": {
+        "jsCode": "// NEXAI Voice · Rückruf-Wunsch — Payload lesen (flach ODER Vapi-Envelope)\nconst TZ = 'Europe/Berlin';\n\nconst root = $input.first().json || {};\nconst body = (root.body && typeof root.body === 'object') ? root.body : root;\nlet toolCallId = '';\nlet a = {};\nif (body && body.message && Array.isArray(body.message.toolCalls) && body.message.toolCalls[0]) {\n  const tc = body.message.toolCalls[0];\n  toolCallId = tc.id || '';\n  let ar = tc.function && tc.function.arguments;\n  if (typeof ar === 'string') { try { ar = JSON.parse(ar); } catch (e) { ar = {}; } }\n  a = ar || {};\n} else {\n  a = body || {};\n  toolCallId = body.toolCallId || '';\n}\n\n// Anrufernummer aus dem Vapi-Envelope — nur bei echten Telefonanrufen gesetzt, bei Web-Calls leer\nlet callerNumber = '';\ntry { callerNumber = String(body.message.call.customer.number || '').trim(); } catch (e) { callerNumber = ''; }\n\nconst name = String(a.name != null ? a.name : '').trim();\nconst email = String(a.email != null ? a.email : '').trim();\nconst telefon = String((a.telefon != null ? a.telefon : a.phone) || '').trim();\nconst anliegen = String((a.anliegen != null ? a.anliegen : a.topic) || '').trim();\nconst dringlichkeit = String((a.dringlichkeit != null ? a.dringlichkeit : a.urgency) || '').trim();\n\n// Rückrufnummer: was der Anrufer nennt, sonst die Nummer, von der er anruft\nconst rueckrufnummer = telefon || callerNumber;\nconst valid = Boolean(rueckrufnummer || email);\n\nconst eingegangen = $now.setZone(TZ).toFormat('dd.LL.yyyy HH:mm');\n\nreturn [{ json: { valid, toolCallId, name, email, telefon, callerNumber, rueckrufnummer, anliegen, dringlichkeit, eingegangen } }];"
+      },
+      "id": "code-r2",
+      "name": "Parse & Normalize",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        220,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "combinator": "and",
+          "conditions": [
+            {
+              "id": "cond-r3",
+              "leftValue": "={{ $json.valid }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "if-r3",
+      "name": "Hat Kontakt?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        440,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const p = $('Parse & Normalize').first().json;\nconst wohin = p.rueckrufnummer ? ('unter ' + p.rueckrufnummer) : ('per E-Mail an ' + p.email);\nconst result = 'Der Rückrufwunsch ist notiert und das Team wurde benachrichtigt. Bestätige dem Anrufer kurz, dass sich ein Kollege zeitnah ' + wohin + ' meldet, und verabschiede dich freundlich.';\nreturn [{ json: { results: [{ toolCallId: p.toolCallId, result }] } }];"
+      },
+      "id": "code-r4",
+      "name": "Return: Notiert",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        880,
+        200
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const p = $('Parse & Normalize').first().json;\nconst result = 'Es fehlt noch ein Weg, den Anrufer zu erreichen. Frag freundlich nach der Telefonnummer, unter der wir zurückrufen dürfen.';\nreturn [{ json: { results: [{ toolCallId: p.toolCallId, result }] } }];"
+      },
+      "id": "code-r5",
+      "name": "Return: Nachfrage",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        660,
+        420
+      ]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ $json }}",
+        "options": {}
+      },
+      "id": "resp-r6",
+      "name": "Respond to Webhook",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        1100,
+        300
+      ]
+    }
+  ],
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Parse & Normalize",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse & Normalize": {
+      "main": [
+        [
+          {
+            "node": "Hat Kontakt?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Hat Kontakt?": {
+      "main": [
+        [
+          {
+            "node": "Return: Notiert",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Return: Nachfrage",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Return: Notiert": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Return: Nachfrage": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "pinData": {},
+  "meta": {
+    "templateId": "nexai-vapi-rueckruf"
+  },
+  "tags": []
+}
