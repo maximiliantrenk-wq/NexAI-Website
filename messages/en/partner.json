@@ -162,7 +162,7 @@
     "example": {
       "eyebrow": "Example",
       "title": "From lead to job — a realistic scenario.",
-      "description": "A marketing agency delivers a roofing company 120 new enquiries per month. What happens next decides the outcome.",
+      "description": "A marketing agency delivers a roofing company a steady stream of new enquiries. What happens next decides the outcome.",
       "without": {
         "title": "Without NexAI",
         "items": [
@@ -181,8 +181,7 @@
           "All data lands in the CRM automatically"
         ]
       },
-      "resultValue": "120",
-      "resultLabel": "enquiries a month — not a single one lost.",
+      "resultLabel": "Not a single enquiry gets lost.",
       "resultText": "The agency delivers measurably better results, the roofer wins more jobs. Everyone wins — and the partnership becomes indispensable."
     },
     "why": {

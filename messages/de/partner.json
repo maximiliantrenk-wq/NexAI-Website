@@ -162,7 +162,7 @@
     "example": {
       "eyebrow": "Beispiel",
       "title": "Vom Lead zum Auftrag — ein realistisches Szenario.",
-      "description": "Eine Marketing-Agentur liefert einem Dachdecker 120 neue Anfragen pro Monat. Was danach passiert, entscheidet über den Erfolg.",
+      "description": "Eine Marketing-Agentur liefert einem Dachdecker regelmäßig neue Anfragen. Was danach passiert, entscheidet über den Erfolg.",
       "without": {
         "title": "Ohne NexAI",
         "items": [
@@ -181,8 +181,7 @@
           "Alle Daten landen automatisch im CRM"
         ]
       },
-      "resultValue": "120",
-      "resultLabel": "Anfragen pro Monat — keine geht mehr verloren.",
+      "resultLabel": "Keine Anfrage geht mehr verloren.",
       "resultText": "Die Agentur liefert messbar bessere Ergebnisse, der Dachdecker gewinnt mehr Aufträge. Beide gewinnen — und die Zusammenarbeit wird unverzichtbar."
     },
     "why": {
