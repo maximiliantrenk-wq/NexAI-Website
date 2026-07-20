@@ -49,9 +49,17 @@ function rateLimited(ip: string): boolean {
   return recent.length > RATE_LIMIT;
 }
 
-async function callN8n(payload: unknown): Promise<unknown | null> {
-  const url = process.env.N8N_BOOKING_WEBHOOK_URL;
-  if (!url) return null;
+/**
+ * Unterscheidbare Fehlergründe: bei einer Störung soll aus der Antwort
+ * hervorgehen, WO es klemmt — Schlüssel, Zeitüberschreitung oder Datenform.
+ */
+type N8nFailure = "auth" | "timeout" | "status" | "shape";
+type N8nResult =
+  | { ok: true; data: unknown }
+  | { ok: false; reason: N8nFailure };
+
+async function callN8n(payload: unknown): Promise<N8nResult> {
+  const url = process.env.N8N_BOOKING_WEBHOOK_URL!;
 
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), N8N_TIMEOUT_MS);
@@ -67,34 +75,55 @@ async function callN8n(payload: unknown): Promise<unknown | null> {
       body: JSON.stringify(payload),
       signal: controller.signal,
     });
+
+    if (res.status === 401 || res.status === 403) {
+      console.error("[booking] n8n rejected the shared secret.");
+      return { ok: false, reason: "auth" };
+    }
     if (!res.ok) {
       console.error("[booking] n8n responded", res.status);
-      return null;
+      return { ok: false, reason: "status" };
     }
-    return await res.json().catch(() => null);
+
+    const data = await res.json().catch(() => null);
+    if (data === null) {
+      console.error("[booking] n8n returned no usable JSON.");
+      return { ok: false, reason: "shape" };
+    }
+    return { ok: true, data };
   } catch (err) {
+    const timedOut = err instanceof Error && err.name === "AbortError";
     console.error("[booking] n8n request failed:", err);
-    return null;
+    return { ok: false, reason: timedOut ? "timeout" : "status" };
   } finally {
     clearTimeout(timeout);
   }
 }
 
-/** Belegte Zeiten aus n8n holen; `null` heisst "Kalender nicht erreichbar". */
-async function fetchBusy(): Promise<BusyInterval[] | null> {
-  const data = (await callN8n({ action: "busy" })) as
-    | { busy?: unknown }
-    | Array<{ busy?: unknown }>
-    | null;
-  if (!data) return null;
+type BusyResult =
+  | { ok: true; busy: BusyInterval[] }
+  | { ok: false; reason: N8nFailure };
+
+async function fetchBusy(): Promise<BusyResult> {
+  const res = await callN8n({ action: "busy" });
+  if (!res.ok) return res;
+
   // n8n antwortet je nach "Respond to Webhook"-Einstellung als Objekt oder
   // als einelementiges Array.
-  const raw = Array.isArray(data) ? data[0]?.busy : data.busy;
-  if (!Array.isArray(raw)) return null;
-  return raw.filter(
-    (b): b is BusyInterval =>
-      !!b && typeof b.start === "string" && typeof b.end === "string",
-  );
+  const data = res.data as { busy?: unknown } | Array<{ busy?: unknown }>;
+  const raw = Array.isArray(data) ? data[0]?.busy : data?.busy;
+  if (!Array.isArray(raw)) {
+    console.error("[booking] n8n response has no busy array.");
+    return { ok: false, reason: "shape" };
+  }
+
+  return {
+    ok: true,
+    busy: raw.filter(
+      (b): b is BusyInterval =>
+        !!b && typeof b.start === "string" && typeof b.end === "string",
+    ),
+  };
 }
 
 export async function POST(request: Request) {
@@ -123,11 +152,14 @@ export async function POST(request: Request) {
 
   // ---------------------------------------------------------------- Slots
   if (slotsSchema.safeParse(body).success) {
-    const busy = await fetchBusy();
-    if (!busy) {
-      return NextResponse.json({ ok: false, reason: "upstream" }, { status: 502 });
+    const res = await fetchBusy();
+    if (!res.ok) {
+      return NextResponse.json(
+        { ok: false, reason: "upstream", detail: res.reason },
+        { status: 502 },
+      );
     }
-    return NextResponse.json({ ok: true, tz: TZ, days: buildDays(busy) });
+    return NextResponse.json({ ok: true, tz: TZ, days: buildDays(res.busy) });
   }
 
   // ---------------------------------------------------------------- Buchen
@@ -138,19 +170,22 @@ export async function POST(request: Request) {
     }
     const { startISO, name, email, topic, locale } = parsed.data;
 
-    const busy = await fetchBusy();
-    if (!busy) {
-      return NextResponse.json({ ok: false, reason: "upstream" }, { status: 502 });
+    const busyRes = await fetchBusy();
+    if (!busyRes.ok) {
+      return NextResponse.json(
+        { ok: false, reason: "upstream", detail: busyRes.reason },
+        { status: 502 },
+      );
     }
 
     // Erneut prüfen: der Termin könnte zwischen Anzeige und Klick belegt worden
     // sein, und ein direkter POST könnte beliebige Zeiten enthalten.
-    const slot = findSlot(startISO, busy);
+    const slot = findSlot(startISO, busyRes.busy);
     if (!slot) {
       return NextResponse.json({ ok: false, reason: "taken" }, { status: 409 });
     }
 
-    const created = (await callN8n({
+    const createRes = await callN8n({
       action: "create",
       startISO: slot.startISO,
       endISO: slot.endISO,
@@ -158,11 +193,22 @@ export async function POST(request: Request) {
       email,
       topic,
       locale,
-    })) as { ok?: unknown } | Array<{ ok?: unknown }> | null;
+    });
+    if (!createRes.ok) {
+      return NextResponse.json(
+        { ok: false, reason: "upstream", detail: createRes.reason },
+        { status: 502 },
+      );
+    }
 
+    const created = createRes.data as { ok?: unknown } | Array<{ ok?: unknown }>;
     const ok = Array.isArray(created) ? created[0]?.ok : created?.ok;
     if (ok !== true) {
-      return NextResponse.json({ ok: false, reason: "upstream" }, { status: 502 });
+      console.error("[booking] n8n did not confirm the creation.");
+      return NextResponse.json(
+        { ok: false, reason: "upstream", detail: "shape" },
+        { status: 502 },
+      );
     }
 
     // Interne Benachrichtigung. Die Terminbestätigung an den Kunden verschickt

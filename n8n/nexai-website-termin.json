@@ -69,14 +69,8 @@
         "additionalFields": {
           "summary": "=NEXAI Erstgespräch – {{ $json.name }}",
           "description": "={{ '🌐 Gebucht über die Website (nex-a-i.com/contact)' + '\\n👤 Name: ' + $json.name + '\\n✉️ E-Mail: ' + $json.email + '\\n💬 Anliegen: ' + ($json.topic || '—') + '\\n🗣 Sprache: ' + $json.locale }}",
-          "attendees": [
-            {
-              "mode": "add",
-              "email": "={{ $json.email }}"
-            }
-          ],
-          "sendUpdates": "all",
-          "conferenceDataUi": {}
+          "attendees": ["={{ $json.email }}"],
+          "sendUpdates": "all"
         }
       },
       "id": "b1000000-0000-4000-8000-000000000004",
@@ -107,9 +101,12 @@
           "cachedResultName": "Primary Calendar"
         },
         "returnAll": true,
-        "timeMin": "={{ $json.timeMin }}",
-        "timeMax": "={{ $json.timeMax }}",
-        "options": { "singleEvents": true, "orderBy": "startTime" }
+        "options": {
+          "timeMin": "={{ $json.timeMin }}",
+          "timeMax": "={{ $json.timeMax }}",
+          "singleEvents": true,
+          "orderBy": "startTime"
+        }
       },
       "id": "b1000000-0000-4000-8000-000000000006",
       "name": "Get Events",
