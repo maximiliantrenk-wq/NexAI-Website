@@ -6,6 +6,7 @@ und antworten im Vapi-Format `{"results":[{"toolCallId","result"}]}`.
 
 - `nexai-vapi-verfuegbarkeit.json` → Vapi-Tool **check_availability** (Webhook-Pfad `nexai-vapi-availability`)
 - `nexai-vapi-buchung.json` → Vapi-Tool **book_appointment_make** (Webhook-Pfad `nexai-vapi-booking`)
+- `nexai-vapi-rueckruf.json` → Vapi-Tool **request_callback** (Webhook-Pfad `nexai-vapi-rueckruf`) — siehe [Rückruf-Workflow](#rückruf-workflow)
 
 Der Buchungs-Workflow parst das Datum robust in einem **Code-Node** (deutsche Datumsformate,
 Monatsnamen/Abkürzungen, Punkt-Uhrzeit, fehlendes Jahr mit Smart-Year, relative Angaben „morgen"
@@ -97,6 +98,74 @@ Bestätigung an den Kunden und eine Info an dich (mbt@nex-a-i.com). Einrichtung:
 
 > SMS statt/zusätzlich zur E-Mail folgt später — braucht einen Twilio-Account (Absendernummer) und
 > einen Twilio-Node in n8n.
+
+## Rückruf-Workflow
+
+**Warum:** Der Assistent stellt **grundsätzlich nicht durch** — das ist eine bewusste Entscheidung,
+kein Provisorium. Wer einen Mitarbeiter sprechen möchte, bekommt einen **Rückruf** zugesagt; Name,
+Nummer und Anliegen gehen per E-Mail an `mbt@nex-a-i.com`. Dieser Workflow sorgt dafür, dass der
+Wunsch auch wirklich ankommt statt nur im Vapi-Transkript zu landen.
+
+> Hintergrund: Eine echte Weiterleitung wäre über den easybell-Trunk ohnehin nicht möglich — Vapi
+> schickt SIP REFER, das easybell nicht ausführt, und ausgehende Anrufe scheitern durchgängig mit
+> SIP 407. Das Vapi-Transfer-Tool ist deshalb aus dem Assistenten ausgehängt (nicht gelöscht).
+
+Aufbau (`nexai-vapi-rueckruf.json`):
+
+```
+Webhook → Parse & Normalize → Hat Kontakt? ──true──→ [Gmail: Rückruf-Info] → Return: Notiert ──┐
+                                   └────────false──→ Return: Nachfrage ─────────────────────────┴→ Respond
+```
+
+`Parse & Normalize` liest den Body **flach** ODER als Vapi-Envelope (`arguments` als Objekt, JSON-String,
+mehrzeilig oder leer — alles abgedeckt). Nennt der Anrufer **keine** Nummer, wird automatisch die
+Anrufernummer aus `message.call.customer.number` verwendet. Nur wenn **weder Nummer noch E-Mail**
+vorliegen, geht es in den Nachfrage-Zweig.
+
+1. **Import from File** → `nexai-vapi-rueckruf.json`.
+
+2. **Gmail-Node einfügen** (zwischen **„Hat Kontakt?"** true-Zweig und **„Return: Notiert"**):
+   - Gmail, Operation **Send a message**, Credential wie oben (`mbt@nex-a-i.com`)
+   - To = `mbt@nex-a-i.com` — **Jasons Adresse als zweiten Empfänger ergänzen**, sobald bekannt
+   - Subject = `=📞 Rückruf gewünscht: {{ $('Parse & Normalize').item.json.name }} – {{ $('Parse & Normalize').item.json.rueckrufnummer }}`
+   - Email Type = **HTML** · Message = Inhalt aus `n8n/email-rueckruf.html` (Expression-Modus)
+   - **Settings → On Error → Continue (using regular output)** — sonst bekommt der Anrufer bei einem
+     Mail-Fehler keine Bestätigung mehr.
+
+3. **Optional: Data-Table-Eintrag** (gleiche Tabelle `Leads` wie bei der Buchung), Node **Insert row**
+   ebenfalls im true-Zweig, Mapping wie oben — aber:
+   - `Termin` = *(leer)* · `Status` = `Rückruf gewünscht` · `Quelle` = `Voice Agent Jarvis`
+   - `Telefon` = `={{ $('Parse & Normalize').item.json.rueckrufnummer }}`
+
+4. **Aktivieren** und die Production-URL schicken: `https://<n8n-host>/webhook/nexai-vapi-rueckruf`
+
+Danach lege ich das Vapi-Tool **`request_callback`** an (apiRequest, POST auf diese URL, Parameter
+`name`, `telefon`, `anliegen`, `email`) und ergänze den Prompt-Abschnitt „MITARBEITER GEWÜNSCHT".
+
+### Test per curl
+
+```bash
+# Normalfall (flacher Body)
+curl -X POST 'https://<n8n-host>/webhook/nexai-vapi-rueckruf' \
+  -H 'Content-Type: application/json' \
+  -d '{"toolCallId":"r1","name":"Test Anrufer","telefon":"0170 1234567","anliegen":"Angebot"}'
+
+# Envelope-Format mit arguments als String
+curl -X POST 'https://<n8n-host>/webhook/nexai-vapi-rueckruf' \
+  -H 'Content-Type: application/json' \
+  -d '{"message":{"toolCalls":[{"id":"r2","function":{"arguments":"{\"name\":\"Test\",\"telefon\":\"0171 222\"}"}}]}}'
+
+# Ohne Kontaktweg → muss Nachfrage liefern, darf NICHT crashen
+curl -X POST 'https://<n8n-host>/webhook/nexai-vapi-rueckruf' \
+  -H 'Content-Type: application/json' -d '{"toolCallId":"r3","name":"Ohne Nummer"}'
+```
+
+Erwartung: 1+2 → `{"results":[{"toolCallId":"r1","result":"Der Rückrufwunsch ist notiert …"}]}` + Mail,
+3 → `„Es fehlt noch ein Weg, den Anrufer zu erreichen …"`, keine Mail.
+
+> Sollte die Weiterleitung eines Tages doch gewünscht sein: Das Transfer-Tool `452469aa…` existiert
+> noch und muss nur wieder in `model.toolIds` des Assistenten eingehängt werden — dann aber erst,
+> wenn easybell SIP REFER oder ausgehende Anrufe freigeschaltet hat.
 
 ## Migration abschließen
 Wenn n8n grün ist, werden die Make-Szenarien **6442350** + **6442359** nur **deaktiviert**

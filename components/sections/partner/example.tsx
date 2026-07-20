@@ -63,16 +63,11 @@ export function PartnerExample() {
         </div>
 
         <Reveal delay={0.12} className="mt-6">
-          <div className="flex flex-col items-center gap-5 rounded-2xl border border-line bg-white/[0.015] px-8 py-10 text-center sm:flex-row sm:gap-8 sm:text-left">
-            <span className="text-gradient text-5xl font-semibold leading-none tracking-[-0.03em] sm:text-6xl">
-              {t("resultValue")}
-            </span>
-            <div>
-              <p className="text-[17px] font-medium">{t("resultLabel")}</p>
-              <p className="mt-1.5 text-sm leading-relaxed text-muted">
-                {t("resultText")}
-              </p>
-            </div>
+          <div className="rounded-2xl border border-line bg-white/[0.015] px-8 py-10 text-center">
+            <p className="text-[17px] font-medium">{t("resultLabel")}</p>
+            <p className="mx-auto mt-1.5 max-w-2xl text-sm leading-relaxed text-muted">
+              {t("resultText")}
+            </p>
           </div>
         </Reveal>
       </Container>
