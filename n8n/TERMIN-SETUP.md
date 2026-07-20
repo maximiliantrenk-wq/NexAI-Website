@@ -82,6 +82,29 @@ Vercel → Projekt → **Settings** → **Environment Variables**:
 
 Danach **neu deployen**, sonst greifen die Variablen nicht.
 
+## Nach jedem Neu-Import unbedingt prüfen
+
+Je nach n8n-Version heißen die Zeitfenster-Felder im Knoten **Get Events**
+entweder `Time Min` / `Time Max` unter *Options* oder **After** / **Before**
+direkt oben im Knoten. Nach einem Import kann es passieren, dass sie leer
+bleiben, weil die Datei die jeweils andere Variante enthält.
+
+Also nach jedem Import einmal **Get Events** öffnen und sicherstellen, dass an
+einer der beiden Stellen steht:
+
+```
+{{ $json.timeMin }}      und      {{ $json.timeMax }}
+```
+
+Sind beide leer, lädt der Knoten den kompletten Kalender ohne Zeitfenster und
+läuft in einen Timeout — auf der Website erscheint dann „Die Terminbuchung ist
+gerade nicht erreichbar".
+
+Dasselbe gilt für **Create Event**: Unter *Additional Fields → Attendees* muss
+`{{ $json.email }}` stehen. Fehlt der Eintrag, wird der Gast nicht eingetragen
+und Google verschickt **keine Einladung** — die Buchung wirkt dann erfolgreich,
+der Kunde bekommt aber nichts.
+
 ## Schritt 6 — Prüfen
 
 Auf `/contact` zum Abschnitt „Termin buchen", **Freie Termine anzeigen**
