@@ -71,6 +71,16 @@ alle Platzhalter ersetzen:
 - **OpenAI:** In der Regel dein eigener OpenAI-Key (du rechnest die Nutzung im
   Monatspreis ab). Er ist in der Vorlage bereits hinterlegt.
 
+### 4b. Benachrichtigungs-Mail des Kunden eintragen
+Bei jeder Buchung verschickt Google automatisch eine **Einladung mit allen
+Termindaten** – an den Kunden (Endkunde) **und** an eine interne Adresse (der
+Betrieb bekommt so jede Buchung per Mail mit allen Kundendaten). Diese interne
+Adresse steht im Sub-Workflow in der Node **Validate & Normalize** ganz oben:
+`const NOTIFY_EMAIL = '[BENACHRICHTIGUNGS-EMAIL-DES-KUNDEN]';` → durch die
+E-Mail-Adresse des Betriebs ersetzen (z. B. `info@baeckerei-mueller.de`).
+So kommt **ohne** extra E-Mail-Dienst alles an — Google verschickt beide Mails.
+(Voraussetzung: der verbundene Google-Kalender darf Einladungen versenden.)
+
 ### 5. Webhook eindeutig machen + Domain freigeben
 Im Haupt-Workflow die Node **Webhook** öffnen:
 - **Path** auf etwas Eindeutiges pro Kunde setzen, z. B. `baeckerei-mueller-chat`.
