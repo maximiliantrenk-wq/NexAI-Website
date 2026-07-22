@@ -22,6 +22,8 @@ und Wochentage). Er liest den Vapi-Body **flach** (`{"termin":…}`) ODER versch
    - Verfügbarkeit: Node **„Get Events (14d window)"** → Google-Calendar-Credential.
    - Buchung: Node **„Create Event"** → Google-Calendar-Credential.
    - Kalender steht auf **`primary`** = Hauptkalender des verbundenen Kontos (mbt).
+   - Der Buchungs-Workflow verschickt außerdem zwei Bestätigungs-E-Mails → dafür zusätzlich eine
+     **Gmail-Credential** zuweisen (siehe [Bestätigungs-E-Mails](#bestätigungs-e-mails-kunde--inhaber--bereits-im-workflow-eingebaut)).
 
 3. **Leads DSGVO-konform in einer n8n-Data-Table speichern** (statt Google Sheets — die Daten bleiben
    auf eurem eigenen EU-Server, kein zusätzlicher US-Dienstleister):
@@ -67,34 +69,38 @@ curl -X POST 'https://<n8n-host>/webhook/nexai-vapi-booking' \
 Erwartung: Verfügbarkeit liefert „Heute ist …", Buchung legt ein Kalender-Event an + antwortet
 „Perfekt, der Termin am … ist verbindlich gebucht.".
 
-## Bestätigungs-E-Mails (Kunde + Inhaber)
-Der Agent fragt jetzt nach der **E-Mail-Adresse**; danach schickt n8n zwei Mails: eine schöne
-Bestätigung an den Kunden und eine Info an dich (mbt@nex-a-i.com). Einrichtung:
+## Bestätigungs-E-Mails (Kunde + Inhaber) — **bereits im Workflow eingebaut**
+Der Agent fragt nach der **E-Mail-Adresse**; danach verschickt n8n automatisch zwei Mails: eine schöne
+Marken-Bestätigung an den Kunden und eine Info-Mail an dich (mbt@nex-a-i.com) mit allen Kundendaten.
+Die dafür nötigen Nodes (**IF „Hat E-Mail?"** + **Kunden-Bestätigung** + **Inhaber-Info**) sind seit
+2026-07-21 fester Bestandteil von `nexai-vapi-buchung.json` — du musst sie **nicht** mehr selbst
+einfügen:
+
+```
+Create Event → Hat E-Mail? ──ja──→ Kunden-Bestätigung ──┐
+                   └────────nein────────────────────────→ Inhaber-Info → Return: Booked
+```
+
+- Nennt der Kunde **keine** E-Mail, wird **keine** Kunden-Mail verschickt (sauber über den IF-Zweig);
+  die Inhaber-Mail geht in beiden Fällen raus.
+- Beide Gmail-Nodes haben **On Error → Continue** — hakt Gmail einmal, ist der Termin trotzdem
+  gebucht und der Agent bestätigt dem Anrufer sauber (statt eines Fehlers).
+
+**Das Einzige, was du noch tun musst — die Gmail-Credential zuweisen** (Credentials werden aus
+Sicherheitsgründen nie mit-exportiert, deshalb sind die zwei Gmail-Nodes nach dem Import rot markiert):
 
 1. **Gmail-Credential in n8n anlegen:** Credentials → **Gmail OAuth2** → mit **mbt@nex-a-i.com**
-   anmelden (Google Workspace). (Falls die vorhandene Google-Credential nur Kalender-Rechte hat,
-   eine separate Gmail-Credential erstellen.)
-2. Im Buchungs-Workflow nach **„Create Event"** einen **IF**-Node + zwei **Gmail**-Nodes einfügen.
-   Nennt der Kunde keine E-Mail, wird **keine** Kunden-Mail verschickt (sauber, ohne Fehler im Log):
-
-   ```
-   Create Event → IF "Hat E-Mail?" ──true──→ Kunden-Bestätigung ──┐
-                        └──────────false────────────────────────→ Inhaber-Info → Return: Booked
-   ```
-
-   - **IF-Node „Hat E-Mail?"**: Bedingung → linker Wert `={{ $('Parse & Normalize').item.json.email }}`,
-     Typ **String**, Operator **is not empty**.
-   - **Kunden-Bestätigung** (Gmail, Operation **Send a message**, nur im **true**-Zweig):
-     To = `={{ $('Parse & Normalize').item.json.email }}` · Subject = `Ihr Termin bei NEXAI ist bestätigt ✅`
-     · Email Type = **HTML** · Message = Inhalt aus `n8n/email-kunde.html` (Expression-Modus).
-   - **Inhaber-Info** (Gmail, Send a message): To = `mbt@nex-a-i.com` · Subject =
-     `=🗓️ Neuer Termin: {{ $('Parse & Normalize').item.json.name }} – {{ $('Parse & Normalize').item.json.startLabel }}`
-     · Email Type = **HTML** · Message = Inhalt aus `n8n/email-inhaber.html`.
-     **Beide Zweige** (true über die Kunden-Mail, false direkt) auf **Inhaber-Info** verbinden,
-     danach **Inhaber-Info → Return: Booked**.
+   anmelden (Google Workspace). Eine **eigene** Credential, auch wenn schon eine Google-Calendar-Credential
+   existiert (die hat i. d. R. keine Gmail-Sende-Rechte).
+2. Im Buchungs-Workflow beide Gmail-Nodes (**„Kunden-Bestätigung"** und **„Inhaber-Info"**) öffnen und
+   oben diese Gmail-Credential auswählen. Danach ist der rote Hinweis weg.
 3. **Vapi-Prompt:** Der Agent muss nach der E-Mail fragen (Schritt „E-Mail für die Bestätigung",
    siehe Chat) und im Erfolgssatz „Bestätigung kommt per E-Mail" sagen. `book_appointment_make`
    übergibt `email` bereits.
+
+Wortlaut/Design der Mails kannst du direkt im jeweiligen Gmail-Node (Feld **Message**) anpassen — oder
+die Vorlagen `n8n/email-kunde.html` / `n8n/email-inhaber.html` ändern und mir Bescheid geben, dann baue
+ich sie neu in den Workflow ein.
 
 > SMS statt/zusätzlich zur E-Mail folgt später — braucht einen Twilio-Account (Absendernummer) und
 > einen Twilio-Node in n8n.
