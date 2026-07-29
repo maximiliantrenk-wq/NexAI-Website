@@ -13,6 +13,7 @@ import { MobileNav } from "./mobile-nav";
 export function Header() {
   const t = useTranslations("Nav");
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -25,9 +26,11 @@ export function Header() {
     <header
       className={cn(
         "fixed inset-x-0 top-0 z-50 border-b transition-colors duration-300",
-        scrolled
-          ? "border-line bg-bg/70 backdrop-blur-xl"
-          : "border-transparent bg-transparent",
+        menuOpen
+          ? "border-line bg-bg"
+          : scrolled
+            ? "border-line bg-bg/70 backdrop-blur-xl"
+            : "border-transparent bg-transparent",
       )}
     >
       <div className="mx-auto flex h-16 max-w-[1200px] items-center justify-between px-6 sm:px-8">
@@ -56,7 +59,7 @@ export function Header() {
               {t("cta")}
             </Button>
           </div>
-          <MobileNav />
+          <MobileNav open={menuOpen} setOpen={setMenuOpen} />
         </div>
       </div>
     </header>

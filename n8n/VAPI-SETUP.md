@@ -86,8 +86,25 @@ Create Event → Hat E-Mail? ──ja──→ Kunden-Bestätigung ──┐
 - Beide Gmail-Nodes haben **On Error → Continue** — hakt Gmail einmal, ist der Termin trotzdem
   gebucht und der Agent bestätigt dem Anrufer sauber (statt eines Fehlers).
 
-**Das Einzige, was du noch tun musst — die Gmail-Credential zuweisen** (Credentials werden aus
-Sicherheitsgründen nie mit-exportiert, deshalb sind die zwei Gmail-Nodes nach dem Import rot markiert):
+### Einbauen — zwei Wege
+
+**A) Frischer Import:** Wer `nexai-vapi-buchung.json` neu importiert, hat die Mail-Nodes automatisch
+drin und muss nur noch die Credentials zuweisen (unten).
+
+**B) In den laufenden Workflow einsetzen — ohne Neu-Import** (empfohlen, wenn der Workflow schon
+aktiv ist; die bestehende Kalender-Credential bleibt dann unangetastet):
+
+1. Datei **`n8n/snippet-buchung-mails.json`** öffnen, **gesamten Inhalt** kopieren (Strg/Cmd + A, dann C).
+2. Buchungs-Workflow in n8n öffnen, auf eine **leere Stelle der Canvas** klicken und **einfügen**
+   (Strg/Cmd + V). Die drei Nodes **„Hat E-Mail?"**, **„Kunden-Bestätigung"**, **„Inhaber-Info"**
+   erscheinen bereits untereinander verdrahtet.
+3. Verbindungen umhängen (3 Handgriffe):
+   - alte Verbindung **Create Event → Return: Booked** löschen (Maus auf die Linie → Mülleimer),
+   - **Create Event → Hat E-Mail?** ziehen,
+   - **Inhaber-Info → Return: Booked** ziehen.
+
+Danach für **beide Wege** die Credentials zuweisen (Credentials werden nie mit-exportiert, deshalb
+sind die zwei Gmail-Nodes nach Import/Einfügen rot markiert):
 
 1. **Gmail-Credential in n8n anlegen:** Credentials → **Gmail OAuth2** → mit **mbt@nex-a-i.com**
    anmelden (Google Workspace). Eine **eigene** Credential, auch wenn schon eine Google-Calendar-Credential

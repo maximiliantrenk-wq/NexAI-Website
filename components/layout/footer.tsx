@@ -1,9 +1,8 @@
 import { useTranslations } from "next-intl";
-import { ArrowUpRight } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { LogoMark } from "@/components/brand/logo";
 import { Container } from "@/components/ui/container";
-import { footerNav, socials } from "@/lib/nav";
+import { footerNav } from "@/lib/nav";
 
 export function Footer() {
   const t = useTranslations();
@@ -48,6 +47,12 @@ export function Footer() {
                 className="block text-sm text-muted transition-colors hover:text-fg"
               >
                 {t("Footer.phone")}
+              </a>
+              <a
+                href={`tel:${t("Footer.phone2").replace(/\s/g, "")}`}
+                className="block text-sm text-muted transition-colors hover:text-fg"
+              >
+                {t("Footer.phone2")}
               </a>
             </div>
 
@@ -102,20 +107,6 @@ export function Footer() {
           <p className="font-mono text-[11px] uppercase tracking-[0.12em] text-subtle">
             © {year} NEXAI · {t("Footer.rights")}
           </p>
-          <div className="flex items-center gap-5">
-            {socials.map((s) => (
-              <a
-                key={s.label}
-                href={s.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group inline-flex items-center gap-1 text-sm text-muted transition-colors hover:text-fg"
-              >
-                {s.label}
-                <ArrowUpRight className="size-3.5 opacity-60 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-              </a>
-            ))}
-          </div>
           <p className="font-mono text-[11px] uppercase tracking-[0.12em] text-subtle">
             {t("Footer.location")}
           </p>

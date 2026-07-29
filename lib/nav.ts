@@ -22,9 +22,3 @@ export const footerNav = {
     { href: "/privacy", key: "privacy" },
   ],
 } as const;
-
-export const socials = [
-  { label: "LinkedIn", href: "https://www.linkedin.com" },
-  { label: "X / Twitter", href: "https://x.com" },
-  { label: "GitHub", href: "https://github.com" },
-] as const;

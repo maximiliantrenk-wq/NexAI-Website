@@ -158,7 +158,7 @@ class NumberedCanvas(canvas.Canvas):
         self.setStrokeColor(LINE); self.setLineWidth(0.5)
         self.line(MARGIN, 14 * mm, PW - MARGIN, 14 * mm)
         self.setFont(F, 7.5); self.setFillColor(MUTED)
-        self.drawString(MARGIN, 10.5 * mm, 'NexAI – Next Generation Intelligence GbR')
+        self.drawString(MARGIN, 10.5 * mm, 'NexAI – Next Generation Artificial Intelligence GbR')
         self.drawRightString(PW - MARGIN, 10.5 * mm, 'Seite %d / %d' % (self._pageNumber, total))
         self.restoreState()
 
