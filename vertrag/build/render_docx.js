@@ -150,7 +150,7 @@ const footer = new Footer({
       tabStops: [{ type: TabStopType.RIGHT, position: CONTENT_W }],
       border: { top: { color: LINE, style: BorderStyle.SINGLE, size: 4, space: 6 } },
       children: [
-        new TextRun({ text: 'NexAI – Next Generation Intelligence GbR', size: 15, color: MUTED, font: FONT }),
+        new TextRun({ text: 'NexAI – Next Generation Artificial Intelligence GbR', size: 15, color: MUTED, font: FONT }),
         new TextRun({ text: '\t', size: 15, font: FONT }),
         new TextRun({ children: ['Seite ', PageNumber.CURRENT, ' / ', PageNumber.TOTAL_PAGES], size: 15, color: MUTED, font: FONT }),
       ],

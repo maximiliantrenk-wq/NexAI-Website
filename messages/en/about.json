@@ -26,10 +26,11 @@
     "team": {
       "eyebrow": "Team",
       "title": "The people behind NEXAI.",
-      "description": "Founded and led by two managing directors with one clear mission: AI that genuinely works for businesses.",
+      "description": "A team with one clear mission: AI that genuinely works for businesses.",
       "members": [
         { "name": "Maximilian Trenk", "role": "Managing Director", "image": "/team/maximilian.jpg" },
-        { "name": "Jason Brian Merklein", "role": "Managing Director", "image": "/team/jason.jpg" }
+        { "name": "Jason Brian Merklein", "role": "Managing Director", "image": "/team/jason.jpg" },
+        { "name": "Connor Reimann", "role": "Sales Manager", "image": "/team/connor.jpg" }
       ]
     }
   }

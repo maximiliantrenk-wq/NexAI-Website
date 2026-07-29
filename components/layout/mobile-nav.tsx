@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { Menu, X } from "lucide-react";
 import { useTranslations } from "next-intl";
@@ -10,9 +10,14 @@ import { Button } from "@/components/ui/button";
 import { LocaleSwitcher } from "./locale-switcher";
 import { easeOutExpo } from "@/lib/motion";
 
-export function MobileNav() {
+export function MobileNav({
+  open,
+  setOpen,
+}: {
+  open: boolean;
+  setOpen: (open: boolean) => void;
+}) {
   const t = useTranslations("Nav");
-  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
@@ -27,7 +32,7 @@ export function MobileNav() {
         type="button"
         aria-label={open ? t("close") : t("menu")}
         aria-expanded={open}
-        onClick={() => setOpen((v) => !v)}
+        onClick={() => setOpen(!open)}
         className="grid size-10 place-items-center rounded-full border border-line bg-white/[0.03] text-fg"
       >
         {open ? <X className="size-5" /> : <Menu className="size-5" />}
@@ -40,7 +45,7 @@ export function MobileNav() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3, ease: easeOutExpo }}
-            className="fixed inset-0 top-16 z-40 border-t border-line bg-bg/95 backdrop-blur-xl"
+            className="fixed inset-0 top-16 z-40 border-t border-line bg-bg"
           >
             <nav className="flex flex-col gap-1 px-6 py-8">
               {navItems.map((item, i) => (

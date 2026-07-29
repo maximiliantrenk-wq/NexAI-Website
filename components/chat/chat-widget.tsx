@@ -4,6 +4,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { MessageCircle, Send, X } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { LogoMark } from "@/components/brand/logo";
 import { cn } from "@/lib/utils";
 import { easeOutExpo } from "@/lib/motion";
@@ -13,6 +14,7 @@ const QUICK_REPLY_KEYS = ["services", "appointment", "human"] as const;
 
 export function ChatWidget() {
   const t = useTranslations("Chat");
+  const tNav = useTranslations("Nav");
   const locale = useLocale();
   const reduceMotion = useReducedMotion();
 
@@ -108,42 +110,53 @@ export function ChatWidget() {
 
   return (
     <>
-      {/* Launcher — sits below the mobile-nav overlay (z-40) on purpose. */}
-      <motion.button
-        ref={launcherRef}
-        type="button"
-        aria-label={open ? t("close") : t("launcher")}
-        aria-expanded={open}
-        onClick={() => (open ? close() : setOpen(true))}
-        initial={reduceMotion ? false : { opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.4, ease: easeOutExpo, delay: 0.2 }}
-        whileTap={{ scale: 0.94 }}
-        className={cn(
-          "fixed bottom-5 right-5 z-30 grid size-14 place-items-center rounded-full text-white",
-          "bg-gradient-to-r from-blue via-violet to-purple",
-          "shadow-[0_10px_34px_-12px_rgba(124,58,237,0.75)] hover:shadow-[0_14px_44px_-10px_rgba(124,58,237,0.9)]",
-          "transition-shadow duration-200 hover:brightness-[1.06]",
-          "outline-none focus-visible:ring-2 focus-visible:ring-blue focus-visible:ring-offset-2 focus-visible:ring-offset-bg",
-          "[padding-bottom:env(safe-area-inset-bottom)]",
-        )}
-      >
-        <AnimatePresence mode="wait" initial={false}>
-          <motion.span
-            key={open ? "close" : "open"}
-            initial={reduceMotion ? false : { opacity: 0, rotate: -30 }}
-            animate={{ opacity: 1, rotate: 0 }}
-            exit={reduceMotion ? undefined : { opacity: 0, rotate: 30 }}
-            transition={{ duration: 0.18, ease: easeOutExpo }}
+      {/* Launcher + nudge — sits below the mobile-nav overlay (z-40) on purpose. */}
+      <div className="fixed bottom-5 right-5 z-30 flex items-center gap-3 [padding-bottom:env(safe-area-inset-bottom)]">
+        {!open && (
+          <motion.p
+            initial={reduceMotion ? false : { opacity: 0, x: 8, scale: 0.96 }}
+            animate={{ opacity: 1, x: 0, scale: 1 }}
+            transition={{ duration: 0.3, ease: easeOutExpo, delay: reduceMotion ? 0 : 0.5 }}
+            className="hidden max-w-[220px] select-none rounded-2xl rounded-br-sm border border-line bg-surface px-3.5 py-2 text-[13px] leading-snug text-fg shadow-[0_12px_34px_-16px_rgba(0,0,0,0.75)] sm:block"
           >
-            {open ? (
-              <X className="size-6" />
-            ) : (
-              <MessageCircle className="size-6" />
-            )}
-          </motion.span>
-        </AnimatePresence>
-      </motion.button>
+            {t("nudge")}
+          </motion.p>
+        )}
+        <motion.button
+          ref={launcherRef}
+          type="button"
+          aria-label={open ? t("close") : t("launcher")}
+          aria-expanded={open}
+          onClick={() => (open ? close() : setOpen(true))}
+          initial={reduceMotion ? false : { opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.4, ease: easeOutExpo, delay: 0.2 }}
+          whileTap={{ scale: 0.94 }}
+          className={cn(
+            "grid size-14 shrink-0 place-items-center rounded-full text-white",
+            "bg-gradient-to-r from-blue via-violet to-purple",
+            "shadow-[0_10px_34px_-12px_rgba(124,58,237,0.75)] hover:shadow-[0_14px_44px_-10px_rgba(124,58,237,0.9)]",
+            "transition-shadow duration-200 hover:brightness-[1.06]",
+            "outline-none focus-visible:ring-2 focus-visible:ring-blue focus-visible:ring-offset-2 focus-visible:ring-offset-bg",
+          )}
+        >
+          <AnimatePresence mode="wait" initial={false}>
+            <motion.span
+              key={open ? "close" : "open"}
+              initial={reduceMotion ? false : { opacity: 0, rotate: -30 }}
+              animate={{ opacity: 1, rotate: 0 }}
+              exit={reduceMotion ? undefined : { opacity: 0, rotate: 30 }}
+              transition={{ duration: 0.18, ease: easeOutExpo }}
+            >
+              {open ? (
+                <X className="size-6" />
+              ) : (
+                <MessageCircle className="size-6" />
+              )}
+            </motion.span>
+          </AnimatePresence>
+        </motion.button>
+      </div>
 
       <AnimatePresence>
         {open && (
@@ -247,6 +260,18 @@ export function ChatWidget() {
 
               <p className="mt-2 text-center text-[11px] text-subtle">
                 {t("disclaimer")}
+              </p>
+              <p className="mt-1 flex flex-wrap items-center justify-center gap-x-1.5 text-center text-[11px] text-subtle">
+                <span>{t("compliance")}</span>
+                <span aria-hidden>·</span>
+                <Link
+                  href="/privacy"
+                  className="underline underline-offset-2 transition-colors hover:text-fg"
+                >
+                  {tNav("privacy")}
+                </Link>
+                <span aria-hidden>·</span>
+                <span>{t("poweredBy")}</span>
               </p>
             </div>
           </motion.div>

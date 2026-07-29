@@ -34,7 +34,7 @@ function ContactContent() {
 
   const infoItems = [
     { icon: Mail, label: info("emailLabel"), value: info("email"), href: `mailto:${info("email")}` },
-    { icon: Phone, label: info("phoneLabel"), value: info("phone"), href: `tel:${info("phone").replace(/\s/g, "")}` },
+    { icon: Phone, label: info("phoneLabel"), value: info("phone"), href: `tel:${info("phone").replace(/\s/g, "")}`, value2: info("phone2"), href2: `tel:${info("phone2").replace(/\s/g, "")}` },
     { icon: MapPin, label: info("locationLabel"), value: info("location") },
     { icon: Clock, label: info("responseLabel"), value: info("response") },
   ];
@@ -68,6 +68,14 @@ function ContactContent() {
                       </a>
                     ) : (
                       <p className="mt-1.5 text-[15px] text-fg">{item.value}</p>
+                    )}
+                    {item.href2 && (
+                      <a
+                        href={item.href2}
+                        className="mt-1 block text-[15px] text-fg transition-colors hover:text-blue-bright"
+                      >
+                        {item.value2}
+                      </a>
                     )}
                   </div>
                 </div>
