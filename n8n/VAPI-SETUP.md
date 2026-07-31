@@ -193,3 +193,34 @@ Erwartung: 1+2 → `{"results":[{"toolCallId":"r1","result":"Der Rückrufwunsch 
 ## Migration abschließen
 Wenn n8n grün ist, werden die Make-Szenarien **6442350** + **6442359** nur **deaktiviert**
 (nicht gelöscht) als Fallback.
+
+## Buchungs-Fix 31.07.2026 — „es gab ein Problem" beim Buchen
+
+**Ursache:** Der hand-eingebaute Node **„Konflikt prüfen"** (Google Calendar `Get Many`) warf **HTTP 400
+badRequest** (Google-Abfrage wich von der funktionierenden Verfügbarkeits-Abfrage ab). Weil der Node
+keinen Fehler-Ausgang hatte, brach der Workflow ab → **leerer Body** → Vapi: `invalid json response
+body … Unexpected end of JSON input` → gesprochen „es gab ein Problem". Auslöser war ein vom Assistenten
+gebuchter **Vergangenheits-Termin** (`17.07.2026`), den der „Is Valid"-Gate durchließ.
+
+**Fix im laufenden Workflow anwenden (kein Neu-Import — Credentials bleiben):**
+
+1. **„Parse & Normalize"** → Code ersetzen durch `_v2-code-buchung-parse.js` (neuer Vergangenheits-Guard:
+   `if (start > nowDt) valid = true; else past = true;`). Verifiziert (`scratchpad/test_parse_guard.js`, 6/6):
+   `17.07.2026 14:30` → `valid=false, past=true`; Zukunft/„morgen" → `valid=true`.
+2. **„Return: Invalid"** → Code ersetzen durch `_v2-code-buchung-return-invalid.js` (unterscheidet
+   „Vergangenheit" vs. „nicht verstanden").
+3. **„Konflikt prüfen"** → Google-Parameter **1:1 wie die funktionierende Verfügbarkeits-Abfrage**
+   (`nexai-vapi-verfuegbarkeit.json` → „Get Events"): Kalender **primary**, **Return All: an**, und unter
+   **Options**: **Single Events = true**, **Order By = Start time**, After `={{ $now.setZone('Europe/Berlin').toISO() }}`,
+   Before `={{ $now.setZone('Europe/Berlin').plus({ days: 14 }).toISO() }}`. (Die fehlenden Options waren die 400.)
+4. **Crash-Schutz:** In den **Settings** von **„Konflikt prüfen"** UND **„Create Event"** → **On Error =
+   Continue (using error output)**. Neuen Code-Node **„Return: Fehler"** einfügen (`_v2-code-buchung-return-fehler.js`)
+   und verdrahten: Konflikt-prüfen(Error-Ausgang) → Return: Fehler, Create-Event(Error-Ausgang) → Return: Fehler,
+   Return: Fehler → **Respond to Webhook**. → n8n gibt jetzt bei JEDEM Fehler gültiges Vapi-JSON zurück.
+5. **Vapi-Prompt** (Assistant `6bb4f397`) ergänzen: „Buche ausschließlich Termine, die `check_availability`
+   zurückgegeben hat; erfinde niemals ein Datum; buche nie in der Vergangenheit."
+
+Der Repo-Kanon `nexai-vapi-buchung.json` enthält all das bereits fest eingebaut (15 Nodes) — als
+re-importierbare Wahrheit; Copy-Paste-Snippets: `snippet-buchung-konfliktcheck.json` (fix) +
+`snippet-buchung-fehler.json`. **Test:** `curl` an `…/webhook/nexai-vapi-booking` mit Vergangenheit
+(→ Return: Invalid, kein Event) und gültigem Zukunfts-Slot (→ bucht); Name „ZZ TESTLÖSCHEN", danach löschen.

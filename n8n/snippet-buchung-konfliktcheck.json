@@ -11,7 +11,12 @@
           "cachedResultName": "Primary Calendar"
         },
         "returnAll": true,
-        "options": {}
+        "options": {
+          "timeMin": "={{ $now.setZone('Europe/Berlin').toISO() }}",
+          "timeMax": "={{ $now.setZone('Europe/Berlin').plus({ days: 14 }).toISO() }}",
+          "singleEvents": true,
+          "orderBy": "startTime"
+        }
       },
       "id": "gcal-check-c1",
       "name": "Konflikt prüfen",
@@ -21,7 +26,8 @@
         620,
         140
       ],
-      "alwaysOutputData": true
+      "alwaysOutputData": true,
+      "onError": "continueErrorOutput"
     },
     {
       "parameters": {
