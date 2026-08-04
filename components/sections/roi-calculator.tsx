@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo, useState, type ReactNode } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { Check } from "lucide-react";
 import { Section } from "@/components/ui/section";
@@ -26,6 +26,17 @@ function toggleCls(active: boolean) {
     active
       ? "border-blue/60 bg-blue/10 text-fg"
       : "border-line bg-white/[0.02] text-muted hover:border-line-strong hover:text-fg",
+  );
+}
+
+function CheckLine({ children }: { children: ReactNode }) {
+  return (
+    <p className="flex items-center gap-2.5 text-[15px] text-fg">
+      <span className="grid size-5 shrink-0 place-items-center rounded-full bg-blue">
+        <Check className="size-3 text-white" strokeWidth={3} />
+      </span>
+      <span>{children}</span>
+    </p>
   );
 }
 
@@ -64,7 +75,11 @@ export function RoiCalculator() {
   const periodLabel = t(`periods.${period}`);
   const isMoney = mode === "money";
 
-  const moneyPer = num(missed) * num(value) * (num(rate) / 100);
+  // Money: gross loss (calls × value) is the headline; the voice agent recovers
+  // gross × capture-rate.
+  const grossPer = num(missed) * num(value);
+  const recoveredPer = grossPer * (num(rate) / 100);
+  // Time: minutes saved (calls × duration).
   const timePerMin = num(calls) * num(duration);
 
   const fmtDuration = (min: number) => {
@@ -77,10 +92,8 @@ export function RoiCalculator() {
     return `${nf.format(m)} ${mu}`;
   };
 
-  const bigResult = isMoney ? cf.format(moneyPer) : fmtDuration(timePerMin);
-  const yearValue = isMoney
-    ? cf.format(moneyPer * factor)
-    : `${nf.format(Math.round((timePerMin * factor) / 60))} ${t("units.h")}`;
+  const bigResult = isMoney ? cf.format(grossPer) : fmtDuration(timePerMin);
+  const timeYearValue = `${nf.format(Math.round((timePerMin * factor) / 60))} ${t("units.h")}`;
   const workdays = nf.format(Math.round((timePerMin * factor) / 60 / 8));
 
   const numberInput = (
@@ -168,23 +181,31 @@ export function RoiCalculator() {
               </p>
 
               <div className="mt-6 space-y-2.5">
-                {period !== "year" && (
-                  <p className="flex items-center gap-2.5 text-[15px] text-fg">
-                    <span className="grid size-5 shrink-0 place-items-center rounded-full bg-blue">
-                      <Check className="size-3 text-white" strokeWidth={3} />
-                    </span>
-                    {isMoney
-                      ? t("money.perYear", { value: yearValue })
-                      : t("time.perYear", { value: yearValue })}
-                  </p>
-                )}
-                {!isMoney && (
-                  <p className="flex items-center gap-2.5 text-[15px] text-fg">
-                    <span className="grid size-5 shrink-0 place-items-center rounded-full bg-blue">
-                      <Check className="size-3 text-white" strokeWidth={3} />
-                    </span>
-                    {t("time.workdays", { days: workdays })}
-                  </p>
+                {isMoney ? (
+                  <>
+                    <CheckLine>
+                      {t("money.recovered", {
+                        value: cf.format(recoveredPer),
+                        rate: num(rate),
+                      })}
+                    </CheckLine>
+                    {period !== "year" && (
+                      <CheckLine>
+                        {t("money.perYear", {
+                          value: cf.format(recoveredPer * factor),
+                        })}
+                      </CheckLine>
+                    )}
+                  </>
+                ) : (
+                  <>
+                    {period !== "year" && (
+                      <CheckLine>
+                        {t("time.perYear", { value: timeYearValue })}
+                      </CheckLine>
+                    )}
+                    <CheckLine>{t("time.workdays", { days: workdays })}</CheckLine>
+                  </>
                 )}
               </div>
 

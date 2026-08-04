@@ -18,7 +18,8 @@
       "callsLabel": "Verpasste Anrufe pro {period}",
       "valueLabel": "Ø Wert pro Anruf / Kunde (€)",
       "rateLabel": "Vom Voice Agent erfasst (%)",
-      "resultLabel": "Wiedergewonnener Umsatz",
+      "resultLabel": "Umsatzverlust durch verpasste Anrufe",
+      "recovered": "Davon holt der Voice Agent zurück: {value} ({rate} %)",
       "perYear": "≈ {value} pro Jahr"
     },
     "time": {

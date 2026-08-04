@@ -18,7 +18,8 @@
       "callsLabel": "Missed calls per {period}",
       "valueLabel": "Avg. value per call / customer (€)",
       "rateLabel": "Captured by the voice agent (%)",
-      "resultLabel": "Recovered revenue",
+      "resultLabel": "Revenue lost to missed calls",
+      "recovered": "The voice agent brings back: {value} ({rate} %)",
       "perYear": "≈ {value} per year"
     },
     "time": {
