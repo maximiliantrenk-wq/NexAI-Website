@@ -6,9 +6,15 @@
     "ctaPrimary": "Kostenloses Erstgespräch",
     "ctaSecondary": "Leistungen ansehen",
     "ctaDemo": "Live Demo: KI jetzt anrufen",
+    "ctaRoi": "ROI berechnen",
     "demoPhone": "07959 3100191",
     "demoHint": "rund um die Uhr erreichbar",
     "trust": "Für Unternehmen, die mit KI schneller wachsen wollen",
+    "badges": [
+      { "label": "DSGVO-konform" },
+      { "label": "Deutsches Unternehmen" },
+      { "label": "Ergebnisse messbar über ROI", "href": "/roi-rechner" }
+    ],
     "console": {
       "label": "nexai · voice-agent",
       "status": "LIVE",
@@ -105,9 +111,10 @@
     },
     "testimonial": {
       "quote": "Für uns zählt nicht, wie beeindruckend eine KI wirkt, sondern was sie im Alltag wirklich abnimmt. Wir entwickeln digitale Mitarbeiter, die ab dem ersten Tag messbar entlasten — kein verpasster Anruf, kein verpasster Termin mehr.",
-      "author": "Maximilian Trenk",
-      "role": "Geschäftsführer",
-      "company": "NEXAI"
+      "author": "Connor Reimann",
+      "role": "Vertriebsleitung",
+      "company": "NEXAI",
+      "image": "/team/connor.jpg"
     },
     "cta": {
       "title": "Bereit für Ihren ersten digitalen Mitarbeiter?",

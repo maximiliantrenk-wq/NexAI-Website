@@ -1,0 +1,34 @@
+{
+  "nodes": [
+    {
+      "parameters": {
+        "jsCode": "const p = $('Parse & Normalize').first().json;\nconst result = 'Es tut mir leid, bei der Buchung gab es gerade ein technisches Problem. Sag dem Anrufer freundlich, dass du seinen Wunsch aufgenommen hast und sich das Team zeitnah bei ihm meldet, um den Termin zu bestätigen.';\nreturn [{ json: { results: [{ toolCallId: p.toolCallId, result }] } }];"
+      },
+      "id": "code-err-b12",
+      "name": "Return: Fehler",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1320,
+        640
+      ]
+    }
+  ],
+  "connections": {
+    "Return: Fehler": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "pinData": {},
+  "meta": {
+    "templateId": "nexai-vapi-buchung-fehler"
+  }
+}

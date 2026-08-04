@@ -2,6 +2,7 @@ export const navItems = [
   { href: "/services", key: "services" },
   { href: "/produkte", key: "products" },
   { href: "/pricing", key: "pricing" },
+  { href: "/roi-rechner", key: "roiRechner" },
   { href: "/about", key: "about" },
   { href: "/partner", key: "partner" },
 ] as const;

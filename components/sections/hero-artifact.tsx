@@ -17,7 +17,7 @@ export function HeroArtifact() {
         className="pointer-events-none absolute -inset-x-10 -bottom-10 top-6 -z-10 rounded-[40px] bg-[radial-gradient(60%_60%_at_50%_50%,rgba(124,92,255,0.25),transparent_70%)] blur-2xl"
       />
 
-      <div className="surface-card overflow-hidden rounded-2xl text-left">
+      <div className="surface-card border-blue/20 overflow-hidden rounded-2xl text-left">
         {/* title bar */}
         <div className="flex items-center justify-between border-b border-line px-4 py-3">
           <div className="flex items-center gap-2">
@@ -29,7 +29,7 @@ export function HeroArtifact() {
             </span>
           </div>
           <span className="inline-flex items-center gap-1.5 rounded-full border border-line px-2 py-0.5 font-mono text-[10px] uppercase tracking-[0.14em] text-muted">
-            <span className="size-1.5 animate-[pulse-glow_2s_ease-in-out_infinite] rounded-full bg-gradient-to-r from-blue to-purple" />
+            <span className="size-1.5 animate-[pulse-glow_2s_ease-in-out_infinite] rounded-full bg-blue" />
             {t("status")}
           </span>
         </div>
@@ -56,7 +56,7 @@ export function HeroArtifact() {
                 }}
                 className="flex items-center gap-2.5 text-muted"
               >
-                <span className="grid size-4 shrink-0 place-items-center rounded-full bg-gradient-to-br from-blue to-purple">
+                <span className="grid size-4 shrink-0 place-items-center rounded-full bg-blue">
                   <Check className="size-2.5 text-white" strokeWidth={3} />
                 </span>
                 {step}

@@ -13,6 +13,7 @@ const NAMESPACES = [
   "legal",
   "partner",
   "chat",
+  "roi",
 ] as const;
 
 export default getRequestConfig(async ({ requestLocale }) => {

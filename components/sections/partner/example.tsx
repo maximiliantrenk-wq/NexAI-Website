@@ -52,7 +52,7 @@ export function PartnerExample() {
                   className="flex items-start gap-3 text-[15px] text-fg"
                 >
                   <Check
-                    className="mt-0.5 size-4 shrink-0 text-violet"
+                    className="mt-0.5 size-4 shrink-0 text-blue-bright"
                     strokeWidth={2.5}
                   />
                   {it}

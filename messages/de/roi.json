@@ -1,0 +1,38 @@
+{
+  "Roi": {
+    "meta": { "title": "ROI-Rechner" },
+    "hero": {
+      "eyebrow": "ROI-Rechner",
+      "title": "Was kosten Sie verpasste Anrufe wirklich?",
+      "description": "Rechnen Sie in wenigen Sekunden aus, wie viel Zeit und Umsatz ein NEXAI Voice Agent für Sie zurückholt — mit Ihren eigenen Zahlen."
+    },
+    "modeLabel": "Was möchten Sie berechnen?",
+    "mode": { "money": "Umsatz", "time": "Zeit" },
+    "modeHint": {
+      "money": "Wiedergewonnener Umsatz durch Anrufe, die sonst verloren gehen.",
+      "time": "Zeit, die Ihr Team nicht mehr am Telefon verbringt."
+    },
+    "periodLabel": "Zeitraum",
+    "periods": { "day": "Tag", "week": "Woche", "month": "Monat", "year": "Jahr" },
+    "money": {
+      "callsLabel": "Verpasste Anrufe pro {period}",
+      "valueLabel": "Ø Wert pro Anruf / Kunde (€)",
+      "rateLabel": "Vom Voice Agent erfasst (%)",
+      "resultLabel": "Umsatzverlust durch verpasste Anrufe",
+      "recovered": "Davon holt der Voice Agent zurück: {value} ({rate} %)",
+      "perYear": "≈ {value} pro Jahr"
+    },
+    "time": {
+      "callsLabel": "Anrufe pro {period}",
+      "durationLabel": "Ø Dauer pro Anruf (Min.)",
+      "resultLabel": "Eingesparte Zeit",
+      "perYear": "≈ {value} pro Jahr",
+      "workdays": "≈ {days} Arbeitstage pro Jahr"
+    },
+    "resultPer": "pro {period}",
+    "units": { "h": "Std.", "min": "Min." },
+    "note": "Unverbindliche Beispielrechnung. Die Erfassungsquote durch den Voice Agent liegt je nach Setup bei rund 70–80 % (Standard 75 %). Jahres-Hochrechnung auf Basis von 5 Arbeitstagen pro Woche (260 Tage).",
+    "cta": "Kostenloses Erstgespräch",
+    "ctaHint": "Wir zeigen Ihnen, wie realistisch diese Zahl für Ihr Unternehmen ist."
+  }
+}

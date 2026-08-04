@@ -48,6 +48,30 @@ export function ChatWidget() {
     };
   }, [open]);
 
+  // Mobile: bind the sheet to the visual viewport so the on-screen keyboard
+  // doesn't push the input bar off-screen (there is no dvh fallback otherwise).
+  useEffect(() => {
+    if (!open) return;
+    const vv = window.visualViewport;
+    if (!vv || !window.matchMedia("(max-width: 639px)").matches) return;
+    const panel = panelRef.current;
+    if (!panel) return;
+    const apply = () => {
+      panel.style.height = `${vv.height}px`;
+      panel.style.top = `${vv.offsetTop}px`;
+      panel.style.bottom = "auto";
+      const el = scrollRef.current;
+      if (el) el.scrollTop = el.scrollHeight;
+    };
+    apply();
+    vv.addEventListener("resize", apply);
+    vv.addEventListener("scroll", apply);
+    return () => {
+      vv.removeEventListener("resize", apply);
+      vv.removeEventListener("scroll", apply);
+    };
+  }, [open]);
+
   // Keep the transcript pinned to the latest message.
   useEffect(() => {
     if (!open) return;
@@ -177,7 +201,7 @@ export function ChatWidget() {
             transition={panelTransition}
             style={{ transformOrigin: "bottom right" }}
             className={cn(
-              "surface-card fixed z-[60] flex flex-col overflow-hidden bg-surface/95 backdrop-blur-xl",
+              "surface-card fixed z-[60] flex flex-col overflow-hidden bg-surface backdrop-blur-xl sm:bg-surface/95",
               // Mobile: full-screen sheet. Desktop: anchored floating card.
               "inset-0 rounded-none",
               "sm:inset-auto sm:bottom-24 sm:right-5 sm:h-[min(640px,calc(100dvh-7rem))] sm:w-[400px] sm:max-w-[calc(100vw-2.5rem)] sm:rounded-3xl",
