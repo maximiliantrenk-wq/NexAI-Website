@@ -3,17 +3,17 @@
     "meta": { "title": "Über uns" },
     "hero": {
       "eyebrow": "Über uns",
-      "title": "Wir entwickeln digitale Mitarbeiter — keine Software.",
-      "description": "NEXAI aus Frankenhardt entwickelt intelligente KI-Agenten, die Unternehmen Zeit sparen, Kosten senken und beim Wachstum helfen — individuell geplant und vollständig integriert."
+      "title": "Zwei Gründer, ein Anspruch: KI, die wirklich arbeitet.",
+      "description": "NEXAI ist keine anonyme Software-Firma. Hinter jedem Projekt stehen wir persönlich — Maximilian Trenk und Jason Brian Merklein — mit einem Team aus Frankenhardt, das digitale Mitarbeiter baut, die im echten Betrieb bestehen."
     },
     "mission": {
-      "eyebrow": "Mission",
-      "title": "Technologie, die Menschen entlastet.",
-      "body": "Zu viele KI-Projekte enden als Spielerei. Wir entwickeln digitale Mitarbeiter, die im echten Betrieb bestehen — zuverlässig, sicher und mit klarem Nutzen. Jede Lösung planen wir individuell und stimmen sie exakt auf die Prozesse des Unternehmens ab. Unser Ziel ist nicht, möglichst viele Standardprodukte zu verkaufen, sondern Unternehmen mit intelligenter Automatisierung langfristig erfolgreicher zu machen."
+      "eyebrow": "Warum wir das machen",
+      "title": "Wir wollten KI, die hält, was sie verspricht.",
+      "body": "Als wir NEXAI gegründet haben, haben wir immer wieder dasselbe gesehen: beeindruckende KI-Demos, die im Alltag nichts abnehmen. Genau das wollten wir anders machen. Wir — Maximilian und Jason — entwickeln digitale Mitarbeiter, die ab dem ersten Tag messbar entlasten: zuverlässig, sicher und exakt auf die Prozesse jedes Unternehmens zugeschnitten. Uns ist eine Lösung, die wirklich läuft, lieber als zehn, die nur gut aussehen. Heute sind wir ein wachsendes Team — aber unser Anspruch ist derselbe geblieben: Technologie, die Menschen entlastet und Unternehmen echten Vorsprung bringt."
     },
     "values": {
-      "eyebrow": "Werte",
-      "title": "Woran wir uns messen lassen.",
+      "eyebrow": "Was uns wichtig ist",
+      "title": "Werte, die für uns nicht verhandelbar sind.",
       "items": [
         { "title": "Ergebnis vor Hype", "description": "Wir liefern messbaren Nutzen, keine Buzzwords." },
         { "title": "Individuell statt Standard", "description": "Jede Lösung wird exakt auf Ihr Unternehmen zugeschnitten." },
@@ -28,9 +28,10 @@
       "title": "Die Menschen hinter NEXAI.",
       "description": "Ein Team mit einer klaren Mission: KI, die für Unternehmen wirklich arbeitet.",
       "members": [
-        { "name": "Maximilian Trenk", "role": "Geschäftsführer", "image": "/team/maximilian.jpg" },
-        { "name": "Jason Brian Merklein", "role": "Geschäftsführer", "image": "/team/jason.jpg" },
-        { "name": "Connor Reimann", "role": "Vertriebsmanager", "image": "/team/connor.jpg" }
+        { "name": "Maximilian Trenk", "role": "Geschäftsführer", "tasks": "KI-Entwicklung, Projektmanagement & Strategie", "image": "/team/maximilian.jpg" },
+        { "name": "Jason Brian Merklein", "role": "Geschäftsführer", "tasks": "Kundenbetreuung, Social Media & Unternehmensleitung", "image": "/team/jason.jpg" },
+        { "name": "Connor Reimann", "role": "Vertriebsleitung", "tasks": "Ausbildungsleitung & Partnernetzwerk", "image": "/team/connor.jpg" },
+        { "name": "Emre Cem Korkmaz", "role": "Marketingleitung", "tasks": "Digitale Vertriebsentwicklung", "image": "/team/emre.jpg" }
       ]
     }
   }

@@ -6,9 +6,15 @@
     "ctaPrimary": "Free intro call",
     "ctaSecondary": "Explore services",
     "ctaDemo": "Live demo: call our AI now",
+    "ctaRoi": "Calculate ROI",
     "demoPhone": "+49 7959 3100191",
     "demoHint": "available around the clock",
     "trust": "For companies that want to grow faster with AI",
+    "badges": [
+      { "label": "GDPR-compliant" },
+      { "label": "German company" },
+      { "label": "Measurable results (ROI)", "href": "/roi-rechner" }
+    ],
     "console": {
       "label": "nexai · voice-agent",
       "status": "LIVE",
@@ -105,9 +111,10 @@
     },
     "testimonial": {
       "quote": "What matters to us isn't how impressive an AI looks, but what it actually takes off your plate. We build digital employees that measurably help from day one — no more missed calls, no more missed appointments.",
-      "author": "Maximilian Trenk",
-      "role": "Managing Director",
-      "company": "NEXAI"
+      "author": "Connor Reimann",
+      "role": "Head of Sales",
+      "company": "NEXAI",
+      "image": "/team/connor.jpg"
     },
     "cta": {
       "title": "Ready for your first digital employee?",

@@ -24,7 +24,7 @@ export function PartnerWhy() {
               className="flex items-start gap-3 border-b border-line py-4 text-[15px]"
             >
               <Check
-                className="mt-0.5 size-4 shrink-0 text-violet"
+                className="mt-0.5 size-4 shrink-0 text-blue-bright"
                 strokeWidth={2.5}
               />
               <span className="text-fg">{it}</span>

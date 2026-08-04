@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
-import { Phone } from "lucide-react";
+import { Phone, Check } from "lucide-react";
+import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/ui/container";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -48,6 +49,15 @@ export function Hero() {
               {t("ctaPrimary")}
             </Button>
             <Button
+              href="/roi-rechner"
+              size="lg"
+              variant="secondary"
+              className="w-full sm:w-auto"
+              withArrow
+            >
+              {t("ctaRoi")}
+            </Button>
+            <Button
               href="tel:+4979593100191"
               size="lg"
               variant="secondary"
@@ -78,6 +88,36 @@ export function Hero() {
             {" · "}
             {t("demoHint")}
           </p>
+        </Reveal>
+
+        <Reveal delay={0.24}>
+          <ul className="mt-6 flex flex-wrap items-center justify-center gap-x-5 gap-y-2.5">
+            {(t.raw("badges") as { label: string; href?: string }[]).map((b) =>
+              b.href ? (
+                <li key={b.label}>
+                  <Link
+                    href={b.href}
+                    className="flex items-center gap-2 text-[13px] text-muted transition-colors hover:text-blue-bright"
+                  >
+                    <span className="grid size-4 shrink-0 place-items-center rounded-full bg-blue">
+                      <Check className="size-2.5 text-white" strokeWidth={3} />
+                    </span>
+                    {b.label}
+                  </Link>
+                </li>
+              ) : (
+                <li
+                  key={b.label}
+                  className="flex items-center gap-2 text-[13px] text-muted"
+                >
+                  <span className="grid size-4 shrink-0 place-items-center rounded-full bg-blue">
+                    <Check className="size-2.5 text-white" strokeWidth={3} />
+                  </span>
+                  {b.label}
+                </li>
+              ),
+            )}
+          </ul>
         </Reveal>
 
         <Reveal delay={0.26} className="mt-12 w-full sm:mt-20">

@@ -42,7 +42,9 @@ export function Logo({ className }: { className?: string }) {
       )}
     >
       <LogoMark className="transition-transform duration-300 group-hover:scale-105" />
-      <span className="text-[17px] font-semibold tracking-[-0.02em]">NEXAI</span>
+      <span className="text-[17px] font-semibold tracking-[-0.02em]">
+        NEX<span className="text-blue">AI</span>
+      </span>
     </Link>
   );
 }

@@ -4,7 +4,7 @@ import { Container } from "@/components/ui/container";
 import { Section, SectionHeading } from "@/components/ui/section";
 import { RevealGroup, RevealItem } from "@/components/ui/reveal";
 
-type Member = { name: string; role: string; image?: string };
+type Member = { name: string; role: string; tasks?: string; image?: string };
 
 export function Team() {
   const t = useTranslations("About.team");
@@ -53,7 +53,14 @@ export function Team() {
                 <h3 className="mt-4 text-base font-semibold tracking-tight">
                   {m.name}
                 </h3>
-                <p className="mt-0.5 text-sm text-muted">{m.role}</p>
+                <p className="mt-0.5 text-sm font-medium text-blue-bright">
+                  {m.role}
+                </p>
+                {m.tasks && (
+                  <p className="mt-1.5 text-[13px] leading-relaxed text-muted">
+                    {m.tasks}
+                  </p>
+                )}
               </div>
             </RevealItem>
           ))}
