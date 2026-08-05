@@ -34,7 +34,9 @@
     "newsletterTitle": "Stay in the loop",
     "newsletterText": "Insights on applied AI — once or twice a month, no spam.",
     "newsletterCta": "Subscribe",
-    "newsletterPlaceholder": "Email address"
+    "newsletterPlaceholder": "Email address",
+    "newsletterSuccess": "Thanks — you're subscribed.",
+    "newsletterError": "Something went wrong. Please try again."
   },
   "Common": {
     "getStarted": "Start a project",

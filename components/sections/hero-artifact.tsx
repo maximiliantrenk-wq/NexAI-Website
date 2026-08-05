@@ -17,7 +17,7 @@ export function HeroArtifact() {
         className="pointer-events-none absolute -inset-x-10 -bottom-10 top-6 -z-10 rounded-[40px] bg-[radial-gradient(60%_60%_at_50%_50%,rgba(124,92,255,0.25),transparent_70%)] blur-2xl"
       />
 
-      <div className="surface-card border-blue/20 overflow-hidden rounded-2xl text-left">
+      <div className="surface-card overflow-hidden rounded-2xl text-left">
         {/* title bar */}
         <div className="flex items-center justify-between border-b border-line px-4 py-3">
           <div className="flex items-center gap-2">

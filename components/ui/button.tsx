@@ -13,7 +13,7 @@ const variants: Record<Variant, string> = {
   primary:
     "bg-gradient-to-r from-blue via-violet to-purple text-white shadow-[0_10px_34px_-12px_rgba(124,58,237,0.75)] hover:shadow-[0_14px_44px_-10px_rgba(124,58,237,0.9)] hover:brightness-[1.08]",
   secondary:
-    "bg-white/[0.045] text-fg border border-line-strong backdrop-blur-sm hover:bg-white/[0.08] hover:border-white/25",
+    "bg-white/[0.045] text-fg border border-blue/30 backdrop-blur-sm hover:bg-white/[0.08] hover:border-blue/50",
   ghost: "text-muted hover:text-fg",
 };
 

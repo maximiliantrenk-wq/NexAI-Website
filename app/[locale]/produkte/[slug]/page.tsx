@@ -145,7 +145,7 @@ function ProductDetail({ slug }: { slug: string }) {
         <Container>
           <Link
             href={`/produkte/${next.slug}`}
-            className="surface-card group flex items-center justify-between gap-6 rounded-2xl p-7 transition-colors hover:border-white/20"
+            className="surface-card group flex items-center justify-between gap-6 rounded-2xl p-7 transition-colors hover:border-blue/40"
           >
             <div>
               <p className="eyebrow">{t("labels.next")}</p>

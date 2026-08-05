@@ -4,7 +4,7 @@
     "hero": {
       "eyebrow": "ROI Calculator",
       "title": "What do missed calls really cost you?",
-      "description": "In a few seconds, work out how much time and revenue a NEXAI voice agent brings back — with your own numbers."
+      "description": "In a few seconds, work out how much time and revenue NEXAI brings back — with your own numbers."
     },
     "modeLabel": "What would you like to calculate?",
     "mode": { "money": "Revenue", "time": "Time" },
@@ -19,7 +19,7 @@
       "valueLabel": "Avg. value per call / customer (€)",
       "rateLabel": "Captured by the voice agent (%)",
       "resultLabel": "Revenue lost to missed calls",
-      "recovered": "The voice agent brings back: {value} ({rate} %)",
+      "recovered": "NEXAI brings back: {value} ({rate} %)",
       "perYear": "≈ {value} per year"
     },
     "time": {

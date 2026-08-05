@@ -34,7 +34,9 @@
     "newsletterTitle": "Bleiben Sie informiert",
     "newsletterText": "Insights zu angewandter KI — ein bis zwei Mal im Monat, kein Spam.",
     "newsletterCta": "Abonnieren",
-    "newsletterPlaceholder": "E-Mail-Adresse"
+    "newsletterPlaceholder": "E-Mail-Adresse",
+    "newsletterSuccess": "Danke — Sie sind dabei.",
+    "newsletterError": "Hat nicht geklappt. Bitte später erneut."
   },
   "Common": {
     "getStarted": "Projekt starten",

@@ -3,6 +3,7 @@ import { Link } from "@/i18n/navigation";
 import { LogoMark } from "@/components/brand/logo";
 import { Container } from "@/components/ui/container";
 import { footerNav } from "@/lib/nav";
+import { NewsletterForm } from "./newsletter-form";
 
 export function Footer() {
   const t = useTranslations();
@@ -63,21 +64,7 @@ export function Footer() {
               <p className="mt-1 text-[13px] text-subtle">
                 {t("Footer.newsletterText")}
               </p>
-              <form className="mt-3 flex max-w-sm items-center gap-2">
-                <input
-                  type="email"
-                  required
-                  placeholder={t("Footer.newsletterPlaceholder")}
-                  aria-label={t("Footer.newsletterPlaceholder")}
-                  className="h-10 min-w-0 flex-1 rounded-full border border-line bg-white/[0.03] px-4 text-sm text-fg placeholder:text-subtle focus-visible:border-blue/60"
-                />
-                <button
-                  type="submit"
-                  className="h-10 shrink-0 rounded-full bg-white/10 px-4 text-sm font-medium text-fg transition-colors hover:bg-white/15"
-                >
-                  {t("Footer.newsletterCta")}
-                </button>
-              </form>
+              <NewsletterForm />
             </div>
           </div>
 
