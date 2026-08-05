@@ -169,7 +169,7 @@ export function RoiCalculator() {
 
           {/* Result */}
           <Reveal delay={0.08}>
-            <div className="surface-card border-blue/25 flex h-full flex-col rounded-2xl p-6 sm:p-8">
+            <div className="surface-card flex h-full flex-col rounded-2xl p-6 sm:p-8">
               <p className="text-sm font-medium text-muted">
                 {isMoney ? t("money.resultLabel") : t("time.resultLabel")}
               </p>

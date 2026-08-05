@@ -35,7 +35,7 @@ export function ProductHighlights() {
             <RevealItem key={c.slug}>
               <Link
                 href={`/produkte/${c.slug}`}
-                className="surface-card group flex h-full flex-col overflow-hidden rounded-2xl transition-colors duration-300 hover:border-white/20"
+                className="surface-card group flex h-full flex-col overflow-hidden rounded-2xl transition-colors duration-300 hover:border-blue/40"
               >
                 <div className="relative aspect-[16/10] overflow-hidden">
                   <div

@@ -63,7 +63,7 @@ export function PartnerExample() {
         </div>
 
         <Reveal delay={0.12} className="mt-6">
-          <div className="rounded-2xl border border-line bg-white/[0.015] px-8 py-10 text-center">
+          <div className="rounded-2xl border border-blue/20 bg-white/[0.015] px-8 py-10 text-center">
             <p className="text-[17px] font-medium">{t("resultLabel")}</p>
             <p className="mx-auto mt-1.5 max-w-2xl text-sm leading-relaxed text-muted">
               {t("resultText")}

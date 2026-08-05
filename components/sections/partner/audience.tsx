@@ -55,7 +55,7 @@ export function PartnerAudience() {
             return (
               <RevealItem
                 key={item.title}
-                className="group flex items-center gap-4 rounded-xl border border-line bg-white/[0.02] p-4 transition-colors hover:border-line-strong hover:bg-white/[0.03]"
+                className="group flex items-center gap-4 rounded-xl border border-blue/20 bg-white/[0.02] p-4 transition-colors hover:border-blue/40 hover:bg-white/[0.03]"
               >
                 <span className="grid size-10 shrink-0 place-items-center rounded-lg border border-line bg-white/[0.03] text-muted transition-colors group-hover:text-blue-bright">
                   <Icon className="size-[18px]" />

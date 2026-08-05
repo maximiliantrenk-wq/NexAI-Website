@@ -4,7 +4,7 @@
     "hero": {
       "eyebrow": "ROI-Rechner",
       "title": "Was kosten Sie verpasste Anrufe wirklich?",
-      "description": "Rechnen Sie in wenigen Sekunden aus, wie viel Zeit und Umsatz ein NEXAI Voice Agent für Sie zurückholt — mit Ihren eigenen Zahlen."
+      "description": "Rechnen Sie in wenigen Sekunden aus, wie viel Zeit und Umsatz NEXAI für Sie zurückholt — mit Ihren eigenen Zahlen."
     },
     "modeLabel": "Was möchten Sie berechnen?",
     "mode": { "money": "Umsatz", "time": "Zeit" },
@@ -19,7 +19,7 @@
       "valueLabel": "Ø Wert pro Anruf / Kunde (€)",
       "rateLabel": "Vom Voice Agent erfasst (%)",
       "resultLabel": "Umsatzverlust durch verpasste Anrufe",
-      "recovered": "Davon holt der Voice Agent zurück: {value} ({rate} %)",
+      "recovered": "Davon holt NEXAI zurück: {value} ({rate} %)",
       "perYear": "≈ {value} pro Jahr"
     },
     "time": {

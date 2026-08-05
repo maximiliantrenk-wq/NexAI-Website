@@ -23,7 +23,7 @@ export function LegalContent({ namespace }: { namespace: string }) {
               </p>
             )}
             {hasNote && (
-              <div className="mt-4 rounded-xl border border-line bg-white/[0.02] px-4 py-3 text-sm text-muted">
+              <div className="mt-4 rounded-xl border border-blue/20 bg-white/[0.02] px-4 py-3 text-sm text-muted">
                 {t("note")}
               </div>
             )}

@@ -103,7 +103,7 @@ function PartnerContent() {
               href="#ablauf"
               className={cn(
                 btnBase,
-                "border border-line-strong bg-white/[0.045] text-fg backdrop-blur-sm hover:border-white/25 hover:bg-white/[0.08]",
+                "border border-blue/30 bg-white/[0.045] text-fg backdrop-blur-sm hover:border-blue/50 hover:bg-white/[0.08]",
               )}
             >
               {t("secondary")}

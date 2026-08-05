@@ -50,7 +50,7 @@ export function Services() {
               <RevealItem key={item.name}>
                 <Link
                   href="/services"
-                  className="surface-card border-blue/20 group relative flex h-full flex-col rounded-2xl p-7 transition-colors duration-300 hover:border-blue/45"
+                  className="surface-card group relative flex h-full flex-col rounded-2xl p-7 transition-colors duration-300 hover:border-blue/40"
                 >
                   <ArrowUpRight className="absolute right-6 top-6 size-4 text-subtle transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-fg" />
                   <span className="grid size-11 place-items-center rounded-xl border border-line bg-white/[0.03]">
@@ -70,7 +70,7 @@ export function Services() {
 
         {/* Custom / bespoke agents — featured */}
         <Reveal className="mt-5">
-          <div className="surface-card border-blue/20 relative isolate overflow-hidden rounded-2xl p-8 sm:p-10">
+          <div className="surface-card relative isolate overflow-hidden rounded-2xl p-8 sm:p-10">
             <Glow
               className="right-0 top-0 h-72 w-96 translate-x-1/3 -translate-y-1/3"
               intensity={0.28}
