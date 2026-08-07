@@ -15,7 +15,7 @@ export function Hero() {
     <section className="relative isolate overflow-hidden">
       {/* Signature aurora background */}
       <div className="absolute inset-0 -z-10">
-        <Aurora className="absolute inset-0 h-full w-full" />
+        <Aurora className="absolute inset-0 h-full w-full opacity-[0.6]" />
         <div className="bg-grid absolute inset-0 opacity-40 mask-fade-b" />
         <div className="absolute inset-x-0 top-0 h-28 bg-gradient-to-b from-bg to-transparent" />
         <div className="absolute inset-x-0 bottom-0 h-72 bg-gradient-to-t from-bg via-bg/85 to-transparent" />
