@@ -18,9 +18,9 @@ export function PageHero({
       <div className="absolute inset-0 -z-10">
         <div
           aria-hidden
-          className="absolute inset-x-0 -top-32 h-[520px] bg-[radial-gradient(60%_60%_at_50%_0%,rgba(124,92,255,0.18),transparent_70%),radial-gradient(50%_50%_at_75%_10%,rgba(77,124,255,0.14),transparent_70%)]"
+          className="absolute inset-x-0 -top-32 h-[520px] bg-[radial-gradient(60%_60%_at_50%_0%,rgba(124,92,255,0.26),transparent_70%),radial-gradient(50%_50%_at_75%_10%,rgba(77,124,255,0.20),transparent_70%)]"
         />
-        <div className="bg-grid absolute inset-0 opacity-30 mask-fade-b" />
+        <div className="bg-grid absolute inset-0 opacity-40 mask-fade-b" />
       </div>
 
       <Container>
