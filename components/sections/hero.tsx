@@ -10,12 +10,14 @@ import { HeroArtifact } from "./hero-artifact";
 
 export function Hero() {
   const t = useTranslations("Hero");
+  // Voice-Agent-Demo vorübergehend in Wartung — auf true setzen, wenn wieder live.
+  const DEMO_AVAILABLE = false;
 
   return (
     <section className="relative isolate overflow-hidden">
       {/* Signature aurora background */}
       <div className="absolute inset-0 -z-10">
-        <Aurora className="absolute inset-0 h-full w-full opacity-[0.6]" />
+        <Aurora className="absolute inset-0 h-full w-full opacity-[0.5]" />
         <div className="bg-grid absolute inset-0 opacity-40 mask-fade-b" />
         <div className="absolute inset-x-0 top-0 h-28 bg-gradient-to-b from-bg to-transparent" />
         <div className="absolute inset-x-0 bottom-0 h-72 bg-gradient-to-t from-bg via-bg/85 to-transparent" />
@@ -57,15 +59,28 @@ export function Hero() {
             >
               {t("ctaRoi")}
             </Button>
-            <Button
-              href="tel:+4979593100191"
-              size="lg"
-              variant="secondary"
-              className="w-full sm:w-auto"
-            >
-              <Phone className="size-4" />
-              {t("ctaDemo")}
-            </Button>
+            {DEMO_AVAILABLE ? (
+              <Button
+                href="tel:+4979593100191"
+                size="lg"
+                variant="secondary"
+                className="w-full sm:w-auto"
+              >
+                <Phone className="size-4" />
+                {t("ctaDemo")}
+              </Button>
+            ) : (
+              <Button
+                disabled
+                size="lg"
+                variant="secondary"
+                className="w-full sm:w-auto"
+                aria-label={t("ctaDemo")}
+              >
+                <Phone className="size-4" />
+                {t("ctaDemo")}
+              </Button>
+            )}
             <Button
               href="/services"
               size="lg"
@@ -78,16 +93,20 @@ export function Hero() {
         </Reveal>
 
         <Reveal delay={0.22}>
-          <p className="mt-4 text-[13px] text-subtle">
-            <a
-              href="tel:+4979593100191"
-              className="font-mono text-muted transition-colors hover:text-blue-bright"
-            >
-              {t("demoPhone")}
-            </a>
-            {" · "}
-            {t("demoHint")}
-          </p>
+          {DEMO_AVAILABLE ? (
+            <p className="mt-4 text-[13px] text-subtle">
+              <a
+                href="tel:+4979593100191"
+                className="font-mono text-muted transition-colors hover:text-blue-bright"
+              >
+                {t("demoPhone")}
+              </a>
+              {" · "}
+              {t("demoHint")}
+            </p>
+          ) : (
+            <p className="mt-4 text-[13px] text-subtle">{t("demoMaintenance")}</p>
+          )}
         </Reveal>
 
         <Reveal delay={0.24}>
