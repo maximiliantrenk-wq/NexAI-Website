@@ -225,7 +225,7 @@
    "items": [
     "Erfolgt eine Verarbeitung durch einen Unterauftragsverarbeiter in einem Drittland, stellt NexAI sicher, dass die Anforderungen der Art. 44 ff. DSGVO eingehalten werden.",
     "Vorrangig stützt sich der Transfer auf einen **Angemessenheitsbeschluss** der Europäischen Kommission, insbesondere das EU-U.S. Data Privacy Framework (DPF), sofern der jeweilige Empfänger zertifiziert ist.",
-    "Hilfsweise – insbesondere wenn keine DPF-Zertifizierung vorliegt (bei den in Anhang 2 gekennzeichneten Empfängern, etwa Vapi und Deepgram (USA) sowie dem in China ansässigen Anbieter der Sprachsynthese, vorsorglich der SCC-Weg) – werden die **EU-Standardvertragsklauseln** (Durchführungsbeschluss (EU) 2021/914), **Modul 3 (Auftragsverarbeiter an Unterauftragsverarbeiter)**, abgeschlossen, ergänzt um erforderliche **Zusatzmaßnahmen** und eine **Transfer-Folgenabschätzung (Transfer Impact Assessment, TIA)**. Für Übermittlungen nach China besteht kein Angemessenheitsbeschluss; die Übermittlung erfolgt daher ausschließlich auf Grundlage der Standardvertragsklauseln nebst Zusatzmaßnahmen und mit erhöhtem Restrisiko.",
+    "Hilfsweise – insbesondere wenn keine DPF-Zertifizierung vorliegt (bei den in Anhang 2 gekennzeichneten Empfängern, etwa Vapi und Deepgram (USA), vorsorglich der SCC-Weg) – werden die **EU-Standardvertragsklauseln** (Durchführungsbeschluss (EU) 2021/914), **Modul 3 (Auftragsverarbeiter an Unterauftragsverarbeiter)**, abgeschlossen, ergänzt um erforderliche **Zusatzmaßnahmen** und eine **Transfer-Folgenabschätzung (Transfer Impact Assessment, TIA)**.",
     "NexAI stellt dem Kunden auf Anfrage Nachweise über die getroffenen Transfergarantien in geeigneter Form zur Verfügung."
    ]
   },
@@ -539,16 +539,9 @@
     [
      "OpenAI Ireland Ltd. / OpenAI, L.L.C.",
      "EU / USA",
-     "Sprachmodell / KI-Verarbeitung (Textverstehen, Antwortgenerierung)",
+     "Sprachmodell / KI-Verarbeitung (Textverstehen, Antwortgenerierung) und Sprachsynthese (Text-to-Speech)",
      "Gesprächs-/Textinhalte, Metadaten",
      "DPF, hilfsweise EU-SCC Modul 3; No-Training-Konfiguration"
-    ],
-    [
-     "MiniMax (Shanghai Xiyu Technology Co., Ltd.)",
-     "China",
-     "Sprachsynthese / Text-to-Speech",
-     "Antworttext, Audio-/Metadaten",
-     "EU-SCC Modul 3 + Zusatzmaßnahmen + TIA; kein Angemessenheitsbeschluss (China)"
     ],
     [
      "Google LLC / Google Ireland Ltd.",
