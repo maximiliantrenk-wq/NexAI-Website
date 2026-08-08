@@ -28,10 +28,10 @@
       "title": "The people behind NEXAI.",
       "description": "A team with one clear mission: AI that genuinely works for businesses.",
       "members": [
-        { "name": "Maximilian Trenk", "role": "Managing Director", "tasks": "AI development, project management & strategy", "image": "/team/maximilian.jpg" },
-        { "name": "Jason Brian Merklein", "role": "Managing Director", "tasks": "Customer success, social media & operations", "image": "/team/jason.jpg" },
-        { "name": "Connor Reimann", "role": "Head of Sales", "tasks": "Training lead & partner network", "image": "/team/connor.jpg" },
-        { "name": "Emre Cem Korkmaz", "role": "Head of Marketing", "tasks": "Digital sales development", "image": "/team/emre.jpg" }
+        { "name": "Maximilian Trenk", "role": "Managing Director", "tasks": "AI development, project management & strategy", "image": "/team/maximilian.jpg", "instagram": "https://www.instagram.com/thatsmvx/" },
+        { "name": "Jason Brian Merklein", "role": "Managing Director", "tasks": "Customer success, social media & operations", "image": "/team/jason.jpg", "instagram": "https://www.instagram.com/brian.next.generation/" },
+        { "name": "Connor Reimann", "role": "Head of Sales", "tasks": "Training lead & partner network", "image": "/team/connor.jpg", "instagram": "https://www.instagram.com/connorreimann/" },
+        { "name": "Emre Cem Korkmaz", "role": "Head of Marketing", "tasks": "Digital sales development", "image": "/team/emre.jpg", "instagram": "https://www.instagram.com/emqx_06/" }
       ]
     }
   }
