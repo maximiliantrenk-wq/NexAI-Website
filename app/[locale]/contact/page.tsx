@@ -54,9 +54,7 @@ function ContactContent() {
             <div className="flex flex-col gap-8">
               {infoItems.map((item) => (
                 <div key={item.label} className="flex items-start gap-4">
-                  <span className="grid size-11 shrink-0 place-items-center rounded-xl border border-line bg-white/[0.03]">
-                    <item.icon className="size-5 text-blue-bright" />
-                  </span>
+                  <item.icon className="mt-0.5 size-6 shrink-0 text-blue-bright" />
                   <div>
                     <p className="eyebrow">{item.label}</p>
                     {item.href ? (
