@@ -53,24 +53,24 @@ export function CircuitBackdrop({ className }: { className?: string }) {
       className={cn("absolute inset-0 overflow-hidden", className)}
       style={{
         maskImage:
-          "radial-gradient(ellipse 72% 68% at 50% 46%, #000 32%, transparent 80%)",
+          "radial-gradient(ellipse 72% 68% at 50% 46%, #000 34%, transparent 82%)",
         WebkitMaskImage:
-          "radial-gradient(ellipse 72% 68% at 50% 46%, #000 32%, transparent 80%)",
+          "radial-gradient(ellipse 72% 68% at 50% 46%, #000 34%, transparent 82%)",
       }}
     >
       <style
         dangerouslySetInnerHTML={{
           __html: `
         @keyframes nexaiTraceFlow { from { stroke-dashoffset: 260; } to { stroke-dashoffset: 0; } }
-        @keyframes nexaiNodePulse { 0%,100% { opacity: .18; } 50% { opacity: .85; } }
-        @keyframes nexaiDieGlow { 0%,100% { opacity: .35; } 50% { opacity: .75; } }
-        .nexai-flow { stroke-dasharray: 5 255; animation: nexaiTraceFlow linear infinite; }
+        @keyframes nexaiNodePulse { 0%,100% { opacity: .28; } 50% { opacity: .95; } }
+        @keyframes nexaiDieGlow { 0%,100% { opacity: .5; } 50% { opacity: .9; } }
+        .nexai-flow { stroke-dasharray: 6 254; animation: nexaiTraceFlow linear infinite; }
         .nexai-node { animation: nexaiNodePulse ease-in-out infinite; }
         .nexai-die { animation: nexaiDieGlow ease-in-out infinite; }
         @media (prefers-reduced-motion: reduce) {
           .nexai-flow { display: none; }
           .nexai-node, .nexai-die { animation: none; }
-          .nexai-node { opacity: .45; }
+          .nexai-node { opacity: .5; }
         }`,
         }}
       />
@@ -86,8 +86,8 @@ export function CircuitBackdrop({ className }: { className?: string }) {
             <path
               key={`t${i}`}
               d={d}
-              strokeWidth={1}
-              strokeOpacity={0.22}
+              strokeWidth={1.1}
+              strokeOpacity={0.32}
             />
           ))}
           {/* flowing light pulses */}
@@ -95,8 +95,8 @@ export function CircuitBackdrop({ className }: { className?: string }) {
             <path
               key={`f${i}`}
               d={d}
-              strokeWidth={1.6}
-              strokeOpacity={0.9}
+              strokeWidth={2}
+              strokeOpacity={0.95}
               strokeLinecap="round"
               className="nexai-flow"
               style={{
@@ -113,7 +113,7 @@ export function CircuitBackdrop({ className }: { className?: string }) {
             key={`n${i}`}
             cx={cx}
             cy={cy}
-            r={3}
+            r={3.5}
             fill="var(--color-blue-bright)"
             className="nexai-node"
             style={{
@@ -131,10 +131,10 @@ export function CircuitBackdrop({ className }: { className?: string }) {
           height={108}
           rx={16}
           stroke="var(--color-blue-bright)"
-          strokeWidth={1.4}
-          strokeOpacity={0.5}
+          strokeWidth={1.5}
+          strokeOpacity={0.72}
           fill="var(--color-blue)"
-          fillOpacity={0.05}
+          fillOpacity={0.07}
         />
         <rect
           x={576}
@@ -143,10 +143,10 @@ export function CircuitBackdrop({ className }: { className?: string }) {
           height={48}
           rx={6}
           stroke="var(--color-blue-bright)"
-          strokeWidth={1.2}
-          strokeOpacity={0.7}
+          strokeWidth={1.3}
+          strokeOpacity={0.9}
           fill="var(--color-blue-bright)"
-          fillOpacity={0.08}
+          fillOpacity={0.14}
           className="nexai-die"
           style={{ animationDuration: "4s" }}
         />

@@ -31,11 +31,9 @@ export function PartnerBenefits({
           {items.map((item, i) => {
             const Icon = icons[i % icons.length];
             return (
-              <RevealItem key={item.title} className="surface-card rounded-2xl p-7">
-                <span className="grid size-11 place-items-center rounded-xl border border-line bg-white/[0.03]">
-                  <Icon className="size-5 text-blue-bright" />
-                </span>
-                <h3 className="mt-5 text-[17px] font-semibold tracking-tight">
+              <RevealItem key={item.title} className="group">
+                <Icon className="size-6 text-blue-bright" />
+                <h3 className="mt-4 text-[17px] font-semibold tracking-tight transition-colors group-hover:text-blue-bright">
                   {item.title}
                 </h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted">

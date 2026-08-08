@@ -13,11 +13,11 @@ export function Values() {
     <Section>
       <Container>
         <SectionHeading eyebrow={t("eyebrow")} title={t("title")} />
-        <RevealGroup className="mt-10 sm:mt-14 grid gap-px overflow-hidden rounded-2xl border border-blue/20 bg-line sm:grid-cols-2 lg:grid-cols-3">
+        <RevealGroup className="mt-10 sm:mt-14 grid gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((v) => (
             <RevealItem
               key={v.title}
-              className="bg-bg p-7 transition-colors duration-300 hover:bg-surface"
+              className="group relative"
             >
               <span className="block size-2 rounded-full bg-gradient-to-r from-blue to-purple shadow-[0_0_12px_var(--color-purple)]" />
               <h3 className="mt-5 text-[17px] font-semibold tracking-tight">

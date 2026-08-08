@@ -102,7 +102,7 @@ function ProductDetail({ slug }: { slug: string }) {
       {/* What it can do */}
       <Section className="py-10">
         <Container>
-          <div className="surface-card rounded-3xl p-8 sm:p-10">
+          <div className="rounded-3xl p-8 sm:p-10">
             <p className="eyebrow mb-6">{t("labels.canDo")}</p>
             <ul className="grid gap-x-8 gap-y-3 sm:grid-cols-2">
               {item.features.map((f) => (
@@ -145,11 +145,11 @@ function ProductDetail({ slug }: { slug: string }) {
         <Container>
           <Link
             href={`/produkte/${next.slug}`}
-            className="surface-card group flex items-center justify-between gap-6 rounded-2xl p-7 transition-colors hover:border-blue/40"
+            className="group flex items-center justify-between gap-6 rounded-2xl p-7 transition-colors"
           >
             <div>
               <p className="eyebrow">{t("labels.next")}</p>
-              <p className="mt-2 text-xl font-semibold tracking-tight">
+              <p className="mt-2 text-xl font-semibold tracking-tight transition-colors group-hover:text-blue-bright">
                 {next.title}
               </p>
             </div>

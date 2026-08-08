@@ -76,7 +76,7 @@ export default async function LocaleLayout({
         >
           <Aurora mobileStatic className="opacity-[0.55] md:opacity-[0.4]" />
           <div className="absolute inset-0 bg-[radial-gradient(150%_115%_at_50%_0%,transparent_55%,var(--color-bg)_100%)] md:bg-[radial-gradient(125%_90%_at_50%_0%,transparent_42%,var(--color-bg)_92%)]" />
-          <CircuitBackdrop className="opacity-80 md:opacity-90" />
+          <CircuitBackdrop className="opacity-90 md:opacity-100" />
         </div>
         <script
           type="application/ld+json"

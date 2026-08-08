@@ -43,12 +43,10 @@ export function ServicePillars() {
             const Icon = ICONS[i] ?? Sparkles;
             return (
               <Reveal key={item.name}>
-                <article className="surface-card grid gap-8 rounded-2xl p-8 sm:p-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-12">
+                <article className="grid gap-8 rounded-2xl p-8 sm:p-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-12">
                   <div>
                     <div className="flex items-center gap-3">
-                      <span className="grid size-11 place-items-center rounded-xl border border-line bg-white/[0.03]">
-                        <Icon className="size-5 text-blue-bright" />
-                      </span>
+                      <Icon className="size-6 text-blue-bright" />
                       <span className="font-mono text-[11px] uppercase tracking-[0.16em] text-subtle">
                         {String(i + 1).padStart(2, "0")}
                       </span>

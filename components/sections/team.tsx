@@ -78,7 +78,7 @@ export function Team() {
 
             return (
               <RevealItem key={m.name} className="group">
-                <div className="surface-card overflow-hidden rounded-2xl p-6">
+                <div className="overflow-hidden rounded-2xl p-6">
                   {m.instagram ? (
                     <a
                       href={m.instagram}

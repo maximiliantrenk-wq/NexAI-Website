@@ -43,20 +43,18 @@ export function Services() {
           </Reveal>
         </div>
 
-        <RevealGroup className="mt-10 sm:mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <RevealGroup className="mt-10 sm:mt-14 grid gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((item, i) => {
             const Icon = ICONS[i] ?? PhoneCall;
             return (
               <RevealItem key={item.name}>
                 <Link
                   href="/services"
-                  className="surface-card group relative flex h-full flex-col rounded-2xl p-7 transition-colors duration-300 hover:border-blue/40"
+                  className="group relative flex h-full flex-col"
                 >
-                  <ArrowUpRight className="absolute right-6 top-6 size-4 text-subtle transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-fg" />
-                  <span className="grid size-11 place-items-center rounded-xl border border-line bg-white/[0.03]">
-                    <Icon className="size-5 text-blue-bright" />
-                  </span>
-                  <h3 className="mt-5 text-lg font-semibold tracking-tight">
+                  <ArrowUpRight className="absolute right-0 top-1 size-4 text-subtle transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-blue-bright" />
+                  <Icon className="size-6 text-blue-bright" />
+                  <h3 className="mt-4 text-lg font-semibold tracking-tight transition-colors group-hover:text-blue-bright">
                     {item.name}
                   </h3>
                   <p className="mt-2 text-sm leading-relaxed text-muted">
@@ -70,7 +68,7 @@ export function Services() {
 
         {/* Custom / bespoke agents — featured */}
         <Reveal className="mt-5">
-          <div className="surface-card relative isolate overflow-hidden rounded-2xl p-8 sm:p-10">
+          <div className="relative isolate overflow-hidden rounded-2xl p-8 sm:p-10">
             <Glow
               className="right-0 top-0 h-72 w-96 translate-x-1/3 -translate-y-1/3"
               intensity={0.28}

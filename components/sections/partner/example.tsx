@@ -21,7 +21,7 @@ export function PartnerExample() {
         />
 
         <div className="mt-10 sm:mt-14 grid gap-6 lg:grid-cols-2">
-          <Reveal className="surface-card rounded-2xl p-7 sm:p-8">
+          <Reveal>
             <h3 className="text-lg font-semibold tracking-tight text-muted">
               {without.title}
             </h3>
@@ -41,7 +41,7 @@ export function PartnerExample() {
             </ul>
           </Reveal>
 
-          <Reveal delay={0.08} className="surface-card rounded-2xl p-7 sm:p-8">
+          <Reveal delay={0.08}>
             <h3 className="text-lg font-semibold tracking-tight">
               {withNexai.title}
             </h3>
@@ -63,7 +63,7 @@ export function PartnerExample() {
         </div>
 
         <Reveal delay={0.12} className="mt-6">
-          <div className="rounded-2xl border border-blue/20 bg-white/[0.015] px-8 py-10 text-center">
+          <div className="rounded-2xl px-8 py-10 text-center">
             <p className="text-[17px] font-medium">{t("resultLabel")}</p>
             <p className="mx-auto mt-1.5 max-w-2xl text-sm leading-relaxed text-muted">
               {t("resultText")}

@@ -81,7 +81,7 @@ function ContactContent() {
                 </div>
               ))}
 
-              <div className="surface-card mt-2 rounded-2xl p-6">
+              <div className="mt-2 rounded-2xl p-6">
                 <span className="grid size-11 place-items-center rounded-xl bg-gradient-to-br from-blue to-purple">
                   <CalendarClock className="size-5 text-white" />
                 </span>
