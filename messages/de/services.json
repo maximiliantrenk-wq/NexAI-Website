@@ -3,17 +3,17 @@
     "meta": { "title": "Leistungen" },
     "hero": {
       "eyebrow": "Leistungen",
-      "title": "Intelligente KI-Mitarbeiter für jeden Bereich.",
-      "description": "Vom Telefon über den Chat und Social Media bis zum Vertrieb und der Automatisierung Ihrer Abläufe — jede Lösung passen wir an Sie an und binden sie in Ihren Alltag ein."
+      "title": "Intelligente AI-Mitarbeiter für jeden Bereich.",
+      "description": "Vom Telefon über den Chat und Social Media bis zum Vertrieb und der Automatisierung Ihrer Abläufe: jede Lösung passen wir an Sie an und binden sie in Ihren Alltag ein."
     },
     "list": {
       "eyebrow": "Unsere Leistungen",
-      "title": "Sieben Wege, Ihr Unternehmen zu entlasten.",
+      "title": "Sechs Wege, Ihr Unternehmen zu entlasten.",
       "capabilitiesLabel": "Das kann es",
       "items": [
         {
           "name": "Voice Agent",
-          "summary": "Ein Telefonassistent, der rund um die Uhr jeden Anruf annimmt — damit kein Termin und kein Kunde mehr verloren geht. Er arbeitet wie ein echter Mitarbeiter, passend für jede Branche.",
+          "summary": "Ein Telefonassistent, der rund um die Uhr jeden Anruf annimmt, damit kein Termin und kein Kunde mehr verloren geht. Er arbeitet wie ein echter Mitarbeiter, passend für jede Branche.",
           "features": [
             "Anrufe entgegennehmen",
             "Kunden beraten & Fragen beantworten",
@@ -55,7 +55,7 @@
         },
         {
           "name": "Vertriebs- & Akquise-Agent",
-          "summary": "Ein Agent, der passende Kunden findet, bewertet und die persönliche Ansprache vorbereitet — ganz von selbst.",
+          "summary": "Ein Agent, der passende Kunden findet, bewertet und die persönliche Ansprache vorbereitet, ganz von selbst.",
           "features": [
             "Passende Unternehmen finden",
             "Ansprechpartner recherchieren",
@@ -81,8 +81,8 @@
           ]
         },
         {
-          "name": "Individuelle KI-Agenten",
-          "summary": "Für Spezialfälle entwickeln wir eine Lösung ganz nach Ihren Wünschen. Was möglich ist, prüfen wir gemeinsam — Grenzen gibt es fast keine.",
+          "name": "Individuelle AI-Agenten",
+          "summary": "Für Spezialfälle entwickeln wir eine Lösung ganz nach Ihren Wünschen. Was möglich ist, prüfen wir gemeinsam. Grenzen gibt es fast keine.",
           "features": [
             "Lagerverwaltung & Inventur",
             "Produktion & Qualitätskontrolle",
@@ -101,17 +101,17 @@
       "eyebrow": "Unsere Philosophie",
       "lead": "Wir verkaufen keine Software.",
       "headline": "Wir entwickeln digitale Mitarbeiter.",
-      "body": "Unsere KI-Agenten übernehmen wiederkehrende Aufgaben, unterstützen Ihr Team und schaffen Freiräume für das, was wirklich zählt. Jede Lösung planen wir individuell und stimmen sie genau auf Ihren Alltag ab — mit dem Ziel, Ihr Unternehmen langfristig erfolgreicher zu machen."
+      "body": "Unsere AI-Agenten übernehmen wiederkehrende Aufgaben, unterstützen Ihr Team und schaffen Freiräume für das, was wirklich zählt. Jede Lösung planen wir individuell und stimmen sie genau auf Ihren Alltag ab, mit dem Ziel, Ihr Unternehmen langfristig erfolgreicher zu machen."
     },
     "faq": {
       "eyebrow": "FAQ",
       "title": "Häufige Fragen.",
       "items": [
-        { "q": "Wie schnell ist ein KI-Agent einsatzbereit?", "a": "In der Regel innerhalb von 3 Werktagen. Bei individueller Gestaltung kann es bis zu 10 Werktage dauern." },
+        { "q": "Wie schnell ist ein AI-Agent einsatzbereit?", "a": "In der Regel innerhalb von 3 Werktagen. Bei individueller Gestaltung kann es bis zu 10 Werktage dauern." },
         { "q": "Funktioniert das mit unseren bestehenden Programmen?", "a": "Ja. Wir verbinden Ihre Agenten mit Telefon, Kundensystem, Kalender, E-Mail und nahezu jedem weiteren Programm, das Sie nutzen." },
-        { "q": "Ist das sicher und datenschutzkonform?", "a": "Ja. Datenschutz, klare Zugriffsrechte und Nachvollziehbarkeit gehören zu jeder Lösung — auf Wunsch mit Datenhaltung in Deutschland/EU." },
+        { "q": "Ist das sicher und datenschutzkonform?", "a": "Ja. Datenschutz, klare Zugriffsrechte und Nachvollziehbarkeit gehören zu jeder Lösung." },
         { "q": "Was, wenn wir etwas sehr Spezielles brauchen?", "a": "Dann prüfen wir gemeinsam, ob es umsetzbar ist, und bauen bei Bedarf eine komplett individuelle Lösung. Grenzen gibt es fast keine." },
-        { "q": "Was kostet ein KI-Agent?", "a": "Das lässt sich nicht pauschal sagen — die Preise unterscheiden sich von Agent zu Agent, je nach Umfang und Aufwand. Für ein konkretes Angebot melden Sie sich einfach bei uns." }
+        { "q": "Was kostet ein AI-Agent?", "a": "Das lässt sich nicht pauschal sagen. Die Preise unterscheiden sich von Agent zu Agent, je nach Umfang und Aufwand. Für ein konkretes Angebot melden Sie sich einfach bei uns." }
       ]
     }
   }

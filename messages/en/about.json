@@ -4,12 +4,12 @@
     "hero": {
       "eyebrow": "About",
       "title": "Two founders, one standard: AI that actually works.",
-      "description": "NEXAI isn't a faceless software company. Behind every project it's us in person — Maximilian Trenk and Jason Brian Merklein — with a team from Frankenhardt building digital employees that hold up in real operations."
+      "description": "NEXAI isn't a faceless software company. Behind every project it's us in person, Maximilian Trenk and Jason Brian Merklein, with a team from Frankenhardt building digital employees that hold up in real operations."
     },
     "mission": {
       "eyebrow": "Why we do this",
       "title": "We wanted AI that keeps its promise.",
-      "body": "When we started NEXAI, we kept seeing the same thing: impressive AI demos that take nothing off your plate in everyday work. We set out to do it differently. We — Maximilian and Jason — build digital employees that measurably help from day one: reliable, secure and tailored precisely to each company's processes. We'd rather build one solution that truly runs than ten that just look good. Today we're a growing team — but our standard hasn't changed: technology that takes work off people and gives businesses a real edge."
+      "body": "When we started NEXAI, we kept seeing the same thing: impressive AI demos that take nothing off your plate in everyday work. We set out to do it differently. We, Maximilian and Jason, build digital employees that measurably help from day one: reliable, secure and tailored precisely to each company's processes. We'd rather build one solution that truly runs than ten that just look good. Today we're a growing team, but our standard hasn't changed: technology that takes work off people and gives businesses a real edge."
     },
     "values": {
       "eyebrow": "What matters to us",
@@ -18,7 +18,7 @@
         { "title": "Outcomes over hype", "description": "We deliver measurable value, not buzzwords." },
         { "title": "Bespoke over standard", "description": "Every solution is tailored precisely to your business." },
         { "title": "Security first", "description": "Data protection, clear access rights and traceability come as standard." },
-        { "title": "Speed with substance", "description": "Fast to a first version — clean all the way to operations." },
+        { "title": "Speed with substance", "description": "Fast to a first version, clean all the way to operations." },
         { "title": "Honest advice", "description": "We'll also tell you when AI isn't the answer." },
         { "title": "Partnership", "description": "We think long-term, not project by project." }
       ]

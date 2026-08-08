@@ -29,8 +29,11 @@ export function Hero() {
         </Reveal>
 
         <Reveal delay={0.06}>
-          <h1 className="mt-7 max-w-4xl text-balance text-[clamp(2.5rem,6vw,4.6rem)] font-semibold leading-[1.02] tracking-[-0.03em]">
-            {t("title")}
+          <h1 className="mt-7 max-w-4xl text-[clamp(2.5rem,6vw,4.6rem)] font-semibold leading-[1.03] tracking-[-0.03em]">
+            <span className="text-gradient block">{t("titleLead")}</span>
+            <span className="mt-3 block text-balance text-[0.5em] font-medium leading-[1.15] text-muted">
+              {t("titleRest")}
+            </span>
           </h1>
         </Reveal>
 
@@ -84,7 +87,7 @@ export function Hero() {
             <Button
               href="/services"
               size="lg"
-              variant="ghost"
+              variant="secondary"
               className="w-full sm:w-auto"
             >
               {t("ctaSecondary")}

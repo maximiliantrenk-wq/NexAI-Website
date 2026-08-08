@@ -19,7 +19,7 @@ export function Metrics() {
               delay={i * 0.06}
               className="text-center lg:text-left"
             >
-              <div className="text-gradient text-[2.75rem] font-semibold leading-none tracking-[-0.03em] sm:text-5xl">
+              <div className="text-gradient whitespace-nowrap text-[2.75rem] font-semibold leading-none tracking-[-0.03em] sm:text-5xl">
                 {m.value}
               </div>
               <p className="mt-3 text-sm leading-snug text-muted">{m.label}</p>

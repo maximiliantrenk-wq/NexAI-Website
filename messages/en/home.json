@@ -1,8 +1,9 @@
 {
   "Hero": {
     "eyebrow": "AI Company · Digital Employees",
-    "title": "AI employees that automate your processes — effortlessly.",
-    "subtitle": "We build intelligent AI agents — voice, chat, sales and automation — tailored to your company and fully integrated into your workflows.",
+    "titleLead": "AI employees",
+    "titleRest": "that automate your processes, effortlessly",
+    "subtitle": "We build intelligent AI agents: voice, chat, sales and automation, tailored to your company and fully integrated into your workflows.",
     "ctaPrimary": "Free intro call",
     "ctaSecondary": "Explore services",
     "ctaDemo": "Live demo: call our AI now",
@@ -19,7 +20,7 @@
     "console": {
       "label": "nexai · voice-agent",
       "status": "LIVE",
-      "prompt": "Incoming call — book an appointment",
+      "prompt": "Incoming call, book an appointment",
       "steps": [
         "Greeted caller & understood request",
         "Checked calendar availability",
@@ -33,16 +34,16 @@
     "services": {
       "eyebrow": "What we build",
       "title": "Digital employees for every area.",
-      "description": "Not off-the-shelf chatbots — intelligent AI agents that work like real employees, built for your industry and fully integrated.",
+      "description": "Not off-the-shelf chatbots, but intelligent AI agents that work like real employees, built for your industry and fully integrated.",
       "cta": "See all services",
       "items": [
         {
           "name": "AI Voice Agents",
-          "description": "Phone assistants that answer every call around the clock and reliably book appointments — so no call and no appointment is ever missed again."
+          "description": "Phone assistants that answer every call around the clock and reliably book appointments, so no call and no appointment is ever missed again."
         },
         {
           "name": "AI Chatbots",
-          "description": "Modern chatbots for your website, app or internal systems — they advise, recommend and handle support."
+          "description": "Modern chatbots for your website, app or internal systems: they advise, recommend and handle support."
         },
         {
           "name": "Social Media AI",
@@ -54,11 +55,11 @@
         },
         {
           "name": "Automations",
-          "description": "We automate almost any digital business process — from email and calendar to CRM and ERP."
+          "description": "We automate almost any digital business process, from email and calendar to CRM and ERP."
         },
         {
-          "name": "Websites & Digital Presence",
-          "description": "Modern, fast, conversion-focused websites — connected directly to your AI agents on request."
+          "name": "Inventory & Stock Management",
+          "description": "An agent for stock levels, inventory and reordering, tracked automatically and connected to your systems."
         }
       ],
       "custom": {
@@ -83,18 +84,18 @@
     "process": {
       "eyebrow": "How we work",
       "title": "From idea to digital employee.",
-      "description": "A clear, low-risk path — in weeks, not months.",
+      "description": "A clear, low-risk path: in weeks, not months.",
       "steps": [
         { "n": "01", "title": "Analysis", "description": "We understand your processes and define the right AI agent." },
         { "n": "02", "title": "Development", "description": "We build the agent bespoke and train it on your requirements." },
-        { "n": "03", "title": "Integration", "description": "Secure connection to your systems — phone, CRM, calendar and more." },
+        { "n": "03", "title": "Integration", "description": "Secure connection to your systems: phone, CRM, calendar and more." },
         { "n": "04", "title": "Operations", "description": "Live operation with monitoring, optimisation and ongoing improvement." }
       ]
     },
     "metrics": {
       "items": [
-        { "value": "24/7", "label": "available — no breaks" },
-        { "value": "70%", "label": "less manual work" },
+        { "value": "24/7", "label": "available, no breaks" },
+        { "value": "70-80%", "label": "less manual work" },
         { "value": "3×", "label": "faster response times" },
         { "value": "100%", "label": "custom-built" }
       ]
@@ -102,16 +103,16 @@
     "products": {
       "eyebrow": "Products",
       "title": "Digital employees for every area.",
-      "description": "Ready-made AI solutions that take work off your team — from phone to automation.",
+      "description": "Ready-made AI solutions that take work off your team, from phone to automation.",
       "cta": "View all products",
       "items": [
-        { "slug": "voice-agent", "tag": "Phone", "title": "Voice Agent", "result": "Available 24/7" },
-        { "slug": "chat-agent", "tag": "Website & Chat", "title": "Chat Agent", "result": "Answers in seconds" },
-        { "slug": "automatisierung", "tag": "Automation", "title": "Automation", "result": "−80% manual work" }
+        { "slug": "voice-agent", "tag": "Phone", "title": "Voice Agent", "result": "Available 24/7, books appointments" },
+        { "slug": "chat-agent", "tag": "Website & Chat", "title": "Chat Agent", "result": "Answers around the clock" },
+        { "slug": "automatisierung", "tag": "Automation", "title": "Automation", "result": "80% less manual work" }
       ]
     },
     "testimonial": {
-      "quote": "What matters to us isn't how impressive an AI looks, but what it actually takes off your plate. We build digital employees that measurably help from day one — no more missed calls, no more missed appointments.",
+      "quote": "What matters to us isn't how impressive an AI looks, but what it actually takes off your plate. We build digital employees that measurably help from day one: no more missed calls, no more missed appointments.",
       "author": "Connor Reimann",
       "role": "Head of Sales",
       "company": "NEXAI",
@@ -119,7 +120,7 @@
     },
     "cta": {
       "title": "Ready for your first digital employee?",
-      "description": "Let's find out where AI has the biggest leverage in your business — in a free, no-obligation call.",
+      "description": "Let's find out where AI has the biggest leverage in your business, in a free, no-obligation call.",
       "primary": "Free intro call",
       "secondary": "Explore services"
     }

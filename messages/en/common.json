@@ -1,8 +1,8 @@
 {
   "Meta": {
-    "titleDefault": "NEXAI — Digital Employees & AI Automation",
-    "titleTemplate": "%s — NEXAI",
-    "description": "NEXAI builds intelligent AI employees — voice agents, chatbots, sales agents and custom automations that save time, cut costs and grow revenue. Based in Frankenhardt, working across Germany."
+    "titleDefault": "NEXAI · Digital Employees & AI Automation",
+    "titleTemplate": "%s · NEXAI",
+    "description": "NEXAI builds intelligent AI employees: voice agents, chatbots, sales agents and custom automations that save time, cut costs and grow revenue. Based in Frankenhardt, working across Germany."
   },
   "Nav": {
     "services": "Services",
@@ -19,7 +19,7 @@
     "close": "Close"
   },
   "Footer": {
-    "tagline": "We build digital employees — AI agents that take work off your team and move your business forward.",
+    "tagline": "We build digital employees, AI agents that take work off your team and move your business forward.",
     "product": "Services",
     "company": "Company",
     "legal": "Legal",
@@ -32,10 +32,10 @@
     "rights": "All rights reserved.",
     "location": "Frankenhardt · Working across Germany",
     "newsletterTitle": "Stay in the loop",
-    "newsletterText": "Insights on applied AI — once or twice a month, no spam.",
+    "newsletterText": "Insights on applied AI, once or twice a month, no spam.",
     "newsletterCta": "Subscribe",
     "newsletterPlaceholder": "Email address",
-    "newsletterSuccess": "Thanks — you're subscribed.",
+    "newsletterSuccess": "Thanks, you're subscribed.",
     "newsletterError": "Something went wrong. Please try again."
   },
   "Common": {
