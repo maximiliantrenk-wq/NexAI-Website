@@ -17,10 +17,10 @@ export function Benefits() {
           {items.map((b) => (
             <RevealItem
               key={b.title}
-              className="surface-card rounded-2xl p-7"
+              className="group relative flex h-full flex-col"
             >
               <span className="block size-2 rounded-full bg-gradient-to-r from-blue to-purple shadow-[0_0_12px_var(--color-purple)]" />
-              <h3 className="mt-5 text-[17px] font-semibold tracking-tight">
+              <h3 className="mt-4 text-[17px] font-semibold tracking-tight transition-colors group-hover:text-blue-bright">
                 {b.title}
               </h3>
               <p className="mt-2 text-sm leading-relaxed text-muted">

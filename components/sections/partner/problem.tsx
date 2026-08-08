@@ -21,18 +21,13 @@ export function PartnerProblem() {
           description={t("description")}
         />
 
-        <RevealGroup className="mt-10 sm:mt-14 grid gap-px overflow-hidden rounded-2xl border border-blue/20 bg-line sm:grid-cols-2 lg:grid-cols-4">
+        <RevealGroup className="mt-10 sm:mt-14 grid gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
           {items.map((item, i) => {
             const Icon = ICONS[i] ?? PhoneMissed;
             return (
-              <RevealItem
-                key={item.title}
-                className="group relative bg-bg p-7 transition-colors duration-300 hover:bg-surface"
-              >
-                <span className="grid size-10 place-items-center rounded-lg border border-line bg-white/[0.03] text-subtle transition-colors group-hover:text-blue-bright">
-                  <Icon className="size-[18px]" />
-                </span>
-                <h3 className="mt-5 text-[17px] font-semibold tracking-tight">
+              <RevealItem key={item.title} className="group relative">
+                <Icon className="size-6 text-blue-bright" />
+                <h3 className="mt-4 text-[17px] font-semibold tracking-tight">
                   {item.title}
                 </h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted">

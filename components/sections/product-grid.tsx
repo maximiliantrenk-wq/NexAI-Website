@@ -18,7 +18,7 @@ export function ProductGrid() {
             <RevealItem key={p.slug}>
               <Link
                 href={`/produkte/${p.slug}`}
-                className="surface-card group flex h-full flex-col overflow-hidden rounded-2xl transition-colors duration-300 hover:border-blue/40"
+                className="group flex h-full flex-col overflow-hidden rounded-2xl transition-colors duration-300"
               >
                 <div className="relative aspect-[16/10] overflow-hidden">
                   <div
