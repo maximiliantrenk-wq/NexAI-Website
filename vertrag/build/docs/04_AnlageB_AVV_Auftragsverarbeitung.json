@@ -8,7 +8,7 @@
   },
   {
    "t": "meta",
-   "text": "Stand: Juli 2026"
+   "text": "Stand: August 2026"
   },
   {
    "t": "p",
@@ -20,7 +20,7 @@
   },
   {
    "t": "p",
-   "text": "**Auftragsverarbeiter:** NexAI – Next Generation Intelligence GbR, Untere Bergstraße 13, 74586 Frankenhardt-Honhardt, Deutschland, vertreten durch die Gesellschafter Maximilian Trenk und Jason Brian Merklein, E-Mail mbt@nex-a-i.com, Telefon 0176 20147646 — nachfolgend \"NexAI\"."
+   "text": "**Auftragsverarbeiter:** NexAI – Next Generation Artificial Intelligence GbR, Untere Bergstraße 13, 74586 Frankenhardt-Honhardt, Deutschland, vertreten durch die Gesellschafter Maximilian Trenk und Jason Brian Merklein, E-Mail mbt@nex-a-i.com, Telefon 0176 80714816 — nachfolgend \"NexAI\"."
   },
   {
    "t": "p",
@@ -225,7 +225,7 @@
    "items": [
     "Erfolgt eine Verarbeitung durch einen Unterauftragsverarbeiter in einem Drittland, stellt NexAI sicher, dass die Anforderungen der Art. 44 ff. DSGVO eingehalten werden.",
     "Vorrangig stützt sich der Transfer auf einen **Angemessenheitsbeschluss** der Europäischen Kommission, insbesondere das EU-U.S. Data Privacy Framework (DPF), sofern der jeweilige Empfänger zertifiziert ist.",
-    "Hilfsweise – insbesondere wenn keine DPF-Zertifizierung vorliegt (bei den in Anhang 2 gekennzeichneten Empfängern, etwa Vapi und ElevenLabs, vorsorglich der SCC-Weg) – werden die **EU-Standardvertragsklauseln** (Durchführungsbeschluss (EU) 2021/914), **Modul 3 (Auftragsverarbeiter an Unterauftragsverarbeiter)**, abgeschlossen, ergänzt um erforderliche **Zusatzmaßnahmen** und eine **Transfer-Folgenabschätzung (Transfer Impact Assessment, TIA)**.",
+    "Hilfsweise – insbesondere wenn keine DPF-Zertifizierung vorliegt (bei den in Anhang 2 gekennzeichneten Empfängern, etwa Vapi und Deepgram (USA) sowie dem in China ansässigen Anbieter der Sprachsynthese, vorsorglich der SCC-Weg) – werden die **EU-Standardvertragsklauseln** (Durchführungsbeschluss (EU) 2021/914), **Modul 3 (Auftragsverarbeiter an Unterauftragsverarbeiter)**, abgeschlossen, ergänzt um erforderliche **Zusatzmaßnahmen** und eine **Transfer-Folgenabschätzung (Transfer Impact Assessment, TIA)**. Für Übermittlungen nach China besteht kein Angemessenheitsbeschluss; die Übermittlung erfolgt daher ausschließlich auf Grundlage der Standardvertragsklauseln nebst Zusatzmaßnahmen und mit erhöhtem Restrisiko.",
     "NexAI stellt dem Kunden auf Anfrage Nachweise über die getroffenen Transfergarantien in geeigneter Form zur Verfügung."
    ]
   },
@@ -526,22 +526,15 @@
      "Vapi Inc.",
      "USA",
      "Voice-Agent-Plattform (Sprachdialog, Telefonie-Orchestrierung)",
-     "Gesprächsinhalte, Metadaten, ggf. Kontaktdaten",
-     "EU-SCC Modul 3 + Zusatzmaßnahmen + TIA (vorsorglich)"
+     "Gesprächsinhalte, Metadaten, Rufnummern",
+     "EU-SCC Modul 3 + Zusatzmaßnahmen + TIA (kein DPF)"
     ],
     [
-     "Twilio Inc.",
+     "Deepgram, Inc.",
      "USA",
-     "Telefonie / Messaging (Verbindungsaufbau, SMS)",
-     "Rufnummern, Verbindungs-/Metadaten, ggf. Nachrichteninhalte",
-     "DPF, hilfsweise EU-SCC Modul 3"
-    ],
-    [
-     "Make (Celonis / Integromat s.r.o.)",
-     "EU (Tschechien)",
-     "Automatisierungen / Workflow-Orchestrierung",
-     "Vorgangs-, Kontakt-, Termindaten, Metadaten",
-     "EU-intern; kein Drittlandtransfer"
+     "Spracherkennung (Speech-to-Text)",
+     "Audio-/Sprachdaten, daraus erzeugte Transkripte, Metadaten",
+     "EU-SCC Modul 3 + Zusatzmaßnahmen + TIA (kein DPF)"
     ],
     [
      "OpenAI Ireland Ltd. / OpenAI, L.L.C.",
@@ -551,25 +544,32 @@
      "DPF, hilfsweise EU-SCC Modul 3; No-Training-Konfiguration"
     ],
     [
-     "ElevenLabs Inc.",
-     "USA",
-     "Sprachsynthese / Text-to-Speech (und ggf. STT)",
-     "Textinhalte, Audio-/Metadaten",
-     "EU-SCC Modul 3 + Zusatzmaßnahmen + TIA (vorsorglich)"
+     "MiniMax (Shanghai Xiyu Technology Co., Ltd.)",
+     "China",
+     "Sprachsynthese / Text-to-Speech",
+     "Antworttext, Audio-/Metadaten",
+     "EU-SCC Modul 3 + Zusatzmaßnahmen + TIA; kein Angemessenheitsbeschluss (China)"
     ],
     [
      "Google LLC / Google Ireland Ltd.",
      "EU / USA",
-     "Cloud-, Kalender-, Workspace- und ggf. Sprachdienste",
+     "Kalender-, Sheets-, Gmail-/Workspace-Dienste (Terminverwaltung, Bestätigungen, Lead-Ablage)",
      "Termin-, Kontakt-, Vorgangsdaten, Metadaten",
      "DPF, hilfsweise EU-SCC Modul 3"
     ],
     [
-     "Hosting-Provider",
-     "____ (EU, soweit möglich)",
-     "Hosting / Betrieb Website und Anwendungen",
-     "je nach Anwendung: Kontakt-, Vorgangs-, Protokolldaten",
-     "EU-intern bzw. DPF/SCC je nach Standort"
+     "easybell GmbH",
+     "Deutschland",
+     "Telefonie-Anbindung (SIP-Trunk)",
+     "Rufnummern, Verbindungs-/Metadaten",
+     "EU-intern; kein Drittlandtransfer"
+    ],
+    [
+     "Hetzner Online GmbH",
+     "Deutschland",
+     "Hosting/Betrieb der von NexAI selbst betriebenen Automatisierungs- und Speicherinstanz (n8n)",
+     "je nach Agent: Kontakt-, Vorgangs-, Termin-, Protokolldaten",
+     "EU-intern; kein Drittlandtransfer"
     ]
    ]
   },
