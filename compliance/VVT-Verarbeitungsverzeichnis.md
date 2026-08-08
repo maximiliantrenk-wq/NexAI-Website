@@ -32,8 +32,8 @@ Empfänger-Kürzel (Drittland-Mechanismus): **Vercel** (US, DPF) · **Resend** (
 - **Rechtsgrundlage:** Art. 6(1)b. **Empfänger:** n8n@Hetzner, Google Calendar; Resend (interne Notiz). **Drittland:** IE/US (DPF/SCC). **Löschung:** 12 Monate.
 
 ### A6 KI-Telefon-/Sprachassistent (eigene Nummer/Demo)
-- **Zweck:** Terminvereinbarung/Erreichbarkeit per Telefon. **Betroffene:** Anrufer. **Daten:** Rufnummer, Name, Anliegen, Wunschtermin, ggf. E-Mail, Verbindungsdaten, **Gesprächsaufzeichnung**.
-- **Rechtsgrundlage:** Art. 6(1)a (Aufzeichnung, Einwilligung), Art. 6(1)b/f (Terminbearbeitung). **Empfänger:** Vapi, Deepgram, OpenAI (LLM+TTS), easybell, n8n@Hetzner, Google. **Drittland:** USA (SCC+TIA; inkl. Anrufaufzeichnungen bei Vapi), IE/US (DPF/SCC). **Löschung:** Termindaten 6 Monate, **Anrufaufzeichnungen 30 Tage**. **Besonderheit:** Ansage zu Gesprächsbeginn (KI-Hinweis + Aufzeichnung; § 201 StGB / Art. 50 AI Act); DSFA erforderlich.
+- **Zweck:** Terminvereinbarung/Erreichbarkeit per Telefon. **Betroffene:** Anrufer. **Daten:** Rufnummer, Name, Anliegen, Wunschtermin, ggf. E-Mail, Verbindungsdaten.
+- **Rechtsgrundlage:** Art. 6(1)b/f. **Empfänger:** Vapi, Deepgram, OpenAI (LLM+TTS), easybell, n8n@Hetzner, Google. **Drittland:** USA (SCC+TIA), IE/US (DPF/SCC). **Löschung:** Termindaten 6 Monate; **keine Anrufaufzeichnung** (in Vapi deaktiviert). **Besonderheit:** KI-Ansage zu Gesprächsbeginn (Art. 50 AI Act); DSFA prüfen.
 
 ### A7 Neukundengewinnung / Lead-Recherche (Vertrieb)
 - **Zweck:** Akquise/B2B-Ansprache. **Betroffene:** Entscheider/Ansprechpartner potenzieller Kunden. **Daten:** Name, Funktion, Firma, geschäftliche E-Mail/Telefon, Quelle.
@@ -51,7 +51,7 @@ Empfänger-Kürzel (Drittland-Mechanismus): **Vercel** (US, DPF) · **Resend** (
 
 | Verarbeitung (Agent) | Betroffene | Datenkategorien | Empfänger/Subunternehmer | Drittland | Löschung |
 |---|---|---|---|---|---|
-| Voice Agent (Inbound) | Anrufer des Kunden | Rufnummer, Gesprächsinhalt/-aufzeichnung, Termin, Metadaten | Vapi, Deepgram, OpenAI (LLM+TTS), easybell, n8n@Hetzner, Google | US/IE (SCC/TIA bzw. DPF) | Termine ≤ 6 Mon.; Aufnahmen 30 Tage |
+| Voice Agent (Inbound) | Anrufer des Kunden | Rufnummer, Gesprächsinhalt (flüchtig), Termin, Metadaten | Vapi, Deepgram, OpenAI (LLM+TTS), easybell, n8n@Hetzner, Google | US/IE (SCC/TIA bzw. DPF) | Termine ≤ 6 Mon.; keine Aufnahme (deaktiviert) |
 | Chat Agent | Chat-Kontakte des Kunden | Nachrichten, Kontaktdaten, Anliegen | n8n@Hetzner, OpenAI, Google | IE/US (DPF/SCC); EU | ≤ 6 Mon. |
 | Social-Media-Agent | Social-Kontakte des Kunden | Nachrichten, Profil-/Kontaktdaten | n8n@Hetzner, OpenAI, Plattform-APIs | je Plattform | ≤ 6 Mon. |
 | Automatisierungen | je nach Workflow | Vorgangs-, Kontakt-, Termindaten | n8n@Hetzner, angebundene Dienste | i. d. R. EU | ≤ 6 Mon. |
