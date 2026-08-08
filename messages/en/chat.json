@@ -3,7 +3,7 @@
     "launcher": "Open chat",
     "title": "NEXAI AI Assistant",
     "status": "Online · Usually replies instantly",
-    "greeting": "Hi! 👋 I'm NEXAI's AI assistant. Ask me about our AI solutions — or book a consultation right here.",
+    "greeting": "Hi! 👋 I'm NEXAI's AI assistant. Ask me about our AI solutions. Or book a consultation right here.",
     "placeholder": "Type a message …",
     "send": "Send message",
     "close": "Close chat",
@@ -14,7 +14,7 @@
       "appointment": "Book an appointment",
       "human": "Talk to a person"
     },
-    "error": "Sorry, we're having a technical issue right now. Please try again in a moment — or call us directly: +49 176 80714816.",
+    "error": "Sorry, we're having a technical issue right now. Please try again in a moment, or call us directly: +49 176 80714816.",
     "disclaimer": "AI assistant · May make mistakes",
     "compliance": "GDPR-compliant · EU",
     "poweredBy": "powered by NEXAI",

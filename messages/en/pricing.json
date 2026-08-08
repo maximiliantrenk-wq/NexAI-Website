@@ -4,7 +4,7 @@
     "hero": {
       "eyebrow": "Pricing",
       "title": "Pricing as individual as your agent.",
-      "description": "Every digital employee is different — so prices vary from agent to agent. Tell us what you need and you'll get a tailored offer."
+      "description": "Every digital employee is different, so prices vary from agent to agent. Tell us what you need and you'll get a tailored offer."
     },
     "popular": "Popular",
     "cta": "Book a call",
@@ -13,7 +13,7 @@
         "name": "Individual",
         "price": "Custom",
         "period": "/ on request",
-        "description": "Entirely your way — services, scope and billing fully flexible. Prices vary from agent to agent; just get in touch and we'll share the details.",
+        "description": "Entirely your way: services, scope and billing fully flexible. Prices vary from agent to agent; just get in touch and we'll share the details.",
         "features": [
           "Tailor-made solution",
           "Freely chosen services",
@@ -28,10 +28,10 @@
       "eyebrow": "FAQ",
       "title": "Common questions about pricing & working together.",
       "items": [
-        { "q": "What does an agent cost?", "a": "There's no one-size-fits-all price — it varies from agent to agent, depending on scope and effort. Tell us what you need and you'll get a transparent offer." },
+        { "q": "What does an agent cost?", "a": "There's no one-size-fits-all price. It varies from agent to agent, depending on scope and effort. Tell us what you need and you'll get a transparent offer." },
         { "q": "How fast is the AI ready to use?", "a": "Usually within 3 business days. With custom development it can take up to 10 business days." },
-        { "q": "Can I cancel monthly?", "a": "Yes. The engagement can be cancelled monthly — no long commitment. We can also bill yearly if you prefer." },
-        { "q": "Can I start small and expand later?", "a": "Of course. Many start with one agent and add more later — you only pay for what you actually use." },
+        { "q": "Can I cancel monthly?", "a": "Yes. The engagement can be cancelled monthly, no long commitment. We can also bill yearly if you prefer." },
+        { "q": "Can I start small and expand later?", "a": "Of course. Many start with one agent and add more later. You only pay for what you actually use." },
         { "q": "What if I need something special?", "a": "That's exactly what the individual solution is for: we put together services, scope and billing precisely to your wishes." },
         { "q": "Are there hidden costs?", "a": "No. You get a transparent offer upfront. Any one-time setup or special requests are agreed openly before we start." }
       ]

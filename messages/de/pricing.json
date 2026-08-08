@@ -4,7 +4,7 @@
     "hero": {
       "eyebrow": "Preise",
       "title": "Preise so individuell wie Ihr Agent.",
-      "description": "Jeder digitale Mitarbeiter ist anders — deshalb unterscheiden sich die Preise von Agent zu Agent. Sagen Sie uns, was Sie brauchen, und Sie bekommen ein passendes Angebot."
+      "description": "Jeder digitale Mitarbeiter ist anders, deshalb unterscheiden sich die Preise von Agent zu Agent. Sagen Sie uns, was Sie brauchen, und Sie bekommen ein passendes Angebot."
     },
     "popular": "Beliebt",
     "cta": "Gespräch vereinbaren",
@@ -13,7 +13,7 @@
         "name": "Individual",
         "price": "Individuell",
         "period": "/ nach Absprache",
-        "description": "Ganz nach Ihren Wünschen — Leistungen, Umfang und Abrechnung frei wählbar. Die Preise unterscheiden sich von Agent zu Agent; für nähere Infos melden Sie sich einfach bei uns.",
+        "description": "Ganz nach Ihren Wünschen: Leistungen, Umfang und Abrechnung frei wählbar. Die Preise unterscheiden sich von Agent zu Agent; für nähere Infos melden Sie sich einfach bei uns.",
         "features": [
           "Maßgeschneiderte Lösung",
           "Frei wählbare Leistungen",
@@ -28,10 +28,10 @@
       "eyebrow": "FAQ",
       "title": "Häufige Fragen zu Preisen & Zusammenarbeit.",
       "items": [
-        { "q": "Was kostet ein Agent?", "a": "Das lässt sich nicht pauschal sagen — die Preise unterscheiden sich von Agent zu Agent, je nach Umfang und Aufwand. Sagen Sie uns, was Sie brauchen, und Sie bekommen ein transparentes Angebot." },
-        { "q": "Wie schnell ist die KI einsatzbereit?", "a": "In der Regel innerhalb von 3 Werktagen. Bei individueller Gestaltung kann es bis zu 10 Werktage dauern." },
-        { "q": "Kann ich monatlich kündigen?", "a": "Ja. Die Zusammenarbeit ist monatlich kündbar — keine lange Bindung. Auf Wunsch rechnen wir auch jährlich ab." },
-        { "q": "Kann ich klein starten und später erweitern?", "a": "Natürlich. Viele starten mit einem Agenten und ergänzen später weitere — Sie zahlen nur für das, was Sie wirklich nutzen." },
+        { "q": "Was kostet ein Agent?", "a": "Das lässt sich nicht pauschal sagen. Die Preise unterscheiden sich von Agent zu Agent, je nach Umfang und Aufwand. Sagen Sie uns, was Sie brauchen, und Sie bekommen ein transparentes Angebot." },
+        { "q": "Wie schnell ist die AI einsatzbereit?", "a": "In der Regel innerhalb von 3 Werktagen. Bei individueller Gestaltung kann es bis zu 10 Werktage dauern." },
+        { "q": "Kann ich monatlich kündigen?", "a": "Ja. Die Zusammenarbeit ist monatlich kündbar, keine lange Bindung. Auf Wunsch rechnen wir auch jährlich ab." },
+        { "q": "Kann ich klein starten und später erweitern?", "a": "Natürlich. Viele starten mit einem Agenten und ergänzen später weitere. Sie zahlen nur für das, was Sie wirklich nutzen." },
         { "q": "Was, wenn ich etwas Spezielles brauche?", "a": "Genau dafür ist die individuelle Lösung da: Wir stellen Leistungen, Umfang und Abrechnung genau nach Ihren Wünschen zusammen." },
         { "q": "Kommen versteckte Kosten dazu?", "a": "Nein. Sie bekommen vorab ein transparentes Angebot. Einmalige Einrichtung oder Sonderwünsche besprechen wir offen, bevor es losgeht." }
       ]

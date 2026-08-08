@@ -4,7 +4,7 @@
     "hero": {
       "eyebrow": "ROI Calculator",
       "title": "What do missed calls really cost you?",
-      "description": "In a few seconds, work out how much time and revenue NEXAI brings back — with your own numbers."
+      "description": "In a few seconds, work out how much time and revenue NEXAI brings back, with your own numbers."
     },
     "modeLabel": "What would you like to calculate?",
     "mode": { "money": "Revenue", "time": "Time" },
@@ -31,7 +31,7 @@
     },
     "resultPer": "per {period}",
     "units": { "h": "h", "min": "min" },
-    "note": "Non-binding example calculation. The share of calls captured by the voice agent is typically around 70–80 % depending on setup (default 75 %). Annual projection based on 5 working days per week (260 days).",
+    "note": "Non-binding example calculation. The share of calls captured by the voice agent is typically around 70 to 80 % depending on setup (default 75 %). Annual projection based on 5 working days per week (260 days).",
     "cta": "Free intro call",
     "ctaHint": "We'll show you how realistic this number is for your business."
   }

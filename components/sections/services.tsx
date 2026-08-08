@@ -1,7 +1,7 @@
 import {
   ArrowUpRight,
   AtSign,
-  Globe,
+  Boxes,
   MessagesSquare,
   PhoneCall,
   Sparkles,
@@ -19,7 +19,7 @@ import { Glow } from "@/components/ui/glow";
 type ServiceItem = { name: string; description: string };
 type Custom = { tag: string; title: string; description: string; cta: string };
 
-const ICONS = [PhoneCall, MessagesSquare, AtSign, Target, Workflow, Globe];
+const ICONS = [PhoneCall, MessagesSquare, AtSign, Target, Workflow, Boxes];
 
 export function Services() {
   const t = useTranslations("Home.services");

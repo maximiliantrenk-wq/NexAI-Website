@@ -25,10 +25,10 @@
     },
     "booking": {
       "title": "Book a call",
-      "description": "Pick a time that suits you — 30 minutes, no obligation, by phone or video call.",
+      "description": "Pick a time that suits you: 30 minutes, no obligation, by phone or video call.",
       "showSlots": "Show available times",
       "loading": "Loading available times …",
-      "unavailable": "Booking is temporarily unavailable. Please use the form or give us a call — we'll find a time quickly.",
+      "unavailable": "Booking is temporarily unavailable. Please use the form or give us a call. We'll find a time quickly.",
       "empty": "There are no free slots in the next two weeks. Send us a message through the form and we'll find a time together.",
       "tzNote": "All times in German time (Europe/Berlin). Duration: 30 minutes.",
       "back": "Pick another time",

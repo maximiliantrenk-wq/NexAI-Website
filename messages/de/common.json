@@ -1,8 +1,8 @@
 {
   "Meta": {
-    "titleDefault": "NEXAI — Digitale Mitarbeiter & KI-Automatisierung",
-    "titleTemplate": "%s — NEXAI",
-    "description": "NEXAI entwickelt intelligente KI-Mitarbeiter — Voice Agents, Chatbots, Vertriebs-Agenten und individuelle Automatisierungen, die Zeit sparen, Kosten senken und Umsatz steigern. Aus Frankenhardt, deutschlandweit."
+    "titleDefault": "NEXAI · Digitale Mitarbeiter & AI-Automatisierung",
+    "titleTemplate": "%s · NEXAI",
+    "description": "NEXAI entwickelt intelligente AI-Mitarbeiter: Voice Agents, Chatbots, Vertriebs-Agenten und individuelle Automatisierungen, die Zeit sparen, Kosten senken und Umsatz steigern. Aus Frankenhardt, deutschlandweit."
   },
   "Nav": {
     "services": "Leistungen",
@@ -19,7 +19,7 @@
     "close": "Schließen"
   },
   "Footer": {
-    "tagline": "Wir entwickeln digitale Mitarbeiter — KI-Agenten, die Ihr Unternehmen entlasten und voranbringen.",
+    "tagline": "Wir entwickeln digitale Mitarbeiter, AI-Agenten, die Ihr Unternehmen entlasten und voranbringen.",
     "product": "Leistungen",
     "company": "Unternehmen",
     "legal": "Rechtliches",
@@ -32,10 +32,10 @@
     "rights": "Alle Rechte vorbehalten.",
     "location": "Frankenhardt · Deutschlandweit tätig",
     "newsletterTitle": "Bleiben Sie informiert",
-    "newsletterText": "Insights zu angewandter KI — ein bis zwei Mal im Monat, kein Spam.",
+    "newsletterText": "Insights zu angewandter AI, ein bis zwei Mal im Monat, kein Spam.",
     "newsletterCta": "Abonnieren",
     "newsletterPlaceholder": "E-Mail-Adresse",
-    "newsletterSuccess": "Danke — Sie sind dabei.",
+    "newsletterSuccess": "Danke, Sie sind dabei.",
     "newsletterError": "Hat nicht geklappt. Bitte später erneut."
   },
   "Common": {

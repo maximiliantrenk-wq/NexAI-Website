@@ -25,10 +25,10 @@
     },
     "booking": {
       "title": "Termin buchen",
-      "description": "Suchen Sie sich einen freien Termin aus — 30 Minuten, unverbindlich, per Telefon oder Videocall.",
+      "description": "Suchen Sie sich einen freien Termin aus: 30 Minuten, unverbindlich, per Telefon oder Videocall.",
       "showSlots": "Freie Termine anzeigen",
       "loading": "Freie Termine werden geladen …",
-      "unavailable": "Die Terminbuchung ist gerade nicht erreichbar. Schreiben Sie uns bitte über das Formular oder rufen Sie an — wir finden schnell einen Termin.",
+      "unavailable": "Die Terminbuchung ist gerade nicht erreichbar. Schreiben Sie uns bitte über das Formular oder rufen Sie an. Wir finden schnell einen Termin.",
       "empty": "In den nächsten zwei Wochen ist leider kein Termin mehr frei. Schreiben Sie uns über das Formular, dann finden wir gemeinsam einen passenden Zeitpunkt.",
       "tzNote": "Alle Zeiten in deutscher Zeit (Europe/Berlin). Dauer: 30 Minuten.",
       "back": "Anderen Termin wählen",

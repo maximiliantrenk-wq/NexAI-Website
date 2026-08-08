@@ -4,16 +4,16 @@
     "hero": {
       "eyebrow": "Services",
       "title": "Intelligent AI employees for every area.",
-      "description": "From phone and chat to social media, sales and the automation of your workflows — we tailor every solution to you and build it into your day-to-day."
+      "description": "From phone and chat to social media, sales and the automation of your workflows: we tailor every solution to you and build it into your day-to-day."
     },
     "list": {
       "eyebrow": "Our services",
-      "title": "Seven ways to take work off your plate.",
+      "title": "Six ways to take work off your plate.",
       "capabilitiesLabel": "What it can do",
       "items": [
         {
           "name": "Voice Agent",
-          "summary": "A phone assistant that answers every call around the clock — so no appointment and no customer is ever lost. It works like a real employee, for any industry.",
+          "summary": "A phone assistant that answers every call around the clock, so no appointment and no customer is ever lost. It works like a real employee, for any industry.",
           "features": [
             "Answers calls",
             "Advises customers & answers questions",
@@ -55,7 +55,7 @@
         },
         {
           "name": "Sales & Outreach Agent",
-          "summary": "An agent that finds the right customers, scores them and prepares the personal outreach — all by itself.",
+          "summary": "An agent that finds the right customers, scores them and prepares the personal outreach, all by itself.",
           "features": [
             "Finds matching companies",
             "Researches contacts",
@@ -82,7 +82,7 @@
         },
         {
           "name": "Custom AI Agents",
-          "summary": "For special cases we build a solution entirely your way. We check together what's possible — there are almost no limits.",
+          "summary": "For special cases we build a solution entirely your way. We check together what's possible. There are almost no limits.",
           "features": [
             "Inventory & stock management",
             "Production & quality control",
@@ -101,7 +101,7 @@
       "eyebrow": "Our philosophy",
       "lead": "We don't sell software.",
       "headline": "We build digital employees.",
-      "body": "Our AI agents take over repetitive tasks, support your team and free up time for what really matters. Every solution is planned individually and tailored precisely to your day-to-day — with the goal of making your business more successful for the long term."
+      "body": "Our AI agents take over repetitive tasks, support your team and free up time for what really matters. Every solution is planned individually and tailored precisely to your day-to-day, with the goal of making your business more successful for the long term."
     },
     "faq": {
       "eyebrow": "FAQ",
@@ -109,9 +109,9 @@
       "items": [
         { "q": "How quickly is an AI agent ready?", "a": "Usually within 3 business days. With custom development it can take up to 10 business days." },
         { "q": "Does it work with our existing programs?", "a": "Yes. We connect your agents to your phone, customer system, calendar, email and almost any other program you use." },
-        { "q": "Is it secure and privacy-compliant?", "a": "Yes. Data protection, clear access rights and traceability are part of every solution — with data kept in Germany/EU on request." },
+        { "q": "Is it secure and privacy-compliant?", "a": "Yes. Data protection, clear access rights and traceability are part of every solution." },
         { "q": "What if we need something very specific?", "a": "Then we check together whether it's feasible and, if needed, build a fully custom solution. There are almost no limits." },
-        { "q": "What does an AI agent cost?", "a": "There's no one-size-fits-all price — it varies from agent to agent, depending on scope and effort. Just get in touch and we'll put together a transparent offer." }
+        { "q": "What does an AI agent cost?", "a": "There's no one-size-fits-all price. It varies from agent to agent, depending on scope and effort. Just get in touch and we'll put together a transparent offer." }
       ]
     }
   }

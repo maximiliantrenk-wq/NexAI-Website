@@ -1,16 +1,17 @@
 {
   "Hero": {
-    "eyebrow": "KI-Unternehmen · Digitale Mitarbeiter",
-    "title": "KI-Mitarbeiter, die Prozesse automatisieren – ohne Aufwand.",
-    "subtitle": "Wir entwickeln intelligente KI-Agenten — Voice, Chat, Vertrieb und Automatisierung — individuell auf Ihr Unternehmen zugeschnitten und vollständig in Ihre Abläufe integriert.",
+    "eyebrow": "AI-Unternehmen · Digitale Mitarbeiter",
+    "titleLead": "AI-Mitarbeiter",
+    "titleRest": "die Prozesse automatisieren, ohne Aufwand",
+    "subtitle": "Wir entwickeln intelligente AI-Agenten: Voice, Chat, Vertrieb und Automatisierung, individuell auf Ihr Unternehmen zugeschnitten und vollständig in Ihre Abläufe integriert.",
     "ctaPrimary": "Kostenloses Erstgespräch",
     "ctaSecondary": "Leistungen ansehen",
-    "ctaDemo": "Live Demo: KI jetzt anrufen",
+    "ctaDemo": "Live Demo: AI jetzt anrufen",
     "ctaRoi": "ROI berechnen",
     "demoPhone": "07959 3100191",
     "demoHint": "rund um die Uhr erreichbar",
     "demoMaintenance": "Die Live-Demo ist wegen Wartungsarbeiten momentan nicht verfügbar.",
-    "trust": "Für Unternehmen, die mit KI schneller wachsen wollen",
+    "trust": "Für Unternehmen, die mit AI schneller wachsen wollen",
     "badges": [
       { "label": "DSGVO-konform" },
       { "label": "Deutsches Unternehmen" },
@@ -19,7 +20,7 @@
     "console": {
       "label": "nexai · voice-agent",
       "status": "LIVE",
-      "prompt": "Eingehender Anruf — Termin vereinbaren",
+      "prompt": "Eingehender Anruf, Termin vereinbaren",
       "steps": [
         "Anrufer begrüßt & Anliegen erkannt",
         "Verfügbarkeit im Kalender geprüft",
@@ -33,16 +34,16 @@
     "services": {
       "eyebrow": "Was wir bauen",
       "title": "Digitale Mitarbeiter für jeden Bereich.",
-      "description": "Keine Standard-Chatbots — intelligente KI-Agenten, die wie echte Mitarbeiter arbeiten, individuell für Ihre Branche entwickelt und voll integriert.",
+      "description": "Keine Standard-Chatbots, sondern intelligente AI-Agenten, die wie echte Mitarbeiter arbeiten, individuell für Ihre Branche entwickelt und voll integriert.",
       "cta": "Alle Leistungen ansehen",
       "items": [
         {
           "name": "AI Voice Agents",
-          "description": "Telefonassistenten, die rund um die Uhr jeden Anruf annehmen und Termine zuverlässig buchen — damit kein Anruf und kein Termin mehr verloren geht."
+          "description": "Telefonassistenten, die rund um die Uhr jeden Anruf annehmen und Termine zuverlässig buchen, damit kein Anruf und kein Termin mehr verloren geht."
         },
         {
           "name": "AI Chatbots",
-          "description": "Moderne Chatbots für Webseite, App oder interne Systeme — beraten, empfehlen und übernehmen den Support."
+          "description": "Moderne Chatbots für Webseite, App oder interne Systeme: beraten, empfehlen und übernehmen den Support."
         },
         {
           "name": "Social Media AI",
@@ -54,17 +55,17 @@
         },
         {
           "name": "Automatisierungen",
-          "description": "Wir automatisieren nahezu jeden digitalen Geschäftsprozess — von E-Mail und Kalender bis CRM und ERP."
+          "description": "Wir automatisieren nahezu jeden digitalen Geschäftsprozess, von E-Mail und Kalender bis CRM und ERP."
         },
         {
-          "name": "Webseiten & digitale Präsenz",
-          "description": "Moderne, schnelle und conversionstarke Webseiten — auf Wunsch direkt mit Ihren KI-Agenten verbunden."
+          "name": "Lagerverwaltung & Inventur",
+          "description": "Ein Agent für Bestände, Inventur und Nachbestellung, automatisch erfasst und in Ihre Systeme integriert."
         }
       ],
       "custom": {
-        "tag": "Individuelle KI-Agenten",
+        "tag": "Individuelle AI-Agenten",
         "title": "Sie haben eine besondere Idee?",
-        "description": "Jedes Unternehmen arbeitet anders. Für Spezialfälle prüfen wir gemeinsam die technische Machbarkeit und entwickeln einen maßgeschneiderten KI-Agenten. Es gibt nahezu keine festen Grenzen.",
+        "description": "Jedes Unternehmen arbeitet anders. Für Spezialfälle prüfen wir gemeinsam die technische Machbarkeit und entwickeln einen maßgeschneiderten AI-Agenten. Es gibt nahezu keine festen Grenzen.",
         "cta": "Machbarkeit besprechen"
       }
     },
@@ -72,7 +73,7 @@
       "eyebrow": "Wie wir arbeiten",
       "title": "Ein Team. Von der Idee bis zum Betrieb.",
       "items": [
-        { "title": "Analyse & Beratung", "description": "Wir finden die Prozesse, in denen KI den größten Hebel hat." },
+        { "title": "Analyse & Beratung", "description": "Wir finden die Prozesse, in denen AI den größten Hebel hat." },
         { "title": "Individuelle Entwicklung", "description": "Jeder Agent wird exakt auf Ihre Abläufe zugeschnitten." },
         { "title": "Volle Integration", "description": "Nahtlos verbunden mit Telefon, CRM, Kalender, E-Mail & Co." },
         { "title": "Sicher & DSGVO-konform", "description": "Datenschutz, Zugriffskontrolle und Nachvollziehbarkeit inklusive." },
@@ -83,18 +84,18 @@
     "process": {
       "eyebrow": "Vorgehen",
       "title": "Von der Idee zum digitalen Mitarbeiter.",
-      "description": "Ein klarer, risikoarmer Weg — in Wochen, nicht Monaten.",
+      "description": "Ein klarer, risikoarmer Weg: in Wochen, nicht Monaten.",
       "steps": [
-        { "n": "01", "title": "Analyse", "description": "Wir verstehen Ihre Prozesse und definieren den passenden KI-Agenten." },
+        { "n": "01", "title": "Analyse", "description": "Wir verstehen Ihre Prozesse und definieren den passenden AI-Agenten." },
         { "n": "02", "title": "Entwicklung", "description": "Wir bauen den Agenten individuell und trainieren ihn auf Ihre Anforderungen." },
-        { "n": "03", "title": "Integration", "description": "Sichere Anbindung an Ihre Systeme — Telefon, CRM, Kalender und mehr." },
+        { "n": "03", "title": "Integration", "description": "Sichere Anbindung an Ihre Systeme: Telefon, CRM, Kalender und mehr." },
         { "n": "04", "title": "Betrieb", "description": "Live-Betrieb mit Monitoring, Optimierung und laufender Weiterentwicklung." }
       ]
     },
     "metrics": {
       "items": [
-        { "value": "24/7", "label": "erreichbar — ohne Pausen" },
-        { "value": "70%", "label": "weniger manuelle Arbeit" },
+        { "value": "24/7", "label": "erreichbar, ohne Pausen" },
+        { "value": "70-80%", "label": "weniger manuelle Arbeit" },
         { "value": "3×", "label": "schnellere Reaktionszeiten" },
         { "value": "100%", "label": "individuell entwickelt" }
       ]
@@ -102,16 +103,16 @@
     "products": {
       "eyebrow": "Produkte",
       "title": "Digitale Mitarbeiter für jeden Bereich.",
-      "description": "Fertige KI-Lösungen, die Ihr Team entlasten — vom Telefon bis zur Automatisierung.",
+      "description": "Fertige AI-Lösungen, die Ihr Team entlasten, vom Telefon bis zur Automatisierung.",
       "cta": "Alle Produkte ansehen",
       "items": [
-        { "slug": "voice-agent", "tag": "Telefon", "title": "Voice Agent", "result": "24/7 erreichbar" },
-        { "slug": "chat-agent", "tag": "Website & Chat", "title": "Chat Agent", "result": "Antwort in Sekunden" },
-        { "slug": "automatisierung", "tag": "Automatisierung", "title": "Automatisierung", "result": "−80% Handarbeit" }
+        { "slug": "voice-agent", "tag": "Telefon", "title": "Voice Agent", "result": "24/7 erreichbar & Terminvergabe" },
+        { "slug": "chat-agent", "tag": "Website & Chat", "title": "Chat Agent", "result": "Auskunft rund um die Uhr" },
+        { "slug": "automatisierung", "tag": "Automatisierung", "title": "Automatisierung", "result": "80% weniger Handarbeit" }
       ]
     },
     "testimonial": {
-      "quote": "Für uns zählt nicht, wie beeindruckend eine KI wirkt, sondern was sie im Alltag wirklich abnimmt. Wir entwickeln digitale Mitarbeiter, die ab dem ersten Tag messbar entlasten — kein verpasster Anruf, kein verpasster Termin mehr.",
+      "quote": "Für uns zählt nicht, wie beeindruckend eine AI wirkt, sondern was sie im Alltag wirklich abnimmt. Wir entwickeln digitale Mitarbeiter, die ab dem ersten Tag messbar entlasten: kein verpasster Anruf, kein verpasster Termin mehr.",
       "author": "Connor Reimann",
       "role": "Vertriebsleitung",
       "company": "NEXAI",
@@ -119,7 +120,7 @@
     },
     "cta": {
       "title": "Bereit für Ihren ersten digitalen Mitarbeiter?",
-      "description": "Lassen Sie uns in einem unverbindlichen Gespräch herausfinden, wo KI bei Ihnen den größten Hebel hat.",
+      "description": "Lassen Sie uns in einem unverbindlichen Gespräch herausfinden, wo AI bei Ihnen den größten Hebel hat.",
       "primary": "Kostenloses Erstgespräch",
       "secondary": "Leistungen entdecken"
     }
