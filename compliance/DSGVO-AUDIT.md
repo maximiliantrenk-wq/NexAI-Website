@@ -20,13 +20,13 @@ Legende: 🔴 hoch · 🟠 mittel · 🟡 niedrig · ✅ behoben · ⏳ offen (M
 |---|---|---|---|
 | 1 | Vapi zeichnet Anrufe standardmäßig auf (Default AN) — Text behauptete zunächst „keine Aufzeichnung". | 🔴→✅ | ✅ **behoben:** Audio Recording + Transcript in Vapi **deaktiviert** (Screenshot 08.08.); DSE §11/§4 sagen korrekt „keine Aufzeichnung". ⏳ Max: **„Publish"** + Vorlage `0931afea` gleich einstellen. |
 | 2 | Live-Sprachausgabe lief über MiniMax (China) — kein Angemessenheitsbeschluss. | 🔴→✅ | ✅ **behoben:** Voice auf beiden Assistenten (`6bb4f397`, `0931afea`) per Vapi-API auf **OpenAI** umgestellt; China aus DSE + AVV entfernt. ⏳ Stimme anhören/`voiceId` ggf. anpassen. |
-| 3 | Resend (USA) verarbeitete alle Formular-/Newsletter-Daten — nirgends genannt. | 🔴 | ✅ DSE §7 + §8 (SCC). ⏳ AVV/DPA mit Resend. |
+| 3 | Resend (USA) verarbeitete alle Formular-/Newsletter-Daten — nirgends genannt. | 🔴 | ✅ DSE §7 + §8 (Resend ist DPF-zertifiziert; Art. 45 + 46). ⏳ DPA mit Resend (self-serve). |
 | 4 | KI-Telefonassistent fehlte komplett in der Datenschutzerklärung. | 🔴 | ✅ neuer DSE-Abschnitt §11. |
 | 5 | Newsletter ohne Rechtsgrundlage/Double-Opt-In. | 🟠 | ✅ DSE §8. ⏳ Double-Opt-In technisch umsetzen. |
 | 6 | AVV Anhang 2 veraltet (Make/ElevenLabs; Resend/easybell/Hetzner fehlten). | 🟠 | ✅ AVV korrigiert + neu gerendert. |
 | 7 | Keine Löschfristen; n8n-Execution-History speichert volle PII. | 🟠 | ✅ DSE §4 konkrete Fristen. ⏳ n8n-Execution-Pruning. |
 | 8 | Kein Verzeichnis von Verarbeitungstätigkeiten (Art. 30). | 🟠 | ✅ `VVT-Verarbeitungsverzeichnis.md`. |
-| 9 | Cold Outreach (Explorium) ohne Art.-14-Info & UWG-Einwilligung. | 🟠 | ⏳ organisatorisch/rechtlich (§7). |
+| 9 | Cold Outreach / Vertriebsagent (Explorium). | 🟡 | Als Produkt derzeit nicht angeboten (Max 08.08.). Nur relevant, falls NexAI selbst kalt akquiriert → dann UWG/Art. 14 (§7). |
 | 10 | Impressum unvollständig; veralteter §-5-TMG-Verweis. | 🟡 | ✅ GbR, USt-Hinweis, § 5 DDG, VSBG, Frankenhardt-Honhardt. |
 | 11 | §3 pauschale „Einwilligung"; §7 sessionStorage unterschätzt. | 🟡 | ✅ §3 differenziert; sessionStorage korrigiert. |
 | 12 | Reseller-Embed sendet Browser→n8n ohne Consent-Ebene. | 🟡 | ⏳ Kunden-DSE/AVV. |
@@ -68,7 +68,7 @@ Cookies/Consent/Analytics/Fonts: keine → **kein Banner nötig**.
 | **OpenAI** | LLM (gpt-4o / gpt-4.1-mini) **+ Sprachsynthese (TTS)** | **IE/USA** | Prompt/Transkript, Antworttext | DPF/SCC, No-Training | ✅ OpenAI Ireland |
 | **easybell GmbH** | SIP-Telefonie | **Deutschland** | Verbindungsdaten | EU | ⏳ AVV bestätigen |
 | **Google (Calendar/Sheets/Gmail)** | Termine, Leads, Bestätigungen | **IE/USA** | Name, E-Mail, Telefon, Termin | DPF/SCC | ⏳ Workspace-AVV |
-| **Resend, Inc.** | Formular-/Newsletter-E-Mail | **USA** | Formulardaten (Transit + Logs) | SCC (kein DPF) | ⏳ DPA |
+| **Resend, Inc.** | Formular-/Newsletter-E-Mail | **USA** | Formulardaten (Transit + Logs) | DPF (Art. 45) + SCC | ⏳ DPA |
 | **n8n (self-hosted)** | Automatisierung, Lead-Speicherung | **Hetzner, Deutschland** | Execution-History mit voller PII (default unbegrenzt) + Leads (derzeit Google Sheets) | EU | ⏳ Hetzner-AVV; Pruning |
 | **Vercel Inc.** | Website-Hosting | **USA** | Zugriffs-Logs/IP | DPF | ✅ genannt |
 | **Explorium** | Lead-Recherche | Datenprovider | B2B-Kontaktdaten | (Verantwortlicher) | ⏳ §7 |
@@ -81,8 +81,8 @@ Cookies/Consent/Analytics/Fonts: keine → **kein Banner nötig**.
 ---
 
 ## 5. Drittlandtransfer-Landkarte (Art. 44 ff.)
-- **Art. 45 (DPF):** Vercel, Google, OpenAI (soweit zertifiziert).
-- **Art. 46 (SCC) + TIA:** Vapi (Metadaten), Deepgram, Resend (kein DPF).
+- **Art. 45 (DPF):** Vercel, Google, OpenAI, Resend (alle DPF-zertifiziert).
+- **Art. 46 (SCC) + TIA:** Vapi (Metadaten), Deepgram (kein DPF).
 - **China:** entfällt — TTS von MiniMax auf OpenAI umgestellt.
 - **Handlungsbedarf:** TIA für Vapi/Deepgram/Resend dokumentieren.
 
@@ -140,7 +140,7 @@ Leads 6 Mon. · Termine 12 Mon. · Chatverläufe 6 Mon. · Sprach-Termindaten 6 
 **🟠 kurzfristig**
 4. **n8n:** Execution-Data-Pruning aktivieren · Leads in EU-Data-Table statt Google Sheets · Live-Google-Konto als **Workspace (mbt)** verifizieren · **n8n-API-Key rotieren**.
 5. **TIA** (Transfer-Impact-Assessment) für Vapi/Deepgram/Resend dokumentieren.
-6. **Cold Outreach:** UWG-Einwilligung klären · Art.-14-Info an Prospects · Interessenabwägung + Opt-out-Register.
+6. *(Vertriebs-/Akquise-Agent: derzeit nicht im Angebot — Max 08.08. Bei künftiger Einführung DSGVO/UWG nachholen: Einwilligung B2B-E-Mail (§ 7 UWG), Art.-14-Info an Prospects, Interessenabwägung. Reminder gesetzt.)*
 7. **KI-Ansage** (Art. 50) im Vapi-Prompt/First Message sicherstellen.
 8. **Löschkonzept** umsetzen (n8n/Google-Cleanup gemäß §4-Fristen).
 
@@ -153,10 +153,12 @@ Leads 6 Mon. · Termine 12 Mon. · Chatverläufe 6 Mon. · Sprach-Termindaten 6 
 **⚖️ vor Go-Live**
 13. Datenschutzerklärung, Impressum und AVV **anwaltlich/DSB gegenlesen lassen** und auf `main` deployen (PR).
 
-### AVV/DPA — wie & wo (zu Punkt 2)
-- **Google Workspace:** Admin-Konsole → „Cloud Data Processing Addendum" bestätigen.
-- **Vercel:** Dashboard → Settings → Legal/Privacy → DPA.
-- **Hetzner:** Kundenpanel → Auftragsverarbeitungsvertrag (AVV) abschließen.
-- **OpenAI:** Plattform → DPA anfordern/akzeptieren.
-- **Resend / Vapi / Deepgram:** DPA per Support/Legal-Seite anfragen (bei Vapi ggf. Tarif-abhängig).
-- **easybell:** Standard-AVV (deutscher Anbieter) anfordern.
+### AVV/DPA — Links & Hinweise (zu Punkt 2)
+- **Google Workspace** (Kalender/Sheets/Gmail): bereits Teil des Vertrags, im Admin bestätigen. Text: https://admin.google.com/terms/apps/8/2/en/dpa_terms.html
+- **Vercel** (Hosting): https://vercel.com/legal/dpa (Plan prüfen). Subunternehmer: https://security.vercel.com/
+- **Hetzner** (n8n-Server): AVV im Kundenpanel (vorunterschrieben, ausdrucken/ablegen). Info: https://docs.hetzner.com/de/general/general-terms-and-conditions/data-privacy-faq/ · PDF: https://www.hetzner.com/AV/DPA_de.pdf
+- **OpenAI** (LLM+TTS): Self-serve-DPA: https://openai.com/policies/data-processing-addendum/
+- **Resend** (E-Mail): https://resend.com/legal/dpa (DPF-zertifiziert; GDPR-Seite https://resend.com/security/gdpr)
+- **Vapi** (Voice): DPA **nur Enterprise** → Trust Center: https://security.vapi.ai/ (GDPR: https://docs.vapi.ai/security-and-privacy/GDPR). ⚠️ Ohne Enterprise kein unterschriebener DPA — Restrisiko.
+- **Deepgram** (STT): über Vapi (dann via Vapi-DPA abgedeckt); bei eigenem Key DPA per security@deepgram.com, EU-Endpoint api.eu.deepgram.com. Doku: https://developers.deepgram.com/trust-security/data-privacy-compliance
+- **easybell** (Telefonie): i. d. R. **kein AVV nötig** — TK-Anbieter, § 88 TKG (selbst verantwortlich, nicht Auftragsverarbeiter); AVV nur bei gespeicherter Mailbox/Fax. Info: https://www.easybell.de/hilfe/fragen/vertragsfragen/antwort/benoetige-ich-einen-auftragsverarbeitungsvertrag-avv-von-easybell/
