@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { z } from "zod";
 import { fieldsToHtml, fieldsToText, sendMail } from "@/lib/email";
+import { saveLead } from "@/lib/crm";
 
 const schema = z.object({
   name: z.string().min(1),
@@ -31,12 +32,26 @@ export async function POST(request: Request) {
     Nachricht: message,
   };
 
-  const result = await sendMail({
-    subject: `Neue Kontaktanfrage von ${name}`,
-    replyTo: email,
-    html: fieldsToHtml(fields),
-    text: fieldsToText(fields),
-  });
+  // Email (primary acknowledgement) + CRM (durable sink) run in parallel. The
+  // form's success hinges on the email only; saveLead never throws and no-ops
+  // until CRM_API_URL/KEY are set, so this can't regress the existing behaviour.
+  const [result] = await Promise.all([
+    sendMail({
+      subject: `Neue Kontaktanfrage von ${name}`,
+      replyTo: email,
+      html: fieldsToHtml(fields),
+      text: fieldsToText(fields),
+    }),
+    saveLead({
+      name,
+      email,
+      source: "website-kontakt",
+      title: `Kontaktanfrage – ${name}`,
+      notes: [company?.trim() ? `Unternehmen: ${company}` : "", `Nachricht: ${message}`]
+        .filter(Boolean)
+        .join("\n"),
+    }),
+  ]);
 
   if (!result.ok) {
     // Missing API key = server misconfiguration (500); send failure = upstream (502).
