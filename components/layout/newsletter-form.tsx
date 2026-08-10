@@ -1,11 +1,12 @@
 "use client";
 
 import { useState } from "react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Check, Loader2 } from "lucide-react";
 
 export function NewsletterForm() {
   const t = useTranslations("Footer");
+  const locale = useLocale();
   const [email, setEmail] = useState("");
   const [hp, setHp] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "ok" | "error">(
@@ -20,7 +21,7 @@ export function NewsletterForm() {
       const res = await fetch("/api/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, hp }),
+        body: JSON.stringify({ email, hp, locale }),
       });
       const data = await res.json().catch(() => null);
       if (!res.ok || !data?.ok) throw new Error("request failed");

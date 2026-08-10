@@ -14,11 +14,17 @@ export async function sendMail({
   html,
   text,
   replyTo,
+  to,
 }: {
   subject: string;
   html: string;
   text?: string;
   replyTo?: string;
+  // Recipient override. Defaults to our own inbox (CONTACT_TO). For the newsletter
+  // double opt-in we pass the subscriber's address — which requires a verified
+  // nex-a-i.com sender (see CONTACT_FROM), as onboarding@resend.dev only delivers
+  // to the Resend account owner.
+  to?: string;
 }): Promise<SendResult> {
   const apiKey = process.env.RESEND_API_KEY;
   if (!apiKey) {
@@ -26,7 +32,7 @@ export async function sendMail({
     return { ok: false, error: "not_configured" };
   }
 
-  const to = process.env.CONTACT_TO ?? "mbt@nex-a-i.com";
+  const recipient = to ?? process.env.CONTACT_TO ?? "mbt@nex-a-i.com";
   const from = process.env.CONTACT_FROM ?? "NEXAI <onboarding@resend.dev>";
 
   try {
@@ -38,7 +44,7 @@ export async function sendMail({
       },
       body: JSON.stringify({
         from,
-        to,
+        to: recipient,
         subject,
         html,
         ...(text ? { text } : {}),
