@@ -95,6 +95,9 @@ export function Footer() {
             © {year} NEXAI · {t("Footer.rights")}
           </p>
           <p className="font-mono text-[11px] uppercase tracking-[0.12em] text-subtle">
+            {t("Footer.aiNotice")}
+          </p>
+          <p className="font-mono text-[11px] uppercase tracking-[0.12em] text-subtle">
             {t("Footer.location")}
           </p>
         </div>
