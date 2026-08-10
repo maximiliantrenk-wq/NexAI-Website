@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { z } from "zod";
 import { fieldsToHtml, fieldsToText, sendMail } from "@/lib/email";
+import { saveLead } from "@/lib/crm";
 
 const schema = z.object({
   name: z.string().min(1),
@@ -35,12 +36,31 @@ export async function POST(request: Request) {
     Nachricht: message,
   };
 
-  const result = await sendMail({
-    subject: `Neue Partneranfrage von ${name}`,
-    replyTo: email,
-    html: fieldsToHtml(fields),
-    text: fieldsToText(fields),
-  });
+  // Email (primary acknowledgement) + CRM (durable sink) run in parallel. The
+  // form's success hinges on the email only; saveLead never throws and no-ops
+  // until CRM_API_URL/KEY are set, so this can't regress the existing behaviour.
+  const [result] = await Promise.all([
+    sendMail({
+      subject: `Neue Partneranfrage von ${name}`,
+      replyTo: email,
+      html: fieldsToHtml(fields),
+      text: fieldsToText(fields),
+    }),
+    saveLead({
+      name,
+      email,
+      source: "website-partner",
+      title: `Partneranfrage – ${name}`,
+      notes: [
+        `Unternehmen: ${company}`,
+        website?.trim() ? `Website: ${website}` : "",
+        `Art des Unternehmens: ${companyType}`,
+        `Nachricht: ${message}`,
+      ]
+        .filter(Boolean)
+        .join("\n"),
+    }),
+  ]);
 
   if (!result.ok) {
     return NextResponse.json(
