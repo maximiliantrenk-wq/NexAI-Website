@@ -36,8 +36,21 @@
     "newsletterText": "Insights zu angewandter AI, ein bis zwei Mal im Monat, kein Spam.",
     "newsletterCta": "Abonnieren",
     "newsletterPlaceholder": "E-Mail-Adresse",
-    "newsletterSuccess": "Danke, Sie sind dabei.",
+    "newsletterSuccess": "Fast geschafft! Bitte bestätigen Sie den Link in der E-Mail, die wir Ihnen gerade gesendet haben.",
     "newsletterError": "Hat nicht geklappt. Bitte später erneut."
+  },
+  "Newsletter": {
+    "confirmMeta": "Newsletter bestätigen",
+    "confirmTitle": "Nur noch ein Klick",
+    "confirmBody": "Bitte bestätigen Sie, dass Sie den NEXAI-Newsletter erhalten möchten. So stellen wir sicher, dass diese Adresse wirklich Ihnen gehört.",
+    "confirmCta": "Anmeldung bestätigen",
+    "successTitle": "Anmeldung bestätigt",
+    "successBody": "Vielen Dank – Ihre E-Mail-Adresse ist jetzt für den Newsletter bestätigt. Sie können sich jederzeit über den Link in jeder E-Mail wieder abmelden.",
+    "errorTitle": "Link ungültig oder abgelaufen",
+    "errorBody": "Dieser Bestätigungslink ist nicht mehr gültig. Bitte melden Sie sich einfach erneut an – wir senden Ihnen einen neuen Link.",
+    "noTokenTitle": "Kein Bestätigungslink",
+    "noTokenBody": "Diese Seite dient dazu, Ihre Newsletter-Anmeldung zu bestätigen. Bitte öffnen Sie den Link aus unserer Bestätigungs-E-Mail.",
+    "backHome": "Zur Startseite"
   },
   "Common": {
     "getStarted": "Projekt starten",
