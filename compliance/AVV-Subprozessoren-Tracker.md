@@ -9,9 +9,9 @@
 
 ## 🔴 Zuerst: 3 Dinge klären/entscheiden (können AVVs blockieren)
 
-1. **Vercel-Tarif prüfen.** Der Vercel-AVV (DPA) gilt laut Vercel **nur ab Pro/Enterprise**. Auf dem kostenlosen **Hobby**-Plan habt ihr **keinen gültigen AVV** — dann ist §6 der DSE (Hosting) nicht gedeckt. → Läuft nex-a-i.com auf **Pro**? Falls Hobby: upgraden (oder Hosting-Aussage anpassen).
+1. **Vercel — Entscheidung offen (11.08.).** Der Vercel-AVV gilt **nur ab Pro/Enterprise**; auf **Hobby** = kein gültiger AVV. Zwei Wege: **(A)** auf **Pro** upgraden (AVV automatisch, alles bleibt wie es ist), **oder (B)** die Website **auf den eigenen Hetzner-Server umziehen** (Next standalone + Docker + Traefik wie beim CRM) → dann fällt **Vercel als US-Empfänger ganz weg**, §6 DSE = Hetzner DE, ganzer Stack in Deutschland. Max tendiert zu (B). Tragweite/Aufwand: siehe Chat 11.08.
 
-2. **Google-Konto-Typ prüfen** (der wichtigste Punkt). Ein **privates @gmail-Konto bekommt keinen Art.-28-AVV** — bei Consumer-Konten ist Google **Verantwortlicher**, nicht Auftragsverarbeiter. Ein AVV (Cloud Data Processing Addendum) existiert nur bei **Google Workspace** oder wenn die Kalender-Integration über ein **Google-Cloud-Projekt (GCP)** läuft. → Läuft die Terminbuchung (n8n → Google Calendar) über das **Workspace-Konto** (mbt@nex-a-i.com) oder ein **privates Gmail**? Wenn privat → auf Workspace/GCP umstellen, sonst gibt es für §9/§10/§11 keinen AVV.
+2. ✅ **Geklärt (11.08.): Google Workspace** — mbt@nex-a-i.com läuft auf Workspace → das Cloud Data Processing Addendum ist **automatisch in Kraft**, AVV vorhanden. Nur noch bestätigen, dass der **Buchungskalender** (n8n → Google Calendar) **derselbe** Workspace-Account ist (nicht ein separates privates @gmail).
 
 3. **Deepgram: Training-Opt-out verlangen.** Deepgram nutzt Kundendaten **per Default zur Modellverbesserung**. Beim AVV-Anfordern ausdrücklich die **Opt-out-Variante** verlangen — sonst widerspricht es der DSE-Zusage „keine Nutzung zu Trainingszwecken".
 
@@ -42,7 +42,7 @@
 - **Abschluss:** Automatisch mit Vertragsabschluss über die ToS („deemed to have signed"). Gegengezeichnete Kopie für Enterprise über Sales.
 - **⚠️ Gotcha:** Der AVV gilt **nur für Pro & Enterprise**. **Hobby-Plan = kein gültiger AVV.** → Tarif prüfen (Punkt 1 oben).
 - **Transfer:** Im DPA-Text stehen **EU-SCCs (2021) + UK-IDTA**; DPF wird separat auf der Trust-Seite behauptet. Auf der Live-Registry (dataprivacyframework.gov) selbst kurz gegenchecken.
-- **Status:** ☐ offen — _Tarif prüfen, dann erledigt (kein Dokument zu unterschreiben)._
+- **Status:** ☐ offen — _**Entscheidung Pro-Upgrade vs. Umzug auf Hetzner** (Max tendiert zu Hetzner → Vercel raus aus §6). Siehe Chat 11.08._
 
 ### 2. Resend, Inc. (US) — E-Mail-Versand
 - **Verarbeitet:** Empfänger-Adressen + Formular-/Newsletter-Inhalte. DSE §7, §8.
@@ -64,7 +64,7 @@
 - **Abschluss:** **Automatisch per Verweis** in den Google-Cloud-/Workspace-Vertrag eingebunden (im Admin-Bereich ggf. die aktuelle CDPA aktiv annehmen).
 - **⚠️ Gotcha:** Nur bei **Business-Konto** (Workspace **oder** GCP-Projekt). **Privates @gmail → gar kein AVV** (Google = Verantwortlicher). → Konto-Typ klären (Punkt 2 oben). Der VVT nimmt für das Postfach bereits „Google Workspace" an — bitte bestätigen, dass **derselbe** Account den Buchungskalender hält.
 - **Transfer:** **DPF (Google LLC, seit 14.09.2023) + SCC.**
-- **Status:** ☐ offen — _Konto-Typ bestätigen; CDPA ist dann automatisch in Kraft._
+- **Status:** ✅ **weitgehend erledigt** — _Workspace bestätigt (11.08., mbt@nex-a-i.com) → CDPA automatisch in Kraft. Nur bestätigen, dass der Buchungskalender derselbe Workspace-Account ist._
 
 ### 5. Hetzner Online GmbH (DE) — Server (n8n + NexAI-CRM)
 - **Verarbeitet:** Alles, was auf dem Server liegt (CRM-Daten, n8n-Automatisierung).
