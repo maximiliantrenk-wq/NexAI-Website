@@ -43,7 +43,7 @@ verwenden wir die Steuernummer. Eine Wirtschafts-Identifikationsnummer liegt uns
 
 **8. Zuständige Aufsichtsbehörde:**
 Datenschutzaufsicht: **Der Landesbeauftragte für den Datenschutz und die Informationsfreiheit
-Baden-Württemberg (LfDI BW)**, Lautenschlagerstraße 20, 70173 Stuttgart. Eine berufsrechtliche Aufsicht
+Baden-Württemberg (LfDI BW)**, Heilbronner Straße 35, 70191 Stuttgart. Eine berufsrechtliche Aufsicht
 (zulassungspflichtige Tätigkeit) besteht nicht.
 
 ---
