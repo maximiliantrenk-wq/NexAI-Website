@@ -5,7 +5,7 @@
 
 > ⚠️ **Kein Rechtsrat.** Vorlage zur Erfüllung der Rechenschaftspflicht (Art. 5 Abs. 2, Art. 30 DSGVO). Laufend fortschreiben; vor Verwendung vom DSB/Anwalt prüfen lassen. Löschfristen = interne Defaults, mit der Datenschutzerklärung abgeglichen.
 
-Empfänger-Kürzel (Drittland-Mechanismus): **Vercel** (US, DPF) · **Resend** (US, SCC) · **Google** IE/US (DPF/SCC) · **OpenAI** IE/US (DPF/SCC, No-Training) · **Vapi** (US, SCC+TIA) · **Deepgram** (US, SCC+TIA) · **easybell** (DE) · **Hetzner** (DE, Server der self-hosted n8n) · **Explorium** (Datenprovider).
+Empfänger-Kürzel (Drittland-Mechanismus): **Vercel** (US, DPF) · **Resend** (US, SCC) · **Google** IE/US (DPF/SCC) · **OpenAI** IE/US (DPF/SCC, No-Training) · **Vapi** (US, SCC+TIA) · **Deepgram** (US, SCC+TIA) · **easybell** (DE) · **Hetzner** (DE, Server der self-hosted n8n **und des NexAI-CRM**) · **NexAI-CRM** (self-hosted, DE — eigene zentrale Kundenverwaltung, keine Drittlandübermittlung) · **Explorium** (Datenprovider).
 
 ---
 
@@ -17,7 +17,7 @@ Empfänger-Kürzel (Drittland-Mechanismus): **Vercel** (US, DPF) · **Resend** (
 
 ### A2 Kontakt- und Partnerformular / E-Mail
 - **Zweck:** Bearbeitung von Anfragen und Partneranfragen. **Betroffene:** Interessenten, Partner. **Daten:** Name, E-Mail, Unternehmen, Website, Nachricht.
-- **Rechtsgrundlage:** Art. 6(1)b/f. **Empfänger:** Resend (Versand), Postfach mbt@nex-a-i.com (Google Workspace). **Drittland:** USA (SCC). **Löschung:** nach Bearbeitung.
+- **Rechtsgrundlage:** Art. 6(1)b/f. **Empfänger:** Resend (Versand), Postfach mbt@nex-a-i.com (Google Workspace), **NexAI-CRM (self-hosted DE)** (Speicherung Anfrage/Kontakt). **Drittland:** USA (SCC); CRM = EU. **Löschung:** nach Bearbeitung.
 
 ### A3 Newsletter
 - **Zweck:** Versand von Informationen zu Leistungen. **Betroffene:** Abonnenten. **Daten:** E-Mail-Adresse, Opt-in-Nachweis (Zeit/IP).
@@ -25,15 +25,15 @@ Empfänger-Kürzel (Drittland-Mechanismus): **Vercel** (US, DPF) · **Resend** (
 
 ### A4 Website-Chat-Assistent
 - **Zweck:** Beantwortung von Anfragen, Terminvereinbarung. **Betroffene:** Chat-Nutzer. **Daten:** Nachrichteninhalte, freiwillige Kontaktdaten (Name/E-Mail/Telefon), Anliegen; Session-Kennung + Verlauf im Browser-sessionStorage.
-- **Rechtsgrundlage:** Art. 6(1)b/f. **Empfänger:** n8n@Hetzner, OpenAI (LLM), Google (Calendar/Sheets). **Drittland:** IE/US (DPF/SCC); Automatisierung EU. **Löschung:** Chatverläufe 6 Monate; Leads 6 Monate. **Besonderheit:** KI-Hinweis (Art. 50 AI Act) gegeben; kein Training.
+- **Rechtsgrundlage:** Art. 6(1)b/f. **Empfänger:** n8n@Hetzner, **NexAI-CRM (self-hosted DE)** (Lead-/Kontaktspeicher), OpenAI (LLM), Google (Calendar). **Drittland:** IE/US (DPF/SCC); Automatisierung + CRM = EU. **Löschung:** Chatverläufe 6 Monate; Leads 6 Monate. **Besonderheit:** KI-Hinweis (Art. 50 AI Act) gegeben; kein Training.
 
 ### A5 Online-Terminbuchung
 - **Zweck:** Vereinbarung von Beratungsterminen. **Betroffene:** Terminbucher. **Daten:** Name, E-Mail, Zeitpunkt, Anlass.
-- **Rechtsgrundlage:** Art. 6(1)b. **Empfänger:** n8n@Hetzner, Google Calendar; Resend (interne Notiz). **Drittland:** IE/US (DPF/SCC). **Löschung:** 12 Monate.
+- **Rechtsgrundlage:** Art. 6(1)b. **Empfänger:** n8n@Hetzner, **NexAI-CRM (self-hosted DE)** (Termin-/Kontaktspeicher), Google Calendar; Resend (interne Notiz). **Drittland:** IE/US (DPF/SCC); CRM = EU. **Löschung:** 12 Monate.
 
 ### A6 KI-Telefon-/Sprachassistent (eigene Nummer/Demo)
 - **Zweck:** Terminvereinbarung/Erreichbarkeit per Telefon. **Betroffene:** Anrufer. **Daten:** Rufnummer, Name, Anliegen, Wunschtermin, ggf. E-Mail, Verbindungsdaten.
-- **Rechtsgrundlage:** Art. 6(1)b/f. **Empfänger:** Vapi, Deepgram, OpenAI (LLM+TTS), easybell, n8n@Hetzner, Google. **Drittland:** USA (SCC+TIA), IE/US (DPF/SCC). **Löschung:** Termindaten 6 Monate; **keine Anrufaufzeichnung** (in Vapi deaktiviert). **Besonderheit:** KI-Ansage zu Gesprächsbeginn (Art. 50 AI Act); DSFA prüfen.
+- **Rechtsgrundlage:** Art. 6(1)b/f. **Empfänger:** Vapi, Deepgram, OpenAI (LLM+TTS), easybell, n8n@Hetzner, **NexAI-CRM (self-hosted DE)** (Anruf-/Termin-/Kontaktspeicher), Google. **Drittland:** USA (SCC+TIA), IE/US (DPF/SCC); CRM = EU. **Löschung:** Termindaten 6 Monate; **keine Anrufaufzeichnung** (in Vapi deaktiviert). **Besonderheit:** KI-Ansage zu Gesprächsbeginn (Art. 50 AI Act); DSFA prüfen.
 
 ### A7 Neukundengewinnung / Lead-Recherche (Vertrieb)
 - **Zweck:** Akquise/B2B-Ansprache. **Betroffene:** Entscheider/Ansprechpartner potenzieller Kunden. **Daten:** Name, Funktion, Firma, geschäftliche E-Mail/Telefon, Quelle.
