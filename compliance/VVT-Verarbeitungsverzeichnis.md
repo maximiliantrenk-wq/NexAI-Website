@@ -5,7 +5,7 @@
 
 > ⚠️ **Kein Rechtsrat.** Vorlage zur Erfüllung der Rechenschaftspflicht (Art. 5 Abs. 2, Art. 30 DSGVO). Laufend fortschreiben; vor Verwendung vom DSB/Anwalt prüfen lassen. Löschfristen = interne Defaults, mit der Datenschutzerklärung abgeglichen.
 
-Empfänger-Kürzel (Drittland-Mechanismus): **Vercel** (US, DPF) · **Resend** (US, SCC) · **Google** IE/US (DPF/SCC) · **OpenAI** IE/US (DPF/SCC, No-Training) · **Vapi** (US, SCC+TIA) · **Deepgram** (US, SCC+TIA) · **easybell** (DE) · **Hetzner** (DE, Server der self-hosted n8n **und des NexAI-CRM**) · **NexAI-CRM** (self-hosted, DE — eigene zentrale Kundenverwaltung, keine Drittlandübermittlung) · **Explorium** (Datenprovider).
+Empfänger-Kürzel (Drittland-Mechanismus): **Resend** (US, SCC) · **Google** IE/US (DPF/SCC) · **OpenAI** IE/US (DPF/SCC, No-Training) · **Vapi** (US, SCC+TIA) · **Deepgram** (US, SCC+TIA) · **easybell** (DE) · **Hetzner** (DE, Server der **Website**, der self-hosted n8n **und des NexAI-CRM**) · **NexAI-CRM** (self-hosted, DE — eigene zentrale Kundenverwaltung, keine Drittlandübermittlung) · **Explorium** (Datenprovider).
 
 ---
 
@@ -13,7 +13,7 @@ Empfänger-Kürzel (Drittland-Mechanismus): **Vercel** (US, DPF) · **Resend** (
 
 ### A1 Bereitstellung der Website / Server-Logs
 - **Zweck:** Auslieferung und Sicherheit der Website. **Betroffene:** Websitebesucher. **Daten:** IP-Adresse, Zeitpunkt, angeforderte Inhalte, Referrer, Browser.
-- **Rechtsgrundlage:** Art. 6(1)f. **Empfänger:** Vercel. **Drittland:** USA (DPF/SCC). **Löschung:** 30 Tage. **TOMs:** siehe AVV Anhang 1.
+- **Rechtsgrundlage:** Art. 6(1)f. **Empfänger:** Hetzner (DE). **Drittland:** keine (Server in Deutschland). **Löschung:** 30 Tage. **TOMs:** siehe AVV Anhang 1.
 
 ### A2 Kontakt- und Partnerformular / E-Mail
 - **Zweck:** Bearbeitung von Anfragen und Partneranfragen. **Betroffene:** Interessenten, Partner. **Daten:** Name, E-Mail, Unternehmen, Website, Nachricht.
