@@ -10,8 +10,8 @@ import { HeroArtifact } from "./hero-artifact";
 
 export function Hero() {
   const t = useTranslations("Hero");
-  // Voice-Agent-Demo vorübergehend in Wartung — auf true setzen, wenn wieder live.
-  const DEMO_AVAILABLE = false;
+  // Voice-Agent-Demo live (Telefon läuft) — auf false setzen, falls das Telefon mal in Wartung ist.
+  const DEMO_AVAILABLE = true;
 
   return (
     <section className="relative isolate overflow-hidden">
