@@ -9,7 +9,7 @@
 
 ## 🔴 Zuerst: 3 Dinge klären/entscheiden (können AVVs blockieren)
 
-1. **Vercel — Entscheidung offen (11.08.).** Der Vercel-AVV gilt **nur ab Pro/Enterprise**; auf **Hobby** = kein gültiger AVV. Zwei Wege: **(A)** auf **Pro** upgraden (AVV automatisch, alles bleibt wie es ist), **oder (B)** die Website **auf den eigenen Hetzner-Server umziehen** (Next standalone + Docker + Traefik wie beim CRM) → dann fällt **Vercel als US-Empfänger ganz weg**, §6 DSE = Hetzner DE, ganzer Stack in Deutschland. Max tendiert zu (B). Tragweite/Aufwand: siehe Chat 11.08.
+1. ✅ **Vercel — erledigt (12.08.): Website auf Hetzner umgezogen.** Die Website läuft jetzt als Coolify-App auf der Hetzner-n8n-Box (5.75.179.247, DE). **Vercel fällt als Empfänger komplett weg**, §6 DSE = Hetzner/DE (keine Drittlandübermittlung). Kein Vercel-AVV mehr nötig.
 
 2. ✅ **Geklärt (11.08.): Google Workspace** — mbt@nex-a-i.com läuft auf Workspace → das Cloud Data Processing Addendum ist **automatisch in Kraft**, AVV vorhanden. Nur noch bestätigen, dass der **Buchungskalender** (n8n → Google Calendar) **derselbe** Workspace-Account ist (nicht ein separates privates @gmail).
 
@@ -21,7 +21,7 @@
 
 | # | Anbieter | Rolle | Ort | Transfer-Basis | AVV-Weg | Status |
 |---|----------|-------|-----|----------------|---------|:---:|
-| 1 | **Vercel** | Website-Hosting, Server-Logs | US | DPF **+** SCC | Auto über ToS (nur Pro+) | ☐ |
+| 1 | ~~Vercel~~ → **Hetzner** | Website-Hosting (jetzt DE) | DE | keine Übermittlung | durch Hetzner-AVV (#5) | ✅ |
 | 2 | **Resend** | E-Mail-Versand (Formulare, Newsletter-DOI) | US | DPF **+** SCC | Auto über ToS; PDF im Dashboard | ☐ |
 | 3 | **OpenAI** (Ireland Ltd) | Chat-Sprachmodell, Voice-LLM + TTS | IE/US | **SCC** (kein DPF) + TIA | Self-Service-Formular im Dashboard | ☐ |
 | 4 | **Google** | Google Calendar (Terminverwaltung) | IE/US | DPF **+** SCC | Auto (nur Workspace/GCP) | ☐ |
@@ -42,7 +42,7 @@
 - **Abschluss:** Automatisch mit Vertragsabschluss über die ToS („deemed to have signed"). Gegengezeichnete Kopie für Enterprise über Sales.
 - **⚠️ Gotcha:** Der AVV gilt **nur für Pro & Enterprise**. **Hobby-Plan = kein gültiger AVV.** → Tarif prüfen (Punkt 1 oben).
 - **Transfer:** Im DPA-Text stehen **EU-SCCs (2021) + UK-IDTA**; DPF wird separat auf der Trust-Seite behauptet. Auf der Live-Registry (dataprivacyframework.gov) selbst kurz gegenchecken.
-- **Status:** ☐ offen — _**Entscheidung Pro-Upgrade vs. Umzug auf Hetzner** (Max tendiert zu Hetzner → Vercel raus aus §6). Siehe Chat 11.08._
+- **Status:** ✅ **entfällt (12.08.)** — _Website auf Hetzner umgezogen; §6 DSE nennt jetzt Hetzner/DE. Kein Vercel-AVV nötig._
 
 ### 2. Resend, Inc. (US) — E-Mail-Versand
 - **Verarbeitet:** Empfänger-Adressen + Formular-/Newsletter-Inhalte. DSE §7, §8.
@@ -103,7 +103,7 @@
 - **Explorium** (Datenprovider für Lead-Recherche) steht in der VVT, ist aber ein **eingehender Datenlieferant**, kein Website-Auftragsverarbeiter. Eigene Rechtsgrundlage/Vereinbarung (Controller-Controller bzw. Explorium-Vertrag/DPA) separat prüfen — gehört **nicht** in die öffentliche Website-DSE.
 
 ## Definition of Done
-- [ ] Punkte 1–3 (Vercel-Tarif · Google-Konto · Deepgram-Opt-out) geklärt
+- [ ] Google-Konto (Workspace ✓) · Deepgram-Opt-out geklärt (Vercel-Tarif entfällt — Website auf Hetzner umgezogen)
 - [ ] Alle 8 Status-Häkchen auf ☑ (bzw. „nicht nötig" belegt bei easybell)
 - [ ] TIA für OpenAI/Vapi/Deepgram dokumentiert + in VVT verlinkt
-- [ ] Ausgeführte AVV-PDFs abgelegt (Resend, OpenAI, Hetzner; Vercel/Google per Verweis)
+- [ ] Ausgeführte AVV-PDFs abgelegt (Resend, OpenAI, Hetzner; Google per Verweis)
