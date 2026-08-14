@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
@@ -5,7 +6,8 @@ import { Container } from "@/components/ui/container";
 import { Section, SectionHeading } from "@/components/ui/section";
 import { Reveal, RevealGroup, RevealItem } from "@/components/ui/reveal";
 import { Button } from "@/components/ui/button";
-import { productGradients } from "@/content/products";
+import { WaveOverlay } from "@/components/ui/wave-overlay";
+import { productGradients, productImages } from "@/content/products";
 
 type Item = { slug: string; tag: string; title: string; result: string };
 
@@ -31,24 +33,37 @@ export function ProductHighlights() {
         </div>
 
         <RevealGroup className="mt-10 sm:mt-14 grid gap-6 md:grid-cols-3">
-          {items.map((c, i) => (
+          {items.map((c, i) => {
+            const image = productImages[c.slug];
+            return (
             <RevealItem key={c.slug}>
               <Link
                 href={`/produkte/${c.slug}`}
                 className="group flex h-full flex-col overflow-hidden rounded-2xl transition-colors duration-300"
               >
-                <div className="relative aspect-[16/10] overflow-hidden">
-                  <div
-                    className="absolute inset-0 opacity-80 transition-transform duration-700 group-hover:scale-105"
-                    style={{
-                      background: productGradients[i % productGradients.length],
-                      maskImage:
-                        "radial-gradient(120% 90% at 50% 20%, #000 45%, transparent 92%)",
-                      WebkitMaskImage:
-                        "radial-gradient(120% 90% at 50% 20%, #000 45%, transparent 92%)",
-                    }}
-                  />
+                <div className="relative aspect-[3/2] overflow-hidden">
+                  {image ? (
+                    <Image
+                      src={image}
+                      alt={c.title}
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 420px"
+                      className="object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+                  ) : (
+                    <div
+                      className="absolute inset-0 opacity-80 transition-transform duration-700 group-hover:scale-105"
+                      style={{
+                        background: productGradients[i % productGradients.length],
+                        maskImage:
+                          "radial-gradient(120% 90% at 50% 20%, #000 45%, transparent 92%)",
+                        WebkitMaskImage:
+                          "radial-gradient(120% 90% at 50% 20%, #000 45%, transparent 92%)",
+                      }}
+                    />
+                  )}
                   <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/40 to-transparent" />
+                  {image && <WaveOverlay />}
                   <span className="absolute right-4 top-4 grid size-8 place-items-center rounded-full border border-white/15 bg-black/30 text-fg backdrop-blur-sm transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5">
                     <ArrowUpRight className="size-4" />
                   </span>
@@ -66,7 +81,8 @@ export function ProductHighlights() {
                 </div>
               </Link>
             </RevealItem>
-          ))}
+            );
+          })}
         </RevealGroup>
       </Container>
     </Section>

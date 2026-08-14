@@ -29,3 +29,14 @@ export const productGradients = [
   "conic-gradient(from 80deg at 55% 35%, #4d7cff, #22d3ee, #a855f7, #6d28d9, #4d7cff)",
   "conic-gradient(from 160deg at 45% 55%, #a855f7, #38d0e8, #4d7cff, #7c3aed, #a855f7)",
 ];
+
+/**
+ * Marketing images per product, keyed by slug (locale-independent).
+ * Slugs without an entry keep the gradient placeholder as a fallback.
+ * Files live in public/products/ — see components/ui/wave-overlay.tsx for the hover effect.
+ */
+export const productImages: Record<string, string> = {
+  "voice-agent": "/products/voice-agent.webp",
+  "chat-agent": "/products/chat-agent.webp",
+  automatisierung: "/products/automatisierung.webp",
+};
