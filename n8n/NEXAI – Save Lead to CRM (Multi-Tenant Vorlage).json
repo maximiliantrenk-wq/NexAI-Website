@@ -1,0 +1,123 @@
+{
+  "name": "NEXAI – Save Lead to CRM (Multi-Tenant Vorlage)",
+  "nodes": [
+    {
+      "parameters": {
+        "workflowInputs": {
+          "values": [
+            {
+              "name": "name"
+            },
+            {
+              "name": "email"
+            },
+            {
+              "name": "phone"
+            },
+            {
+              "name": "anliegen"
+            },
+            {
+              "name": "quelle"
+            },
+            {
+              "name": "termin"
+            },
+            {
+              "name": "startISO"
+            },
+            {
+              "name": "crmApiKey"
+            }
+          ]
+        }
+      },
+      "id": "3e6ce2eb-4e93-4f75-8ebc-923fe1e93892",
+      "name": "When Executed by Another Workflow",
+      "type": "n8n-nodes-base.executeWorkflowTrigger",
+      "typeVersion": 1.1,
+      "position": [304, -80]
+    },
+    {
+      "parameters": {
+        "jsCode": "// CRM-Daten bauen — universell + robust (säubert führende \"=\", baut Terminlabel, UTC-Datum)\nconst g = (k) => { let v = (($json[k] ?? '') + '').trim(); if (v.startsWith('=')) v = v.slice(1).trim(); return v; };\nconst name = g('name');\nconst parts = name.split(/\\s+/).filter(Boolean);\nconst quelle = g('quelle') || 'n8n';\nconst contact = { firstName: parts[0] || 'Unbekannt', source: quelle };\nif (parts.length > 1) contact.lastName = parts.slice(1).join(' ');\nif (/.+@.+\\..+/.test(g('email'))) contact.email = g('email');\nif (g('phone')) contact.phone = g('phone');\nconst anliegen = g('anliegen');\nconst iso = g('startISO');\nlet d = null;\nif (iso) { const dd = new Date(iso); if (!isNaN(dd.getTime())) d = dd; }\nlet termin = g('termin');\nif (!termin && d) { try { termin = DateTime.fromJSDate(d).setZone('Europe/Berlin').setLocale('de').toFormat(\"cccc, dd.LL.yyyy, HH:mm 'Uhr'\"); } catch (e) {} }\nconst leadBase = { source: quelle };\nleadBase.title = (termin ? ('Termin ' + termin) : ('Anfrage – ' + (name || 'Interessent'))).slice(0, 300);\nconst notes = [anliegen && ('Anliegen: ' + anliegen), termin && ('Terminwunsch: ' + termin)].filter(Boolean).join('\\n');\nif (notes) leadBase.notes = notes;\nif (d) leadBase.nextFollowUpAt = d.toISOString();\nreturn [{ json: { contact, leadBase } }];"
+      },
+      "id": "40666876-7bf9-479e-a858-58967af6b0c3",
+      "name": "CRM-Daten bauen",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [544, -80]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://crm.nex-a-i.com/api/contacts",
+        "authentication": "none",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "x-api-key",
+              "value": "={{ $('When Executed by Another Workflow').item.json.crmApiKey }}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ $json.contact }}",
+        "options": {}
+      },
+      "id": "a13af21b-0a37-46c4-b58e-8d8d39f6cede",
+      "name": "CRM: Kontakt",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [784, -80],
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://crm.nex-a-i.com/api/leads",
+        "authentication": "none",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "x-api-key",
+              "value": "={{ $('When Executed by Another Workflow').item.json.crmApiKey }}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ { ...$('CRM-Daten bauen').item.json.leadBase, contactId: $json.data && $json.data.id } }}",
+        "options": {}
+      },
+      "id": "24f76d6c-989e-449a-af2d-121c368b991e",
+      "name": "CRM: Lead",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1024, -80],
+      "onError": "continueRegularOutput"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When Executed by Another Workflow": {
+      "main": [[{ "node": "CRM-Daten bauen", "type": "main", "index": 0 }]]
+    },
+    "CRM-Daten bauen": {
+      "main": [[{ "node": "CRM: Kontakt", "type": "main", "index": 0 }]]
+    },
+    "CRM: Kontakt": {
+      "main": [[{ "node": "CRM: Lead", "type": "main", "index": 0 }]]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "tags": []
+}

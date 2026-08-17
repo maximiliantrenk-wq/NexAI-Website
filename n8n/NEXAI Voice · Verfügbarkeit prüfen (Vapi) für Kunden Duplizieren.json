@@ -1,0 +1,153 @@
+{
+  "name": "NEXAI Voice · Verfügbarkeit prüfen (Vapi) für Kunden Duplizieren",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "nexai-vapi-availability",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "7b691084-872e-4f61-b603-7e0ac4c697fc",
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        0,
+        0
+      ],
+      "webhookId": "nexai-vapi-availability-webhook"
+    },
+    {
+      "parameters": {
+        "jsCode": "// NEXAI Voice · Verfügbarkeit — toolCallId lesen (flach ODER Vapi-Envelope), 14-Tage-Fenster\nconst TZ='Europe/Berlin';\nconst root=$input.first().json||{};\nconst body=(root.body && typeof root.body==='object')?root.body:root;\nlet toolCallId='';\nif(body && body.message && Array.isArray(body.message.toolCalls) && body.message.toolCalls[0]) toolCallId=body.message.toolCalls[0].id||'';\nelse toolCallId=body.toolCallId||'';\nconst now=$now.setZone(TZ);\nreturn [{ json: { toolCallId, windowMinISO: now.toISO(), windowMaxISO: now.plus({days:14}).toISO() } }];"
+      },
+      "id": "a0fe3ebe-42a6-4bc1-809a-41261e1add4d",
+      "name": "Parse",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        224,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "getAll",
+        "calendar": {
+          "__rl": true,
+          "value": "mbt@nex-a-i.com",
+          "mode": "list",
+          "cachedResultName": "mbt@nex-a-i.com"
+        },
+        "returnAll": true,
+        "options": {
+          "orderBy": "startTime"
+        }
+      },
+      "id": "8654a10c-f048-46d4-8e73-b0957df0d376",
+      "name": "Get Events (14d window)",
+      "type": "n8n-nodes-base.googleCalendar",
+      "typeVersion": 1.3,
+      "position": [
+        448,
+        0
+      ],
+      "alwaysOutputData": true,
+      "credentials": {
+        "googleCalendarOAuth2Api": {
+          "id": "nO7JsoyGaTmuhXfb",
+          "name": "Google Calendar account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// NEXAI Voice · Verfügbarkeit — freie Slots deterministisch berechnen (kein LLM-Raten)\nconst TZ='Europe/Berlin';\nconst DAY_START=8,DAY_END=17,SLOT_MIN=30,LEAD_MIN=120,HORIZON=14;\nconst WD=['','Montag','Dienstag','Mittwoch','Donnerstag','Freitag','Samstag','Sonntag'];\nconst ov=(aS,aE,bS,bE)=>aS<bE&&bS<aE;\nfunction busyFromEvents(items){const busy=[];for(const it of items){const e=(it&&it.json)?it.json:it;if(!e)continue;if(e.status==='cancelled')continue;if(e.transparency==='transparent')continue;const s=e.start&&(e.start.dateTime||e.start.date);const en=e.end&&(e.end.dateTime||e.end.date);if(!s||!en)continue;const es=DateTime.fromISO(s).setZone(TZ),ee=DateTime.fromISO(en).setZone(TZ);if(!es.isValid||!ee.isValid)continue;busy.push([es,ee]);}return busy;}\nfunction collectFree(busy,now,from,maxTotal,maxPerDay){const earliest=now.plus({minutes:LEAD_MIN}),limit=now.plus({days:HORIZON});let cur=((from&&from>earliest)?from:earliest).set({second:0,millisecond:0});if(cur.minute!==0&&cur.minute!==30)cur=cur.minute<30?cur.set({minute:30}):cur.plus({hours:1}).set({minute:0});const out=[],per={};let g=0;while(out.length<maxTotal&&cur<limit&&g<5000){g++;const wd=cur.weekday,h=cur.hour+cur.minute/60,dk=cur.toFormat('yyyy-LL-dd');if(wd>=1&&wd<=5&&h>=DAY_START&&h+SLOT_MIN/60<=DAY_END&&cur>=earliest&&(per[dk]||0)<maxPerDay){const cE=cur.plus({minutes:SLOT_MIN});if(!busy.some(([bs,be])=>ov(cur,cE,bs,be))){out.push(cur);per[dk]=(per[dk]||0)+1;}}cur=cur.plus({minutes:SLOT_MIN});}return out;}\nconst lbl=dt=>WD[dt.weekday]+' '+dt.toFormat('dd.LL.')+' um '+dt.toFormat('HH:mm');\nconst now=$now.setZone(TZ);\nconst busy=busyFromEvents($input.all());\nconst slots=collectFree(busy,now,null,8,2);\nconst toolCallId=$('Parse').first().json.toolCallId;\nconst heute='Heute ist '+WD[now.weekday]+', der '+now.toFormat('dd.LL.yyyy')+'.';\nlet result;\nif(slots.length===0){result=heute+' In den nächsten 14 Tagen ist leider kein Termin frei. Entschuldige dich und biete an, dass sich das Team beim Anrufer meldet.';}\nelse{result=heute+' Freie Termine (Europe/Berlin, Dauer 30 Minuten): '+slots.map(lbl).join(' | ')+'. Schlage dem Anrufer 3 davon vor — bevorzugt an verschiedenen Tagen und passend zu seinem Wunsch. Nenne NUR Termine aus dieser Liste, erfinde keine. Nennt der Anrufer einen anderen konkreten Wunsch, buche direkt; das Buchungssystem prüft final und schlägt sonst Alternativen vor.';}\nreturn [{ json: { results: [{ toolCallId, result }] } }];"
+      },
+      "id": "13e6b15a-afc9-47a5-b7bc-dd32f7fe8746",
+      "name": "Build Response",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        672,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ $json }}",
+        "options": {}
+      },
+      "id": "507ff596-5e2b-447e-a232-0b9cf7c64eab",
+      "name": "Respond to Webhook",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        880,
+        0
+      ]
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Parse",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse": {
+      "main": [
+        [
+          {
+            "node": "Get Events (14d window)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Events (14d window)": {
+      "main": [
+        [
+          {
+            "node": "Build Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build Response": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "versionId": "dcd7471a-5584-4c08-a9e2-4b6d2a02e5fe",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "ef3620cd91dc9e7ea40cd73ec1d0c6f9864ca641c8b0d21066882daeadf529ea"
+  },
+  "id": "MqlZmuFonQgqYIRm",
+  "tags": []
+}

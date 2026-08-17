@@ -1,0 +1,655 @@
+{
+  "name": "NEXAI Voice · Termin buchen (Vapi) für Kunden Duplizieren",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "nexai-vapi-booking",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "a3b8e812-d907-4238-8711-1641e7405f4d",
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -656,
+        112
+      ],
+      "webhookId": "nexai-vapi-booking-webhook"
+    },
+    {
+      "parameters": {
+        "jsCode": "// NEXAI Voice · Buchung — Payload lesen (flach ODER Vapi-Envelope) + Datum robust parsen (v4-Port)\nconst TZ = 'Europe/Berlin';\nconst nowDt = $now.setZone(TZ);\nconst today = { year: nowDt.year, month: nowDt.month, day: nowDt.day, dow: nowDt.weekday };\n\nconst root = $input.first().json || {};\nconst body = (root.body && typeof root.body === 'object') ? root.body : root;\nlet toolCallId = '';\nlet a = {};\nif (body && body.message && Array.isArray(body.message.toolCalls) && body.message.toolCalls[0]) {\n  const tc = body.message.toolCalls[0];\n  toolCallId = tc.id || '';\n  let ar = tc.function && tc.function.arguments;\n  if (typeof ar === 'string') { try { ar = JSON.parse(ar); } catch (e) { ar = {}; } }\n  a = ar || {};\n} else {\n  a = body || {};\n  toolCallId = body.toolCallId || '';\n}\n\nconst name = String(a.name ?? '').trim();\nconst email = String(a.email ?? '').trim();\nconst telefon = String(a.telefon ?? a.phone ?? '').trim();\nconst anliegen = String(a.anliegen ?? a.topic ?? '').trim();\nconst notizen = String(a.notizen ?? '').trim();\nconst terminRaw = String(a.termin ?? a.start ?? a.startISO ?? '').trim();\n\n// ---- verifizierter Datums-Parser (Port aus parse_test4.js) ----\nconst pad = n => String(n).padStart(2, '0');\nfunction addDaysFmt(off){ const d=new Date(Date.UTC(today.year,today.month-1,today.day)); d.setUTCDate(d.getUTCDate()+off); return pad(d.getUTCDate())+'.'+pad(d.getUTCMonth()+1)+'.'+d.getUTCFullYear(); }\nfunction wdOffset(W){ let o=W-today.dow; if(o<=0)o+=7; return o; }\nconst TODAY_MMDD = pad(today.month)+pad(today.day);\nconst WEEKDAYS=[['montag',1],['dienstag',2],['mittwoch',3],['donnerstag',4],['freitag',5],['sonnabend',6],['samstag',6],['sonntag',7]];\nconst MONTH_ALT='januar|februar|maerz|märz|april|mai|juni|juli|august|september|oktober|november|dezember|jan|feb|mär|mrz|apr|jun|jul|aug|sept|sep|okt|nov|dez';\nconst MONTHS=[['januar|jan','01'],['februar|feb','02'],['maerz|märz|mär|mrz','03'],['april|apr','04'],['mai','05'],['juni|jun','06'],['juli|jul','07'],['august|aug','08'],['september|sept|sep','09'],['oktober|okt','10'],['november|nov','11'],['dezember|dez','12']];\nfunction hasConcreteDate(s){ return new RegExp('(\\\\d{1,2}\\\\.\\\\d{1,2}|'+MONTH_ALT+')').test(s); }\nfunction resolveRel(t){ const low=t.toLowerCase(); if(hasConcreteDate(low))return t; let s=low;\n  s=s.replace(/übermorgen/g,addDaysFmt(2)+' '); s=s.replace(/morgen/g,addDaysFmt(1)+' '); s=s.replace(/heute/g,addDaysFmt(0)+' ');\n  for(const wp of WEEKDAYS)s=s.replace(new RegExp(wp[0],'g'),addDaysFmt(wdOffset(wp[1]))+' '); return s; }\nfunction runMarked(input){ let s=input.toLowerCase();\n  s=s.replace(/(^|\\D)(\\d{1,2})[.:](\\d{2})\\s*uhr/g,'$1$2:$3'); s=s.replace(/(^|\\D)(\\d{1,2})\\s*uhr/g,'$1$2:00');\n  for(const mp of MONTHS)s=s.replace(new RegExp('(^|\\\\D)(\\\\d{1,2})\\\\s*\\\\.?\\\\s*(?:'+mp[0]+')\\\\s*\\\\.?\\\\s*','g'),'$1$2.'+mp[1]+'.');\n  s=s.replace(/[^0-9.: ]/g,''); s=s.replace(/ +/g,' ').trim();\n  s=s.replace(/( )(\\d{1,2})\\.(\\d{2})$/g,'$1$2:$3');\n  s=s.replace(/(\\d{1,2})\\.(\\d{1,2})\\.(\\d{1,2})\\.(\\d{2})(?=\\s|$)/g,'$1.$2.@YEAR@ $3:$4');\n  s=s.replace(/(\\d{1,2})\\.(\\d{1,2})\\.(\\d{2})(?=\\s|$)/g,'$1.$2.20$3');\n  s=s.replace(/(\\d{1,2})\\.(\\d{1,2})\\.?\\s*(\\d{1,2}:\\d{2})/g,'$1.$2.@YEAR@ $3'); return s.trim(); }\nfunction smartClean(m){ if(!m.includes('@YEAR@'))return m; const mt=m.match(/^(\\d{1,2})\\.(\\d{1,2})\\.@YEAR@/);\n  if(!mt)return m.replace(/@YEAR@/g,String(today.year));\n  const mm=mt[2].padStart(2,'0'),dd=mt[1].padStart(2,'0'); const yr=((mm+dd)<TODAY_MMDD)?today.year+1:today.year;\n  return m.replace(/@YEAR@/g,String(yr)); }\n\nlet clean = terminRaw ? smartClean(runMarked(resolveRel(terminRaw))) : '';\nconst FINAL=/^\\d{1,2}\\.\\d{1,2}\\.\\d{4} \\d{1,2}:\\d{2}$/;\n\nlet valid=false, past=false, startISO='', endISO='', startLabel='';\nif (FINAL.test(clean)) {\n  const start = DateTime.fromFormat(clean, 'd.M.yyyy H:mm', { zone: TZ });\n  if (start.isValid) {\n    const end = start.plus({ minutes: 30 });\n    startISO = start.toISO();\n    endISO = end.toISO();\n    startLabel = start.setLocale('de').toFormat(\"dd.LL.yyyy 'um' HH:mm\");\n    if (start > nowDt) valid = true; else past = true;\n  }\n}\nreturn [{ json: { valid, past, toolCallId, name, email, telefon, anliegen, notizen, terminRaw, clean, startISO, endISO, startLabel } }];"
+      },
+      "id": "5c281e8f-748b-44c8-b617-032814f7acfe",
+      "name": "Parse & Normalize",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -512,
+        112
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "combinator": "and",
+          "conditions": [
+            {
+              "id": "cond-b3",
+              "leftValue": "={{ $json.valid }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "55b55aa3-2e75-45c3-97a2-0980af73779c",
+      "name": "Is Valid",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        -368,
+        112
+      ]
+    },
+    {
+      "parameters": {
+        "calendar": {
+          "__rl": true,
+          "value": "mbt@nex-a-i.com",
+          "mode": "list",
+          "cachedResultName": "mbt@nex-a-i.com"
+        },
+        "start": "={{ $json.startISO }}",
+        "end": "={{ $json.endISO }}",
+        "additionalFields": {
+          "description": "={{ '🤖 Gebucht über den NEXAI Voice Agent' + '\\n👤 Kunde: ' + $json.name + ($json.telefon ? '\\n📞 Telefon: ' + $json.telefon : '') + '\\n💬 Anliegen: ' + ($json.anliegen || '—') + ($json.notizen ? '\\n📝 Notizen: ' + $json.notizen : '') }}",
+          "summary": "=NEXAI · {{ $json.anliegen }} – {{ $json.name }}"
+        }
+      },
+      "id": "081177bd-b5f8-47e2-9e4b-fb4ddfbc38ae",
+      "name": "Create Event",
+      "type": "n8n-nodes-base.googleCalendar",
+      "typeVersion": 1.3,
+      "position": [
+        160,
+        32
+      ],
+      "credentials": {
+        "googleCalendarOAuth2Api": {
+          "id": "nO7JsoyGaTmuhXfb",
+          "name": "Google Calendar account"
+        }
+      },
+      "onError": "continueErrorOutput"
+    },
+    {
+      "parameters": {
+        "jsCode": "const p = $('Parse & Normalize').first().json;\nconst result = 'Perfekt, der Termin am ' + p.startLabel + ' Uhr ist verbindlich gebucht. Der Kunde erhält eine Kalendereinladung. Bestätige dem Anrufer den Termin freundlich und verabschiede dich.';\nreturn [{ json: { results: [{ toolCallId: p.toolCallId, result }] } }];"
+      },
+      "id": "11789ba5-ee4f-4351-858b-7a39ec97edf2",
+      "name": "Return: Booked",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1184,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const p = $('Parse & Normalize').first().json;\nlet result;\nif (p.past) {\n  result = 'Der genannte Termin liegt in der Vergangenheit. Sag dem Anrufer freundlich, dass du nur zukünftige Termine buchen kannst, und schlage einen der von check_availability genannten Termine vor.';\n} else {\n  result = 'Ich habe das gewünschte Datum leider nicht sicher verstanden. Sag dem Anrufer freundlich, dass du Tag, Monat und Uhrzeit brauchst, und frag nach einem konkreten Termin, zum Beispiel: am fünfzehnten Juli um elf Uhr.';\n}\nreturn [{ json: { results: [{ toolCallId: p.toolCallId, result }] } }];"
+      },
+      "id": "ebd153a7-5d2b-4182-b023-d8c4b996b036",
+      "name": "Return: Invalid",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        512,
+        192
+      ]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ $json }}",
+        "options": {}
+      },
+      "id": "6d70ea46-798f-4c7a-ba38-ca30525a59fe",
+      "name": "Respond to Webhook",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        1392,
+        112
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "cond-b9",
+              "leftValue": "={{ $('Parse & Normalize').item.json.email }}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "notEmpty",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "0f0a6ddc-4886-434d-8975-3029c2c25e00",
+      "name": "Hat E-Mail?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        512,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "sendTo": "={{ $('Parse & Normalize').item.json.email }}",
+        "subject": "Ihr Termin bei NEXAI ist bestätigt ✅",
+        "message": "=<div style=\"font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#f4f5f7;padding:32px 16px;\">\n  <div style=\"max-width:560px;margin:0 auto;background:#ffffff;border-radius:16px;overflow:hidden;border:1px solid #ececf1;\">\n    <div style=\"background:linear-gradient(135deg,#2563eb,#7c3aed);padding:26px 32px;\">\n      <div style=\"color:#ffffff;font-size:20px;font-weight:700;\">NEXAI</div>\n      <div style=\"color:rgba(255,255,255,.85);font-size:13px;margin-top:2px;\">Digitale Mitarbeiter · KI-Agentur</div>\n    </div>\n    <div style=\"padding:32px;\">\n      <h1 style=\"margin:0 0 8px;font-size:22px;color:#0b0b0f;\">Ihr Termin ist bestätigt ✅</h1>\n      <p style=\"margin:0 0 20px;color:#4b4b57;font-size:15px;line-height:1.6;\">Hallo {{ $('Parse & Normalize').item.json.name }},<br>vielen Dank für Ihre Anfrage. Ihr Termin bei NEXAI wurde erfolgreich eingetragen – wir freuen uns auf das Gespräch!</p>\n      <div style=\"background:#f7f8fa;border:1px solid #ececf1;border-radius:12px;padding:8px 20px;margin-bottom:22px;\">\n        <table style=\"width:100%;font-size:14px;color:#0b0b0f;border-collapse:collapse;\">\n          <tr><td style=\"padding:8px 0;color:#8a8a99;\">📅 Termin</td><td style=\"padding:8px 0;text-align:right;font-weight:600;\">{{ $('Parse & Normalize').item.json.startLabel }} Uhr</td></tr>\n          <tr><td style=\"padding:8px 0;color:#8a8a99;\">⏱️ Dauer</td><td style=\"padding:8px 0;text-align:right;font-weight:600;\">30 Minuten</td></tr>\n          <tr><td style=\"padding:8px 0;color:#8a8a99;\">💬 Thema</td><td style=\"padding:8px 0;text-align:right;font-weight:600;\">{{ $('Parse & Normalize').item.json.anliegen }}</td></tr>\n        </table>\n      </div>\n      <p style=\"margin:0;color:#8a8a99;font-size:13px;line-height:1.6;\">Müssen Sie verschieben oder absagen? Antworten Sie einfach auf diese E-Mail oder rufen Sie uns an: 0176 80714816.</p>\n    </div>\n    <div style=\"padding:18px 32px;border-top:1px solid #ececf1;color:#a1a1ad;font-size:12px;\">NEXAI · Crailsheim · mbt@nex-a-i.com · nex-a-i.com<br>Automatisch erstellt von unserem KI-Assistenten.</div>\n  </div>\n</div>",
+        "options": {
+          "appendAttribution": false
+        }
+      },
+      "id": "5bb54ff5-d37a-4832-8f96-4bea783fcf64",
+      "name": "Kunden-Bestätigung",
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [
+        704,
+        -96
+      ],
+      "webhookId": "c8824dd1-6d5e-402f-9619-f65933da4a04",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "BzOKiHvi15cSwpEv",
+          "name": "Gmail account"
+        }
+      },
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "sendTo": "mbt@nex-a-i.com",
+        "subject": "=🗓️ Neuer Termin: {{ $('Parse & Normalize').item.json.name }} – {{ $('Parse & Normalize').item.json.startLabel }}",
+        "message": "=<div style=\"font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#0b0b0f;font-size:15px;line-height:1.6;\">\n  <h2 style=\"margin:0 0 12px;\">🗓️ Neuer Termin über den Voice Agent</h2>\n  <p style=\"margin:0 0 16px;color:#4b4b57;\">Der NEXAI Voice Agent hat soeben einen neuen Termin gebucht:</p>\n  <table style=\"border-collapse:collapse;font-size:14px;\">\n    <tr><td style=\"padding:4px 16px 4px 0;color:#8a8a99;\">Kunde</td><td style=\"padding:4px 0;font-weight:600;\">{{ $('Parse & Normalize').item.json.name }}</td></tr>\n    <tr><td style=\"padding:4px 16px 4px 0;color:#8a8a99;\">Termin</td><td style=\"padding:4px 0;font-weight:600;\">{{ $('Parse & Normalize').item.json.startLabel }} Uhr</td></tr>\n    <tr><td style=\"padding:4px 16px 4px 0;color:#8a8a99;\">Anliegen</td><td style=\"padding:4px 0;\">{{ $('Parse & Normalize').item.json.anliegen }}</td></tr>\n    <tr><td style=\"padding:4px 16px 4px 0;color:#8a8a99;\">E-Mail</td><td style=\"padding:4px 0;\">{{ $('Parse & Normalize').item.json.email }}</td></tr>\n    <tr><td style=\"padding:4px 16px 4px 0;color:#8a8a99;\">Telefon</td><td style=\"padding:4px 0;\">{{ $('Parse & Normalize').item.json.telefon }}</td></tr>\n  </table>\n  <p style=\"margin:16px 0 0;color:#a1a1ad;font-size:12px;\">Der Termin liegt im Kalender mbt@nex-a-i.com.</p>\n</div>",
+        "options": {
+          "appendAttribution": false
+        }
+      },
+      "id": "abe9b04c-209f-4125-9e00-70f95e433738",
+      "name": "Inhaber-Info",
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [
+        864,
+        16
+      ],
+      "webhookId": "c4f47de8-91b2-4cba-b41c-105f9607705e",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "BzOKiHvi15cSwpEv",
+          "name": "Gmail account"
+        }
+      },
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "operation": "getAll",
+        "calendar": {
+          "__rl": true,
+          "value": "mbt@nex-a-i.com",
+          "mode": "list",
+          "cachedResultName": "mbt@nex-a-i.com"
+        },
+        "returnAll": true,
+        "timeMin": "=={{ $now.setZone('Europe/Berlin').toISO() }}",
+        "timeMax": "=={{ $now.setZone('Europe/Berlin').plus({ days: 14 }).toISO() }}",
+        "options": {
+          "recurringEventHandling": "expand"
+        }
+      },
+      "id": "c3ce464c-1806-4178-89c5-cd5048aa9647",
+      "name": "Konflikt prüfen",
+      "type": "n8n-nodes-base.googleCalendar",
+      "typeVersion": 1.3,
+      "position": [
+        -192,
+        0
+      ],
+      "alwaysOutputData": true,
+      "credentials": {
+        "googleCalendarOAuth2Api": {
+          "id": "nO7JsoyGaTmuhXfb",
+          "name": "Google Calendar account"
+        }
+      },
+      "onError": "continueErrorOutput"
+    },
+    {
+      "parameters": {
+        "jsCode": "// NEXAI Voice · Buchung — Wunsch-Slot prüfen; bei Konflikt 3 Alternativen berechnen\nconst TZ='Europe/Berlin';\nconst DAY_START=8,DAY_END=17,SLOT_MIN=30,LEAD_MIN=120,HORIZON=14;\nconst WD=['','Montag','Dienstag','Mittwoch','Donnerstag','Freitag','Samstag','Sonntag'];\nconst ov=(aS,aE,bS,bE)=>aS<bE&&bS<aE;\nfunction busyFromEvents(items){const busy=[];for(const it of items){const e=(it&&it.json)?it.json:it;if(!e)continue;if(e.status==='cancelled')continue;if(e.transparency==='transparent')continue;const s=e.start&&(e.start.dateTime||e.start.date);const en=e.end&&(e.end.dateTime||e.end.date);if(!s||!en)continue;const es=DateTime.fromISO(s).setZone(TZ),ee=DateTime.fromISO(en).setZone(TZ);if(!es.isValid||!ee.isValid)continue;busy.push([es,ee]);}return busy;}\nfunction collectFree(busy,now,from,maxTotal,maxPerDay){const earliest=now.plus({minutes:LEAD_MIN}),limit=now.plus({days:HORIZON});let cur=((from&&from>earliest)?from:earliest).set({second:0,millisecond:0});if(cur.minute!==0&&cur.minute!==30)cur=cur.minute<30?cur.set({minute:30}):cur.plus({hours:1}).set({minute:0});const out=[],per={};let g=0;while(out.length<maxTotal&&cur<limit&&g<5000){g++;const wd=cur.weekday,h=cur.hour+cur.minute/60,dk=cur.toFormat('yyyy-LL-dd');if(wd>=1&&wd<=5&&h>=DAY_START&&h+SLOT_MIN/60<=DAY_END&&cur>=earliest&&(per[dk]||0)<maxPerDay){const cE=cur.plus({minutes:SLOT_MIN});if(!busy.some(([bs,be])=>ov(cur,cE,bs,be))){out.push(cur);per[dk]=(per[dk]||0)+1;}}cur=cur.plus({minutes:SLOT_MIN});}return out;}\nconst lbl=dt=>WD[dt.weekday]+' '+dt.toFormat('dd.LL.')+' um '+dt.toFormat('HH:mm');\nconst p=$('Parse & Normalize').first().json;\nconst now=$now.setZone(TZ);\nconst reqStart=DateTime.fromISO(p.startISO).setZone(TZ);\nconst reqEnd=DateTime.fromISO(p.endISO).setZone(TZ);\nconst busy=busyFromEvents($input.all());\nconst konflikt=busy.some(([bs,be])=>ov(reqStart,reqEnd,bs,be));\nif(!konflikt){return [{ json: { ...p, frei:true, alternativen:[] } }];}\nconst alt=collectFree(busy,now,reqStart,3,99);\nreturn [{ json: { ...p, frei:false, alternativen:alt.map(lbl) } }];"
+      },
+      "id": "84fd3953-34a8-4ce1-9991-3f2b99b653f9",
+      "name": "Slot frei?",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -32,
+        -112
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "combinator": "and",
+          "conditions": [
+            {
+              "id": "cond-frei-c3",
+              "leftValue": "={{ $json.frei }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "8fb210e3-a088-4510-b152-1318f33e7543",
+      "name": "Frei?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        128,
+        -112
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const s=$('Slot frei?').first().json;\nlet result;\nif(s.alternativen&&s.alternativen.length){result='Der gewünschte Termin '+s.startLabel+' Uhr ist leider belegt. Biete dem Anrufer diese freien Alternativen an und frage, welche passt: '+s.alternativen.join(' | ')+'. Buche danach den gewählten Termin.';}\nelse{result='Der gewünschte Termin ist leider belegt und ich habe in den nächsten 14 Tagen keine Alternative gefunden. Entschuldige dich und biete an, dass sich das Team beim Anrufer meldet.';}\nreturn [{ json: { results: [{ toolCallId: s.toolCallId, result }] } }];"
+      },
+      "id": "3b3d73ba-d314-4fd1-ba90-68b2c9bb394b",
+      "name": "Return: Belegt",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        400,
+        -224
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const p = $('Parse & Normalize').first().json;\nconst result = 'Es tut mir leid, bei der Buchung gab es gerade ein technisches Problem. Sag dem Anrufer freundlich, dass du seinen Wunsch aufgenommen hast und sich das Team zeitnah bei ihm meldet, um den Termin zu bestätigen.';\nreturn [{ json: { results: [{ toolCallId: p.toolCallId, result }] } }];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        512,
+        416
+      ],
+      "id": "40424737-4897-4650-9d7f-2170e8af51f9",
+      "name": "Return Fehler"
+    },
+    {
+      "parameters": {
+        "workflowId": {
+          "__rl": true,
+          "value": "TGCAGHOmJHNNh2Sz",
+          "mode": "list",
+          "cachedResultUrl": "/workflow/TGCAGHOmJHNNh2Sz",
+          "cachedResultName": "NEXAI – Save Lead to CRM (Sub-Workflow)"
+        },
+        "workflowInputs": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "name": "={{ $('Parse & Normalize').item.json.name }}",
+            "email": "={{ $('Parse & Normalize').item.json.email }}",
+            "phone": "={{ $('Parse & Normalize').item.json.telefon }}",
+            "anliegen": "={{ $('Parse & Normalize').item.json.anliegen }}",
+            "termin": "={{ $('Parse & Normalize').item.json.startLabel }}",
+            "startISO": "={{ $('Parse & Normalize').item.json.startISO }}",
+            "quelle": "telefon-termin"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "name",
+              "displayName": "name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "canBeUsedToMatch": true,
+              "type": "string",
+              "removed": false
+            },
+            {
+              "id": "email",
+              "displayName": "email",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "canBeUsedToMatch": true,
+              "type": "string",
+              "removed": false
+            },
+            {
+              "id": "phone",
+              "displayName": "phone",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "canBeUsedToMatch": true,
+              "type": "string",
+              "removed": false
+            },
+            {
+              "id": "anliegen",
+              "displayName": "anliegen",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "canBeUsedToMatch": true,
+              "type": "string",
+              "removed": false
+            },
+            {
+              "id": "quelle",
+              "displayName": "quelle",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "canBeUsedToMatch": true,
+              "type": "string",
+              "removed": false
+            },
+            {
+              "id": "termin",
+              "displayName": "termin",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "canBeUsedToMatch": true,
+              "type": "string",
+              "removed": false
+            },
+            {
+              "id": "startISO",
+              "displayName": "startISO",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "canBeUsedToMatch": true,
+              "type": "string",
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": true
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.executeWorkflow",
+      "typeVersion": 1.3,
+      "position": [
+        384,
+        112
+      ],
+      "id": "9030d5d7-1043-4db1-9b1b-160e7595541b",
+      "name": "Save to CRM",
+      "onError": "continueRegularOutput"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Parse & Normalize",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse & Normalize": {
+      "main": [
+        [
+          {
+            "node": "Is Valid",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Is Valid": {
+      "main": [
+        [
+          {
+            "node": "Konflikt prüfen",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Return: Invalid",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create Event": {
+      "main": [
+        [
+          {
+            "node": "Hat E-Mail?",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Save to CRM",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Return Fehler",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Return: Booked": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Return: Invalid": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Hat E-Mail?": {
+      "main": [
+        [
+          {
+            "node": "Kunden-Bestätigung",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Inhaber-Info",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Kunden-Bestätigung": {
+      "main": [
+        [
+          {
+            "node": "Inhaber-Info",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Inhaber-Info": {
+      "main": [
+        [
+          {
+            "node": "Return: Booked",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Konflikt prüfen": {
+      "main": [
+        [
+          {
+            "node": "Slot frei?",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Return Fehler",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Slot frei?": {
+      "main": [
+        [
+          {
+            "node": "Frei?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Frei?": {
+      "main": [
+        [
+          {
+            "node": "Create Event",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Return: Belegt",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Return: Belegt": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Return Fehler": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false,
+    "timeSavedMode": "fixed",
+    "saveDataErrorExecution": "none",
+    "saveDataSuccessExecution": "none",
+    "saveExecutionProgress": false,
+    "saveManualExecutions": false,
+    "callerPolicy": "workflowsFromSameOwner"
+  },
+  "versionId": "50a067f8-844d-4480-a748-a2e9f83c1f2a",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "ef3620cd91dc9e7ea40cd73ec1d0c6f9864ca641c8b0d21066882daeadf529ea"
+  },
+  "id": "VDNZ1ReMroplJ3sB",
+  "tags": []
+}
