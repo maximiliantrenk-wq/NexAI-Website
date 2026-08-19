@@ -104,7 +104,8 @@
           "id": "nO7JsoyGaTmuhXfb",
           "name": "Google Calendar account"
         }
-      }
+      },
+      "onError": "continueRegularOutput"
     },
     {
       "parameters": {
@@ -115,7 +116,7 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        944,
+        1056,
         -192
       ]
     },
@@ -275,11 +276,39 @@
       "type": "n8n-nodes-base.executeWorkflow",
       "typeVersion": 1.3,
       "position": [
-        768,
+        816,
         -192
       ],
       "id": "58d08db6-5675-4b52-b372-cbe1fc7133e9",
       "name": "Save to CRM",
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://app.nex-a-i.com/api/appointments",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "x-nexai-secret",
+              "value": "SECRET-AUS-COOLIFY-EINSETZEN"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"source\": \"website\",\n  \"name\": \"{{ $('Parse').item.json.name }}\",\n  \"email\": \"{{ $('Parse').item.json.email }}\",\n  \"topic\": \"{{ $('Parse').item.json.topic }}\",\n  \"startISO\": \"{{ $('Parse').item.json.startISO }}\",\n  \"endISO\": \"{{ $('Parse').item.json.endISO }}\",\n  \"googleEventId\": \"{{ $json.id }}\"\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        800,
+        -384
+      ],
+      "id": "2ede5374-3422-428a-bc42-382762d01a7a",
+      "name": "HTTP Request",
       "onError": "continueRegularOutput"
     }
   ],
@@ -330,6 +359,11 @@
         [
           {
             "node": "Save to CRM",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "HTTP Request",
             "type": "main",
             "index": 0
           }
@@ -387,7 +421,7 @@
     "binaryMode": "separate",
     "availableInMCP": false
   },
-  "versionId": "16e327bb-ff22-423b-8530-d590630ca2c2",
+  "versionId": "7f9bbd62-83b9-4e02-b73d-4d17e9539ef4",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "ef3620cd91dc9e7ea40cd73ec1d0c6f9864ca641c8b0d21066882daeadf529ea"

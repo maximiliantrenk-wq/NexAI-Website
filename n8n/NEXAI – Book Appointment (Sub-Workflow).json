@@ -181,7 +181,7 @@
       "type": "n8n-nodes-base.googleCalendar",
       "typeVersion": 1.3,
       "position": [
-        1328,
+        1264,
         128
       ],
       "credentials": {
@@ -189,7 +189,8 @@
           "id": "nO7JsoyGaTmuhXfb",
           "name": "Google Calendar account"
         }
-      }
+      },
+      "onError": "continueRegularOutput"
     },
     {
       "parameters": {
@@ -305,11 +306,39 @@
       "type": "n8n-nodes-base.executeWorkflow",
       "typeVersion": 1.3,
       "position": [
-        1536,
+        1568,
         128
       ],
       "id": "8006e943-3bed-4eaf-97be-038f4cba98c4",
       "name": "Save to CRM",
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://app.nex-a-i.com/api/appointments",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "x-nexai-secret",
+              "value": "SECRET-AUS-COOLIFY-EINSETZEN"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"source\": \"chatbot\",\n  \"name\": \"{{ $('Validate & Normalize').item.json.name }}\",\n  \"email\": \"{{ $('Validate & Normalize').item.json.email }}\",\n  \"phone\": \"{{ $('Validate & Normalize').item.json.phone }}\",\n  \"topic\": \"{{ $('Validate & Normalize').item.json.topic }}\",\n  \"startISO\": \"{{ $('Validate & Normalize').item.json.startISO }}\",\n  \"endISO\": \"{{ $('Validate & Normalize').item.json.endISO }}\",\n  \"googleEventId\": \"{{ $json.id }}\"\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        1696,
+        368
+      ],
+      "id": "dcc6cc0f-98fe-4953-91c1-ee22d4f0785a",
+      "name": "HTTP Request",
       "onError": "continueRegularOutput"
     }
   ],
@@ -402,6 +431,11 @@
             "node": "Save to CRM",
             "type": "main",
             "index": 0
+          },
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
           }
         ]
       ]
@@ -424,7 +458,7 @@
     "callerPolicy": "workflowsFromSameOwner",
     "availableInMCP": false
   },
-  "versionId": "db4e86ba-fe4e-432a-b46e-a2708a23a6dd",
+  "versionId": "5de50891-3c61-4a49-a13d-7dc41865d950",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "ef3620cd91dc9e7ea40cd73ec1d0c6f9864ca641c8b0d21066882daeadf529ea"
