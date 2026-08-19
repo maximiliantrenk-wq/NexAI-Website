@@ -232,8 +232,8 @@
           "cachedResultName": "mbt@nex-a-i.com"
         },
         "returnAll": true,
-        "timeMin": "=={{ $now.setZone('Europe/Berlin').toISO() }}",
-        "timeMax": "=={{ $now.setZone('Europe/Berlin').plus({ days: 14 }).toISO() }}",
+        "timeMin": "={{ $now.setZone('Europe/Berlin').toISO() }}",
+        "timeMax": "={{ $now.setZone('Europe/Berlin').plus({ days: 14 }).toISO() }}",
         "options": {
           "recurringEventHandling": "expand"
         }
