@@ -434,6 +434,34 @@
       "id": "9030d5d7-1043-4db1-9b1b-160e7595541b",
       "name": "Save to CRM",
       "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://app.nex-a-i.com/api/appointments",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "x-nexai-secret",
+              "value": "SECRET-AUS-COOLIFY-EINSETZEN"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"source\": \"voice\",\n  \"name\": \"{{ $('Parse & Normalize').item.json.name }}\",\n  \"email\": \"{{ $('Parse & Normalize').item.json.email }}\",\n  \"phone\": \"{{ $('Parse & Normalize').item.json.telefon }}\",\n  \"topic\": \"{{ $('Parse & Normalize').item.json.anliegen }}\",\n  \"notes\": \"{{ $('Parse & Normalize').item.json.notizen }}\",\n  \"startISO\": \"{{ $('Parse & Normalize').item.json.startISO }}\",\n  \"endISO\": \"{{ $('Parse & Normalize').item.json.endISO }}\",\n  \"googleEventId\": \"{{ $json.id }}\"\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        112,
+        544
+      ],
+      "id": "c46f45b9-3f3d-478d-a04b-c4146f77a0b8",
+      "name": "HTTP Request",
+      "onError": "continueRegularOutput"
     }
   ],
   "pinData": {},
@@ -488,6 +516,11 @@
           },
           {
             "node": "Save to CRM",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "HTTP Request",
             "type": "main",
             "index": 0
           }
@@ -645,7 +678,7 @@
     "saveManualExecutions": false,
     "callerPolicy": "workflowsFromSameOwner"
   },
-  "versionId": "50a067f8-844d-4480-a748-a2e9f83c1f2a",
+  "versionId": "c20d905d-a732-4368-a203-6d7ce347af18",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "ef3620cd91dc9e7ea40cd73ec1d0c6f9864ca641c8b0d21066882daeadf529ea"
