@@ -1,0 +1,117 @@
+{
+  "name": "NEXAI Ops · Box-Wächter (extern)",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "minutes",
+              "minutesInterval": 3
+            }
+          ]
+        }
+      },
+      "id": "a1000000-0000-4000-8000-000000000001",
+      "name": "Alle 3 Minuten",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [0, 0]
+    },
+    {
+      "parameters": {
+        "url": "https://crm.nex-a-i.com/",
+        "options": {
+          "timeout": 10000,
+          "response": {
+            "response": {
+              "fullResponse": true,
+              "neverError": true
+            }
+          }
+        }
+      },
+      "id": "a1000000-0000-4000-8000-000000000002",
+      "name": "Check CRM",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [224, 0],
+      "onError": "continueRegularOutput",
+      "alwaysOutputData": true
+    },
+    {
+      "parameters": {
+        "url": "http://178.105.12.207:9101/asterisk",
+        "options": {
+          "timeout": 10000,
+          "response": {
+            "response": {
+              "fullResponse": true,
+              "neverError": true
+            }
+          }
+        }
+      },
+      "id": "a1000000-0000-4000-8000-000000000003",
+      "name": "Check Asterisk",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [448, 0],
+      "onError": "continueRegularOutput",
+      "alwaysOutputData": true
+    },
+    {
+      "parameters": {
+        "jsCode": "// NEXAI Box-Wächter — wertet beide Prüfungen aus und meldet NUR Zustandswechsel.\n// Läuft auf der Website-Box (5.75.179.247) und beobachtet die CRM-/Telefonie-Box\n// (178.105.12.207) von außen. Genau die Lücke, die ein Wächter INNERHALB des CRM\n// prinzipbedingt nicht abdecken kann: stirbt die Box, kann sie sich nicht selbst melden.\n//\n// Zustand liegt in den Workflow-Static-Data und überlebt damit die einzelnen Läufe\n// (funktioniert nur, wenn der Workflow AKTIV ist — im Test-Modus wird nichts gespeichert).\n\nconst TARGETS = [\n  { key: 'crm',      label: 'CRM-Box (crm.nex-a-i.com)', node: 'Check CRM',      url: 'https://crm.nex-a-i.com/' },\n  { key: 'asterisk', label: 'Telefonie / Asterisk',      node: 'Check Asterisk', url: 'http://178.105.12.207:9101/asterisk' },\n];\nconst FAILS_BEFORE_ALARM = 2;          // gegen kurze Aussetzer\nconst REMIND_MS = 60 * 60 * 1000;      // solange down: höchstens stündlich erinnern\n\nconst store = $getWorkflowStaticData('global');\nconst now = Date.now();\nconst stamp = (ms) => new Date(ms).toLocaleString('de-DE', { timeZone: 'Europe/Berlin' });\nconst dauer = (ms) => {\n  const m = Math.round(ms / 60000);\n  if (m < 60) return m + ' Minuten';\n  const h = Math.floor(m / 60);\n  return h + ' Std ' + (m % 60) + ' Min';\n};\nconst out = [];\n\n// Einmalige Bestätigung beim allerersten Lauf nach dem Aktivieren.\nif (!store.__armed) {\n  store.__armed = now;\n  out.push({ json: {\n    subject: 'Box-Wächter aktiv',\n    text: 'Der externe Box-Wächter läuft ab jetzt auf der Website-Box und prüft alle 3 Minuten:\\n\\n'\n        + TARGETS.map(t => '  • ' + t.label + '  →  ' + t.url).join('\\n')\n        + '\\n\\nDu bekommst eine Mail, sobald eines der beiden ausfällt — und wieder eine, sobald es zurück ist.\\n'\n        + 'Diese Nachricht kommt nur einmal, beim Scharfschalten.',\n  } });\n}\n\nfor (const t of TARGETS) {\n  let code = 0;\n  let detail = '';\n  try {\n    const j = $(t.node).first().json || {};\n    code = Number(j.statusCode) || 0;\n    if (typeof j.body === 'string') detail = j.body.slice(0, 300);\n    else if (j.error) detail = String(j.error.message || j.error);\n  } catch (e) {\n    code = 0;\n    detail = String((e && e.message) || e);\n  }\n\n  const ok = code >= 200 && code < 400;\n  const s = store[t.key] || { down: false, fails: 0, since: 0, lastAlert: 0 };\n\n  if (ok) {\n    if (s.down) {\n      out.push({ json: {\n        subject: t.label + ' ist wieder erreichbar',\n        text: t.url + '\\n\\nWieder erreichbar: ' + stamp(now)\n            + '\\nWar ausgefallen seit: ' + stamp(s.since) + ' (' + dauer(now - s.since) + ')',\n      } });\n    }\n    store[t.key] = { down: false, fails: 0, since: now, lastAlert: 0 };\n    continue;\n  }\n\n  const fails = (s.fails || 0) + 1;\n\n  if (!s.down && fails >= FAILS_BEFORE_ALARM) {\n    store[t.key] = { down: true, fails, since: now, lastAlert: now };\n    out.push({ json: {\n      subject: 'AUSFALL: ' + t.label + ' nicht erreichbar',\n      text: t.url + '\\n\\nNicht erreichbar seit: ' + stamp(now)\n          + '\\nHTTP-Status: ' + (code || 'keine Antwort')\n          + (detail ? '\\nDetails: ' + detail : '')\n          + '\\n\\n(nach ' + fails + ' Fehlversuchen in Folge — kurze Aussetzer lösen keinen Alarm aus)'\n          + '\\nDu bekommst eine weitere Mail, sobald es wieder läuft.',\n    } });\n  } else if (s.down && now - (s.lastAlert || 0) >= REMIND_MS) {\n    store[t.key] = { down: true, fails, since: s.since, lastAlert: now };\n    out.push({ json: {\n      subject: 'AUSFALL hält an: ' + t.label,\n      text: t.url + '\\n\\nWeiterhin nicht erreichbar (HTTP ' + (code || 'keine Antwort') + ').'\n          + '\\nAusgefallen seit: ' + stamp(s.since) + ' (' + dauer(now - s.since) + ')',\n    } });\n  } else {\n    store[t.key] = { down: s.down, fails, since: s.since || now, lastAlert: s.lastAlert || 0 };\n  }\n}\n\n// Keine Items = nichts zu melden. Der Gmail-Node läuft dann gar nicht erst.\nreturn out;"
+      },
+      "id": "a1000000-0000-4000-8000-000000000004",
+      "name": "Auswerten",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [672, 0]
+    },
+    {
+      "parameters": {
+        "sendTo": "mbt@nex-a-i.com",
+        "subject": "={{ $json.subject }}",
+        "emailType": "text",
+        "message": "={{ $json.text }}",
+        "options": {
+          "appendAttribution": false
+        }
+      },
+      "id": "a1000000-0000-4000-8000-000000000005",
+      "name": "Mail an Inhaber",
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [896, 0],
+      "onError": "continueRegularOutput",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "BzOKiHvi15cSwpEv",
+          "name": "Gmail account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Alle 3 Minuten": {
+      "main": [[{ "node": "Check CRM", "type": "main", "index": 0 }]]
+    },
+    "Check CRM": {
+      "main": [[{ "node": "Check Asterisk", "type": "main", "index": 0 }]]
+    },
+    "Check Asterisk": {
+      "main": [[{ "node": "Auswerten", "type": "main", "index": 0 }]]
+    },
+    "Auswerten": {
+      "main": [[{ "node": "Mail an Inhaber", "type": "main", "index": 0 }]]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "tags": []
+}
