@@ -105,6 +105,140 @@
         1100,
         300
       ]
+    },
+    {
+      "parameters": {
+        "sendTo": "mbt@nex-a-i.com",
+        "subject": "=📞 Rueckruf gewuenscht: {{ $('Parse & Normalize').item.json.name || 'Unbekannt' }} – {{ $('Parse & Normalize').item.json.rueckrufnummer }}",
+        "message": "=<div style=\"font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#0b0b0f;font-size:15px;line-height:1.6;\"><h2 style=\"margin:0 0 12px;\">📞 Rueckruf gewuenscht</h2><p style=\"margin:0 0 16px;color:#4b4b57;\">Ein Anrufer wollte einen Mitarbeiter sprechen, es war aber niemand erreichbar. <strong>Bitte zeitnah zurueckrufen.</strong></p><table style=\"border-collapse:collapse;\"><tr><td style=\"padding:4px 12px 4px 0;color:#6b6b76;\">Name</td><td><strong>{{ $('Parse & Normalize').item.json.name || '—' }}</strong></td></tr><tr><td style=\"padding:4px 12px 4px 0;color:#6b6b76;\">Rueckrufnummer</td><td><strong>{{ $('Parse & Normalize').item.json.rueckrufnummer || '—' }}</strong></td></tr><tr><td style=\"padding:4px 12px 4px 0;color:#6b6b76;\">E-Mail</td><td>{{ $('Parse & Normalize').item.json.email || '—' }}</td></tr><tr><td style=\"padding:4px 12px 4px 0;color:#6b6b76;\">Anliegen</td><td>{{ $('Parse & Normalize').item.json.anliegen || '—' }}</td></tr><tr><td style=\"padding:4px 12px 4px 0;color:#6b6b76;\">Anrufernummer</td><td>{{ $('Parse & Normalize').item.json.callerNumber || '—' }}</td></tr><tr><td style=\"padding:4px 12px 4px 0;color:#6b6b76;\">Eingegangen</td><td>{{ $('Parse & Normalize').item.json.eingegangen }}</td></tr></table></div>",
+        "options": {
+          "appendAttribution": false
+        }
+      },
+      "id": "rb-mail-0001",
+      "name": "Rueckruf-Mail an Inhaber",
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [
+        672,
+        220
+      ],
+      "webhookId": "c4f47de8-91b2-4cba-b41c-105f9607705e",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "BzOKiHvi15cSwpEv",
+          "name": "Gmail account"
+        }
+      },
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "workflowId": {
+          "__rl": true,
+          "value": "TGCAGHOmJHNNh2Sz",
+          "mode": "list",
+          "cachedResultUrl": "/workflow/TGCAGHOmJHNNh2Sz",
+          "cachedResultName": "NEXAI – Save Lead to CRM (Sub-Workflow)"
+        },
+        "workflowInputs": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "name": "={{ $('Parse & Normalize').item.json.name }}",
+            "email": "={{ $('Parse & Normalize').item.json.email }}",
+            "phone": "={{ $('Parse & Normalize').item.json.rueckrufnummer }}",
+            "anliegen": "={{ 'Rueckruf gewuenscht: ' + ($('Parse & Normalize').item.json.anliegen || 'kein Anliegen genannt') }}",
+            "termin": "",
+            "startISO": "",
+            "quelle": "telefon-rueckruf"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "name",
+              "displayName": "name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "canBeUsedToMatch": true,
+              "type": "string",
+              "removed": false
+            },
+            {
+              "id": "email",
+              "displayName": "email",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "canBeUsedToMatch": true,
+              "type": "string",
+              "removed": false
+            },
+            {
+              "id": "phone",
+              "displayName": "phone",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "canBeUsedToMatch": true,
+              "type": "string",
+              "removed": false
+            },
+            {
+              "id": "anliegen",
+              "displayName": "anliegen",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "canBeUsedToMatch": true,
+              "type": "string",
+              "removed": false
+            },
+            {
+              "id": "quelle",
+              "displayName": "quelle",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "canBeUsedToMatch": true,
+              "type": "string",
+              "removed": false
+            },
+            {
+              "id": "termin",
+              "displayName": "termin",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "canBeUsedToMatch": true,
+              "type": "string",
+              "removed": false
+            },
+            {
+              "id": "startISO",
+              "displayName": "startISO",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "canBeUsedToMatch": true,
+              "type": "string",
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": true
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.executeWorkflow",
+      "typeVersion": 1.3,
+      "position": [
+        896,
+        220
+      ],
+      "id": "rb-crm-0001",
+      "name": "Save to CRM",
+      "onError": "continueRegularOutput"
     }
   ],
   "connections": {
@@ -135,6 +269,11 @@
         [
           {
             "node": "Return: Notiert",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Rueckruf-Mail an Inhaber",
             "type": "main",
             "index": 0
           }
@@ -169,9 +308,20 @@
           }
         ]
       ]
+    },
+    "Rueckruf-Mail an Inhaber": {
+      "main": [
+        [
+          {
+            "node": "Save to CRM",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
-  "active": false,
+  "active": true,
   "settings": {
     "executionOrder": "v1"
   },
