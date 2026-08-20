@@ -1,0 +1,397 @@
+{
+  "name": "NEXAI Web · Termin (Verfügbarkeit + Buchung)",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "nexai-web-termin",
+        "authentication": "headerAuth",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "86d7fd2d-1a80-4e94-a5bf-bf573a5e3a05",
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -32,
+        -80
+      ],
+      "webhookId": "nexai-web-termin",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "qMviIhfyVJSQiplh",
+          "name": "Header Auth account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Eingang normalisieren. Die Website schickt entweder {action:'busy'}\n// oder {action:'create', startISO, endISO, name, email, topic, locale}.\nconst b = $input.first().json.body || $input.first().json || {};\nconst action = String(b.action || '').toLowerCase();\n\n// Fenster fuer die Belegt-Abfrage: jetzt bis +15 Tage (ein Tag Puffer, damit\n// Termine am Rand des 14-Tage-Horizonts der Website sicher abgedeckt sind).\nconst now = new Date();\nconst until = new Date(now.getTime() + 15 * 24 * 60 * 60 * 1000);\n\nreturn [{ json: {\n  action,\n  timeMin: now.toISOString(),\n  timeMax: until.toISOString(),\n  startISO: b.startISO || '',\n  endISO: b.endISO || '',\n  name: String(b.name || '').slice(0, 80),\n  email: String(b.email || '').slice(0, 120),\n  topic: String(b.topic || '').slice(0, 500),\n  locale: b.locale === 'en' ? 'en' : 'de'\n} }];"
+      },
+      "id": "1a9dcf2f-432c-464b-b9ea-9d2ac891ccdd",
+      "name": "Parse",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        208,
+        -80
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "cond-create",
+              "leftValue": "={{ $json.action }}",
+              "rightValue": "create",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "0760eec1-3568-479f-aa20-955fb29c4222",
+      "name": "Buchen?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        416,
+        -80
+      ]
+    },
+    {
+      "parameters": {
+        "calendar": {
+          "__rl": true,
+          "value": "mbt@nex-a-i.com",
+          "mode": "list",
+          "cachedResultName": "mbt@nex-a-i.com"
+        },
+        "start": "={{ $json.startISO }}",
+        "end": "={{ $json.endISO }}",
+        "additionalFields": {
+          "attendees": [
+            "={{ $json.email }}"
+          ],
+          "conferenceDataUi": {},
+          "description": "={{ '🌐 Gebucht über die Website (nex-a-i.com/contact)' + '\\n👤 Name: ' + $json.name + '\\n✉️ E-Mail: ' + $json.email + '\\n💬 Anliegen: ' + ($json.topic || '—') + '\\n🗣 Sprache: ' + $json.locale }}",
+          "sendUpdates": "all",
+          "summary": "=NEXAI Erstgespräch – {{ $json.name }}"
+        }
+      },
+      "id": "2bf931c4-254c-44ff-8f68-ccbf90329a6c",
+      "name": "Create Event",
+      "type": "n8n-nodes-base.googleCalendar",
+      "typeVersion": 1.3,
+      "position": [
+        592,
+        -192
+      ],
+      "credentials": {
+        "googleCalendarOAuth2Api": {
+          "id": "nO7JsoyGaTmuhXfb",
+          "name": "Google Calendar account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "return [{ json: { ok: true } }];"
+      },
+      "id": "0a2818d6-cc28-48eb-9f7a-0a8d60cafcde",
+      "name": "Return: Booked",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        944,
+        -192
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "getAll",
+        "calendar": {
+          "__rl": true,
+          "value": "mbt@nex-a-i.com",
+          "mode": "list",
+          "cachedResultName": "mbt@nex-a-i.com"
+        },
+        "returnAll": true,
+        "timeMin": "={{ $json.timeMin }}",
+        "timeMax": "={{ $json.timeMax }}",
+        "options": {
+          "orderBy": "startTime"
+        }
+      },
+      "id": "3bce8224-c932-4e9b-bf1a-f9bbd70170d6",
+      "name": "Get Events",
+      "type": "n8n-nodes-base.googleCalendar",
+      "typeVersion": 1.3,
+      "position": [
+        656,
+        48
+      ],
+      "credentials": {
+        "googleCalendarOAuth2Api": {
+          "id": "nO7JsoyGaTmuhXfb",
+          "name": "Google Calendar account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Nur die belegten Zeitraeume durchreichen — keine Titel, keine Teilnehmer,\n// keine Beschreibungen. Die Website sieht ausschliesslich, WANN belegt ist.\nconst busy = [];\nfor (const item of $input.all()) {\n  const e = item.json || {};\n  if (!e || e.status === 'cancelled') continue;\n  // Abgelehnte bzw. nur tentativ gesetzte Termine blockieren nicht.\n  if (e.transparency === 'transparent') continue;\n  const start = e.start && (e.start.dateTime || e.start.date);\n  const end = e.end && (e.end.dateTime || e.end.date);\n  if (!start || !end) continue;\n  busy.push({ start, end });\n}\nreturn [{ json: { ok: true, busy } }];"
+      },
+      "id": "17d9af0d-7ce9-49ef-a812-4c277ea46417",
+      "name": "Return: Busy",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        896,
+        48
+      ]
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "id": "e5cc5b43-fceb-4c93-b090-bc056d19a91f",
+      "name": "Respond",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        1296,
+        -80
+      ]
+    },
+    {
+      "parameters": {
+        "workflowId": {
+          "__rl": true,
+          "value": "TGCAGHOmJHNNh2Sz",
+          "mode": "list",
+          "cachedResultUrl": "/workflow/TGCAGHOmJHNNh2Sz",
+          "cachedResultName": "NEXAI – Save Lead to CRM (Sub-Workflow)"
+        },
+        "workflowInputs": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "name": "={{ $('Parse').item.json.name }}",
+            "email": "={{ $('Parse').item.json.email }}",
+            "anliegen": "={{ $('Parse').item.json.topic }}",
+            "startISO": "={{ $('Parse').item.json.startISO }}",
+            "quelle": "website-termin"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "name",
+              "displayName": "name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "canBeUsedToMatch": true,
+              "type": "string",
+              "removed": false
+            },
+            {
+              "id": "email",
+              "displayName": "email",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "canBeUsedToMatch": true,
+              "type": "string",
+              "removed": false
+            },
+            {
+              "id": "phone",
+              "displayName": "phone",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "canBeUsedToMatch": true,
+              "type": "string",
+              "removed": false
+            },
+            {
+              "id": "anliegen",
+              "displayName": "anliegen",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "canBeUsedToMatch": true,
+              "type": "string",
+              "removed": false
+            },
+            {
+              "id": "quelle",
+              "displayName": "quelle",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "canBeUsedToMatch": true,
+              "type": "string",
+              "removed": false
+            },
+            {
+              "id": "termin",
+              "displayName": "termin",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "canBeUsedToMatch": true,
+              "type": "string",
+              "removed": false
+            },
+            {
+              "id": "startISO",
+              "displayName": "startISO",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "canBeUsedToMatch": true,
+              "type": "string",
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": true
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.executeWorkflow",
+      "typeVersion": 1.3,
+      "position": [
+        768,
+        -192
+      ],
+      "id": "58d08db6-5675-4b52-b372-cbe1fc7133e9",
+      "name": "Save to CRM",
+      "onError": "continueRegularOutput"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Parse",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse": {
+      "main": [
+        [
+          {
+            "node": "Buchen?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Buchen?": {
+      "main": [
+        [
+          {
+            "node": "Create Event",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Get Events",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create Event": {
+      "main": [
+        [
+          {
+            "node": "Save to CRM",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Return: Booked": {
+      "main": [
+        [
+          {
+            "node": "Respond",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Events": {
+      "main": [
+        [
+          {
+            "node": "Return: Busy",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Return: Busy": {
+      "main": [
+        [
+          {
+            "node": "Respond",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Save to CRM": {
+      "main": [
+        [
+          {
+            "node": "Return: Booked",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "versionId": "16e327bb-ff22-423b-8530-d590630ca2c2",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "ef3620cd91dc9e7ea40cd73ec1d0c6f9864ca641c8b0d21066882daeadf529ea"
+  },
+  "id": "FvFe0AdaQtyvrmlW",
+  "tags": []
+}
