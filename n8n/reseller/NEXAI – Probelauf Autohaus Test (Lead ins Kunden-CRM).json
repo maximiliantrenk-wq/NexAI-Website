@@ -1,0 +1,96 @@
+{
+  "name": "NEXAI – Probelauf Autohaus Test (Lead ins Kunden-CRM)",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "probelauf-autohaus-test",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "b1a1e9c0-0001-4000-8000-000000000001",
+      "name": "Webhook (Probelauf)",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [-260, 0],
+      "webhookId": "b1a1e9c0-0001-4000-8000-000000000001"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "cfg-1",
+              "name": "crmApiKey",
+              "value": "HIER_DEN_KUNDEN_KEY_EINTRAGEN",
+              "type": "string"
+            },
+            {
+              "id": "cfg-2",
+              "name": "crmBaseUrl",
+              "value": "https://crm.nex-a-i.com/api",
+              "type": "string"
+            },
+            {
+              "id": "cfg-3",
+              "name": "firmenname",
+              "value": "Autohaus Test",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "b1a1e9c0-0002-4000-8000-000000000002",
+      "name": "Kunden-Config",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [-40, 0]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $('Kunden-Config').item.json.crmBaseUrl }}/leads",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "x-api-key",
+              "value": "={{ $('Kunden-Config').item.json.crmApiKey }}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ title: ($json.body?.titel || $json.body?.title || 'Anfrage über Probelauf'), source: 'probelauf-n8n', notes: ($json.body?.notiz || $json.body?.notes || null) }) }}",
+        "options": { "response": { "response": { "neverError": true, "fullResponse": true } } }
+      },
+      "id": "b1a1e9c0-0003-4000-8000-000000000003",
+      "name": "Lead ins Kunden-CRM",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [180, 0]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ JSON.stringify({ ok: $json.statusCode === 201 || $json.statusCode === 200, status: $json.statusCode, tenantId: $json.body?.data?.tenantId ?? null, leadId: $json.body?.data?.id ?? null, firma: $('Kunden-Config').item.json.firmenname }) }}",
+        "options": {}
+      },
+      "id": "b1a1e9c0-0004-4000-8000-000000000004",
+      "name": "Antwort",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [400, 0]
+    }
+  ],
+  "connections": {
+    "Webhook (Probelauf)": { "main": [[{ "node": "Kunden-Config", "type": "main", "index": 0 }]] },
+    "Kunden-Config": { "main": [[{ "node": "Lead ins Kunden-CRM", "type": "main", "index": 0 }]] },
+    "Lead ins Kunden-CRM": { "main": [[{ "node": "Antwort", "type": "main", "index": 0 }]] }
+  },
+  "settings": { "executionOrder": "v1" },
+  "pinData": {},
+  "meta": { "instanceId": "nexai-probelauf" },
+  "tags": []
+}
