@@ -12,7 +12,10 @@
       "name": "Webhook (Probelauf)",
       "type": "n8n-nodes-base.webhook",
       "typeVersion": 2,
-      "position": [-260, 0],
+      "position": [
+        -260,
+        0
+      ],
       "webhookId": "b1a1e9c0-0001-4000-8000-000000000001"
     },
     {
@@ -39,13 +42,17 @@
             }
           ]
         },
-        "options": {}
+        "options": {},
+        "includeOtherFields": true
       },
       "id": "b1a1e9c0-0002-4000-8000-000000000002",
       "name": "Kunden-Config",
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
-      "position": [-40, 0]
+      "position": [
+        -40,
+        0
+      ]
     },
     {
       "parameters": {
@@ -62,14 +69,24 @@
         },
         "sendBody": true,
         "specifyBody": "json",
-        "jsonBody": "={{ JSON.stringify({ title: ($json.body?.titel || $json.body?.title || 'Anfrage über Probelauf'), source: 'probelauf-n8n', notes: ($json.body?.notiz || $json.body?.notes || null) }) }}",
-        "options": { "response": { "response": { "neverError": true, "fullResponse": true } } }
+        "jsonBody": "={{ JSON.stringify(Object.fromEntries(Object.entries({ title: $json.body?.titel || $json.body?.title || 'Anfrage über Probelauf', source: 'probelauf-n8n', notes: $json.body?.notiz || $json.body?.notes }).filter(([, v]) => v !== undefined && v !== null && v !== ''))) }}",
+        "options": {
+          "response": {
+            "response": {
+              "neverError": true,
+              "fullResponse": true
+            }
+          }
+        }
       },
       "id": "b1a1e9c0-0003-4000-8000-000000000003",
       "name": "Lead ins Kunden-CRM",
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
-      "position": [180, 0]
+      "position": [
+        180,
+        0
+      ]
     },
     {
       "parameters": {
@@ -81,16 +98,53 @@
       "name": "Antwort",
       "type": "n8n-nodes-base.respondToWebhook",
       "typeVersion": 1.1,
-      "position": [400, 0]
+      "position": [
+        400,
+        0
+      ]
     }
   ],
   "connections": {
-    "Webhook (Probelauf)": { "main": [[{ "node": "Kunden-Config", "type": "main", "index": 0 }]] },
-    "Kunden-Config": { "main": [[{ "node": "Lead ins Kunden-CRM", "type": "main", "index": 0 }]] },
-    "Lead ins Kunden-CRM": { "main": [[{ "node": "Antwort", "type": "main", "index": 0 }]] }
+    "Webhook (Probelauf)": {
+      "main": [
+        [
+          {
+            "node": "Kunden-Config",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Kunden-Config": {
+      "main": [
+        [
+          {
+            "node": "Lead ins Kunden-CRM",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Lead ins Kunden-CRM": {
+      "main": [
+        [
+          {
+            "node": "Antwort",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
   },
-  "settings": { "executionOrder": "v1" },
+  "settings": {
+    "executionOrder": "v1"
+  },
   "pinData": {},
-  "meta": { "instanceId": "nexai-probelauf" },
+  "meta": {
+    "instanceId": "nexai-probelauf"
+  },
   "tags": []
 }
