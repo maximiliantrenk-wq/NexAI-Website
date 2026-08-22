@@ -1,4 +1,4 @@
-# Pressemitteilung (Entwurf zur Freigabe durch Max)
+# Pressemitteilung (von Max freigegeben 22.08.2026, Versand 22.08.2026)
 
 **Versand:** von mbt@nex-a-i.com, je Redaktion eine eigene Mail (keine Sammelmail, kein CC). Betreff und Text unten; die Bilder aus `recruiting/bilder/` als Anhang (max. 2), plus Gründerfoto `public/team/maximilian.jpg` auf Anfrage.
 **Verteiler:** siehe `VERTEILER.md`. Versand nur nach Max' „ok" je Mail.
@@ -10,7 +10,7 @@ Frankenhardter AI-Unternehmen NexAI sucht selbstständige Vertriebspartner im Ho
 
 ## Pressemitteilung
 
-**Frankenhardt, [Datum].** Das Frankenhardter Unternehmen NexAI – Next Generation Artificial Intelligence baut seinen Vertrieb aus und sucht selbstständige Setter und Closer (m/w/d), die kleine und mittlere Betriebe für digitale Mitarbeiter gewinnen. Gemeint sind AI-Assistenten, die für Handwerksbetriebe, Praxen, Kanzleien und Dienstleister ans Telefon gehen, Termine buchen, im Website-Chat antworten und Büroarbeit automatisieren.
+**Frankenhardt, 22. August 2026.** Das Frankenhardter Unternehmen NexAI – Next Generation Artificial Intelligence baut seinen Vertrieb aus und sucht selbstständige Setter und Closer (m/w/d), die kleine und mittlere Betriebe für digitale Mitarbeiter gewinnen. Gemeint sind AI-Assistenten, die für Handwerksbetriebe, Praxen, Kanzleien und Dienstleister ans Telefon gehen, Termine buchen, im Website-Chat antworten und Büroarbeit automatisieren.
 
 „Viele Betriebe in der Region verlieren jeden Tag Anrufe, weil gerade niemand ans Telefon gehen kann. Unsere digitalen Mitarbeiter fangen das auf, rund um die Uhr", sagt Maximilian Trenk, Geschäftsführer von NexAI. „Um das in die Betriebe zu bringen, suchen wir Menschen, die gern telefonieren und verkaufen, und die lieber dauerhaft an einem Kunden beteiligt sind, als einmal eine Abschlussprovision zu bekommen."
 
@@ -23,6 +23,8 @@ NexAI – Next Generation Artificial Intelligence GbR mit Sitz in Frankenhardt-H
 
 **Pressekontakt**
 Maximilian Trenk · NexAI – Next Generation Artificial Intelligence GbR · Untere Bergstraße 13, 74586 Frankenhardt-Honhardt · mbt@nex-a-i.com · 0176 80714816 · nex-a-i.com
+
+*Mit KI und Liebe erstellt.*
 
 ---
 
