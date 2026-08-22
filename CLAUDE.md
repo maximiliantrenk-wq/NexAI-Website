@@ -32,6 +32,7 @@ app/[locale]/            # all pages (root layout with <html>, Header/Footer liv
   services|produkte|pricing|about|partner|contact|imprint|privacy/
   vertriebspartner/        # Setter/Closer-Recruiting (Bewerbung → /api/apply, JobPosting-JSON-LD, eigenes OG-Bild); KEINE Provisionszahlen auf der Website, die stehen nur im Karrieresystem-PDF/Vertrag
   vertriebspartner/termin/ # Terminbuchung für Bewerber (noindex, Ziel des Autoresponder-Links)
+  vertriebspartner/[role]/ # SEO-Unterseiten closer-job | setter-job | handelsvertreter (Inhalt: Recruiting.pages.*; Closer/Setter mit eigenem JobPosting)
   cases/[slug]/          # case detail (generateStaticParams from content/cases.ts)
   [...rest]/             # catch-all → notFound()
 app/api/contact/         # contact form endpoint (wired to Resend via lib/email.ts)
@@ -40,6 +41,7 @@ app/api/chat/            # chatbot proxy → n8n webhook (see n8n/SETUP.md)
 app/api/apply/           # Vertriebspartner-Bewerbung → Resend (intern + Bestätigung an Bewerber) + CRM, Honeypot + Ratenlimit
 content/commission.ts    # Karrieresystem-Fakten für die Website (Rollen, Aufstiegskriterien, Demo-Nummer, PDF-Pfad) — ohne Provisionssätze
 lib/attribution.ts       # ?ref=/utm_* → sessionStorage → Bewerbung (kein Cookie); Link-Konvention: /de/vertriebspartner?ref=<kanal>-<variante>
+scripts/indexnow.mjs     # meldet Sitemap-URLs an Bing/Yandex/Seznam (IndexNow); Schlüssel in content/indexnow-key.txt + public/<key>.txt
 recruiting/              # Anzeigen-Kit für Closer-Börsen/LinkedIn/FB-Gruppe, Posting-Log, Onboarding-Checkliste
 components/chat/         # floating chat widget (chat-widget.tsx + use-chat.ts)
 n8n/                     # importable chatbot workflows + setup guide

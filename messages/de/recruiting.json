@@ -374,6 +374,331 @@
       "responsibilities": "Setter: Entscheider in kleinen und mittleren Unternehmen anrufen, Interesse wecken, qualifizierte Termine vereinbaren. Closer: Verkaufsgespräche führen, die AI live zeigen, Vertragsabschlüsse herbeiführen. Setter + Closer: beides in einer Person.",
       "qualifications": "Gewerbe oder gleichwertige Selbstständigkeit, Deutsch verhandlungssicher, Erfahrung im Telefonvertrieb von Vorteil, eigene Hardware und Internetverbindung.",
       "incentive": "Reine Provision, kein Fixum: Einmalprovision auf die Netto-Basis im ersten Monat; Monatsprovision ab Monat 2 für Senior-Positionen, dauerhaft, ohne Deckel, stornofrei. Konkrete Sätze im Kennenlerngespräch."
+    },
+    "more": {
+      "eyebrow": "Mehr zu den Rollen",
+      "title": "Closer, Setter oder Handelsvertreter: Was dich konkret erwartet.",
+      "items": [
+        {
+          "slug": "closer-job",
+          "title": "Closer Job remote",
+          "description": "Verkaufsgespräche, Termine aus dem Setter-Pool, Abo statt Einmalabschluss."
+        },
+        {
+          "slug": "setter-job",
+          "title": "Setter Job im Homeoffice",
+          "description": "Geprüfte Kontakte, Einwilligungs-Check, Termine für Closer."
+        },
+        {
+          "slug": "handelsvertreter",
+          "title": "Handelsvertreter (m/w/d)",
+          "description": "§ 84 HGB, Buchauszug, Bestandsprovision, keine Exklusivität."
+        }
+      ]
+    },
+    "pages": {
+      "closerJob": {
+        "meta": {
+          "title": "Closer Job remote: Abschlüsse für AI-Mitarbeiter (m/w/d), reine Provision",
+          "description": "Closer Job im Homeoffice: Du führst Verkaufsgespräche für digitale AI-Mitarbeiter, Termine kommen aus dem Setter-Pool. Selbstständig, Einmalprovision plus dauerhafte Monatsprovision. Jetzt bewerben."
+        },
+        "hero": {
+          "eyebrow": "Closer (m/w/d) · Remote · DACH",
+          "title": "Closer Job remote: Du holst den Abschluss, wir liefern Termine und Produkt.",
+          "description": "Verkaufsgespräche für digitale Mitarbeiter: AI-Agenten, die für kleine und mittlere Unternehmen ans Telefon gehen, im Chat antworten und Büroarbeit übernehmen. Selbstständig, reine Provision, Einmalprovision beim Abschluss plus Monatsprovision, solange der Kunde bleibt."
+        },
+        "intro": {
+          "title": "Was diesen Closer Job von den üblichen unterscheidet",
+          "body": "Die meisten Closer-Jobs in der DACH-Szene verkaufen Coachings, Kurse oder Beratung: hoher Einmalpreis, ein Abschluss, fertig. Bei NexAI verkaufst du ein Abo. Der Kunde zahlt monatlich, und als Senior verdienst du an jedem dieser Monate mit. Das ist kein Bonus, sondern der Kern des Modells. Dafür ist die Zielgruppe eine andere als im Coaching: Handwerksbetriebe, Praxen, Kanzleien und Dienstleister, die Anrufe verlieren oder in Büroarbeit ertrinken. Wer ein Verkaufsgespräch mit einem Dachdeckermeister führen kann, ist hier richtig."
+        },
+        "day": {
+          "eyebrow": "So sieht die Woche aus",
+          "title": "Vom Termin zum Abschluss.",
+          "description": "Drei Schritte, die sich jede Woche wiederholen.",
+          "steps": [
+            {
+              "n": "01",
+              "title": "Termin aus dem Setter-Pool übernehmen",
+              "description": "Im CRM siehst du, wer den Termin gelegt hat, welche Branche, welches Anliegen und ob der Kunde die Demo-Nummer schon angerufen hat."
+            },
+            {
+              "n": "02",
+              "title": "Gespräch führen, AI live zeigen",
+              "description": "Du nutzt das Kundendeck, lässt den Kunden die AI selbst anrufen und arbeitest mit dem ROI-Rechner heraus, was ein verpasster Anruf kostet. Problem vor Produkt."
+            },
+            {
+              "n": "03",
+              "title": "Angebot, Abschluss, Übergabe",
+              "description": "Das Angebot kommt aus der NexAI-Angebotslogik, der Vertrag läuft zwischen Kunde und NexAI. Die Einrichtung übernimmt das Team, du bleibst vertrieblicher Ansprechpartner."
+            }
+          ]
+        },
+        "fit": {
+          "eyebrow": "Passt das?",
+          "title": "Für wen dieser Closer Job gemacht ist, und für wen nicht.",
+          "description": "Ehrlich sortiert, damit wir beide keine Zeit verlieren.",
+          "without": {
+            "title": "Eher nicht, wenn du",
+            "items": [
+              "ein Fixum oder eine Anstellung brauchst",
+              "nur warme Inbound-Leads aus Ads gewohnt bist",
+              "Termine in Serie erwartest, bevor Setter da sind",
+              "keine Lust auf Handwerker, Praxen und Kanzleien hast",
+              "Gewerbe und eigene Rechnungen scheust"
+            ]
+          },
+          "with": {
+            "title": "Genau richtig, wenn du",
+            "items": [
+              "Verkaufsgespräche führst und Einwände magst",
+              "ein erklärungsbedürftiges, aber greifbares Produkt verkaufen willst",
+              "lieber jeden Monat als einmal verdienst",
+              "dir selbst Termine legen kannst, wenn der Pool dünn ist",
+              "früh in ein wachsendes Unternehmen einsteigen willst"
+            ]
+          },
+          "resultLabel": "Dann lies die Fragen unten und bewirb dich.",
+          "resultText": "Bewerbung in zwei Minuten, danach buchst du direkt dein Kennenlerngespräch."
+        },
+        "faq": {
+          "eyebrow": "FAQ Closer",
+          "title": "Fragen, die Closer uns stellen.",
+          "items": [
+            {
+              "q": "Woher kommen meine Termine als Closer?",
+              "a": "Aus dem Setter-Pool: Unsere Setter legen Termine mit Entscheidern und übergeben sie im CRM mit Vorinformation. Eine Mindestzahl versprechen wir nicht. Du kannst jederzeit selbst Termine legen, dann gilt für diese Kunden die Provision für Setter + Closer."
+            },
+            {
+              "q": "Wie lang ist ein Verkaufsgespräch, und wie viele Termine brauche ich?",
+              "a": "Ein Gespräch dauert etwa 30 bis 45 Minuten, meist per Video oder Telefon. Der Aufstieg zum Senior setzt über vier Wochen steigende Terminzahlen und Abschlüsse voraus; die Kriterien stehen offen auf der Vertriebspartner-Seite."
+            },
+            {
+              "q": "Brauche ich AI-Wissen?",
+              "a": "Nein. Du musst verstehen, was der Kunde davon hat, nicht wie es gebaut ist. Die Live-Demo-Nummer erklärt das Produkt besser als jede Folie, und für technische Fragen gibt es das Team."
+            },
+            {
+              "q": "Kann ich parallel andere Produkte closen?",
+              "a": "Ja. Keine Exklusivität, keine Gebietsbindung. Wir erwarten nur, dass du NexAI-Kunden nicht an Konkurrenzangebote vermittelst."
+            },
+            {
+              "q": "Wie hoch ist die Provision?",
+              "a": "Einmalprovision beim Abschluss und als Senior eine Monatsprovision, solange der Kunde bleibt, stornofrei und ohne Deckel. Die konkreten Sätze zeigen wir im Kennenlerngespräch und im Karrieresystem-PDF, das du nach der Bewerbung per E-Mail bekommst."
+            }
+          ]
+        },
+        "cta": {
+          "title": "Closer werden",
+          "description": "Zwei Minuten Bewerbung, dreißig Minuten Gespräch, dann entscheiden wir beide.",
+          "primary": "Jetzt als Closer bewerben",
+          "secondary": "Alle Positionen ansehen"
+        },
+        "jsonld": {
+          "title": "Closer (m/w/d) für AI-Mitarbeiter, selbstständig, reine Provision, remote",
+          "description": "NexAI sucht selbstständige Closer (m/w/d) im DACH-Raum, die Verkaufsgespräche für digitale Mitarbeiter (AI Voice Agent, Chat Agent, Social-Media-Agent, Automatisierung) mit kleinen und mittleren Unternehmen führen. Termine kommen aus dem Setter-Pool; das Produkt lässt sich per Live-Demo-Nummer vorführen. Tätigkeit als selbstständige Handelsvertretung nach § 84 HGB, 100 % remote, freie Zeiteinteilung, keine Exklusivität. Vergütung ausschließlich erfolgsabhängig, kein Fixum: Einmalprovision beim Abschluss, als Senior zusätzlich eine dauerhafte Monatsprovision, solange der Kunde bleibt, stornofrei und ohne Kundendeckel; die konkreten Sätze werden im Kennenlerngespräch genannt. Voraussetzungen: Gewerbe oder gleichwertige Selbstständigkeit (DE/AT/CH), Deutsch verhandlungssicher, Erfahrung im Verkaufsgespräch, eigene Hardware.",
+          "responsibilities": "Verkaufsgespräche mit Entscheidern führen, die AI live vorführen, Angebote erklären, Abschlüsse herbeiführen, Übergabe an das NexAI-Team.",
+          "qualifications": "Gewerbe oder gleichwertige Selbstständigkeit, Deutsch verhandlungssicher, Erfahrung im B2B-Verkaufsgespräch, eigene Hardware und Internetverbindung.",
+          "incentive": "Reine Provision, kein Fixum: Einmalprovision beim Abschluss; Monatsprovision für Senior-Positionen, dauerhaft, solange der Kunde bleibt, stornofrei, ohne Deckel. Konkrete Sätze im Kennenlerngespräch."
+        }
+      },
+      "setterJob": {
+        "meta": {
+          "title": "Setter Job im Homeoffice: Termine legen für AI-Mitarbeiter (m/w/d)",
+          "description": "Setter Job remote: Du rufst Entscheider in kleinen Unternehmen an und legst Termine für unsere Closer. Geprüfte Firmenkontakte, CRM, Coaching. Selbstständig, Einmalprovision plus Monatsprovision als Senior. Jetzt bewerben."
+        },
+        "hero": {
+          "eyebrow": "Setter (m/w/d) · Remote · DACH",
+          "title": "Setter Job im Homeoffice: Du öffnest Türen, die Kontakte liefern wir.",
+          "description": "Du rufst Entscheider in Handwerk, Praxen und Dienstleistung an, weckst Interesse für digitale AI-Mitarbeiter und legst qualifizierte Termine für den Closer. Selbstständig, reine Provision, mit geprüften Firmenkontakten statt eigener Recherche."
+        },
+        "intro": {
+          "title": "Was diesen Setter Job von Callcenter und Coaching-Setting unterscheidet",
+          "body": "Du arbeitest keine Liste ab, die irgendwer gekauft hat, und du setzt keine Termine für ein Coaching, das jemand nur aus Neugier bucht. Du rufst Betriebe an, die ein messbares Problem haben: verpasste Anrufe, volle Postfächer, Büroarbeit nach Feierabend. Dafür hast du ein Produkt, das der Betrieb sofort selbst testen kann, indem er unsere AI anruft. Und du wirst nicht pro Termin bezahlt, sondern am Kunden beteiligt: einmalig beim Abschluss und als Senior jeden Monat, solange der Kunde bleibt."
+        },
+        "day": {
+          "eyebrow": "So sieht die Woche aus",
+          "title": "Vom Kontakt zum Termin.",
+          "description": "Drei Schritte, die sich jede Woche wiederholen.",
+          "steps": [
+            {
+              "n": "01",
+              "title": "Kontakte aus dem CRM anrufen",
+              "description": "Geprüfte Firmenkontakte mit Entscheider und Telefonnummer, dir zugeordnet. Du beginnst mit dem Einwilligungs-Check, damit jeder Anruf sauber bleibt, und dokumentierst das Ergebnis im CRM."
+            },
+            {
+              "n": "02",
+              "title": "Interesse wecken, Demo anbieten",
+              "description": "Ein Satz zum Problem, ein Satz zum Produkt, dann die Einladung, die AI selbst anzurufen. Wer das Gespräch mit der AI geführt hat, sagt selten Nein zum Termin."
+            },
+            {
+              "n": "03",
+              "title": "Termin legen und sauber übergeben",
+              "description": "Qualifizierter Termin heißt: Entscheider, echtes Anrufaufkommen, Termin angenommen. Du übergibst mit Vorinformation an den Closer und siehst im Portal, was aus dem Termin wird."
+            }
+          ]
+        },
+        "fit": {
+          "eyebrow": "Passt das?",
+          "title": "Für wen dieser Setter Job gemacht ist, und für wen nicht.",
+          "description": "Ehrlich sortiert, damit wir beide keine Zeit verlieren.",
+          "without": {
+            "title": "Eher nicht, wenn du",
+            "items": [
+              "ein Fixum oder Stundenlohn brauchst",
+              "Telefonieren als Überwindung empfindest",
+              "nach zwei Absagen die Liste zuklappst",
+              "ohne Struktur und ohne Dokumentation arbeiten willst",
+              "Gewerbe und eigene Rechnungen scheust"
+            ]
+          },
+          "with": {
+            "title": "Genau richtig, wenn du",
+            "items": [
+              "gern telefonierst und ein Nein sportlich nimmst",
+              "Struktur magst: feste Zeiten, klare Zahlen, sauberes CRM",
+              "ein Produkt willst, das der Kunde sofort selbst testen kann",
+              "lieber am Kunden beteiligt als pro Termin bezahlt wirst",
+              "dich zum Setter + Closer weiterentwickeln willst"
+            ]
+          },
+          "resultLabel": "Dann lies die Fragen unten und bewirb dich.",
+          "resultText": "Bewerbung in zwei Minuten, danach buchst du direkt dein Kennenlerngespräch."
+        },
+        "faq": {
+          "eyebrow": "FAQ Setter",
+          "title": "Fragen, die Setter uns stellen.",
+          "items": [
+            {
+              "q": "Woher kommen die Kontakte, die ich anrufe?",
+              "a": "Aus öffentlichen Firmenquellen, von uns geprüft: Branche, Entscheider, Telefonnummer. Sie sind dir im CRM zugeordnet, niemand anderes ruft sie an. Es sind kalte B2B-Kontakte, keine Anfragen."
+            },
+            {
+              "q": "Ist Kaltakquise am Telefon erlaubt?",
+              "a": "Im B2B-Bereich unter Voraussetzungen, und genau dafür gibt es unsere Leitlinien: Einwilligungs-Check zu Beginn, Opt-out-Liste im CRM, kein zweiter Anruf nach einem Nein, Anruf-Dokumentation. Das ist Teil der Einarbeitung."
+            },
+            {
+              "q": "Wie viele Anrufe pro Woche?",
+              "a": "Der Aufstieg zum Senior setzt über vier Wochen steigende Anrufzahlen und stattgefundene Termine voraus; die Zahlen stehen offen auf der Vertriebspartner-Seite. Wann du telefonierst, entscheidest du."
+            },
+            {
+              "q": "Werde ich pro Termin bezahlt?",
+              "a": "Nein, am Kunden. Einmalprovision, wenn der Kunde abschließt und zahlt, und als Senior eine Monatsprovision, solange der Kunde bleibt. Ein Termin ohne Abschluss bringt nichts, ein Kunde, der bleibt, bringt jeden Monat."
+            },
+            {
+              "q": "Kann ich vom Setter zum Closer werden?",
+              "a": "Ja. Viele Setter legen irgendwann eigene Termine und schließen sie selbst; dann gilt die Provision für Setter + Closer. Wer im Gespräch überzeugt, bekommt die Closer-Einarbeitung dazu."
+            }
+          ]
+        },
+        "cta": {
+          "title": "Setter werden",
+          "description": "Zwei Minuten Bewerbung, dreißig Minuten Gespräch, dann entscheiden wir beide.",
+          "primary": "Jetzt als Setter bewerben",
+          "secondary": "Alle Positionen ansehen"
+        },
+        "jsonld": {
+          "title": "Setter (m/w/d) für AI-Mitarbeiter, selbstständig, reine Provision, Homeoffice",
+          "description": "NexAI sucht selbstständige Setter (m/w/d) im DACH-Raum, die Entscheider in kleinen und mittleren Unternehmen telefonisch ansprechen und qualifizierte Termine für Closer vereinbaren. Geprüfte Firmenkontakte, CRM, Leitlinien für rechtssichere Ansprache und Coaching stellt NexAI. Tätigkeit als selbstständige Handelsvertretung nach § 84 HGB, 100 % remote, freie Zeiteinteilung, keine Exklusivität. Vergütung ausschließlich erfolgsabhängig, kein Fixum: Einmalprovision, wenn der vermittelte Kunde abschließt, als Senior zusätzlich eine dauerhafte Monatsprovision, solange der Kunde bleibt, stornofrei und ohne Kundendeckel; die konkreten Sätze werden im Kennenlerngespräch genannt. Voraussetzungen: Gewerbe oder gleichwertige Selbstständigkeit (DE/AT/CH), Deutsch verhandlungssicher, Freude am Telefonieren, eigene Hardware.",
+          "responsibilities": "Entscheider telefonisch ansprechen, Interesse wecken, Live-Demo anbieten, qualifizierte Termine vereinbaren und im CRM an Closer übergeben.",
+          "qualifications": "Gewerbe oder gleichwertige Selbstständigkeit, Deutsch verhandlungssicher, Telefonstärke, Struktur und saubere Dokumentation, eigene Hardware und Internetverbindung.",
+          "incentive": "Reine Provision, kein Fixum: Einmalprovision beim Abschluss des vermittelten Kunden; Monatsprovision für Senior-Positionen, dauerhaft, solange der Kunde bleibt, stornofrei, ohne Deckel. Konkrete Sätze im Kennenlerngespräch."
+        }
+      },
+      "handelsvertreter": {
+        "meta": {
+          "title": "Handelsvertreter (m/w/d) für AI-Software: Bestandsprovision statt Einmalabschluss",
+          "description": "Handelsvertretung nach § 84 HGB für digitale AI-Mitarbeiter: monatliches Abo, Provision beim Abschluss und dauerhaft am Bestand. Keine Exklusivität, bundesweit, remote. Jetzt Vertriebspartner werden."
+        },
+        "hero": {
+          "eyebrow": "Handelsvertreter (m/w/d) · § 84 HGB · Remote",
+          "title": "Handelsvertretung für AI-Mitarbeiter: Bestandsprovision statt Einmalabschluss.",
+          "description": "Ein Abo-Produkt für kleine und mittlere Unternehmen, das der Kunde vor dem Kauf selbst anrufen kann. Einmalprovision beim Abschluss, Monatsprovision am Bestand, monatliche Abrechnung mit Buchauszug. Keine Exklusivität, keine Gebietsbindung."
+        },
+        "intro": {
+          "title": "Warum ein Abo-Produkt für Handelsvertreter interessant ist",
+          "body": "Viele Vertretungen zahlen einmal: Abschluss, Provision, nächster Kunde. Digitale Mitarbeiter von NexAI werden monatlich bezahlt, und genau so wird auch vermittelt: Einmalprovision beim Abschluss und als Senior eine Monatsprovision, die läuft, solange der Kunde zahlt. Dazu kommt ein Produkt, das sich in zwei Minuten am Telefon beweist, und eine Zielgruppe, die jeder Vertreter kennt: Handwerk, Praxen, Kanzleien, Dienstleister. Wer bereits Betriebe in seiner Region betreut, kann NexAI neben seinen anderen Vertretungen führen."
+        },
+        "day": {
+          "eyebrow": "Zusammenarbeit",
+          "title": "So läuft die Vertretung.",
+          "description": "Klare Regeln, klare Abrechnung, kein Kleingedrucktes im Gespräch.",
+          "steps": [
+            {
+              "n": "01",
+              "title": "Vertrag nach HGB, Abrechnung mit Buchauszug",
+              "description": "Handelsvertretervertrag nach §§ 84 ff. HGB, monatliche Provisionsabrechnung nach § 87c, Zahlung nach Zahlungseingang des Kunden. Ausgezahlte Provision wird nicht zurückgefordert."
+            },
+            {
+              "n": "02",
+              "title": "Kunden gewinnen, NexAI liefert",
+              "description": "Du gewinnst den Kunden, den Vertrag schließt NexAI, Einrichtung und Betrieb übernimmt das Team. Du bleibst Ansprechpartner für den Kunden, wenn du willst."
+            },
+            {
+              "n": "03",
+              "title": "Bestand aufbauen",
+              "description": "Jeder Kunde, der bleibt, zahlt weiter. Im Partner-Portal siehst du Aufträge, Provisionen und Abrechnungen und reichst deine Rechnung direkt ein."
+            }
+          ]
+        },
+        "fit": {
+          "eyebrow": "Passt das?",
+          "title": "Für wen diese Vertretung gemacht ist, und für wen nicht.",
+          "description": "Ehrlich sortiert, damit wir beide keine Zeit verlieren.",
+          "without": {
+            "title": "Eher nicht, wenn du",
+            "items": [
+              "ein Fixum, Spesen oder Gebietsschutz erwartest",
+              "nur einmalige Abschlussprovisionen kennen willst",
+              "erklärungsbedürftige Produkte scheust",
+              "Kunden lieber weitervermittelst als selbst betreust",
+              "keine Gewerbeanmeldung hast"
+            ]
+          },
+          "with": {
+            "title": "Genau richtig, wenn du",
+            "items": [
+              "bereits KMU-Kunden in deiner Region betreust",
+              "ein zweites, wiederkehrendes Standbein suchst",
+              "Vertrag, Buchauszug und klare Regeln erwartest",
+              "ein Produkt mit Live-Demo statt Broschüre willst",
+              "Kaltanruf beherrschst und rechtssicher führst"
+            ]
+          },
+          "resultLabel": "Dann lies die Fragen unten und bewirb dich.",
+          "resultText": "Bewerbung in zwei Minuten, danach buchst du direkt dein Kennenlerngespräch mit der Geschäftsführung."
+        },
+        "faq": {
+          "eyebrow": "FAQ Handelsvertretung",
+          "title": "Fragen, die Handelsvertreter uns stellen.",
+          "items": [
+            {
+              "q": "Welche Vertragsform?",
+              "a": "Handelsvertretervertrag nach §§ 84 ff. HGB, unbefristet, von beiden Seiten kündbar, keine Exklusivität und keine Gebietsbindung. Den Vertrag bekommst du vor der Unterschrift und liest ihn in Ruhe."
+            },
+            {
+              "q": "Wie wird abgerechnet?",
+              "a": "Monatlich, mit Provisionsabrechnung nach § 87c HGB im Partner-Portal. Fällig ist die Provision mit Zahlungseingang des Kunden bei NexAI; du stellst auf Basis der Abrechnung Rechnung."
+            },
+            {
+              "q": "Was passiert mit dem Bestand, wenn ich aufhöre?",
+              "a": "Bereits entstandene Ansprüche bleiben. Wie lange Monatsprovisionen nach Vertragsende weiterlaufen, regelt der Vertrag; das besprechen wir im Gespräch offen."
+            },
+            {
+              "q": "Kann ich NexAI neben anderen Vertretungen führen?",
+              "a": "Ja, ausdrücklich. Mehrfirmenvertretung ist erwünscht. Ausgeschlossen ist nur, NexAI-Kunden an Konkurrenzangebote zu vermitteln."
+            },
+            {
+              "q": "Gibt es Unterlagen und Unterstützung?",
+              "a": "Kundendeck, ROI-Rechner, Live-Demo-Nummer, geprüfte Firmenkontakte, CRM, Partner-Portal und Einarbeitung. Keine Kosten für den Vertreter."
+            }
+          ]
+        },
+        "cta": {
+          "title": "Vertretung übernehmen",
+          "description": "Zwei Minuten Bewerbung, dreißig Minuten Gespräch mit der Geschäftsführung, dann entscheiden wir beide.",
+          "primary": "Jetzt bewerben",
+          "secondary": "Alle Positionen ansehen"
+        }
+      }
     }
   }
 }
