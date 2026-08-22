@@ -16,8 +16,21 @@ type Day = { date: string; weekday: number; slots: Slot[] };
 /** "unavailable" deckt sowohl "noch nicht eingerichtet" als auch Störungen ab. */
 type Status = "idle" | "loading" | "ready" | "empty" | "unavailable";
 
-export function Booking() {
-  const t = useTranslations("Contact.booking");
+export type BookingDefaults = { name?: string; email?: string; topic?: string };
+
+export function Booking({
+  namespace = "Contact.booking",
+  defaults,
+  hideTopic = false,
+}: {
+  /** Übersetzungs-Namespace mit denselben Keys wie Contact.booking. */
+  namespace?: string;
+  /** Vorbefüllung, z. B. direkt nach einer Bewerbung. */
+  defaults?: BookingDefaults;
+  /** Thema fest vorgeben statt abfragen (wird unsichtbar mitgesendet). */
+  hideTopic?: boolean;
+} = {}) {
+  const t = useTranslations(namespace);
   const locale = useLocale();
 
   const [status, setStatus] = useState<Status>("idle");
@@ -148,6 +161,9 @@ export function Booking() {
         <BookingForm
           slot={slot}
           locale={locale}
+          namespace={namespace}
+          defaults={defaults}
+          hideTopic={hideTopic}
           onBooked={(iso) => setBooked(iso)}
           onTaken={async () => {
             setSlot(null);
@@ -220,15 +236,21 @@ function Shell({
 function BookingForm({
   slot,
   locale,
+  namespace,
+  defaults,
+  hideTopic,
   onBooked,
   onTaken,
 }: {
   slot: Slot;
   locale: string;
+  namespace: string;
+  defaults?: BookingDefaults;
+  hideTopic: boolean;
   onBooked: (startISO: string) => void;
   onTaken: () => void;
 }) {
-  const t = useTranslations("Contact.booking");
+  const t = useTranslations(namespace);
 
   const schema = z.object({
     name: z.string().min(2, t("errorRequired")),
@@ -243,7 +265,14 @@ function BookingForm({
     handleSubmit,
     formState: { errors, isSubmitting },
     setError,
-  } = useForm<Values>({ resolver: zodResolver(schema) });
+  } = useForm<Values>({
+    resolver: zodResolver(schema),
+    defaultValues: {
+      name: defaults?.name ?? "",
+      email: defaults?.email ?? "",
+      topic: defaults?.topic ?? "",
+    },
+  });
 
   async function onSubmit(values: Values) {
     try {
@@ -311,18 +340,22 @@ function BookingForm({
         </div>
       </div>
 
-      <div>
-        <label htmlFor="b-topic" className={label}>
-          {t("topic")}
-        </label>
-        <textarea
-          id="b-topic"
-          rows={3}
-          {...register("topic")}
-          placeholder={t("topicPlaceholder")}
-          className={cn(field, "resize-none")}
-        />
-      </div>
+      {hideTopic ? (
+        <input type="hidden" {...register("topic")} />
+      ) : (
+        <div>
+          <label htmlFor="b-topic" className={label}>
+            {t("topic")}
+          </label>
+          <textarea
+            id="b-topic"
+            rows={3}
+            {...register("topic")}
+            placeholder={t("topicPlaceholder")}
+            className={cn(field, "resize-none")}
+          />
+        </div>
+      )}
 
       {/* Honigtopf gegen Bots — für Menschen nicht sichtbar und nicht fokussierbar. */}
       <input

@@ -20,6 +20,11 @@ export type CrmLead = {
   title: string;
   /** Free-text lead notes (company, message, …). */
   notes?: string;
+  /** Optional contact fields — the CRM DTOs are strict, these are the allowed extras. */
+  phone?: string;
+  position?: string;
+  /** ISO datetime for the CRM follow-up reminder on the lead. */
+  nextFollowUpAt?: string;
 };
 
 const TIMEOUT_MS = 6000;
@@ -63,6 +68,8 @@ export async function saveLead(lead: CrmLead): Promise<CrmResult> {
   };
   if (parts.length > 1) contact.lastName = parts.slice(1).join(" ");
   if (/.+@.+\..+/.test(lead.email)) contact.email = lead.email;
+  if (lead.phone) contact.phone = lead.phone.slice(0, 64);
+  if (lead.position) contact.position = lead.position.slice(0, 200);
 
   try {
     // 1) Upsert the contact — the CRM dedups by email and returns the existing one.
@@ -83,8 +90,9 @@ export async function saveLead(lead: CrmLead): Promise<CrmResult> {
       title: lead.title.slice(0, 300),
       source: lead.source,
     };
-    if (lead.notes) leadBody.notes = lead.notes;
+    if (lead.notes) leadBody.notes = lead.notes.slice(0, 5000);
     if (contactId) leadBody.contactId = contactId;
+    if (lead.nextFollowUpAt) leadBody.nextFollowUpAt = lead.nextFollowUpAt;
 
     const lRes = await crmPost(base, key, "/api/leads", leadBody);
     if (!lRes.ok) {

@@ -1,6 +1,8 @@
 {
   "Partner": {
-    "meta": { "title": "Partner werden" },
+    "meta": {
+      "title": "Partner werden"
+    },
     "hero": {
       "eyebrow": "Partnerprogramm",
       "title": "Gemeinsam mehr Umsatz für Ihre Kunden.",
@@ -144,19 +146,45 @@
       "title": "Passt eine Partnerschaft zu Ihnen?",
       "description": "Grundsätzlich für alle Unternehmen, deren Kunden durch AI-Automatisierung einen echten Mehrwert gewinnen. Zum Beispiel:",
       "items": [
-        { "title": "Marketing-Agenturen" },
-        { "title": "SEO-Agenturen" },
-        { "title": "Google-Ads-Agenturen" },
-        { "title": "Social-Media-Agenturen" },
-        { "title": "Webdesign-Agenturen" },
-        { "title": "Digitalagenturen" },
-        { "title": "IT-Dienstleister & Systemhäuser" },
-        { "title": "Softwareunternehmen" },
-        { "title": "CRM-Anbieter" },
-        { "title": "Unternehmens- & Digitalisierungsberater" },
-        { "title": "Automatisierungsagenturen" },
-        { "title": "Telekommunikation & Callcenter" },
-        { "title": "Franchise-Systeme" }
+        {
+          "title": "Marketing-Agenturen"
+        },
+        {
+          "title": "SEO-Agenturen"
+        },
+        {
+          "title": "Google-Ads-Agenturen"
+        },
+        {
+          "title": "Social-Media-Agenturen"
+        },
+        {
+          "title": "Webdesign-Agenturen"
+        },
+        {
+          "title": "Digitalagenturen"
+        },
+        {
+          "title": "IT-Dienstleister & Systemhäuser"
+        },
+        {
+          "title": "Softwareunternehmen"
+        },
+        {
+          "title": "CRM-Anbieter"
+        },
+        {
+          "title": "Unternehmens- & Digitalisierungsberater"
+        },
+        {
+          "title": "Automatisierungsagenturen"
+        },
+        {
+          "title": "Telekommunikation & Callcenter"
+        },
+        {
+          "title": "Franchise-Systeme"
+        }
       ]
     },
     "example": {
@@ -311,6 +339,12 @@
       "errorEmail": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
       "errorSelect": "Bitte wählen Sie eine Option.",
       "errorGeneric": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder schreiben Sie an mbt@nex-a-i.com."
+    },
+    "salesCrossLink": {
+      "eyebrow": "Setter oder Closer?",
+      "title": "Sie wollen selbst verkaufen, nicht vermitteln?",
+      "description": "Für selbstständige Setter und Closer (m/w/d) haben wir ein eigenes Provisionsmodell mit dauerhafter Monatsprovision. Alle Sätze und der Weg zum Senior stehen offen auf der Seite.",
+      "cta": "Zum Vertriebspartner-Programm"
     }
   }
 }

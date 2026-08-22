@@ -29,12 +29,18 @@ The site is fully static (SSG) for all routes and both locales.
 ```
 app/[locale]/            # all pages (root layout with <html>, Header/Footer live here)
   page.tsx               # Home
-  services|cases|pricing|about|careers|contact|imprint|privacy/
+  services|produkte|pricing|about|partner|contact|imprint|privacy/
+  vertriebspartner/        # Setter/Closer-Recruiting (Provisions-Rechner, Bewerbung → /api/apply, JobPosting-JSON-LD, eigenes OG-Bild)
+  vertriebspartner/termin/ # Terminbuchung für Bewerber (noindex, Ziel des Autoresponder-Links)
   cases/[slug]/          # case detail (generateStaticParams from content/cases.ts)
   [...rest]/             # catch-all → notFound()
 app/api/contact/         # contact form endpoint (wired to Resend via lib/email.ts)
 app/api/partner/         # partner form endpoint (Resend)
 app/api/chat/            # chatbot proxy → n8n webhook (see n8n/SETUP.md)
+app/api/apply/           # Vertriebspartner-Bewerbung → Resend (intern + Bestätigung an Bewerber) + CRM, Honeypot + Ratenlimit
+content/commission.ts    # Karrieresystem-Zahlen (Setter/Closer × Junior/Senior) — einzige Quelle für Seite, Rechner und JobPosting
+lib/attribution.ts       # ?ref=/utm_* → sessionStorage → Bewerbung (kein Cookie); Link-Konvention: /de/vertriebspartner?ref=<kanal>-<variante>
+recruiting/              # Anzeigen-Kit für Closer-Börsen/LinkedIn/FB-Gruppe, Posting-Log, Onboarding-Checkliste
 components/chat/         # floating chat widget (chat-widget.tsx + use-chat.ts)
 n8n/                     # importable chatbot workflows + setup guide
 app/sitemap.ts, robots.ts
@@ -63,3 +69,5 @@ proxy.ts                 # next-intl middleware (Next 16 renamed middleware → 
 - The contact & partner forms are already wired to Resend (`lib/email.ts`); set `RESEND_API_KEY` in Vercel.
 - The chatbot needs `N8N_CHAT_WEBHOOK_URL` + `N8N_CHAT_SECRET` in Vercel and an active n8n workflow — see `n8n/SETUP.md`.
 - Optional: per-page hreflang link tags (sitemap already emits hreflang alternates).
+- `/vertriebspartner` trägt ein **JobPosting-JSON-LD** (CONTRACTOR, TELECOMMUTE, DACH) — **entfernen, sobald nicht mehr rekrutiert wird**; `DATE_POSTED` in `content/commission.ts` bei größeren Änderungen aktualisieren.
+- Der Autoresponder von `/api/apply` erreicht fremde Adressen nur mit verifiziertem `CONTACT_FROM` (z. B. `noreply@nex-a-i.com`); optional `APPLY_TO` als Empfänger der internen Bewerbungsmail.

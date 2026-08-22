@@ -1,0 +1,259 @@
+{
+  "filename": "09_Vertriebspartnervertrag_Setter-Closer",
+  "doc_title": "Vertriebspartnervertrag (Setter / Closer) – Selbstständige Handelsvertretung",
+  "blocks": [
+    { "t": "title", "text": "Vertriebspartnervertrag (Setter / Closer)" },
+    { "t": "subtitle", "text": "Selbstständige Handelsvertretung nach §§ 84 ff. HGB · Karrieresystem Junior / Senior" },
+    { "t": "meta", "text": "Stand: August 2026 · ENTWURF – vor Verwendung anwaltlich prüfen (siehe Prüfpunkte am Ende)" },
+
+    { "t": "p", "text": "Dieser Vertriebspartnervertrag (nachfolgend **\"Vertrag\"**) wird geschlossen zwischen:" },
+    { "t": "h2", "text": "NexAI" },
+    { "t": "p", "text": "**NexAI – Next Generation Artificial Intelligence GbR**, Untere Bergstraße 13, 74586 Frankenhardt-Honhardt, Deutschland, vertreten durch die Gesellschafter Maximilian Trenk und Jason Brian Merklein, E-Mail mbt@nex-a-i.com, Telefon 0176 80714816 — nachfolgend **\"NexAI\"**." },
+    { "t": "h2", "text": "Vertriebspartner" },
+    { "t": "fill", "label": "Name / Firma", "value": "" },
+    { "t": "fill", "label": "Anschrift (Straße, PLZ, Ort, Land)", "value": "" },
+    { "t": "fill", "label": "Gewerbeanmeldung (Gemeinde, Datum) / Steuernummer", "value": "" },
+    { "t": "fill", "label": "USt-IdNr. (falls vorhanden) / Kleinunternehmer nach § 19 UStG: ja / nein", "value": "" },
+    { "t": "fill", "label": "E-Mail / Telefon", "value": "" },
+    { "t": "p", "text": "— nachfolgend **\"Vertriebspartner\"** — NexAI und der Vertriebspartner nachfolgend gemeinsam die **\"Parteien\"**." },
+
+    { "t": "h1", "num": "§ 1", "text": "Vertragsgegenstand und Rollen" },
+    { "t": "num", "items": [
+      "Gegenstand dieses Vertrags ist die selbstständige Vermittlung von Verträgen über die Produkte und Dienstleistungen von NexAI (digitale Mitarbeiter: AI-Voice-Agent, Chat-Agent, Social-Media-Agent, Automatisierungen und individuelle Agenten) durch den Vertriebspartner gegen eine ausschließlich erfolgsabhängige Vergütung. Der Vertriebspartner ist Handelsvertreter im Sinne der §§ 84 ff. HGB.",
+      "**Setter** bezeichnet einen Vertriebspartner, der potenzielle Kunden anspricht, Interesse weckt und qualifizierte Termine vereinbart. **Closer** bezeichnet einen Vertriebspartner, der das Verkaufsgespräch führt und den Vertragsabschluss zwischen Kunde und NexAI herbeiführt. **Setter + Closer** bezeichnet einen Vertriebspartner, der für denselben Kunden beide Rollen ausübt.",
+      "Der Vertragsschluss mit dem Kunden erfolgt ausschließlich zwischen dem Kunden und NexAI. Der Vertriebspartner wird nicht Vertragspartei des Kundenvertrags und hat keine Abschlussvollmacht (§ 13).",
+      "Die vom Vertriebspartner übernommene Funktion (Setter, Closer oder Setter + Closer) und die Stufe (Junior oder Senior) ergeben sich aus § 3 und der Festlegung bei Vertragsschluss (Anlage 2)."
+    ] },
+
+    { "t": "h1", "num": "§ 2", "text": "Selbstständigkeit – kein Arbeitsverhältnis" },
+    { "t": "num", "items": [
+      "Der Vertriebspartner ist selbstständiger Unternehmer. Ein Arbeits-, Anstellungs- oder Gesellschaftsverhältnis wird durch diesen Vertrag nicht begründet. Der Vertriebspartner ist insbesondere kein Arbeitnehmer, kein Geschäftsführer und kein Gesellschafter von NexAI.",
+      "Der Vertriebspartner gestaltet seine Tätigkeit in Zeit, Ort, Umfang und Arbeitsweise frei und eigenverantwortlich. Er unterliegt keinen Weisungen hinsichtlich Arbeitszeit, Arbeitsort oder der konkreten Ausgestaltung seiner Vertriebstätigkeit und ist nicht in die Arbeitsorganisation von NexAI eingegliedert. Die Aufstiegskriterien nach § 3 sind Voraussetzungen für den Wechsel der Vergütungsstufe, keine Vorgaben zu Arbeitszeit oder Arbeitsumfang.",
+      "Der Vertriebspartner ist ausdrücklich berechtigt, gleichzeitig für andere Auftraggeber tätig zu sein, andere Produkte zu vertreiben und eigene Kunden zu betreuen. Eine Tätigkeit ausschließlich für NexAI ist weder geschuldet noch erwünscht. Ausgenommen ist die Vermittlung von NexAI-Kunden an Wettbewerber (§ 12).",
+      "Der Vertriebspartner unterhält während der Vertragslaufzeit ein angemeldetes Gewerbe (oder eine gleichwertige Selbstständigkeit in Österreich oder der Schweiz), nutzt eigene Betriebsmittel (Telefon, Rechner, Internetzugang) und trägt seine Kosten selbst."
+    ] },
+
+    { "t": "h1", "num": "§ 3", "text": "Stufen: Junior und Senior" },
+    { "t": "num", "items": [
+      "Jede Funktion beginnt in der Stufe **Junior**. Die Stufe **Senior** erreicht der Vertriebspartner, sobald er die in **Anlage 1** genannten Aufstiegskriterien innerhalb eines zusammenhängenden Zeitraums von vier Wochen erfüllt hat. NexAI stellt das Erreichen in Textform fest; maßgeblich sind die im CRM und Partner-Portal dokumentierten Anrufe, Termine und Abschlüsse.",
+      "Werden die Aufstiegskriterien innerhalb der ersten vier Wochen nicht erreicht, besprechen die Parteien die Gründe. Der Vertriebspartner bleibt in der Stufe Junior und kann die Kriterien in einem weiteren Zeitraum von vier Wochen erfüllen. **[GRÜNDERENTSCHEIDUNG: einmalige Verlängerung oder beliebig oft?]**",
+      "Die Stufe wirkt auf die Vergütung nach § 8 und § 9. Für die Einmalprovision ist die Stufe im Zeitpunkt des Vertragsschlusses mit dem Kunden maßgeblich; für die Monatsprovision ist die Stufe im jeweiligen Fälligkeitszeitpunkt maßgeblich (§ 9 Abs. 2).",
+      "Eine Rückstufung von Senior auf Junior ist nur nach vorheriger Ankündigung in Textform mit einer Frist von vier Wochen und nur dann möglich, wenn der Vertriebspartner über einen Zeitraum von drei aufeinanderfolgenden Monaten keine Vertriebstätigkeit für NexAI ausgeübt hat. **[GRÜNDERENTSCHEIDUNG: Rückstufungsregel gewünscht? Wenn nein, Absatz streichen.]**"
+    ] },
+
+    { "t": "h1", "num": "§ 4", "text": "Leads, Termine und Arbeitsmittel" },
+    { "t": "num", "items": [
+      "NexAI stellt Settern Kontaktdaten potenzieller Geschäftskunden (**\"Leads\"**) über das CRM zur Verfügung. Leads werden im CRM einem Vertriebspartner zugeordnet; ein Lead, der einem anderen Vertriebspartner zugeordnet ist, darf nicht kontaktiert werden. NexAI kann die Zuordnung eines Leads aufheben, wenn er über 30 Tage nicht bearbeitet wurde.",
+      "Von Settern vereinbarte Termine werden Closern über das CRM zugewiesen. Eine bestimmte Anzahl von Leads oder Terminen schuldet NexAI nicht.",
+      "NexAI stellt dem Vertriebspartner für die Dauer des Vertrags unentgeltlich zur Verfügung: Zugang zum Partner-Portal (app.nex-a-i.com) und zum CRM, das Kundendeck, den ROI-Rechner, die Live-Demo-Telefonnummer, Gesprächsleitfäden sowie Einarbeitung und Vertriebsmeetings (§ 11).",
+      "Leads, Kundendaten und Unterlagen dürfen ausschließlich für die Tätigkeit für NexAI verwendet werden. Sie sind Geschäftsgeheimnisse im Sinne des Geschäftsgeheimnisgesetzes (§ 14) und bei Vertragsende zurückzugeben bzw. zu löschen.",
+      "Der Vertriebspartner dokumentiert seine Tätigkeit (Anrufe, Termine, Ergebnisse) zeitnah im CRM. Die Dokumentation dient der Provisionsabrechnung, der Feststellung der Stufe nach § 3 und dem Nachweis rechtskonformer Ansprache (§ 5)."
+    ] },
+
+    { "t": "h1", "num": "§ 5", "text": "Pflichten des Vertriebspartners" },
+    { "t": "p", "text": "Der Vertriebspartner verpflichtet sich insbesondere," },
+    { "t": "bullets", "items": [
+      "bei der Ansprache potenzieller Kunden sämtliche gesetzlichen Vorgaben einzuhalten, insbesondere das Wettbewerbsrecht (§ 7 UWG) und das Datenschutzrecht (DSGVO); Telefonwerbung gegenüber Unternehmen nur im Rahmen der von NexAI bereitgestellten Leitlinien (mutmaßliches Interesse, Einwilligungs-Check zu Gesprächsbeginn, Beachtung der Opt-out-Liste im CRM, keine wiederholten Anrufe nach Ablehnung); unerlaubte Telefon-, E-Mail- oder Nachrichtenwerbung ist untersagt;",
+      "keine falschen Angaben, Zusagen oder Garantien gegenüber Kunden zu machen, insbesondere keine Ergebnis-, Umsatz-, Förder- oder Rechtsgarantien, und ausschließlich von NexAI freigegebene Leistungs- und Produktbeschreibungen, Preise und Vertragsbedingungen zu verwenden;",
+      "Preise, Rabatte, Vertragsbedingungen oder Leistungen nicht eigenmächtig zu ändern oder zuzusagen;",
+      "Kunden darauf hinzuweisen, dass die NexAI-Agenten AI-Systeme sind (Art. 50 KI-Verordnung), soweit dies in Gesprächen mit Demo-Einsatz relevant ist;",
+      "die Marke NexAI zu wahren und sich professionell und seriös zu verhalten;",
+      "Änderungen seiner Stammdaten (Gewerbe, Steuerstatus, Anschrift, Bankverbindung) unverzüglich mitzuteilen."
+    ] },
+
+    { "t": "h1", "num": "§ 6", "text": "Vergütung und Entstehen des Provisionsanspruchs" },
+    { "t": "num", "items": [
+      "Die Vergütung ist ausschließlich erfolgsabhängig. Ein Fixum, ein Grundgehalt, Aufwendungsersatz oder eine Vergütung für Zusatzleistungen werden nicht geschuldet. Art und Höhe der Provision ergeben sich aus §§ 7 bis 10.",
+      "Ein Provisionsanspruch entsteht, wenn (a) der Kunde NexAI vor der Vermittlung durch den Vertriebspartner nicht als Interessent oder Kunde bekannt war bzw. im CRM dem Vertriebspartner zugeordnet ist, (b) zwischen dem Kunden und NexAI ein Vertrag wirksam zustande kommt und (c) der Kunde die jeweilige Zahlung tatsächlich an NexAI geleistet hat. Der Anspruch wird mit Zahlungseingang bei NexAI fällig (§ 87a Abs. 1 HGB).",
+      "NexAI erteilt dem Vertriebspartner monatlich bis zum 10. des Folgemonats eine Provisionsabrechnung über die im Vormonat eingegangenen Kundenzahlungen (§ 87c HGB); die Abrechnung ist im Partner-Portal einsehbar. Der Vertriebspartner stellt auf dieser Grundlage eine ordnungsgemäße Rechnung (zuzüglich gesetzlicher Umsatzsteuer, soweit anwendbar). NexAI zahlt innerhalb von 14 Tagen nach Rechnungseingang.",
+      "Setter und Closer werden für denselben Kunden getrennt nach ihrer jeweiligen Funktion vergütet (§ 8). Übt ein Vertriebspartner für denselben Kunden beide Funktionen aus, gelten die Sätze für Setter + Closer.",
+      "Mit der Provision sind sämtliche Leistungen des Vertriebspartners im Zusammenhang mit der Vermittlung abgegolten."
+    ] },
+
+    { "t": "h1", "num": "§ 7", "text": "Provisionsbasis (Netto-Basis)" },
+    { "t": "num", "items": [
+      "Bemessungsgrundlage sämtlicher Provisionen ist die **Netto-Basis**: der vom Kunden an NexAI gezahlte monatliche Betrag ohne Umsatzsteuer, abzüglich der NexAI-Kosten für Betrieb, Technik und Support des jeweiligen Kundenauftrags.",
+      "Die NexAI-Kosten werden je Kundenauftrag vor dem Vertragsschluss mit dem Kunden festgelegt, dem Vertriebspartner mitgeteilt und im Partner-Portal am Auftrag ausgewiesen. Eine nachträgliche Erhöhung der NexAI-Kosten für einen bereits abgeschlossenen Kundenauftrag ist ausgeschlossen. **[ANWALT: Abweichung von § 87b Abs. 2 HGB (Provisionsbasis ohne Abzüge) – Zulässigkeit der vereinbarten Basis prüfen.]**",
+      "Beispiel: Der Kunde zahlt 2.500 € netto im Monat; die NexAI-Kosten betragen 500 €; die Netto-Basis beträgt 2.000 €.",
+      "Einrichtungs- oder Setup-Gebühren erhebt NexAI nicht; die Basis ist stets die laufende Monatszahlung. Sonstige einmalige Zusatzleistungen sind nicht provisionspflichtig.",
+      "Zahlt der Kunde jährlich im Voraus, gilt als monatliche Netto-Basis der Netto-Jahresbetrag geteilt durch zwölf (12), jeweils abzüglich der monatlichen NexAI-Kosten."
+    ] },
+
+    { "t": "h1", "num": "§ 8", "text": "Einmalprovision" },
+    { "t": "num", "items": [
+      "Für den erstmaligen Vertragsschluss mit einem vom Vertriebspartner vermittelten Kunden erhält der Vertriebspartner eine einmalige Provision in Höhe des folgenden Prozentsatzes der Netto-Basis des ersten Vertragsmonats:"
+    ] },
+    { "t": "table", "header": ["Funktion", "Junior", "Senior", "Beispiel (Netto-Basis 2.000 €)"], "rows": [
+      ["Setter", "8 %", "12 %", "160 € / 240 €"],
+      ["Closer", "13 %", "23 %", "260 € / 460 €"],
+      ["Setter + Closer", "21 %", "35 %", "420 € / 700 €"]
+    ] },
+    { "t": "num", "items": [
+      "Die Einmalprovision entsteht für alle Stufen, auch in der Stufe Junior, und wird mit dem Eingang der ersten Kundenzahlung fällig.",
+      "Bei jährlicher Zahlweise des Kunden wird die Einmalprovision auf die monatliche Netto-Basis nach § 7 Abs. 5 berechnet, nicht auf den Jahresbetrag."
+    ] },
+
+    { "t": "h1", "num": "§ 9", "text": "Monatsprovision" },
+    { "t": "num", "items": [
+      "Ab dem zweiten Vertragsmonat des Kunden erhält der Vertriebspartner für jeden Monat, in dem der Kunde eine Zahlung an NexAI leistet, eine Monatsprovision in Höhe des folgenden Prozentsatzes der Netto-Basis:"
+    ] },
+    { "t": "table", "header": ["Funktion", "Monatsprovision (nur Senior)", "Beispiel (Netto-Basis 2.000 €)"], "rows": [
+      ["Setter", "5 %", "100 € / Monat"],
+      ["Closer", "10 %", "200 € / Monat"],
+      ["Setter + Closer", "15 %", "300 € / Monat"]
+    ] },
+    { "t": "num", "items": [
+      "Die Monatsprovision steht nur Vertriebspartnern in der Stufe **Senior** zu. Maßgeblich ist die Stufe im Zeitpunkt der Fälligkeit der jeweiligen Monatsprovision (Zahlungseingang des Kunden). Für Kundenzahlungen, die eingehen, solange der Vertriebspartner Junior ist, entsteht keine Monatsprovision; ein Nachzahlungsanspruch bei späterem Aufstieg besteht nicht. **[ANWALT: Abweichung von § 87 Abs. 1 HGB (Provision für alle Folgegeschäfte) – Zulässigkeit der Stufenregelung prüfen.]**",
+      "Die Monatsprovision ist weder in der Höhe je Kunde noch in der Anzahl der Kunden gedeckelt und wird gezahlt, solange der Kunde Vertragspartner von NexAI ist und zahlt.",
+      "Bei jährlicher Zahlweise des Kunden wird die Monatsprovision für die Monate 2 bis 12 des jeweiligen Vertragsjahres gebündelt am Jahrestag der Abrechnung ausgezahlt, sofern der Kunde zu diesem Zeitpunkt Vertragspartner von NexAI ist und der Vertriebspartner zu diesem Zeitpunkt Senior ist. Kündigt der Kunde vor dem Jahrestag, entsteht für dieses Vertragsjahr keine Monatsprovision.",
+      "Nach Beendigung dieses Vertrags werden Monatsprovisionen für die vom Vertriebspartner vermittelten Kunden noch für **[zwölf (12)]** Monate fortgezahlt, sofern die übrigen Voraussetzungen vorliegen; danach erlischt der Anspruch. Ein Ausgleichsanspruch nach § 89b HGB bleibt unberührt. **[GRÜNDERENTSCHEIDUNG + ANWALT: Dauer des Nachlaufs; Verhältnis zum nicht abdingbaren Ausgleichsanspruch nach § 89b HGB; Anrechnung prüfen.]**"
+    ] },
+
+    { "t": "h1", "num": "§ 10", "text": "Stornofreiheit, Zahlungsausfall" },
+    { "t": "num", "items": [
+      "Ausgezahlte Provisionen werden nicht zurückgefordert (keine Rückbelastung), auch wenn der Kunde später kündigt. Mit der Wirksamkeit einer Kundenkündigung endet lediglich die Monatsprovision für die Zeit nach dem letzten bezahlten Vertragsmonat.",
+      "Leistet der Kunde eine Zahlung nicht, wird sie zurückgebucht oder rückabgewickelt, entsteht insoweit kein Provisionsanspruch bzw. entfällt er (§ 87a Abs. 2 HGB). Bereits auf diese Zahlung ausgezahlte Provisionen werden mit künftigen Provisionen des Vertriebspartners verrechnet; eine darüber hinausgehende Rückforderung findet nicht statt.",
+      "Der Anspruch auf Monatsprovision besteht nur, solange der Vertriebspartner ein angemeldetes Gewerbe (oder eine gleichwertige Selbstständigkeit) unterhält und NexAI ordnungsgemäße Rechnungen stellt."
+    ] },
+
+    { "t": "h1", "num": "§ 11", "text": "Einarbeitung, Vertriebsmeetings, Gesprächsqualität" },
+    { "t": "num", "items": [
+      "NexAI bietet dem Vertriebspartner eine Einarbeitung (Produkt, Demo, Gesprächsleitfäden, Portal, CRM) sowie Vertriebsmeetings an. In der Stufe Junior finden ein bis zwei Vertriebsmeetings pro Woche statt; der Vertriebspartner nimmt daran teil, soweit es mit seiner freien Zeiteinteilung vereinbar ist. In der Stufe Senior ist die Teilnahme freiwillig.",
+      "Zu Coaching-Zwecken können ausgewählte Kundengespräche des Vertriebspartners mitgehört oder aufgezeichnet werden, jedoch nur mit vorheriger Ansage und Einverständnis aller Gesprächsteilnehmer (§ 201 StGB). Der Vertriebspartner erklärt sich mit dem Mithören seiner Gespräche zu Coaching-Zwecken einverstanden; Aufzeichnungen werden spätestens nach 30 Tagen gelöscht und nicht zu Kontrollzwecken im Sinne einer Leistungsüberwachung verwendet.",
+      "NexAI kann die Qualität der vermittelten Kunden anhand sachlicher Kriterien bewerten (Kündigungsquote, Zahlungsverhalten, Supportaufwand). Die Bewertung dient als Grundlage für freiwillige Zusatzleistungen nach Abs. 4 und für Gespräche über die Fortsetzung der Zusammenarbeit.",
+      "NexAI kann besondere Leistungen durch zusätzliche Anreize belohnen (z. B. Prämien). Solche Leistungen sind freiwillig, begründen keinen Rechtsanspruch, auch nicht bei wiederholter Gewährung, und sind jederzeit widerruflich."
+    ] },
+
+    { "t": "h1", "num": "§ 12", "text": "Kundenschutz und Kundeneigentum" },
+    { "t": "num", "items": [
+      "Jeder vermittelte Kunde ist und bleibt ausschließlich Kunde von NexAI. Die laufende Betreuung des Kunden obliegt NexAI; der Closer bleibt während der Zusammenarbeit Ansprechpartner für vertriebliche Fragen nach Maßgabe der internen Regelungen von NexAI.",
+      "Der Vertriebspartner darf Kunden und Interessenten von NexAI während der Vertragslaufzeit nicht für konkurrierende Produkte oder Dienstleistungen ansprechen oder an Dritte vermitteln.",
+      "Scheidet der Vertriebspartner aus, bleibt der Kunde bei NexAI. Ansprüche auf Monatsprovision richten sich nach § 9 Abs. 5."
+    ] },
+
+    { "t": "h1", "num": "§ 13", "text": "Keine Vertretungsbefugnis" },
+    { "t": "p", "text": "Der Vertriebspartner ist nicht bevollmächtigt, NexAI rechtsgeschäftlich zu vertreten (Vermittlungsvertreter ohne Abschlussvollmacht). Er ist insbesondere nicht berechtigt, im Namen von NexAI rechtsverbindliche Erklärungen abzugeben, Verträge abzuschließen, Zahlungen entgegenzunehmen, sich als Gesellschafter, Geschäftsführer oder Inhaber auszugeben oder Zusagen bzw. Garantien zu erteilen, die nicht ausdrücklich freigegeben sind. Aus diesem Vertrag entsteht keine Beteiligung am Unternehmen." },
+
+    { "t": "h1", "num": "§ 14", "text": "Vertraulichkeit, Geschäftsgeheimnisse, Lead-Listen" },
+    { "t": "num", "items": [
+      "Der Vertriebspartner verpflichtet sich, sämtliche ihm im Rahmen der Zusammenarbeit bekannt werdenden vertraulichen Informationen von NexAI streng geheim zu halten und weder zu kopieren, weiterzugeben noch für eigene oder fremde Zwecke außerhalb dieses Vertrags zu nutzen. Dies gilt während der Vertragslaufzeit und zeitlich unbegrenzt nach Beendigung des Vertrags, solange die Informationen nicht offenkundig sind.",
+      "Vertrauliche Informationen sind insbesondere: Lead-Listen und Kundendaten, interne Dokumente, Schulungsunterlagen, Gesprächsleitfäden, Vertriebs- und Geschäftsprozesse, Preis- und Provisionsmodelle, AI-Prompts, Automatisierungen und Workflows, technische Konfigurationen sowie Geschäftsstrategien. Lead-Listen und Kundendaten sind Geschäftsgeheimnisse im Sinne des § 2 GeschGehG; sie dürfen nicht exportiert, kopiert oder außerhalb des CRM gespeichert werden.",
+      "Der Vertriebspartner erhält keinen Zugriff auf die technischen Systeme, AI-Prompts, Workflows oder Konfigurationen von NexAI im Klartext. Er vertreibt das Ergebnis, nicht die zugrunde liegende Technik.",
+      "Bei Beendigung des Vertrags gibt der Vertriebspartner sämtliche Zugangsdaten, Unterlagen und internen Informationen unverzüglich zurück oder löscht sie und bestätigt dies auf Verlangen schriftlich."
+    ] },
+
+    { "t": "h1", "num": "§ 15", "text": "Geistiges Eigentum" },
+    { "t": "p", "text": "Sämtliche von NexAI entwickelten AI-Agenten, Prompts, Automatisierungen, Workflows, Schulungen, Vorlagen, Software-Konfigurationen und Vertriebsunterlagen bleiben ausschließlich Eigentum von NexAI. Dem Vertriebspartner werden hieran keine Rechte eingeräumt, die über die zur Vertragsdurchführung erforderliche Nutzung hinausgehen." },
+
+    { "t": "h1", "num": "§ 16", "text": "Marke, Auftritt und Social Media" },
+    { "t": "num", "items": [
+      "Die Marke „NexAI\", das Corporate Design, Logos, Domains, Webseiten und sämtliche Unternehmensidentitäten bleiben ausschließlich Eigentum von NexAI und dürfen vom Vertriebspartner nur mit ausdrücklicher Genehmigung und ausschließlich im Rahmen seiner Tätigkeit für NexAI genutzt werden.",
+      "Der Vertriebspartner darf das Logo nicht verändern, keine eigene Website unter Verwendung der Marke NexAI betreiben und keine Werbung im Namen von NexAI ohne vorherige Genehmigung schalten. In sozialen Medien dürfen nur freigegebene Inhalte veröffentlicht werden; NexAI darf nicht in einer dem Unternehmen schädlichen Weise dargestellt werden. Eigene Beiträge über die Zusammenarbeit (z. B. „Ich verkaufe AI-Mitarbeiter von NexAI\") sind erlaubt, soweit sie wahr sind und keine vertraulichen Informationen enthalten."
+    ] },
+
+    { "t": "h1", "num": "§ 17", "text": "Datenschutz" },
+    { "t": "num", "items": [
+      "Die Verarbeitung personenbezogener Daten im Rahmen dieses Vertrags richtet sich nach den geltenden datenschutzrechtlichen Bestimmungen, insbesondere der DSGVO. Soweit der Vertriebspartner personenbezogene Daten (insbesondere Leads, Kunden- und Ansprechpartnerdaten) im Auftrag von NexAI verarbeitet, erfolgt dies ausschließlich nach Weisung von NexAI auf Grundlage der als **Anlage 3** beigefügten Vereinbarung zur Auftragsverarbeitung nach Art. 28 DSGVO. **[ANWALT: Einordnung Vertriebspartner als Auftragsverarbeiter oder eigener Verantwortlicher prüfen; Anlage 3 erstellen.]**",
+      "Der Vertriebspartner verarbeitet die Daten ausschließlich im CRM und Partner-Portal von NexAI, nicht in eigenen Systemen, und beachtet die Informationspflichten nach Art. 13 und 14 DSGVO nach Maßgabe der von NexAI bereitgestellten Leitfäden.",
+      "Der Zugriff auf das Partner-Portal und das CRM ist personengebunden. Zugangsdaten dürfen nicht weitergegeben werden. Bei Vertragsende werden die Zugänge gesperrt; vom Vertriebspartner lokal gespeicherte personenbezogene Daten sind zu löschen."
+    ] },
+
+    { "t": "h1", "num": "§ 18", "text": "Nachvertragliches Abwerbeverbot" },
+    { "t": "p", "text": "Für die Dauer von achtzehn (18) Monaten nach Beendigung des Vertrags verpflichtet sich der Vertriebspartner, keine aktiven Kunden von NexAI, die während seiner Tätigkeit über NexAI betreut wurden, gezielt für ein konkurrierendes Angebot abzuwerben, sowie keine aktiven Vertriebspartner oder Mitarbeiter von NexAI gezielt zum Verlassen des Unternehmens zu bewegen. **[ANWALT: Reichweite des Abwerbeverbots (kein allgemeines Wettbewerbsverbot, § 90a HGB) prüfen.]**" },
+
+    { "t": "h1", "num": "§ 19", "text": "Vertragsstrafe" },
+    { "t": "p", "text": "Für jeden Fall einer schuldhaften Zuwiderhandlung gegen die Verpflichtungen aus § 14 (Vertraulichkeit), § 15 (Geistiges Eigentum) oder § 18 (Abwerbeverbot) verpflichtet sich der Vertriebspartner zur Zahlung einer Vertragsstrafe in Höhe von 5.000 EUR. Bei einem Dauerverstoß gilt jeder angefangene Monat als eigener Fall; der Fortsetzungszusammenhang ist ausgeschlossen. Die Geltendmachung eines darüber hinausgehenden Schadens bleibt unberührt; die Vertragsstrafe wird auf einen etwaigen Schadensersatzanspruch angerechnet. **[ANWALT: Angemessenheit der Höhe prüfen.]**" },
+
+    { "t": "h1", "num": "§ 20", "text": "Haftung und Freistellung" },
+    { "t": "num", "items": [
+      "Der Vertriebspartner haftet für Schäden, die aus von ihm zu vertretenden Falschangaben, unzulässigen Zusagen oder Rechtsverstößen (insbesondere Wettbewerbs- oder Datenschutzverstößen) gegenüber Kunden oder Dritten entstehen.",
+      "Der Vertriebspartner stellt NexAI von sämtlichen Ansprüchen Dritter (einschließlich Abmahnkosten und angemessener Rechtsverteidigungskosten) frei, die auf einer von ihm zu vertretenden Pflichtverletzung, Falschangabe oder unzulässigen Ansprache beruhen. Hält sich der Vertriebspartner nachweislich an die von NexAI bereitgestellten Leitlinien zur Kundenansprache, trägt NexAI das Risiko einer Abmahnung wegen der Ansprache selbst.",
+      "NexAI haftet dem Vertriebspartner gegenüber nur für Vorsatz und grobe Fahrlässigkeit sowie bei Verletzung wesentlicher Vertragspflichten (Provisionszahlung, Abrechnung) für den vertragstypischen, vorhersehbaren Schaden."
+    ] },
+
+    { "t": "h1", "num": "§ 21", "text": "Laufzeit und Kündigung" },
+    { "t": "num", "items": [
+      "Der Vertrag beginnt mit Unterzeichnung durch beide Parteien und läuft auf unbestimmte Zeit. Er kann von beiden Parteien ordentlich mit einer Frist von vier (4) Wochen zum Monatsende in Textform gekündigt werden. **[ANWALT: Mindestfristen nach § 89 HGB ab dem zweiten Vertragsjahr beachten.]**",
+      "Das Recht zur außerordentlichen Kündigung aus wichtigem Grund bleibt unberührt. Ein wichtiger Grund liegt für NexAI insbesondere vor bei Täuschung, Falschangaben gegenüber Kunden, Verstößen gegen § 5 (insbesondere unzulässige Werbeansprache), Datenschutzverstößen, unbefugter Weitergabe von Leads oder internen Informationen oder Schädigung des Unternehmens oder der Marke.",
+      "Bei ordentlicher Kündigung bleiben bereits entstandene Provisionsansprüche bestehen; Monatsprovisionen laufen nach § 9 Abs. 5 weiter. Bei außerordentlicher Kündigung durch NexAI aus einem vom Vertriebspartner zu vertretenden wichtigen Grund entfallen künftige Monatsprovisionen; bereits entstandene Ansprüche werden abgerechnet. **[ANWALT: Zulässigkeit des Wegfalls künftiger Provisionen prüfen.]**",
+      "Mit Vertragsende enden die Zugänge zu Portal und CRM; § 14 Abs. 4 und § 17 Abs. 3 gelten."
+    ] },
+
+    { "t": "h1", "num": "§ 22", "text": "Steuern und Sozialversicherung" },
+    { "t": "p", "text": "Der Vertriebspartner ist selbst verantwortlich für die Anmeldung und Führung seines Gewerbes, die ordnungsgemäße Rechnungsstellung, die Abführung sämtlicher Steuern (einschließlich Umsatzsteuer) sowie seine soziale Absicherung. NexAI führt für den Vertriebspartner keine Steuern oder Sozialabgaben ab. Die Parteien können das Statusfeststellungsverfahren nach § 7a SGB IV einleiten; NexAI unterstützt dies auf Wunsch." },
+
+    { "t": "h1", "num": "§ 23", "text": "Änderungen und Textform" },
+    { "t": "num", "items": [
+      "Änderungen und Ergänzungen dieses Vertrags bedürfen der Textform. Mündliche Nebenabreden bestehen nicht.",
+      "NexAI ist berechtigt, die Provisionsregelung (§§ 7 bis 10) und die Aufstiegskriterien (Anlage 1) mit Wirkung für die Zukunft anzupassen. Eine Änderung gilt nur für Kundenabschlüsse, die nach der Mitteilung der Änderung an den Vertriebspartner zustande kommen; für bereits abgeschlossene Kunden bleiben die zum Abschlusszeitpunkt geltenden Sätze und Basen unverändert. Änderungen werden mit einer Frist von vier Wochen in Textform mitgeteilt; der Vertriebspartner kann bis zum Wirksamwerden außerordentlich kündigen."
+    ] },
+
+    { "t": "h1", "num": "§ 24", "text": "Übertragung auf eine Nachfolgegesellschaft" },
+    { "t": "p", "text": "NexAI wird als Gesellschaft bürgerlichen Rechts geführt; die Gründung einer haftungsbeschränkten Gesellschaft (insbesondere UG oder GmbH) ist beabsichtigt. Der Vertriebspartner stimmt bereits jetzt zu, dass NexAI diesen Vertrag mit allen Rechten und Pflichten auf eine solche Nachfolge- oder Umwandlungsgesellschaft übertragen darf. Der Vertriebspartner wird hierüber in Textform informiert." },
+
+    { "t": "h1", "num": "§ 25", "text": "Salvatorische Klausel" },
+    { "t": "p", "text": "Sollten einzelne Bestimmungen dieses Vertrags ganz oder teilweise unwirksam oder undurchführbar sein oder werden, so bleibt die Wirksamkeit der übrigen Bestimmungen unberührt. Anstelle der unwirksamen oder undurchführbaren Bestimmung gilt eine Regelung als vereinbart, die dem wirtschaftlich Gewollten am nächsten kommt. Entsprechendes gilt für etwaige Regelungslücken." },
+
+    { "t": "h1", "num": "§ 26", "text": "Anwendbares Recht und Gerichtsstand" },
+    { "t": "p", "text": "Es gilt das Recht der Bundesrepublik Deutschland. Gerichtsstand für alle Streitigkeiten aus oder im Zusammenhang mit diesem Vertrag ist, soweit gesetzlich zulässig, der Sitz von NexAI. **[ANWALT: Für Vertriebspartner mit Sitz in Österreich/Schweiz Gerichtsstand und Rechtswahl prüfen; für Einfirmenvertreter nach § 92a HGB / § 5 Abs. 3 ArbGG ggf. Arbeitsgericht zuständig.]**" },
+
+    { "t": "note", "text": "Dieser Vertrag ist ein sorgfältig erstellter Entwurf auf Basis des Karrieresystems für NexAI-Vertriebspartner (Stand 19.08.2026). Er ersetzt keine Rechtsberatung und ist vor Verwendung anwaltlich zu prüfen; die mit [ANWALT] und [GRÜNDERENTSCHEIDUNG] gekennzeichneten Stellen sind offen." },
+    { "t": "spacer", "h": 12 },
+    { "t": "h2", "text": "Unterschriften" },
+    { "t": "p", "text": "Mit ihren Unterschriften bestätigen die Parteien, den vorstehenden Vertrag einschließlich der Anlagen 1 bis 3 gelesen zu haben und mit seinem Inhalt einverstanden zu sein." },
+    { "t": "sig", "cols": [
+      { "role": "Für NexAI", "lines": ["Ort, Datum", "", "Maximilian Trenk (Gesellschafter)"] },
+      { "role": "Für NexAI", "lines": ["Ort, Datum", "", "Jason Brian Merklein (Gesellschafter)"] },
+      { "role": "Vertriebspartner", "lines": ["Ort, Datum", "", "Name"] }
+    ] },
+
+    { "t": "pagebreak" },
+    { "t": "title", "text": "Anlage 1 – Aufstiegskriterien Junior → Senior" },
+    { "t": "meta", "text": "Zu § 3 des Vertriebspartnervertrags · Karrieresystem Stand 19.08.2026" },
+    { "t": "p", "text": "Die Stufe Senior wird erreicht, wenn die folgenden Kriterien innerhalb eines zusammenhängenden Zeitraums von vier Wochen erfüllt sind. Maßgeblich sind die im CRM dokumentierten Werte. Die Kriterien sind Voraussetzungen für den Wechsel der Vergütungsstufe; sie begründen keine Verpflichtung zu Arbeitszeit oder Arbeitsumfang (§ 2)." },
+    { "t": "h2", "text": "Junior Setter" },
+    { "t": "table", "header": ["Woche 1", "Woche 2", "Woche 3", "Woche 4", "zusätzlich"], "rows": [
+      ["50 Anrufe", "75 Anrufe", "100 Anrufe", "125 Anrufe", "mind. 3 stattgefundene (nicht nur vereinbarte) Termine in den 4 Wochen"]
+    ] },
+    { "t": "h2", "text": "Junior Closer" },
+    { "t": "table", "header": ["Woche 1", "Woche 2", "Woche 3", "Woche 4", "zusätzlich"], "rows": [
+      ["3 Termine", "5 Termine", "7 Termine", "10 Termine", "mind. 2 Abschlüsse in den 4 Wochen"]
+    ] },
+    { "t": "p", "text": "**Setter + Closer:** beide Kriterien, jeweils bezogen auf die eigenen Termine. **Anruf** = dokumentierter Wählversuch mit erreichtem Gesprächspartner oder Mailbox. **Termin** = wahrgenommenes Verkaufsgespräch mit einem Entscheider. **Abschluss** = wirksam zustande gekommener Kundenvertrag." },
+
+    { "t": "pagebreak" },
+    { "t": "title", "text": "Anlage 2 – Funktion, Stufe und Provisionsübersicht" },
+    { "t": "meta", "text": "Zu §§ 1, 3, 7 bis 10 des Vertriebspartnervertrags" },
+    { "t": "h2", "text": "Festlegung bei Vertragsschluss" },
+    { "t": "checkbox", "text": "Funktion: Setter", "checked": false },
+    { "t": "checkbox", "text": "Funktion: Closer", "checked": false },
+    { "t": "checkbox", "text": "Funktion: Setter + Closer", "checked": false },
+    { "t": "checkbox", "text": "Stufe bei Vertragsbeginn: Junior (Regelfall)", "checked": false },
+    { "t": "checkbox", "text": "Stufe bei Vertragsbeginn: Senior (nur mit gesonderter Begründung in Textform)", "checked": false },
+    { "t": "fill", "label": "Vertragsbeginn", "value": "" },
+    { "t": "h2", "text": "Provisionsübersicht" },
+    { "t": "table", "header": ["Funktion", "Einmalprovision Junior", "Einmalprovision Senior", "Monatsprovision (nur Senior, ab Monat 2, dauerhaft)"], "rows": [
+      ["Setter", "8 %", "12 %", "5 %"],
+      ["Closer", "13 %", "23 %", "10 %"],
+      ["Setter + Closer", "21 %", "35 %", "15 %"]
+    ] },
+    { "t": "p", "text": "Alle Sätze beziehen sich auf die Netto-Basis nach § 7 (Kundenzahlung netto abzüglich der am Auftrag ausgewiesenen NexAI-Kosten). Beispiel bei 2.000 € Netto-Basis: Senior Closer 460 € einmalig, danach 200 € je bezahltem Kundenmonat. Kein Kundendeckel, keine Rückbelastung ausgezahlter Provisionen (§ 10)." },
+    { "t": "h2", "text": "Anlage 3 – Vereinbarung zur Auftragsverarbeitung (Art. 28 DSGVO)" },
+    { "t": "note", "text": "Wird gesondert beigefügt. [ANWALT/NexAI: auf Basis der bestehenden Anlage B (AVV) des Kundenvertragswerks erstellen, Rollen Vertriebspartner ↔ NexAI spiegelbildlich.]" },
+
+    { "t": "pagebreak" },
+    { "t": "title", "text": "Prüfpunkte für die anwaltliche Prüfung (nicht Vertragsbestandteil)" },
+    { "t": "bullets", "items": [
+      "§ 7: Netto-Basis (Abzug der NexAI-Kosten) weicht von § 87b Abs. 2 HGB ab – Vereinbarkeit prüfen; Kosten je Auftrag werden vorab festgelegt und sind nachträglich nicht erhöhbar.",
+      "§ 9 Abs. 2: Monatsprovision nur für Senior weicht von § 87 Abs. 1 HGB (Provision für alle Folgegeschäfte) ab – Zulässigkeit der Stufenregelung.",
+      "§ 9 Abs. 5: Nachlauf der Monatsprovision nach Vertragsende (Platzhalter 12 Monate) und Verhältnis zum nicht abdingbaren Ausgleichsanspruch nach § 89b HGB; Anrechnung.",
+      "§ 3: Aufstiegs- und Rückstufungsregel – Scheinselbstständigkeit (keine Weisung zu Arbeitszeit/-umfang; Kriterien als reine Vergütungsbedingung formuliert).",
+      "§ 21: Kündigungsfristen nach § 89 HGB (ab 2. Jahr zwei Monate, ab 3. Jahr drei Monate, ab 6. Jahr sechs Monate) – vier Wochen sind nur im ersten Jahr zulässig.",
+      "§ 26 / § 92a HGB: Einfirmenvertreter mit Vergütung bis 1.000 €/Monat → Arbeitsgericht zuständig (§ 5 Abs. 3 ArbGG); Mehrfirmenvertretung ist ausdrücklich erlaubt und erwünscht (§ 2 Abs. 3).",
+      "§ 5 / § 20: B2B-Telefonakquise nur mit mutmaßlicher Einwilligung (§ 7 Abs. 2 Nr. 1 UWG; BVerwG 6 C 3.23) – Leitlinien, Opt-out-Liste und Anruf-Log sind Pflicht; Haftungsverteilung bei Abmahnungen.",
+      "§ 17: Rolle des Vertriebspartners (Auftragsverarbeiter vs. eigener Verantwortlicher) und Anlage 3.",
+      "§ 18 / § 19: Abwerbeverbot (kein Wettbewerbsverbot, § 90a HGB) und Vertragsstrafe (Höhe, Fortsetzungszusammenhang).",
+      "AGG (§ 6 Abs. 3) gilt für den Zugang zur selbstständigen Tätigkeit – Auswahlkriterien neutral halten; Bewerberdaten 6 Monate (§ 15 Abs. 4 AGG)."
+    ] }
+  ]
+}

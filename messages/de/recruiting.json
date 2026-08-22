@@ -1,0 +1,388 @@
+{
+  "Recruiting": {
+    "meta": {
+      "title": "Setter & Closer Job (m/w/d) remote auf Provisionsbasis",
+      "description": "NexAI sucht selbstständige Setter und Closer (m/w/d) für AI-Mitarbeiter: bis 35 % Einmalprovision plus bis 15 % monatlich, stornofrei, remote in DACH. Jetzt bewerben."
+    },
+    "hero": {
+      "eyebrow": "Vertriebspartner (m/w/d) · Remote · DACH",
+      "title": "Verkaufe AI-Mitarbeiter. Verdiene monatlich mit, solange der Kunde bleibt.",
+      "description": "NexAI sucht selbstständige Setter und Closer (m/w/d), die Unternehmen am Telefon gewinnen. Reine Provision, kein Fixum: bis 35 % auf den ersten Monat und bis 15 % dauerhaft auf jeden weiteren, stornofrei und ohne Deckel.",
+      "primary": "Jetzt bewerben",
+      "secondary": "Provision berechnen",
+      "reassurance": "Keine Kosten, keine Kurse, kein Startpaket. Du verkaufst, wir liefern Produkt, Leads und Technik.",
+      "facts": ["100 % remote", "Reine Provision", "Monatsprovision dauerhaft", "Stornofrei"]
+    },
+    "positioning": {
+      "eyebrow": "Worum es geht",
+      "lead": "Kein Coaching, kein Netzwerk-Marketing.",
+      "headline": "Ein echtes B2B-Produkt mit monatlichem Umsatz.",
+      "body": "NexAI baut digitale Mitarbeiter: AI-Agenten, die für kleine und mittlere Unternehmen ans Telefon gehen, im Website-Chat antworten und Routinearbeit übernehmen. Kunden zahlen dafür monatlich, und genau deshalb verdienst du als Senior nicht nur beim Abschluss, sondern jeden Monat mit. Wir sind ein junges Unternehmen und bauen den Vertrieb gerade auf. Wer jetzt einsteigt, baut ihn mit."
+    },
+    "product": {
+      "eyebrow": "Das verkaufst du",
+      "title": "Digitale Mitarbeiter, die jeder Kunde sofort versteht.",
+      "description": "Vier Produkte, ein Prinzip: Die AI übernimmt Aufgaben, für die dem Kunden heute Zeit oder Personal fehlt. Du zeigst am Telefon in zwei Minuten, wie das klingt.",
+      "items": [
+        {
+          "title": "Voice Agent",
+          "description": "Geht rund um die Uhr ans Telefon, beantwortet Fragen und bucht Termine. Für jeden Betrieb, in dem Anrufe verloren gehen."
+        },
+        {
+          "title": "Chat Agent",
+          "description": "Antwortet auf der Website sofort, qualifiziert Anfragen und leitet sie weiter. Kein Interessent wartet mehr bis zum nächsten Werktag."
+        },
+        {
+          "title": "Social-Media-Agent",
+          "description": "Beantwortet Nachrichten und Kommentare und bereitet Beiträge vor. Der Kunde bleibt sichtbar, ohne selbst zu posten."
+        },
+        {
+          "title": "Automatisierung",
+          "description": "Übernimmt wiederkehrende Büroarbeit und verbindet die Programme des Kunden miteinander. Spart jeden Tag Stunden."
+        }
+      ]
+    },
+    "roles": {
+      "eyebrow": "Positionen & Provision",
+      "title": "Drei Rollen, zwei Stufen, ein Modell.",
+      "description": "Jede Rolle startet als Junior und wird nach der Einarbeitung zum Senior. Die Provision rechnet auf die Netto-Basis des Kunden: die Kundenzahlung abzüglich der NexAI-Kosten für Betrieb, Technik und Support.",
+      "levels": { "junior": "Junior", "senior": "Senior" },
+      "labels": {
+        "oneTime": "Einmalprovision im ersten Monat",
+        "monthly": "Monatsprovision ab Monat 2, dauerhaft",
+        "monthlyJunior": "Als Junior noch keine Monatsprovision",
+        "promotion": "Aufstieg zum Senior",
+        "fit": "Passt, wenn",
+        "pct": "{value} %"
+      },
+      "items": [
+        {
+          "key": "setter",
+          "name": "Setter",
+          "tagline": "Du öffnest Türen.",
+          "tasks": "Du rufst Entscheider in kleinen und mittleren Unternehmen an, weckst Interesse und vereinbarst qualifizierte Termine für den Closer.",
+          "promotion": "In 4 Wochen mit 50, 75, 100 und 125 Anrufen pro Woche und mindestens 3 stattgefundenen Terminen.",
+          "fit": "du gern telefonierst, ein Nein nicht persönlich nimmst und Struktur magst."
+        },
+        {
+          "key": "closer",
+          "name": "Closer",
+          "tagline": "Du holst den Abschluss.",
+          "tasks": "Du führst die Verkaufsgespräche mit den Terminen aus dem Setter-Pool, zeigst die AI live und bringst den Vertrag nach Hause.",
+          "promotion": "In 4 Wochen mit 3, 5, 7 und 10 geführten Terminen pro Woche und mindestens 2 Abschlüssen.",
+          "fit": "du Verkaufsgespräche führst, Einwände magst und Abschlüsse sauber zu Ende bringst."
+        },
+        {
+          "key": "both",
+          "name": "Setter + Closer",
+          "tagline": "Du machst beides.",
+          "tasks": "Du legst deine Termine selbst und schließt sie selbst ab. Die Provision ist die Summe beider Rollen, kein Split mit anderen.",
+          "promotion": "Die Kriterien beider Rollen, jeweils in deinen eigenen Terminen.",
+          "fit": "du den ganzen Weg vom ersten Anruf bis zur Unterschrift selbst gehen willst."
+        }
+      ],
+      "basisTitle": "So rechnet sich die Netto-Basis",
+      "basisNote": "Beispiel: Ein Kunde zahlt 2.500 € im Monat. Nach Abzug der NexAI-Kosten von 500 € bleiben 2.000 € Netto-Basis. Davon rechnet sich deine Provision. Es gibt keine Einrichtungsgebühr, die Basis ist immer die laufende Monatszahlung.",
+      "rulesTitle": "Drei Regeln, die immer gelten",
+      "rules": [
+        "Kein Kundendeckel: Dein Einkommen wächst mit jedem Kunden weiter.",
+        "Stornofrei: Ausgezahlte Provision wird nie zurückgefordert. Bei einer Kündigung entfällt nur die weitere Monatsprovision.",
+        "Zahlt ein Kunde jährlich, zählt für die Einmalprovision trotzdem die Monatsbasis. Die Monatsprovision kommt dann gebündelt am Jahrestag."
+      ],
+      "customersTitle": "Deine Kunden",
+      "customersText": "Handwerksbetriebe, Praxen, Kanzleien, Dienstleister. B2B, am Telefon, mit Kaltanruf auf geprüfte Firmenkontakte. Wer warme Anfragen aus Coaching-Anzeigen erwartet, ist hier falsch. Wer echten B2B-Vertrieb kann, ist hier richtig."
+    },
+    "calculator": {
+      "eyebrow": "Provisions-Rechner",
+      "title": "Rechne dein Modell durch.",
+      "description": "Wähle Rolle, Stufe und deine Annahmen. Der Rechner zeigt, wie sich Einmal- und Monatsprovision über die Zeit aufbauen.",
+      "roleLabel": "Rolle",
+      "roles": { "setter": "Setter", "closer": "Closer", "both": "Setter + Closer" },
+      "levelLabel": "Stufe",
+      "levels": { "junior": "Junior", "senior": "Senior" },
+      "newLabel": "Neue Kunden pro Monat",
+      "baseLabel": "Netto-Basis pro Kunde und Monat (€)",
+      "baseHint": "Beispiel: 2.500 € Kundenpreis minus 500 € NexAI-Kosten = 2.000 €",
+      "reset": "Beispiel zurücksetzen",
+      "resultLabel": "Dein Monatseinkommen im Monat 12",
+      "monthLine": "Monat {n}: {value}",
+      "customers": "{n, plural, =0 {noch kein Bestandskunde} =1 {1 Bestandskunde} other {# Bestandskunden}}",
+      "breakdown": "Davon Einmalprovision {oneTime} und Monatsprovision {recurring}",
+      "perCustomer": "Je Kunde, der 12 Monate bleibt: {value}",
+      "chartLabel": "Monatseinkommen über 24 Monate",
+      "juniorHint": "Als Junior gibt es nur die Einmalprovision. Die Monatsprovision startet mit dem Aufstieg zum Senior, in der Regel nach 4 Wochen.",
+      "note": "Modellrechnung, keine Prognose. Annahmen: gleichbleibend viele Neukunden pro Monat, keine Kündigungen, Provision auf die Netto-Basis, Monatsprovision nur als Senior und ab Monat 2. Dein tatsächliches Einkommen hängt von deinen Abschlüssen und davon ab, wie lange Kunden bleiben.",
+      "cta": "Jetzt bewerben",
+      "ctaHint": "Bewerbung in 2 Minuten, Gespräch direkt buchbar."
+    },
+    "path": {
+      "eyebrow": "Dein Weg zum Senior",
+      "title": "Vier Wochen, klare Kriterien, kein Nasenfaktor.",
+      "description": "Jede Rolle startet als Junior. Die Aufstiegskriterien sind öffentlich und objektiv, damit du von Tag 1 weißt, woran du bist.",
+      "weekLabel": "Woche {n}",
+      "columns": [
+        {
+          "role": "Junior Setter",
+          "metric": "Anrufe pro Woche",
+          "extra": "Plus mindestens 3 stattgefundene Termine in den 4 Wochen."
+        },
+        {
+          "role": "Junior Closer",
+          "metric": "Geführte Termine pro Woche",
+          "extra": "Plus mindestens 2 Abschlüsse in den 4 Wochen."
+        }
+      ],
+      "bothNote": "Setter + Closer: beide Kriterien, jeweils in deinen eigenen Terminen.",
+      "seniorTitle": "Senior heißt",
+      "senior": [
+        "Höhere Einmalprovision: 12 % als Setter, 23 % als Closer, 35 % für beides.",
+        "Monatsprovision dauerhaft: 5 %, 10 % oder 15 % der Netto-Basis, solange der Kunde bleibt.",
+        "Vertriebsmeetings freiwillig, Einarbeitung abgeschlossen."
+      ],
+      "note": "Als Junior sind ein bis zwei Vertriebsmeetings pro Woche Teil der Einarbeitung. Ausgewählte Gespräche hören wir zu Coaching-Zwecken mit; aufgezeichnet wird nur mit Ansage und Einverständnis des Kunden. Ziel ist besser werden, nicht kontrollieren."
+    },
+    "support": {
+      "eyebrow": "Das bekommst du",
+      "title": "Du verkaufst. Den Rest liefern wir.",
+      "description": "Kein Startpaket, keine Gebühren. Alles, was du zum Verkaufen brauchst, stellt NexAI.",
+      "items": [
+        {
+          "title": "Geprüfte Firmenkontakte",
+          "description": "Setter starten mit Entscheiderkontakten aus öffentlichen Quellen, mit geprüfter Telefonnummer und Branche. Du musst nicht selbst recherchieren."
+        },
+        {
+          "title": "Termine aus dem Setter-Pool",
+          "description": "Closer bekommen die Termine, die unsere Setter legen, mit Vorinformation zum Betrieb. Eine Mindestzahl versprechen wir nicht, die Pipeline siehst du jederzeit."
+        },
+        {
+          "title": "Live-Demo am Telefon",
+          "description": "Eine Nummer, die jeder Kunde sofort anrufen kann. Die AI führt das Gespräch, du musst nichts erklären."
+        },
+        {
+          "title": "Kundendeck und Angebotslogik",
+          "description": "Fertige Präsentation, ROI-Rechner und ein klarer Ablauf vom ersten Gespräch bis zum Angebot."
+        },
+        {
+          "title": "Partner-Portal",
+          "description": "Deine Kunden, Aufträge und Provisionen auf einen Blick unter app.nex-a-i.com, inklusive Rechnungsstellung an NexAI."
+        },
+        {
+          "title": "Gemeinsames CRM",
+          "description": "Kontakte, Termine und Status an einem Ort. Deine Kontakte bleiben dir zugeordnet, kein Doppelanruf durch Kollegen."
+        },
+        {
+          "title": "Vertriebsmeetings und Coaching",
+          "description": "Ein bis zwei Meetings pro Woche in der Einarbeitung, danach freiwillig. Gespräche werden gemeinsam besser."
+        },
+        {
+          "title": "Direkter Draht",
+          "description": "Du sprichst mit der Geschäftsführung, nicht mit einem Ticketsystem. Kurze Wege, schnelle Antworten."
+        }
+      ]
+    },
+    "demo": {
+      "eyebrow": "Überzeug dich selbst",
+      "title": "Ruf unsere AI an, bevor du dich bewirbst.",
+      "description": "Das ist das Produkt, das du verkaufst. Die AI geht ans Telefon, beantwortet Fragen und vereinbart Termine. Du sprichst mit der AI, nicht mit uns.",
+      "cta": "Live-Demo anrufen",
+      "hint": "Kostet dich nur das Gespräch zum deutschen Festnetztarif. Am Anfang sagt dir die AI, dass sie eine AI ist."
+    },
+    "honest": {
+      "eyebrow": "Ehrlich gesagt",
+      "title": "Was das hier ist, und was nicht.",
+      "description": "Wir sind ein junges Unternehmen und bauen den Vertrieb gerade auf. Das hat Nachteile und Vorteile, und beide gehören auf den Tisch.",
+      "without": {
+        "title": "Das ist es nicht",
+        "items": [
+          "Kein Fixum, kein Gehalt, keine Anstellung",
+          "Keine Garantie auf Termine oder Abschlüsse",
+          "Keine warmen Anfragen: Es ist B2B-Telefonvertrieb",
+          "Kein Einkommen, bevor dein erster Kunde bezahlt hat",
+          "Kein Konzern: Prozesse entstehen mit dir, nicht vor dir"
+        ]
+      },
+      "with": {
+        "title": "Das ist es",
+        "items": [
+          "Ein echtes Produkt mit Live-Demo, monatlich bezahlt",
+          "Provision, die mit jedem Kunden weiterläuft, ohne Deckel",
+          "Stornofrei: Ausgezahlt bleibt ausgezahlt",
+          "Leads, Deck, Demo, Portal und Coaching ohne Kosten",
+          "Direkter Draht zur Geschäftsführung und Einfluss auf den Vertrieb"
+        ]
+      },
+      "resultLabel": "Passt das für dich?",
+      "resultText": "Dann lies die Fragen unten, rechne dein Modell durch und bewirb dich. Wir melden uns innerhalb von 2 Werktagen."
+    },
+    "process": {
+      "eyebrow": "So läuft es",
+      "title": "Von der Bewerbung zum ersten Anruf.",
+      "description": "Drei Schritte, kein Assessment-Center.",
+      "steps": [
+        {
+          "n": "01",
+          "title": "Bewerbung in 2 Minuten",
+          "description": "Formular ausfüllen, Rolle wählen, kurz sagen, was du mitbringst. Du bekommst sofort eine Bestätigung mit dem Karrieresystem als PDF."
+        },
+        {
+          "n": "02",
+          "title": "Kennenlerngespräch, 30 Minuten",
+          "description": "Du buchst direkt nach der Bewerbung einen Termin mit Maximilian Trenk. Wir klären Erwartungen, Produkt und Provision in beide Richtungen."
+        },
+        {
+          "n": "03",
+          "title": "Vertrag, Onboarding, Start",
+          "description": "Vertriebspartnervertrag, Zugänge zu Portal und CRM, Deck und Demo. Dann geht es als Junior los, mit Meetings zur Einarbeitung."
+        }
+      ]
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Häufige Fragen von Settern und Closern.",
+      "items": [
+        {
+          "q": "Brauche ich ein Gewerbe?",
+          "a": "Ja. Du arbeitest als selbstständiger Vertriebspartner nach § 84 HGB und stellst uns monatlich eine Rechnung. Ein Kleingewerbe reicht. Wie die Rechnung aussieht, zeigen wir dir beim Onboarding."
+        },
+        {
+          "q": "Kostet mich der Einstieg etwas?",
+          "a": "Nein. Keine Gebühren, keine Schulungspakete, kein Pflichtkauf. Du brauchst Telefon, Laptop und Internet."
+        },
+        {
+          "q": "Wann wird die Provision ausgezahlt?",
+          "a": "Nach Zahlungseingang des Kunden bei NexAI, monatlich gegen deine Rechnung. Die Einmalprovision kommt mit der ersten Kundenzahlung, die Monatsprovision ab dem zweiten Monat mit jeder weiteren Zahlung, solange der Kunde bleibt."
+        },
+        {
+          "q": "Was heißt stornofrei?",
+          "a": "Ausgezahlte Provision fordern wir nie zurück. Kündigt ein Kunde, entfällt nur die weitere Monatsprovision ab dem Folgemonat. Zahlt ein Kunde eine Rechnung gar nicht, entsteht für diese Rechnung allerdings auch kein Provisionsanspruch."
+        },
+        {
+          "q": "Kann ich das nebenberuflich machen?",
+          "a": "Ja. Du teilst dir deine Zeit frei ein. Die Aufstiegskriterien sind Wochenzahlen; wie und wann du sie erreichst, entscheidest du."
+        },
+        {
+          "q": "Muss ich exklusiv für NexAI arbeiten?",
+          "a": "Nein. Du darfst andere Produkte vertreiben und andere Auftraggeber haben. Wir erwarten nur, dass du NexAI-Kunden nicht an ein Konkurrenzangebot vermittelst."
+        },
+        {
+          "q": "Woher kommen die Leads, und wie gut sind sie?",
+          "a": "Aus öffentlichen Firmenquellen, von uns geprüft: Branche, Entscheider, Telefonnummer. Es sind kalte B2B-Kontakte, keine Anfragen. Was daraus wird, entscheidet dein Telefonat."
+        },
+        {
+          "q": "Wie viele Termine bekomme ich als Closer?",
+          "a": "So viele, wie unsere Setter legen. Eine feste Zahl versprechen wir nicht, weil wir sie nicht garantieren können. Du kannst jederzeit selbst Termine legen; für diese Kunden gilt dann die Provision für Setter + Closer."
+        },
+        {
+          "q": "Was kostet das Produkt den Kunden?",
+          "a": "Die Preise sind individuell, weil jeder Agent anders aufgebaut ist. Für die Provisionsrechnung arbeiten wir mit einer Beispiel-Netto-Basis von 2.000 € im Monat. Die reale Angebotslogik bekommst du im Onboarding."
+        },
+        {
+          "q": "Was passiert, wenn ich die Junior-Kriterien nicht erreiche?",
+          "a": "Dann sprechen wir darüber, woran es lag, und entscheiden gemeinsam, ob und wie es weitergeht. Die Einmalprovision für deine Abschlüsse bekommst du in jedem Fall."
+        },
+        {
+          "q": "Wie sieht der Vertrag aus, und wie kündige ich?",
+          "a": "Ein Vertriebspartnervertrag nach deutschem Recht: selbstständig, ohne Fixum, ohne Mindestlaufzeit, von beiden Seiten mit vier Wochen zum Monatsende kündbar. Bereits entstandene Provisionsansprüche bleiben bestehen. Du bekommst den Vertrag vor der Unterschrift und liest ihn in Ruhe."
+        },
+        {
+          "q": "Ich bin in Österreich oder der Schweiz. Geht das?",
+          "a": "Ja, solange du remote auf Deutsch verkaufst und in deinem Land selbstständig tätig sein darfst. Der Vertrag läuft nach deutschem Recht."
+        },
+        {
+          "q": "Ich habe eine Agentur und will Kunden empfehlen, nicht selbst verkaufen.",
+          "a": "Dann passt unser Partnerprogramm für Unternehmen besser. Du findest es unter nex-a-i.com/partner."
+        }
+      ]
+    },
+    "form": {
+      "eyebrow": "Bewerbung",
+      "title": "Bewirb dich in zwei Minuten.",
+      "description": "Kein Lebenslauf, kein Anschreiben. Sag uns, welche Rolle du willst und was du mitbringst. Danach buchst du direkt dein Kennenlerngespräch.",
+      "assurances": [
+        "Rückmeldung innerhalb von 2 Werktagen",
+        "Kennenlerngespräch direkt nach der Bewerbung buchbar",
+        "Karrieresystem als PDF kommt sofort per E-Mail"
+      ],
+      "contactName": "Maximilian Trenk",
+      "contactRole": "Geschäftsführer, führt die Kennenlerngespräche",
+      "name": "Name",
+      "namePlaceholder": "Dein Name",
+      "email": "E-Mail",
+      "emailPlaceholder": "du@beispiel.de",
+      "phone": "Telefon",
+      "phonePlaceholder": "+49 …",
+      "role": "Welche Rolle willst du?",
+      "roles": { "setter": "Setter", "closer": "Closer", "both": "Setter + Closer" },
+      "experience": "Erfahrung im Vertrieb",
+      "experienceOptions": {
+        "none": "Noch keine, ich will einsteigen",
+        "lt1": "Unter 1 Jahr",
+        "1to3": "1 bis 3 Jahre",
+        "gt3": "Über 3 Jahre"
+      },
+      "availability": "Verfügbarkeit pro Woche",
+      "availabilityOptions": {
+        "lt10": "Unter 10 Stunden",
+        "10to20": "10 bis 20 Stunden",
+        "20to30": "20 bis 30 Stunden",
+        "gt30": "Über 30 Stunden"
+      },
+      "profile": "LinkedIn oder Instagram (optional)",
+      "profilePlaceholder": "Link oder Nutzername",
+      "message": "Warum du? (optional)",
+      "messagePlaceholder": "Drei Sätze reichen: Was hast du bisher verkauft, und warum passt das hier?",
+      "privacy": "Ich habe die Datenschutzerklärung gelesen. Meine Angaben werden zur Bearbeitung meiner Bewerbung verarbeitet.",
+      "privacyLink": "Datenschutzerklärung",
+      "submit": "Bewerbung absenden",
+      "submitting": "Wird gesendet …",
+      "successTitle": "Danke, {name}!",
+      "successText": "Deine Bewerbung ist da. Die Bestätigung mit dem Karrieresystem als PDF ist unterwegs an {email}. Nächster Schritt: Such dir direkt ein Kennenlerngespräch aus.",
+      "successHint": "Den Link zur Terminbuchung findest du auch in der Bestätigungsmail.",
+      "errorRequired": "Bitte fülle dieses Feld aus.",
+      "errorEmail": "Bitte gib eine gültige E-Mail-Adresse ein.",
+      "errorPhone": "Bitte gib eine Telefonnummer ein, unter der wir dich erreichen.",
+      "errorSelect": "Bitte wähle eine Option.",
+      "errorPrivacy": "Bitte bestätige, dass du die Datenschutzerklärung gelesen hast.",
+      "errorRateLimited": "Zu viele Versuche. Bitte warte ein paar Minuten und versuch es dann erneut.",
+      "errorGeneric": "Etwas ist schiefgelaufen. Bitte versuch es erneut oder schreib an mbt@nex-a-i.com."
+    },
+    "booking": {
+      "title": "Kennenlerngespräch buchen",
+      "description": "30 Minuten mit Maximilian Trenk, per Telefon oder Videocall. Such dir einen freien Termin aus.",
+      "showSlots": "Freie Termine anzeigen",
+      "loading": "Freie Termine werden geladen …",
+      "unavailable": "Die Terminbuchung ist gerade nicht erreichbar. Den Link bekommst du auch per E-Mail, oder du antwortest einfach auf die Bestätigungsmail.",
+      "empty": "In den nächsten zwei Wochen ist kein Termin mehr frei. Antworte einfach auf die Bestätigungsmail, dann finden wir einen Zeitpunkt.",
+      "tzNote": "Alle Zeiten in deutscher Zeit (Europe/Berlin). Dauer: 30 Minuten.",
+      "back": "Anderen Termin wählen",
+      "name": "Name",
+      "namePlaceholder": "Dein Name",
+      "email": "E-Mail",
+      "emailPlaceholder": "du@beispiel.de",
+      "topic": "Worum geht es?",
+      "topicPlaceholder": "Kurz in einem Satz (optional)",
+      "submit": "Termin verbindlich buchen",
+      "submitting": "Wird gebucht …",
+      "successTitle": "Termin steht!",
+      "success": "Du bekommst gleich eine Kalendereinladung per E-Mail. Falls etwas dazwischenkommt, sag einfach über die Einladung ab.",
+      "errorRequired": "Bitte fülle dieses Feld aus.",
+      "errorEmail": "Bitte gib eine gültige E-Mail-Adresse ein.",
+      "errorTaken": "Dieser Termin wurde gerade vergeben. Wir laden die freien Zeiten neu …",
+      "errorGeneric": "Die Buchung hat nicht geklappt. Bitte versuch es erneut oder antworte auf die Bestätigungsmail."
+    },
+    "termin": {
+      "meta": { "title": "Kennenlerngespräch buchen" },
+      "eyebrow": "Vertriebspartner (m/w/d)",
+      "title": "Such dir deinen Termin aus.",
+      "description": "30 Minuten mit Maximilian Trenk. Du hast dich als Setter oder Closer beworben oder willst es tun, und wir klären alles Weitere im Gespräch.",
+      "back": "Zurück zur Vertriebspartner-Seite"
+    },
+    "jsonld": {
+      "title": "Vertriebspartner Setter / Closer (m/w/d), selbstständig, reine Provision, remote",
+      "description": "NexAI sucht selbstständige Setter und Closer (m/w/d) im DACH-Raum, die kleine und mittlere Unternehmen am Telefon für digitale Mitarbeiter (AI Voice Agent, Chat Agent, Social-Media-Agent, Automatisierung) gewinnen. Tätigkeit als selbstständige Handelsvertretung nach § 84 HGB, 100 % remote, freie Zeiteinteilung, keine Exklusivität. Vergütung ausschließlich erfolgsabhängig, kein Fixum: Einmalprovision von 8 bis 35 % der Netto-Basis im ersten Kundenmonat (je nach Rolle und Stufe), ab dem zweiten Monat dauerhafte Monatsprovision von 5 bis 15 % der Netto-Basis für Senior-Positionen, ohne Kundendeckel und stornofrei. Voraussetzungen: Gewerbe (oder gleichwertige Selbstständigkeit in AT/CH), Deutsch verhandlungssicher, Telefon, Laptop und Internet. NexAI stellt geprüfte Firmenkontakte, Termine aus dem Setter-Pool, Live-Demo-Nummer, Kundendeck, Partner-Portal, CRM und Coaching.",
+      "responsibilities": "Setter: Entscheider in kleinen und mittleren Unternehmen anrufen, Interesse wecken, qualifizierte Termine vereinbaren. Closer: Verkaufsgespräche führen, die AI live zeigen, Vertragsabschlüsse herbeiführen. Setter + Closer: beides in einer Person.",
+      "qualifications": "Gewerbe oder gleichwertige Selbstständigkeit, Deutsch verhandlungssicher, Erfahrung im Telefonvertrieb von Vorteil, eigene Hardware und Internetverbindung.",
+      "incentive": "Reine Provision, kein Fixum: Einmalprovision 8 bis 35 % der Netto-Basis im ersten Monat; Monatsprovision 5 bis 15 % der Netto-Basis ab Monat 2 für Senior-Positionen, dauerhaft, ohne Deckel, stornofrei."
+    }
+  }
+}

@@ -1,6 +1,8 @@
 {
   "About": {
-    "meta": { "title": "Über uns" },
+    "meta": {
+      "title": "Über uns"
+    },
     "hero": {
       "eyebrow": "Über uns",
       "title": "Zwei Gründer, ein Anspruch: AI, die wirklich arbeitet.",
@@ -15,12 +17,30 @@
       "eyebrow": "Was uns wichtig ist",
       "title": "Werte, die für uns nicht verhandelbar sind.",
       "items": [
-        { "title": "Ergebnis vor Hype", "description": "Wir liefern messbaren Nutzen, keine Buzzwords." },
-        { "title": "Individuell statt Standard", "description": "Jede Lösung wird exakt auf Ihr Unternehmen zugeschnitten." },
-        { "title": "Sicherheit zuerst", "description": "Datenschutz, klare Zugriffsrechte und Nachvollziehbarkeit sind selbstverständlich." },
-        { "title": "Tempo mit Substanz", "description": "Schnell zur ersten Version, sauber bis in den Betrieb." },
-        { "title": "Ehrliche Beratung", "description": "Wir sagen auch, wenn AI nicht die Antwort ist." },
-        { "title": "Partnerschaft", "description": "Wir denken langfristig, nicht projektweise." }
+        {
+          "title": "Ergebnis vor Hype",
+          "description": "Wir liefern messbaren Nutzen, keine Buzzwords."
+        },
+        {
+          "title": "Individuell statt Standard",
+          "description": "Jede Lösung wird exakt auf Ihr Unternehmen zugeschnitten."
+        },
+        {
+          "title": "Sicherheit zuerst",
+          "description": "Datenschutz, klare Zugriffsrechte und Nachvollziehbarkeit sind selbstverständlich."
+        },
+        {
+          "title": "Tempo mit Substanz",
+          "description": "Schnell zur ersten Version, sauber bis in den Betrieb."
+        },
+        {
+          "title": "Ehrliche Beratung",
+          "description": "Wir sagen auch, wenn AI nicht die Antwort ist."
+        },
+        {
+          "title": "Partnerschaft",
+          "description": "Wir denken langfristig, nicht projektweise."
+        }
       ]
     },
     "team": {
@@ -28,11 +48,41 @@
       "title": "Die Menschen hinter NEXAI.",
       "description": "Ein Team mit einer klaren Mission: AI, die für Unternehmen wirklich arbeitet.",
       "members": [
-        { "name": "Maximilian Trenk", "role": "Geschäftsführer", "tasks": "AI-Entwicklung, Projektmanagement & Strategie", "image": "/team/maximilian.jpg", "instagram": "https://www.instagram.com/thatsmvx/" },
-        { "name": "Jason Brian Merklein", "role": "Geschäftsführer", "tasks": "Kundenbetreuung, Social Media & Unternehmensleitung", "image": "/team/jason.jpg", "instagram": "https://www.instagram.com/brian.next.generation/" },
-        { "name": "Connor Reimann", "role": "Vertriebsleitung", "tasks": "Ausbildungsleitung & Partnernetzwerk", "image": "/team/connor.jpg", "instagram": "https://www.instagram.com/connorreimann/" },
-        { "name": "Emre Cem Korkmaz", "role": "Marketingleitung", "tasks": "Digitale Vertriebsentwicklung", "image": "/team/emre.jpg", "instagram": "https://www.instagram.com/emqx_06/" }
+        {
+          "name": "Maximilian Trenk",
+          "role": "Geschäftsführer",
+          "tasks": "AI-Entwicklung, Projektmanagement & Strategie",
+          "image": "/team/maximilian.jpg",
+          "instagram": "https://www.instagram.com/thatsmvx/"
+        },
+        {
+          "name": "Jason Brian Merklein",
+          "role": "Geschäftsführer",
+          "tasks": "Kundenbetreuung, Social Media & Unternehmensleitung",
+          "image": "/team/jason.jpg",
+          "instagram": "https://www.instagram.com/brian.next.generation/"
+        },
+        {
+          "name": "Connor Reimann",
+          "role": "Vertriebsleitung",
+          "tasks": "Ausbildungsleitung & Partnernetzwerk",
+          "image": "/team/connor.jpg",
+          "instagram": "https://www.instagram.com/connorreimann/"
+        },
+        {
+          "name": "Emre Cem Korkmaz",
+          "role": "Marketingleitung",
+          "tasks": "Digitale Vertriebsentwicklung",
+          "image": "/team/emre.jpg",
+          "instagram": "https://www.instagram.com/emqx_06/"
+        }
       ]
+    },
+    "hiring": {
+      "eyebrow": "Wir wachsen im Vertrieb",
+      "title": "Setter & Closer (m/w/d) gesucht.",
+      "description": "Selbstständig, remote, reine Provision mit dauerhafter Monatsprovision. Alle Zahlen und der Weg zum Senior stehen offen auf der Seite.",
+      "cta": "Vertriebspartner werden"
     }
   }
 }

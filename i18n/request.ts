@@ -14,6 +14,7 @@ const NAMESPACES = [
   "partner",
   "chat",
   "roi",
+  "recruiting",
 ] as const;
 
 export default getRequestConfig(async ({ requestLocale }) => {

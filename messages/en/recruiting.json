@@ -1,0 +1,388 @@
+{
+  "Recruiting": {
+    "meta": {
+      "title": "Remote setter & closer jobs (m/f/d), commission based",
+      "description": "NexAI is looking for self-employed setters and closers (m/f/d) to sell AI employees: up to 35 % one-off commission plus up to 15 % monthly, no clawbacks, remote across DACH. Apply now."
+    },
+    "hero": {
+      "eyebrow": "Sales partners (m/f/d) · Remote · DACH",
+      "title": "Sell AI employees. Earn every month for as long as the customer stays.",
+      "description": "NexAI is looking for self-employed setters and closers (m/f/d) who win businesses over the phone. Commission only, no base: up to 35 % on the first month and up to 15 % on every month after that, no clawbacks, no cap.",
+      "primary": "Apply now",
+      "secondary": "Calculate your commission",
+      "reassurance": "No fees, no courses, no starter kit. You sell, we provide the product, the leads and the tech.",
+      "facts": ["100 % remote", "Commission only", "Recurring monthly commission", "No clawbacks"]
+    },
+    "positioning": {
+      "eyebrow": "What this is about",
+      "lead": "No coaching, no network marketing.",
+      "headline": "A real B2B product with monthly revenue.",
+      "body": "NexAI builds digital employees: AI agents that answer the phone for small and medium-sized businesses, reply in the website chat and take over routine work. Customers pay monthly, which is exactly why, as a senior, you earn not just on the close but every single month. We are a young company and are building our sales team right now. Whoever joins now helps shape it."
+    },
+    "product": {
+      "eyebrow": "What you sell",
+      "title": "Digital employees every customer understands instantly.",
+      "description": "Four products, one principle: the AI takes over tasks the customer currently lacks the time or staff for. You show on the phone in two minutes what that sounds like.",
+      "items": [
+        {
+          "title": "Voice Agent",
+          "description": "Answers the phone around the clock, handles questions and books appointments. For every business that loses calls."
+        },
+        {
+          "title": "Chat Agent",
+          "description": "Replies on the website instantly, qualifies enquiries and passes them on. No prospect waits until the next working day."
+        },
+        {
+          "title": "Social Media Agent",
+          "description": "Answers messages and comments and prepares posts. The customer stays visible without posting themselves."
+        },
+        {
+          "title": "Automation",
+          "description": "Takes over recurring office work and connects the customer's tools with each other. Saves hours every day."
+        }
+      ]
+    },
+    "roles": {
+      "eyebrow": "Positions & commission",
+      "title": "Three roles, two levels, one model.",
+      "description": "Every role starts as a junior and becomes a senior after onboarding. Commission is calculated on the customer's net base: the customer's payment minus NexAI's costs for operation, technology and support.",
+      "levels": { "junior": "Junior", "senior": "Senior" },
+      "labels": {
+        "oneTime": "One-off commission in the first month",
+        "monthly": "Monthly commission from month 2, recurring",
+        "monthlyJunior": "No monthly commission yet as a junior",
+        "promotion": "Promotion to senior",
+        "fit": "A fit if",
+        "pct": "{value} %"
+      },
+      "items": [
+        {
+          "key": "setter",
+          "name": "Setter",
+          "tagline": "You open doors.",
+          "tasks": "You call decision-makers in small and medium-sized businesses, spark interest and book qualified appointments for the closer.",
+          "promotion": "Within 4 weeks with 50, 75, 100 and 125 calls per week and at least 3 appointments that took place.",
+          "fit": "you enjoy the phone, don't take a no personally and like structure."
+        },
+        {
+          "key": "closer",
+          "name": "Closer",
+          "tagline": "You get the signature.",
+          "tasks": "You run the sales conversations on appointments from the setter pool, show the AI live and bring the contract home.",
+          "promotion": "Within 4 weeks with 3, 5, 7 and 10 appointments held per week and at least 2 closed deals.",
+          "fit": "you run sales conversations, like objections and close cleanly."
+        },
+        {
+          "key": "both",
+          "name": "Setter + Closer",
+          "tagline": "You do both.",
+          "tasks": "You book your own appointments and close them yourself. The commission is the sum of both roles, no split with anyone.",
+          "promotion": "The criteria of both roles, each on your own appointments.",
+          "fit": "you want to go the whole way from the first call to the signature yourself."
+        }
+      ],
+      "basisTitle": "How the net base works",
+      "basisNote": "Example: a customer pays €2,500 per month. After deducting NexAI's costs of €500, €2,000 net base remains. Your commission is calculated on that. There is no setup fee; the base is always the recurring monthly payment.",
+      "rulesTitle": "Three rules that always apply",
+      "rules": [
+        "No customer cap: your income keeps growing with every customer.",
+        "No clawbacks: commission that has been paid out is never reclaimed. If a customer cancels, only the further monthly commission stops.",
+        "If a customer pays annually, the one-off commission is still based on the monthly amount. The monthly commission is then paid as a bundle on the anniversary."
+      ],
+      "customersTitle": "Your customers",
+      "customersText": "Trades businesses, medical practices, law firms, service providers. B2B, on the phone, cold calling verified company contacts. If you expect warm enquiries from coaching ads, this is the wrong place. If you can do real B2B sales, it's the right one."
+    },
+    "calculator": {
+      "eyebrow": "Commission calculator",
+      "title": "Run your own numbers.",
+      "description": "Pick a role, a level and your assumptions. The calculator shows how one-off and monthly commission build up over time.",
+      "roleLabel": "Role",
+      "roles": { "setter": "Setter", "closer": "Closer", "both": "Setter + Closer" },
+      "levelLabel": "Level",
+      "levels": { "junior": "Junior", "senior": "Senior" },
+      "newLabel": "New customers per month",
+      "baseLabel": "Net base per customer and month (€)",
+      "baseHint": "Example: €2,500 customer price minus €500 NexAI costs = €2,000",
+      "reset": "Reset to example",
+      "resultLabel": "Your monthly income in month 12",
+      "monthLine": "Month {n}: {value}",
+      "customers": "{n, plural, =0 {no existing customers yet} =1 {1 existing customer} other {# existing customers}}",
+      "breakdown": "Of which one-off commission {oneTime} and monthly commission {recurring}",
+      "perCustomer": "Per customer who stays 12 months: {value}",
+      "chartLabel": "Monthly income over 24 months",
+      "juniorHint": "As a junior you only receive the one-off commission. Monthly commission starts with the promotion to senior, usually after 4 weeks.",
+      "note": "Model calculation, not a forecast. Assumptions: the same number of new customers every month, no cancellations, commission on the net base, monthly commission only as a senior and from month 2. Your actual income depends on your closed deals and on how long customers stay.",
+      "cta": "Apply now",
+      "ctaHint": "Application in 2 minutes, call bookable right away."
+    },
+    "path": {
+      "eyebrow": "Your path to senior",
+      "title": "Four weeks, clear criteria, no favouritism.",
+      "description": "Every role starts as a junior. The promotion criteria are public and objective so you know where you stand from day 1.",
+      "weekLabel": "Week {n}",
+      "columns": [
+        {
+          "role": "Junior Setter",
+          "metric": "Calls per week",
+          "extra": "Plus at least 3 appointments that took place within the 4 weeks."
+        },
+        {
+          "role": "Junior Closer",
+          "metric": "Appointments held per week",
+          "extra": "Plus at least 2 closed deals within the 4 weeks."
+        }
+      ],
+      "bothNote": "Setter + Closer: both sets of criteria, each on your own appointments.",
+      "seniorTitle": "Senior means",
+      "senior": [
+        "Higher one-off commission: 12 % as a setter, 23 % as a closer, 35 % for both.",
+        "Recurring monthly commission: 5 %, 10 % or 15 % of the net base for as long as the customer stays.",
+        "Sales meetings optional, onboarding complete."
+      ],
+      "note": "As a junior, one or two sales meetings per week are part of onboarding. We listen in on selected calls for coaching; calls are only recorded with an announcement and the customer's consent. The goal is to get better, not to control."
+    },
+    "support": {
+      "eyebrow": "What you get",
+      "title": "You sell. We provide the rest.",
+      "description": "No starter kit, no fees. Everything you need to sell comes from NexAI.",
+      "items": [
+        {
+          "title": "Verified company contacts",
+          "description": "Setters start with decision-maker contacts from public sources, with verified phone number and industry. No research on your side."
+        },
+        {
+          "title": "Appointments from the setter pool",
+          "description": "Closers get the appointments our setters book, with background on the business. We don't promise a minimum number; you can see the pipeline at any time."
+        },
+        {
+          "title": "Live demo on the phone",
+          "description": "A number every customer can call right away. The AI runs the conversation; you don't have to explain anything."
+        },
+        {
+          "title": "Customer deck and offer logic",
+          "description": "Ready-made presentation, ROI calculator and a clear path from the first conversation to the offer."
+        },
+        {
+          "title": "Partner portal",
+          "description": "Your customers, orders and commissions at a glance at app.nex-a-i.com, including invoicing to NexAI."
+        },
+        {
+          "title": "Shared CRM",
+          "description": "Contacts, appointments and status in one place. Your contacts stay assigned to you, no double calls by colleagues."
+        },
+        {
+          "title": "Sales meetings and coaching",
+          "description": "One or two meetings per week during onboarding, optional afterwards. Conversations get better together."
+        },
+        {
+          "title": "Direct line",
+          "description": "You talk to the founders, not to a ticket system. Short paths, fast answers."
+        }
+      ]
+    },
+    "demo": {
+      "eyebrow": "See for yourself",
+      "title": "Call our AI before you apply.",
+      "description": "This is the product you sell. The AI answers the phone, handles questions and books appointments. You're talking to the AI, not to us.",
+      "cta": "Call the live demo",
+      "hint": "Costs you only the call at German landline rates. The AI tells you at the start that it is an AI. The demo speaks German."
+    },
+    "honest": {
+      "eyebrow": "Honestly",
+      "title": "What this is, and what it isn't.",
+      "description": "We are a young company and are building our sales team right now. That has downsides and upsides, and both belong on the table.",
+      "without": {
+        "title": "What it isn't",
+        "items": [
+          "No base pay, no salary, no employment",
+          "No guarantee of appointments or closed deals",
+          "No warm enquiries: this is B2B phone sales",
+          "No income before your first customer has paid",
+          "No corporation: processes are built with you, not before you"
+        ]
+      },
+      "with": {
+        "title": "What it is",
+        "items": [
+          "A real product with a live demo, paid monthly",
+          "Commission that keeps running with every customer, no cap",
+          "No clawbacks: paid out stays paid out",
+          "Leads, deck, demo, portal and coaching at no cost",
+          "A direct line to the founders and a say in how sales is built"
+        ]
+      },
+      "resultLabel": "Does that fit you?",
+      "resultText": "Then read the questions below, run your numbers and apply. We get back to you within 2 working days."
+    },
+    "process": {
+      "eyebrow": "How it works",
+      "title": "From application to your first call.",
+      "description": "Three steps, no assessment centre.",
+      "steps": [
+        {
+          "n": "01",
+          "title": "Application in 2 minutes",
+          "description": "Fill in the form, pick your role, say briefly what you bring. You immediately receive a confirmation with the career system as a PDF."
+        },
+        {
+          "n": "02",
+          "title": "Intro call, 30 minutes",
+          "description": "Right after applying you book a call with Maximilian Trenk. We clarify expectations, product and commission in both directions."
+        },
+        {
+          "n": "03",
+          "title": "Contract, onboarding, start",
+          "description": "Sales partner contract, access to portal and CRM, deck and demo. Then you start as a junior, with meetings during onboarding."
+        }
+      ]
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Questions setters and closers ask us.",
+      "items": [
+        {
+          "q": "Do I need a registered business?",
+          "a": "Yes. You work as a self-employed sales partner (commercial agent under § 84 of the German Commercial Code) and invoice us monthly. A small business registration is enough. We show you what the invoice looks like during onboarding."
+        },
+        {
+          "q": "Does getting started cost anything?",
+          "a": "No. No fees, no training packages, no mandatory purchases. You need a phone, a laptop and an internet connection."
+        },
+        {
+          "q": "When is commission paid out?",
+          "a": "After the customer's payment has arrived at NexAI, monthly against your invoice. The one-off commission comes with the customer's first payment, the monthly commission from the second month with every further payment for as long as the customer stays."
+        },
+        {
+          "q": "What does 'no clawbacks' mean?",
+          "a": "We never reclaim commission that has been paid out. If a customer cancels, only the further monthly commission stops from the following month. If a customer never pays an invoice, however, no commission arises for that invoice either."
+        },
+        {
+          "q": "Can I do this on the side?",
+          "a": "Yes. You organise your own time. The promotion criteria are weekly numbers; how and when you reach them is up to you."
+        },
+        {
+          "q": "Do I have to work exclusively for NexAI?",
+          "a": "No. You may sell other products and work for other clients. We only expect you not to refer NexAI customers to a competing offer."
+        },
+        {
+          "q": "Where do the leads come from, and how good are they?",
+          "a": "From public company sources, checked by us: industry, decision-maker, phone number. They are cold B2B contacts, not enquiries. What becomes of them is decided by your call."
+        },
+        {
+          "q": "How many appointments do I get as a closer?",
+          "a": "As many as our setters book. We don't promise a fixed number because we can't guarantee it. You can book appointments yourself at any time; for those customers the setter + closer commission applies."
+        },
+        {
+          "q": "What does the product cost the customer?",
+          "a": "Prices are individual because every agent is built differently. For the commission calculation we work with an example net base of €2,000 per month. You get the real offer logic during onboarding."
+        },
+        {
+          "q": "What happens if I don't reach the junior criteria?",
+          "a": "Then we talk about why and decide together whether and how to continue. You receive the one-off commission for your closed deals in any case."
+        },
+        {
+          "q": "What does the contract look like, and how do I cancel?",
+          "a": "A sales partner contract under German law: self-employed, no base pay, no minimum term, cancellable by either side with four weeks' notice to the end of the month. Commission claims that have already arisen remain. You receive the contract before signing and read it at your own pace."
+        },
+        {
+          "q": "I'm in Austria or Switzerland. Does that work?",
+          "a": "Yes, as long as you sell remotely in German and are allowed to be self-employed in your country. The contract is governed by German law."
+        },
+        {
+          "q": "I run an agency and want to refer customers rather than sell myself.",
+          "a": "Then our partner programme for companies is the better fit. You'll find it at nex-a-i.com/partner."
+        }
+      ]
+    },
+    "form": {
+      "eyebrow": "Application",
+      "title": "Apply in two minutes.",
+      "description": "No CV, no cover letter. Tell us which role you want and what you bring. Then you book your intro call right away.",
+      "assurances": [
+        "Reply within 2 working days",
+        "Intro call bookable right after applying",
+        "Career system as a PDF arrives by email immediately"
+      ],
+      "contactName": "Maximilian Trenk",
+      "contactRole": "Managing director, runs the intro calls",
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "you@example.com",
+      "phone": "Phone",
+      "phonePlaceholder": "+49 …",
+      "role": "Which role do you want?",
+      "roles": { "setter": "Setter", "closer": "Closer", "both": "Setter + Closer" },
+      "experience": "Sales experience",
+      "experienceOptions": {
+        "none": "None yet, I want to get started",
+        "lt1": "Under 1 year",
+        "1to3": "1 to 3 years",
+        "gt3": "Over 3 years"
+      },
+      "availability": "Availability per week",
+      "availabilityOptions": {
+        "lt10": "Under 10 hours",
+        "10to20": "10 to 20 hours",
+        "20to30": "20 to 30 hours",
+        "gt30": "Over 30 hours"
+      },
+      "profile": "LinkedIn or Instagram (optional)",
+      "profilePlaceholder": "Link or username",
+      "message": "Why you? (optional)",
+      "messagePlaceholder": "Three sentences are enough: what have you sold so far, and why does this fit?",
+      "privacy": "I have read the privacy policy. My details are processed to handle my application.",
+      "privacyLink": "privacy policy",
+      "submit": "Send application",
+      "submitting": "Sending …",
+      "successTitle": "Thank you, {name}!",
+      "successText": "Your application is in. The confirmation with the career system as a PDF is on its way to {email}. Next step: pick an intro call right away.",
+      "successHint": "You'll also find the booking link in the confirmation email.",
+      "errorRequired": "Please fill in this field.",
+      "errorEmail": "Please enter a valid email address.",
+      "errorPhone": "Please enter a phone number we can reach you on.",
+      "errorSelect": "Please choose an option.",
+      "errorPrivacy": "Please confirm that you have read the privacy policy.",
+      "errorRateLimited": "Too many attempts. Please wait a few minutes and try again.",
+      "errorGeneric": "Something went wrong. Please try again or write to mbt@nex-a-i.com."
+    },
+    "booking": {
+      "title": "Book your intro call",
+      "description": "30 minutes with Maximilian Trenk, by phone or video call. Pick a free slot.",
+      "showSlots": "Show available times",
+      "loading": "Loading available times …",
+      "unavailable": "Booking is temporarily unavailable. You'll also get the link by email, or simply reply to the confirmation email.",
+      "empty": "There are no free slots in the next two weeks. Simply reply to the confirmation email and we'll find a time.",
+      "tzNote": "All times in German time (Europe/Berlin). Duration: 30 minutes.",
+      "back": "Pick another time",
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "you@example.com",
+      "topic": "What's it about?",
+      "topicPlaceholder": "One sentence is enough (optional)",
+      "submit": "Confirm booking",
+      "submitting": "Booking …",
+      "successTitle": "You're booked!",
+      "success": "A calendar invitation is on its way to your inbox. If something comes up, just decline through the invitation.",
+      "errorRequired": "Please fill in this field.",
+      "errorEmail": "Please enter a valid email address.",
+      "errorTaken": "That slot was just taken. Reloading the available times …",
+      "errorGeneric": "The booking didn't go through. Please try again or reply to the confirmation email."
+    },
+    "termin": {
+      "meta": { "title": "Book your intro call" },
+      "eyebrow": "Sales partners (m/f/d)",
+      "title": "Pick your slot.",
+      "description": "30 minutes with Maximilian Trenk. You have applied as a setter or closer, or want to, and we clarify everything else in the call.",
+      "back": "Back to the sales partner page"
+    },
+    "jsonld": {
+      "title": "Sales partner setter / closer (m/f/d), self-employed, commission only, remote",
+      "description": "NexAI is looking for self-employed setters and closers (m/f/d) in the DACH region who win small and medium-sized businesses over the phone for digital employees (AI voice agent, chat agent, social media agent, automation). Work as a self-employed commercial agent under § 84 of the German Commercial Code, 100 % remote, free time management, no exclusivity. Compensation is purely performance-based, no base pay: one-off commission of 8 to 35 % of the net base in the customer's first month (depending on role and level), from the second month a recurring monthly commission of 5 to 15 % of the net base for senior positions, no customer cap, no clawbacks. Requirements: registered business (or equivalent self-employment in AT/CH), business-fluent German, phone, laptop and internet. NexAI provides verified company contacts, appointments from the setter pool, a live demo number, customer deck, partner portal, CRM and coaching.",
+      "responsibilities": "Setter: call decision-makers in small and medium-sized businesses, spark interest, book qualified appointments. Closer: run sales conversations, show the AI live, close contracts. Setter + closer: both in one person.",
+      "qualifications": "Registered business or equivalent self-employment, business-fluent German, phone sales experience an advantage, own hardware and internet connection.",
+      "incentive": "Commission only, no base pay: one-off commission of 8 to 35 % of the net base in the first month; monthly commission of 5 to 15 % of the net base from month 2 for senior positions, recurring, no cap, no clawbacks."
+    }
+  }
+}

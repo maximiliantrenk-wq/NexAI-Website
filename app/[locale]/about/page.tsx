@@ -8,6 +8,7 @@ import { Container } from "@/components/ui/container";
 import { Section } from "@/components/ui/section";
 import { Reveal } from "@/components/ui/reveal";
 import { CTASection } from "@/components/sections/cta";
+import { CrossLink } from "@/components/sections/cross-link";
 
 export async function generateMetadata({
   params,
@@ -64,6 +65,7 @@ function AboutContent() {
 
       <Values />
       <Team />
+      <CrossLink namespace="About.hiring" href="/vertriebspartner" />
       <CTASection />
     </>
   );

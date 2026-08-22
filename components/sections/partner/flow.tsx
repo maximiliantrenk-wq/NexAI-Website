@@ -5,12 +5,18 @@ import { RevealGroup, RevealItem } from "@/components/ui/reveal";
 
 type Step = { n: string; title: string; description: string };
 
-export function PartnerFlow() {
-  const t = useTranslations("Partner.flow");
+export function PartnerFlow({
+  namespace = "Partner.flow",
+  id = "ablauf",
+}: {
+  namespace?: string;
+  id?: string;
+} = {}) {
+  const t = useTranslations(namespace);
   const steps = t.raw("steps") as Step[];
 
   return (
-    <Section id="ablauf">
+    <Section id={id}>
       <Container>
         <SectionHeading
           eyebrow={t("eyebrow")}

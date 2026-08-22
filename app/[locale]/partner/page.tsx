@@ -30,6 +30,7 @@ import { PartnerAudience } from "@/components/sections/partner/audience";
 import { PartnerExample } from "@/components/sections/partner/example";
 import { PartnerWhy } from "@/components/sections/partner/why";
 import { PartnerForm } from "@/components/sections/partner/partner-form";
+import { CrossLink } from "@/components/sections/cross-link";
 import { cn } from "@/lib/utils";
 
 export async function generateMetadata({
@@ -122,6 +123,7 @@ function PartnerContent() {
         icons={customerIcons}
       />
       <PartnerAudience />
+      <CrossLink namespace="Partner.salesCrossLink" href="/vertriebspartner" />
       <PartnerExample />
       <PartnerWhy />
       <FaqSection namespace="Partner.faq" />
