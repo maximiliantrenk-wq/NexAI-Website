@@ -16,6 +16,7 @@ export const footerNav = {
   company: [
     { href: "/about", key: "about" },
     { href: "/partner", key: "partner" },
+    { href: "/vertriebspartner", key: "vertriebspartner" },
     { href: "/contact", key: "contact" },
   ],
   legal: [

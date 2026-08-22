@@ -1,6 +1,8 @@
 {
   "About": {
-    "meta": { "title": "About" },
+    "meta": {
+      "title": "About"
+    },
     "hero": {
       "eyebrow": "About",
       "title": "Two founders, one standard: AI that actually works.",
@@ -15,12 +17,30 @@
       "eyebrow": "What matters to us",
       "title": "Values we won't compromise on.",
       "items": [
-        { "title": "Outcomes over hype", "description": "We deliver measurable value, not buzzwords." },
-        { "title": "Bespoke over standard", "description": "Every solution is tailored precisely to your business." },
-        { "title": "Security first", "description": "Data protection, clear access rights and traceability come as standard." },
-        { "title": "Speed with substance", "description": "Fast to a first version, clean all the way to operations." },
-        { "title": "Honest advice", "description": "We'll also tell you when AI isn't the answer." },
-        { "title": "Partnership", "description": "We think long-term, not project by project." }
+        {
+          "title": "Outcomes over hype",
+          "description": "We deliver measurable value, not buzzwords."
+        },
+        {
+          "title": "Bespoke over standard",
+          "description": "Every solution is tailored precisely to your business."
+        },
+        {
+          "title": "Security first",
+          "description": "Data protection, clear access rights and traceability come as standard."
+        },
+        {
+          "title": "Speed with substance",
+          "description": "Fast to a first version, clean all the way to operations."
+        },
+        {
+          "title": "Honest advice",
+          "description": "We'll also tell you when AI isn't the answer."
+        },
+        {
+          "title": "Partnership",
+          "description": "We think long-term, not project by project."
+        }
       ]
     },
     "team": {
@@ -28,11 +48,41 @@
       "title": "The people behind NEXAI.",
       "description": "A team with one clear mission: AI that genuinely works for businesses.",
       "members": [
-        { "name": "Maximilian Trenk", "role": "Managing Director", "tasks": "AI development, project management & strategy", "image": "/team/maximilian.jpg", "instagram": "https://www.instagram.com/thatsmvx/" },
-        { "name": "Jason Brian Merklein", "role": "Managing Director", "tasks": "Customer success, social media & operations", "image": "/team/jason.jpg", "instagram": "https://www.instagram.com/brian.next.generation/" },
-        { "name": "Connor Reimann", "role": "Head of Sales", "tasks": "Training lead & partner network", "image": "/team/connor.jpg", "instagram": "https://www.instagram.com/connorreimann/" },
-        { "name": "Emre Cem Korkmaz", "role": "Head of Marketing", "tasks": "Digital sales development", "image": "/team/emre.jpg", "instagram": "https://www.instagram.com/emqx_06/" }
+        {
+          "name": "Maximilian Trenk",
+          "role": "Managing Director",
+          "tasks": "AI development, project management & strategy",
+          "image": "/team/maximilian.jpg",
+          "instagram": "https://www.instagram.com/thatsmvx/"
+        },
+        {
+          "name": "Jason Brian Merklein",
+          "role": "Managing Director",
+          "tasks": "Customer success, social media & operations",
+          "image": "/team/jason.jpg",
+          "instagram": "https://www.instagram.com/brian.next.generation/"
+        },
+        {
+          "name": "Connor Reimann",
+          "role": "Head of Sales",
+          "tasks": "Training lead & partner network",
+          "image": "/team/connor.jpg",
+          "instagram": "https://www.instagram.com/connorreimann/"
+        },
+        {
+          "name": "Emre Cem Korkmaz",
+          "role": "Head of Marketing",
+          "tasks": "Digital sales development",
+          "image": "/team/emre.jpg",
+          "instagram": "https://www.instagram.com/emqx_06/"
+        }
       ]
+    },
+    "hiring": {
+      "eyebrow": "Growing our sales team",
+      "title": "Setters & closers (m/f/d) wanted.",
+      "description": "Self-employed, remote, commission only with recurring monthly commission. All numbers and the path to senior are published on the page.",
+      "cta": "Become a sales partner"
     }
   }
 }

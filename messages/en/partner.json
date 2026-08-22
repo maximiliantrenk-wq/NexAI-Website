@@ -1,6 +1,8 @@
 {
   "Partner": {
-    "meta": { "title": "Become a partner" },
+    "meta": {
+      "title": "Become a partner"
+    },
     "hero": {
       "eyebrow": "Partner programme",
       "title": "More revenue for your clients, together.",
@@ -144,19 +146,45 @@
       "title": "Is a partnership right for you?",
       "description": "Broadly, for any company whose clients gain real value from AI automation. For example:",
       "items": [
-        { "title": "Marketing agencies" },
-        { "title": "SEO agencies" },
-        { "title": "Google Ads agencies" },
-        { "title": "Social media agencies" },
-        { "title": "Web design agencies" },
-        { "title": "Digital agencies" },
-        { "title": "IT service providers & system houses" },
-        { "title": "Software companies" },
-        { "title": "CRM providers" },
-        { "title": "Business & digitalisation consultants" },
-        { "title": "Automation agencies" },
-        { "title": "Telecoms & call centres" },
-        { "title": "Franchise systems" }
+        {
+          "title": "Marketing agencies"
+        },
+        {
+          "title": "SEO agencies"
+        },
+        {
+          "title": "Google Ads agencies"
+        },
+        {
+          "title": "Social media agencies"
+        },
+        {
+          "title": "Web design agencies"
+        },
+        {
+          "title": "Digital agencies"
+        },
+        {
+          "title": "IT service providers & system houses"
+        },
+        {
+          "title": "Software companies"
+        },
+        {
+          "title": "CRM providers"
+        },
+        {
+          "title": "Business & digitalisation consultants"
+        },
+        {
+          "title": "Automation agencies"
+        },
+        {
+          "title": "Telecoms & call centres"
+        },
+        {
+          "title": "Franchise systems"
+        }
       ]
     },
     "example": {
@@ -311,6 +339,12 @@
       "errorEmail": "Please enter a valid email address.",
       "errorSelect": "Please choose an option.",
       "errorGeneric": "Something went wrong. Please try again or email mbt@nex-a-i.com."
+    },
+    "salesCrossLink": {
+      "eyebrow": "Setter or closer?",
+      "title": "Want to sell yourself rather than refer?",
+      "description": "For self-employed setters and closers (m/f/d) we have a separate commission model with recurring monthly commission. All rates and the path to senior are published on the page.",
+      "cta": "Go to the sales partner programme"
     }
   }
 }

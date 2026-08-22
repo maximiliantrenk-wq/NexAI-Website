@@ -66,7 +66,7 @@ Tracking, **keine** Marketing-Cookies.
 
 **3. Interaktive Funktionen:**
 Kontaktformular, Partnerformular, Newsletter-Anmeldung, AI-Chat-Assistent, Online-Terminbuchung.
-**Nicht vorhanden:** Login-/Kundenbereich, Kommentarfunktion, Bestell-/Shop-Funktion. Ein **Bewerberportal
+**Nicht vorhanden:** Login-/Kundenbereich, Kommentarfunktion, Bestell-/Shop-Funktion. Ein **Bewerberportal *(Nachtrag 22.08.2026: Seit dem Vertriebspartner-Recruiting gibt es ein Bewerbungsformular für selbstständige Setter/Closer unter `/vertriebspartner` — Datenfluss und Fristen in DSE Abschnitt 12 und VVT A9; kein Bewerberportal mit Login.)*
 gibt es nicht** — Stelleninteressenten werden auf das reguläre Kontaktformular geführt (kein Upload von
 Bewerbungsunterlagen über die Website).
 

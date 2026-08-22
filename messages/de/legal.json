@@ -1,7 +1,9 @@
 {
   "Legal": {
     "imprint": {
-      "meta": { "title": "Impressum" },
+      "meta": {
+        "title": "Impressum"
+      },
       "eyebrow": "Rechtliches",
       "title": "Impressum",
       "sections": [
@@ -32,7 +34,9 @@
       ]
     },
     "privacy": {
-      "meta": { "title": "Datenschutz" },
+      "meta": {
+        "title": "Datenschutz"
+      },
       "eyebrow": "Rechtliches",
       "title": "Datenschutzerklärung",
       "updatedLabel": "Stand",
@@ -44,7 +48,7 @@
         },
         {
           "heading": "2. Welche Daten wir verarbeiten",
-          "body": "Wir verarbeiten personenbezogene Daten nur, soweit dies erforderlich ist, um die Website bereitzustellen und Ihre Anfragen zu bearbeiten. Je nach Nutzung sind das insbesondere:\n– Daten aus dem Kontakt- und Partnerformular (Name, E-Mail, Unternehmen, ggf. Website, Nachricht),\n– Ihre E-Mail-Adresse bei Anmeldung zum Newsletter,\n– Eingaben im AI-Chat-Assistenten sowie freiwillig genannte Kontaktdaten,\n– Angaben bei der Online-Terminbuchung und beim AI-Telefon-/Sprachassistenten (Name, E-Mail, Telefonnummer, Anliegen, Wunschtermin),\n– technische Zugriffsdaten, die beim Aufruf der Website automatisch anfallen (z. B. IP-Adresse, Zeitpunkt, angeforderte Inhalte).\nEinzelheiten zu Zwecken, Rechtsgrundlagen, eingesetzten Dienstleistern und Speicherdauern finden Sie in den folgenden Abschnitten."
+          "body": "Wir verarbeiten personenbezogene Daten nur, soweit dies erforderlich ist, um die Website bereitzustellen und Ihre Anfragen zu bearbeiten. Je nach Nutzung sind das insbesondere:\n– Daten aus dem Kontakt- und Partnerformular (Name, E-Mail, Unternehmen, ggf. Website, Nachricht),\n– Daten aus dem Bewerbungsformular für Vertriebspartner (Name, E-Mail, Telefon, gewünschte Rolle, Vertriebserfahrung, Verfügbarkeit, optional Profil-Link und Nachricht, Herkunft des Seitenaufrufs),\n– Ihre E-Mail-Adresse bei Anmeldung zum Newsletter,\n– Eingaben im AI-Chat-Assistenten sowie freiwillig genannte Kontaktdaten,\n– Angaben bei der Online-Terminbuchung und beim AI-Telefon-/Sprachassistenten (Name, E-Mail, Telefonnummer, Anliegen, Wunschtermin),\n– technische Zugriffsdaten, die beim Aufruf der Website automatisch anfallen (z. B. IP-Adresse, Zeitpunkt, angeforderte Inhalte).\nEinzelheiten zu Zwecken, Rechtsgrundlagen, eingesetzten Dienstleistern und Speicherdauern finden Sie in den folgenden Abschnitten."
         },
         {
           "heading": "3. Rechtsgrundlagen",
@@ -52,7 +56,7 @@
         },
         {
           "heading": "4. Speicherdauer und Löschung",
-          "body": "Wir löschen personenbezogene Daten, sobald der Zweck ihrer Verarbeitung entfällt, spätestens nach den folgenden Regelfristen – es sei denn, gesetzliche Aufbewahrungspflichten (insbesondere § 147 AO, § 257 HGB) stehen entgegen; in diesem Fall werden die Daten für die Dauer der Frist gesperrt und danach gelöscht:\n– Kontakt- und Partneranfragen: bis zur abschließenden Bearbeitung, anschließend Löschung,\n– Interessenten-/Leaddaten: 6 Monate,\n– Termindaten: 12 Monate,\n– Chatverläufe: 6 Monate,\n– Termindaten aus dem Telefon-/Sprachassistenten: 6 Monate,\n– Newsletter: bis zum Widerruf Ihrer Einwilligung,\n– technische Server-/Zugriffslogs: 30 Tage.\nAnrufe mit dem Sprachassistenten werden nicht aufgezeichnet."
+          "body": "Wir löschen personenbezogene Daten, sobald der Zweck ihrer Verarbeitung entfällt, spätestens nach den folgenden Regelfristen – es sei denn, gesetzliche Aufbewahrungspflichten (insbesondere § 147 AO, § 257 HGB) stehen entgegen; in diesem Fall werden die Daten für die Dauer der Frist gesperrt und danach gelöscht:\n– Kontakt- und Partneranfragen: bis zur abschließenden Bearbeitung, anschließend Löschung,\n– Bewerbungen als Vertriebspartner: 6 Monate nach Abschluss des Bewerbungsverfahrens (Abschnitt 12),\n– Interessenten-/Leaddaten: 6 Monate,\n– Termindaten: 12 Monate,\n– Chatverläufe: 6 Monate,\n– Termindaten aus dem Telefon-/Sprachassistenten: 6 Monate,\n– Newsletter: bis zum Widerruf Ihrer Einwilligung,\n– technische Server-/Zugriffslogs: 30 Tage.\nAnrufe mit dem Sprachassistenten werden nicht aufgezeichnet."
         },
         {
           "heading": "5. Ihre Rechte",
@@ -81,6 +85,10 @@
         {
           "heading": "11. AI-Telefon-/Sprachassistent",
           "body": "Für Terminanfragen bieten wir – unter anderem über unsere Telefonnummer – einen AI-gestützten Sprachassistenten an. Zu Beginn des Gesprächs werden Sie darauf hingewiesen, dass Sie mit einem AI-System sprechen.\n\nVerarbeitete Daten. Wir verarbeiten Ihre Telefonnummer, die von Ihnen genannten Angaben (Name, Anliegen, Wunschtermin sowie – falls angegeben – E-Mail-Adresse) und technische Verbindungsdaten, um Ihre Anfrage zu bearbeiten und einen Beratungstermin zu vereinbaren. Das Gespräch wird nicht aufgezeichnet.\n\nZwecke und Rechtsgrundlagen. Art. 6 Abs. 1 lit. b DSGVO (Anbahnung/Erfüllung eines Vertrags) sowie Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an effizienter Terminvereinbarung und Erreichbarkeit).\n\nEingesetzte Dienstleister (Auftragsverarbeiter).\n– Vapi, Inc., San Francisco, Kalifornien, USA – Sprachassistent- und Telefonie-Orchestrierung;\n– Deepgram, Inc., San Francisco, Kalifornien, USA – Umwandlung von Sprache in Text (Spracherkennung);\n– OpenAI Ireland Limited, Dublin, Irland (ggf. OpenAI, L.L.C., USA) – Sprachmodell sowie Sprachsynthese (Umwandlung von Text in Sprache);\n– easybell GmbH, Berlin, Deutschland – Telefonanbindung (SIP);\n– Google Ireland Limited, Dublin, Irland (ggf. Google LLC, USA) – Terminverwaltung (Google Calendar) und Versand der Terminbestätigung.\nDie Automatisierung und die Speicherung Ihrer Termin- und Anrufdaten erfolgen über unsere selbst betriebene n8n-Instanz sowie unser selbst betriebenes CRM-System auf einem Server in Deutschland (Hetzner Online GmbH); eine Weitergabe an Dritte findet dabei nicht statt.\n\nÜbermittlung in Drittländer. Bei Vapi und Deepgram kann eine Übermittlung in die USA erfolgen; diese Anbieter sind nicht unter dem EU-U.S. Data Privacy Framework zertifiziert, weshalb wir die Übermittlung auf die EU-Standardvertragsklauseln (Art. 46 DSGVO) nebst ergänzenden Schutzmaßnahmen stützen. Bei OpenAI und Google stützen wir uns, soweit der Empfänger zertifiziert ist, auf den Angemessenheitsbeschluss (Art. 45 DSGVO), ergänzend auf die Standardvertragsklauseln. Eine Kopie der Garantien können Sie bei uns anfordern.\n\nSpeicherdauer. Ihre Termindaten werden nach spätestens sechs Monaten gelöscht, soweit keine gesetzlichen Aufbewahrungspflichten entgegenstehen.\n\nFreiwilligkeit. Die Angabe der Daten ist freiwillig; ohne Kontaktdaten und Wunschtermin können wir keinen Termin vereinbaren. Es stehen Ihnen die in Abschnitt 5 genannten Rechte zu."
+        },
+        {
+          "heading": "12. Bewerbungen als Vertriebspartner",
+          "body": "Auf unserer Seite „Vertriebspartner\" können Sie sich als selbstständiger Vertriebspartner (Setter/Closer) bewerben. Es handelt sich um die Anbahnung einer selbstständigen Zusammenarbeit, nicht um ein Beschäftigungsverhältnis.\n\nVerarbeitete Daten. Name, E-Mail-Adresse, Telefonnummer, gewünschte Rolle, Vertriebserfahrung, Verfügbarkeit, optional ein Profil-Link (LinkedIn/Instagram) und eine Nachricht, die gewählte Sprache und der Zeitpunkt der Bewerbung. Zusätzlich erfassen wir die Herkunft Ihres Seitenaufrufs (Kennung des genutzten Links bzw. UTM-Parameter, Einstiegsseite, Domain der verweisenden Seite). Diese Herkunftsangaben werden beim Aufruf der Seite ausschließlich im Sitzungsspeicher Ihres Browsers (sessionStorage) zwischengespeichert, nicht per Cookie, und erst beim Absenden der Bewerbung an uns übermittelt. Ihre IP-Adresse wird kurzzeitig im Arbeitsspeicher verarbeitet, um Missbrauch des Formulars zu begrenzen (Ratenbegrenzung), und nicht gespeichert.\n\nZwecke und Rechtsgrundlagen. Durchführung des Bewerbungs- und Auswahlverfahrens und Anbahnung eines Vertriebspartnervertrags auf Ihre Anfrage: Art. 6 Abs. 1 lit. b DSGVO. Auswertung, über welche Kanäle Bewerbungen eingehen, sowie Schutz vor Missbrauch: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer wirksamen Partnergewinnung und am sicheren Betrieb des Formulars).\n\nEmpfänger und Dienstleister. Für die Eingangsbestätigung an Sie und die interne Benachrichtigung setzen wir die Resend, Inc., San Francisco, Kalifornien, USA, als Auftragsverarbeiter ein; Abschnitt 7 gilt entsprechend. Ihre Bewerbungsdaten speichern wir in unserem selbst betriebenen CRM-System auf einem Server in Deutschland (Hetzner Online GmbH, Gunzenhausen), um das Verfahren zu verwalten; eine Weitergabe an Dritte findet dabei nicht statt. Buchen Sie im Anschluss ein Kennenlerngespräch, gilt Abschnitt 10 (Online-Terminbuchung). Kommt eine Zusammenarbeit zustande, erhalten Sie Zugang zu unserem Partner-Portal (app.nex-a-i.com) mit eigenen Datenschutzhinweisen.\n\nKeine automatisierte Entscheidung. Bewerbungen werden von Menschen geprüft. Eine automatisierte Entscheidungsfindung oder eine Bewertung durch AI-Systeme findet nicht statt (Art. 22 DSGVO).\n\nSpeicherdauer. Wir bewahren Ihre Bewerbungsdaten bis zum Abschluss des Bewerbungsverfahrens auf und danach für 6 Monate, um Ansprüche, insbesondere nach dem Allgemeinen Gleichbehandlungsgesetz, das über § 6 Abs. 3 AGG auch den Zugang zu selbstständiger Tätigkeit erfasst, abwehren oder geltend machen zu können. Eine längere Aufbewahrung erfolgt nur mit Ihrer gesonderten Einwilligung. Kommt eine Zusammenarbeit zustande, gehen die Daten in die Vertragsverwaltung über.\n\nFreiwilligkeit. Die Angabe der Daten ist freiwillig; ohne Name, E-Mail-Adresse, Telefonnummer und gewünschte Rolle können wir Ihre Bewerbung nicht bearbeiten. Die Eingangsbestätigung ist eine Transaktionsnachricht, kein Newsletter. Es stehen Ihnen die in Abschnitt 5 genannten Rechte zu; der Verarbeitung auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO können Sie nach Art. 21 DSGVO widersprechen."
         }
       ]
     }

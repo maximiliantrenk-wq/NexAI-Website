@@ -1,7 +1,9 @@
 {
   "Legal": {
     "imprint": {
-      "meta": { "title": "Imprint" },
+      "meta": {
+        "title": "Imprint"
+      },
       "eyebrow": "Legal",
       "title": "Imprint",
       "sections": [
@@ -32,7 +34,9 @@
       ]
     },
     "privacy": {
-      "meta": { "title": "Privacy" },
+      "meta": {
+        "title": "Privacy"
+      },
       "eyebrow": "Legal",
       "title": "Privacy Policy",
       "updatedLabel": "Last updated",
@@ -44,7 +48,7 @@
         },
         {
           "heading": "2. What data we process",
-          "body": "We process personal data only to the extent necessary to provide the website and to handle your enquiries. Depending on how you use the site, this includes in particular:\n– data from the contact and partner form (name, email, company, website if applicable, message),\n– your email address if you sign up for the newsletter,\n– input in the AI chat assistant and any contact details you voluntarily provide,\n– details for online appointment booking and for the AI phone/voice assistant (name, email, phone number, request, preferred time),\n– technical access data generated automatically when the website is called up (e.g. IP address, time, content requested).\nDetails of purposes, legal bases, processors used and retention periods can be found in the sections below."
+          "body": "We process personal data only to the extent necessary to provide the website and to handle your enquiries. Depending on how you use the site, this includes in particular:\n– data from the contact and partner form (name, email, company, website if applicable, message),\n– data from the sales partner application form (name, email, phone, desired role, sales experience, availability, optional profile link and message, origin of the page visit),\n– your email address if you sign up for the newsletter,\n– input in the AI chat assistant and any contact details you voluntarily provide,\n– details for online appointment booking and for the AI phone/voice assistant (name, email, phone number, request, preferred time),\n– technical access data generated automatically when the website is called up (e.g. IP address, time, content requested).\nDetails of purposes, legal bases, processors used and retention periods can be found in the sections below."
         },
         {
           "heading": "3. Legal bases",
@@ -52,7 +56,7 @@
         },
         {
           "heading": "4. Retention and erasure",
-          "body": "We erase personal data as soon as the purpose of processing no longer applies, at the latest after the following standard periods – unless statutory retention obligations (in particular § 147 of the German Fiscal Code, § 257 of the German Commercial Code) apply, in which case the data is restricted for the duration of the period and then erased:\n– contact and partner enquiries: until the matter is concluded, then erased,\n– prospect/lead data: 6 months,\n– appointment data: 12 months,\n– chat histories: 6 months,\n– appointment data from the phone/voice assistant: 6 months,\n– newsletter: until you withdraw your consent,\n– technical server/access logs: 30 days.\nCalls with the voice assistant are not recorded."
+          "body": "We erase personal data as soon as the purpose of processing no longer applies, at the latest after the following standard periods – unless statutory retention obligations (in particular § 147 of the German Fiscal Code, § 257 of the German Commercial Code) apply, in which case the data is restricted for the duration of the period and then erased:\n– contact and partner enquiries: until the matter is concluded, then erased,\n– sales partner applications: 6 months after the application process has been concluded (section 12),\n– prospect/lead data: 6 months,\n– appointment data: 12 months,\n– chat histories: 6 months,\n– appointment data from the phone/voice assistant: 6 months,\n– newsletter: until you withdraw your consent,\n– technical server/access logs: 30 days.\nCalls with the voice assistant are not recorded."
         },
         {
           "heading": "5. Your rights",
@@ -81,6 +85,10 @@
         {
           "heading": "11. AI phone / voice assistant",
           "body": "For appointment requests we offer an AI-powered voice assistant — among other things via our phone number. At the start of the call you are informed that you are speaking with an AI system.\n\nData processed. We process your phone number, the details you provide (name, request, preferred time and — if provided — email address) and technical connection data in order to handle your enquiry and arrange a consultation appointment. The call is not recorded.\n\nPurposes and legal bases. Art. 6(1)(b) GDPR (initiation/performance of a contract) and Art. 6(1)(f) GDPR (legitimate interest in efficient appointment scheduling and reachability).\n\nService providers used (processors).\n– Vapi, Inc., San Francisco, California, USA – voice assistant and telephony orchestration;\n– Deepgram, Inc., San Francisco, California, USA – speech-to-text (speech recognition);\n– OpenAI Ireland Limited, Dublin, Ireland (possibly OpenAI, L.L.C., USA) – language model and speech synthesis (text-to-speech);\n– easybell GmbH, Berlin, Germany – telephony connection (SIP);\n– Google Ireland Limited, Dublin, Ireland (possibly Google LLC, USA) – appointment management (Google Calendar) and sending the appointment confirmation.\nAutomation and the storage of your appointment and call data run on our self-operated n8n instance and our self-operated CRM system on a server in Germany (Hetzner Online GmbH); no hand-off to third parties takes place.\n\nTransfer to third countries. With Vapi and Deepgram a transfer to the USA may occur; these providers are not certified under the EU-U.S. Data Privacy Framework, which is why we base the transfer on the EU Standard Contractual Clauses (Art. 46 GDPR) together with additional safeguards. For OpenAI and Google we rely, where the recipient is certified, on the adequacy decision (Art. 45 GDPR) and, additionally, on the Standard Contractual Clauses. You can request a copy of the safeguards from us.\n\nRetention. Your appointment data is deleted after six months at the latest, unless statutory retention obligations apply.\n\nVoluntariness. Providing the data is voluntary; without contact details and a preferred time we cannot arrange an appointment. The rights set out in section 5 apply."
+        },
+        {
+          "heading": "12. Applications as a sales partner",
+          "body": "On our \"Sales partners\" page you can apply as a self-employed sales partner (setter/closer). This concerns the initiation of a self-employed collaboration, not an employment relationship.\n\nData processed. Name, email address, phone number, desired role, sales experience, availability, optionally a profile link (LinkedIn/Instagram) and a message, the selected language and the time of application. In addition we record the origin of your page visit (identifier of the link used or UTM parameters, landing page, domain of the referring page). This origin data is temporarily stored when the page is opened exclusively in your browser's session storage (sessionStorage), not via a cookie, and is only transmitted to us when you submit the application. Your IP address is processed briefly in memory to limit misuse of the form (rate limiting) and is not stored.\n\nPurposes and legal bases. Conducting the application and selection process and initiating a sales partner contract at your request: Art. 6(1)(b) GDPR. Evaluating which channels applications come from and protecting against misuse: Art. 6(1)(f) GDPR (legitimate interest in effective partner acquisition and in the secure operation of the form).\n\nRecipients and service providers. For the confirmation of receipt sent to you and the internal notification we use Resend, Inc., San Francisco, California, USA, as a processor; section 7 applies accordingly. We store your application data in our self-hosted CRM system on a server in Germany (Hetzner Online GmbH, Gunzenhausen) to manage the process; no data is passed on to third parties. If you subsequently book an intro call, section 10 (online appointment booking) applies. If a collaboration comes about, you receive access to our partner portal (app.nex-a-i.com) with its own privacy notices.\n\nNo automated decision-making. Applications are reviewed by people. There is no automated decision-making or assessment by AI systems (Art. 22 GDPR).\n\nRetention. We keep your application data until the application process has been concluded and for 6 months thereafter in order to defend or assert claims, in particular under the German General Equal Treatment Act (AGG), which via § 6(3) AGG also covers access to self-employed activity. Longer retention only takes place with your separate consent. If a collaboration comes about, the data is transferred to contract management.\n\nVoluntariness. Providing the data is voluntary; without name, email address, phone number and desired role we cannot process your application. The confirmation of receipt is a transactional message, not a newsletter. You have the rights set out in section 5; you may object to processing based on Art. 6(1)(f) GDPR under Art. 21 GDPR."
         }
       ]
     }

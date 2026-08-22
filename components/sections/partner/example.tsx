@@ -6,8 +6,12 @@ import { Reveal } from "@/components/ui/reveal";
 
 type Column = { title: string; items: string[] };
 
-export function PartnerExample() {
-  const t = useTranslations("Partner.example");
+export function PartnerExample({
+  namespace = "Partner.example",
+}: {
+  namespace?: string;
+} = {}) {
+  const t = useTranslations(namespace);
   const without = t.raw("without") as Column;
   const withNexai = t.raw("with") as Column;
 
