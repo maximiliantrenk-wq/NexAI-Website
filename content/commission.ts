@@ -8,6 +8,15 @@ export type Level = "junior" | "senior";
 
 export const ROLES: readonly Role[] = ["setter", "closer", "both"];
 
+/** SEO-Unterseiten je Rolle unter /vertriebspartner/<slug> (Inhalt in messages/<locale>/recruiting.json → Recruiting.pages). */
+export const ROLE_PAGES = ["closer-job", "setter-job", "handelsvertreter"] as const;
+export type RolePage = (typeof ROLE_PAGES)[number];
+export const ROLE_PAGE_KEY: Record<RolePage, "closerJob" | "setterJob" | "handelsvertreter"> = {
+  "closer-job": "closerJob",
+  "setter-job": "setterJob",
+  handelsvertreter: "handelsvertreter",
+};
+
 /** Aufstiegskriterien Junior → Senior (4 Wochen) — öffentlich, weil objektiv. */
 export const PROMOTION = {
   weeks: 4,

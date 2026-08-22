@@ -27,6 +27,7 @@ import { Path } from "@/components/sections/recruiting/path";
 import { Demo } from "@/components/sections/recruiting/demo";
 import { ApplicationForm } from "@/components/sections/recruiting/application-form";
 import { SourceCapture } from "@/components/sections/recruiting/source-capture";
+import { MoreLinks } from "@/components/sections/recruiting/more-links";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 import { DATE_POSTED } from "@/content/commission";
@@ -182,6 +183,7 @@ function RecruitingContent() {
       <Philosophy namespace="Recruiting.positioning" />
       <PartnerBenefits namespace="Recruiting.product" icons={productIcons} />
       <Roles />
+      <MoreLinks />
       <Path />
       <PartnerBenefits namespace="Recruiting.support" icons={supportIcons} />
       <Demo />

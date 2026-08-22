@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { routing } from "@/i18n/routing";
 import { productSlugs } from "@/content/products";
+import { ROLE_PAGES } from "@/content/commission";
 
 const BASE = "https://nex-a-i.com";
 
@@ -12,6 +13,7 @@ const paths = [
   "/about",
   "/partner",
   "/vertriebspartner",
+  ...ROLE_PAGES.map((s) => `/vertriebspartner/${s}`),
   "/contact",
   "/imprint",
   "/privacy",
