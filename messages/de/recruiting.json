@@ -2,16 +2,21 @@
   "Recruiting": {
     "meta": {
       "title": "Setter & Closer Job (m/w/d) remote auf Provisionsbasis",
-      "description": "NexAI sucht selbstständige Setter und Closer (m/w/d) für AI-Mitarbeiter: bis 35 % Einmalprovision plus bis 15 % monatlich, stornofrei, remote in DACH. Jetzt bewerben."
+      "description": "NexAI sucht selbstständige Setter und Closer (m/w/d) für AI-Mitarbeiter: Einmalprovision beim Abschluss plus Monatsprovision, solange der Kunde bleibt. Stornofrei, remote in DACH. Jetzt bewerben."
     },
     "hero": {
       "eyebrow": "Vertriebspartner (m/w/d) · Remote · DACH",
       "title": "Verkaufe AI-Mitarbeiter. Verdiene monatlich mit, solange der Kunde bleibt.",
-      "description": "NexAI sucht selbstständige Setter und Closer (m/w/d), die Unternehmen am Telefon gewinnen. Reine Provision, kein Fixum: bis 35 % auf den ersten Monat und bis 15 % dauerhaft auf jeden weiteren, stornofrei und ohne Deckel.",
+      "description": "NexAI sucht selbstständige Setter und Closer (m/w/d), die Unternehmen am Telefon gewinnen. Reine Provision, kein Fixum: eine Einmalprovision beim Abschluss und eine Monatsprovision, die läuft, solange der Kunde bleibt. Stornofrei und ohne Deckel.",
       "primary": "Jetzt bewerben",
-      "secondary": "Provision berechnen",
+      "secondary": "So funktioniert es",
       "reassurance": "Keine Kosten, keine Kurse, kein Startpaket. Du verkaufst, wir liefern Produkt, Leads und Technik.",
-      "facts": ["100 % remote", "Reine Provision", "Monatsprovision dauerhaft", "Stornofrei"]
+      "facts": [
+        "100 % remote",
+        "Reine Provision",
+        "Monatsprovision dauerhaft",
+        "Stornofrei"
+      ]
     },
     "positioning": {
       "eyebrow": "Worum es geht",
@@ -45,15 +50,18 @@
     "roles": {
       "eyebrow": "Positionen & Provision",
       "title": "Drei Rollen, zwei Stufen, ein Modell.",
-      "description": "Jede Rolle startet als Junior und wird nach der Einarbeitung zum Senior. Die Provision rechnet auf die Netto-Basis des Kunden: die Kundenzahlung abzüglich der NexAI-Kosten für Betrieb, Technik und Support.",
-      "levels": { "junior": "Junior", "senior": "Senior" },
+      "description": "Jede Rolle startet als Junior und wird nach der Einarbeitung zum Senior. Die Provision rechnet auf die Netto-Basis des Kunden: die Kundenzahlung abzüglich der NexAI-Kosten für Betrieb, Technik und Support. Die konkreten Sätze zeigen wir dir im Kennenlerngespräch und im Karrieresystem, das du nach deiner Bewerbung als PDF bekommst.",
+      "levels": {
+        "junior": "Junior",
+        "senior": "Senior"
+      },
       "labels": {
-        "oneTime": "Einmalprovision im ersten Monat",
-        "monthly": "Monatsprovision ab Monat 2, dauerhaft",
+        "oneTime": "Einmalprovision im ersten Monat, für Junior und Senior",
+        "monthly": "Monatsprovision ab Monat 2, dauerhaft, als Senior",
         "monthlyJunior": "Als Junior noch keine Monatsprovision",
         "promotion": "Aufstieg zum Senior",
         "fit": "Passt, wenn",
-        "pct": "{value} %"
+        "pay": "So wirst du vergütet"
       },
       "items": [
         {
@@ -82,7 +90,7 @@
         }
       ],
       "basisTitle": "So rechnet sich die Netto-Basis",
-      "basisNote": "Beispiel: Ein Kunde zahlt 2.500 € im Monat. Nach Abzug der NexAI-Kosten von 500 € bleiben 2.000 € Netto-Basis. Davon rechnet sich deine Provision. Es gibt keine Einrichtungsgebühr, die Basis ist immer die laufende Monatszahlung.",
+      "basisNote": "Die Netto-Basis ist die Kundenzahlung abzüglich der NexAI-Kosten für Betrieb, Technik und Support. Davon rechnet sich deine Provision. Es gibt keine Einrichtungsgebühr, die Basis ist immer die laufende Monatszahlung. Prozentsätze und ein Rechenbeispiel bekommst du im Gespräch und im Karrieresystem-PDF.",
       "rulesTitle": "Drei Regeln, die immer gelten",
       "rules": [
         "Kein Kundendeckel: Dein Einkommen wächst mit jedem Kunden weiter.",
@@ -91,29 +99,6 @@
       ],
       "customersTitle": "Deine Kunden",
       "customersText": "Handwerksbetriebe, Praxen, Kanzleien, Dienstleister. B2B, am Telefon, mit Kaltanruf auf geprüfte Firmenkontakte. Wer warme Anfragen aus Coaching-Anzeigen erwartet, ist hier falsch. Wer echten B2B-Vertrieb kann, ist hier richtig."
-    },
-    "calculator": {
-      "eyebrow": "Provisions-Rechner",
-      "title": "Rechne dein Modell durch.",
-      "description": "Wähle Rolle, Stufe und deine Annahmen. Der Rechner zeigt, wie sich Einmal- und Monatsprovision über die Zeit aufbauen.",
-      "roleLabel": "Rolle",
-      "roles": { "setter": "Setter", "closer": "Closer", "both": "Setter + Closer" },
-      "levelLabel": "Stufe",
-      "levels": { "junior": "Junior", "senior": "Senior" },
-      "newLabel": "Neue Kunden pro Monat",
-      "baseLabel": "Netto-Basis pro Kunde und Monat (€)",
-      "baseHint": "Beispiel: 2.500 € Kundenpreis minus 500 € NexAI-Kosten = 2.000 €",
-      "reset": "Beispiel zurücksetzen",
-      "resultLabel": "Dein Monatseinkommen im Monat 12",
-      "monthLine": "Monat {n}: {value}",
-      "customers": "{n, plural, =0 {noch kein Bestandskunde} =1 {1 Bestandskunde} other {# Bestandskunden}}",
-      "breakdown": "Davon Einmalprovision {oneTime} und Monatsprovision {recurring}",
-      "perCustomer": "Je Kunde, der 12 Monate bleibt: {value}",
-      "chartLabel": "Monatseinkommen über 24 Monate",
-      "juniorHint": "Als Junior gibt es nur die Einmalprovision. Die Monatsprovision startet mit dem Aufstieg zum Senior, in der Regel nach 4 Wochen.",
-      "note": "Modellrechnung, keine Prognose. Annahmen: gleichbleibend viele Neukunden pro Monat, keine Kündigungen, Provision auf die Netto-Basis, Monatsprovision nur als Senior und ab Monat 2. Dein tatsächliches Einkommen hängt von deinen Abschlüssen und davon ab, wie lange Kunden bleiben.",
-      "cta": "Jetzt bewerben",
-      "ctaHint": "Bewerbung in 2 Minuten, Gespräch direkt buchbar."
     },
     "path": {
       "eyebrow": "Dein Weg zum Senior",
@@ -135,8 +120,8 @@
       "bothNote": "Setter + Closer: beide Kriterien, jeweils in deinen eigenen Terminen.",
       "seniorTitle": "Senior heißt",
       "senior": [
-        "Höhere Einmalprovision: 12 % als Setter, 23 % als Closer, 35 % für beides.",
-        "Monatsprovision dauerhaft: 5 %, 10 % oder 15 % der Netto-Basis, solange der Kunde bleibt.",
+        "Höhere Einmalprovision als in der Stufe Junior.",
+        "Monatsprovision dauerhaft, solange der Kunde bleibt.",
         "Vertriebsmeetings freiwillig, Einarbeitung abgeschlossen."
       ],
       "note": "Als Junior sind ein bis zwei Vertriebsmeetings pro Woche Teil der Einarbeitung. Ausgewählte Gespräche hören wir zu Coaching-Zwecken mit; aufgezeichnet wird nur mit Ansage und Einverständnis des Kunden. Ziel ist besser werden, nicht kontrollieren."
@@ -274,7 +259,7 @@
         },
         {
           "q": "Was kostet das Produkt den Kunden?",
-          "a": "Die Preise sind individuell, weil jeder Agent anders aufgebaut ist. Für die Provisionsrechnung arbeiten wir mit einer Beispiel-Netto-Basis von 2.000 € im Monat. Die reale Angebotslogik bekommst du im Onboarding."
+          "a": "Die Preise sind individuell, weil jeder Agent anders aufgebaut ist. Die Angebotslogik und die konkreten Provisionssätze bekommst du im Kennenlerngespräch und im Karrieresystem-PDF, das nach deiner Bewerbung per E-Mail kommt."
         },
         {
           "q": "Was passiert, wenn ich die Junior-Kriterien nicht erreiche?",
@@ -312,7 +297,11 @@
       "phone": "Telefon",
       "phonePlaceholder": "+49 …",
       "role": "Welche Rolle willst du?",
-      "roles": { "setter": "Setter", "closer": "Closer", "both": "Setter + Closer" },
+      "roles": {
+        "setter": "Setter",
+        "closer": "Closer",
+        "both": "Setter + Closer"
+      },
       "experience": "Erfahrung im Vertrieb",
       "experienceOptions": {
         "none": "Noch keine, ich will einsteigen",
@@ -371,7 +360,9 @@
       "errorGeneric": "Die Buchung hat nicht geklappt. Bitte versuch es erneut oder antworte auf die Bestätigungsmail."
     },
     "termin": {
-      "meta": { "title": "Kennenlerngespräch buchen" },
+      "meta": {
+        "title": "Kennenlerngespräch buchen"
+      },
       "eyebrow": "Vertriebspartner (m/w/d)",
       "title": "Such dir deinen Termin aus.",
       "description": "30 Minuten mit Maximilian Trenk. Du hast dich als Setter oder Closer beworben oder willst es tun, und wir klären alles Weitere im Gespräch.",
@@ -379,10 +370,10 @@
     },
     "jsonld": {
       "title": "Vertriebspartner Setter / Closer (m/w/d), selbstständig, reine Provision, remote",
-      "description": "NexAI sucht selbstständige Setter und Closer (m/w/d) im DACH-Raum, die kleine und mittlere Unternehmen am Telefon für digitale Mitarbeiter (AI Voice Agent, Chat Agent, Social-Media-Agent, Automatisierung) gewinnen. Tätigkeit als selbstständige Handelsvertretung nach § 84 HGB, 100 % remote, freie Zeiteinteilung, keine Exklusivität. Vergütung ausschließlich erfolgsabhängig, kein Fixum: Einmalprovision von 8 bis 35 % der Netto-Basis im ersten Kundenmonat (je nach Rolle und Stufe), ab dem zweiten Monat dauerhafte Monatsprovision von 5 bis 15 % der Netto-Basis für Senior-Positionen, ohne Kundendeckel und stornofrei. Voraussetzungen: Gewerbe (oder gleichwertige Selbstständigkeit in AT/CH), Deutsch verhandlungssicher, Telefon, Laptop und Internet. NexAI stellt geprüfte Firmenkontakte, Termine aus dem Setter-Pool, Live-Demo-Nummer, Kundendeck, Partner-Portal, CRM und Coaching.",
+      "description": "NexAI sucht selbstständige Setter und Closer (m/w/d) im DACH-Raum, die kleine und mittlere Unternehmen am Telefon für digitale Mitarbeiter (AI Voice Agent, Chat Agent, Social-Media-Agent, Automatisierung) gewinnen. Tätigkeit als selbstständige Handelsvertretung nach § 84 HGB, 100 % remote, freie Zeiteinteilung, keine Exklusivität. Vergütung ausschließlich erfolgsabhängig, kein Fixum: Einmalprovision auf die Netto-Basis im ersten Kundenmonat (je nach Rolle und Stufe), ab dem zweiten Monat dauerhafte Monatsprovision für Senior-Positionen, ohne Kundendeckel und stornofrei; die konkreten Sätze werden im Kennenlerngespräch genannt. Voraussetzungen: Gewerbe (oder gleichwertige Selbstständigkeit in AT/CH), Deutsch verhandlungssicher, Telefon, Laptop und Internet. NexAI stellt geprüfte Firmenkontakte, Termine aus dem Setter-Pool, Live-Demo-Nummer, Kundendeck, Partner-Portal, CRM und Coaching.",
       "responsibilities": "Setter: Entscheider in kleinen und mittleren Unternehmen anrufen, Interesse wecken, qualifizierte Termine vereinbaren. Closer: Verkaufsgespräche führen, die AI live zeigen, Vertragsabschlüsse herbeiführen. Setter + Closer: beides in einer Person.",
       "qualifications": "Gewerbe oder gleichwertige Selbstständigkeit, Deutsch verhandlungssicher, Erfahrung im Telefonvertrieb von Vorteil, eigene Hardware und Internetverbindung.",
-      "incentive": "Reine Provision, kein Fixum: Einmalprovision 8 bis 35 % der Netto-Basis im ersten Monat; Monatsprovision 5 bis 15 % der Netto-Basis ab Monat 2 für Senior-Positionen, dauerhaft, ohne Deckel, stornofrei."
+      "incentive": "Reine Provision, kein Fixum: Einmalprovision auf die Netto-Basis im ersten Monat; Monatsprovision ab Monat 2 für Senior-Positionen, dauerhaft, ohne Deckel, stornofrei. Konkrete Sätze im Kennenlerngespräch."
     }
   }
 }

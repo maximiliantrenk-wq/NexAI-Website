@@ -19,15 +19,16 @@ Wir suchen selbstständige Handelsvertreter (m/w/d) nach § 84 HGB für den Vert
 
 Zielkunden: Handwerksbetriebe, Praxen, Kanzleien, Dienstleister mit Anrufaufkommen. Vertrieb telefonisch und remote, bundesweit, Österreich und Schweiz möglich. Keine Gebietsbindung, keine Exklusivität, andere Vertretungen ausdrücklich erlaubt.
 
-Vergütung: ausschließlich erfolgsabhängig, kein Fixum. Bemessungsgrundlage ist die Netto-Basis des Kunden (Monatsrechnung netto abzüglich der am Auftrag ausgewiesenen NexAI-Kosten; Beispiel 2.500 € Kundenpreis, 2.000 € Basis).
-• Abschlussprovision im ersten Monat: 8 bis 35 % je nach Funktion (Terminierung, Abschluss oder beides) und Stufe
-• Bestandsprovision ab dem zweiten Monat, dauerhaft, solange der Kunde zahlt: 5 bis 15 % (Senior-Stufe)
+Vergütung: ausschließlich erfolgsabhängig, kein Fixum. Bemessungsgrundlage ist die Netto-Basis des Kunden (Monatsrechnung netto abzüglich der am Auftrag ausgewiesenen NexAI-Kosten).
+• Abschlussprovision im ersten Monat, gestaffelt nach Funktion (Terminierung, Abschluss oder beides) und Stufe
+• Bestandsprovision ab dem zweiten Monat, dauerhaft, solange der Kunde zahlt (Senior-Stufe)
 • Kein Kundendeckel, keine Rückbelastung ausgezahlter Provisionen, monatliche Abrechnung mit Buchauszug nach § 87c HGB
+• Die konkreten Sätze erhalten Sie im Kennenlerngespräch und in der Provisionsübersicht des Vertriebspartnervertrags
 
 Wir stellen: geprüfte Firmenkontakte mit Entscheider und Telefonnummer, Live-Demo-Telefonnummer, Kundenpräsentation, Partner-Portal mit Provisionsübersicht, CRM, Einarbeitung. Keine Kosten für den Vertreter.
 
 Voraussetzungen: Gewerbe, Deutsch verhandlungssicher, Erfahrung im telefonischen B2B-Vertrieb von Vorteil. Einstieg in der Stufe Junior, Aufstieg nach vier Wochen anhand veröffentlichter Kriterien.
 
-Alle Konditionen, ein Provisions-Rechner und die Bewerbung (2 Minuten, Gespräch mit der Geschäftsführung direkt buchbar): https://nex-a-i.com/de/vertriebspartner?ref=dipeo
+Das Modell, die Aufstiegskriterien und die Bewerbung (2 Minuten, Gespräch mit der Geschäftsführung direkt buchbar): https://nex-a-i.com/de/vertriebspartner?ref=dipeo
 
 Kontakt: Maximilian Trenk, Geschäftsführer · mbt@nex-a-i.com · 0176 80714816

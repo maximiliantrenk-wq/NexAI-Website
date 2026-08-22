@@ -12,10 +12,10 @@ Selbstständige Handelsvertretung (§ 84 HGB), reine Provision, kein Fixum. Kein
 
 NexAI baut digitale Mitarbeiter für kleine und mittlere Unternehmen: AI-Agenten, die ans Telefon gehen, im Website-Chat antworten und Büroarbeit automatisieren. Der Kunde zahlt monatlich. Deshalb verdienst du als Senior nicht nur beim Abschluss, sondern in jedem Monat, in dem der Kunde bleibt.
 
-Provision auf die Netto-Basis des Kunden (Beispiel 2.000 €/Monat):
-• Einmalprovision Monat 1: Closer 13 % Junior / 23 % Senior · Setter 8 % / 12 % · beides 21 % / 35 %
-• Monatsprovision ab Monat 2, dauerhaft (Senior): Closer 10 % · Setter 5 % · beides 15 %
-• Kein Deckel, stornofrei. Beispiel Senior Closer: 460 € beim Abschluss + 200 € pro bezahltem Kundenmonat (Modellrechnung, keine Zusage).
+Provision auf die Netto-Basis des Kunden:
+• Einmalprovision im ersten Monat (Junior und Senior)
+• Monatsprovision ab Monat 2, dauerhaft, solange der Kunde bleibt (Senior)
+• Kein Deckel, stornofrei. Die konkreten Sätze und ein Rechenbeispiel bekommst du im Kennenlerngespräch und im Karrieresystem-PDF direkt nach der Bewerbung.
 
 Was du bekommst: Termine aus unserem Setter-Pool (ohne Mindestzahl, du siehst die Pipeline im Portal), eine Live-Demo-Nummer, mit der der Kunde die AI selbst anruft, Kundendeck, Partner-Portal, CRM, Coaching. Keine Gebühren, kein Startpaket.
 
@@ -23,5 +23,5 @@ Ehrlich: Das ist Telefonvertrieb an Handwerk, Praxen, Kanzleien und Dienstleiste
 
 Voraussetzungen: Gewerbe (oder AT/CH-Äquivalent), Deutsch verhandlungssicher, eigene Hardware. Start als Junior, Senior nach 4 Wochen mit öffentlichen Kriterien (3/5/7/10 Termine pro Woche + 2 Abschlüsse).
 
-Bewerbung in 2 Minuten, Kennenlerngespräch direkt buchbar. Rechner, Zahlen und FAQ:
+Bewerbung in 2 Minuten, Kennenlerngespräch direkt buchbar. Modell, Aufstiegskriterien und FAQ:
 https://nex-a-i.com/de/vertriebspartner?ref=topcloser

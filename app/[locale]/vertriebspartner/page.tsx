@@ -23,14 +23,13 @@ import { PartnerBenefits } from "@/components/sections/partner/benefits";
 import { PartnerExample } from "@/components/sections/partner/example";
 import { PartnerFlow } from "@/components/sections/partner/flow";
 import { Roles } from "@/components/sections/recruiting/roles";
-import { CommissionCalculator } from "@/components/sections/recruiting/commission-calculator";
 import { Path } from "@/components/sections/recruiting/path";
 import { Demo } from "@/components/sections/recruiting/demo";
 import { ApplicationForm } from "@/components/sections/recruiting/application-form";
 import { SourceCapture } from "@/components/sections/recruiting/source-capture";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
-import { DATE_POSTED, MONTHLY_PCT, ONE_TIME_PCT } from "@/content/commission";
+import { DATE_POSTED } from "@/content/commission";
 
 const BASE = "https://nex-a-i.com";
 const PATH = "/vertriebspartner";
@@ -106,7 +105,7 @@ export default async function VertriebspartnerPage({
     directApply: true,
     responsibilities: j("responsibilities"),
     qualifications: j("qualifications"),
-    incentiveCompensation: `${j("incentive")} (${ONE_TIME_PCT.setter.junior}–${ONE_TIME_PCT.both.senior} % / ${MONTHLY_PCT.setter}–${MONTHLY_PCT.both} %)`,
+    incentiveCompensation: j("incentive"),
   };
 
   return (
@@ -162,7 +161,7 @@ function RecruitingContent() {
               <ArrowRight className="size-4 transition-transform duration-200 group-hover:translate-x-0.5" />
             </a>
             <a
-              href="#provision"
+              href="#positionen"
               className={cn(
                 btnBase,
                 "border border-blue/30 bg-white/[0.045] text-fg backdrop-blur-sm hover:border-blue/50 hover:bg-white/[0.08]",
@@ -183,7 +182,6 @@ function RecruitingContent() {
       <Philosophy namespace="Recruiting.positioning" />
       <PartnerBenefits namespace="Recruiting.product" icons={productIcons} />
       <Roles />
-      <CommissionCalculator />
       <Path />
       <PartnerBenefits namespace="Recruiting.support" icons={supportIcons} />
       <Demo />

@@ -3,7 +3,7 @@ import { useTranslations } from "next-intl";
 import { Container } from "@/components/ui/container";
 import { Section, SectionHeading } from "@/components/ui/section";
 import { Reveal, RevealGroup, RevealItem } from "@/components/ui/reveal";
-import { MONTHLY_PCT, ONE_TIME_PCT, type Role } from "@/content/commission";
+import type { Role } from "@/content/commission";
 
 type Item = {
   key: Role;
@@ -16,12 +16,11 @@ type Item = {
 
 const dt = "font-mono text-[11px] uppercase tracking-[0.14em] text-subtle";
 
-/** Die drei Positionen mit ihren Sätzen — Zahlen kommen aus content/commission.ts. */
+/** Die drei Positionen — bewusst ohne Provisionszahlen (die stehen nur im Karrieresystem-Deck). */
 export function Roles() {
   const t = useTranslations("Recruiting.roles");
   const items = t.raw("items") as Item[];
   const rules = t.raw("rules") as string[];
-  const pct = (value: number) => t("labels.pct", { value });
 
   return (
     <Section id="positionen">
@@ -45,31 +44,18 @@ export function Roles() {
 
               <dl className="mt-7 space-y-5">
                 <div>
-                  <dt className={dt}>{t("labels.oneTime")}</dt>
-                  <dd className="mt-2 flex flex-wrap items-baseline gap-x-6 gap-y-1">
-                    <span className="flex items-baseline gap-2">
-                      <span className="text-gradient text-3xl font-semibold tracking-tight">
-                        {pct(ONE_TIME_PCT[item.key].junior)}
-                      </span>
-                      <span className="text-xs text-subtle">{t("levels.junior")}</span>
-                    </span>
-                    <span className="flex items-baseline gap-2">
-                      <span className="text-gradient text-3xl font-semibold tracking-tight">
-                        {pct(ONE_TIME_PCT[item.key].senior)}
-                      </span>
-                      <span className="text-xs text-subtle">{t("levels.senior")}</span>
-                    </span>
+                  <dt className={dt}>{t("labels.pay")}</dt>
+                  <dd className="mt-2 space-y-2">
+                    <p className="flex items-start gap-2.5 text-sm leading-relaxed text-fg">
+                      <Check className="mt-0.5 size-4 shrink-0 text-blue-bright" strokeWidth={2.5} />
+                      {t("labels.oneTime")}
+                    </p>
+                    <p className="flex items-start gap-2.5 text-sm leading-relaxed text-fg">
+                      <Check className="mt-0.5 size-4 shrink-0 text-blue-bright" strokeWidth={2.5} />
+                      {t("labels.monthly")}
+                    </p>
+                    <p className="pl-[26px] text-xs text-subtle">{t("labels.monthlyJunior")}</p>
                   </dd>
-                </div>
-                <div>
-                  <dt className={dt}>{t("labels.monthly")}</dt>
-                  <dd className="mt-2 flex items-baseline gap-2">
-                    <span className="text-gradient text-3xl font-semibold tracking-tight">
-                      {pct(MONTHLY_PCT[item.key])}
-                    </span>
-                    <span className="text-xs text-subtle">{t("levels.senior")}</span>
-                  </dd>
-                  <p className="mt-1 text-xs text-subtle">{t("labels.monthlyJunior")}</p>
                 </div>
                 <div>
                   <dt className={dt}>{t("labels.promotion")}</dt>

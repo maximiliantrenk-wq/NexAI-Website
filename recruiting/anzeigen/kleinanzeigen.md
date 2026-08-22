@@ -14,13 +14,13 @@ Wir sind NexAI aus Frankenhardt und bauen digitale Mitarbeiter für kleine Unter
 
 Du telefonierst mit Entscheidern in Handwerk, Praxen, Kanzleien und Dienstleistern (Setter) oder führst die Verkaufsgespräche (Closer). Firmenkontakte, Termine, Demo-Nummer, Präsentation, Portal und CRM stellen wir. Keine Kosten für dich.
 
-Provision auf die Netto-Basis des Kunden (Beispiel 2.000 €/Monat): einmalig im ersten Monat 8 bis 35 % je nach Rolle und Stufe, ab dem zweiten Monat dauerhaft 5 bis 15 %, solange der Kunde bleibt. Kein Deckel, stornofrei. Beispiel Senior Closer: 460 € beim Abschluss + 200 € pro bezahltem Kundenmonat (Modellrechnung, keine Zusage).
+Provision auf die Netto-Basis des Kunden: einmalig beim Abschluss und ab dem zweiten Monat dauerhaft, solange der Kunde bleibt (Senior). Kein Deckel, stornofrei. Die konkreten Sätze nennen wir im Kennenlerngespräch und im Karrieresystem-PDF, das nach der Bewerbung per E-Mail kommt.
 
 Ehrlich: B2B-Telefonvertrieb mit Kaltanruf, keine warmen Anfragen, junges Unternehmen. Einkommen erst mit der ersten Kundenzahlung.
 
 Voraussetzungen: Gewerbe, Deutsch verhandlungssicher, Telefon und Laptop. Einstieg als Junior, Senior nach 4 Wochen mit klaren Kriterien.
 
-Alle Zahlen, Rechner und Bewerbung (2 Minuten, Gespräch direkt buchbar):
+Modell, Aufstiegskriterien und Bewerbung (2 Minuten, Gespräch direkt buchbar):
 https://nex-a-i.com/de/vertriebspartner?ref=kleinanzeigen
 
 NexAI – Next Generation Artificial Intelligence GbR · mbt@nex-a-i.com · 0176 80714816

@@ -30,7 +30,7 @@ The site is fully static (SSG) for all routes and both locales.
 app/[locale]/            # all pages (root layout with <html>, Header/Footer live here)
   page.tsx               # Home
   services|produkte|pricing|about|partner|contact|imprint|privacy/
-  vertriebspartner/        # Setter/Closer-Recruiting (Provisions-Rechner, Bewerbung → /api/apply, JobPosting-JSON-LD, eigenes OG-Bild)
+  vertriebspartner/        # Setter/Closer-Recruiting (Bewerbung → /api/apply, JobPosting-JSON-LD, eigenes OG-Bild); KEINE Provisionszahlen auf der Website, die stehen nur im Karrieresystem-PDF/Vertrag
   vertriebspartner/termin/ # Terminbuchung für Bewerber (noindex, Ziel des Autoresponder-Links)
   cases/[slug]/          # case detail (generateStaticParams from content/cases.ts)
   [...rest]/             # catch-all → notFound()
@@ -38,7 +38,7 @@ app/api/contact/         # contact form endpoint (wired to Resend via lib/email.
 app/api/partner/         # partner form endpoint (Resend)
 app/api/chat/            # chatbot proxy → n8n webhook (see n8n/SETUP.md)
 app/api/apply/           # Vertriebspartner-Bewerbung → Resend (intern + Bestätigung an Bewerber) + CRM, Honeypot + Ratenlimit
-content/commission.ts    # Karrieresystem-Zahlen (Setter/Closer × Junior/Senior) — einzige Quelle für Seite, Rechner und JobPosting
+content/commission.ts    # Karrieresystem-Fakten für die Website (Rollen, Aufstiegskriterien, Demo-Nummer, PDF-Pfad) — ohne Provisionssätze
 lib/attribution.ts       # ?ref=/utm_* → sessionStorage → Bewerbung (kein Cookie); Link-Konvention: /de/vertriebspartner?ref=<kanal>-<variante>
 recruiting/              # Anzeigen-Kit für Closer-Börsen/LinkedIn/FB-Gruppe, Posting-Log, Onboarding-Checkliste
 components/chat/         # floating chat widget (chat-widget.tsx + use-chat.ts)

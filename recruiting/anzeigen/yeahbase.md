@@ -8,7 +8,7 @@
 Setter & Closer (m/w/d) für AI-Mitarbeiter: selbstständig, reine Provision, dauerhafte Monatsprovision, 100 % remote
 
 ## Kurzbeschreibung (Teaser, ≤ 200 Zeichen)
-Verkaufe digitale AI-Mitarbeiter an KMU. Bis 35 % einmalig + bis 15 % monatlich, solange der Kunde bleibt. Stornofrei, kein Deckel, kein Fixum. Leads und Demo gestellt.
+Verkaufe digitale AI-Mitarbeiter an KMU. Einmalprovision beim Abschluss + Monatsprovision, solange der Kunde bleibt. Stornofrei, kein Deckel, kein Fixum. Leads und Demo gestellt.
 
 ## Beschreibung
 Selbstständige Handelsvertretung (§ 84 HGB), reine Provision, kein Fixum. Wenn du ein Grundgehalt brauchst, ist das hier nichts für dich. Wenn du Provision willst, die mit jedem Kunden weiterläuft, lies weiter.
@@ -16,11 +16,11 @@ Selbstständige Handelsvertretung (§ 84 HGB), reine Provision, kein Fixum. Wenn
 **Was du verkaufst**
 NexAI baut digitale Mitarbeiter: AI-Agenten, die für kleine und mittlere Unternehmen ans Telefon gehen (Voice Agent), im Website-Chat antworten (Chat Agent), Social-Media-Nachrichten beantworten und Büroarbeit automatisieren. Kunden zahlen monatlich. Du kannst das Produkt jederzeit live zeigen: Der Kunde ruft eine Nummer an und spricht mit der AI.
 
-**Das Provisionsmodell (auf die Netto-Basis des Kunden, Beispiel 2.000 €/Monat)**
-- Einmalprovision im ersten Monat: Setter 8 % / 12 %, Closer 13 % / 23 %, Setter + Closer 21 % / 35 % (Junior / Senior)
-- Monatsprovision ab Monat 2, dauerhaft, solange der Kunde bleibt (Senior): Setter 5 %, Closer 10 %, Setter + Closer 15 %
+**Das Provisionsmodell**
+- Einmalprovision im ersten Monat, für Junior und Senior
+- Monatsprovision ab Monat 2, dauerhaft, solange der Kunde bleibt (Senior)
 - Kein Kundendeckel. Stornofrei: Ausgezahlt bleibt ausgezahlt.
-- Beispiel Senior Closer: 460 € beim Abschluss, danach 200 € in jedem Monat, in dem der Kunde zahlt. Modellrechnung, keine Zusage.
+- Die konkreten Sätze und ein Rechenbeispiel bekommst du im Kennenlerngespräch und im Karrieresystem-PDF, das direkt nach der Bewerbung per E-Mail kommt.
 
 **Was wir stellen**
 Geprüfte Firmenkontakte mit Entscheider und Telefonnummer (Setter), Termine aus dem Setter-Pool (Closer, ohne Mindestzahl), Live-Demo-Nummer, Kundendeck und Angebotslogik, Partner-Portal mit Provisionsübersicht, gemeinsames CRM, Vertriebsmeetings und Coaching, direkter Draht zur Geschäftsführung. Keine Kosten, keine Kurse, kein Startpaket.
@@ -35,7 +35,7 @@ Jede Rolle startet als Junior (nur Einmalprovision) und wird nach 4 Wochen mit k
 Gewerbe (oder gleichwertige Selbstständigkeit in AT/CH), Deutsch verhandlungssicher, Telefon, Laptop, Internet. Vertriebserfahrung am Telefon ist ein Plus, kein Muss.
 
 **So geht es weiter**
-Bewerbung in 2 Minuten, danach buchst du direkt ein 30-minütiges Kennenlerngespräch mit Maximilian Trenk (Geschäftsführer). Alle Zahlen, ein Provisions-Rechner und die FAQ stehen offen auf der Seite:
+Bewerbung in 2 Minuten, danach buchst du direkt ein 30-minütiges Kennenlerngespräch mit Maximilian Trenk (Geschäftsführer). Das Modell, die Aufstiegskriterien und die FAQ stehen offen auf der Seite:
 https://nex-a-i.com/de/vertriebspartner?ref=yeahbase
 
 NexAI – Next Generation Artificial Intelligence GbR, Frankenhardt · mbt@nex-a-i.com · 0176 80714816

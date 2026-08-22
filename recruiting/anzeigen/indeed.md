@@ -18,11 +18,11 @@ Aufgaben
 • Closer (m/w/d): Verkaufsgespräche führen, die AI live vorführen, Abschlüsse herbeiführen. Termine kommen aus dem Setter-Pool (keine Mindestzahl).
 • Setter + Closer (m/w/d): beide Aufgaben in einer Person.
 
-Provision (auf die Netto-Basis des Kunden, Beispiel 2.000 € pro Monat)
-• Einmalprovision im ersten Monat: Setter 8 % Junior / 12 % Senior, Closer 13 % / 23 %, Setter + Closer 21 % / 35 %
-• Monatsprovision ab dem zweiten Monat, dauerhaft, solange der Kunde Kunde bleibt (nur Senior): Setter 5 %, Closer 10 %, Setter + Closer 15 %
+Provision (auf die Netto-Basis des Kunden)
+• Einmalprovision im ersten Monat, für Junior und Senior
+• Monatsprovision ab dem zweiten Monat, dauerhaft, solange der Kunde Kunde bleibt (nur Senior)
 • Kein Kundendeckel, keine Rückforderung ausgezahlter Provisionen
-• Beispiel Senior Closer: 460 € beim Abschluss, danach 200 € je bezahltem Kundenmonat. Modellrechnung, keine Zusage. Einkommen entsteht erst mit der ersten Kundenzahlung.
+• Die konkreten Provisionssätze werden im Kennenlerngespräch genannt und stehen im Karrieresystem-PDF, das nach der Bewerbung per E-Mail kommt. Einkommen entsteht erst mit der ersten Kundenzahlung.
 
 Das stellt NexAI
 Geprüfte Firmenkontakte, Termine aus dem Setter-Pool, Live-Demo-Telefonnummer, Kundenpräsentation, Partner-Portal mit Provisionsübersicht, CRM, Einarbeitung und Vertriebsmeetings. Keine Gebühren, keine Schulungspakete, kein Startpaket.
