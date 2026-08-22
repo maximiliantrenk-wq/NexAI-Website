@@ -1,7 +1,7 @@
 # Recruiting-Kit: Setter & Closer (m/w/d) für NexAI
 
 Alles, was für die Gewinnung selbstständiger Vertriebspartner gebraucht wird, außer der Website selbst
-(die liegt unter `/vertriebspartner`, Texte in `messages/{de,en}/recruiting.json`, Zahlen in `content/commission.ts`).
+(die liegt unter `/vertriebspartner`, Texte in `messages/{de,en}/recruiting.json`, Fakten in `content/commission.ts`).
 
 ## Inhalt
 
@@ -60,6 +60,6 @@ Kurzlinks: `nex-a-i.com/closer` und `nex-a-i.com/setter` leiten auf die Seite un
 - Erster Satz nennt die Vergütungsform: **selbstständige Handelsvertretung (§ 84 HGB), reine Provision, kein Fixum.**
 - Produkt und Leadquelle nennen (digitale AI-Mitarbeiter für KMU; geprüfte Firmenkontakte, B2B-Kaltanruf).
 - **(m/w/d)** an jeder Rollenbezeichnung, keine Alters- oder Herkunftsbezüge, „Deutsch verhandlungssicher" statt „Muttersprache".
-- Keine Einkommensversprechen, keine „bis zu X €/Monat". Nur die Prozentsätze und das gekennzeichnete Beispiel.
+- **Keine Provisionszahlen öffentlich** (Entscheidung Max, 22.08.2026): keine Prozentsätze, keine Euro-Beispiele, keine „bis zu X €/Monat". Sätze und Rechenbeispiel nur im Kennenlerngespräch und im Karrieresystem-PDF, das nach der Bewerbung per Mail kommt. Öffentlich bleibt nur das Modell: Einmalprovision beim Abschluss + Monatsprovision, solange der Kunde bleibt, stornofrei, kein Deckel.
 - Keine Garantien auf Termine oder Abschlüsse. Ehrlich: junges Unternehmen, B2B-Telefonvertrieb, kein Coaching-Warm-Lead.
 - Kein Kalt-Outreach per E-Mail oder DM an Personen, die nicht gefragt haben (§ 7 UWG). Nur Posten, wo es erlaubt ist, und auf Anfragen antworten.

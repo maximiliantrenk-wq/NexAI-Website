@@ -13,12 +13,12 @@ const copy = {
   de: {
     eyebrow: "Vertriebspartner (m/w/d) · Remote · DACH",
     title: "Setter & Closer gesucht",
-    sub: "Bis 35 % einmalig + bis 15 % monatlich · stornofrei · kein Deckel",
+    sub: "Einmalprovision beim Abschluss + Monatsprovision, solange der Kunde bleibt",
   },
   en: {
     eyebrow: "Sales partners (m/f/d) · Remote · DACH",
     title: "Setters & closers wanted",
-    sub: "Up to 35 % one-off + up to 15 % monthly · no clawbacks · no cap",
+    sub: "One-off commission on the close + monthly commission while the customer stays",
   },
 } as const;
 

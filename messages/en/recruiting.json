@@ -2,16 +2,21 @@
   "Recruiting": {
     "meta": {
       "title": "Remote setter & closer jobs (m/f/d), commission based",
-      "description": "NexAI is looking for self-employed setters and closers (m/f/d) to sell AI employees: up to 35 % one-off commission plus up to 15 % monthly, no clawbacks, remote across DACH. Apply now."
+      "description": "NexAI is looking for self-employed setters and closers (m/f/d) to sell AI employees: one-off commission on the close plus monthly commission for as long as the customer stays. No clawbacks, remote across DACH. Apply now."
     },
     "hero": {
       "eyebrow": "Sales partners (m/f/d) · Remote · DACH",
       "title": "Sell AI employees. Earn every month for as long as the customer stays.",
-      "description": "NexAI is looking for self-employed setters and closers (m/f/d) who win businesses over the phone. Commission only, no base: up to 35 % on the first month and up to 15 % on every month after that, no clawbacks, no cap.",
+      "description": "NexAI is looking for self-employed setters and closers (m/f/d) who win businesses over the phone. Commission only, no base: a one-off commission on the close and a monthly commission that keeps running for as long as the customer stays. No clawbacks, no cap.",
       "primary": "Apply now",
-      "secondary": "Calculate your commission",
+      "secondary": "How it works",
       "reassurance": "No fees, no courses, no starter kit. You sell, we provide the product, the leads and the tech.",
-      "facts": ["100 % remote", "Commission only", "Recurring monthly commission", "No clawbacks"]
+      "facts": [
+        "100 % remote",
+        "Commission only",
+        "Recurring monthly commission",
+        "No clawbacks"
+      ]
     },
     "positioning": {
       "eyebrow": "What this is about",
@@ -45,15 +50,18 @@
     "roles": {
       "eyebrow": "Positions & commission",
       "title": "Three roles, two levels, one model.",
-      "description": "Every role starts as a junior and becomes a senior after onboarding. Commission is calculated on the customer's net base: the customer's payment minus NexAI's costs for operation, technology and support.",
-      "levels": { "junior": "Junior", "senior": "Senior" },
+      "description": "Every role starts as a junior and becomes a senior after onboarding. Commission is calculated on the customer's net base: the customer's payment minus NexAI's costs for operation, technology and support. We show you the exact rates in the intro call and in the career system you receive as a PDF after applying.",
+      "levels": {
+        "junior": "Junior",
+        "senior": "Senior"
+      },
       "labels": {
-        "oneTime": "One-off commission in the first month",
-        "monthly": "Monthly commission from month 2, recurring",
+        "oneTime": "One-off commission in the first month, for junior and senior",
+        "monthly": "Monthly commission from month 2, recurring, as a senior",
         "monthlyJunior": "No monthly commission yet as a junior",
         "promotion": "Promotion to senior",
         "fit": "A fit if",
-        "pct": "{value} %"
+        "pay": "How you are paid"
       },
       "items": [
         {
@@ -82,7 +90,7 @@
         }
       ],
       "basisTitle": "How the net base works",
-      "basisNote": "Example: a customer pays €2,500 per month. After deducting NexAI's costs of €500, €2,000 net base remains. Your commission is calculated on that. There is no setup fee; the base is always the recurring monthly payment.",
+      "basisNote": "The net base is the customer's payment minus NexAI's costs for operation, technology and support. Your commission is calculated on that. There is no setup fee; the base is always the recurring monthly payment. Percentages and a worked example come with the intro call and the career system PDF.",
       "rulesTitle": "Three rules that always apply",
       "rules": [
         "No customer cap: your income keeps growing with every customer.",
@@ -91,29 +99,6 @@
       ],
       "customersTitle": "Your customers",
       "customersText": "Trades businesses, medical practices, law firms, service providers. B2B, on the phone, cold calling verified company contacts. If you expect warm enquiries from coaching ads, this is the wrong place. If you can do real B2B sales, it's the right one."
-    },
-    "calculator": {
-      "eyebrow": "Commission calculator",
-      "title": "Run your own numbers.",
-      "description": "Pick a role, a level and your assumptions. The calculator shows how one-off and monthly commission build up over time.",
-      "roleLabel": "Role",
-      "roles": { "setter": "Setter", "closer": "Closer", "both": "Setter + Closer" },
-      "levelLabel": "Level",
-      "levels": { "junior": "Junior", "senior": "Senior" },
-      "newLabel": "New customers per month",
-      "baseLabel": "Net base per customer and month (€)",
-      "baseHint": "Example: €2,500 customer price minus €500 NexAI costs = €2,000",
-      "reset": "Reset to example",
-      "resultLabel": "Your monthly income in month 12",
-      "monthLine": "Month {n}: {value}",
-      "customers": "{n, plural, =0 {no existing customers yet} =1 {1 existing customer} other {# existing customers}}",
-      "breakdown": "Of which one-off commission {oneTime} and monthly commission {recurring}",
-      "perCustomer": "Per customer who stays 12 months: {value}",
-      "chartLabel": "Monthly income over 24 months",
-      "juniorHint": "As a junior you only receive the one-off commission. Monthly commission starts with the promotion to senior, usually after 4 weeks.",
-      "note": "Model calculation, not a forecast. Assumptions: the same number of new customers every month, no cancellations, commission on the net base, monthly commission only as a senior and from month 2. Your actual income depends on your closed deals and on how long customers stay.",
-      "cta": "Apply now",
-      "ctaHint": "Application in 2 minutes, call bookable right away."
     },
     "path": {
       "eyebrow": "Your path to senior",
@@ -135,8 +120,8 @@
       "bothNote": "Setter + Closer: both sets of criteria, each on your own appointments.",
       "seniorTitle": "Senior means",
       "senior": [
-        "Higher one-off commission: 12 % as a setter, 23 % as a closer, 35 % for both.",
-        "Recurring monthly commission: 5 %, 10 % or 15 % of the net base for as long as the customer stays.",
+        "Higher one-off commission than at junior level.",
+        "Recurring monthly commission for as long as the customer stays.",
         "Sales meetings optional, onboarding complete."
       ],
       "note": "As a junior, one or two sales meetings per week are part of onboarding. We listen in on selected calls for coaching; calls are only recorded with an announcement and the customer's consent. The goal is to get better, not to control."
@@ -274,7 +259,7 @@
         },
         {
           "q": "What does the product cost the customer?",
-          "a": "Prices are individual because every agent is built differently. For the commission calculation we work with an example net base of €2,000 per month. You get the real offer logic during onboarding."
+          "a": "Prices are individual because every agent is built differently. You get the offer logic and the exact commission rates in the intro call and in the career system PDF that arrives by email after you apply."
         },
         {
           "q": "What happens if I don't reach the junior criteria?",
@@ -312,7 +297,11 @@
       "phone": "Phone",
       "phonePlaceholder": "+49 …",
       "role": "Which role do you want?",
-      "roles": { "setter": "Setter", "closer": "Closer", "both": "Setter + Closer" },
+      "roles": {
+        "setter": "Setter",
+        "closer": "Closer",
+        "both": "Setter + Closer"
+      },
       "experience": "Sales experience",
       "experienceOptions": {
         "none": "None yet, I want to get started",
@@ -371,7 +360,9 @@
       "errorGeneric": "The booking didn't go through. Please try again or reply to the confirmation email."
     },
     "termin": {
-      "meta": { "title": "Book your intro call" },
+      "meta": {
+        "title": "Book your intro call"
+      },
       "eyebrow": "Sales partners (m/f/d)",
       "title": "Pick your slot.",
       "description": "30 minutes with Maximilian Trenk. You have applied as a setter or closer, or want to, and we clarify everything else in the call.",
@@ -379,10 +370,10 @@
     },
     "jsonld": {
       "title": "Sales partner setter / closer (m/f/d), self-employed, commission only, remote",
-      "description": "NexAI is looking for self-employed setters and closers (m/f/d) in the DACH region who win small and medium-sized businesses over the phone for digital employees (AI voice agent, chat agent, social media agent, automation). Work as a self-employed commercial agent under § 84 of the German Commercial Code, 100 % remote, free time management, no exclusivity. Compensation is purely performance-based, no base pay: one-off commission of 8 to 35 % of the net base in the customer's first month (depending on role and level), from the second month a recurring monthly commission of 5 to 15 % of the net base for senior positions, no customer cap, no clawbacks. Requirements: registered business (or equivalent self-employment in AT/CH), business-fluent German, phone, laptop and internet. NexAI provides verified company contacts, appointments from the setter pool, a live demo number, customer deck, partner portal, CRM and coaching.",
+      "description": "NexAI is looking for self-employed setters and closers (m/f/d) in the DACH region who win small and medium-sized businesses over the phone for digital employees (AI voice agent, chat agent, social media agent, automation). Work as a self-employed commercial agent under § 84 of the German Commercial Code, 100 % remote, free time management, no exclusivity. Compensation is purely performance-based, no base pay: a one-off commission on the net base in the customer's first month (depending on role and level), from the second month a recurring monthly commission for senior positions, no customer cap, no clawbacks; the exact rates are shared in the intro call. Requirements: registered business (or equivalent self-employment in AT/CH), business-fluent German, phone, laptop and internet. NexAI provides verified company contacts, appointments from the setter pool, a live demo number, customer deck, partner portal, CRM and coaching.",
       "responsibilities": "Setter: call decision-makers in small and medium-sized businesses, spark interest, book qualified appointments. Closer: run sales conversations, show the AI live, close contracts. Setter + closer: both in one person.",
       "qualifications": "Registered business or equivalent self-employment, business-fluent German, phone sales experience an advantage, own hardware and internet connection.",
-      "incentive": "Commission only, no base pay: one-off commission of 8 to 35 % of the net base in the first month; monthly commission of 5 to 15 % of the net base from month 2 for senior positions, recurring, no cap, no clawbacks."
+      "incentive": "Commission only, no base pay: one-off commission on the net base in the first month; monthly commission from month 2 for senior positions, recurring, no cap, no clawbacks. Exact rates shared in the intro call."
     }
   }
 }

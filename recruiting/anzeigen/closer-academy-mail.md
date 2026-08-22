@@ -19,7 +19,7 @@ Wir bauen unseren Vertrieb auf und suchen selbstständige Setter und Closer (m/w
 2. Welche Informationen benötigen Sie von uns, um passende Kandidaten vorzuschlagen?
 3. Passt unser Modell zu Ihren Absolventen? Es ist B2B-Telefonvertrieb mit Kaltanruf, keine Coaching-Warm-Leads.
 
-Unser Modell in Kürze: reine Provision ohne Fixum, Einmalprovision von 8 bis 35 % der Netto-Basis im ersten Kundenmonat je nach Rolle und Stufe, ab Monat 2 dauerhafte Monatsprovision von 5 bis 15 % (Senior), kein Kundendeckel, stornofrei. Leads, Termine aus dem Setter-Pool, Live-Demo-Nummer, Deck, Portal und CRM stellen wir. Alle Details, Rechner und FAQ: https://nex-a-i.com/de/vertriebspartner
+Unser Modell in Kürze: reine Provision ohne Fixum, Einmalprovision auf die Netto-Basis im ersten Kundenmonat je nach Rolle und Stufe, ab Monat 2 dauerhafte Monatsprovision (Senior), kein Kundendeckel, stornofrei. Die konkreten Sätze teile ich gern im Gespräch mit. Leads, Termine aus dem Setter-Pool, Live-Demo-Nummer, Deck, Portal und CRM stellen wir. Details und FAQ: https://nex-a-i.com/de/vertriebspartner
 
 Über eine kurze Rückmeldung freue ich mich. Gern auch telefonisch unter 0176 80714816.
 
