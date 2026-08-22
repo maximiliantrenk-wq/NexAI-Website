@@ -13,8 +13,10 @@ type Mode = "money" | "time";
 type Period = "day" | "week" | "month" | "year";
 
 const PERIODS: Period[] = ["day", "week", "month", "year"];
-// Working-day model: 5 days/week, ~21.7 days/month, 260 days/year.
-const YEAR_FACTOR: Record<Period, number> = { day: 260, week: 52, month: 12, year: 1 };
+// Simple, head-checkable chain (identical to the sales deck):
+// 5 working days = 1 week · 4 weeks = 1 month · 12 months = 1 year.
+const YEAR_FACTOR: Record<Period, number> = { day: 240, week: 48, month: 12, year: 1 };
+const MONTH_FACTOR: Record<Period, number> = { day: 20, week: 4, month: 1, year: 1 / 12 };
 
 const fieldCls =
   "w-full rounded-xl border border-line bg-white/[0.02] px-4 py-3 text-sm text-fg placeholder:text-subtle transition-colors focus-visible:border-blue/60 focus-visible:outline-none";
@@ -72,6 +74,9 @@ export function RoiCalculator() {
   };
 
   const factor = YEAR_FACTOR[period];
+  const monthFactor = MONTH_FACTOR[period];
+  // Show the intermediate "per month" rung only when the input is per day/week.
+  const showMonth = period === "day" || period === "week";
   const periodLabel = t(`periods.${period}`);
   const isMoney = mode === "money";
 
@@ -94,6 +99,7 @@ export function RoiCalculator() {
 
   const bigResult = isMoney ? cf.format(grossPer) : fmtDuration(timePerMin);
   const timeYearValue = `${nf.format(Math.round((timePerMin * factor) / 60))} ${t("units.h")}`;
+  const timeMonthValue = `${nf.format(Math.round((timePerMin * monthFactor) / 60))} ${t("units.h")}`;
   const workdays = nf.format(Math.round((timePerMin * factor) / 60 / 8));
 
   const numberInput = (
@@ -189,6 +195,13 @@ export function RoiCalculator() {
                         rate: num(rate),
                       })}
                     </CheckLine>
+                    {showMonth && (
+                      <CheckLine>
+                        {t("money.perMonth", {
+                          value: cf.format(recoveredPer * monthFactor),
+                        })}
+                      </CheckLine>
+                    )}
                     {period !== "year" && (
                       <CheckLine>
                         {t("money.perYear", {
@@ -199,6 +212,11 @@ export function RoiCalculator() {
                   </>
                 ) : (
                   <>
+                    {showMonth && (
+                      <CheckLine>
+                        {t("time.perMonth", { value: timeMonthValue })}
+                      </CheckLine>
+                    )}
                     {period !== "year" && (
                       <CheckLine>
                         {t("time.perYear", { value: timeYearValue })}

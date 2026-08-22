@@ -20,18 +20,20 @@
       "rateLabel": "Vom Voice Agent erfasst (%)",
       "resultLabel": "Umsatzverlust durch verpasste Anrufe",
       "recovered": "Davon holt NEXAI zurück: {value} ({rate} %)",
+      "perMonth": "≈ {value} pro Monat",
       "perYear": "≈ {value} pro Jahr"
     },
     "time": {
       "callsLabel": "Anrufe pro {period}",
       "durationLabel": "Ø Dauer pro Anruf (Min.)",
       "resultLabel": "Eingesparte Zeit",
+      "perMonth": "≈ {value} pro Monat",
       "perYear": "≈ {value} pro Jahr",
       "workdays": "≈ {days} Arbeitstage pro Jahr"
     },
     "resultPer": "pro {period}",
     "units": { "h": "Std.", "min": "Min." },
-    "note": "Unverbindliche Beispielrechnung. Die Erfassungsquote durch den Voice Agent liegt je nach Setup bei rund 70 bis 80 % (Standard 75 %). Jahres-Hochrechnung auf Basis von 5 Arbeitstagen pro Woche (260 Tage).",
+    "note": "Unverbindliche Beispielrechnung. Die Erfassungsquote durch den Voice Agent liegt je nach Setup bei rund 70 bis 80 % (Standard 75 %). Hochrechnung: 5 Arbeitstage = 1 Woche, 4 Wochen = 1 Monat, 12 Monate = 1 Jahr.",
     "cta": "Kostenloses Erstgespräch",
     "ctaHint": "Wir zeigen Ihnen, wie realistisch diese Zahl für Ihr Unternehmen ist."
   }

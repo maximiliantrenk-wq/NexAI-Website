@@ -20,18 +20,20 @@
       "rateLabel": "Captured by the voice agent (%)",
       "resultLabel": "Revenue lost to missed calls",
       "recovered": "NEXAI brings back: {value} ({rate} %)",
+      "perMonth": "≈ {value} per month",
       "perYear": "≈ {value} per year"
     },
     "time": {
       "callsLabel": "Calls per {period}",
       "durationLabel": "Avg. duration per call (min)",
       "resultLabel": "Time saved",
+      "perMonth": "≈ {value} per month",
       "perYear": "≈ {value} per year",
       "workdays": "≈ {days} working days per year"
     },
     "resultPer": "per {period}",
     "units": { "h": "h", "min": "min" },
-    "note": "Non-binding example calculation. The share of calls captured by the voice agent is typically around 70 to 80 % depending on setup (default 75 %). Annual projection based on 5 working days per week (260 days).",
+    "note": "Non-binding example calculation. The share of calls captured by the voice agent is typically around 70 to 80 % depending on setup (default 75 %). Projection: 5 working days = 1 week, 4 weeks = 1 month, 12 months = 1 year.",
     "cta": "Free intro call",
     "ctaHint": "We'll show you how realistic this number is for your business."
   }
