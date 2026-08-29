@@ -4,8 +4,8 @@ Pressemitteilungen an Redaktionen sind keine Werbung im Sinne von § 7 UWG, sola
 
 | Medium | Adresse | Status | Hinweis |
 |---|---|---|---|
-| Hohenloher Tagblatt (Crailsheim, Südwest Presse) | redaktion.hota@swp.de | verifiziert (Redaktion Crailsheim, Ludwigstraße 6–10, Tel. 07951 409321) | Lokalteil Crailsheim/Frankenhardt; Bezug „Frankenhardter Unternehmen" in den ersten Satz |
-| Haller Tagblatt (Schwäbisch Hall, Südwest Presse) | redaktion.hata@swp.de | verifiziert (Haalstraße 5+7, Tel. 0791 404410) | Wirtschaft Landkreis Schwäbisch Hall |
+| Hohenloher Tagblatt (Crailsheim, Südwest Presse) | redaktion.hota@swp.de | **gesendet 22.08.2026** (verifiziert: Redaktion Crailsheim, Ludwigstraße 6–10, Tel. 07951 409321) | Lokalteil Crailsheim/Frankenhardt; Bezug „Frankenhardter Unternehmen" in den ersten Satz |
+| Haller Tagblatt (Schwäbisch Hall, Südwest Presse) | redaktion.hata@swp.de | **gesendet 22.08.2026** (verifiziert: Haalstraße 5+7, Tel. 0791 404410) | Wirtschaft Landkreis Schwäbisch Hall |
 | Südwest Presse Wirtschaft (Ulm, Mantelteil) | zu prüfen | — | nur wenn die Lokalredaktionen reagieren |
 | deutsche-startups.de | zu prüfen („Tipps an die Redaktion" auf der Seite) | — | Startup-Szene, Thema Vertriebsmodell mit Bestandsprovision |
 | Startup-Verband (startupverband.de/presse) | zu prüfen | — | eher Mitglieder-Newsletter, niedrige Priorität |

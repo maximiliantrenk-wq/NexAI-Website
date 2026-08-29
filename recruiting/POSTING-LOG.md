@@ -4,7 +4,8 @@ Jede Veröffentlichung eine Zeile. Quelle = `ref`-Kennung im Link. Ergebnis nach
 
 | Datum | Kanal | Variante / Datei | Link (`ref`) | Freigabe Max | Status (live / pausiert / abgelehnt) | Bewerbungen 14 T | Bewerbungen 28 T | qualifiziert | Gespräche | Notiz |
 |---|---|---|---|---|---|---|---|---|---|---|
-| | | | | | | | | | | |
+| 22.08.2026 | Presse: Hohenloher Tagblatt | presse/pressemitteilung.md (mit Bild-Anhang) | nex-a-i.com/de/vertriebspartner (ohne ref) | ja (22.08.) | gesendet, Gmail-ID 1a02b70da91f2952 | | | | | Nachfrage frühestens 29.08. |
+| 22.08.2026 | Presse: Haller Tagblatt | presse/pressemitteilung.md (Bild per Link, Anhang-Versand schlug 2× fehl) | nex-a-i.com/de/vertriebspartner (ohne ref) | ja (22.08.) | gesendet, Gmail-ID 1a02b7be0e6f6590 | | | | | Nachfrage frühestens 29.08. |
 
 ## Auswertung (alle 14 Tage)
 
