@@ -6,7 +6,7 @@
 
 > ⚠️ **Kein Rechtsrat.** Vorlage zur Erfüllung der Rechenschaftspflicht (Art. 5 Abs. 2, Art. 30 DSGVO). Laufend fortschreiben; vor Verwendung vom DSB/Anwalt prüfen lassen. Löschfristen = interne Defaults, mit der Datenschutzerklärung abgeglichen.
 
-Empfänger-Kürzel (Drittland-Mechanismus): **Resend** (US, **DPF** — hilfsweise SCC) · **Google** IE/US (DPF/SCC) · **OpenAI** IE/US (**SCC, nicht DPF-zertifiziert** — Prüfung 06.09.2026; No-Training) · **Vapi** (US, SCC+TIA — Orchestrierung **und** Sprachsynthese) · **Soniox** (US, STT, Unterauftragsverarbeiter von Vapi, SCC+TIA über den Vapi-DPA) · **easybell** (DE) · **Hetzner** (DE, Server der **Website**, der self-hosted n8n **und des NexAI-CRM**) · **NexAI-CRM** (self-hosted, DE — eigene zentrale Kundenverwaltung, keine Drittlandübermittlung) · **Explorium** (Datenprovider).
+Empfänger-Kürzel (Drittland-Mechanismus): **Resend** (US, **DPF** — hilfsweise SCC) · **Google** IE/US (DPF/SCC) · **OpenAI** IE/US (**SCC, nicht DPF-zertifiziert** — Prüfung 06.09.2026; No-Training) · **Vapi** (US, SCC+TIA — Orchestrierung **und** Sprachsynthese) · **Soniox** (US, STT, Unterauftragsverarbeiter von Vapi, SCC+TIA über den Vapi-DPA) · **easybell** (DE) · **Hetzner** (DE, Server der **Website**, der self-hosted n8n **und des NexAI-CRM**) · **NexAI-CRM** (self-hosted, DE — eigene zentrale Kundenverwaltung, keine Drittlandübermittlung) · **Explorium** (Datenprovider) · **Web-Push-Infrastruktur** der Browserhersteller (Google/Apple/Mozilla, i. d. R. US — nur Endpunkt und Benachrichtigungsinhalt, siehe A11).
 
 ---
 
@@ -65,6 +65,54 @@ Empfänger-Kürzel (Drittland-Mechanismus): **Resend** (US, **DPF** — hilfswei
 
 ---
 
+---
+
+## Portal app.nex-a-i.com (A11–A18)
+
+*Selbst betriebene PWA auf dem Hetzner-Server (DE), Postgres. Rollen: `admin`, `manager`, `vertriebsleiter`, `kommunikationsleiter`, `partner`, `empfehlungsgeber`, `customer`, `privat`. Grundlage der folgenden Einträge ist das Datenbankschema (`nexai-portal/db/schema.ts`, 40 Tabellen, Stand 06.09.2026), nicht eine Beschreibung. Der Lernbereich `privat` steht getrennt als **A10**.*
+
+> ⚠️ **Übergreifende Lücke:** Das Portal hat **keine eigenen Datenschutzhinweise**, obwohl die Website-DSE für app.nex-a-i.com welche zusagt. Es gibt bislang nur den unveröffentlichten Entwurf für den Lernbereich. → offener Punkt.
+
+### A11 Portal — Nutzerkonten, Zugang und Protokollierung
+- **Zweck:** Anmeldung, Rechteverwaltung, Sicherheitsprotokoll, Systemmitteilungen, Push-Benachrichtigungen. **Betroffene:** Portalnutzer (Mitarbeitende, Vertriebspartner, Kunden, eine Privatperson). **Daten:** `users` (E-Mail, Passwort-Hash, Rolle, Name, Sprache, Rechte-Schlüssel, Profilbild, Akzentfarbe, Kalender-Abo-Kennung, letzte Anmeldung, Anlegender); `sessions` (Token-Hash, Ablauf); `audit_log` (handelnder Nutzer, Aktion, betroffener Datensatz, Zusatzangaben); `announcements`; `push_subscriptions` (Endpunkt, Schlüssel `p256dh`/`auth`).
+- **Rechtsgrundlage:** Art. 6(1)b (Nutzungs-/Vertragsverhältnis), Art. 6(1)f (Protokollierung, Missbrauchsschutz). **Empfänger:** Hetzner (DE). **Für Web-Push zusätzlich die Push-Infrastruktur des jeweiligen Browserherstellers** (Google, Apple, Mozilla — i. d. R. **US**); übermittelt werden Endpunkt und Nachrichteninhalt der Benachrichtigung. **Drittland:** nur Web-Push (US). **Löschung:** mit dem Konto; Sitzungen mit Ablauf; **für das Protokoll ist keine Frist festgelegt**.
+- **Besonderheiten:** **Keine Zwei-Faktor-Anmeldung** — im Schema und im Code nicht vorhanden (geprüft 06.09.2026). Steht als P1 in den Datenschutz-To-dos und ist hier als offene Maßnahme zu führen, nicht als vorhandene.
+
+### A12 Portal — Vertriebspartner: Stammdaten, Karrieresystem, Provisionen
+- **Zweck:** Verwaltung selbstständiger Vertriebspartner, Abbildung des Karrieresystems, Berechnung und Nachverfolgung von Provisionen. **Betroffene:** Vertriebspartner (Setter, Closer, Vertriebs-/Kommunikationsleiter, Empfehlungsgeber). **Daten:** `partners` (Partnernummer, Name, Firma, E-Mail, Telefon, Anschrift, **Steuernummer/USt-IdNr., IBAN, BIC, Bankname**, Provisionssätze, Funktion und Stufe, Senior-Zeitraum, Beginn der Probezeit, zugeordneter Closer, CRM-Verweis); `commissions` (Zeitraum, Bemessungsgrundlage, Satz, erwarteter Betrag, Status); `documents` (Partnerunterlagen: Kategorie, Datei, Hochladender).
+- **Rechtsgrundlage:** Art. 6(1)b (Vertriebspartnervertrag), Art. 6(1)c (steuer-/handelsrechtliche Pflichten). **Empfänger:** Hetzner (DE); Zahlungsdaten mittelbar Bank/Steuerberater. **Drittland:** keines. **Löschung:** mit Vertragsende, soweit keine gesetzlichen Fristen entgegenstehen; Abrechnungsrelevantes über A14.
+- **Besonderheiten:** **Bankverbindungen liegen im Portal.** Stufe, Senior-Status und Probezeit sind **leistungsbezogene Daten** über Selbstständige — kein Beschäftigtendatenschutz, aber erhöhte Sorgfalt. Die Upline-Beziehung (`closerPartnerId`) macht Leistung innerhalb der Struktur sichtbar.
+
+### A13 Portal — Kunden- und Auftragsverwaltung
+- **Zweck:** Führung der Kundenstammdaten und Aufträge, Zuordnung zu Vertriebspartnern. **Betroffene:** Kunden und deren Ansprechpartner. **Daten:** `customers` (Kundennummer, Firma, Ansprechpartner, E-Mail, Telefon, Anschrift, Status, **Notizen**, CRM-Verweise, zugeordneter Partner); `orders` (Produkt, Beschreibung, Beträge, Laufzeit, Status, Setter/Closer, Provisionssätze, Kündigungszeitpunkt).
+- **Rechtsgrundlage:** Art. 6(1)b. **Empfänger:** Hetzner (DE), **NexAI-CRM** (self-hosted DE, Abgleich über `crm_outbox`). **Drittland:** keines. **Löschung:** mit Vertragsende, soweit keine gesetzlichen Fristen entgegenstehen.
+- **Besonderheiten:** Das Freitextfeld `notes` ist inhaltlich nicht begrenzt — besondere Kategorien sind dort nicht ausgeschlossen.
+
+### A14 Portal — Rechnungen und Provisionsabrechnung
+- **Zweck:** Ausstellung und Verwaltung von Kundenrechnungen und Partner-Provisionsabrechnungen. **Betroffene:** Kunden, Vertriebspartner. **Daten:** `invoices` (Art, Nummer, Ausstellungs-/Fälligkeitsdatum, Abrechnungsmonat, Nettobetrag, Steuersatz und Rechtsgrund bei 0 %, Status, Zahlungseingang, Notizen, **hinterlegte PDF-Datei**, Hochladender). Die Partner-IBAN kommt aus A12 in die Rechnung.
+- **Rechtsgrundlage:** Art. 6(1)b; **Art. 6(1)c** (§ 14 UStG, § 147 AO). **Empfänger:** Hetzner (DE), Kunde bzw. Partner als Rechnungsempfänger, mittelbar Steuerberater. **Drittland:** keines. **Löschung:** **8 Jahre**, gerechnet ab Schluss des Kalenderjahres (§ 14b Abs. 1 UStG, § 147 Abs. 1 Nr. 4 i. V. m. Abs. 3 und 4 AO in der Fassung des Vierten Bürokratieentlastungsgesetzes). **Technisch erzwungen** — `nexai-portal/lib/retention.ts`, Prüfung beim Löschen in `app/actions/invoices.ts`.
+- **Besonderheiten:** Bewusst **acht** statt zehn Jahre: längeres Aufbewahren als nötig verstößt gegen Art. 5(1)e DSGVO. Rechnungsnummern sind gegen Doppelvergabe gesperrt.
+
+### A15 Portal — Leadlisten, Lead-Bearbeitung und Anrufdokumentation
+- **Zweck:** Verteilung und Bearbeitung von Akquise-Leads, Dokumentation der Anrufversuche und Ergebnisse. **Betroffene:** **Dritte** — angesprochene Unternehmen und deren Ansprechpartner (B2B); zusätzlich die bearbeitenden Vertriebspartner. **Daten:** `lead_lists` (Name, Beschreibung, Ersteller, **Eigentümer** — private Listen); `leads` (Firma, Ansprechpartner, Telefon, E-Mail, Website, Ort, **Notiz und Gesprächsnotiz**, Status, Versuche, Wiedervorlage, letzter Anruf und Anrufer, Beanspruchung, Umwandlung in einen Kunden); `lead_calls` (Lead, **Nutzer und Partner**, Ergebnis, erreicht ja/nein, Zeitpunkt, **Dauer**, verknüpfter Termin).
+- **Rechtsgrundlage:** Art. 6(1)f (Direktansprache im B2B-Umfeld, Dokumentation) — **Abwägung dokumentieren**; § 7 UWG für die Ansprache selbst ist gesondert zu beachten. **Empfänger:** Hetzner (DE), **NexAI-CRM** (self-hosted DE). **Drittland:** keines. **Löschung:** **keine Frist festgelegt** → nachzuholen.
+- **Besonderheiten:** Betroffene sind hier **nicht Vertragspartner**, sondern Angesprochene — Informationspflicht nach **Art. 14 DSGVO** und Herkunft der Daten sind zu klären. `lead_calls` erfasst zugleich, **wer wie lange wen angerufen hat** — Leistungsdaten über Selbstständige.
+
+### A16 Portal — Termine, Kalender und Kalenderfreigaben
+- **Zweck:** Terminverwaltung, Erinnerungen, Freigabe des eigenen Kalenders an andere Portalnutzer, Kalender-Abo und Google-Abgleich. **Betroffene:** Portalnutzer, Kunden und deren Ansprechpartner, eingeladene Gäste. **Daten:** `appointments` (Zuständiger, Ersteller, Titel, Kunde, **Ansprechpartner mit E-Mail und Telefon**, Zeitraum, Status, Kategorie, Produkt, **Besprochenes und Notizen**, Ort, Sichtbarkeit, Herkunft, Google-Ereigniskennung, Erinnerung, Serie); `appointment_guests` (Nutzer, E-Mail); `calendar_shares` (Eigentümer, Betrachter, Status); `google_connections` (**Google-Adresse, verschlüsseltes Refresh-Token**).
+- **Rechtsgrundlage:** Art. 6(1)b, Art. 6(1)f. **Empfänger:** Hetzner (DE); **Google Ireland Ltd / Google LLC** bei verbundenem Kalender. **Drittland:** IE/US — **Art. 45 (DPF, Google LLC aktiv zertifiziert, geprüft 06.09.2026)**, ergänzend SCC. **Löschung:** keine Frist festgelegt → nachzuholen.
+- **Besonderheiten:** Kalenderfreigaben machen Termininhalte **anderen Portalnutzern** sichtbar; die Sichtbarkeitsstufe je Termin steuert das. Das Google-Refresh-Token liegt verschlüsselt.
+
+### A17 Portal — Interne Kommunikation und Support
+- **Zweck:** Support-Vorgänge mit Kunden, Team-Kanal, Direktnachrichten zwischen Portalnutzern. **Betroffene:** Portalnutzer, Kunden-Ansprechpartner. **Daten:** `threads` (Kunde, Ersteller, Betreff, Status); `messages` (Absender und dessen Rolle, **Nachrichtentext, Dateianhang**, Lesevermerke); `channel_messages` (Absender, Name, Rolle, Text); `direct_messages` (Absender, Empfänger, **Text**, Lesevermerk).
+- **Rechtsgrundlage:** Art. 6(1)b (Support), Art. 6(1)f (interne Zusammenarbeit). **Empfänger:** Hetzner (DE). **Drittland:** keines. **Löschung:** **keine Frist festgelegt** → nachzuholen.
+- **Besonderheiten:** **Direktnachrichten sind private Kommunikation** zwischen Nutzern. Ein Portal-Admin hat über den Datenbankzugang technisch Zugriff; eine Regelung dazu gibt es nicht. Der Lernbereich (`privat`) ist von Team-Kanal, Direktnachrichten und Support ausdrücklich ausgeschlossen.
+
+### A18 Portal — Wissens-Bibliothek
+- **Zweck:** Bereitstellung von Schulungs- und Vertriebsunterlagen. **Betroffene:** hochladende Nutzer; Personen, die in Unterlagen vorkommen. **Daten:** `library_folders` (Name, Beschreibung, Sichtbarkeit, Ersteller); `library_files` (Titel, Beschreibung, Datei, Hochladender, **Eigentümer** — private Dateien seit 03.09.2026).
+- **Rechtsgrundlage:** Art. 6(1)f (Bereitstellung von Arbeitsmitteln). **Empfänger:** Hetzner (DE). **Drittland:** keines. **Löschung:** durch den Eigentümer; keine Frist.
+- **Besonderheiten:** Private Dateien sind nur für den Hochladenden sichtbar, auch nicht für die Leitung. Dateien liegen außerhalb des Web-Wurzelverzeichnisses und werden über eine geprüfte Ausgabe-Route ausgeliefert.
+
 ## Teil B — Als Auftragsverarbeiter für Kunden (Art. 30 Abs. 2)
 
 **Kategorien von Verarbeitungen je Kunde (Verantwortlicher = Kunde):** Betrieb der beauftragten KI-Agenten. Details je Auftrag im Auftragsformular; Rollen in AVV §15.
@@ -84,8 +132,21 @@ Empfänger-Kürzel (Drittland-Mechanismus): **Resend** (US, **DPF** — hilfswei
 
 ## Bekannte Lücken dieses Verzeichnisses
 
-- **Das Partner-/Kundenportal (app.nex-a-i.com) fehlt als eigene Verarbeitungstätigkeit.** Es kommt bislang nur in A9 als Ziel nach Vertragsschluss vor. Tatsächlich verarbeitet es Partner- und Kundenstammdaten, Leads, Rechnungen und Provisionen, Kalender, Direktnachrichten und Karrieresystem-Daten. **A10 deckt ausdrücklich nur den Lernbereich ab, nicht das Portal selbst.** → nachzutragen.
-- **Rechtsgrundlage von A10** (Art. 6(1)b) ist eine vorläufige Einordnung und vom Anwalt zu bestätigen.
+*Das Portal ist mit A11–A18 nachgetragen (06.09.2026). Beim Eintragen sind folgende Punkte aufgefallen — sie stehen hier, damit sie nicht in den Einträgen untergehen.*
+
+**🔴 Fehlende Löschfristen.** Für **A15 (Leads und Anrufdokumentation)**, **A17 (interne Kommunikation)** und **A16 (Termine)** ist **keine Frist festgelegt**; auch das Sicherheitsprotokoll in A11 wächst unbegrenzt. Art. 5(1)e DSGVO verlangt eine Grenze. Einzig A14 (Rechnungen, 8 Jahre) ist technisch erzwungen — das ist der Maßstab für die übrigen.
+
+**🔴 Keine eigenen Datenschutzhinweise für das Portal.** Die Website-DSE sagt für app.nex-a-i.com eigene Hinweise zu. Es existiert nur ein **unveröffentlichter Entwurf für den Lernbereich**; für Partner, Kunden und Mitarbeitende gibt es nichts.
+
+**🔴 Art. 14 bei Leads (A15).** Die angesprochenen Unternehmen und Ansprechpartner sind **keine Vertragspartner** und haben ihre Daten nicht selbst gegeben. Informationspflicht, Herkunft der Daten und die Abwägung nach Art. 6(1)f sind zu dokumentieren; § 7 UWG betrifft die Ansprache selbst.
+
+**🟠 Keine Zwei-Faktor-Anmeldung im Portal** (A11) — im Schema und im Code nicht vorhanden, geprüft 06.09.2026. Das Portal führt Bankverbindungen (A12) und Rechnungen (A14). Steht als P1 in den Datenschutz-To-dos.
+
+**🟠 Zugriff der Betreiber auf private Inhalte.** Direktnachrichten (A17) und der Lernbereich (A10) sind gegenüber anderen Nutzern abgeschottet, nicht gegenüber jemandem mit Datenbankzugang. Eine schriftliche Regelung dazu fehlt.
+
+**🟠 Freitextfelder ohne Grenze.** `customers.notes` (A13), `leads.note`/`callNote` (A15), Termin-Notizen (A16) und die Lernunterlagen (A10) können besondere Kategorien enthalten, ohne dass etwas es verhindert.
+
+**🟡 Rechtsgrundlage von A10** (Art. 6(1)b) ist eine vorläufige Einordnung und vom Anwalt zu bestätigen.
 
 ## Pflegehinweise
 - Bei **neuem Subunternehmer**: hier + AVV Anhang 2 ergänzen, Kunden 14 Tage vorab informieren (AVV §9).
