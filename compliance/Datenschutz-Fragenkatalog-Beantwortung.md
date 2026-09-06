@@ -90,7 +90,7 @@ in Deutschland. Weitere TOMs siehe Abschnitt IX.
 **1. Art des KI-Systems:**
 Große Sprachmodelle (Large Language Models). Konkret zwei Anwendungen:
 (a) **Chat-Assistent** auf der Website (LLM von OpenAI);
-(b) **Telefon-/Sprachassistent** (Orchestrierung über Vapi; Spracherkennung/STT über Deepgram; LLM und
+(b) **Telefon-/Sprachassistent** (Orchestrierung über Vapi; Spracherkennung/STT über Soniox (Unterauftragsverarbeiter von Vapi); LLM und
 Sprachsynthese/TTS über OpenAI).
 
 **2. Zweck der KI:**
@@ -127,7 +127,7 @@ handelt sich um generative Sprachmodelle ohne intransparente Bewertungs-/Entsche
 
 **9./10. Trainingsdaten und deren Herkunft:**
 Wir verwenden **keine eigenen Trainingsdaten** und trainieren keine Modelle. Die eingesetzten Modelle wurden
-von den Anbietern (OpenAI, Deepgram) mit deren eigenen Datenbeständen vortrainiert; hierauf haben wir keinen
+von den Anbietern (OpenAI, Soniox) mit deren eigenen Datenbeständen vortrainiert; hierauf haben wir keinen
 Einfluss und keine Kenntnis im Einzelnen. Nutzereingaben aus unseren Systemen fließen nicht in ein Training ein.
 
 **11. Anonymisierung/Pseudonymisierung der Trainingsdaten:**
@@ -192,7 +192,7 @@ sind wir Auftragsverarbeiter des jeweiligen Kunden, nicht gemeinsam Verantwortli
 | OpenAI Ireland Ltd. (ggf. OpenAI L.L.C.) | LLM + Sprachsynthese | Irland/USA (DPF) | Auftragsverarbeiter |
 | Google Ireland Ltd. (ggf. Google LLC) | Kalender, Tabellen, E-Mail-Postfach | Irland/USA (DPF) | Auftragsverarbeiter |
 | Vapi, Inc. | Sprachassistent-Orchestrierung | USA (SCC) | Auftragsverarbeiter |
-| Deepgram, Inc. | Spracherkennung (STT) | USA (SCC) | Auftragsverarbeiter |
+| Soniox Inc | Spracherkennung (STT) | USA (SCC) | Unterauftragsverarbeiter (über Vapi) |
 | easybell GmbH | SIP-Telefonanbindung | Deutschland | TK-Anbieter |
 | Hetzner Online GmbH | Server der selbst betriebenen Automatisierung (n8n) | Deutschland | Auftragsverarbeiter |
 
@@ -201,8 +201,8 @@ geschlossen (teils Self-Service-DPA im jeweiligen Konto — Abschluss teilweise 
 gehen wir davon aus, dass als TK-Anbieter (§ 88 TKG) **kein** AVV erforderlich ist — bitte bestätigen.
 
 **5. Drittstaatenübermittlung:**
-Übermittlung in die **USA** bei Vercel, Resend, OpenAI, Google, Vapi, Deepgram. Grundlage: für DPF-zertifizierte
-Empfänger (Vercel, Resend, OpenAI, Google) der **Angemessenheitsbeschluss (Art. 45)**; für Vapi und Deepgram
+Übermittlung in die **USA** bei Vercel, Resend, OpenAI, Google, Vapi, Soniox. Grundlage: für DPF-zertifizierte
+Empfänger (Vercel, Resend, OpenAI, Google) der **Angemessenheitsbeschluss (Art. 45)**; für Vapi und Soniox
 die **EU-Standardvertragsklauseln (Art. 46)** nebst ergänzenden Maßnahmen (TIA in Vorbereitung). Eine frühere
 Sprachsynthese über einen Anbieter in China wurde auf OpenAI umgestellt; eine China-Übermittlung findet
 **nicht mehr** statt.
@@ -281,10 +281,10 @@ Automatisierungs-API-Schlüssels, Aktivierung des Verlaufs-Prunings in der Autom
 
 ## Offene Punkte (unsere Seite, in Umsetzung)
 
-1. Abschluss der noch offenen AVV/DPA (u. a. Resend, Vapi, Deepgram, OpenAI, Google Workspace, Hetzner, Vercel).
+1. Abschluss der noch offenen AVV/DPA: **Resend, Google Workspace, Vercel**. Erledigt (Stand 06.09.2026): Hetzner, OpenAI, Vapi. Soniox ist über den Vapi-DPA als Unterauftragsverarbeiter abgedeckt.
 2. Technische Umsetzung des **Double-Opt-In** für den Newsletter vor tatsächlichem Versand.
 3. Automatisierte Umsetzung des Löschkonzepts (Kalender/Tabellen/Verlaufs-Pruning).
-4. Dokumentation der Transfer-Impact-Assessments (Vapi, Deepgram).
+4. Dokumentation der Transfer-Impact-Assessments (Vapi — deckt Soniox als Unterauftragsverarbeiter mit ab; Resend).
 5. Sicherstellen der KI-Ansage zu Gesprächsbeginn beim Telefonassistenten (Art. 50 KI-VO).
 
 *Diese Aufstellung ist eine Selbstauskunft zum tatsächlichen Verarbeitungsstand und ersetzt keine

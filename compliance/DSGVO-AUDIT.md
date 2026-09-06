@@ -53,7 +53,7 @@ Legende: 🔴 hoch · 🟠 mittel · 🟡 niedrig · ✅ behoben · ⏳ offen (M
 | Newsletter | Resend (US) | Art. 6(1)a | ✅ DSE §8 · ⏳ Double-Opt-In |
 | Chat-Assistent | n8n (Hetzner) → OpenAI, Google | Art. 6(1)b/f | ✅ DSE §9 |
 | Online-Buchung | n8n (Hetzner) → Google; Resend (Notiz) | Art. 6(1)b | ✅ DSE §10 |
-| KI-Telefonassistent | Vapi (US), Deepgram (US), OpenAI (LLM+TTS), easybell (DE), n8n/Hetzner, Google | Art. 6(1)b/f | ✅ DSE §11 (keine Aufzeichnung; nur Metadaten) |
+| KI-Telefonassistent | Vapi (US, Orchestrierung + TTS), Soniox (US, STT via Vapi), OpenAI (LLM), easybell (DE), n8n/Hetzner, Google | Art. 6(1)b/f | ✅ DSE §11 (keine Aufzeichnung; nur Metadaten) |
 
 Cookies/Consent/Analytics/Fonts: keine → **kein Banner nötig**.
 
@@ -64,7 +64,7 @@ Cookies/Consent/Analytics/Fonts: keine → **kein Banner nötig**.
 | Dienst | Zweck | **Speicherort / Land** | Was liegt dort | Drittland | AVV/DPA |
 |---|---|---|---|---|---|
 | **Vapi Inc.** | Voice-Orchestrierung, Telefonie | **USA** | Anruf-Metadaten (Rufnummer, Zeit, Dauer), Logs — **keine Aufzeichnung/Transkripte** (deaktiviert) | kein DPF → SCC+TIA | ⏳ DPA |
-| **Deepgram, Inc.** | Speech-to-Text | **USA** (via Vapi) | Audio → Text (flüchtig, kein Transkript gespeichert) | SCC+TIA | ⏳ via Vapi |
+| **Soniox Inc** | Speech-to-Text | **USA** (via Vapi) | Audio → Text (flüchtig, kein Transkript gespeichert) | SCC+TIA | ✅ über Vapi-DPA (Soniox steht auf der Vapi-Unterauftragsverarbeiterliste) |
 | **OpenAI** | LLM (gpt-4o / gpt-4.1-mini) **+ Sprachsynthese (TTS)** | **IE/USA** | Prompt/Transkript, Antworttext | DPF/SCC, No-Training | ✅ OpenAI Ireland |
 | **easybell GmbH** | SIP-Telefonie | **Deutschland** | Verbindungsdaten | EU | ⏳ AVV bestätigen |
 | **Google (Calendar/Sheets/Gmail)** | Termine, Leads, Bestätigungen | **IE/USA** | Name, E-Mail, Telefon, Termin | DPF/SCC | ⏳ Workspace-AVV |
@@ -76,15 +76,15 @@ Cookies/Consent/Analytics/Fonts: keine → **kein Banner nötig**.
 **Kernaussagen (Antwort auf „wo speichern Vapi/n8n?"):**
 - **Vapi = USA.** Kein DPF; **Aufzeichnung + Transkript deaktiviert** (verifiziert 08.08.) → keine Gesprächsinhalte in den USA gespeichert, nur Anruf-Metadaten + Logging. Live bestätigt: echte Anrufe mit deutschen Rufnummern (zuletzt 07.08.2026) auf `6bb4f397` + Vorlage `0931afea`.
 - **n8n = Hetzner/Deutschland (EU).** Execution-History speichert komplette Payloads → Pruning nötig. Leads laufen real noch über Google Sheets statt EU-Data-Table.
-- **Aktueller Voice-Stack:** STT Deepgram (US) · LLM OpenAI gpt-4o · **TTS OpenAI** · Orchestrierung Vapi (US) · Trunk easybell (DE) · Automatisierung n8n@Hetzner (DE).
+- **Aktueller Voice-Stack (Stand 06.09.2026, im Vapi-Dashboard verifiziert):** STT **Soniox** `stt-rt-v5` (US, via Vapi) · LLM **OpenAI gpt-4.1** · **TTS Vapi** (Stimme „Sid", Vapi-eigen — nicht mehr OpenAI) · Orchestrierung Vapi (US) · Trunk easybell (DE) · Automatisierung n8n@Hetzner (DE).
 
 ---
 
 ## 5. Drittlandtransfer-Landkarte (Art. 44 ff.)
 - **Art. 45 (DPF):** Vercel, Google, OpenAI, Resend (alle DPF-zertifiziert).
-- **Art. 46 (SCC) + TIA:** Vapi (Metadaten), Deepgram (kein DPF).
+- **Art. 46 (SCC) + TIA:** Vapi (Metadaten, Sprachsynthese), Soniox (STT, über Vapi).
 - **China:** entfällt — TTS von MiniMax auf OpenAI umgestellt.
-- **Handlungsbedarf:** TIA für Vapi/Deepgram/Resend dokumentieren.
+- **Handlungsbedarf:** TIA für Vapi/Resend dokumentieren (Vapi deckt Soniox als Unterauftragsverarbeiter mit ab).
 
 ---
 
@@ -134,12 +134,12 @@ Leads 6 Mon. · Termine 12 Mon. · Chatverläufe 6 Mon. · Sprach-Termindaten 6 
 
 **🔴 zuerst**
 1. Vapi: **„Publish"** klicken (Recording-AUS + OpenAI-Stimme live nehmen) und **Vorlage `0931afea`** genauso einstellen (Recording + Transcript AUS).
-2. **AVV/DPA abschließen** mit: Google Workspace, Vercel, Hetzner, OpenAI, Resend, Vapi, Deepgram, easybell (je im Dashboard/per Anfrage — Details unten).
+2. **AVV/DPA abschließen** mit: Google Workspace, Vercel, Resend. Erledigt (Stand 06.09.2026): Hetzner, OpenAI, Vapi; easybell als TK-Anbieter i. d. R. ohne AVV; Soniox über den Vapi-DPA abgedeckt.
 3. **Newsletter-Double-Opt-In** technisch umsetzen, bevor tatsächlich versendet wird.
 
 **🟠 kurzfristig**
 4. **n8n:** Execution-Data-Pruning aktivieren · Leads in EU-Data-Table statt Google Sheets · Live-Google-Konto als **Workspace (mbt)** verifizieren · **n8n-API-Key rotieren**.
-5. **TIA** (Transfer-Impact-Assessment) für Vapi/Deepgram/Resend dokumentieren.
+5. **TIA** (Transfer-Impact-Assessment) für Vapi/Resend dokumentieren.
 6. *(Vertriebs-/Akquise-Agent: derzeit nicht im Angebot — Max 08.08. Bei künftiger Einführung DSGVO/UWG nachholen: Einwilligung B2B-E-Mail (§ 7 UWG), Art.-14-Info an Prospects, Interessenabwägung. Reminder gesetzt.)*
 7. **KI-Ansage** (Art. 50) im Vapi-Prompt/First Message sicherstellen.
 8. **Löschkonzept** umsetzen (n8n/Google-Cleanup gemäß §4-Fristen).
@@ -160,5 +160,5 @@ Leads 6 Mon. · Termine 12 Mon. · Chatverläufe 6 Mon. · Sprach-Termindaten 6 
 - **OpenAI** (LLM+TTS): Self-serve-DPA: https://openai.com/policies/data-processing-addendum/
 - **Resend** (E-Mail): https://resend.com/legal/dpa (DPF-zertifiziert; GDPR-Seite https://resend.com/security/gdpr)
 - **Vapi** (Voice): DPA **nur Enterprise** → Trust Center: https://security.vapi.ai/ (GDPR: https://docs.vapi.ai/security-and-privacy/GDPR). ⚠️ Ohne Enterprise kein unterschriebener DPA — Restrisiko.
-- **Deepgram** (STT): über Vapi (dann via Vapi-DPA abgedeckt); bei eigenem Key DPA per security@deepgram.com, EU-Endpoint api.eu.deepgram.com. Doku: https://developers.deepgram.com/trust-security/data-privacy-compliance
+- **Soniox** (STT, seit 06.09.2026 anstelle von Deepgram): läuft über Vapi und ist damit vom Vapi-DPA gedeckt — Vapi führt Soniox ausdrücklich auf seiner Unterauftragsverarbeiterliste (Trust Center `security.vapi.ai`, Mitteilung nach § 3.2 des Vapi-DPA). Kein eigener AVV nötig, solange kein eigener Soniox-Key im Einsatz ist. Eigene Compliance-Unterlagen: Soniox Console → Security & Compliance.
 - **easybell** (Telefonie): i. d. R. **kein AVV nötig** — TK-Anbieter, § 88 TKG (selbst verantwortlich, nicht Auftragsverarbeiter); AVV nur bei gespeicherter Mailbox/Fax. Info: https://www.easybell.de/hilfe/fragen/vertragsfragen/antwort/benoetige-ich-einen-auftragsverarbeitungsvertrag-avv-von-easybell/

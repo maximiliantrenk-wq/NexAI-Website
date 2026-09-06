@@ -225,7 +225,7 @@
    "items": [
     "Erfolgt eine Verarbeitung durch einen Unterauftragsverarbeiter in einem Drittland, stellt NexAI sicher, dass die Anforderungen der Art. 44 ff. DSGVO eingehalten werden.",
     "Vorrangig stützt sich der Transfer auf einen **Angemessenheitsbeschluss** der Europäischen Kommission, insbesondere das EU-U.S. Data Privacy Framework (DPF), sofern der jeweilige Empfänger zertifiziert ist.",
-    "Hilfsweise – insbesondere wenn keine DPF-Zertifizierung vorliegt (bei den in Anhang 2 gekennzeichneten Empfängern, etwa Vapi und Deepgram (USA), vorsorglich der SCC-Weg) – werden die **EU-Standardvertragsklauseln** (Durchführungsbeschluss (EU) 2021/914), **Modul 3 (Auftragsverarbeiter an Unterauftragsverarbeiter)**, abgeschlossen, ergänzt um erforderliche **Zusatzmaßnahmen** und eine **Transfer-Folgenabschätzung (Transfer Impact Assessment, TIA)**.",
+    "Hilfsweise – insbesondere wenn keine DPF-Zertifizierung vorliegt (bei den in Anhang 2 gekennzeichneten Empfängern, etwa Vapi und Soniox (USA), vorsorglich der SCC-Weg) – werden die **EU-Standardvertragsklauseln** (Durchführungsbeschluss (EU) 2021/914), **Modul 3 (Auftragsverarbeiter an Unterauftragsverarbeiter)**, abgeschlossen, ergänzt um erforderliche **Zusatzmaßnahmen** und eine **Transfer-Folgenabschätzung (Transfer Impact Assessment, TIA)**.",
     "NexAI stellt dem Kunden auf Anfrage Nachweise über die getroffenen Transfergarantien in geeigneter Form zur Verfügung."
    ]
   },
@@ -525,21 +525,21 @@
     [
      "Vapi Inc.",
      "USA",
-     "Voice-Agent-Plattform (Sprachdialog, Telefonie-Orchestrierung)",
+     "Voice-Agent-Plattform (Sprachdialog, Telefonie-Orchestrierung, Sprachsynthese)",
      "Gesprächsinhalte, Metadaten, Rufnummern",
      "EU-SCC Modul 3 + Zusatzmaßnahmen + TIA (kein DPF)"
     ],
     [
-     "Deepgram, Inc.",
+     "Soniox Inc",
      "USA",
-     "Spracherkennung (Speech-to-Text)",
+     "Spracherkennung (Speech-to-Text); als Unterauftragsverarbeiter von Vapi eingesetzt",
      "Audio-/Sprachdaten, daraus erzeugte Transkripte, Metadaten",
-     "EU-SCC Modul 3 + Zusatzmaßnahmen + TIA (kein DPF)"
+     "EU-SCC Modul 3 + Zusatzmaßnahmen + TIA (über Vapi-DPA)"
     ],
     [
      "OpenAI Ireland Ltd. / OpenAI, L.L.C.",
      "EU / USA",
-     "Sprachmodell / KI-Verarbeitung (Textverstehen, Antwortgenerierung) und Sprachsynthese (Text-to-Speech)",
+     "Sprachmodell / KI-Verarbeitung (Textverstehen, Antwortgenerierung)",
      "Gesprächs-/Textinhalte, Metadaten",
      "DPF, hilfsweise EU-SCC Modul 3; No-Training-Konfiguration"
     ],
