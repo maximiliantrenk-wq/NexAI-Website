@@ -75,12 +75,12 @@ Empfänger-Kürzel (Drittland-Mechanismus): **Resend** (US, **DPF** — hilfswei
 
 ### A11 Portal — Nutzerkonten, Zugang und Protokollierung
 - **Zweck:** Anmeldung, Rechteverwaltung, Sicherheitsprotokoll, Systemmitteilungen, Push-Benachrichtigungen. **Betroffene:** Portalnutzer (Mitarbeitende, Vertriebspartner, Kunden, eine Privatperson). **Daten:** `users` (E-Mail, Passwort-Hash, Rolle, Name, Sprache, Rechte-Schlüssel, Profilbild, Akzentfarbe, Kalender-Abo-Kennung, letzte Anmeldung, Anlegender); `sessions` (Token-Hash, Ablauf); `audit_log` (handelnder Nutzer, Aktion, betroffener Datensatz, Zusatzangaben); `announcements`; `push_subscriptions` (Endpunkt, Schlüssel `p256dh`/`auth`).
-- **Rechtsgrundlage:** Art. 6(1)b (Nutzungs-/Vertragsverhältnis), Art. 6(1)f (Protokollierung, Missbrauchsschutz). **Empfänger:** Hetzner (DE). **Für Web-Push zusätzlich die Push-Infrastruktur des jeweiligen Browserherstellers** (Google, Apple, Mozilla — i. d. R. **US**); übermittelt werden Endpunkt und Nachrichteninhalt der Benachrichtigung. **Drittland:** nur Web-Push (US). **Löschung:** mit dem Konto; Sitzungen mit Ablauf; **für das Protokoll ist keine Frist festgelegt**.
+- **Rechtsgrundlage:** Art. 6(1)b (Nutzungs-/Vertragsverhältnis), Art. 6(1)f (Protokollierung, Missbrauchsschutz). **Empfänger:** Hetzner (DE). **Für Web-Push zusätzlich die Push-Infrastruktur des jeweiligen Browserherstellers** (Google, Apple, Mozilla — i. d. R. **US**); übermittelt werden Endpunkt und Nachrichteninhalt der Benachrichtigung. **Drittland:** nur Web-Push (US). **Löschung:** Konto- und Push-Daten mit dem Konto (Push-Abo zusätzlich, sobald der Endpunkt ungültig wird); Sitzungen mit Ablauf; **Sicherheitsprotokoll 12 Monate** ab Eintrag; Mitteilungen 12 Monate nach Veröffentlichung.
 - **Besonderheiten:** **Keine Zwei-Faktor-Anmeldung** — im Schema und im Code nicht vorhanden (geprüft 06.09.2026). Steht als P1 in den Datenschutz-To-dos und ist hier als offene Maßnahme zu führen, nicht als vorhandene.
 
 ### A12 Portal — Vertriebspartner: Stammdaten, Karrieresystem, Provisionen
 - **Zweck:** Verwaltung selbstständiger Vertriebspartner, Abbildung des Karrieresystems, Berechnung und Nachverfolgung von Provisionen. **Betroffene:** Vertriebspartner (Setter, Closer, Vertriebs-/Kommunikationsleiter, Empfehlungsgeber). **Daten:** `partners` (Partnernummer, Name, Firma, E-Mail, Telefon, Anschrift, **Steuernummer/USt-IdNr., IBAN, BIC, Bankname**, Provisionssätze, Funktion und Stufe, Senior-Zeitraum, Beginn der Probezeit, zugeordneter Closer, CRM-Verweis); `commissions` (Zeitraum, Bemessungsgrundlage, Satz, erwarteter Betrag, Status); `documents` (Partnerunterlagen: Kategorie, Datei, Hochladender).
-- **Rechtsgrundlage:** Art. 6(1)b (Vertriebspartnervertrag), Art. 6(1)c (steuer-/handelsrechtliche Pflichten). **Empfänger:** Hetzner (DE); Zahlungsdaten mittelbar Bank/Steuerberater. **Drittland:** keines. **Löschung:** mit Vertragsende, soweit keine gesetzlichen Fristen entgegenstehen; Abrechnungsrelevantes über A14.
+- **Rechtsgrundlage:** Art. 6(1)b (Vertriebspartnervertrag), Art. 6(1)c (steuer-/handelsrechtliche Pflichten). **Empfänger:** Hetzner (DE); Zahlungsdaten mittelbar Bank/Steuerberater. **Drittland:** keines. **Löschung:** mit Vertragsende, soweit keine gesetzlichen Fristen entgegenstehen; **Bankverbindung, sobald die letzte Provision abgerechnet und gezahlt ist**; Abrechnungsrelevantes über A14 (8 Jahre).
 - **Besonderheiten:** **Bankverbindungen liegen im Portal.** Stufe, Senior-Status und Probezeit sind **leistungsbezogene Daten** über Selbstständige — kein Beschäftigtendatenschutz, aber erhöhte Sorgfalt. Die Upline-Beziehung (`closerPartnerId`) macht Leistung innerhalb der Struktur sichtbar.
 
 ### A13 Portal — Kunden- und Auftragsverwaltung
@@ -95,23 +95,46 @@ Empfänger-Kürzel (Drittland-Mechanismus): **Resend** (US, **DPF** — hilfswei
 
 ### A15 Portal — Leadlisten, Lead-Bearbeitung und Anrufdokumentation
 - **Zweck:** Verteilung und Bearbeitung von Akquise-Leads, Dokumentation der Anrufversuche und Ergebnisse. **Betroffene:** **Dritte** — angesprochene Unternehmen und deren Ansprechpartner (B2B); zusätzlich die bearbeitenden Vertriebspartner. **Daten:** `lead_lists` (Name, Beschreibung, Ersteller, **Eigentümer** — private Listen); `leads` (Firma, Ansprechpartner, Telefon, E-Mail, Website, Ort, **Notiz und Gesprächsnotiz**, Status, Versuche, Wiedervorlage, letzter Anruf und Anrufer, Beanspruchung, Umwandlung in einen Kunden); `lead_calls` (Lead, **Nutzer und Partner**, Ergebnis, erreicht ja/nein, Zeitpunkt, **Dauer**, verknüpfter Termin).
-- **Rechtsgrundlage:** Art. 6(1)f (Direktansprache im B2B-Umfeld, Dokumentation) — **Abwägung dokumentieren**; § 7 UWG für die Ansprache selbst ist gesondert zu beachten. **Empfänger:** Hetzner (DE), **NexAI-CRM** (self-hosted DE). **Drittland:** keines. **Löschung:** **keine Frist festgelegt** → nachzuholen.
+- **Rechtsgrundlage:** Art. 6(1)f (Direktansprache im B2B-Umfeld, Dokumentation) — **Abwägung dokumentieren**; § 7 UWG für die Ansprache selbst ist gesondert zu beachten. **Empfänger:** Hetzner (DE), **NexAI-CRM** (self-hosted DE). **Drittland:** keines. **Löschung:** **12 Monate ab dem letzten Kontaktversuch** (`lastCalledAt`, ersatzweise Anlagedatum) — für den Lead **und** die zugehörige Anrufdokumentation. Wird der Lead zum Kunden, geht er in A13 über und folgt dort der Vertragsfrist.
 - **Besonderheiten:** Betroffene sind hier **nicht Vertragspartner**, sondern Angesprochene — Informationspflicht nach **Art. 14 DSGVO** und Herkunft der Daten sind zu klären. `lead_calls` erfasst zugleich, **wer wie lange wen angerufen hat** — Leistungsdaten über Selbstständige.
 
 ### A16 Portal — Termine, Kalender und Kalenderfreigaben
 - **Zweck:** Terminverwaltung, Erinnerungen, Freigabe des eigenen Kalenders an andere Portalnutzer, Kalender-Abo und Google-Abgleich. **Betroffene:** Portalnutzer, Kunden und deren Ansprechpartner, eingeladene Gäste. **Daten:** `appointments` (Zuständiger, Ersteller, Titel, Kunde, **Ansprechpartner mit E-Mail und Telefon**, Zeitraum, Status, Kategorie, Produkt, **Besprochenes und Notizen**, Ort, Sichtbarkeit, Herkunft, Google-Ereigniskennung, Erinnerung, Serie); `appointment_guests` (Nutzer, E-Mail); `calendar_shares` (Eigentümer, Betrachter, Status); `google_connections` (**Google-Adresse, verschlüsseltes Refresh-Token**).
-- **Rechtsgrundlage:** Art. 6(1)b, Art. 6(1)f. **Empfänger:** Hetzner (DE); **Google Ireland Ltd / Google LLC** bei verbundenem Kalender. **Drittland:** IE/US — **Art. 45 (DPF, Google LLC aktiv zertifiziert, geprüft 06.09.2026)**, ergänzend SCC. **Löschung:** keine Frist festgelegt → nachzuholen.
+- **Rechtsgrundlage:** Art. 6(1)b, Art. 6(1)f. **Empfänger:** Hetzner (DE); **Google Ireland Ltd / Google LLC** bei verbundenem Kalender. **Drittland:** IE/US — **Art. 45 (DPF, Google LLC aktiv zertifiziert, geprüft 06.09.2026)**, ergänzend SCC. **Löschung:** **12 Monate nach Terminende**; Termine aus der **Website- oder Telefonbuchung** (`source`) jedoch **6 Monate** — diese Frist ist in der Datenschutzerklärung öffentlich zugesagt und geht vor. Kalenderfreigaben mit dem Widerruf oder dem Konto; Google-Verbindung samt Token beim Trennen der Verbindung oder mit dem Konto.
 - **Besonderheiten:** Kalenderfreigaben machen Termininhalte **anderen Portalnutzern** sichtbar; die Sichtbarkeitsstufe je Termin steuert das. Das Google-Refresh-Token liegt verschlüsselt.
 
 ### A17 Portal — Interne Kommunikation und Support
 - **Zweck:** Support-Vorgänge mit Kunden, Team-Kanal, Direktnachrichten zwischen Portalnutzern. **Betroffene:** Portalnutzer, Kunden-Ansprechpartner. **Daten:** `threads` (Kunde, Ersteller, Betreff, Status); `messages` (Absender und dessen Rolle, **Nachrichtentext, Dateianhang**, Lesevermerke); `channel_messages` (Absender, Name, Rolle, Text); `direct_messages` (Absender, Empfänger, **Text**, Lesevermerk).
-- **Rechtsgrundlage:** Art. 6(1)b (Support), Art. 6(1)f (interne Zusammenarbeit). **Empfänger:** Hetzner (DE). **Drittland:** keines. **Löschung:** **keine Frist festgelegt** → nachzuholen.
+- **Rechtsgrundlage:** Art. 6(1)b (Support), Art. 6(1)f (interne Zusammenarbeit). **Empfänger:** Hetzner (DE). **Drittland:** keines. **Löschung:** **Support-Vorgänge 24 Monate nach Abschluss** des Vorgangs (Nachweis über die Gewährleistung hinweg); **Team-Kanal und Direktnachrichten 12 Monate** ab Nachricht.
 - **Besonderheiten:** **Direktnachrichten sind private Kommunikation** zwischen Nutzern. Ein Portal-Admin hat über den Datenbankzugang technisch Zugriff; eine Regelung dazu gibt es nicht. Der Lernbereich (`privat`) ist von Team-Kanal, Direktnachrichten und Support ausdrücklich ausgeschlossen.
 
 ### A18 Portal — Wissens-Bibliothek
 - **Zweck:** Bereitstellung von Schulungs- und Vertriebsunterlagen. **Betroffene:** hochladende Nutzer; Personen, die in Unterlagen vorkommen. **Daten:** `library_folders` (Name, Beschreibung, Sichtbarkeit, Ersteller); `library_files` (Titel, Beschreibung, Datei, Hochladender, **Eigentümer** — private Dateien seit 03.09.2026).
-- **Rechtsgrundlage:** Art. 6(1)f (Bereitstellung von Arbeitsmitteln). **Empfänger:** Hetzner (DE). **Drittland:** keines. **Löschung:** durch den Eigentümer; keine Frist.
+- **Rechtsgrundlage:** Art. 6(1)f (Bereitstellung von Arbeitsmitteln). **Empfänger:** Hetzner (DE). **Drittland:** keines. **Löschung:** durch den Eigentümer oder mit dem Konto. **Bewusst ohne Regelfrist:** der Zweck — Bereitstellung von Arbeitsmitteln — besteht fort, solange die Unterlage genutzt wird. Stattdessen **jährliche Sichtung**, ob Unterlagen noch gebraucht werden.
 - **Besonderheiten:** Private Dateien sind nur für den Hochladenden sichtbar, auch nicht für die Leitung. Dateien liegen außerhalb des Web-Wurzelverzeichnisses und werden über eine geprüfte Ausgabe-Route ausgeliefert.
+
+### Löschfristen im Überblick
+
+*Festgelegt am 06.09.2026. Ausschlaggebend ist immer die kürzeste anwendbare Frist; gesetzliche Aufbewahrungspflichten gehen vor.*
+
+| Eintrag | Daten | Frist | Grundlage |
+|---|---|---|---|
+| A11 | Konto, Push-Abo | mit dem Konto | Zweckfortfall |
+| A11 | Sitzungen | mit Ablauf | Zweckfortfall |
+| A11 | **Sicherheitsprotokoll** | **12 Monate** | Art. 6(1)f, Nachvollziehbarkeit |
+| A12 | Partner-Stammdaten | Vertragsende | Zweckfortfall |
+| A12 | **Bankverbindung** | **nach letzter Provisionszahlung** | Zweckfortfall |
+| A13 | Kunden, Aufträge | Vertragsende | Zweckfortfall |
+| A14 | **Rechnungen** | **8 Jahre** ab Jahresschluss | § 14b UStG, § 147 AO — *technisch erzwungen* |
+| A15 | **Leads + Anrufdoku** | **12 Monate** ab letztem Kontaktversuch | Art. 5(1)e |
+| A16 | Termine | **12 Monate** nach Terminende | Art. 5(1)e |
+| A16 | **gebuchte Termine** | **6 Monate** | **öffentliche Zusage in der DSE** |
+| A17 | Support-Vorgänge | **24 Monate** nach Abschluss | Nachweis/Gewährleistung |
+| A17 | Team-Kanal, Direktnachrichten | **12 Monate** | Art. 5(1)e |
+| A18 | Bibliothek | keine Regelfrist, **jährliche Sichtung** | Zweck besteht fort |
+| A10 | Lernbereich | durch die Nutzerin / mit dem Konto | Zweckfortfall |
+
+> ⚠️ **Festgelegt ist nicht durchgesetzt.** Technisch erzwungen ist bislang **nur A14** (`nexai-portal/lib/retention.ts`). Für alle übrigen Fristen fehlt ein Löschlauf — bis der existiert, sind diese Werte eine Selbstverpflichtung auf dem Papier. → offener Punkt.
 
 ## Teil B — Als Auftragsverarbeiter für Kunden (Art. 30 Abs. 2)
 
@@ -134,7 +157,7 @@ Empfänger-Kürzel (Drittland-Mechanismus): **Resend** (US, **DPF** — hilfswei
 
 *Das Portal ist mit A11–A18 nachgetragen (06.09.2026). Beim Eintragen sind folgende Punkte aufgefallen — sie stehen hier, damit sie nicht in den Einträgen untergehen.*
 
-**🔴 Fehlende Löschfristen.** Für **A15 (Leads und Anrufdokumentation)**, **A17 (interne Kommunikation)** und **A16 (Termine)** ist **keine Frist festgelegt**; auch das Sicherheitsprotokoll in A11 wächst unbegrenzt. Art. 5(1)e DSGVO verlangt eine Grenze. Einzig A14 (Rechnungen, 8 Jahre) ist technisch erzwungen — das ist der Maßstab für die übrigen.
+**🔴 Löschfristen sind festgelegt, aber nicht durchgesetzt.** Die Fristen stehen seit 06.09.2026 in der Übersicht oben (Entscheidung Max: Leads 12 Monate, Support 24 / intern 12, Termine 12 bzw. 6). **Technisch erzwungen ist weiterhin nur A14.** Ohne einen wiederkehrenden Löschlauf für A11, A15, A16 und A17 sind die Werte eine Selbstverpflichtung ohne Wirkung — und eine dokumentierte, nicht eingehaltene Frist ist gegenüber der Aufsicht schlechter als gar keine.
 
 **🔴 Keine eigenen Datenschutzhinweise für das Portal.** Die Website-DSE sagt für app.nex-a-i.com eigene Hinweise zu. Es existiert nur ein **unveröffentlichter Entwurf für den Lernbereich**; für Partner, Kunden und Mitarbeitende gibt es nichts.
 
