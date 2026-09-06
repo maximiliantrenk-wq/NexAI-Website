@@ -13,7 +13,7 @@
 
 2. ✅ **Geklärt (11.08.): Google Workspace** — mbt@nex-a-i.com läuft auf Workspace → das Cloud Data Processing Addendum ist **automatisch in Kraft**, AVV vorhanden. Nur noch bestätigen, dass der **Buchungskalender** (n8n → Google Calendar) **derselbe** Workspace-Account ist (nicht ein separates privates @gmail).
 
-3. **Deepgram: Training-Opt-out verlangen.** Deepgram nutzt Kundendaten **per Default zur Modellverbesserung**. Beim AVV-Anfordern ausdrücklich die **Opt-out-Variante** verlangen — sonst widerspricht es der DSE-Zusage „keine Nutzung zu Trainingszwecken".
+3. ✅ **Erledigt (06.09.2026): Deepgram entfällt.** Die Spracherkennung läuft seit der Assistenten-Umstellung über **Soniox** (`stt-rt-v5`), nicht mehr über Deepgram — im Vapi-Dashboard verifiziert. Damit ist auch die frühere Warnung zum Deepgram-Training-Default gegenstandslos. Soniox steht auf der **Vapi-Unterauftragsverarbeiterliste** (Trust Center, Mitteilung nach § 3.2 des Vapi-DPA) und ist über den Vapi-DPA abgedeckt; ein eigener AVV ist nur nötig, wenn NexAI einen eigenen Soniox-Key einsetzt. Soniox speichert Audio und Transkripte nach eigener Angabe nicht, sofern kein Speicherdienst ausdrücklich angefordert wird.
 
 ---
 
@@ -23,11 +23,11 @@
 |---|----------|-------|-----|----------------|---------|:---:|
 | 1 | ~~Vercel~~ → **Hetzner** | Website-Hosting (jetzt DE) | DE | keine Übermittlung | durch Hetzner-AVV (#5) | ✅ |
 | 2 | **Resend** | E-Mail-Versand (Formulare, Newsletter-DOI) | US | DPF **+** SCC | Auto über ToS; PDF im Dashboard | ☐ |
-| 3 | **OpenAI** (Ireland Ltd) | Chat-Sprachmodell, Voice-LLM + TTS | IE/US | **SCC** (kein DPF) + TIA | Self-Service-Formular im Dashboard | ☐ |
+| 3 | **OpenAI** (Ireland Ltd) | Chat-Sprachmodell, Voice-LLM (**keine TTS mehr**) | IE/US | **SCC** (kein DPF) + TIA | Self-Service-DPA | ✅ |
 | 4 | **Google** | Google Calendar (Terminverwaltung) | IE/US | DPF **+** SCC | Auto (nur Workspace/GCP) | ☐ |
-| 5 | **Hetzner** | Server für n8n **+** NexAI-CRM | DE | keine Übermittlung | Klick im Kundenaccount | ☐ |
-| 6 | **Vapi** | Voice-Orchestrierung/Telefonie | US | **SCC** (kein DPF) + TIA | Basis über ToS; signiert = Enterprise | ☐ |
-| 7 | **Deepgram** | Sprache→Text (STT) | US | **SCC** (kein DPF) + TIA | Per E-Mail anfordern (Opt-out!) | ☐ |
+| 5 | **Hetzner** | Server für n8n **+** NexAI-CRM | DE | keine Übermittlung | AVV im Kundenpanel | ✅ |
+| 6 | **Vapi** | Voice-Orchestrierung/Telefonie **+ Sprachsynthese** | US | **SCC** (kein DPF) + TIA | DPA abgeschlossen | ✅ |
+| 7 | **Soniox** | Sprache→Text (STT), **über Vapi** | US | **SCC** (kein DPF) + TIA | über Vapi-DPA abgedeckt | ✅ |
 | 8 | **easybell** | SIP-Telefonanbindung | DE | keine Übermittlung | i. d. R. **kein AVV nötig** (s. u.) | ☐ |
 
 **Selbst betrieben — kein AVV nötig:** n8n und das NexAI-CRM (inkl. Postgres/Redis) laufen **self-hosted auf dem Hetzner-Server**. Kein Dritter verarbeitet dort → kein eigener AVV; der **Hetzner-AVV (#5)** deckt den Server ab.
@@ -78,14 +78,15 @@
 - **AVV:** Keine öffentliche Seite; im ToS eingebunden — https://vapi.ai/terms-of-service · Trust Center: https://security.vapi.ai/ · GDPR: https://docs.vapi.ai/security-and-privacy/GDPR
 - **Abschluss:** Basis-DPA **automatisch über die ToS**; eine **gegengezeichnete DPA gibt es nur für Enterprise** (über das Trust Center anfragen). Für ein signiertes Art.-28-Dokument → Enterprise/Trust-Center-Weg.
 - **⚠️ Transfer:** **NICHT DPF** → **SCC-only** → **TIA nötig**. Subprozessor-Liste ist hinter dem Trust-Center-Login. Ein „EU-Region"-Schalter garantiert kein EU-only-Processing.
-- **Status:** ☐ offen — _Signierte DPA über Trust Center anfragen; bis dahin ToS-Basis dokumentieren._
+- **Status:** ✅ **erledigt (06.09.2026)** — DPA abgeschlossen (Max). Das Trust Center führt **Soniox** als Unterauftragsverarbeiter (Mitteilung nach § 3.2 des DPA); **ElevenLabs steht nicht darauf** — die eingesetzte Stimme „Sid" ist eine Vapi-eigene Stimme, kein dritter Empfänger.
 
-### 7. Deepgram, Inc. (US) — Spracherkennung (STT)
-- **Verarbeitet:** Audio → Text (Sprachinhalt, transient). DSE §11.
-- **AVV:** Keine öffentliche Seite; **per E-Mail anfordern** an **security@deepgram.com** · Subprozessoren (öffentlich): https://deepgram.com/privacy/subprocessors
-- **Abschluss:** Nicht klick-basiert — DPA anfragen. **⚠️ Ausdrücklich die Training-Opt-out-Variante verlangen** (Default = Modelltraining auf euren Daten, s. Punkt 3).
-- **Transfer:** **NICHT DPF** → **SCC-only** → **TIA nötig**. EU-Endpunkt `api.eu.deepgram.com` existiert, Subprozessoren bleiben aber teils US.
-- **Status:** ☐ offen — _security@deepgram.com anschreiben, Opt-out-DPA anfordern._
+### 7. Soniox Inc (US) — Spracherkennung (STT)
+_Ersetzt Deepgram; Umstellung im Vapi-Assistenten, am 06.09.2026 im Dashboard verifiziert._
+- **Sitz:** 1045 Helm Ln, Foster City, CA 94404, USA.
+- **Verarbeitet:** Audio → Text (Sprachinhalt, transient). DSE §11. Soniox speichert nach eigener Angabe weder Audio noch Transkripte, sofern kein Speicherdienst ausdrücklich angefordert wird.
+- **AVV:** **kein eigener nötig** — Soniox wird von Vapi gestellt und steht auf der **Vapi-Unterauftragsverarbeiterliste** (Trust Center `security.vapi.ai`, Mitteilung nach § 3.2 des Vapi-DPA). Damit greift der Vapi-DPA (#6). Eigene Unterlagen (DPA, Subprozessoren, SOC 2 Type 2, ISO 27001) nur bei eigenem Soniox-Key nötig: Soniox Console → Security & Compliance.
+- **Transfer:** DPF-Zertifizierung **nicht belegt** → konservativ **SCC** über den Vapi-Weg; die TIA für Vapi deckt Soniox mit ab.
+- **Status:** ✅ über Vapi-DPA abgedeckt — _offen bleibt nur, ob Vapi für uns das EU- oder das US-Deployment nutzt (Soniox wird für beide angeboten)._
 
 ### 8. easybell GmbH (DE) — SIP-Telefonanbindung
 - **Verarbeitet:** Telefonanbindung/SIP der Nummer +4979593100191.
@@ -97,13 +98,13 @@
 ---
 
 ## TIA-Pflicht für die SCC-only-Drei
-**OpenAI, Vapi, Deepgram** laufen ohne DPF-Angemessenheitsbeschluss **nur über SCCs**. Für jeden dieser drei gehört eine kurze **Übermittlungs-Folgenabschätzung (Transfer Impact Assessment, TIA)** dokumentiert und in die VVT verlinkt (US-Rechtslage, ergänzende Maßnahmen wie Verschlüsselung/Datenminimierung/keine Aufzeichnung). → Follow-up nach Abschluss der DPAs.
+**OpenAI, Vapi** (und über Vapi auch **Soniox**) laufen ohne DPF-Angemessenheitsbeschluss **nur über SCCs**. Für jeden dieser drei gehört eine kurze **Übermittlungs-Folgenabschätzung (Transfer Impact Assessment, TIA)** dokumentiert und in die VVT verlinkt (US-Rechtslage, ergänzende Maßnahmen wie Verschlüsselung/Datenminimierung/keine Aufzeichnung). → Follow-up nach Abschluss der DPAs.
 
 ## Gesondert prüfen (kein Website-Subprozessor)
 - **Explorium** (Datenprovider für Lead-Recherche) steht in der VVT, ist aber ein **eingehender Datenlieferant**, kein Website-Auftragsverarbeiter. Eigene Rechtsgrundlage/Vereinbarung (Controller-Controller bzw. Explorium-Vertrag/DPA) separat prüfen — gehört **nicht** in die öffentliche Website-DSE.
 
 ## Definition of Done
-- [ ] Google-Konto (Workspace ✓) · Deepgram-Opt-out geklärt (Vercel-Tarif entfällt — Website auf Hetzner umgezogen)
-- [ ] Alle 8 Status-Häkchen auf ☑ (bzw. „nicht nötig" belegt bei easybell)
-- [ ] TIA für OpenAI/Vapi/Deepgram dokumentiert + in VVT verlinkt
+- [x] Google-Konto (Workspace ✓) · Deepgram entfällt (durch Soniox ersetzt) · Vercel-Tarif entfällt (Website auf Hetzner umgezogen)
+- [ ] Alle 8 Status-Häkchen auf ☑ — offen nur noch **Resend**, **Google**, **easybell** („nicht nötig" zu belegen)
+- [ ] TIA für OpenAI/Vapi dokumentiert + in VVT verlinkt (Vapi-TIA deckt Soniox mit ab)
 - [ ] Ausgeführte AVV-PDFs abgelegt (Resend, OpenAI, Hetzner; Google per Verweis)
