@@ -50,6 +50,21 @@ Empfänger-Kürzel (Drittland-Mechanismus): **Resend** (US, **DPF** — hilfswei
 - **Zweck:** Gewinnung und Auswahl selbstständiger Vertriebspartner, Anbahnung eines Vertriebspartnervertrags, Auswertung der Bewerbungskanäle. **Betroffene:** Bewerber (Selbstständige). **Daten:** Name, E-Mail, Telefon, gewünschte Rolle, Vertriebserfahrung, Verfügbarkeit, optional Profil-Link/Nachricht, Sprache, Zeitpunkt; Herkunft des Seitenaufrufs (ref/UTM, Einstiegsseite, Referrer-Domain; sessionStorage, kein Cookie); IP kurzzeitig im RAM (Ratenlimit).
 - **Rechtsgrundlage:** Art. 6(1)b (Anbahnung), Art. 6(1)f (Kanalauswertung, Missbrauchsschutz). **Empfänger:** Resend (Eingangsbestätigung + interne Mail, US/DPF), **NexAI-CRM (self-hosted DE)** (`source = website-vertriebspartner`), bei Terminbuchung A5, nach Vertragsschluss Partner-Portal app.nex-a-i.com. **Drittland:** US (DPF/SCC) nur Resend. **Löschung:** 6 Monate nach Abschluss des Verfahrens (§ 15 Abs. 4 AGG, § 6 Abs. 3 AGG); bei Vertragsschluss Übergang in A8. **Besonderheit:** keine automatisierte Entscheidung, kein AI-Scoring; DSE Abschnitt 12.
 
+### A10 NexAI Study — privater Lernbereich im Portal
+- **Zweck:** Bereitstellung eines persönlichen KI-Lernassistenten für **eine einzelne private Nutzerin** im Portal (app.nex-a-i.com, Zweig `/study`): Aufbereitung selbst hochgeladener Lernunterlagen zu Lernfassungen, Vorlesen, Abfragen, Fortschrittsmessung. Kein geschäftlicher Zweck, keine Verbindung zu Kunden-, Lead- oder CRM-Daten.
+- **Betroffene:** die Nutzerin selbst; **mittelbar Dritte**, die in hochgeladenen Unterlagen namentlich vorkommen können.
+- **Daten:** Konto (Name, E-Mail, Passwort-Hash, letzte Anmeldung); **hochgeladene Dateien** (PDF, Word, PowerPoint, Text, Markdown, Bilder bis 50 MB; Original bleibt unverändert); **daraus erzeugt**: ausgelesener Text, Gliederung, sechs Lernfassungen, Sprachaufnahmen, Karteikarten, Prüfungsfragen, Antworten samt Bewertung, Lernchat, Markierungen; Sicherheitsprotokoll (nur die **Tatsache** der Anmeldung, keine Lerninhalte).
+- **Rechtsgrundlage:** Art. 6(1)b (Nutzungsverhältnis) — *anwaltlich zu bestätigen, siehe Pflegehinweise*. **Empfänger:** **Hetzner** (DE, Server — Konto, Dateien, Aufnahmen, erzeugte Inhalte); **OpenAI Ireland Ltd** (Sprachmodell, Abschreiben von Scans/Fotos, Sprachsynthese), Verarbeitung durch OpenAI L.L.C. (US) möglich. **Drittland:** USA über OpenAI → **Art. 46 SCC** (OpenAI ist **nicht** DPF-zertifiziert, geprüft 06.09.2026) → [TIA](TIA-OpenAI-Drittlandtransfer.md). **Löschung:** **keine Frist** — Löschung durch die Nutzerin oder mit dem Konto; dann Datensätze **und** Dateien.
+- **Besonderheiten:**
+  - **Art. 9 nicht ausgeschlossen.** Die Nutzerin lädt beliebige Unterlagen hoch; Gesundheits- oder andere besondere Daten sind technisch nicht verhindert. Sie verlassen in diesem Fall mit der Verarbeitung die EU. Einziger Schutz ist der Hinweis in der Datenschutzerklärung.
+  - **Nur Scans und Fotos gehen als Bild an das Modell.** Reine Textformate (PDF mit Textebene, Word, PowerPoint, Text, Markdown) werden auf dem eigenen Server ausgelesen und nicht übermittelt.
+  - **Kein Training** auf den über die Schnittstelle übermittelten Daten.
+  - **Trennung zum Geschäftsbetrieb:** eigener Routenbaum, eigene Rolle `privat`, jede Tabelle mit `owner_user_id`. Geschäftskonten erreichen den Lernbereich nicht, das `privat`-Konto keinen Geschäftsbereich. **Ehrliche Grenze:** ein Portal-Admin kann das Passwort zurücksetzen und sich damit anmelden — Vertraulichkeit *gegen* den Betreiber besteht nicht.
+  - **Keine automatisierte Entscheidung** im Sinne von Art. 22; Bewertungen im Prüfungstraining haben keine rechtliche Wirkung.
+  - **Datenschutzhinweis liegt als Entwurf vor** (`nexai-portal/docs/datenschutz-study-ENTWURF.md`), ist **noch nicht veröffentlicht**.
+
+---
+
 ## Teil B — Als Auftragsverarbeiter für Kunden (Art. 30 Abs. 2)
 
 **Kategorien von Verarbeitungen je Kunde (Verantwortlicher = Kunde):** Betrieb der beauftragten KI-Agenten. Details je Auftrag im Auftragsformular; Rollen in AVV §15.
@@ -66,6 +81,11 @@ Empfänger-Kürzel (Drittland-Mechanismus): **Resend** (US, **DPF** — hilfswei
 **Allgemeine TOMs:** siehe AVV Anhang 1. **Drittlandgarantien:** DPF/SCC+TIA je Subunternehmer (AVV Anhang 2). **Grundsatz Nichtspeicherung**, Aufzeichnung/Transkription standardmäßig aus. **Besondere Kategorien (Art. 9):** nicht Gegenstand (AVV §3) — bei sensiblen Branchen Sensitivitäts-Riegel + juristische Prüfung.
 
 ---
+
+## Bekannte Lücken dieses Verzeichnisses
+
+- **Das Partner-/Kundenportal (app.nex-a-i.com) fehlt als eigene Verarbeitungstätigkeit.** Es kommt bislang nur in A9 als Ziel nach Vertragsschluss vor. Tatsächlich verarbeitet es Partner- und Kundenstammdaten, Leads, Rechnungen und Provisionen, Kalender, Direktnachrichten und Karrieresystem-Daten. **A10 deckt ausdrücklich nur den Lernbereich ab, nicht das Portal selbst.** → nachzutragen.
+- **Rechtsgrundlage von A10** (Art. 6(1)b) ist eine vorläufige Einordnung und vom Anwalt zu bestätigen.
 
 ## Pflegehinweise
 - Bei **neuem Subunternehmer**: hier + AVV Anhang 2 ergänzen, Kunden 14 Tage vorab informieren (AVV §9).
