@@ -42,8 +42,8 @@ Die Website ist **zustandslos** (keine eigene Datenbank) und reicht nur durch. C
 | Empfänger | Funktion | Sitz | Rolle | AVV-Status |
 |---|---|---|---|---|
 | **Hetzner Online GmbH** | Server/Compute/Storage — **alle CRM-Daten liegen hier** (PostgreSQL 16, Redis 7, Backups) | **DE** (Falkenstein/Nürnberg) | Auftragsverarbeiter | ✅ AVV im Kundenpanel |
-| **Vapi, Inc.** | Voice-Orchestrierung (Anruf→Kontakt/Call) | US | Unterauftragsverarbeiter | ⏳ nur Enterprise-DPA; Restrisiko |
-| **Deepgram, Inc.** | Speech-to-Text (via Vapi) | US | Unterauftragsverarbeiter | ⏳ via Vapi |
+| **Vapi, Inc.** | Voice-Orchestrierung (Anruf→Kontakt/Call) | US | Unterauftragsverarbeiter | ✅ DPA abgeschlossen |
+| ~~**Deepgram, Inc.**~~ | ~~Speech-to-Text (via Vapi)~~ | ~~US~~ | — | **nicht mehr im Einsatz** (Stand 06.09.2026) |
 | **OpenAI** | LLM + TTS (via Vapi) | IE/US | Unterauftragsverarbeiter | ✅ Self-Serve-DPA |
 | **easybell GmbH** | SIP-Telefonie | **DE** | TK-Anbieter (§ 88 TKG) | i. d. R. kein AVV nötig |
 | **SMTP-Versand (Alerting)** | System-/Fehler-Benachrichtigungen an die Gesellschafter | je Provider | Auftragsverarbeiter | ⏳ zu klären, welcher SMTP |
@@ -72,7 +72,7 @@ Die Website ist **zustandslos** (keine eigene Datenbank) und reicht nur durch. C
 - **CRM & Portal-Kerndaten:** liegen **ausschließlich in Deutschland** (Hetzner) → keine Drittlandübermittlung des Datenbestands.
 - **US-Übermittlungen** entstehen nur an den o. g. Diensten:
   - **DPF / Art. 45** (Angemessenheitsbeschluss): Vercel, Resend, OpenAI, Google.
-  - **SCC / Art. 46 + TIA**: Vapi, Deepgram (kein DPF).
+  - **SCC / Art. 46 + TIA**: Vapi (kein DPF). Deepgram ist nicht mehr im Einsatz.
 - **China entfällt** — die frühere Sprachsynthese über MiniMax wurde auf OpenAI umgestellt.
 - **Web-Push:** Endpoints/Zustellung laufen über die Push-Infrastruktur des jeweiligen Browserherstellers (i. d. R. US) — für die Doku als Empfänger aufnehmen.
 
@@ -205,8 +205,9 @@ Website: HMAC-Webhooks, Rotation des Automatisierungs-API-Schlüssels, n8n-Verla
 **🟠 kurzfristig**
 4. **CRM-Retention produktiv scharf schalten** (Policies pro Mandant setzen — sonst löscht nichts automatisch).
 5. **Portal härten:** MFA + Login-Rate-Limit ergänzen; DB-TLS erzwingen; Zugangsdaten-Mail nicht mehr mit Klartext-Passwort (stattdessen Einmal-Link/Reset).
-6. **AVV/DPA abschließen** — offen u. a.: Resend, Vapi, Deepgram, OpenAI, Google Workspace, Hetzner, Vercel; für **Web-Push-Dienste** Empfänger/Rechtsgrundlage erfassen.
-7. **TIA** für Vapi/Deepgram/Resend dokumentieren.
+6. **AVV/DPA abschließen** — noch offen: Resend, Google Workspace, Vercel; für **Web-Push-Dienste** Empfänger/Rechtsgrundlage erfassen.
+   *Erledigt (Stand 06.09.2026): Hetzner (AVV im Kundenpanel), OpenAI (Self-Serve-DPA), Vapi (DPA abgeschlossen). Deepgram entfällt — nicht mehr im Einsatz. Die Tabellen oben führten Hetzner und OpenAI schon länger als erledigt; diese Liste war nicht nachgezogen.*
+7. **TIA** für Vapi/Resend dokumentieren (Deepgram entfällt).
 8. **Newsletter:** VVT nennt „Zeit/IP" als Opt-in-Nachweis — der Code speichert **nur den Zeitstempel** (keine IP). VVT angleichen oder IP ergänzen.
 
 **⚖️ organisatorisch/rechtlich**
