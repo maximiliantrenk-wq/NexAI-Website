@@ -207,7 +207,7 @@ Website: HMAC-Webhooks, Rotation des Automatisierungs-API-Schlüssels, n8n-Verla
 5. **Portal härten:** MFA + Login-Rate-Limit ergänzen; DB-TLS erzwingen; Zugangsdaten-Mail nicht mehr mit Klartext-Passwort (stattdessen Einmal-Link/Reset).
 6. **AVV/DPA abschließen** — noch offen: Resend, Google Workspace, Vercel; für **Web-Push-Dienste** Empfänger/Rechtsgrundlage erfassen.
    *Erledigt (Stand 06.09.2026): Hetzner (AVV im Kundenpanel), OpenAI (Self-Serve-DPA), Vapi (DPA abgeschlossen). Deepgram entfällt — durch Soniox ersetzt, das über den Vapi-DPA abgedeckt ist. Die Tabellen oben führten Hetzner und OpenAI schon länger als erledigt; diese Liste war nicht nachgezogen.*
-7. **TIA** für Vapi/Resend dokumentieren (Deepgram entfällt).
+7. ✅ **TIA/Drittlandbewertung erledigt 06.09.2026** — [Vapi](TIA-Vapi-Drittlandtransfer.md) (deckt Soniox mit ab), [OpenAI](TIA-OpenAI-Drittlandtransfer.md), [Resend](TIA-Resend-Drittlandtransfer.md). Deepgram entfällt.
 8. **Newsletter:** VVT nennt „Zeit/IP" als Opt-in-Nachweis — der Code speichert **nur den Zeitstempel** (keine IP). VVT angleichen oder IP ergänzen.
 
 **⚖️ organisatorisch/rechtlich**

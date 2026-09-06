@@ -22,7 +22,7 @@
 | # | Anbieter | Rolle | Ort | Transfer-Basis | AVV-Weg | Status |
 |---|----------|-------|-----|----------------|---------|:---:|
 | 1 | ~~Vercel~~ → **Hetzner** | Website-Hosting (jetzt DE) | DE | keine Übermittlung | durch Hetzner-AVV (#5) | ✅ |
-| 2 | **Resend** | E-Mail-Versand (Formulare, Newsletter-DOI) | US | DPF **+** SCC | Auto über ToS; PDF im Dashboard | ☐ |
+| 2 | **Resend** | E-Mail-Versand (Formulare, Newsletter-DOI) | US | **DPF aktiv** (geprüft 06.09.2026) + SCC | Auto über ToS; PDF im Dashboard | ☐ |
 | 3 | **OpenAI** (Ireland Ltd) | Chat-Sprachmodell, Voice-LLM (**keine TTS mehr**) | IE/US | **SCC** (kein DPF) + TIA | Self-Service-DPA | ✅ |
 | 4 | **Google** | Google Calendar (Terminverwaltung) | IE/US | DPF **+** SCC | Auto (nur Workspace/GCP) | ☐ |
 | 5 | **Hetzner** | Server für n8n **+** NexAI-CRM | DE | keine Übermittlung | AVV im Kundenpanel | ✅ |
@@ -98,7 +98,7 @@ _Ersetzt Deepgram; Umstellung im Vapi-Assistenten, am 06.09.2026 im Dashboard ve
 ---
 
 ## TIA-Pflicht für die SCC-only-Drei
-**OpenAI, Vapi** (und über Vapi auch **Soniox**) laufen ohne DPF-Angemessenheitsbeschluss **nur über SCCs**. Für jeden dieser drei gehört eine kurze **Übermittlungs-Folgenabschätzung (Transfer Impact Assessment, TIA)** dokumentiert und in die VVT verlinkt (US-Rechtslage, ergänzende Maßnahmen wie Verschlüsselung/Datenminimierung/keine Aufzeichnung). → Follow-up nach Abschluss der DPAs.
+**OpenAI, Vapi** (und über Vapi auch **Soniox**) laufen ohne DPF-Angemessenheitsbeschluss **nur über SCCs**. ✅ **Für Vapi ist die TIA erstellt** (06.09.2026): [`TIA-Vapi-Drittlandtransfer.md`](TIA-Vapi-Drittlandtransfer.md) — sie deckt Soniox als Unterauftragsverarbeiter mit ab. ✅ **Ebenso für OpenAI** ([TIA](TIA-OpenAI-Drittlandtransfer.md)). Für **Resend** ist keine TIA nötig — Resend ist **DPF-zertifiziert**, es gilt Art. 45; die SCC-Rückfallbewertung liegt trotzdem vor ([Dokument](TIA-Resend-Drittlandtransfer.md)). Alle drei sind im VVT verlinkt.
 
 ## Gesondert prüfen (kein Website-Subprozessor)
 - **Explorium** (Datenprovider für Lead-Recherche) steht in der VVT, ist aber ein **eingehender Datenlieferant**, kein Website-Auftragsverarbeiter. Eigene Rechtsgrundlage/Vereinbarung (Controller-Controller bzw. Explorium-Vertrag/DPA) separat prüfen — gehört **nicht** in die öffentliche Website-DSE.
@@ -106,5 +106,5 @@ _Ersetzt Deepgram; Umstellung im Vapi-Assistenten, am 06.09.2026 im Dashboard ve
 ## Definition of Done
 - [x] Google-Konto (Workspace ✓) · Deepgram entfällt (durch Soniox ersetzt) · Vercel-Tarif entfällt (Website auf Hetzner umgezogen)
 - [ ] Alle 8 Status-Häkchen auf ☑ — offen nur noch **Resend**, **Google**, **easybell** („nicht nötig" zu belegen)
-- [ ] TIA für OpenAI/Vapi dokumentiert + in VVT verlinkt (Vapi-TIA deckt Soniox mit ab)
+- [x] TIA/Drittlandbewertung für **Vapi, OpenAI und Resend** dokumentiert und im VVT verlinkt (06.09.2026)
 - [ ] Ausgeführte AVV-PDFs abgelegt (Resend, OpenAI, Hetzner; Google per Verweis)

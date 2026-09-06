@@ -1,11 +1,12 @@
 # Verzeichnis von Verarbeitungstätigkeiten (Art. 30 DSGVO)
 
 **Verantwortlicher / Auftragsverarbeiter:** NexAI – Next Generation Artificial Intelligence GbR, Untere Bergstraße 13, 74586 Frankenhardt-Honhardt · Gesellschafter: Maximilian Trenk, Jason Brian Merklein · Kontakt Datenschutz: mbt@nex-a-i.com
-**Stand:** August 2026 · **Aufsichtsbehörde:** LfDI Baden-Württemberg
+**Stand:** September 2026 · **Aufsichtsbehörde:** LfDI Baden-Württemberg
+**Drittland-Folgenabschätzungen** liegen vor: [Vapi](TIA-Vapi-Drittlandtransfer.md) (deckt Soniox mit ab) · [OpenAI](TIA-OpenAI-Drittlandtransfer.md) · [Resend](TIA-Resend-Drittlandtransfer.md) — für Resend greift Art. 45 (DPF), die SCC-Bewertung liegt als Rückfall bei.
 
 > ⚠️ **Kein Rechtsrat.** Vorlage zur Erfüllung der Rechenschaftspflicht (Art. 5 Abs. 2, Art. 30 DSGVO). Laufend fortschreiben; vor Verwendung vom DSB/Anwalt prüfen lassen. Löschfristen = interne Defaults, mit der Datenschutzerklärung abgeglichen.
 
-Empfänger-Kürzel (Drittland-Mechanismus): **Resend** (US, SCC) · **Google** IE/US (DPF/SCC) · **OpenAI** IE/US (DPF/SCC, No-Training) · **Vapi** (US, SCC+TIA — Orchestrierung **und** Sprachsynthese) · **Soniox** (US, STT, Unterauftragsverarbeiter von Vapi, SCC+TIA über den Vapi-DPA) · **easybell** (DE) · **Hetzner** (DE, Server der **Website**, der self-hosted n8n **und des NexAI-CRM**) · **NexAI-CRM** (self-hosted, DE — eigene zentrale Kundenverwaltung, keine Drittlandübermittlung) · **Explorium** (Datenprovider).
+Empfänger-Kürzel (Drittland-Mechanismus): **Resend** (US, **DPF** — hilfsweise SCC) · **Google** IE/US (DPF/SCC) · **OpenAI** IE/US (**SCC, nicht DPF-zertifiziert** — Prüfung 06.09.2026; No-Training) · **Vapi** (US, SCC+TIA — Orchestrierung **und** Sprachsynthese) · **Soniox** (US, STT, Unterauftragsverarbeiter von Vapi, SCC+TIA über den Vapi-DPA) · **easybell** (DE) · **Hetzner** (DE, Server der **Website**, der self-hosted n8n **und des NexAI-CRM**) · **NexAI-CRM** (self-hosted, DE — eigene zentrale Kundenverwaltung, keine Drittlandübermittlung) · **Explorium** (Datenprovider).
 
 ---
 

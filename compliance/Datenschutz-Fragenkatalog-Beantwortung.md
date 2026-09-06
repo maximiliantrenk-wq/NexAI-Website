@@ -189,7 +189,7 @@ sind wir Auftragsverarbeiter des jeweiligen Kunden, nicht gemeinsam Verantwortli
 |---|---|---|---|
 | Vercel Inc. | Website-Hosting, Server-Logs | USA (DPF) | Auftragsverarbeiter |
 | Resend, Inc. | Versand der Formular-/Newsletter-E-Mails | USA (DPF) | Auftragsverarbeiter |
-| OpenAI Ireland Ltd. (ggf. OpenAI L.L.C.) | LLM + Sprachsynthese | Irland/USA (DPF) | Auftragsverarbeiter |
+| OpenAI Ireland Ltd. (ggf. OpenAI L.L.C.) | LLM (Sprachsynthese läuft seit 09/2026 über Vapi) | Irland/USA — **SCC, nicht DPF** | Auftragsverarbeiter |
 | Google Ireland Ltd. (ggf. Google LLC) | Kalender, Tabellen, E-Mail-Postfach | Irland/USA (DPF) | Auftragsverarbeiter |
 | Vapi, Inc. | Sprachassistent-Orchestrierung | USA (SCC) | Auftragsverarbeiter |
 | Soniox Inc | Spracherkennung (STT) | USA (SCC) | Unterauftragsverarbeiter (über Vapi) |
@@ -201,9 +201,16 @@ geschlossen (teils Self-Service-DPA im jeweiligen Konto — Abschluss teilweise 
 gehen wir davon aus, dass als TK-Anbieter (§ 88 TKG) **kein** AVV erforderlich ist — bitte bestätigen.
 
 **5. Drittstaatenübermittlung:**
-Übermittlung in die **USA** bei Vercel, Resend, OpenAI, Google, Vapi, Soniox. Grundlage: für DPF-zertifizierte
-Empfänger (Vercel, Resend, OpenAI, Google) der **Angemessenheitsbeschluss (Art. 45)**; für Vapi und Soniox
-die **EU-Standardvertragsklauseln (Art. 46)** nebst ergänzenden Maßnahmen (TIA in Vorbereitung). Eine frühere
+Übermittlung in die **USA** bei Resend, OpenAI, Google, Vapi, Soniox. Grundlage: für **DPF-zertifizierte**
+Empfänger (Resend, Google) der **Angemessenheitsbeschluss (Art. 45)**; für **OpenAI, Vapi und Soniox** die
+**EU-Standardvertragsklauseln (Art. 46)** nebst ergänzenden Maßnahmen.
+
+> **Berichtigt am 06.09.2026:** OpenAI wurde hier zuvor als DPF-zertifiziert geführt. Eine Abfrage der
+> amtlichen Liste (dataprivacyframework.gov) ergab **keinen Eintrag für OpenAI** — Gegenprobe mit Resend und
+> Google LLC unter identischen Bedingungen erfolgreich. Für OpenAI gilt daher Art. 46, nicht Art. 45.
+> Die TIAs liegen vor: [Vapi](TIA-Vapi-Drittlandtransfer.md) · [OpenAI](TIA-OpenAI-Drittlandtransfer.md) ·
+> [Resend](TIA-Resend-Drittlandtransfer.md) (dort Art. 45 mit Rückfallbewertung).
+> **Ebenfalls veraltet, hier bewusst nicht angefasst:** Vercel ist seit dem Umzug auf Hetzner kein Empfänger mehr. Eine frühere
 Sprachsynthese über einen Anbieter in China wurde auf OpenAI umgestellt; eine China-Übermittlung findet
 **nicht mehr** statt.
 
@@ -284,7 +291,7 @@ Automatisierungs-API-Schlüssels, Aktivierung des Verlaufs-Prunings in der Autom
 1. Abschluss der noch offenen AVV/DPA: **Resend, Google Workspace, Vercel**. Erledigt (Stand 06.09.2026): Hetzner, OpenAI, Vapi. Soniox ist über den Vapi-DPA als Unterauftragsverarbeiter abgedeckt.
 2. Technische Umsetzung des **Double-Opt-In** für den Newsletter vor tatsächlichem Versand.
 3. Automatisierte Umsetzung des Löschkonzepts (Kalender/Tabellen/Verlaufs-Pruning).
-4. Dokumentation der Transfer-Impact-Assessments (Vapi — deckt Soniox als Unterauftragsverarbeiter mit ab; Resend).
+4. Dokumentation der Transfer-Impact-Assessments: **Vapi ✅ erledigt 06.09.2026** → [`TIA-Vapi-Drittlandtransfer.md`](TIA-Vapi-Drittlandtransfer.md) (deckt Soniox mit ab). Offen: Resend.
 5. Sicherstellen der KI-Ansage zu Gesprächsbeginn beim Telefonassistenten (Art. 50 KI-VO).
 
 *Diese Aufstellung ist eine Selbstauskunft zum tatsächlichen Verarbeitungsstand und ersetzt keine
