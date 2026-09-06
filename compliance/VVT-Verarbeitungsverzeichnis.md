@@ -95,7 +95,8 @@ Empfänger-Kürzel (Drittland-Mechanismus): **Resend** (US, **DPF** — hilfswei
 
 ### A15 Portal — Leadlisten, Lead-Bearbeitung und Anrufdokumentation
 - **Zweck:** Verteilung und Bearbeitung von Akquise-Leads, Dokumentation der Anrufversuche und Ergebnisse. **Betroffene:** **Dritte** — angesprochene Unternehmen und deren Ansprechpartner (B2B); zusätzlich die bearbeitenden Vertriebspartner. **Daten:** `lead_lists` (Name, Beschreibung, Ersteller, **Eigentümer** — private Listen); `leads` (Firma, Ansprechpartner, Telefon, E-Mail, Website, Ort, **Notiz und Gesprächsnotiz**, Status, Versuche, Wiedervorlage, letzter Anruf und Anrufer, Beanspruchung, Umwandlung in einen Kunden); `lead_calls` (Lead, **Nutzer und Partner**, Ergebnis, erreicht ja/nein, Zeitpunkt, **Dauer**, verknüpfter Termin).
-- **Rechtsgrundlage:** Art. 6(1)f (Direktansprache im B2B-Umfeld, Dokumentation) — **Abwägung dokumentieren**; § 7 UWG für die Ansprache selbst ist gesondert zu beachten. **Empfänger:** Hetzner (DE), **NexAI-CRM** (self-hosted DE). **Drittland:** keines. **Löschung:** **12 Monate ab dem letzten Kontaktversuch** (`lastCalledAt`, ersatzweise Anlagedatum) — für den Lead **und** die zugehörige Anrufdokumentation. Wird der Lead zum Kunden, geht er in A13 über und folgt dort der Vertragsfrist.
+- **Rechtsgrundlage:** Art. 6(1)f (Direktansprache im B2B-Umfeld, Dokumentation) — **Abwägung dokumentieren**; § 7 UWG für die Ansprache selbst ist gesondert zu beachten. **Empfänger:** Hetzner (DE), **NexAI-CRM** (self-hosted DE). **Drittland:** keines. **Löschung:** **12 Monate ab dem letzten Kontaktversuch** (`lastCalledAt`, ersatzweise Anlagedatum). Wird der Lead zum Kunden, geht er in A13 über und folgt dort der Vertragsfrist.
+  **Die Anrufdokumentation bleibt** und verliert dabei den Bezug zur angesprochenen Person (`lead_calls.lead_id` wird auf NULL gesetzt). Grund: nach dem Löschen des Leads dokumentiert die Zeile nur noch die **Tätigkeit des Vertriebspartners** — sie ist Beleg für abgerechnete Provisionen (A12/A14) und Grundlage der Anrufübersicht im Portal. Würde sie mitgelöscht, schrumpften rückwirkend die Anrufzahlen der Partner und die Provisionsbelege. Die Daten der angesprochenen Person verschwinden vollständig, denn Firma, Ansprechpartner, Rufnummer und Gesprächsnotiz stehen am Lead, nicht am Anruf.
 - **Besonderheiten:** Betroffene sind hier **nicht Vertragspartner**, sondern Angesprochene — Informationspflicht nach **Art. 14 DSGVO** und Herkunft der Daten sind zu klären. `lead_calls` erfasst zugleich, **wer wie lange wen angerufen hat** — Leistungsdaten über Selbstständige.
 
 ### A16 Portal — Termine, Kalender und Kalenderfreigaben
@@ -126,7 +127,8 @@ Empfänger-Kürzel (Drittland-Mechanismus): **Resend** (US, **DPF** — hilfswei
 | A12 | **Bankverbindung** | **nach letzter Provisionszahlung** | Zweckfortfall |
 | A13 | Kunden, Aufträge | Vertragsende | Zweckfortfall |
 | A14 | **Rechnungen** | **8 Jahre** ab Jahresschluss | § 14b UStG, § 147 AO — *technisch erzwungen* |
-| A15 | **Leads + Anrufdoku** | **12 Monate** ab letztem Kontaktversuch | Art. 5(1)e |
+| A15 | **Leads** | **12 Monate** ab letztem Kontaktversuch | Art. 5(1)e |
+| A15 | Anrufdokumentation | bleibt, verliert den Lead-Bezug | Provisionsbeleg (A12/A14) |
 | A16 | Termine | **12 Monate** nach Terminende | Art. 5(1)e |
 | A16 | **gebuchte Termine** | **6 Monate** | **öffentliche Zusage in der DSE** |
 | A17 | Support-Vorgänge | **24 Monate** nach Abschluss | Nachweis/Gewährleistung |
@@ -157,7 +159,9 @@ Empfänger-Kürzel (Drittland-Mechanismus): **Resend** (US, **DPF** — hilfswei
 
 *Das Portal ist mit A11–A18 nachgetragen (06.09.2026). Beim Eintragen sind folgende Punkte aufgefallen — sie stehen hier, damit sie nicht in den Einträgen untergehen.*
 
-**🔴 Löschfristen sind festgelegt, aber nicht durchgesetzt.** Die Fristen stehen seit 06.09.2026 in der Übersicht oben (Entscheidung Max: Leads 12 Monate, Support 24 / intern 12, Termine 12 bzw. 6). **Technisch erzwungen ist weiterhin nur A14.** Ohne einen wiederkehrenden Löschlauf für A11, A15, A16 und A17 sind die Werte eine Selbstverpflichtung ohne Wirkung — und eine dokumentierte, nicht eingehaltene Frist ist gegenüber der Aufsicht schlechter als gar keine.
+**✅ Löschfristen sind festgelegt und werden durchgesetzt** (Stand 06.09.2026). Der Löschlauf liegt in `nexai-portal/lib/retention-sweep.ts` und läuft einmal je Berliner Tag über das Server-Startup (`instrumentation.ts`); die Fristen stehen dort als benannte Konstanten mit Verweis auf dieses Verzeichnis. Rechnungen laufen weiterhin gesondert über `lib/retention.ts` (8 Jahre). Nachweis: `scripts/retention-sweep-check.ts` prüft gegen eine echte Datenbank, unter anderem die Monatsrechnung am Monatsende, beide Terminfristen in einem Lauf, das Überleben umgewandelter Leads und das Verschwinden von Anhängen von der Platte.
+
+**🟡 Was der Löschlauf bewusst nicht anfasst:** Konten, Partner- und Kundenstammdaten sowie die Bibliothek. Deren Fristen hängen am Vertragsende oder an einer Entscheidung des Eigentümers und lassen sich nicht aus einem Datum ableiten — sie werden beim Löschen des jeweiligen Datensatzes wirksam.
 
 **🔴 Keine eigenen Datenschutzhinweise für das Portal.** Die Website-DSE sagt für app.nex-a-i.com eigene Hinweise zu. Es existiert nur ein **unveröffentlichter Entwurf für den Lernbereich**; für Partner, Kunden und Mitarbeitende gibt es nichts.
 
