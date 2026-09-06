@@ -84,7 +84,7 @@ Cookies/Consent/Analytics/Fonts: keine → **kein Banner nötig**.
 - **Art. 45 (DPF):** Vercel, Google, OpenAI, Resend (alle DPF-zertifiziert).
 - **Art. 46 (SCC) + TIA:** Vapi (Metadaten, Sprachsynthese), Soniox (STT, über Vapi).
 - **China:** entfällt — TTS von MiniMax auf OpenAI umgestellt.
-- **Handlungsbedarf:** TIA für Vapi/Resend dokumentieren (Vapi deckt Soniox als Unterauftragsverarbeiter mit ab).
+- **Handlungsbedarf:** TIA für **Resend** dokumentieren. **Vapi ✅ erledigt 06.09.2026** → [`TIA-Vapi-Drittlandtransfer.md`](TIA-Vapi-Drittlandtransfer.md), deckt Soniox als Unterauftragsverarbeiter mit ab.
 
 ---
 
@@ -139,7 +139,7 @@ Leads 6 Mon. · Termine 12 Mon. · Chatverläufe 6 Mon. · Sprach-Termindaten 6 
 
 **🟠 kurzfristig**
 4. **n8n:** Execution-Data-Pruning aktivieren · Leads in EU-Data-Table statt Google Sheets · Live-Google-Konto als **Workspace (mbt)** verifizieren · **n8n-API-Key rotieren**.
-5. **TIA** (Transfer-Impact-Assessment) für Vapi/Resend dokumentieren.
+5. **TIA** (Transfer-Impact-Assessment) für **Resend** dokumentieren — Vapi ✅ erledigt (06.09.2026).
 6. *(Vertriebs-/Akquise-Agent: derzeit nicht im Angebot — Max 08.08. Bei künftiger Einführung DSGVO/UWG nachholen: Einwilligung B2B-E-Mail (§ 7 UWG), Art.-14-Info an Prospects, Interessenabwägung. Reminder gesetzt.)*
 7. **KI-Ansage** (Art. 50) im Vapi-Prompt/First Message sicherstellen.
 8. **Löschkonzept** umsetzen (n8n/Google-Cleanup gemäß §4-Fristen).

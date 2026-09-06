@@ -284,7 +284,7 @@ Automatisierungs-API-Schlüssels, Aktivierung des Verlaufs-Prunings in der Autom
 1. Abschluss der noch offenen AVV/DPA: **Resend, Google Workspace, Vercel**. Erledigt (Stand 06.09.2026): Hetzner, OpenAI, Vapi. Soniox ist über den Vapi-DPA als Unterauftragsverarbeiter abgedeckt.
 2. Technische Umsetzung des **Double-Opt-In** für den Newsletter vor tatsächlichem Versand.
 3. Automatisierte Umsetzung des Löschkonzepts (Kalender/Tabellen/Verlaufs-Pruning).
-4. Dokumentation der Transfer-Impact-Assessments (Vapi — deckt Soniox als Unterauftragsverarbeiter mit ab; Resend).
+4. Dokumentation der Transfer-Impact-Assessments: **Vapi ✅ erledigt 06.09.2026** → [`TIA-Vapi-Drittlandtransfer.md`](TIA-Vapi-Drittlandtransfer.md) (deckt Soniox mit ab). Offen: Resend.
 5. Sicherstellen der KI-Ansage zu Gesprächsbeginn beim Telefonassistenten (Art. 50 KI-VO).
 
 *Diese Aufstellung ist eine Selbstauskunft zum tatsächlichen Verarbeitungsstand und ersetzt keine

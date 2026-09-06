@@ -1,7 +1,8 @@
 # Verzeichnis von Verarbeitungstätigkeiten (Art. 30 DSGVO)
 
 **Verantwortlicher / Auftragsverarbeiter:** NexAI – Next Generation Artificial Intelligence GbR, Untere Bergstraße 13, 74586 Frankenhardt-Honhardt · Gesellschafter: Maximilian Trenk, Jason Brian Merklein · Kontakt Datenschutz: mbt@nex-a-i.com
-**Stand:** August 2026 · **Aufsichtsbehörde:** LfDI Baden-Württemberg
+**Stand:** September 2026 · **Aufsichtsbehörde:** LfDI Baden-Württemberg
+**Drittland-Folgenabschätzung:** für Vapi (und darüber Soniox) liegt eine dokumentierte TIA vor → [`TIA-Vapi-Drittlandtransfer.md`](TIA-Vapi-Drittlandtransfer.md). Für Resend steht sie aus.
 
 > ⚠️ **Kein Rechtsrat.** Vorlage zur Erfüllung der Rechenschaftspflicht (Art. 5 Abs. 2, Art. 30 DSGVO). Laufend fortschreiben; vor Verwendung vom DSB/Anwalt prüfen lassen. Löschfristen = interne Defaults, mit der Datenschutzerklärung abgeglichen.
 

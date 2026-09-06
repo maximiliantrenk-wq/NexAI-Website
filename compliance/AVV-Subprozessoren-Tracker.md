@@ -98,7 +98,7 @@ _Ersetzt Deepgram; Umstellung im Vapi-Assistenten, am 06.09.2026 im Dashboard ve
 ---
 
 ## TIA-Pflicht für die SCC-only-Drei
-**OpenAI, Vapi** (und über Vapi auch **Soniox**) laufen ohne DPF-Angemessenheitsbeschluss **nur über SCCs**. Für jeden dieser drei gehört eine kurze **Übermittlungs-Folgenabschätzung (Transfer Impact Assessment, TIA)** dokumentiert und in die VVT verlinkt (US-Rechtslage, ergänzende Maßnahmen wie Verschlüsselung/Datenminimierung/keine Aufzeichnung). → Follow-up nach Abschluss der DPAs.
+**OpenAI, Vapi** (und über Vapi auch **Soniox**) laufen ohne DPF-Angemessenheitsbeschluss **nur über SCCs**. ✅ **Für Vapi ist die TIA erstellt** (06.09.2026): [`TIA-Vapi-Drittlandtransfer.md`](TIA-Vapi-Drittlandtransfer.md) — sie deckt Soniox als Unterauftragsverarbeiter mit ab. Offen bleiben OpenAI und Resend. Für jeden dieser drei gehört eine kurze **Übermittlungs-Folgenabschätzung (Transfer Impact Assessment, TIA)** dokumentiert und in die VVT verlinkt (US-Rechtslage, ergänzende Maßnahmen wie Verschlüsselung/Datenminimierung/keine Aufzeichnung). → Follow-up nach Abschluss der DPAs.
 
 ## Gesondert prüfen (kein Website-Subprozessor)
 - **Explorium** (Datenprovider für Lead-Recherche) steht in der VVT, ist aber ein **eingehender Datenlieferant**, kein Website-Auftragsverarbeiter. Eigene Rechtsgrundlage/Vereinbarung (Controller-Controller bzw. Explorium-Vertrag/DPA) separat prüfen — gehört **nicht** in die öffentliche Website-DSE.
@@ -106,5 +106,5 @@ _Ersetzt Deepgram; Umstellung im Vapi-Assistenten, am 06.09.2026 im Dashboard ve
 ## Definition of Done
 - [x] Google-Konto (Workspace ✓) · Deepgram entfällt (durch Soniox ersetzt) · Vercel-Tarif entfällt (Website auf Hetzner umgezogen)
 - [ ] Alle 8 Status-Häkchen auf ☑ — offen nur noch **Resend**, **Google**, **easybell** („nicht nötig" zu belegen)
-- [ ] TIA für OpenAI/Vapi dokumentiert + in VVT verlinkt (Vapi-TIA deckt Soniox mit ab)
+- [ ] TIA für OpenAI und Resend dokumentieren (**Vapi ✅ 06.09.2026**, im VVT verlinkt, deckt Soniox mit ab)
 - [ ] Ausgeführte AVV-PDFs abgelegt (Resend, OpenAI, Hetzner; Google per Verweis)
