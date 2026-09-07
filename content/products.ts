@@ -39,5 +39,8 @@ export const productGradients = [
 export const productImages: Record<string, string> = {
   "voice-agent": "/products/voice-agent.webp",
   "chat-agent": "/products/chat-agent.webp",
+  "nexai-kalender": "/products/nexai-kalender.webp",
+  "nexai-crm": "/products/nexai-crm.webp",
   automatisierung: "/products/automatisierung.webp",
+  "nexai-app": "/products/nexai-app.webp",
 };
