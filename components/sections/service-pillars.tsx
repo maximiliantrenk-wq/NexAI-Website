@@ -1,11 +1,11 @@
 import {
-  AtSign,
+  CalendarDays,
   Check,
+  Contact,
   Globe,
   MessagesSquare,
   PhoneCall,
   Sparkles,
-  Target,
   Workflow,
 } from "lucide-react";
 import { useTranslations } from "next-intl";
@@ -22,8 +22,8 @@ type ServiceDetail = {
 const ICONS = [
   PhoneCall,
   MessagesSquare,
-  AtSign,
-  Target,
+  CalendarDays,
+  Contact,
   Workflow,
   Sparkles,
   Globe,

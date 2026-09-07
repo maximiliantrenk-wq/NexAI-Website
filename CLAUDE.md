@@ -1,6 +1,6 @@
 # NEXAI — Website
 
-Premium, bilingual (DE/EN) marketing site for **NEXAI**, an AI agency from Crailsheim that builds **"digital employees"** — AI voice agents, chatbots, social-media AI, sales/outreach agents, automations, custom agents and websites. Dark-first, minimalist, world-class design language inspired by OpenAI / Linear / Stripe / Vercel. Contact: mbt@nex-a-i.com · 0176 80714816 · domain nex-a-i.com.
+Premium, bilingual (DE/EN) marketing site for **NEXAI**, an AI agency from Crailsheim that builds **"digital employees"** — AI voice agents, chatbots, an online booking calendar (NexAI Kalender), a CRM (NexAI CRM), custom installable apps (NexAI App), automations and custom agents. Dark-first, minimalist, world-class design language inspired by OpenAI / Linear / Stripe / Vercel. Contact: mbt@nex-a-i.com · 0176 80714816 · domain nex-a-i.com.
 
 ## Stack
 

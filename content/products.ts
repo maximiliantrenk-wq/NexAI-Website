@@ -2,9 +2,10 @@
 export const productSlugs = [
   "voice-agent",
   "chat-agent",
-  "social-media-agent",
-  "vertriebs-agent",
+  "nexai-kalender",
+  "nexai-crm",
   "automatisierung",
+  "nexai-app",
 ] as const;
 
 export type ProductSlug = (typeof productSlugs)[number];

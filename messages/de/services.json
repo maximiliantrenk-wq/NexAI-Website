@@ -4,7 +4,7 @@
     "hero": {
       "eyebrow": "Leistungen",
       "title": "Intelligente AI-Mitarbeiter für jeden Bereich.",
-      "description": "Vom Telefon über den Chat und Social Media bis zum Vertrieb und der Automatisierung Ihrer Abläufe: jede Lösung passen wir an Sie an und binden sie in Ihren Alltag ein."
+      "description": "Vom Telefon über den Chat und die Terminbuchung bis zum Kundensystem und der Automatisierung Ihrer Abläufe: jede Lösung passen wir an Sie an und binden sie in Ihren Alltag ein."
     },
     "list": {
       "eyebrow": "Unsere Leistungen",
@@ -42,27 +42,31 @@
           ]
         },
         {
-          "name": "Social-Media-Agent",
-          "summary": "Ein Agent, der Ihre Social-Media-Kanäle betreut und die tägliche Arbeit übernimmt.",
+          "name": "NexAI Kalender",
+          "summary": "Ein Online-Terminkalender, in dem Ihre Kunden selbst buchen, mit Bestätigung und Erinnerung per E-Mail oder SMS.",
           "features": [
-            "Nachrichten beantworten",
-            "Kommentare beantworten",
-            "Echte Interessenten erkennen",
-            "Beiträge planen",
-            "Beiträge vorbereiten",
-            "Beim Community-Management helfen"
+            "Termine online buchen lassen",
+            "Bestätigungen per E-Mail & SMS",
+            "Erinnerungen verschicken",
+            "Doppelbuchungen verhindern",
+            "Leistungen & Öffnungszeiten verwalten",
+            "Kundenkartei mit Verlauf",
+            "In Ihre Website einbetten",
+            "Als App aufs Handy"
           ]
         },
         {
-          "name": "Vertriebs- & Akquise-Agent",
-          "summary": "Ein Agent, der passende Kunden findet, bewertet und die persönliche Ansprache vorbereitet, ganz von selbst.",
+          "name": "NexAI CRM",
+          "summary": "Ein Kundensystem, in dem Anrufe, Anfragen, Termine und Aufgaben automatisch zusammenlaufen, auf Servern in Deutschland.",
           "features": [
-            "Passende Unternehmen finden",
-            "Ansprechpartner recherchieren",
-            "Bewerten, wie gut sie passen",
-            "Persönliche E-Mails vorbereiten",
-            "Gesprächsleitfäden erstellen",
-            "Kundendaten aktuell halten"
+            "Kontakte & Firmen verwalten",
+            "Anfragen automatisch erfassen",
+            "Anrufe mit Gesprächsprotokoll",
+            "Aufgaben & Erinnerungen",
+            "Verkaufschancen im Überblick",
+            "Berichte als CSV & PDF",
+            "Notizen, Dateien & Verlauf",
+            "Datenschutz-Center & Rechte"
           ]
         },
         {

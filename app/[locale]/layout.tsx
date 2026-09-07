@@ -87,7 +87,7 @@ export default async function LocaleLayout({
               name: "NEXAI",
               url: "https://nex-a-i.com",
               description:
-                "AI agency building digital employees — voice agents, chatbots, sales agents and custom automations.",
+                "AI agency building digital employees — voice agents, chatbots, CRM, booking calendar, custom apps and automations.",
               email: "mbt@nex-a-i.com",
               telephone: ["+49 176 80714816", "+49 172 8456815"],
               areaServed: "DE",

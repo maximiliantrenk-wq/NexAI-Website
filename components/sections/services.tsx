@@ -1,11 +1,11 @@
 import {
   ArrowUpRight,
-  AtSign,
   Boxes,
+  CalendarDays,
+  Contact,
   MessagesSquare,
   PhoneCall,
   Sparkles,
-  Target,
   Workflow,
 } from "lucide-react";
 import { useTranslations } from "next-intl";
@@ -19,7 +19,7 @@ import { Glow } from "@/components/ui/glow";
 type ServiceItem = { name: string; description: string };
 type Custom = { tag: string; title: string; description: string; cta: string };
 
-const ICONS = [PhoneCall, MessagesSquare, AtSign, Target, Workflow, Boxes];
+const ICONS = [PhoneCall, MessagesSquare, CalendarDays, Contact, Workflow, Boxes];
 
 export function Services() {
   const t = useTranslations("Home.services");
