@@ -108,6 +108,8 @@
       "items": [
         { "slug": "voice-agent", "tag": "Phone", "title": "Voice Agent", "result": "Available 24/7, books appointments" },
         { "slug": "chat-agent", "tag": "Website & Chat", "title": "Chat Agent", "result": "Answers around the clock" },
+        { "slug": "nexai-kalender", "tag": "Appointments", "title": "NexAI Calendar", "result": "No more double bookings" },
+        { "slug": "nexai-crm", "tag": "Customer management", "title": "NexAI CRM", "result": "All customers in one place" },
         { "slug": "automatisierung", "tag": "Automation", "title": "Automation", "result": "80% less manual work" }
       ]
     },
