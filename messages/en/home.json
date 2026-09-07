@@ -103,14 +103,15 @@
     "products": {
       "eyebrow": "Products",
       "title": "Digital employees for every area.",
-      "description": "Ready-made AI solutions that take work off your team, from phone to automation.",
+      "description": "Ready-made solutions that take work off your team, from phone and appointments to customer data and your own app.",
       "cta": "View all products",
       "items": [
         { "slug": "voice-agent", "tag": "Phone", "title": "Voice Agent", "result": "Available 24/7, books appointments" },
         { "slug": "chat-agent", "tag": "Website & Chat", "title": "Chat Agent", "result": "Answers around the clock" },
         { "slug": "nexai-kalender", "tag": "Appointments", "title": "NexAI Calendar", "result": "No more double bookings" },
         { "slug": "nexai-crm", "tag": "Customer management", "title": "NexAI CRM", "result": "All customers in one place" },
-        { "slug": "automatisierung", "tag": "Automation", "title": "Automation", "result": "80% less manual work" }
+        { "slug": "automatisierung", "tag": "Automation", "title": "Automation", "result": "80% less manual work" },
+        { "slug": "nexai-app", "tag": "Custom app", "title": "NexAI App", "result": "Your app, no app store" }
       ]
     },
     "testimonial": {
