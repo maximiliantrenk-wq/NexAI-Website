@@ -99,7 +99,7 @@ OpenAI muss die Anfragen im Klartext verarbeiten. Es bleibt bei **EDPB-Anwendung
 
 | # | Maßnahme | Wirkung | Status |
 |---|---|---|---|
-| **M-8** | **EU-Datenhaltung**: Projekt in der API-Plattform mit Region Europa, Endpunkt `eu.api.openai.com`. Anfragen werden in der Region verarbeitet und nicht dauerhaft gespeichert | **Beseitigt die Drittlandübermittlung für die Wege B, C, D weitgehend** — die mit Abstand wirksamste Maßnahme | ❌ **nicht aktiviert** (O-2) |
+| **M-8** | **EU-Datenhaltung**: Projekt in der API-Plattform mit Region Europa, Endpunkt `eu.api.openai.com`. Anfragen werden in der Region verarbeitet und nicht dauerhaft gespeichert | **Beseitigt die Drittlandübermittlung für die Wege B, C, D weitgehend** — die mit Abstand wirksamste Maßnahme | ❌ nicht aktiviert (O-2). **Technisch vorbereitet:** das Portal liest `OPENAI_DATA_RESIDENCY`, der Umstieg ist nach der Freigabe eine Umgebungsvariable |
 | **M-9** | **Zero Data Retention**: unterbindet die 30-Tage-Kopie zur Missbrauchserkennung. Freigabepflichtig, für die genutzten Endpunkte (chat/completions, responses, audio, embeddings) grundsätzlich möglich | Entzieht dem CLOUD Act den Gegenstand — genau das Argument, das bei Vapi trägt | ❌ **nicht beantragt** (O-3) |
 
 Beide sind **administrativ**, nicht technisch: ein neues Projekt anlegen und eine Freigabe beantragen. Der Aufwand steht in keinem Verhältnis zur Wirkung.
@@ -146,8 +146,8 @@ Die Übermittlung an OpenAI ist auf SCC-Grundlage **fortführbar**. Günstig wir
 | # | Punkt | Wer |
 |---|---|---|
 | **O-1** | Klären, ob der **Voice-LLM-Aufruf über den NexAI- oder Vapis OpenAI-Zugang** läuft — entscheidet die Reichweite von M-8/M-9 | Max |
-| **O-2** | **EU-Projekt in der OpenAI-API-Plattform anlegen** (Region Europa) und die Wege B, C, D darauf umstellen | Max |
-| **O-3** | **Zero Data Retention beantragen** für die genutzten Endpunkte | Max |
+| **O-2** | **EU-Projekt in der OpenAI-API-Plattform anlegen** (Region Europa) und die Wege B, C, D darauf umstellen — Antragstext und Klickweg liegen fertig vor: [`OpenAI-Antraege-EU-Region-und-ZDR.md`](OpenAI-Antraege-EU-Region-und-ZDR.md) | Max |
+| **O-3** | **Zero Data Retention beantragen** — im selben Antrag wie O-2, die Endpunkte sind dort aus dem Code belegt | Max |
 | **O-4** | **NexAI Study ins Verarbeitungsverzeichnis aufnehmen** und die Rollenfrage klären; Entwurf liegt vor | NexAI / Anwalt |
 | **O-5** | VVT-Zeile „Vertriebs-/Akquise-Agent" prüfen — nach Leistungsangebot nicht vorhanden | NexAI |
 | **O-6** | Anwaltliche Prüfung gemeinsam mit DSE und Vertragswerk | Anwalt |
