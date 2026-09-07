@@ -11,6 +11,20 @@ import { productGradients, productImages } from "@/content/products";
 
 type Item = { slug: string; tag: string; title: string; result: string };
 
+// Jede Karte belegt 2 von 4 (md) bzw. 2 von 6 (lg) Spalten. So steht eine
+// unvollständige letzte Reihe zentriert statt links zu hängen (5 Karten → 3 + 2).
+function spalten(i: number, n: number) {
+  const lgRest = n % 3;
+  const lg =
+    lgRest === 2 && i === n - 2
+      ? "lg:col-start-2"
+      : lgRest === 1 && i === n - 1
+        ? "lg:col-start-3"
+        : "lg:col-start-auto";
+  const md = n % 2 === 1 && i === n - 1 ? "md:col-start-2" : "";
+  return `md:col-span-2 ${md} ${lg}`;
+}
+
 export function ProductHighlights() {
   const t = useTranslations("Home.products");
   const items = t.raw("items") as Item[];
@@ -32,11 +46,11 @@ export function ProductHighlights() {
           </Reveal>
         </div>
 
-        <RevealGroup className="mt-10 sm:mt-14 grid gap-6 md:grid-cols-3">
+        <RevealGroup className="mt-10 sm:mt-14 grid gap-6 md:grid-cols-4 lg:grid-cols-6">
           {items.map((c, i) => {
             const image = productImages[c.slug];
             return (
-            <RevealItem key={c.slug}>
+            <RevealItem key={c.slug} className={spalten(i, items.length)}>
               <Link
                 href={`/produkte/${c.slug}`}
                 className="group flex h-full flex-col overflow-hidden rounded-2xl transition-colors duration-300"
@@ -47,7 +61,7 @@ export function ProductHighlights() {
                       src={image}
                       alt={c.title}
                       fill
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 420px"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 420px"
                       className="object-cover transition-transform duration-700 group-hover:scale-105"
                     />
                   ) : (
