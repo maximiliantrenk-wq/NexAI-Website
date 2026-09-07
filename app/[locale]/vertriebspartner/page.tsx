@@ -11,7 +11,6 @@ import {
   Phone,
   PhoneCall,
   Presentation,
-  Share2,
   UserCheck,
   Users,
   Workflow,
@@ -126,7 +125,7 @@ export default async function VertriebspartnerPage({
 const btnBase =
   "group inline-flex h-[52px] items-center justify-center gap-2 rounded-full px-7 text-[15px] font-medium transition-[transform,background,box-shadow,color,border-color] duration-200 ease-out active:scale-[0.98]";
 
-const productIcons = [Phone, MessageSquare, Share2, Workflow];
+const productIcons = [Phone, MessageSquare, CalendarCheck, Workflow];
 const supportIcons = [
   ListChecks,
   CalendarCheck,

@@ -4,7 +4,7 @@
     "hero": {
       "eyebrow": "Products",
       "title": "Digital employees that start right away.",
-      "description": "Five ready-made AI solutions for your business, each tailored to you and built into your workflows."
+      "description": "Six ready-made solutions for your business, from AI employees to your own app. Each one tailored to you and built into your workflows."
     },
     "labels": {
       "what": "What it does",
@@ -50,35 +50,37 @@
         ]
       },
       {
-        "slug": "social-media-agent",
-        "tag": "Social Media",
-        "title": "Social Media Agent",
-        "summary": "Runs your channels: replies to messages and comments and prepares posts.",
-        "result": "Always reachable",
-        "what": "The Social Media Agent replies to messages and comments, spots genuine prospects, plans posts and supports your day-to-day community management.",
-        "benefit": "You stay present on your channels without having to be online all the time, and never miss an enquiry.",
-        "example": "Someone comments under a post asking for more info. The agent replies kindly, sends the details by message and flags the hot lead to you.",
+        "slug": "nexai-kalender",
+        "tag": "Appointments",
+        "title": "NexAI Calendar",
+        "summary": "An online booking calendar where your customers book themselves and get confirmations and reminders automatically.",
+        "result": "No more double bookings",
+        "what": "Your customers pick a service and a time on your own booking page and book themselves, via a link on your website, in WhatsApp or on social media. The calendar sends confirmations and reminders by email or SMS, prevents double bookings and installs as an app on your phone.",
+        "benefit": "Fewer phone calls, no double bookings, fewer forgotten appointments. You see your day at a glance and move appointments with a tap, and your customers are informed automatically.",
+        "example": "A customer books a Friday appointment at 10 pm through the link in your WhatsApp profile. She gets the confirmation by SMS right away, a reminder the day before, and the appointment is in your calendar without you doing anything.",
         "features": [
-          "Replies to messages & comments",
-          "Spots genuine prospects",
-          "Plans and prepares posts",
-          "Supports community management"
+          "Customers book online themselves",
+          "Confirmations and reminders by email or SMS",
+          "Protects against double bookings",
+          "Manage services, opening hours and holidays",
+          "Works as an app on phone and desktop"
         ]
       },
       {
-        "slug": "vertriebs-agent",
-        "tag": "Sales",
-        "title": "Sales & Outreach Agent",
-        "summary": "Finds the right customers, scores them and prepares the personal outreach.",
-        "result": "More right-fit customers",
-        "what": "The Sales Agent researches matching companies, finds the right contacts, scores how well they fit and prepares personal emails and call notes.",
-        "benefit": "Your sales team starts every day with a full list of promising contacts and spends its time on conversations instead of research.",
-        "example": "Instead of searching for companies for hours, your team opens a ready-made list each morning: matching contacts, a short assessment and a prepared message to send.",
+        "slug": "nexai-crm",
+        "tag": "Customer management",
+        "title": "NexAI CRM",
+        "summary": "A customer system where calls, enquiries, appointments and tasks come together automatically.",
+        "result": "All customers in one place",
+        "what": "NexAI CRM keeps contacts, companies, enquiries and sales opportunities in one place. Calls handled by the voice agent and enquiries from your website land in it automatically, with call transcripts, notes, files and tasks. Reports show you what happened this week. It runs on servers in Germany and is built for data protection.",
+        "benefit": "No sticky notes, no double entry, no forgotten callbacks. Everyone on the team sees at once what was last discussed with a customer and what comes next.",
+        "example": "A prospect calls and the voice agent answers. After the call the contact is in the CRM with the transcript, your team creates the task \"send quote\" with one click and is reminded automatically.",
         "features": [
-          "Finds matching companies",
-          "Researches contacts",
-          "Scores how well they fit",
-          "Prepares personal outreach"
+          "Contacts, companies and enquiries in one place",
+          "Calls and website enquiries arrive automatically",
+          "Tasks with automatic reminders",
+          "Sales opportunities and reports",
+          "Privacy centre, permissions and secure login"
         ]
       },
       {
@@ -95,6 +97,23 @@
           "Handles repetitive tasks",
           "Creates quotes & invoices",
           "Runs reliably in the background"
+        ]
+      },
+      {
+        "slug": "nexai-app",
+        "tag": "Custom app",
+        "title": "NexAI App",
+        "summary": "Your own app for customers or staff, installable on phone and desktop, no app store needed.",
+        "result": "Your app, no app store",
+        "what": "We build you an app in your brand: a customer portal with orders and invoices, a staff app with chat and tasks, or a booking app. It installs straight from the browser on phone and desktop, sends push notifications and runs on servers in Germany.",
+        "benefit": "Your customers and your team have everything in one place, on every device. No app store approval, no waiting for updates, and the app belongs to you.",
+        "example": "A sales partner opens the app on their phone in the morning: new orders, open invoices, a message from the team. They upload a receipt and accounting gets a notification right away.",
+        "features": [
+          "Customer portal, staff app or booking",
+          "Installs on iPhone, Android and desktop",
+          "Push notifications",
+          "In your brand and your colours",
+          "Connected to your systems"
         ]
       }
     ],

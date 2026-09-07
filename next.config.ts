@@ -10,6 +10,9 @@ const nextConfig: NextConfig = {
     return [
       { source: "/closer", destination: "/de/vertriebspartner", permanent: false },
       { source: "/setter", destination: "/de/vertriebspartner", permanent: false },
+      // Produkte umbenannt (07.09.2026): alte Adressen dauerhaft weiterleiten.
+      { source: "/:locale(de|en)/produkte/vertriebs-agent", destination: "/:locale/produkte/nexai-crm", permanent: true },
+      { source: "/:locale(de|en)/produkte/social-media-agent", destination: "/:locale/produkte/nexai-kalender", permanent: true },
     ];
   },
 };

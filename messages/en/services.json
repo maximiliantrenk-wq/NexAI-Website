@@ -4,7 +4,7 @@
     "hero": {
       "eyebrow": "Services",
       "title": "Intelligent AI employees for every area.",
-      "description": "From phone and chat to social media, sales and the automation of your workflows: we tailor every solution to you and build it into your day-to-day."
+      "description": "From phone and chat to online booking, your customer system and the automation of your workflows: we tailor every solution to you and build it into your day-to-day."
     },
     "list": {
       "eyebrow": "Our services",
@@ -42,27 +42,31 @@
           ]
         },
         {
-          "name": "Social Media Agent",
-          "summary": "An agent that runs your social channels and takes over the daily work.",
+          "name": "NexAI Calendar",
+          "summary": "An online booking calendar where your customers book themselves, with confirmations and reminders by email or SMS.",
           "features": [
-            "Replies to messages",
-            "Replies to comments",
-            "Spots genuine prospects",
-            "Plans posts",
-            "Prepares posts",
-            "Helps with community management"
+            "Let customers book online",
+            "Confirmations by email & SMS",
+            "Send reminders",
+            "Prevent double bookings",
+            "Manage services & opening hours",
+            "Customer file with history",
+            "Embed in your website",
+            "Install as an app on your phone"
           ]
         },
         {
-          "name": "Sales & Outreach Agent",
-          "summary": "An agent that finds the right customers, scores them and prepares the personal outreach, all by itself.",
+          "name": "NexAI CRM",
+          "summary": "A customer system where calls, enquiries, appointments and tasks come together automatically, on servers in Germany.",
           "features": [
-            "Finds matching companies",
-            "Researches contacts",
-            "Scores how well they fit",
-            "Prepares personal emails",
-            "Creates call notes",
-            "Keeps customer data up to date"
+            "Manage contacts & companies",
+            "Capture enquiries automatically",
+            "Calls with transcripts",
+            "Tasks & reminders",
+            "Sales opportunities at a glance",
+            "Reports as CSV & PDF",
+            "Notes, files & history",
+            "Privacy centre & permissions"
           ]
         },
         {

@@ -1,13 +1,14 @@
 # NEXAI
 
-> NEXAI builds intelligent AI employees — voice agents, chatbots, social-media AI, sales/outreach agents and custom automations that save time, cut costs and grow revenue. An AI agency based in Frankenhardt, working across Germany. The website is available in German (default) and English.
+> NEXAI builds intelligent AI employees — voice agents, chatbots, an online booking calendar, a CRM, custom apps and automations that save time, cut costs and grow revenue. An AI agency based in Frankenhardt, working across Germany. The website is available in German (default) and English.
 
 ## Products
 - [Voice Agent](https://nex-a-i.com/en/produkte/voice-agent): A phone assistant that answers around the clock, advises and books appointments.
 - [Chat Agent](https://nex-a-i.com/en/produkte/chat-agent): A chatbot for your website that advises, recommends and answers instantly.
-- [Social Media Agent](https://nex-a-i.com/en/produkte/social-media-agent): Runs your channels — replies to messages and comments and prepares posts.
-- [Sales & Outreach Agent](https://nex-a-i.com/en/produkte/vertriebs-agent): Finds the right customers, scores them and prepares personal outreach.
+- [NexAI Calendar](https://nex-a-i.com/en/produkte/nexai-kalender): An online booking calendar where customers book themselves and get confirmations and reminders by email or SMS.
+- [NexAI CRM](https://nex-a-i.com/en/produkte/nexai-crm): A customer system where calls, enquiries, appointments and tasks come together automatically, on servers in Germany.
 - [Automation](https://nex-a-i.com/en/produkte/automatisierung): Takes over repetitive tasks and connects your programs with each other.
+- [NexAI App](https://nex-a-i.com/en/produkte/nexai-app): Your own installable app for customers or staff, in your brand, no app store needed.
 
 ## Main pages
 - [Services](https://nex-a-i.com/en/services): Digital employees for every department — what NEXAI builds.
@@ -21,7 +22,7 @@
 - [Contact](https://nex-a-i.com/en/contact): Get in touch or book a call.
 
 ## Key facts
-- Focus: AI voice agents, chatbots, social-media AI, sales/outreach agents, custom automations, custom AI agents and websites
+- Focus: AI voice agents, chatbots, online booking calendar, CRM, custom installable apps, custom automations and custom AI agents
 - Location: Frankenhardt, Germany — serving clients across Germany
 - Languages: German (default, /de/…) and English (/en/…)
 - Contact: mbt@nex-a-i.com · +49 176 80714816

@@ -4,7 +4,7 @@
     "hero": {
       "eyebrow": "Produkte",
       "title": "Digitale Mitarbeiter, die sofort loslegen.",
-      "description": "Fünf fertige AI-Lösungen für Ihr Unternehmen, jede passen wir an Sie an und binden sie in Ihre Abläufe ein."
+      "description": "Sechs fertige Lösungen für Ihr Unternehmen, von AI-Mitarbeitern bis zu Ihrer eigenen App. Jede passen wir an Sie an und binden sie in Ihre Abläufe ein."
     },
     "labels": {
       "what": "Was es macht",
@@ -50,35 +50,37 @@
         ]
       },
       {
-        "slug": "social-media-agent",
-        "tag": "Social Media",
-        "title": "Social-Media-Agent",
-        "summary": "Betreut Ihre Kanäle: beantwortet Nachrichten und Kommentare und bereitet Beiträge vor.",
-        "result": "Immer erreichbar",
-        "what": "Der Social-Media-Agent beantwortet Nachrichten und Kommentare, erkennt echte Interessenten, plant Beiträge und unterstützt Sie beim täglichen Community-Management.",
-        "benefit": "Sie sind auf Ihren Kanälen präsent, ohne ständig selbst online sein zu müssen, und verpassen keine Anfrage mehr.",
-        "example": "Jemand kommentiert unter einem Beitrag und fragt nach mehr Infos. Der Agent antwortet freundlich, schickt die Details per Nachricht und meldet Ihnen den heißen Kontakt.",
+        "slug": "nexai-kalender",
+        "tag": "Termine",
+        "title": "NexAI Kalender",
+        "summary": "Ein Online-Terminkalender, in dem Ihre Kunden selbst buchen und automatisch Bestätigung und Erinnerung bekommen.",
+        "result": "Keine Doppelbuchung mehr",
+        "what": "Ihre Kunden wählen auf Ihrer eigenen Buchungsseite Leistung und Uhrzeit und buchen selbst, über einen Link auf Ihrer Website, in WhatsApp oder auf Social Media. Der Kalender schickt Bestätigung und Erinnerung per E-Mail oder SMS, verhindert Doppelbuchungen und lässt sich als App aufs Handy installieren.",
+        "benefit": "Weniger Telefonate, keine Doppelbuchungen, weniger vergessene Termine. Sie sehen Ihren Tag auf einen Blick und verschieben Termine mit einem Fingertipp, Ihre Kunden werden automatisch informiert.",
+        "example": "Eine Kundin bucht abends um 22 Uhr über den Link in Ihrem WhatsApp-Profil einen Termin für Freitag. Sie bekommt sofort die Bestätigung per SMS, am Vortag die Erinnerung, und der Termin steht in Ihrem Kalender, ohne dass Sie etwas tun.",
         "features": [
-          "Beantwortet Nachrichten & Kommentare",
-          "Erkennt echte Interessenten",
-          "Plant und bereitet Beiträge vor",
-          "Unterstützt das Community-Management"
+          "Kunden buchen selbst online",
+          "Bestätigung und Erinnerung per E-Mail oder SMS",
+          "Schützt vor Doppelbuchungen",
+          "Leistungen, Öffnungszeiten und Urlaub verwalten",
+          "Als App auf Handy und Desktop"
         ]
       },
       {
-        "slug": "vertriebs-agent",
-        "tag": "Vertrieb",
-        "title": "Vertriebs- & Akquise-Agent",
-        "summary": "Findet passende Kunden, bewertet sie und bereitet die persönliche Ansprache vor.",
-        "result": "Mehr passende Kunden",
-        "what": "Der Vertriebs-Agent recherchiert passende Unternehmen, findet die richtigen Ansprechpartner, bewertet, wie gut sie passen, und bereitet persönliche E-Mails und Gesprächsleitfäden vor.",
-        "benefit": "Ihr Vertrieb startet jeden Tag mit einer gefüllten Liste vielversprechender Kontakte und verbringt die Zeit mit Gesprächen statt mit Recherche.",
-        "example": "Statt stundenlang Firmen zu suchen, öffnet Ihr Vertriebsteam morgens eine fertige Liste: passende Ansprechpartner, kurze Einschätzung und ein vorbereiteter Text zum Losschreiben.",
+        "slug": "nexai-crm",
+        "tag": "Kundenverwaltung",
+        "title": "NexAI CRM",
+        "summary": "Ein Kundensystem, in dem Anrufe, Anfragen, Termine und Aufgaben automatisch zusammenlaufen.",
+        "result": "Alle Kunden an einem Ort",
+        "what": "Das NexAI CRM sammelt Kontakte, Firmen, Anfragen und Verkaufschancen an einem Ort. Anrufe des Voice Agents und Anfragen von Ihrer Website landen automatisch darin, mit Gesprächsprotokoll, Notizen, Dateien und Aufgaben. Berichte zeigen Ihnen, was diese Woche passiert ist. Es läuft auf Servern in Deutschland und ist auf Datenschutz ausgelegt.",
+        "benefit": "Kein Zettel, keine doppelte Eingabe, kein vergessener Rückruf. Jeder im Team sieht sofort, was mit einem Kunden zuletzt besprochen wurde und was als Nächstes ansteht.",
+        "example": "Ein Interessent ruft an, der Voice Agent nimmt ab. Nach dem Gespräch steht der Kontakt mit Gesprächsprotokoll im CRM, Ihr Team legt mit einem Klick die Aufgabe „Angebot schicken“ an und wird automatisch daran erinnert.",
         "features": [
-          "Findet passende Unternehmen",
-          "Recherchiert Ansprechpartner",
-          "Bewertet, wie gut sie passen",
-          "Bereitet persönliche Ansprache vor"
+          "Kontakte, Firmen und Anfragen an einem Ort",
+          "Anrufe und Website-Anfragen landen automatisch darin",
+          "Aufgaben mit automatischer Erinnerung",
+          "Verkaufschancen und Berichte",
+          "Datenschutz-Center, Rechte und sichere Anmeldung"
         ]
       },
       {
@@ -95,6 +97,23 @@
           "Erledigt wiederkehrende Aufgaben",
           "Erstellt Angebote & Rechnungen",
           "Läuft zuverlässig im Hintergrund"
+        ]
+      },
+      {
+        "slug": "nexai-app",
+        "tag": "Individuelle App",
+        "title": "NexAI App",
+        "summary": "Ihre eigene App für Kunden oder Mitarbeiter, installierbar auf Handy und Desktop, ohne App-Store.",
+        "result": "Ihre App, ohne App-Store",
+        "what": "Wir bauen Ihnen eine eigene App in Ihrer Marke: ein Kundenportal mit Aufträgen und Rechnungen, eine Mitarbeiter-App mit Chat und Aufgaben oder eine Buchungs-App. Sie lässt sich direkt aus dem Browser auf Handy und Desktop installieren, schickt Push-Benachrichtigungen und läuft auf Servern in Deutschland.",
+        "benefit": "Ihre Kunden und Ihr Team haben alles an einem Ort, auf jedem Gerät. Keine App-Store-Freigabe, keine Wartezeit auf Updates, und die App gehört Ihnen.",
+        "example": "Ein Vertriebspartner öffnet morgens die App auf dem Handy: neue Aufträge, offene Rechnungen, eine Nachricht vom Team. Ein Beleg ist mit zwei Tipps hochgeladen, und die Buchhaltung bekommt sofort eine Benachrichtigung.",
+        "features": [
+          "Kundenportal, Mitarbeiter-App oder Buchung",
+          "Installierbar auf iPhone, Android und Desktop",
+          "Push-Benachrichtigungen",
+          "In Ihrer Marke und Ihren Farben",
+          "Verbunden mit Ihren Systemen"
         ]
       }
     ],
