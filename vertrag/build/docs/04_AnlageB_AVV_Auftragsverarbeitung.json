@@ -225,7 +225,7 @@
    "items": [
     "Erfolgt eine Verarbeitung durch einen Unterauftragsverarbeiter in einem Drittland, stellt NexAI sicher, dass die Anforderungen der Art. 44 ff. DSGVO eingehalten werden.",
     "Vorrangig stützt sich der Transfer auf einen **Angemessenheitsbeschluss** der Europäischen Kommission, insbesondere das EU-U.S. Data Privacy Framework (DPF), sofern der jeweilige Empfänger zertifiziert ist.",
-    "Hilfsweise – insbesondere wenn keine DPF-Zertifizierung vorliegt (bei den in Anhang 2 gekennzeichneten Empfängern, etwa Vapi und Soniox (USA), vorsorglich der SCC-Weg) – werden die **EU-Standardvertragsklauseln** (Durchführungsbeschluss (EU) 2021/914), **Modul 3 (Auftragsverarbeiter an Unterauftragsverarbeiter)**, abgeschlossen, ergänzt um erforderliche **Zusatzmaßnahmen** und eine **Transfer-Folgenabschätzung (Transfer Impact Assessment, TIA)**.",
+    "Hilfsweise – insbesondere wenn keine DPF-Zertifizierung vorliegt (bei den in Anhang 2 gekennzeichneten Empfängern, etwa Vapi, Soniox und OpenAI (USA), vorsorglich der SCC-Weg) – werden die **EU-Standardvertragsklauseln** (Durchführungsbeschluss (EU) 2021/914), **Modul 3 (Auftragsverarbeiter an Unterauftragsverarbeiter)**, abgeschlossen, ergänzt um erforderliche **Zusatzmaßnahmen** und eine **Transfer-Folgenabschätzung (Transfer Impact Assessment, TIA)**.",
     "NexAI stellt dem Kunden auf Anfrage Nachweise über die getroffenen Transfergarantien in geeigneter Form zur Verfügung."
    ]
   },
@@ -541,7 +541,7 @@
      "EU / USA",
      "Sprachmodell / KI-Verarbeitung (Textverstehen, Antwortgenerierung)",
      "Gesprächs-/Textinhalte, Metadaten",
-     "DPF, hilfsweise EU-SCC Modul 3; No-Training-Konfiguration"
+     "EU-SCC Modul 3 + Zusatzmaßnahmen + TIA (kein DPF); No-Training-Konfiguration"
     ],
     [
      "Google LLC / Google Ireland Ltd.",
