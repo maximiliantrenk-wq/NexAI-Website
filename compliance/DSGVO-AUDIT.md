@@ -103,7 +103,7 @@ Leads 6 Mon. · Termine 12 Mon. · Chatverläufe 6 Mon. · Sprach-Termindaten 6 
 ## 8. Betroffenenrechte, VVT, DSFA, Meldepflicht, DPO, TOMs
 - **Betroffenenrechte (Art. 15–22):** DSE §5; operativen Ablauf (Postfach, 1-Monats-Frist) definieren.
 - **VVT (Art. 30):** `VVT-Verarbeitungsverzeichnis.md` pflegen.
-- **DSFA/DPIA (Art. 35):** für Voice-KI prüfen (ohne Aufzeichnung geringeres Risiko, aber Umfang bewerten).
+- **DSFA/DPIA (Art. 35):** ✅ **erledigt 07.09.2026** — [`DSFA-Voice-Agent.md`](DSFA-Voice-Agent.md). Ergebnis anders als hier vermutet: Die Verarbeitung steht **wörtlich auf der Muss-Liste** der Aufsichtsbehörden (Nr. 9, KI zur Steuerung der Interaktion mit Betroffenen), die Folgenabschätzung war also Pflicht und nicht Ermessen. Die fehlende Aufzeichnung mindert das Risiko, ersetzt die Prüfung aber nicht. **Folgepflicht:** Datenschutzbeauftragten benennen (§ 38 Abs. 1 Satz 2 BDSG) — gilt auch für jeden Kunden, der den Agenten einsetzt. Für Berufsgeheimnisträger gilt der [`Sperrvermerk`](Sperrvermerk-Berufsgeheimnistraeger.md).
 - **Meldepflicht (Art. 33/34):** Prozess (72 h Behörde / 24 h an Verantwortliche) festhalten.
 - **DPO/DSB:** juristisch prüfen.
 - **TOMs:** Vapi-Webhooks HMAC · n8n-API-Key rotieren · Google-Konto als Workspace verifizieren · n8n-Pruning.

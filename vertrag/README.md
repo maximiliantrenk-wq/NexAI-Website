@@ -1,6 +1,6 @@
 # NexAI – B2B-Vertragswerk
 
-Modulares Vertragspaket für **NexAI – Next Generation Intelligence GbR** (Stand: Juli 2026).
+Modulares Vertragspaket für **NexAI – Next Generation Artificial Intelligence GbR** (Stand: September 2026).
 Jedes Dokument liegt als **Word (.docx, zum Ausfüllen/Bearbeiten)** und **PDF (zum Unterschreiben)** vor.
 
 ## Inhalt (Reihenfolge)
@@ -9,10 +9,10 @@ Jedes Dokument liegt als **Word (.docx, zum Ausfüllen/Bearbeiten)** und **PDF (
 |---|----------|-------|
 | 01 | **Rahmen-Dienstleistungsvertrag** | Kernvertrag – gilt für alle Aufträge |
 | 02 | **Auftragsformular / Leistungsschein** | Pro Kunde ausfüllen: Leistungen, Beitrag, Laufzeit, Zahlart |
-| 03 | **Anlage A – Leistungsbeschreibung** | Was die Agenten leisten (und was nicht) |
+| 03 | **Anlage A – Leistungsbeschreibung** | Was die Agenten und Anwendungen leisten (und was nicht) |
 | 04 | **Anlage B – AVV (Art. 28 DSGVO)** | Auftragsverarbeitung, TOMs, Subunternehmer |
 | 05 | **Anlage C – SLA** | Support, Reaktionszeiten, Verfügbarkeit |
-| 06 | **Anlage D – Abnahmeprotokoll** | Abnahme von Projekt-/Website-Leistungen |
+| 06 | **Anlage D – Abnahmeprotokoll** | Abnahme von Projektleistungen (Ersteinrichtung, Anwendungen) |
 | 07 | **SEPA-Firmenlastschriftmandat** | Nur bei Zahlart Lastschrift |
 | 08 | **AGB (B2B)** | Allgemeine Bedingungen (widerspruchsfrei zum Rahmenvertrag) |
 
@@ -37,7 +37,7 @@ Vor dem Versand an einen Kunden ausfüllen:
 Aufzeichnung standardmäßig AUS + Pflicht-Ansage · vollständiger AVV · KI-Transparenz (Art. 50 KI-VO) ·
 gestufte, wirksame Haftungsklausel + Cap · saubere Werk-/Dienstvertrag-Trennung · Overage + Spend-Cap ·
 Offboarding mit 30-Tage-Export vor Löschung · transparente Datenspeicherung intern/extern inkl. Endnutzerdaten
-+ Kunden-Informationspflicht (Art. 13/14 DSGVO) + Freistellung · Akquise-Absicherung (§ 7 UWG).
++ Kunden-Informationspflicht (Art. 13/14 DSGVO) + Freistellung · Absicherung bei ausgehender Ansprache durch den Kunden (§ 7 UWG).
 
 ## Dringende Empfehlungen (außerhalb des Vertrags)
 
