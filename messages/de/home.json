@@ -103,14 +103,15 @@
     "products": {
       "eyebrow": "Produkte",
       "title": "Digitale Mitarbeiter für jeden Bereich.",
-      "description": "Fertige AI-Lösungen, die Ihr Team entlasten, vom Telefon bis zur Automatisierung.",
+      "description": "Fertige Lösungen, die Ihr Team entlasten, vom Telefon über Termine und Kundendaten bis zu Ihrer eigenen App.",
       "cta": "Alle Produkte ansehen",
       "items": [
         { "slug": "voice-agent", "tag": "Telefon", "title": "Voice Agent", "result": "24/7 erreichbar & Terminvergabe" },
         { "slug": "chat-agent", "tag": "Website & Chat", "title": "Chat Agent", "result": "Auskunft rund um die Uhr" },
         { "slug": "nexai-kalender", "tag": "Termine", "title": "NexAI Kalender", "result": "Keine Doppelbuchung mehr" },
         { "slug": "nexai-crm", "tag": "Kundenverwaltung", "title": "NexAI CRM", "result": "Alle Kunden an einem Ort" },
-        { "slug": "automatisierung", "tag": "Automatisierung", "title": "Automatisierung", "result": "80% weniger Handarbeit" }
+        { "slug": "automatisierung", "tag": "Automatisierung", "title": "Automatisierung", "result": "80% weniger Handarbeit" },
+        { "slug": "nexai-app", "tag": "Individuelle App", "title": "NexAI App", "result": "Ihre App, ohne App-Store" }
       ]
     },
     "testimonial": {
