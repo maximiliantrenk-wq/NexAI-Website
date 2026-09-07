@@ -1,0 +1,3290 @@
+{
+  "filename": "NexAI-Vertragswerk_komplett",
+  "doc_title": "NexAI – Vertragswerk (Gesamtdokument)",
+  "blocks": [
+    {
+      "t": "title",
+      "text": "Rahmen-Dienstleistungsvertrag für KI- und Automatisierungslösungen (B2B)"
+    },
+    {
+      "t": "meta",
+      "text": "Stand: Juli 2026"
+    },
+    {
+      "t": "p",
+      "text": "Dieser Rahmen-Dienstleistungsvertrag (nachfolgend **\"Rahmenvertrag\"**) wird geschlossen zwischen den nachstehenden Parteien:"
+    },
+    {
+      "t": "h2",
+      "text": "Anbieter"
+    },
+    {
+      "t": "p",
+      "text": "**NexAI – Next Generation Artificial Intelligence GbR**, Untere Bergstraße 13, 74586 Frankenhardt-Honhardt, Deutschland, vertreten durch die Gesellschafter Maximilian Trenk und Jason Brian Merklein, E-Mail mbt@nex-a-i.com, Telefon 0176 80714816 — nachfolgend **\"NexAI\"**."
+    },
+    {
+      "t": "h2",
+      "text": "Kunde"
+    },
+    {
+      "t": "fill",
+      "label": "Firma / Rechtsform",
+      "value": ""
+    },
+    {
+      "t": "fill",
+      "label": "Anschrift (Straße, PLZ, Ort)",
+      "value": ""
+    },
+    {
+      "t": "fill",
+      "label": "Vertretungsberechtigte Person",
+      "value": ""
+    },
+    {
+      "t": "fill",
+      "label": "Ansprechpartner",
+      "value": ""
+    },
+    {
+      "t": "fill",
+      "label": "E-Mail",
+      "value": ""
+    },
+    {
+      "t": "fill",
+      "label": "Telefon",
+      "value": ""
+    },
+    {
+      "t": "fill",
+      "label": "Registergericht / HRB-Nr. (soweit vorhanden)",
+      "value": ""
+    },
+    {
+      "t": "fill",
+      "label": "USt-IdNr. / Steuernummer",
+      "value": ""
+    },
+    {
+      "t": "p",
+      "text": "— nachfolgend **\"Kunde\"** —"
+    },
+    {
+      "t": "p",
+      "text": "NexAI und der Kunde nachfolgend jeweils einzeln **\"Partei\"** und gemeinsam **\"Parteien\"**."
+    },
+    {
+      "t": "note",
+      "text": "Dieser Rahmenvertrag regelt die allgemeinen Bedingungen der Zusammenarbeit. Die konkreten Leistungen, Beiträge und Parameter werden im jeweiligen Auftragsformular / Leistungsschein und den Anlagen A–D festgelegt."
+    },
+    {
+      "t": "hr"
+    },
+    {
+      "t": "h1",
+      "num": "§ 1",
+      "text": "Vertragsgegenstand, Vertragsdokumente und Rangfolge"
+    },
+    {
+      "t": "num",
+      "items": [
+        "NexAI erbringt für den Kunden Leistungen im Bereich KI-gestützter Assistenzsysteme, Softwareanwendungen und Automatisierung. Gegenstand sind (a) die Bereitstellung, Einrichtung und der Betrieb von KI-Agenten / digitalen Assistenten (Voice Agent, Chat Agent, Automatisierungen, individuelle KI-Agenten — nachfolgend **\"Agenten\"**) sowie (b) die Bereitstellung, Einrichtung und der Betrieb von Softwareanwendungen (NexAI CRM, NexAI Kalender, individuelle Anwendungen einschließlich installierbarer Web-Apps — nachfolgend **\"Anwendungen\"**). Personen, die mit den Agenten oder Anwendungen interagieren (z. B. Anrufer, Chat-Kontakte, buchende Personen, Nutzer eines Kundenportals), sind nachfolgend **\"Endnutzer\"**.",
+        "Die konkreten Leistungen ergeben sich aus dem jeweils gesondert vereinbarten **Auftragsformular / Leistungsschein**. Jeder erteilte Auftrag begründet einen Einzelvertrag, auf den dieser Rahmenvertrag und die jeweils in Bezug genommenen Anlagen Anwendung finden.",
+        "Vertragsbestandteile (nachfolgend **\"Vertragsdokumente\"**) sind, soweit im Auftragsformular in Bezug genommen: dieses Auftragsformular / der Leistungsschein, dieser Rahmenvertrag, Anlage A (Leistungsbeschreibung), Anlage B (Auftragsverarbeitungsvertrag – AVV), Anlage C (Service Level Agreement – SLA), Anlage D (Abnahmeprotokoll), das SEPA-Firmenlastschriftmandat sowie die Allgemeinen Geschäftsbedingungen (AGB, B2B).",
+        "Bei Widersprüchen zwischen den Vertragsdokumenten gilt vorbehaltlich Absatz (5) und (6) folgende **Rangfolge** (der jeweils vorrangige geht dem nachrangigen vor): (a) Auftragsformular / Leistungsschein, (b) dieser Rahmenvertrag, (c) Anlage C (SLA), (d) Anlage A (Leistungsbeschreibung), (e) Anlage D (Abnahmeprotokoll), (f) AGB (B2B).",
+        "Abweichend von der Rangfolge nach Absatz (4) hat **Anlage B (AVV) Sachvorrang für sämtliche Fragen des Datenschutzes und der Auftragsverarbeitung**; insoweit gehen die Regelungen der Anlage B allen übrigen Vertragsdokumenten vor.",
+        "Individuell zwischen den Parteien ausgehandelte Abreden haben stets Vorrang vor entgegenstehenden Regelungen dieses Rahmenvertrags und der Anlagen (§ 305b BGB)."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "§ 2",
+      "text": "Vertragsschluss und Nachweis"
+    },
+    {
+      "t": "num",
+      "items": [
+        "Verträge kommen durch Unterzeichnung des Auftragsformulars durch beide Parteien oder durch übereinstimmende Erklärungen in Textform (§ 126b BGB) zustande. Eine qualifizierte oder fortgeschrittene elektronische Signatur im Sinne der eIDAS-Verordnung (VO (EU) Nr. 910/2014) steht der Textform gleich.",
+        "Erklärungen, Freigaben und Weisungen des Kunden im laufenden Betrieb (insbesondere nach § 6 und § 7) können in Textform, per E-Mail oder über ein von NexAI bereitgestelltes Ticket-/Freigabesystem erfolgen.",
+        "NexAI dokumentiert wesentliche vertragsrelevante Erklärungen, Freigaben und Weisungen des Kunden revisionssicher und stellt dem Kunden auf Verlangen einen Auszug zur Verfügung."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "§ 3",
+      "text": "Leistungen: Projekt- und Betriebsleistungen"
+    },
+    {
+      "t": "h2",
+      "text": "(1) Projektleistungen (Werkvertrag)"
+    },
+    {
+      "t": "num",
+      "items": [
+        "Einmalige Werkleistungen — insbesondere die Ersteinrichtung und Konfiguration von Agenten sowie die Einrichtung und Bereitstellung von Anwendungen (nachfolgend **\"Projektleistungen\"**) — richten sich nach Werkvertragsrecht (§§ 631 ff. BGB). Geschuldet ist die Herbeiführung des im Auftragsformular / in Anlage A beschriebenen Erfolgs.",
+        "Projektleistungen werden nach Fertigstellung gemäß dem Verfahren der **Anlage D (Abnahmeprotokoll)** abgenommen. Nimmt der Kunde die im Wesentlichen vertragsgemäße Leistung nicht innerhalb der in Anlage D genannten Frist ab oder nutzt er sie produktiv, gilt die Abnahme als erfolgt; § 640 Abs. 2 BGB bleibt unberührt.",
+        "Für Projektleistungen beträgt die **Gewährleistungsfrist ein (1) Jahr ab Abnahme**. Dies gilt nicht für Schäden aus der Verletzung des Lebens, des Körpers oder der Gesundheit, für Vorsatz und grobe Fahrlässigkeit, für arglistig verschwiegene Mängel sowie für Ansprüche nach dem Produkthaftungsgesetz; insoweit gelten die gesetzlichen Fristen."
+      ]
+    },
+    {
+      "t": "h2",
+      "text": "(2) Betriebsleistungen (Dienstvertrag)"
+    },
+    {
+      "t": "num",
+      "items": [
+        "Der laufende Betrieb, die Wartung, das Hosting und der Support der Agenten (nachfolgend **\"Betriebsleistungen\"**) richten sich nach Dienstvertragsrecht (§ 611 BGB). Geschuldet ist das fachgerechte Tätigwerden nach den anerkannten Regeln der Technik, **nicht ein bestimmter Erfolg** (z. B. eine bestimmte Zahl an Terminen, Leads, Abschlüssen oder Umsätzen).",
+        "Umfang, Verfügbarkeitsziele, Reaktionszeiten und Wartungsfenster der Betriebsleistungen ergeben sich aus Anlage A und Anlage C (SLA)."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "§ 4",
+      "text": "KI-Systeme, Funktionsweise und KI-Transparenz"
+    },
+    {
+      "t": "num",
+      "items": [
+        "Die Agenten beruhen auf wahrscheinlichkeitsbasierten Verfahren (u. a. generative Sprach- und Sprachverarbeitungsmodelle). Ihre Ausgaben sind **naturgemäß nicht in jedem Einzelfall fehlerfrei, vollständig oder inhaltlich zutreffend**. NexAI schuldet keine Fehlerfreiheit der Einzelausgaben.",
+        "Der Kunde ist für den bestimmungsgemäßen Einsatz der Agenten in seinen Prozessen verantwortlich und hat ausgabekritische Ergebnisse (insbesondere solche mit rechtlicher, finanzieller oder gesundheitlicher Relevanz) eigenverantwortlich zu prüfen bzw. durch geeignete organisatorische Maßnahmen abzusichern.",
+        "Die Kennzeichnung der KI-gestützten Interaktion und Inhalte gemäß **Art. 50 der Verordnung (EU) 2024/1689 (KI-VO / AI Act)** — insbesondere der Hinweis, dass der Endnutzer mit einem KI-System interagiert bzw. dass Inhalte KI-generiert sind — ist **verbindlicher, nicht abschaltbarer Leistungsbestandteil**.",
+        "Der Kunde ist nicht berechtigt, diese Kennzeichnung, die Pflicht-Ansage oder sonstige Transparenzhinweise zu unterdrücken, zu entfernen, zu verfälschen oder zu umgehen. Ein Verstoß berechtigt NexAI zur vorübergehenden Deaktivierung des betroffenen Agenten nach § 17."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "§ 5",
+      "text": "Aufzeichnung und Transkription"
+    },
+    {
+      "t": "num",
+      "items": [
+        "Die Aufzeichnung und Transkription von Gesprächen ist **standardmäßig deaktiviert**. Sie erfolgt ausschließlich auf ausdrückliche, dokumentierte Weisung des Kunden in Textform.",
+        "Wird eine Aufzeichnung oder Transkription auf Weisung des Kunden aktiviert, erfolgt dies stets mit einer **Pflicht-Ansage** gegenüber dem Endnutzer (KI-Hinweis nach § 4 sowie zusätzlich ein Aufzeichnungshinweis). Diese Ansage ist nicht abschaltbar.",
+        "Der Kunde ist als Verantwortlicher dafür verantwortlich, dass für eine Aufzeichnung/Transkription eine tragfähige Rechtsgrundlage besteht (insbesondere Einwilligung der Endnutzer, soweit erforderlich) und die betroffenen Personen ordnungsgemäß informiert werden. § 17 gilt entsprechend."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "§ 6",
+      "text": "Automatisierte Erklärungen der Agenten"
+    },
+    {
+      "t": "num",
+      "items": [
+        "Die Agenten dienen der Auskunft, Information, Terminvereinbarung und Vorqualifizierung. Sie sind **nicht bevollmächtigt, rechtsverbindliche Erklärungen abzugeben** — insbesondere keine verbindlichen Preis- oder Konditionszusagen, keine Bestellungen und keinen Vertragsschluss namens des Kunden oder namens NexAIs.",
+        "Der Kunde stellt sicher, dass Prozesse, in die Agenten eingebunden sind, keine automatisierte rechtsverbindliche Bindung ohne menschliche Bestätigung vorsehen, soweit dies nicht ausdrücklich und gesondert vereinbart ist.",
+        "Äußerungen eines für den Kunden betriebenen Agenten im Rahmen der vereinbarten Aufgabe werden im Verhältnis der Parteien dem **Kunden zugerechnet**; NexAI haftet hierfür nur nach Maßgabe von § 12."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "§ 7",
+      "text": "Vergütung und Zahlung"
+    },
+    {
+      "t": "num",
+      "items": [
+        "Alle Preise verstehen sich **netto zzgl. der gesetzlichen Umsatzsteuer**. NexAI unterliegt der Regelbesteuerung; bis zur Erteilung einer USt-IdNr. wird die Steuernummer auf der Rechnung ausgewiesen.",
+        "Es wird **keine Einrichtungs-/Setup-Gebühr** erhoben. Geschuldet ist ausschließlich ein **monatlicher oder — nach Wahl im Auftragsformular — jährlicher Beitrag** gemäß Auftragsformular.",
+        "Im Beitrag ist ein **Freikontingent** an Nutzung enthalten (z. B. Gesprächsminuten, Nachrichten, Vorgänge). Nutzung über das Freikontingent hinaus (**Mehrverbrauch / Overage**) wird zum im Auftragsformular vereinbarten Netto-Einheitspreis (z. B. \"____ EUR/Min.\") abgerechnet.",
+        "Der Mehrverbrauch wird nachgelagert mit dem **Folgemonatsbeitrag** abgerechnet. NexAI stellt auf Verlangen einen **Einzelverbindungs-/Nutzungsnachweis** zur Verfügung. Je Agent kann ein technisches EUR-Spend-Cap vereinbart werden; bei Erreichen des Caps ist NexAI berechtigt, die Weiterleistung bis zur Freigabe eines höheren Caps auszusetzen.",
+        "Überschreitet der Mehrverbrauch eine im Auftragsformular festgelegte Overage-Schwelle, ist der darüber hinausgehende Betrag **sofort fällig** und kann zwischenabgerechnet werden.",
+        "Der jährliche Beitrag ist im Voraus für die jeweilige Laufzeit fällig; der monatliche Beitrag ist im Voraus zu Beginn des jeweiligen Monats fällig.",
+        "Die Zahlung erfolgt nach Wahl des Kunden per **SEPA-Firmenlastschrift (B2B-Firmenlastschriftmandat)** oder per **Überweisung** auf das in der Rechnung genannte Konto. Rechnungen sind, sofern nichts anderes vereinbart ist, ohne Abzug binnen 14 Tagen ab Zugang zur Zahlung fällig.",
+        "Bei Zahlungsverzug schuldet der Kunde Verzugszinsen in Höhe von **neun (9) Prozentpunkten über dem Basiszinssatz** sowie eine Pauschale von **40 EUR** (§ 288 Abs. 2, Abs. 5 BGB). Die Geltendmachung eines weitergehenden Schadens bleibt vorbehalten; die Pauschale ist auf einen geschuldeten Schadensersatz anzurechnen, soweit der Schaden in Kosten der Rechtsverfolgung begründet ist."
+      ]
+    },
+    {
+      "t": "h2",
+      "text": "(9) Preisanpassung"
+    },
+    {
+      "t": "num",
+      "items": [
+        "NexAI ist berechtigt, die Beiträge und Einheitspreise zur Anpassung an veränderte Kosten (insbesondere Kosten der Subunternehmer / Drittdienste, Personal-, Energie- und Infrastrukturkosten) anzupassen. Kostensenkungen sind in gleichem Maße weiterzugeben (**Symmetrie**).",
+        "Preisanpassungen werden dem Kunden mit einer Frist von **sechs (6) Wochen** vor Wirksamwerden in Textform angekündigt. Eine **Zustimmungsfiktion findet nicht statt**; die Anpassung wird nach Ablauf der Ankündigungsfrist wirksam, wenn der Kunde nicht von seinem Sonderkündigungsrecht Gebrauch macht.",
+        "Erhöht sich der Beitrag um **mehr als 5 %** gegenüber dem zuletzt geschuldeten Beitrag, steht dem Kunden ein **Sonderkündigungsrecht** zum Zeitpunkt des Wirksamwerdens der Erhöhung zu; die Kündigung ist in Textform bis zum Wirksamwerden zu erklären. Macht der Kunde von seinem Sonderkündigungsrecht Gebrauch, gilt bis zum Wirksamwerden der Kündigung der bisherige Preis."
+      ]
+    },
+    {
+      "t": "h2",
+      "text": "(10) Leistungsaussetzung bei Verzug"
+    },
+    {
+      "t": "p",
+      "text": "Bei Zahlungsverzug ist NexAI zur Aussetzung der Betriebsleistungen erst nach **vorheriger Ankündigung und Ablauf einer Nachfrist von sieben (7) Tagen** berechtigt. Eine Aussetzung erfolgt **ohne Löschung von Daten oder Konfigurationen**; die Wiederaufnahme erfolgt unverzüglich nach Ausgleich des Rückstands."
+    },
+    {
+      "t": "h2",
+      "text": "(11) Aufrechnung und Zurückbehaltung"
+    },
+    {
+      "t": "p",
+      "text": "Der Kunde kann nur mit **unbestrittenen oder rechtskräftig festgestellten** Gegenforderungen aufrechnen. Ein Zurückbehaltungsrecht steht dem Kunden nur wegen Gegenansprüchen aus **demselben Vertragsverhältnis** zu."
+    },
+    {
+      "t": "h1",
+      "num": "§ 8",
+      "text": "Laufzeit und Kündigung"
+    },
+    {
+      "t": "num",
+      "items": [
+        "**Monatsmodell:** Wird im Auftragsformular ein monatlicher Beitrag gewählt, ist der Vertrag mit einer Frist von **einem (1) Monat zum Monatsende** ordentlich kündbar.",
+        "**Jahresmodell:** Wird ein jährlicher Beitrag gewählt, beträgt die **Mindestlaufzeit zwölf (12) Monate**. Der als Gegenleistung für die feste Laufzeit gewährte Rabatt wird bei vorzeitiger Beendigung nicht anteilig erstattet; eine **anteilige Rückerstattung ist ausgeschlossen** (vorbehaltlich § 22). Der Vertrag verlängert sich automatisch um jeweils weitere zwölf (12) Monate, sofern er nicht mit einer Frist von **einem (1) Monat zum Laufzeitende** in Textform gekündigt wird.",
+        "Das Recht zur **außerordentlichen Kündigung aus wichtigem Grund** (§ 314 BGB) bleibt für beide Parteien unberührt. Ein wichtiger Grund liegt für NexAI insbesondere vor, wenn (a) der Kunde mit Beiträgen in Höhe von **mehr als zwei (2) Monatsbeiträgen** in Verzug ist und trotz Fristsetzung nicht ausgleicht, oder (b) der Kunde die Agenten trotz Abmahnung **rechtswidrig nutzt** (insbesondere Verstoß gegen § 4, § 15, § 16 oder § 17).",
+        "Jede Kündigung bedarf mindestens der Textform (§ 126b BGB)."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "§ 9",
+      "text": "Mitwirkungspflichten des Kunden"
+    },
+    {
+      "t": "num",
+      "items": [
+        "Der Kunde stellt NexAI die für die Leistungserbringung erforderlichen Informationen, Inhalte, Zugänge, Freigaben und Ansprechpartner rechtzeitig, vollständig und in geeigneter Form zur Verfügung.",
+        "Der Kunde benennt einen entscheidungsbefugten Ansprechpartner und erteilt Freigaben und Weisungen unverzüglich, um Verzögerungen zu vermeiden.",
+        "Der Kunde ist für die Richtigkeit und Rechtmäßigkeit der von ihm beigestellten Inhalte, Daten und Kontaktlisten verantwortlich und stellt sicher, dass deren Nutzung durch NexAI keine Rechte Dritter verletzt.",
+        "Kommt der Kunde seinen Mitwirkungspflichten nicht nach, verlängern sich vereinbarte Fristen angemessen; hierdurch entstehender Mehraufwand kann nach Ankündigung gesondert berechnet werden."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "§ 10",
+      "text": "Nutzungsrechte"
+    },
+    {
+      "t": "num",
+      "items": [
+        "Sämtliche von NexAI erstellten oder eingesetzten **Prompts, Workflows, Konfigurationen, Skripte, Quellcodes, Modelle, Vorlagen und sonstigen Arbeitsergebnisse** — auch soweit sie individuell für den Kunden erstellt wurden — verbleiben einschließlich aller Rechte des geistigen Eigentums bei **NexAI**.",
+        "Der Kunde erhält für die Dauer des Vertrags ein **einfaches, nicht ausschließliches, nicht übertragbares und nicht unterlizenzierbares Nutzungsrecht**, die Agenten und Arbeitsergebnisse im vereinbarten Umfang zu nutzen. Dieses Nutzungsrecht **erlischt mit Beendigung** des jeweiligen Vertrags.",
+        "Die im Betrieb erzeugten **Ergebnisdaten** (insbesondere Leads, Termine, Transkripte, Gesprächsprotokolle und sonstige geschäftliche Ergebnisdaten) sind inhaltlich dem **Kunden zugeordnet** und werden ihm nach Maßgabe von § 21 herausgegeben bzw. exportiert.",
+        "Vom Kunden beigestellte Materialien, Marken, Inhalte und Daten (**beigestellte Materialien**) verbleiben im Eigentum bzw. in der Rechtsinhaberschaft des Kunden. Der Kunde räumt NexAI die zur Vertragserfüllung erforderlichen Nutzungsrechte hieran ein."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "§ 11",
+      "text": "Betriebsinfrastruktur und Accounts"
+    },
+    {
+      "t": "num",
+      "items": [
+        "Die zur Erbringung der Betriebsleistungen genutzten **Accounts, Zugangsdaten, API-Schlüssel, Rufnummern und Infrastrukturkomponenten** sind **Betriebsmittel der NexAI**. Ein **Herausgabeanspruch** des Kunden auf diese Betriebsmittel besteht nicht, vorbehaltlich Absatz (3) und § 21.",
+        "NexAI gewährleistet eine **logische Mandantentrennung** der Kundendaten. Die Einzelheiten der technischen und organisatorischen Maßnahmen ergeben sich aus Anlage B (AVV).",
+        "Optional können auf Wunsch des Kunden **kundeneigene Accounts** eingerichtet und genutzt werden. In diesem Fall stehen die betreffenden Accounts und Zugangsdaten im Eigentum bzw. in der Verfügungsbefugnis des Kunden; bei Vertragsende erfolgt eine Übergabe nach § 21."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "§ 12",
+      "text": "Haftung"
+    },
+    {
+      "t": "p",
+      "text": "Für die Haftung von NexAI gilt die nachfolgende, in ihren Stufen jeweils eigenständig geltende (\"blue-pencil-feste\") Regelung:"
+    },
+    {
+      "t": "num",
+      "items": [
+        "**(Stufe 1) Unbeschränkte Haftung:** NexAI haftet unbeschränkt bei Vorsatz und grober Fahrlässigkeit, bei der Verletzung des Lebens, des Körpers oder der Gesundheit, bei arglistigem Verschweigen eines Mangels, bei Übernahme einer Garantie sowie nach dem Produkthaftungsgesetz.",
+        "**(Stufe 2) Haftung bei einfacher Fahrlässigkeit:** Bei einfacher Fahrlässigkeit haftet NexAI nur bei Verletzung einer **wesentlichen Vertragspflicht (Kardinalpflicht)** — d. h. einer Pflicht, deren Erfüllung die ordnungsgemäße Durchführung des Vertrags überhaupt erst ermöglicht und auf deren Einhaltung der Kunde regelmäßig vertrauen darf. In diesem Fall ist die Haftung auf den **vertragstypischen, vorhersehbaren Schaden** begrenzt. Die Haftung ist ferner der Höhe nach begrenzt auf die in den letzten zwölf (12) Monaten vor dem schadensauslösenden Ereignis vom Kunden gezahlte Vergütung, **mindestens jedoch \"____ EUR\"** je Schadensfall, sowie auf ein **Jahres-Aggregat von \"____ EUR\"**.",
+        "**(Stufe 3) Im Übrigen** ist die Haftung von NexAI ausgeschlossen.",
+        "NexAI übernimmt **keine Erfolgs-, Lead- oder Umsatzgarantie**. Insbesondere wird keine bestimmte Anzahl an Gesprächen, Terminen, Leads, Abschlüssen oder Umsätzen geschuldet oder garantiert.",
+        "Die vorstehenden Haftungsbeschränkungen gelten auch zugunsten der gesetzlichen Vertreter, Gesellschafter, Mitarbeiter und Erfüllungsgehilfen von NexAI.",
+        "Eine Änderung der Beweislast zum Nachteil des Kunden ist mit den vorstehenden Regelungen nicht verbunden."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "§ 13",
+      "text": "Datenschutz und Auftragsverarbeitung"
+    },
+    {
+      "t": "num",
+      "items": [
+        "Soweit NexAI im Auftrag des Kunden personenbezogene Daten verarbeitet, gilt der als **Anlage B (AVV)** beigefügte Auftragsverarbeitungsvertrag, der insoweit zwingend und vorrangig ist (§ 1 Abs. 5).",
+        "Der **Kunde ist Verantwortlicher** im Sinne des Art. 4 Nr. 7 DSGVO; **NexAI ist Auftragsverarbeiter** im Sinne des Art. 4 Nr. 8 DSGVO, soweit nicht im Einzelfall abweichend geregelt.",
+        "Im Innenverhältnis richtet sich der Ausgleich einer gesamtschuldnerischen Haftung nach Art. 82 Abs. 5 DSGVO nach den Verursachungs- und Verantwortungsanteilen der Parteien.",
+        "Eine Freistellung von behördlich verhängten **Bußgeldern** wird durch diesen Vertrag nicht begründet; die Regelung in diesem Paragraphen ist insoweit lediglich deklaratorisch und lässt die gesetzliche Verantwortlichkeit jeder Partei unberührt."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "§ 14",
+      "text": "Datenspeicherung und Transparenz"
+    },
+    {
+      "t": "num",
+      "items": [
+        "Der Kunde stimmt ausdrücklich zu, dass Daten zur Vertragserfüllung **intern bei NexAI** und **gegebenenfalls extern bei Subunternehmern** (Unterauftragsverarbeiter / Drittdienste, insbesondere Vapi, Twilio, Make, OpenAI, ElevenLabs, Google, Hoster — auch in Drittländern nach Maßgabe der Anlage B) gespeichert und verarbeitet werden.",
+        "Dies betrifft sowohl **Kundendaten** als auch **Endnutzerdaten** (Anrufer / Chat-Kontakte), namentlich Kontaktdaten, Gesprächsinhalte, Transkripte und Metadaten, jeweils im Rahmen der nachstehenden Speicherregel.",
+        "**Speicherregel:** Wo eine Speicherung technisch abschaltbar ist, erfolgt grundsätzlich **keine Speicherung**. Wo eine Speicherung technisch nicht abschaltbar oder zur Leistungserbringung erforderlich ist, werden die Daten für **sechs (6) Monate** aufbewahrt und anschließend gelöscht, soweit keine gesetzliche Aufbewahrungspflicht entgegensteht. Geschäftsdaten werden zusätzlich in den Systemen des Kunden geführt; das **Kundensystem ist das führende System**.",
+        "**Kundenpflicht:** Der Kunde stellt als Verantwortlicher sicher, dass für die Verarbeitung eine tragfähige **Rechtsgrundlage** besteht, und informiert die Endnutzer gemäß **Art. 13 und 14 DSGVO** (Datenschutzhinweis sowie Bot-Ansage), einschließlich eines Hinweises auf die Einbindung von NexAI und der eingesetzten Drittdienste.",
+        "Verletzt der Kunde die Pflichten nach Absatz (4), **stellt er NexAI von allen hieraus resultierenden Ansprüchen Dritter sowie von angemessenen Kosten der Rechtsverteidigung frei** (§ 17 gilt entsprechend)."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "§ 15",
+      "text": "Akquise und Direktwerbung (UWG)"
+    },
+    {
+      "t": "num",
+      "items": [
+        "Setzt der Kunde Agenten zur Akquise oder Direktwerbung ein, ist ausschließlich eine **rechtlich zulässige Ansprache** zulässig (insbesondere nach § 7 UWG sowie Art. 6 und Art. 14 DSGVO). Der Kunde sichert zu, dass für die jeweilige Ansprache — soweit möglich — eine tragfähige Rechtsgrundlage besteht.",
+        "NexAI ist berechtigt, die Durchführung von Kampagnen, die erkennbar **rechtswidrig** sind oder gegen § 7 UWG bzw. datenschutzrechtliche Vorgaben verstoßen, ganz oder teilweise **abzulehnen** oder auszusetzen.",
+        "Widersprüche und Opt-outs von angesprochenen Kontakten werden dokumentiert und beachtet; der Kunde stellt die Fortführung der Opt-out-Dokumentation in seinen Systemen sicher."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "§ 16",
+      "text": "Stimm- und Namensrechte, Deepfake-Kennzeichnung"
+    },
+    {
+      "t": "num",
+      "items": [
+        "Standardmäßig werden **synthetische Standardstimmen** eingesetzt, an denen keine Persönlichkeitsrechte Dritter bestehen.",
+        "Wünscht der Kunde die Nutzung einer geklonten oder nachgebildeten Stimme oder eines Namens einer real existierenden Person (Stimm-Klon), hat er NexAI eine **dokumentierte Einwilligung** der betroffenen Person vorzulegen. Für synthetische Nachbildungen realer Personen gelten die Transparenz- und Kennzeichnungspflichten der KI-VO (§ 4).",
+        "Der Kunde **stellt NexAI von allen Ansprüchen frei**, die Dritte wegen der Verletzung von Persönlichkeits-, Stimm-, Namens- oder sonstigen Rechten aufgrund einer vom Kunden veranlassten Stimm- oder Namensnutzung geltend machen, einschließlich angemessener Kosten der Rechtsverteidigung."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "§ 17",
+      "text": "Rechtmäßige Nutzung, Freistellung und vorübergehende Deaktivierung"
+    },
+    {
+      "t": "num",
+      "items": [
+        "Der Kunde nutzt die Agenten ausschließlich im Rahmen der geltenden Gesetze und dieses Vertrags. Untersagt sind insbesondere rechtswidrige, irreführende, belästigende oder rechtsverletzende Nutzungen.",
+        "Der Kunde **stellt NexAI von sämtlichen Ansprüchen Dritter frei**, die auf einer von ihm zu vertretenden rechtswidrigen oder vertragswidrigen Nutzung der Agenten beruhen, einschließlich angemessener Kosten der Rechtsverteidigung. NexAI wird den Kunden über eine solche Inanspruchnahme unverzüglich informieren und ihm die Rechtsverteidigung ermöglichen.",
+        "Bei konkreten Anhaltspunkten für eine rechtswidrige Nutzung oder eine erhebliche Gefährdung Dritter ist NexAI berechtigt, den betroffenen Agenten **sofort vorübergehend zu deaktivieren**. NexAI informiert den Kunden unverzüglich. Die **Beitragspflicht bleibt** für die Dauer einer vom Kunden zu vertretenden Deaktivierung bestehen."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "§ 18",
+      "text": "Vertraulichkeit"
+    },
+    {
+      "t": "num",
+      "items": [
+        "Die Parteien behandeln alle als vertraulich gekennzeichneten oder ihrer Natur nach vertraulichen Informationen der jeweils anderen Partei streng vertraulich und nutzen sie nur zur Vertragserfüllung.",
+        "Die Vertraulichkeitspflicht gilt nicht für Informationen, die öffentlich bekannt sind, rechtmäßig von Dritten erlangt wurden oder unabhängig entwickelt wurden, sowie soweit eine gesetzliche oder behördliche Offenlegungspflicht besteht.",
+        "Die Vertraulichkeitspflicht besteht auch nach Beendigung des Vertrags für die Dauer von drei (3) Jahren fort."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "§ 19",
+      "text": "Referenznutzung"
+    },
+    {
+      "t": "p",
+      "text": "NexAI darf den Kunden als Referenz (Name und Logo) auf ihrer Website und in Vertriebsunterlagen nur nennen, wenn der Kunde dem nachfolgend ausdrücklich zustimmt (Opt-in):"
+    },
+    {
+      "t": "checkbox",
+      "text": "Der Kunde stimmt der Nennung als Referenz (Name und Logo) zu. Die Zustimmung ist jederzeit mit Wirkung für die Zukunft widerruflich.",
+      "checked": false
+    },
+    {
+      "t": "h1",
+      "num": "§ 20",
+      "text": "Drittanbieter und Drittdienste"
+    },
+    {
+      "t": "num",
+      "items": [
+        "NexAI setzt zur Leistungserbringung Subunternehmer und Drittdienste ein (insbesondere Vapi, Twilio, Make, OpenAI, ElevenLabs, Google, Hoster). Die datenschutzrechtliche Einbindung richtet sich nach Anlage B (AVV).",
+        "Für Störungen, Ausfälle oder Leistungsänderungen von Drittdiensten haftet NexAI **nicht pauschal**, sondern nur nach Maßgabe von § 12 und nur, soweit sie ein eigenes Verschulden trifft (**Verschuldens-Carve-out**); ein genereller Haftungsausschluss für Drittdienste besteht nicht.",
+        "Laufende Kosten von Drittdiensten, die dem Kunden gesondert zugeordnet sind oder die durch die vom Kunden gewählte Nutzung anfallen, trägt der Kunde, soweit nicht ausdrücklich anders vereinbart."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "§ 21",
+      "text": "Vertragsende und Offboarding"
+    },
+    {
+      "t": "num",
+      "items": [
+        "Nach Beendigung des Vertrags stellt NexAI dem Kunden die ihm zugeordneten Ergebnisdaten für einen Zeitraum von **dreißig (30) Tagen zum Export** in einem gängigen, maschinenlesbaren Format (**CSV/JSON**) zur Verfügung. Nach Ablauf dieser Frist werden die Daten gelöscht, soweit keine gesetzliche Aufbewahrungspflicht entgegensteht; NexAI erteilt auf Verlangen eine **Löschbestätigung**.",
+        "Von NexAI bereitgestellte **Rufnummern** werden auf Wunsch des Kunden **zurückportiert**. Bis zum Abschluss der Portierung hält NexAI die betreffende Rufnummer im erforderlichen Umfang aufrecht (**Keep-Alive**).",
+        "Bei **kundeneigenen Accounts** (§ 11 Abs. 3) erfolgt das Offboarding in folgender Reihenfolge: (a) Export der Daten, (b) Entfernung des geistigen Eigentums und der Betriebsmittel von NexAI (Prompts, Workflows, Konfigurationen, Skripte), (c) Entzug der Zugriffe von NexAI auf die kundeneigenen Accounts.",
+        "Im Jahresmodell besteht bei ordentlicher Beendigung kein Anspruch auf anteilige Rückerstattung (§ 8 Abs. 2). § 22 (Höhere Gewalt) bleibt unberührt."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "§ 22",
+      "text": "Höhere Gewalt"
+    },
+    {
+      "t": "num",
+      "items": [
+        "Keine Partei haftet für die Nichterfüllung oder verzögerte Erfüllung ihrer Pflichten, soweit diese auf **höherer Gewalt** beruht. Als höhere Gewalt gelten unvorhersehbare, außerhalb des zumutbaren Einflussbereichs liegende Ereignisse, insbesondere **Cyberangriffe, Ausfall oder Insolvenz von Providern/Drittdiensten, behördliche Sperren oder Anordnungen sowie Netz-, Strom- und Telekommunikationsausfälle**, ferner Naturereignisse, Pandemien, Streik und Krieg.",
+        "Für die Dauer eines Ereignisses höherer Gewalt sind die betroffenen **Leistungs- und die entsprechenden Zahlungspflichten ausgesetzt**. Die betroffene Partei informiert die andere Partei unverzüglich.",
+        "Dauert das Ereignis höherer Gewalt länger als **dreißig (30) Tage** an, ist jede Partei berechtigt, den betroffenen Vertrag mit sofortiger Wirkung zu **kündigen**.",
+        "Bereits im Voraus gezahlte Beiträge für nachweislich **nicht erbrachte Leistungszeiträume** werden dem Kunden in diesem Fall **anteilig zurückerstattet**."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "§ 23",
+      "text": "Verfügbarkeit"
+    },
+    {
+      "t": "p",
+      "text": "NexAI schuldet keine bestimmte Verfügbarkeit im Sinne einer Garantie, sondern ein fachgerechtes Bemühen um einen möglichst störungsfreien Betrieb (**Bemühensschuld**). Verfügbarkeitsziele, Wartungsfenster und Reaktionszeiten ergeben sich, soweit vereinbart, aus Anlage C (SLA)."
+    },
+    {
+      "t": "h1",
+      "num": "§ 24",
+      "text": "Schlussbestimmungen"
+    },
+    {
+      "t": "num",
+      "items": [
+        "**Textform:** Erklärungen des Kunden mit Vertragsrelevanz, insbesondere Kündigungen, Widersprüche und Sonderkündigungen, bedürfen mindestens der Textform (§ 126b BGB).",
+        "**Vorrang von Individualabreden:** Individuell ausgehandelte Abreden gehen den Regelungen dieses Rahmenvertrags und der Anlagen vor (§ 305b BGB).",
+        "**Abwehrklausel:** Allgemeine Geschäfts- oder Einkaufsbedingungen des Kunden finden keine Anwendung, auch wenn NexAI ihnen nicht ausdrücklich widerspricht oder in Kenntnis solcher Bedingungen Leistungen erbringt.",
+        "**Abtretung / Vertragsübernahme:** Der Kunde kann Rechte und Pflichten aus diesem Vertrag nur mit vorheriger Zustimmung von NexAI in Textform auf Dritte übertragen; § 354a HGB bleibt unberührt. NexAI ist berechtigt, zur Leistungserbringung Subunternehmer einzusetzen (§ 20).",
+        "**Salvatorische Klausel:** Sollten einzelne Bestimmungen dieses Vertrags ganz oder teilweise unwirksam oder undurchführbar sein oder werden, so bleibt die Wirksamkeit der übrigen Bestimmungen unberührt. Die Parteien werden eine unwirksame oder undurchführbare Bestimmung durch eine wirksame ersetzen, die dem wirtschaftlich Gewollten am nächsten kommt; entsprechendes gilt für Regelungslücken. Eine Umdeutung in eine bloße Geltung dispositiven Rechts findet insoweit nicht statt.",
+        "**Anwendbares Recht:** Es gilt das Recht der Bundesrepublik Deutschland unter Ausschluss des UN-Kaufrechts (CISG).",
+        "**Gerichtsstand:** Ausschließlicher Gerichtsstand für alle Streitigkeiten aus und im Zusammenhang mit diesem Vertrag ist, soweit der Kunde Kaufmann, juristische Person des öffentlichen Rechts oder öffentlich-rechtliches Sondervermögen ist, der **Sitz von NexAI**."
+      ]
+    },
+    {
+      "t": "note",
+      "text": "Dieser Rahmenvertrag ist ein sorgfältig erstellter Entwurf. Er ersetzt keine Rechtsberatung und sollte vor Verwendung im Einzelfall anwaltlich geprüft und an die konkreten Umstände angepasst werden."
+    },
+    {
+      "t": "spacer",
+      "h": 16
+    },
+    {
+      "t": "sig",
+      "cols": [
+        {
+          "role": "Für NexAI",
+          "lines": [
+            "Ort, Datum",
+            "",
+            "Maximilian Trenk (Gesellschafter)"
+          ]
+        },
+        {
+          "role": "Für NexAI",
+          "lines": [
+            "Ort, Datum",
+            "",
+            "Jason Brian Merklein (Gesellschafter)"
+          ]
+        },
+        {
+          "role": "Für den Kunden",
+          "lines": [
+            "Ort, Datum",
+            "",
+            "Name / Funktion"
+          ]
+        }
+      ]
+    },
+    {
+      "t": "pagebreak"
+    },
+    {
+      "t": "title",
+      "text": "Auftragsformular / Leistungsschein"
+    },
+    {
+      "t": "subtitle",
+      "text": "Individualabrede zum Rahmenvertrag über KI-Agenten und digitale Assistenten"
+    },
+    {
+      "t": "meta",
+      "text": "Stand: Juli 2026"
+    },
+    {
+      "t": "spacer",
+      "h": 6
+    },
+    {
+      "t": "p",
+      "text": "Dieses Auftragsformular (nachfolgend \"Leistungsschein\") konkretisiert die konkret beauftragten Leistungen, Beträge und Rahmenbedingungen zwischen den nachstehenden Parteien. Er ist ein **Vertragsdokument** im Sinne des Rahmenvertrags und stellt eine **Individualabrede** dar. Bei Widersprüchen zwischen diesem Leistungsschein, dem Rahmenvertrag, den Anlagen und den AGB (B2B) gilt die im Rahmenvertrag festgelegte Rangfolge. Die in diesem Leistungsschein getroffenen individuellen Vereinbarungen gehen den AGB (B2B) als Individualabrede nach § 305b BGB vor."
+    },
+    {
+      "t": "spacer",
+      "h": 4
+    },
+    {
+      "t": "h1",
+      "num": "1.",
+      "text": "Vertragsparteien"
+    },
+    {
+      "t": "h2",
+      "text": "Auftragnehmer (\"NexAI\")"
+    },
+    {
+      "t": "p",
+      "text": "NexAI – Next Generation Artificial Intelligence GbR, Untere Bergstraße 13, 74586 Frankenhardt-Honhardt, Deutschland, vertreten durch die Gesellschafter Maximilian Trenk und Jason Brian Merklein, E-Mail mbt@nex-a-i.com, Telefon 0176 80714816."
+    },
+    {
+      "t": "h2",
+      "text": "Auftraggeber (\"Kunde\")"
+    },
+    {
+      "t": "fill",
+      "label": "Firma / Unternehmen",
+      "value": ""
+    },
+    {
+      "t": "fill",
+      "label": "Rechtsform",
+      "value": ""
+    },
+    {
+      "t": "fill",
+      "label": "Ansprechpartner / Funktion",
+      "value": ""
+    },
+    {
+      "t": "fill",
+      "label": "Anschrift (Straße, Hausnr.)",
+      "value": ""
+    },
+    {
+      "t": "fill",
+      "label": "PLZ / Ort",
+      "value": ""
+    },
+    {
+      "t": "fill",
+      "label": "Land",
+      "value": ""
+    },
+    {
+      "t": "fill",
+      "label": "E-Mail",
+      "value": ""
+    },
+    {
+      "t": "fill",
+      "label": "Telefon",
+      "value": ""
+    },
+    {
+      "t": "fill",
+      "label": "USt-IdNr. / Steuernummer",
+      "value": ""
+    },
+    {
+      "t": "fill",
+      "label": "Handelsregister / Registergericht (soweit vorhanden)",
+      "value": ""
+    },
+    {
+      "t": "note",
+      "text": "Der Kunde bestätigt, den Vertrag als Unternehmer im Sinne des § 14 BGB in Ausübung seiner gewerblichen oder selbständigen beruflichen Tätigkeit abzuschließen (B2B)."
+    },
+    {
+      "t": "spacer",
+      "h": 4
+    },
+    {
+      "t": "h1",
+      "num": "2.",
+      "text": "Bezug zum Rahmenvertrag"
+    },
+    {
+      "t": "num",
+      "items": [
+        "Diesem Leistungsschein liegt der zwischen den Parteien geschlossene Rahmenvertrag über die Bereitstellung und den Betrieb von KI-Agenten (nachfolgend \"Rahmenvertrag\") nebst seinen Anlagen zugrunde. Die dort definierten Begriffe gelten in diesem Leistungsschein einheitlich.",
+        "Mit Unterzeichnung dieses Leistungsscheins bestätigt der Kunde, dass ihm der Rahmenvertrag, die AGB (B2B) sowie die Anlagen A (Leistungsbeschreibung), B (AVV), C (SLA) und D (Abnahmeprotokoll) vorliegen und Vertragsbestandteil sind.",
+        "Die datenschutzrechtliche Rollenverteilung (Verantwortlicher / Auftragsverarbeiter) richtet sich nach Anlage B (AVV); die Rollenverteilung nach der KI-VO ergibt sich aus Ziffer 4 dieses Leistungsscheins."
+      ]
+    },
+    {
+      "t": "fill",
+      "label": "Rahmenvertrag vom / Version",
+      "value": ""
+    },
+    {
+      "t": "spacer",
+      "h": 4
+    },
+    {
+      "t": "h1",
+      "num": "3.",
+      "text": "Beauftragte Leistungen"
+    },
+    {
+      "t": "p",
+      "text": "Der Kunde beauftragt die nachfolgend angekreuzten Leistungen. Die nähere Beschreibung ergibt sich aus Anlage A (Leistungsbeschreibung)."
+    },
+    {
+      "t": "h2",
+      "text": "3.1 Betriebsleistungen (laufender Betrieb von Agenten und Anwendungen)"
+    },
+    {
+      "t": "checkbox",
+      "text": "**Voice Agent** (KI-Telefonassistent für ein- und/oder ausgehende Gespräche)",
+      "checked": false
+    },
+    {
+      "t": "checkbox",
+      "text": "**Chat Agent** (KI-Chatassistent für Website, Messenger o. Ä.)",
+      "checked": false
+    },
+    {
+      "t": "checkbox",
+      "text": "**NexAI CRM** (Kundensystem: Kontakte, Anfragen, Termine, Aufgaben, Berichte)",
+      "checked": false
+    },
+    {
+      "t": "checkbox",
+      "text": "**NexAI Kalender** (Online-Terminbuchung mit Bestätigung und Erinnerung)",
+      "checked": false
+    },
+    {
+      "t": "checkbox",
+      "text": "**Automatisierung** (Prozess-/Workflow-Automatisierungen)",
+      "checked": false
+    },
+    {
+      "t": "checkbox",
+      "text": "**Individuelle KI-Agenten** (kundenspezifisch entwickelte Agenten)",
+      "checked": false
+    },
+    {
+      "t": "checkbox",
+      "text": "**NexAI App** (individuelle installierbare Anwendung für Kunden oder Beschäftigte)",
+      "checked": false
+    },
+    {
+      "t": "h2",
+      "text": "3.2 Projektleistungen (einmalige Werkleistungen)"
+    },
+    {
+      "t": "checkbox",
+      "text": "**Einrichtung und Bereitstellung von Anwendungen** (NexAI CRM, NexAI Kalender, NexAI App; Abnahme nach Anlage D)",
+      "checked": false
+    },
+    {
+      "t": "note",
+      "text": "Projektleistungen unterliegen dem Werkvertragsrecht, Betriebsleistungen dem Dienstvertragsrecht. Setzt der Kunde einen Agenten für ausgehende Ansprache oder Direktwerbung ein, gelten die besonderen Compliance-Zusicherungen des Kunden nach dem Rahmenvertrag (zulässige Ansprache nach § 7 UWG, Informationspflichten nach Art. 14 DSGVO, Opt-out-Dokumentation)."
+    },
+    {
+      "t": "spacer",
+      "h": 4
+    },
+    {
+      "t": "h1",
+      "num": "4.",
+      "text": "Einsatzzweck und KI-VO-Einstufung je Agent"
+    },
+    {
+      "t": "p",
+      "text": "Für jeden beauftragten Agenten ist der verbindliche Einsatzzweck festzulegen. Der Kunde bestätigt für jeden Agenten, dass **kein Hochrisiko-Einsatz nach Anhang III der Verordnung (EU) 2024/1689 (KI-VO)** vorliegt und die Agenten ausschließlich für die angegebenen Zwecke eingesetzt werden. NexAI ist für die Bereitstellung und den Betrieb **Anbieter**, der Kunde als bestimmungsgemäßer Einsetzender **Betreiber** im Sinne der KI-VO; die Betreiberpflichten (u. a. zweckkonforme Verwendung, menschliche Aufsicht) obliegen dem Kunden."
+    },
+    {
+      "t": "h2",
+      "text": "Agent 1"
+    },
+    {
+      "t": "fill",
+      "label": "Bezeichnung / Typ des Agenten",
+      "value": ""
+    },
+    {
+      "t": "fill",
+      "label": "Verbindlicher Einsatzzweck",
+      "value": ""
+    },
+    {
+      "t": "checkbox",
+      "text": "Der Kunde bestätigt: **KEIN Hochrisiko-Einsatz** nach Anhang III KI-VO.",
+      "checked": false
+    },
+    {
+      "t": "checkbox",
+      "text": "Rollenzuordnung KI-VO: **NexAI = Anbieter**, **Kunde = Betreiber**.",
+      "checked": false
+    },
+    {
+      "t": "h2",
+      "text": "Agent 2"
+    },
+    {
+      "t": "fill",
+      "label": "Bezeichnung / Typ des Agenten",
+      "value": ""
+    },
+    {
+      "t": "fill",
+      "label": "Verbindlicher Einsatzzweck",
+      "value": ""
+    },
+    {
+      "t": "checkbox",
+      "text": "Der Kunde bestätigt: **KEIN Hochrisiko-Einsatz** nach Anhang III KI-VO.",
+      "checked": false
+    },
+    {
+      "t": "checkbox",
+      "text": "Rollenzuordnung KI-VO: **NexAI = Anbieter**, **Kunde = Betreiber**.",
+      "checked": false
+    },
+    {
+      "t": "h2",
+      "text": "Agent 3"
+    },
+    {
+      "t": "fill",
+      "label": "Bezeichnung / Typ des Agenten",
+      "value": ""
+    },
+    {
+      "t": "fill",
+      "label": "Verbindlicher Einsatzzweck",
+      "value": ""
+    },
+    {
+      "t": "checkbox",
+      "text": "Der Kunde bestätigt: **KEIN Hochrisiko-Einsatz** nach Anhang III KI-VO.",
+      "checked": false
+    },
+    {
+      "t": "checkbox",
+      "text": "Rollenzuordnung KI-VO: **NexAI = Anbieter**, **Kunde = Betreiber**.",
+      "checked": false
+    },
+    {
+      "t": "note",
+      "text": "Bei mehr als drei Agenten ist eine gleichlautende Fortsetzung als Beiblatt zu diesem Leistungsschein zu verwenden."
+    },
+    {
+      "t": "spacer",
+      "h": 4
+    },
+    {
+      "t": "pagebreak"
+    },
+    {
+      "t": "h1",
+      "num": "5.",
+      "text": "Vergütung"
+    },
+    {
+      "t": "p",
+      "text": "Für die Ersteinrichtung der Agenten wird **keine Einrichtungs- oder Setup-Gebühr** erhoben. Für Betriebsleistungen fällt ausschließlich der nachstehend vereinbarte monatliche **oder** jährliche Beitrag an. Projektleistungen (insbesondere die Einrichtung von Anwendungen) werden, soweit beauftragt, gesondert und einmalig vergütet. Alle Beträge verstehen sich **netto zzgl. der gesetzlichen Umsatzsteuer**."
+    },
+    {
+      "t": "table",
+      "header": [
+        "Position / Leistung",
+        "Modell (monatlich / jährlich / einmalig)",
+        "Netto-Betrag (EUR)"
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "**Summe (netto)**",
+          "",
+          "____ EUR"
+        ]
+      ]
+    },
+    {
+      "t": "fill",
+      "label": "Abrechnungsturnus / Fälligkeit (z. B. monatlich im Voraus, jährlich im Voraus)",
+      "value": ""
+    },
+    {
+      "t": "note",
+      "text": "Umsatzsteuer: Regelbesteuerung; alle Preise netto zzgl. gesetzlicher USt. Bis zur Erteilung der USt-IdNr. wird die Steuernummer auf der Rechnung ausgewiesen."
+    },
+    {
+      "t": "spacer",
+      "h": 4
+    },
+    {
+      "t": "h1",
+      "num": "6.",
+      "text": "Freikontingent und Mehrverbrauch (Overage)"
+    },
+    {
+      "t": "p",
+      "text": "Im Beitrag ist je Agent ein **Freikontingent** enthalten. Darüber hinausgehender **Mehrverbrauch (Overage)** wird zum nachstehenden Netto-Einheitspreis abgerechnet und mit dem Beitrag des Folgemonats in Rechnung gestellt. Auf Verlangen des Kunden wird ein Einzelverbindungsnachweis bereitgestellt."
+    },
+    {
+      "t": "fill",
+      "label": "Freikontingent",
+      "value": "____ Min./Monat"
+    },
+    {
+      "t": "fill",
+      "label": "Mehrverbrauch (Overage)",
+      "value": "____ EUR/Min. netto"
+    },
+    {
+      "t": "fill",
+      "label": "Weiteres Kontingent / Einheit (optional, z. B. Nachrichten/Kontakte)",
+      "value": ""
+    },
+    {
+      "t": "spacer",
+      "h": 4
+    },
+    {
+      "t": "h1",
+      "num": "7.",
+      "text": "Technisches EUR-Spend-Cap je Agent"
+    },
+    {
+      "t": "p",
+      "text": "Zur Kostenbegrenzung wird je Agent ein technisches Ausgabenlimit (EUR-Spend-Cap) hinterlegt. Bei Erreichen des Limits kann der Betrieb des betreffenden Agenten technisch gedrosselt oder ausgesetzt werden. Eine Anhebung des Limits bedarf einer dokumentierten Weisung des Kunden."
+    },
+    {
+      "t": "fill",
+      "label": "EUR-Spend-Cap Agent 1",
+      "value": "____ EUR/Monat"
+    },
+    {
+      "t": "fill",
+      "label": "EUR-Spend-Cap Agent 2",
+      "value": "____ EUR/Monat"
+    },
+    {
+      "t": "fill",
+      "label": "EUR-Spend-Cap Agent 3",
+      "value": "____ EUR/Monat"
+    },
+    {
+      "t": "spacer",
+      "h": 4
+    },
+    {
+      "t": "h1",
+      "num": "8.",
+      "text": "Zahlungsweise"
+    },
+    {
+      "t": "checkbox",
+      "text": "**SEPA-Firmenlastschrift (B2B)** — ein gesondertes SEPA-Firmenlastschriftmandat wird erteilt.",
+      "checked": false
+    },
+    {
+      "t": "checkbox",
+      "text": "**Überweisung** — Zahlung nach Rechnungserhalt innerhalb der im Rahmenvertrag / den AGB (B2B) genannten Frist.",
+      "checked": false
+    },
+    {
+      "t": "spacer",
+      "h": 4
+    },
+    {
+      "t": "h1",
+      "num": "9.",
+      "text": "Laufzeitmodell"
+    },
+    {
+      "t": "p",
+      "text": "Es ist genau eines der folgenden Modelle zu wählen."
+    },
+    {
+      "t": "checkbox",
+      "text": "**Monatsmodell** — monatlich kündbar mit einer Frist von einem Monat zum Monatsende.",
+      "checked": false
+    },
+    {
+      "t": "checkbox",
+      "text": "**Jahresmodell** — Mindestlaufzeit 12 Monate, keine anteilige Rückerstattung (der gewährte Rabatt ist Gegenleistung für die Bindung); Verlängerung um jeweils 12 Monate, Kündigung mit einer Frist von einem Monat zum Laufzeitende.",
+      "checked": false
+    },
+    {
+      "t": "note",
+      "text": "Das Recht zur außerordentlichen Kündigung aus wichtigem Grund bleibt für beide Parteien unberührt."
+    },
+    {
+      "t": "spacer",
+      "h": 4
+    },
+    {
+      "t": "h1",
+      "num": "10.",
+      "text": "Befugnisse der Agenten"
+    },
+    {
+      "t": "checkbox",
+      "text": "Der Kunde bestätigt: Die Agenten geben **KEINE rechtsverbindlichen Zusagen** ab (keine verbindlichen Preise, Bestellungen oder Vertragsabschlüsse). Sie sind auf **Auskunft und Terminvereinbarung** beschränkt (**keine Abschlussvollmacht**).",
+      "checked": false
+    },
+    {
+      "t": "spacer",
+      "h": 4
+    },
+    {
+      "t": "h1",
+      "num": "11.",
+      "text": "KI-Transparenz und Aufzeichnung"
+    },
+    {
+      "t": "p",
+      "text": "Die **KI-Kennzeichnung/Transparenzpflicht nach Art. 50 KI-VO** ist verbindlicher, nicht abschaltbarer Leistungsbestandteil: Endnutzer werden stets darauf hingewiesen, dass sie mit einem KI-System interagieren."
+    },
+    {
+      "t": "p",
+      "text": "**Aufzeichnung/Transkription** von Gesprächen ist **standardmäßig deaktiviert** und wird nur auf dokumentierte Weisung des Kunden aktiviert. Bei aktivierter Aufzeichnung erfolgt zusätzlich zur KI-Ansage ein Aufzeichnungshinweis. Der Kunde ist für das Vorliegen einer tragfähigen Rechtsgrundlage der Aufzeichnung verantwortlich."
+    },
+    {
+      "t": "checkbox",
+      "text": "Aufzeichnung/Transkription **deaktiviert (Standard)**.",
+      "checked": false
+    },
+    {
+      "t": "checkbox",
+      "text": "Aufzeichnung/Transkription **auf Weisung aktiviert** (Pflicht-Ansage mit Aufzeichnungshinweis).",
+      "checked": false
+    },
+    {
+      "t": "spacer",
+      "h": 4
+    },
+    {
+      "t": "h1",
+      "num": "12.",
+      "text": "Rufnummern"
+    },
+    {
+      "t": "checkbox",
+      "text": "Rufnummer(n) **vom Kunden mitgebracht** (Kundeneigentum).",
+      "checked": false
+    },
+    {
+      "t": "checkbox",
+      "text": "Rufnummer(n) **von NexAI gestellt** (Betriebsmittel; kein Herausgabeanspruch).",
+      "checked": false
+    },
+    {
+      "t": "fill",
+      "label": "Betroffene Rufnummer(n)",
+      "value": ""
+    },
+    {
+      "t": "fill",
+      "label": "Registrierungsinhaber der Rufnummer(n)",
+      "value": ""
+    },
+    {
+      "t": "spacer",
+      "h": 4
+    },
+    {
+      "t": "h1",
+      "num": "13.",
+      "text": "Notfall- und Rückfallkontakt"
+    },
+    {
+      "t": "fill",
+      "label": "Notfallkontakt (Name)",
+      "value": ""
+    },
+    {
+      "t": "fill",
+      "label": "Notfallkontakt (Telefon / E-Mail)",
+      "value": ""
+    },
+    {
+      "t": "fill",
+      "label": "Optionale Rückfallnummer (Fallback bei Nichterreichbarkeit des Agenten)",
+      "value": ""
+    },
+    {
+      "t": "spacer",
+      "h": 4
+    },
+    {
+      "t": "h1",
+      "num": "14.",
+      "text": "Einrichtung und Start"
+    },
+    {
+      "t": "fill",
+      "label": "Geplanter Einrichtungs-/Startzeitpunkt",
+      "value": ""
+    },
+    {
+      "t": "note",
+      "text": "Übliche Einrichtungsdauer ab vollständiger Bereitstellung der erforderlichen Mitwirkung und Zugänge: 3–10 Werktage. Der genannte Zeitpunkt ist ein unverbindlicher Zielwert, kein Fixtermin im Sinne des § 323 Abs. 2 Nr. 2 BGB."
+    },
+    {
+      "t": "spacer",
+      "h": 4
+    },
+    {
+      "t": "h1",
+      "num": "15.",
+      "text": "Optionale Ablösesumme (Prompt-Weiternutzung)"
+    },
+    {
+      "t": "p",
+      "text": "Optional kann eine einmalige Ablösesumme für die dauerhafte Weiternutzung der für den Kunden erstellten Prompts/Konfigurationen nach Vertragsende vereinbart werden. Ohne eine solche Vereinbarung besteht kein Anspruch auf Herausgabe oder Weiternutzung der Prompts/Konfigurationen."
+    },
+    {
+      "t": "checkbox",
+      "text": "Ablösesumme für dauerhafte Prompt-Weiternutzung nach Vertragsende **vereinbart**.",
+      "checked": false
+    },
+    {
+      "t": "fill",
+      "label": "Ablösesumme (netto)",
+      "value": "____ EUR"
+    },
+    {
+      "t": "spacer",
+      "h": 4
+    },
+    {
+      "t": "h1",
+      "num": "16.",
+      "text": "Schlussbestätigung"
+    },
+    {
+      "t": "p",
+      "text": "Die Parteien bestätigen die Richtigkeit der vorstehenden Angaben. Dieser Leistungsschein wird mit beidseitiger Unterzeichnung wirksam und ist Bestandteil des Rahmenvertrags."
+    },
+    {
+      "t": "spacer",
+      "h": 8
+    },
+    {
+      "t": "sig",
+      "cols": [
+        {
+          "role": "Für NexAI",
+          "lines": [
+            "Ort, Datum",
+            "",
+            "Maximilian Trenk (Gesellschafter)"
+          ]
+        },
+        {
+          "role": "Für NexAI",
+          "lines": [
+            "Ort, Datum",
+            "",
+            "Jason Brian Merklein (Gesellschafter)"
+          ]
+        },
+        {
+          "role": "Für den Kunden",
+          "lines": [
+            "Ort, Datum",
+            "",
+            "Name / Funktion"
+          ]
+        }
+      ]
+    },
+    {
+      "t": "spacer",
+      "h": 6
+    },
+    {
+      "t": "note",
+      "text": "Dieser Leistungsschein ist ein sorgfältig erstellter Entwurf und sollte für den konkreten Einzelfall anwaltlich geprüft werden."
+    },
+    {
+      "t": "pagebreak"
+    },
+    {
+      "t": "title",
+      "text": "Anlage A – Leistungsbeschreibung"
+    },
+    {
+      "t": "subtitle",
+      "text": "Anlage zum Rahmenvertrag über die Bereitstellung und den Betrieb KI-gestützter digitaler Assistenten zwischen NexAI und dem Kunden"
+    },
+    {
+      "t": "meta",
+      "text": "Stand: Juli 2026"
+    },
+    {
+      "t": "spacer",
+      "h": 6
+    },
+    {
+      "t": "h1",
+      "num": "1.",
+      "text": "Vorbemerkung und Rangfolge"
+    },
+    {
+      "t": "p",
+      "text": "Diese Anlage A (Leistungsbeschreibung) konkretisiert den Gegenstand und den Umfang der von der **NexAI – Next Generation Artificial Intelligence GbR**, Untere Bergstraße 13, 74586 Frankenhardt-Honhardt, Deutschland, vertreten durch die Gesellschafter Maximilian Trenk und Jason Brian Merklein (nachfolgend \"NexAI\"), gegenüber dem Kunden (nachfolgend \"Kunde\") erbrachten Leistungen. Sie ist Bestandteil des Rahmenvertrages und gilt nur in Verbindung mit dem jeweils unterzeichneten Auftragsformular/Leistungsschein."
+    },
+    {
+      "t": "num",
+      "items": [
+        "Maßgeblich für den im Einzelfall geschuldeten Leistungsumfang sind ausschließlich das jeweils unterzeichnete **Auftragsformular/Leistungsschein** in Verbindung mit dieser Anlage A. Diese Anlage beschreibt den möglichen Leistungskatalog; geschuldet ist nur, was im Auftragsformular ausdrücklich als beauftragt gekennzeichnet ist.",
+        "Leistungen, die weder im Auftragsformular noch in dieser Anlage A ausdrücklich aufgeführt sind, sind **nicht geschuldet**. Sie können durch gesonderte schriftliche Vereinbarung (Change Request) beauftragt werden.",
+        "Bei Widersprüchen zwischen den Vertragsdokumenten gilt die im Rahmenvertrag festgelegte Rangfolge. Das Auftragsformular geht dieser Anlage A vor, soweit es abweichende oder ergänzende Festlegungen zum Leistungsumfang trifft.",
+        "Die in dieser Anlage verwendeten definierten Begriffe (insbesondere \"Agenten\", \"Endnutzer\", \"Projektleistungen\", \"Betriebsleistungen\", \"Freikontingent\", \"Mehrverbrauch\", \"Subunternehmer\") haben die im Rahmenvertrag festgelegte Bedeutung."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "2.",
+      "text": "Gegenstand und Leistungskategorien"
+    },
+    {
+      "t": "p",
+      "text": "NexAI stellt dem Kunden **Agenten** (KI-gestützte digitale Assistenten) und **Anwendungen** (Softwareanwendungen wie NexAI CRM, NexAI Kalender und individuelle Anwendungen) bereit und betreibt diese. Die Leistungen gliedern sich in zwei rechtlich unterschiedlich einzuordnende Kategorien:"
+    },
+    {
+      "t": "num",
+      "items": [
+        "**Projektleistungen** – einmalige Werkleistungen mit definiertem Erfolg, insbesondere die Einrichtung und Bereitstellung von Anwendungen (Ziffern 7 bis 9) sowie die Ersteinrichtung der Agenten (Ziffer 10). Es gilt Werkvertragsrecht; die Abnahme richtet sich nach Anlage D (Abnahmeprotokoll).",
+        "**Betriebsleistungen** – laufender Betrieb, Konfigurationspflege, Wartung, Hosting/Bereitstellung der erforderlichen Infrastruktur sowie Support der Agenten und Anwendungen. Es gilt Dienstvertragsrecht; die Verfügbarkeit richtet sich nach Anlage C (SLA)."
+      ]
+    },
+    {
+      "t": "p",
+      "text": "Welche der nachstehend in den Ziffern 3 bis 9 beschriebenen Agenten und Leistungen konkret beauftragt sind, ergibt sich aus dem Auftragsformular. Der jeweils in einem Modul enthaltene Funktionsumfang, das Freikontingent, der Netto-Einheitspreis für Mehrverbrauch (Overage) sowie etwaige mengen- oder verbrauchsabhängige Grenzen einschließlich eines technischen EUR-Spend-Caps je Agent werden im Auftragsformular festgelegt."
+    },
+    {
+      "t": "pagebreak"
+    },
+    {
+      "t": "h1",
+      "num": "3.",
+      "text": "Voice Agent (KI-Telefonassistent)"
+    },
+    {
+      "t": "p",
+      "text": "Der Voice Agent nimmt Sprachanrufe entgegen und/oder tätigt ausgehende Anrufe und interagiert im Rahmen der konfigurierten Wissensbasis und Dialoglogik mit Endnutzern. Der Funktionsumfang umfasst – soweit im Auftragsformular beauftragt – insbesondere:"
+    },
+    {
+      "t": "bullets",
+      "items": [
+        "Annahme eingehender Anrufe rund um die Uhr sowie – bei entsprechender Beauftragung – Tätigung ausgehender Anrufe im Rahmen zulässiger Kampagnen (vgl. die Compliance-Zusicherungen des Kunden nach § 15 des Rahmenvertrages)",
+        "Beantwortung häufiger Fragen (FAQ) auf Grundlage der vom Kunden bereitgestellten Wissensbasis (Öffnungszeiten, Leistungen, Anfahrt, Konditionen und vergleichbare Auskünfte)",
+        "Vereinbaren, Verschieben und Absagen von Terminen unter Anbindung an das vom Kunden genutzte Kalender-/Buchungssystem, einschließlich Rückbestätigung des Termins (Read-Back) zur Vermeidung von Doppelbuchungen",
+        "Weiterleitung (Transfer) an eine vom Kunden benannte Rufnummer oder Durchwahl bei komplexen Anliegen oder auf Wunsch des Endnutzers",
+        "Erfassung von Leads und Anliegen (Name, Kontaktdaten, Anliegen) sowie strukturierte Übergabe an das vom Kunden benannte Zielsystem",
+        "Qualifizierung von Anliegen anhand vereinbarter Kriterien (z. B. Kategorisierung, Priorisierung, Weiterleitungslogik)",
+        "Aufnahme von Rückrufwünschen und Weitergabe von Nachrichten",
+        "Mehrsprachige Gesprächsführung nach Maßgabe der im Auftragsformular festgelegten Sprachen"
+      ]
+    },
+    {
+      "t": "note",
+      "text": "Zu Beginn jedes Gesprächs – eingehend wie ausgehend – erfolgt die verpflichtende KI-Ansage nach Ziffer 11. Aufzeichnung und Transkription sind standardmäßig deaktiviert (Ziffer 12)."
+    },
+    {
+      "t": "h1",
+      "num": "4.",
+      "text": "Chat Agent (Website-/App-Chatassistent)"
+    },
+    {
+      "t": "p",
+      "text": "Der Chat Agent führt textbasierte Dialoge über den Chat einer Website, eines Portals oder einer App und unterstützt Endnutzer im Rahmen der konfigurierten Wissensbasis und Dialoglogik. Der Funktionsumfang umfasst – soweit im Auftragsformular beauftragt – insbesondere:"
+    },
+    {
+      "t": "bullets",
+      "items": [
+        "Einbindung als Chat-Widget auf der Website oder in einer App des Kunden",
+        "Beratung und Beantwortung von Fragen auf Grundlage der vom Kunden bereitgestellten Wissensbasis",
+        "Empfehlung passender Produkte, Leistungen oder Angebote im Rahmen unverbindlicher Auskünfte (keine verbindlichen Preis- oder Vertragszusagen, vgl. Ziffer 13)",
+        "Erfassung von Leads (Name, Kontaktdaten, Anliegen) und strukturierte Übergabe an das vom Kunden benannte Zielsystem",
+        "Terminvereinbarung unter Anbindung an das vom Kunden genutzte Kalender-/Buchungssystem",
+        "Suche in und Auskunft aus vom Kunden bereitgestellten Unterlagen und Dokumenten (z. B. Preislisten, Datenblätter, FAQ-Sammlungen)",
+        "Weiterleitung an einen menschlichen Ansprechpartner oder Übergabe des Vorgangs bei komplexen Anliegen",
+        "Mehrsprachige Kommunikation nach Maßgabe der im Auftragsformular festgelegten Sprachen"
+      ]
+    },
+    {
+      "t": "note",
+      "text": "Der KI-Hinweis nach Ziffer 11 wird im Chat deutlich sichtbar ausgewiesen."
+    },
+    {
+      "t": "pagebreak"
+    },
+    {
+      "t": "h1",
+      "num": "7.",
+      "text": "Automatisierungen"
+    },
+    {
+      "t": "p",
+      "text": "NexAI richtet Automatisierungen (Workflows) ein und betreibt diese, um wiederkehrende Prozesse des Kunden zu verbinden und zu automatisieren. Der Funktionsumfang umfasst – soweit im Auftragsformular beauftragt – insbesondere:"
+    },
+    {
+      "t": "bullets",
+      "items": [
+        "Anbindung an CRM-Systeme, Google Workspace oder Microsoft 365 im Rahmen der verfügbaren Schnittstellen",
+        "Anbindung an Kalender-, E-Mail- und Tabellensysteme (z. B. Google Sheets, Microsoft Excel)",
+        "Anbindung weiterer Systeme über verfügbare Programmierschnittstellen (APIs) und Webhooks",
+        "Automatisierte Benachrichtigungen (z. B. per E-Mail oder Messaging) bei definierten Ereignissen",
+        "Automatisierte Erfassung, Verteilung und Zuordnung von Leads (Lead-Routing)",
+        "Automatisierung wiederkehrender Prozessschritte nach vereinbarter Ablauflogik"
+      ]
+    },
+    {
+      "t": "note",
+      "text": "Umfang und Verfügbarkeit der Anbindungen hängen von den Schnittstellen und Nutzungsbedingungen der jeweiligen Drittsysteme (Subunternehmer) ab und stehen insoweit unter dem Vorbehalt deren technischer und rechtlicher Verfügbarkeit. Die erforderlichen Zugänge und Berechtigungen zu kundeneigenen Systemen stellt der Kunde bereit."
+    },
+    {
+      "t": "h1",
+      "num": "8.",
+      "text": "Individuelle KI-Agenten"
+    },
+    {
+      "t": "p",
+      "text": "Sofern im Auftragsformular beauftragt, entwickelt und betreibt NexAI individuelle, projektspezifisch zugeschnittene Agenten. Der konkrete Leistungsumfang, die Ziele, die einzubindenden Datenquellen und Systeme sowie etwaige Abnahmekriterien werden im Auftragsformular oder in einer gesonderten Leistungsbeschreibung je Projekt festgelegt und sind als solche Bestandteil dieser Anlage A. Die vorstehenden Regelungen dieser Anlage (insbesondere zu Transparenz, Aufzeichnungen und Guardrails, Ziffern 11 bis 13) gelten für individuelle Agenten entsprechend."
+    },
+    {
+      "t": "pagebreak"
+    },
+    {
+      "t": "h1",
+      "text": "NexAI CRM (Kundensystem)"
+    },
+    {
+      "t": "p",
+      "text": "Das NexAI CRM ist eine von NexAI bereitgestellte und betriebene Softwareanwendung zur Verwaltung von Kontakten, Unternehmen, Anfragen und Vorgängen des Kunden. Der Funktionsumfang umfasst – soweit im Auftragsformular beauftragt – insbesondere:"
+    },
+    {
+      "t": "bullets",
+      "items": [
+        "Verwaltung von Kontakten und Unternehmen einschließlich Notizen, Dateianhängen und Änderungshistorie",
+        "Erfassung von Anfragen (Leads) aus den angebundenen Kanälen, insbesondere aus den beauftragten Agenten und aus Formularen der Website des Kunden",
+        "Dokumentation von Anrufen einschließlich Gesprächsprotokoll, soweit der Voice Agent beauftragt und die Übergabe eingerichtet ist",
+        "Aufgaben mit Fälligkeit und automatischer Erinnerung",
+        "Abbildung von Verkaufschancen in konfigurierbaren Phasen (Pipelines)",
+        "Auswertungen und Berichte mit Ausgabe als Tabelle (CSV) und als PDF",
+        "Benutzerkonten mit Rollen- und Rechteverwaltung sowie Anmeldung mit zweitem Faktor",
+        "Funktionen zur Wahrnehmung von Betroffenenrechten und zur Einhaltung von Löschfristen"
+      ]
+    },
+    {
+      "t": "note",
+      "text": "Das NexAI CRM wird auf Servern in Deutschland betrieben (Anlage B, Anhang 2). Die Daten verschiedener Kunden sind technisch voneinander getrennt. Für die Richtigkeit und Aktualität der eingegebenen Daten sowie für die Vergabe der Zugriffsrechte innerhalb seines Bereichs ist der Kunde verantwortlich. Die Übernahme von Daten aus einem Vorsystem ist nur geschuldet, soweit sie im Auftragsformular ausdrücklich vereinbart ist (Ziffer 14)."
+    },
+    {
+      "t": "h1",
+      "text": "NexAI Kalender (Online-Terminbuchung)"
+    },
+    {
+      "t": "p",
+      "text": "Der NexAI Kalender ist eine von NexAI bereitgestellte und betriebene Softwareanwendung. Endnutzer buchen darüber selbst Termine beim Kunden; der Kunde verwaltet darin seine Termine. Der Funktionsumfang umfasst – soweit im Auftragsformular beauftragt – insbesondere:"
+    },
+    {
+      "t": "bullets",
+      "items": [
+        "Öffentliche Buchungsseite mit Auswahl von Leistung, Datum und Uhrzeit, erreichbar über einen Link oder eingebettet in die Website des Kunden",
+        "Belegung des gewählten Termins bereits während des Ausfüllens (Reservierung) sowie technische Absicherung gegen Doppelbuchungen",
+        "Versand von Bestätigungen und Erinnerungen per E-Mail und/oder SMS nach Maßgabe des Auftragsformulars",
+        "Verwaltung der Termine in Tages-, Wochen-, Monats- und Listenansicht einschließlich Verschieben, Absagen und Sperrzeiten",
+        "Verwaltung von Leistungen, Öffnungszeiten, Pausen, Urlaub und Feiertagen",
+        "Kundenkartei mit Terminverlauf und Notizen",
+        "Bereitstellung als installierbare Anwendung auf Mobilgerät und Rechner einschließlich Push-Benachrichtigungen",
+        "Abonnement der Termine in einem Kalender des Kunden (einseitige Übernahme)"
+      ]
+    },
+    {
+      "t": "note",
+      "text": "Der Versand von SMS erfolgt über einen Unterauftragsverarbeiter (Anlage B, Anhang 2) und wird, soweit im Auftragsformular vereinbart, mengenabhängig vergütet. Die Anzeige der Rufnummer des Kunden als Absender setzt deren Verifizierung beim Versanddienstleister voraus; diese Mitwirkung obliegt dem Kunden. Für die Richtigkeit der hinterlegten Leistungen, Preise und Öffnungszeiten ist der Kunde verantwortlich."
+    },
+    {
+      "t": "pagebreak"
+    },
+    {
+      "t": "h1",
+      "text": "NexAI App (individuelle Anwendung)"
+    },
+    {
+      "t": "p",
+      "text": "Sofern im Auftragsformular beauftragt, entwickelt und betreibt NexAI eine individuelle Anwendung, die im Namen und im Erscheinungsbild des Kunden auftritt und von Endnutzern auf Mobilgerät und Rechner installiert werden kann. Der Funktionsumfang wird je Projekt festgelegt und umfasst – soweit vereinbart – insbesondere:"
+    },
+    {
+      "t": "bullets",
+      "items": [
+        "Kundenportal (z. B. Aufträge, Rechnungen, Dokumente, Statusanzeige)",
+        "Anwendung für Beschäftigte des Kunden (z. B. Aufgaben, interne Nachrichten, Belegerfassung)",
+        "Buchungs- und Terminfunktionen",
+        "Push-Benachrichtigungen",
+        "Anbindung an die beauftragten Agenten und Anwendungen sowie an Systeme des Kunden über verfügbare Schnittstellen",
+        "Gestaltung im Erscheinungsbild des Kunden (Name, Logo, Farben)"
+      ]
+    },
+    {
+      "t": "note",
+      "text": "Die Anwendung wird als installierbare Web-Anwendung bereitgestellt; eine Veröffentlichung in den App-Stores von Apple oder Google ist nicht geschuldet (Ziffer 14). Der konkrete Leistungsumfang, die einzubindenden Systeme sowie etwaige Abnahmekriterien werden im Auftragsformular oder in einer gesonderten Leistungsbeschreibung je Projekt festgelegt und sind als solche Bestandteil dieser Anlage A. Enthält die Anwendung KI-gestützte Funktionen, gelten die Ziffern 11 bis 13 entsprechend."
+    },
+    {
+      "t": "pagebreak"
+    },
+    {
+      "t": "h1",
+      "num": "10.",
+      "text": "Ersteinrichtung"
+    },
+    {
+      "t": "p",
+      "text": "Die Ersteinrichtung der Agenten und Anwendungen ist eine **Projektleistung** (Werkleistung) und umfasst – soweit im Auftragsformular beauftragt – insbesondere:"
+    },
+    {
+      "t": "bullets",
+      "items": [
+        "Grundkonfiguration der beauftragten Agenten (Persona, Sprache(n), Dialoglogik, Rahmenparameter)",
+        "Einrichtung der beauftragten Anwendungen (Mandant, Stammdaten, Benutzerkonten, Rollen und Rechte)",
+        "Aufbau der Wissensbasis auf Grundlage der vom Kunden bereitgestellten Informationen und Unterlagen",
+        "Einrichtung der vereinbarten Workflows und Automatisierungen",
+        "Anbindung an die vereinbarten Systeme und Schnittstellen des Kunden (z. B. Kalender, CRM, Telefonie)",
+        "Funktionstests und Feinjustierung vor Inbetriebnahme"
+      ]
+    },
+    {
+      "t": "p",
+      "text": "Für die Ersteinrichtung wird **keine gesonderte Einrichtungs- oder Setup-Gebühr** erhoben; sie ist mit dem vereinbarten monatlichen oder jährlichen Beitrag abgegolten, soweit im Auftragsformular nicht ausdrücklich anders bestimmt."
+    },
+    {
+      "t": "h1",
+      "num": "11.",
+      "text": "KI-Kennzeichnung und Pflicht-Ansage (Transparenz)"
+    },
+    {
+      "t": "p",
+      "text": "Die Kennzeichnung der Agenten als künstliche Intelligenz ist gemäß **Art. 50 der Verordnung (EU) 2024/1689 (KI-VO / AI Act)** ein **verbindlicher, nicht abschaltbarer Bestandteil** der Leistung. Jeder Endnutzer wird zu Beginn der Interaktion darüber informiert, dass er mit einem KI-System interagiert."
+    },
+    {
+      "t": "num",
+      "items": [
+        "Beim **Voice Agent** erfolgt zu Beginn jedes Gesprächs eine Pflicht-Ansage. Der Standard-Wortlaut lautet – anpassbar an den Kundennamen, inhaltlich jedoch verbindlich: **\"Guten Tag, Sie sprechen mit einem KI-Assistenten der [Firma des Kunden]. Wie kann ich Ihnen helfen?\"**",
+        "Beim **Chat Agent** und beim **Social-Media-Agent** wird der KI-Hinweis in der Benutzeroberfläche deutlich sichtbar ausgewiesen (z. B. \"KI-Assistent\").",
+        "Ist die Aufzeichnung eines Gesprächs im Ausnahmefall auf dokumentierte Weisung des Kunden aktiviert (Ziffer 12), wird die Ansage um einen **Aufzeichnungshinweis** ergänzt, z. B.: **\"Dieses Gespräch wird zu Qualitätszwecken aufgezeichnet. Wenn Sie damit nicht einverstanden sind, teilen Sie mir dies bitte mit.\"**",
+        "Die Ansage bzw. der Hinweis kann durch den Kunden nicht deaktiviert werden. Weisungen, die auf eine Entfernung oder Verschleierung der KI-Kennzeichnung gerichtet sind, wird NexAI nicht befolgen; NexAI ist berechtigt, den Betrieb eines Agenten auszusetzen, solange eine solche Weisung aufrechterhalten wird."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "12.",
+      "text": "Aufzeichnungen und Transkripte"
+    },
+    {
+      "t": "num",
+      "items": [
+        "Die **Aufzeichnung und Transkription** von Gesprächen ist **standardmäßig deaktiviert**. Eine Aktivierung erfolgt ausschließlich auf **dokumentierte Weisung** des Kunden (Betreiber im Sinne der KI-VO) und nur, soweit der Kunde die datenschutz- und sonstige rechtliche Zulässigkeit sicherstellt.",
+        "Ist die Aufzeichnung/Transkription aktiviert, erfolgt stets der Aufzeichnungshinweis nach Ziffer 11 Absatz (3). Die Aufbewahrung der Aufzeichnungen und Transkripte beträgt **sechs (6) Monate** ab Erstellung; danach werden sie gelöscht, soweit keine gesetzliche Aufbewahrungspflicht entgegensteht.",
+        "Eine **Speicherung in privaten Endnutzer-Accounts** findet nicht statt. Die Verarbeitung erfolgt im Rahmen der von NexAI eingesetzten Betriebsmittel und der in Anlage B (AVV) benannten Subunternehmer.",
+        "Aufzeichnungen und Transkripte werden dem Kunden auf Anfrage im Rahmen der technischen Möglichkeiten bereitgestellt.",
+        "Die weiteren Regelungen zur Datenspeicherung – keine Speicherung, soweit technisch abschaltbar; Aufbewahrung von sechs Monaten, soweit nicht abschaltbar; führendes Kundensystem für Geschäftsdaten; 30-tägiger Export vor Löschung bei Vertragsende nebst Löschbestätigung – ergeben sich aus dem Rahmenvertrag und Anlage B (AVV)."
+      ]
+    },
+    {
+      "t": "pagebreak"
+    },
+    {
+      "t": "h1",
+      "num": "13.",
+      "text": "Guardrails und Themenausschlüsse"
+    },
+    {
+      "t": "p",
+      "text": "Zur Sicherstellung eines verantwortungsvollen Betriebs unterliegen die Agenten den folgenden verbindlichen Leitplanken (Guardrails):"
+    },
+    {
+      "t": "bullets",
+      "items": [
+        "**Keine rechtsverbindlichen Zusagen:** Die Agenten geben keine verbindlichen Zusagen zu Preisen, Bestellungen oder Verträgen ab. Sie erteilen ausschließlich unverbindliche Auskünfte und vereinbaren Termine.",
+        "**Keine Fachberatung:** Die Agenten erteilen keine medizinische, rechtliche oder steuerliche Beratung. Bei entsprechenden Anliegen erfolgt ein Hinweis auf fachkundige Stellen bzw. eine Weiterleitung.",
+        "**Eskalations- und Rückfragelogik:** Bei unklaren, komplexen oder außerhalb der Wissensbasis liegenden Anliegen stellt der Agent Rückfragen oder eskaliert an einen menschlichen Ansprechpartner bzw. an eine vom Kunden benannte Stelle.",
+        "**Kalender-Read-Back:** Zur Vermeidung von Doppelbuchungen erfolgt vor der Terminbestätigung ein Abgleich mit dem angebundenen Kalender (Read-Back) im Rahmen der technischen Möglichkeiten des angebundenen Systems.",
+        "**Themen- und Verhaltensausschlüsse:** Der Agent verweigert die Bearbeitung unzulässiger, diskriminierender oder gegen die vereinbarten Vorgaben verstoßender Anliegen."
+      ]
+    },
+    {
+      "t": "p",
+      "text": "Die **Pflege und Aktualität der Wissensbasis** (z. B. Preise, Öffnungszeiten, Produktinformationen, FAQ) obliegt dem **Kunden**. NexAI verarbeitet die vom Kunden bereitgestellten Inhalte; für deren Richtigkeit, Vollständigkeit und Aktualität ist der Kunde verantwortlich."
+    },
+    {
+      "t": "h1",
+      "num": "14.",
+      "text": "Nicht geschuldete Leistungen"
+    },
+    {
+      "t": "p",
+      "text": "Nicht Gegenstand des Vertrages sind, soweit nicht ausdrücklich im Auftragsformular vereinbart, insbesondere die folgenden Leistungen:"
+    },
+    {
+      "t": "bullets",
+      "items": [
+        "Erstellung von Websites, Landingpages und Online-Shops sowie deren Gestaltung und Pflege",
+        "Suchmaschinen-Optimierung (SEO) und redaktionelle Content-Erstellung",
+        "Betreuung von Social-Media-Kanälen sowie Erstellung und Veröffentlichung von Beiträgen",
+        "Recherche und Ansprache potenzieller Kunden des Kunden (Akquise, Lead-Recherche)",
+        "Planung, Schaltung und Betreuung bezahlter Werbekampagnen (z. B. Google Ads, Social Ads) sowie das damit verbundene Mediabudget",
+        "Grafik-, Logo- und Corporate-Design-Leistungen",
+        "Hosting, Wartung oder Betrieb kundeneigener oder fremder Systeme, die nicht Bestandteil der von NexAI bereitgestellten Betriebsmittel sind",
+        "Schulungen, Workshops und Einweisungen, soweit nicht ausdrücklich vereinbart",
+        "Beschaffung von Lizenzen, Guthaben oder Zugängen zu Drittdiensten, soweit nicht im Beitrag enthalten oder ausdrücklich vereinbart",
+        "Übernahme von Daten aus Vorsystemen (Datenmigration), soweit nicht ausdrücklich im Auftragsformular vereinbart",
+        "Veröffentlichung von Anwendungen in den App-Stores von Apple oder Google"
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "15.",
+      "text": "Keine Erfolgs-, Lead- oder Umsatzgarantie (Beschaffenheit)"
+    },
+    {
+      "t": "num",
+      "items": [
+        "NexAI schuldet die vertragsgemäße Bereitstellung und den vertragsgemäßen Betrieb der Agenten nach Maßgabe dieser Anlage A und des Auftragsformulars. NexAI schuldet **keinen wirtschaftlichen Erfolg**.",
+        "Es wird **keine Garantie** für eine bestimmte Anzahl an Leads, Terminen, Abschlüssen, Reichweiten oder für einen bestimmten Umsatz übernommen. Eine dahingehende Beschaffenheit wird nicht als geschuldet vereinbart.",
+        "Die Agenten beruhen auf **wahrscheinlichkeitsbasierten KI-Verfahren** und sind naturgemäß **nicht in jedem Einzelfall fehlerfrei**. Die Parteien vereinbaren als geschuldete Beschaffenheit den Betrieb der Agenten im Rahmen des vereinbarten Leistungsbildes und der Guardrails (Ziffer 13). Vereinzelte inhaltliche Unrichtigkeiten, Missverständnisse oder nicht abschließend bearbeitete Anfragen begründen für sich genommen keinen Mangel, solange die Agenten im Rahmen dieses Leistungsbildes arbeiten; die gesetzlichen Mängelrechte des Kunden bei einem Abweichen von der vereinbarten Beschaffenheit bleiben unberührt.",
+        "Die Verfügbarkeit richtet sich nach Anlage C (SLA); die Haftung richtet sich nach den Regelungen des Rahmenvertrages (§ Haftung) und der AGB (B2B)."
+      ]
+    },
+    {
+      "t": "spacer",
+      "h": 8
+    },
+    {
+      "t": "note",
+      "text": "Diese Anlage A ist Bestandteil des Rahmenvertrages und gilt nur in Verbindung mit dem jeweiligen Auftragsformular. Es handelt sich um einen sorgfältig erstellten Entwurf, der für den konkreten Einzelfall anwaltlich geprüft werden sollte."
+    },
+    {
+      "t": "pagebreak"
+    },
+    {
+      "t": "title",
+      "text": "Anlage B – Vertrag zur Auftragsverarbeitung (AVV) gemäß Art. 28 DSGVO"
+    },
+    {
+      "t": "meta",
+      "text": "Stand: August 2026"
+    },
+    {
+      "t": "p",
+      "text": "Dieser Vertrag zur Auftragsverarbeitung (nachfolgend \"AVV\") ist Anlage B zum Rahmenvertrag zwischen den nachstehenden Parteien und konkretisiert die datenschutzrechtlichen Pflichten bei der Verarbeitung personenbezogener Daten im Auftrag."
+    },
+    {
+      "t": "h2",
+      "text": "Parteien"
+    },
+    {
+      "t": "p",
+      "text": "**Auftragsverarbeiter:** NexAI – Next Generation Artificial Intelligence GbR, Untere Bergstraße 13, 74586 Frankenhardt-Honhardt, Deutschland, vertreten durch die Gesellschafter Maximilian Trenk und Jason Brian Merklein, E-Mail mbt@nex-a-i.com, Telefon 0176 80714816 — nachfolgend \"NexAI\"."
+    },
+    {
+      "t": "p",
+      "text": "**Verantwortlicher (Kunde):**"
+    },
+    {
+      "t": "fill",
+      "label": "Firma / Rechtsform",
+      "value": ""
+    },
+    {
+      "t": "fill",
+      "label": "Anschrift",
+      "value": ""
+    },
+    {
+      "t": "fill",
+      "label": "Vertreten durch",
+      "value": ""
+    },
+    {
+      "t": "fill",
+      "label": "E-Mail",
+      "value": ""
+    },
+    {
+      "t": "fill",
+      "label": "Telefon",
+      "value": ""
+    },
+    {
+      "t": "p",
+      "text": "— nachfolgend \"Kunde\". NexAI und der Kunde nachfolgend gemeinsam \"Parteien\", einzeln \"Partei\"."
+    },
+    {
+      "t": "hr"
+    },
+    {
+      "t": "h1",
+      "num": "§ 1",
+      "text": "Präambel, Gegenstand und Rollenverteilung"
+    },
+    {
+      "t": "num",
+      "items": [
+        "NexAI erbringt für den Kunden Leistungen im Zusammenhang mit der Bereitstellung und dem Betrieb KI-gestützter Agenten (Voice Agent, Chat Agent, Automatisierungen, individuelle KI-Agenten – nachfolgend \"Agenten\") sowie von Softwareanwendungen (NexAI CRM, NexAI Kalender, individuelle Anwendungen – nachfolgend \"Anwendungen\") und zugehöriger Projekt- und Betriebsleistungen. Im Rahmen dieser Leistungen verarbeitet NexAI personenbezogene Daten im Auftrag des Kunden.",
+        "Der Kunde ist hinsichtlich der im Auftrag verarbeiteten personenbezogenen Daten **Verantwortlicher** im Sinne des Art. 4 Nr. 7 DSGVO. NexAI ist insoweit **Auftragsverarbeiter** im Sinne des Art. 4 Nr. 8 DSGVO und verarbeitet die Daten ausschließlich weisungsgebunden nach Maßgabe dieses AVV.",
+        "Gegenstand dieses AVV ist die Konkretisierung der datenschutzrechtlichen Rechte und Pflichten der Parteien nach Art. 28 DSGVO. Die Zuordnung der Rolle von NexAI je Leistungsart ergibt sich aus der Rollenmatrix in § 15.",
+        "Bei Widersprüchen zwischen diesem AVV und den übrigen Vertragsdokumenten (Rahmenvertrag, Auftragsformular/Leistungsschein, Anlage A, Anlage C, Anlage D, AGB) gehen in **datenschutzrechtlichen Fragen** die Regelungen dieses AVV vor (Sachvorrang). Im Übrigen gelten die Regelungen des Rahmenvertrags und seiner Anlagen fort.",
+        "Die eigene straf-, ordnungswidrigkeiten- und bußgeldrechtliche Verantwortlichkeit von NexAI sowie eine etwaige eigene datenschutzrechtliche Verantwortlichkeit von NexAI für Zwecke, die NexAI selbst bestimmt, bleiben von diesem AVV unberührt."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "§ 2",
+      "text": "Art, Umfang, Zweck und Dauer der Verarbeitung"
+    },
+    {
+      "t": "num",
+      "items": [
+        "**Art der Verarbeitung:** Erheben, Erfassen, Organisieren, Speichern, Anpassen, Auslesen, Abfragen, Verwenden, Übermitteln, Bereitstellen, Kombinieren, Einschränken und Löschen personenbezogener Daten mittels automatisierter Verfahren im Rahmen des Betriebs der Agenten und Anwendungen (u. a. Sprachdialog, Chatdialog, Terminvereinbarung und Terminverwaltung, Weiterleitung, Automatisierungen, Verwaltung von Kontakt-, Vorgangs- und Aufgabendaten, Versand von Bestätigungen und Erinnerungen).",
+        "**Zweck der Verarbeitung:** Bereitstellung, Einrichtung, Betrieb, Wartung und Support der Agenten und Anwendungen für den Kunden, insbesondere die Beantwortung von Anfragen von Endnutzern, die Vereinbarung, Verwaltung und Bestätigung von Terminen, die Weiterleitung von Anliegen sowie die Verwaltung der Kontakt-, Vorgangs- und Aufgabendaten des Kunden in den beauftragten Anwendungen.",
+        "**Umfang der Verarbeitung:** bestimmt sich nach den im Auftragsformular/Leistungsschein und in Anlage A (Leistungsbeschreibung) festgelegten Agenten, Anwendungen und Funktionen sowie nach den dokumentierten Weisungen des Kunden.",
+        "**Dauer der Verarbeitung:** Die Verarbeitung beginnt mit der Aufnahme der Leistungserbringung und endet mit Beendigung des Rahmenvertrags bzw. der jeweiligen Leistung, vorbehaltlich der Regelungen zu Löschung und Rückgabe (§ 12) und etwaiger gesetzlicher Aufbewahrungspflichten. Dieser AVV gilt für die Dauer der Verarbeitung personenbezogener Daten im Auftrag."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "§ 3",
+      "text": "Kategorien betroffener Personen und personenbezogener Daten"
+    },
+    {
+      "t": "p",
+      "text": "Gegenstand der Verarbeitung sind – abhängig von den beauftragten Agenten und Anwendungen – die folgenden Kategorien:"
+    },
+    {
+      "t": "h2",
+      "text": "3.1 Kategorien betroffener Personen"
+    },
+    {
+      "t": "bullets",
+      "items": [
+        "Ansprechpartner, Beschäftigte und Vertreter des Kunden (Nutzer der Verwaltungs-/Konfigurationsfunktionen, Kontaktpersonen);",
+        "**Endnutzer** – Personen, die mit den Agenten oder Anwendungen interagieren, insbesondere Anrufer (Voice Agent), Chat-Kontakte (Chat Agent), Personen, die einen Termin buchen (NexAI Kalender), sowie Nutzerinnen und Nutzer einer für den Kunden betriebenen Anwendung (NexAI App);",
+        "Kontakte, Interessenten und Kundschaft des Kunden, deren Daten der Kunde in den beauftragten Anwendungen speichert oder die aus den Agenten dorthin übernommen werden (NexAI CRM, NexAI Kalender);",
+        "Dritte, deren Daten von Endnutzern im Verlauf einer Interaktion oder in einem Freitextfeld mitgeteilt werden (z. B. genannte Kontaktpersonen)."
+      ]
+    },
+    {
+      "t": "h2",
+      "text": "3.2 Kategorien personenbezogener Daten"
+    },
+    {
+      "t": "bullets",
+      "items": [
+        "Kontakt- und Stammdaten (Name, Anrede, Firma/Funktion, Telefonnummer, E-Mail-Adresse, Anschrift);",
+        "Gesprächs- und Kommunikationsinhalte (Inhalte von Anrufen, Chats, Nachrichten);",
+        "Transkripte und – nur bei ausdrücklich aktivierter Funktion – Aufzeichnungen von Gesprächen;",
+        "Termindaten (Terminwünsche, Datum/Uhrzeit, Anlass, Status);",
+        "Anliegen-, Vorgangs- und Statusdaten (Anfrage, Kategorie, Ergebnis, Weiterleitung);",
+        "Auftrags-, Vorgangs- und Belegdaten, soweit der Kunde solche in einer Anwendung führt (z. B. Leistung, Betrag, Status);",
+        "Notizen und Freitexte, die der Kunde oder Endnutzer in einer Anwendung erfassen;",
+        "Zugangs- und Protokolldaten der Nutzerkonten des Kunden (Anmeldedaten – Passwörter ausschließlich als Prüfsumme –, Sitzungen, Änderungsprotokoll);",
+        "Metadaten und technische Daten (Verbindungs-/Nutzungsdaten, Zeitstempel, Kennungen, Kanal, Dauer, technische Protokolldaten)."
+      ]
+    },
+    {
+      "t": "note",
+      "text": "Besondere Kategorien personenbezogener Daten (Art. 9 DSGVO) sind nicht Gegenstand der beauftragten Verarbeitung. Der Kunde stellt durch geeignete Konfiguration und Weisung sicher, dass die Agenten nicht gezielt zur Erhebung solcher Daten eingesetzt werden. Werden derartige Daten durch Endnutzer unaufgefordert mitgeteilt, verarbeitet NexAI sie ausschließlich im Rahmen der dokumentierten Weisungen und der Löschroutinen dieses AVV."
+    },
+    {
+      "t": "h1",
+      "num": "§ 4",
+      "text": "Weisungsbindung"
+    },
+    {
+      "t": "num",
+      "items": [
+        "NexAI verarbeitet personenbezogene Daten ausschließlich auf **dokumentierte Weisung** des Kunden, es sei denn, NexAI ist nach Unionsrecht oder dem Recht eines Mitgliedstaats zur Verarbeitung verpflichtet (Art. 28 Abs. 3 lit. a DSGVO). In diesem Fall teilt NexAI dem Kunden diese rechtliche Anforderung vor der Verarbeitung mit, sofern das betreffende Recht eine solche Mitteilung nicht wegen eines wichtigen öffentlichen Interesses verbietet.",
+        "Die maßgeblichen Weisungen sind in diesem AVV und den übrigen Vertragsdokumenten festgelegt (Erstweisung). Weitergehende Einzelweisungen erteilt der Kunde in Textform gegenüber der in § 14 genannten Kontaktstelle. Mündliche Weisungen bestätigt der Kunde unverzüglich in Textform.",
+        "NexAI informiert den Kunden unverzüglich, wenn NexAI der Auffassung ist, dass eine Weisung gegen datenschutzrechtliche Vorschriften verstößt (Art. 28 Abs. 3 Satz 3 DSGVO). NexAI ist berechtigt, die Durchführung der betreffenden Weisung bis zu deren Bestätigung oder Änderung durch den Kunden auszusetzen.",
+        "Der Kunde trägt die Verantwortung für die Rechtmäßigkeit der Weisungen und der Verarbeitung, insbesondere für das Vorliegen einer tragfähigen Rechtsgrundlage."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "§ 5",
+      "text": "Vertraulichkeit"
+    },
+    {
+      "t": "num",
+      "items": [
+        "NexAI verpflichtet die mit der Verarbeitung befassten Personen zur Vertraulichkeit, soweit sie nicht bereits einer angemessenen gesetzlichen Verschwiegenheitspflicht unterliegen (Art. 28 Abs. 3 lit. b, Art. 29, Art. 32 Abs. 4 DSGVO).",
+        "NexAI stellt sicher, dass Personen, die zur Verarbeitung der personenbezogenen Daten befugt sind, mit den einschlägigen datenschutzrechtlichen Anforderungen vertraut sind und Daten nur auf Weisung verarbeiten. Die Verpflichtung besteht auch nach Beendigung der Tätigkeit fort.",
+        "Als Gesellschafter der NexAI GbR sind Maximilian Trenk und Jason Brian Merklein unmittelbar zur Vertraulichkeit verpflichtet."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "§ 6",
+      "text": "Technische und organisatorische Maßnahmen (Art. 32 DSGVO)"
+    },
+    {
+      "t": "num",
+      "items": [
+        "NexAI trifft die zur Gewährleistung eines dem Risiko angemessenen Schutzniveaus erforderlichen technischen und organisatorischen Maßnahmen nach Art. 32 DSGVO. Die zum Zeitpunkt des Vertragsschlusses getroffenen Maßnahmen sind in **Anhang 1 (Technische und organisatorische Maßnahmen)** beschrieben und sind Bestandteil dieses AVV.",
+        "NexAI ist berechtigt, die Maßnahmen an den Stand der Technik und an geänderte tatsächliche Verhältnisse anzupassen, sofern das vereinbarte Schutzniveau nicht unterschritten wird. Wesentliche Änderungen dokumentiert NexAI und stellt sie dem Kunden auf Anfrage zur Verfügung.",
+        "NexAI überprüft die Wirksamkeit der Maßnahmen in angemessenen Abständen."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "§ 7",
+      "text": "Zweckbindung, kein Modelltraining"
+    },
+    {
+      "t": "num",
+      "items": [
+        "NexAI verarbeitet die personenbezogenen Daten des Kunden ausschließlich zu den in § 2 genannten Zwecken und nicht für eigene Zwecke.",
+        "NexAI verwendet die im Auftrag verarbeiteten personenbezogenen Daten **nicht zum Training, zur Weiterentwicklung, zum Fine-Tuning oder zur Verbesserung eigener oder fremder KI-Modelle**.",
+        "NexAI konfiguriert die eingesetzten Subunternehmer, soweit technisch möglich, so, dass eine Nutzung der übermittelten Daten zu Trainingszwecken ausgeschlossen ist und die Daten nicht oder nur für den kürzest möglichen, technisch vorgegebenen Zeitraum gespeichert werden (Zero-Retention- bzw. No-Training-Konfiguration). Soweit ein Subunternehmer Daten über die Erbringung der Leistung hinaus zu eigenen Zwecken verarbeitet, geschieht dies außerhalb des Auftragsverhältnisses; § 15 (Rollenmatrix) bleibt unberührt.",
+        "Eine über die Auftragserfüllung hinausgehende Verarbeitung durch NexAI zu eigenen Zwecken – insbesondere zur Produktverbesserung – erfolgt nur nach Anonymisierung oder auf gesonderter, dokumentierter Rechtsgrundlage (Art. 28 Abs. 10 DSGVO)."
+      ]
+    },
+    {
+      "t": "pagebreak"
+    },
+    {
+      "t": "h1",
+      "num": "§ 8",
+      "text": "Speicherorte, Speicherdauer und Löschung"
+    },
+    {
+      "t": "num",
+      "items": [
+        "Die Verarbeitung erfolgt teils intern bei NexAI, teils extern bei den in **Anhang 2 (Unterauftragsverarbeiter)** genannten Subunternehmern, ggf. auch in Drittländern nach Maßgabe von § 10.",
+        "**Grundsatz der Nichtspeicherung:** Wo eine Speicherung technisch abschaltbar ist, wird sie deaktiviert; personenbezogene Daten werden dann nur flüchtig zur Durchführung der jeweiligen Interaktion verarbeitet.",
+        "Soweit eine Speicherung technisch erforderlich ist oder auf dokumentierter Weisung des Kunden erfolgt, werden die Daten **spätestens sechs (6) Monate nach ihrer Erhebung** gelöscht, sofern nicht der Kunde eine abweichende (insbesondere kürzere) Frist weist oder eine Ausnahme nach Absatz 4 greift. Der Kunde als Verantwortlicher kann jederzeit eine frühere Löschung anweisen.",
+        "Von der Löschung ausgenommen sind Daten, deren weitere Aufbewahrung zur Erfüllung gesetzlicher Aufbewahrungspflichten oder zu Nachweiszwecken bis zum Ablauf der einschlägigen Verjährungsfristen erforderlich ist; solche Daten werden in ihrer Verarbeitung eingeschränkt (gesperrt) und nach Wegfall des Aufbewahrungsgrundes gelöscht.",
+        "**Aufzeichnung und Transkription** von Gesprächen sind standardmäßig **deaktiviert**. Sie werden nur auf ausdrückliche, dokumentierte Weisung des Kunden aktiviert und stets mit der vertraglich vorgesehenen Pflicht-Ansage (KI-Hinweis sowie ggf. Aufzeichnungshinweis) verbunden. Der Kunde verantwortet die Rechtsgrundlage einer solchen Aufzeichnung.",
+        "Führendes System für Geschäfts- und Vorgangsdaten sind die Systeme des Kunden; NexAI hält Daten insoweit nur zur Leistungserbringung vor."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "§ 9",
+      "text": "Unterauftragsverarbeiter"
+    },
+    {
+      "t": "num",
+      "items": [
+        "Der Kunde erteilt NexAI die **allgemeine schriftliche Genehmigung** zur Beauftragung von Unterauftragsverarbeitern (Art. 28 Abs. 2 Satz 2 DSGVO). Die zum Zeitpunkt des Vertragsschlusses eingesetzten Subunternehmer sind in **Anhang 2 (Unterauftragsverarbeiter)** aufgeführt und werden hiermit genehmigt.",
+        "NexAI informiert den Kunden über beabsichtigte Änderungen in Bezug auf die Hinzuziehung oder Ersetzung von Unterauftragsverarbeitern **mindestens vierzehn (14) Tage vorab in Textform** (Art. 28 Abs. 2 Satz 1 DSGVO).",
+        "Der Kunde kann einer beabsichtigten Änderung binnen der Frist aus wichtigem, datenschutzbezogenem Grund in Textform **widersprechen**. Im Fall eines berechtigten Widerspruchs bemühen sich die Parteien um eine einvernehmliche Lösung. Kann diese nicht gefunden werden und ist NexAI die Erbringung der betroffenen Leistung ohne den Subunternehmer nicht mit zumutbarem Aufwand möglich, steht jeder Partei ein **Sonderkündigungsrecht** hinsichtlich der betroffenen Leistung mit angemessener Frist zu.",
+        "NexAI verpflichtet jeden Unterauftragsverarbeiter durch Vertrag oder anderes Rechtsinstrument auf Datenschutzpflichten, die den Pflichten dieses AVV im Wesentlichen entsprechen, insbesondere auf hinreichende Garantien nach Art. 28 Abs. 3 und Abs. 4 DSGVO. Kommt der Unterauftragsverarbeiter seinen Datenschutzpflichten nicht nach, haftet NexAI gegenüber dem Kunden für die Einhaltung dieser Pflichten.",
+        "Nicht als Unterauftragsverarbeitung im Sinne dieser Regelung gelten Nebenleistungen, die NexAI als Nebenleistung in Anspruch nimmt (z. B. Telekommunikations-, Post-/Transport-, Wartungsleistungen), sofern dabei kein Zugriff auf die im Auftrag verarbeiteten Daten zum Zweck der Verarbeitung erfolgt."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "§ 10",
+      "text": "Drittlandtransfer"
+    },
+    {
+      "t": "num",
+      "items": [
+        "Erfolgt eine Verarbeitung durch einen Unterauftragsverarbeiter in einem Drittland, stellt NexAI sicher, dass die Anforderungen der Art. 44 ff. DSGVO eingehalten werden.",
+        "Vorrangig stützt sich der Transfer auf einen **Angemessenheitsbeschluss** der Europäischen Kommission, insbesondere das EU-U.S. Data Privacy Framework (DPF), sofern der jeweilige Empfänger zertifiziert ist.",
+        "Hilfsweise – insbesondere wenn keine DPF-Zertifizierung vorliegt (bei den in Anhang 2 gekennzeichneten Empfängern, etwa Vapi, Soniox und OpenAI (USA), vorsorglich der SCC-Weg) – werden die **EU-Standardvertragsklauseln** (Durchführungsbeschluss (EU) 2021/914), **Modul 3 (Auftragsverarbeiter an Unterauftragsverarbeiter)**, abgeschlossen, ergänzt um erforderliche **Zusatzmaßnahmen** und eine **Transfer-Folgenabschätzung (Transfer Impact Assessment, TIA)**.",
+        "NexAI stellt dem Kunden auf Anfrage Nachweise über die getroffenen Transfergarantien in geeigneter Form zur Verfügung."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "§ 11",
+      "text": "Unterstützungspflichten"
+    },
+    {
+      "t": "h2",
+      "text": "11.1 Betroffenenrechte"
+    },
+    {
+      "t": "num",
+      "items": [
+        "NexAI unterstützt den Kunden mit geeigneten technischen und organisatorischen Maßnahmen, soweit möglich, bei der Erfüllung von Anträgen betroffener Personen auf Wahrnehmung ihrer Rechte nach Art. 12–23 DSGVO (Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit, Widerspruch).",
+        "Wendet sich eine betroffene Person unmittelbar an NexAI, leitet NexAI das Anliegen unverzüglich an den Kunden weiter und beantwortet es nicht selbständig, es sei denn, der Kunde weist dies an."
+      ]
+    },
+    {
+      "t": "h2",
+      "text": "11.2 Meldung von Datenschutzverletzungen"
+    },
+    {
+      "t": "num",
+      "items": [
+        "NexAI meldet dem Kunden jede Verletzung des Schutzes personenbezogener Daten **unverzüglich, spätestens jedoch innerhalb von vierundzwanzig (24) Stunden nach Kenntniserlangung**, in Textform (Art. 33 Abs. 2 DSGVO).",
+        "Die Meldung enthält, soweit verfügbar, eine Beschreibung der Art der Verletzung, die Kategorien und die ungefähre Zahl der betroffenen Personen und Datensätze, die wahrscheinlichen Folgen sowie die ergriffenen oder vorgeschlagenen Abhilfemaßnahmen. Soweit die Informationen nicht zeitgleich bereitgestellt werden können, dürfen sie ohne unangemessene weitere Verzögerung schrittweise nachgereicht werden.",
+        "NexAI unterstützt den Kunden bei dessen Melde- und Benachrichtigungspflichten nach Art. 33 und Art. 34 DSGVO und ergreift angemessene Maßnahmen zur Eindämmung und Behebung."
+      ]
+    },
+    {
+      "t": "h2",
+      "text": "11.3 Datenschutz-Folgenabschätzung"
+    },
+    {
+      "t": "num",
+      "items": [
+        "NexAI unterstützt den Kunden unter Berücksichtigung der Art der Verarbeitung und der verfügbaren Informationen bei einer Datenschutz-Folgenabschätzung (Art. 35 DSGVO) sowie bei einer vorherigen Konsultation der Aufsichtsbehörde (Art. 36 DSGVO)."
+      ]
+    },
+    {
+      "t": "h2",
+      "text": "11.4 Vergütung von Unterstützungsleistungen"
+    },
+    {
+      "t": "p",
+      "text": "Unterstützungsleistungen nach diesem § 11, die über den vertraglich geschuldeten Umfang hinausgehen und nicht auf einem NexAI zuzurechnenden Umstand beruhen, kann NexAI nach vorheriger Ankündigung zu den vereinbarten bzw., soweit nicht vereinbart, den üblichen Sätzen abrechnen. Die gesetzlich geschuldeten Grundunterstützungspflichten nach Art. 28 Abs. 3 DSGVO bleiben unentgeltlich."
+    },
+    {
+      "t": "pagebreak"
+    },
+    {
+      "t": "h1",
+      "num": "§ 12",
+      "text": "Löschung und Rückgabe nach Beendigung"
+    },
+    {
+      "t": "num",
+      "items": [
+        "Nach Abschluss der Erbringung der Verarbeitungsleistungen löscht NexAI nach Wahl des Kunden alle personenbezogenen Daten oder gibt sie zurück und löscht vorhandene Kopien, sofern nicht nach Unionsrecht oder mitgliedstaatlichem Recht eine Verpflichtung zur Speicherung besteht (Art. 28 Abs. 3 lit. g DSGVO).",
+        "NexAI stellt dem Kunden vor der Löschung für einen Zeitraum von **dreißig (30) Tagen** die Möglichkeit zum **Export** der Daten in einem gängigen, strukturierten Format bereit. Nach Ablauf dieser Frist bzw. nach erfolgtem Export werden die Daten gelöscht.",
+        "NexAI bestätigt die Löschung auf Verlangen in **Textform** (Löschbestätigung).",
+        "Unterliegen Daten gesetzlichen Aufbewahrungspflichten (insbesondere § 147 AO, § 257 HGB), werden diese nicht gelöscht, sondern in ihrer Verarbeitung **eingeschränkt (gesperrt)** (Art. 18 DSGVO) und nach Ablauf der Aufbewahrungsfrist gelöscht."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "§ 13",
+      "text": "Nachweis- und Kontrollrechte (Audit)"
+    },
+    {
+      "t": "num",
+      "items": [
+        "NexAI stellt dem Kunden alle erforderlichen Informationen zum Nachweis der Einhaltung der Pflichten aus Art. 28 DSGVO zur Verfügung und ermöglicht Überprüfungen – einschließlich Inspektionen –, die vom Kunden oder einem von diesem beauftragten Prüfer durchgeführt werden, und trägt zu diesen bei (Art. 28 Abs. 3 lit. h DSGVO).",
+        "Der Nachweis kann durch geeignete Dokumentation, aktuelle Testate, Zertifizierungen oder Berichte unabhängiger Stellen erbracht werden. Reichen diese zur Ausräumung eines konkreten Prüfbedarfs nicht aus, kann der Kunde nach rechtzeitiger Vorankündigung (in der Regel mindestens vierzehn (14) Tage vorab) und zu üblichen Geschäftszeiten eine Vor-Ort-Prüfung durchführen, ohne den Betriebsablauf unverhältnismäßig zu beeinträchtigen und unter Wahrung der Vertraulichkeit sowie der Rechte Dritter.",
+        "Der beauftragte Prüfer darf nicht in einem Wettbewerbsverhältnis zu NexAI stehen und ist zur Vertraulichkeit zu verpflichten.",
+        "Prüfungen, die über eine (1) reguläre Prüfung pro Jahr hinausgehen oder auf Verlangen des Kunden ohne konkreten Anlass erfolgen, kann NexAI den hierdurch entstehenden angemessenen Aufwand zu den üblichen Sätzen in Rechnung stellen. Prüfungen aus konkretem Anlass sowie die gesetzlich geschuldete Bereitstellung von Nachweisen bleiben hiervon unberührt."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "§ 14",
+      "text": "Datenschutzbeauftragter, Verzeichnis, Kontaktstelle"
+    },
+    {
+      "t": "num",
+      "items": [
+        "NexAI benennt einen Datenschutzbeauftragten, sofern und soweit eine gesetzliche Benennungspflicht besteht. Kontaktstelle für Datenschutzangelegenheiten und für Weisungen nach § 4 Abs. 2 ist mbt@nex-a-i.com.",
+        "NexAI führt ein Verzeichnis aller Kategorien von im Auftrag durchgeführten Verarbeitungstätigkeiten (Art. 30 Abs. 2 DSGVO)."
+      ]
+    },
+    {
+      "t": "fill",
+      "label": "Datenschutzkontakt des Kunden (Name, E-Mail)",
+      "value": ""
+    },
+    {
+      "t": "h1",
+      "num": "§ 15",
+      "text": "Rollenmatrix nach Leistungsart"
+    },
+    {
+      "t": "p",
+      "text": "Die datenschutzrechtliche Rolle von NexAI richtet sich nach der jeweils beauftragten Leistung. Die im Auftragsformular je Leistung getroffene Zuordnung ist maßgeblich; im Zweifel gilt die nachstehende Matrix:"
+    },
+    {
+      "t": "table",
+      "header": [
+        "Leistung / Agent",
+        "Rolle NexAI",
+        "Rechtsrahmen"
+      ],
+      "rows": [
+        [
+          "Voice Agent (eingehend)",
+          "Auftragsverarbeiter",
+          "Art. 28 DSGVO / dieser AVV"
+        ],
+        [
+          "Voice Agent (ausgehend, vom Kunden veranlasste Ansprache)",
+          "Auftragsverarbeiter; die Zulässigkeit der Ansprache verantwortet der Kunde",
+          "Art. 28 DSGVO / dieser AVV; § 15 des Rahmenvertrages"
+        ],
+        [
+          "Chat Agent",
+          "Auftragsverarbeiter",
+          "Art. 28 DSGVO / dieser AVV"
+        ],
+        [
+          "Automatisierungen",
+          "Auftragsverarbeiter",
+          "Art. 28 DSGVO / dieser AVV"
+        ],
+        [
+          "Individuelle KI-Agenten",
+          "Auftragsverarbeiter",
+          "Art. 28 DSGVO / dieser AVV"
+        ],
+        [
+          "NexAI CRM",
+          "Auftragsverarbeiter",
+          "Art. 28 DSGVO / dieser AVV"
+        ],
+        [
+          "NexAI Kalender",
+          "Auftragsverarbeiter",
+          "Art. 28 DSGVO / dieser AVV"
+        ],
+        [
+          "NexAI App / individuelle Anwendungen",
+          "Auftragsverarbeiter",
+          "Art. 28 DSGVO / dieser AVV"
+        ]
+      ]
+    },
+    {
+      "t": "num",
+      "items": [
+        "NexAI verarbeitet die in den Anwendungen gespeicherten Daten ausschließlich weisungsgebunden für den Kunden und nicht für eigene Zwecke. Eine Recherche oder Beschaffung von Kontaktdaten durch NexAI ist nicht Gegenstand der Leistungen (Anlage A, Ziffer 14).",
+        "Setzt der Kunde einen Agenten für ausgehende Ansprache oder Direktwerbung ein, bleibt NexAI Auftragsverarbeiter; die Rechtmäßigkeit der Ansprache und die Erfüllung der Informationspflichten nach Art. 13 und 14 DSGVO verantwortet der Kunde (§ 15 des Rahmenvertrages).",
+        "Die Klarstellung in § 1 Abs. 5 (eigene Verantwortlichkeit von NexAI) bleibt unberührt."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "§ 16",
+      "text": "Haftung und Innenausgleich"
+    },
+    {
+      "t": "num",
+      "items": [
+        "Für die Haftung im Außenverhältnis gegenüber betroffenen Personen gilt Art. 82 DSGVO. Im Innenverhältnis tragen die Parteien einen etwaigen Schaden bzw. eine Geldbuße nach dem **Maß ihres jeweiligen Verantwortungsanteils** an dem zugrunde liegenden Verstoß (Art. 82 Abs. 5 DSGVO).",
+        "Hat eine Partei an eine betroffene Person Schadensersatz geleistet, der über ihren Verantwortungsanteil hinausgeht, kann sie von der anderen Partei den auf deren Anteil entfallenden Teil zurückfordern.",
+        "Die übrigen Haftungsregelungen des Rahmenvertrags (dort § Haftung/Haftungsbeschränkung) gelten für das Verhältnis der Parteien untereinander ergänzend, soweit sie zwingendem Datenschutzrecht nicht entgegenstehen."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "§ 17",
+      "text": "Schlussbestimmungen"
+    },
+    {
+      "t": "num",
+      "items": [
+        "Änderungen und Ergänzungen dieses AVV bedürfen der Textform. Dies gilt auch für die Aufhebung dieses Textformerfordernisses. Vorrangige Individualabreden (§ 305b BGB) bleiben unberührt.",
+        "Sollte eine Bestimmung dieses AVV unwirksam sein oder werden, bleibt die Wirksamkeit der übrigen Bestimmungen unberührt.",
+        "Es gilt das Recht der Bundesrepublik Deutschland unter Ausschluss des UN-Kaufrechts. Ausschließlicher Gerichtsstand für alle Streitigkeiten aus oder im Zusammenhang mit diesem AVV ist – soweit gesetzlich zulässig – der Sitz von NexAI.",
+        "Die Anhänge 1 (TOM) und 2 (Unterauftragsverarbeiter) sind Bestandteil dieses AVV."
+      ]
+    },
+    {
+      "t": "pagebreak"
+    },
+    {
+      "t": "h1",
+      "num": "Anhang 1",
+      "text": "Technische und organisatorische Maßnahmen (Art. 32 DSGVO)"
+    },
+    {
+      "t": "h2",
+      "text": "1. Mandantentrennung / Trennungskontrolle"
+    },
+    {
+      "t": "bullets",
+      "items": [
+        "getrennte Projekte, Workspaces und API-Keys je Kunde bei den eingesetzten Diensten;",
+        "logische Trennung der Datenbestände; keine kundenübergreifende Zusammenführung;",
+        "getrennte Verarbeitung von Test-/Entwicklungs- und Produktivdaten."
+      ]
+    },
+    {
+      "t": "h2",
+      "text": "2. Zugangs- und Zugriffskontrolle"
+    },
+    {
+      "t": "bullets",
+      "items": [
+        "Multi-Faktor-Authentifizierung (MFA) für administrative Zugänge;",
+        "Least-Privilege-Prinzip: rollenbasierte, auf das Erforderliche beschränkte Berechtigungen;",
+        "kein Produktivbetrieb über rein private Endnutzer-Accounts; Nutzung dedizierter Betriebs-Accounts;",
+        "Passwort-Richtlinien und sichere Verwahrung von Geheimnissen/Schlüsseln;",
+        "regelmäßige Überprüfung und Entzug nicht mehr benötigter Berechtigungen."
+      ]
+    },
+    {
+      "t": "h2",
+      "text": "3. Verschlüsselung / Weitergabekontrolle"
+    },
+    {
+      "t": "bullets",
+      "items": [
+        "Transportverschlüsselung (TLS) bei der Übertragung personenbezogener Daten;",
+        "Verschlüsselung ruhender Daten, soweit von den eingesetzten Diensten unterstützt;",
+        "gesicherte Schnittstellen (authentifizierte APIs/Webhooks)."
+      ]
+    },
+    {
+      "t": "h2",
+      "text": "4. Eingabe- und Protokollierungskontrolle"
+    },
+    {
+      "t": "bullets",
+      "items": [
+        "Zugriffs- und Aktivitätsprotokollierung in den administrativen Systemen;",
+        "Nachvollziehbarkeit wesentlicher Konfigurations- und Verarbeitungsvorgänge."
+      ]
+    },
+    {
+      "t": "h2",
+      "text": "5. Verfügbarkeit und Belastbarkeit"
+    },
+    {
+      "t": "bullets",
+      "items": [
+        "Nutzung etablierter, ausfallsicherer Cloud-Infrastruktur der Subunternehmer;",
+        "Maßnahmen zur Wiederherstellbarkeit im Rahmen der Möglichkeiten der genutzten Dienste."
+      ]
+    },
+    {
+      "t": "h2",
+      "text": "6. Datenminimierung und Löschung"
+    },
+    {
+      "t": "bullets",
+      "items": [
+        "Deaktivierung der Speicherung, wo technisch möglich (Grundsatz der Nichtspeicherung);",
+        "standardmäßig deaktivierte Aufzeichnung/Transkription;",
+        "automatisierte Löschroutinen (Löschung spätestens sechs Monate nach Erhebung, soweit keine Ausnahme greift);",
+        "Zero-Retention-/No-Training-Konfiguration der Subunternehmer, soweit technisch verfügbar."
+      ]
+    },
+    {
+      "t": "h2",
+      "text": "7. Auftragskontrolle und Organisation"
+    },
+    {
+      "t": "bullets",
+      "items": [
+        "Verpflichtung der beteiligten Personen auf Vertraulichkeit;",
+        "vertragliche Bindung der Unterauftragsverarbeiter auf entsprechende Schutzpflichten;",
+        "dokumentierte Weisungslage; Verzeichnis der Verarbeitungstätigkeiten (Art. 30 Abs. 2 DSGVO)."
+      ]
+    },
+    {
+      "t": "pagebreak"
+    },
+    {
+      "t": "h1",
+      "num": "Anhang 2",
+      "text": "Unterauftragsverarbeiter"
+    },
+    {
+      "t": "p",
+      "text": "Die folgenden Unterauftragsverarbeiter sind zum Zeitpunkt des Vertragsschlusses eingesetzt und werden vom Kunden allgemein genehmigt (§ 9). Der konkrete Einsatz richtet sich nach den beauftragten Agenten und Anwendungen. Nicht bei jedem Kunden kommen sämtliche Dienste zum Einsatz."
+    },
+    {
+      "t": "table",
+      "header": [
+        "Name",
+        "Sitz / Land",
+        "Leistung",
+        "Datenkategorien",
+        "Transfermechanismus"
+      ],
+      "rows": [
+        [
+          "Vapi Inc.",
+          "USA",
+          "Voice-Agent-Plattform (Sprachdialog, Telefonie-Orchestrierung, Sprachsynthese)",
+          "Gesprächsinhalte, Metadaten, Rufnummern",
+          "EU-SCC Modul 3 + Zusatzmaßnahmen + TIA (kein DPF)"
+        ],
+        [
+          "Soniox Inc",
+          "USA",
+          "Spracherkennung (Speech-to-Text); als Unterauftragsverarbeiter von Vapi eingesetzt",
+          "Audio-/Sprachdaten, daraus erzeugte Transkripte, Metadaten",
+          "EU-SCC Modul 3 + Zusatzmaßnahmen + TIA (über Vapi-DPA)"
+        ],
+        [
+          "OpenAI Ireland Ltd. / OpenAI, L.L.C.",
+          "EU / USA",
+          "Sprachmodell / KI-Verarbeitung (Textverstehen, Antwortgenerierung)",
+          "Gesprächs-/Textinhalte, Metadaten",
+          "EU-SCC Modul 3 + Zusatzmaßnahmen + TIA (kein DPF); No-Training-Konfiguration"
+        ],
+        [
+          "Google LLC / Google Ireland Ltd.",
+          "EU / USA",
+          "Kalender-, Sheets-, Gmail-/Workspace-Dienste (Terminverwaltung, Bestätigungen, Lead-Ablage)",
+          "Termin-, Kontakt-, Vorgangsdaten, Metadaten",
+          "DPF, hilfsweise EU-SCC Modul 3"
+        ],
+        [
+          "easybell GmbH",
+          "Deutschland",
+          "Telefonie-Anbindung (SIP-Trunk)",
+          "Rufnummern, Verbindungs-/Metadaten",
+          "EU-intern; kein Drittlandtransfer"
+        ],
+        [
+          "Hetzner Online GmbH",
+          "Deutschland",
+          "Hosting und Betrieb der von NexAI selbst betriebenen Systeme (Automatisierungen/n8n, NexAI CRM, NexAI Kalender, NexAI App)",
+          "je nach Leistung: Kontakt-, Vorgangs-, Termin-, Aufgaben-, Beleg- und Protokolldaten",
+          "EU-intern; kein Drittlandtransfer"
+        ],
+        [
+          "seven communications GmbH & Co. KG",
+          "Köln, Deutschland",
+          "Versand von SMS (Terminbestätigungen und Erinnerungen); nur bei beauftragtem SMS-Versand",
+          "Rufnummer der Empfängerin bzw. des Empfängers, Inhalt der Nachricht",
+          "EU-intern; kein Drittlandtransfer"
+        ],
+        [
+          "Resend, Inc.",
+          "USA (Verarbeitung in der EU-Region Irland)",
+          "Versand von System-E-Mails (Bestätigungen, Erinnerungen, Benachrichtigungen aus den Anwendungen)",
+          "E-Mail-Adresse, Name, Inhalt der Nachricht",
+          "DPF-zertifiziert; ergänzend EU-SCC Modul 3"
+        ]
+      ]
+    },
+    {
+      "t": "fill",
+      "label": "Ergänzende / abweichende Subunternehmer (kundenspezifisch)",
+      "value": ""
+    },
+    {
+      "t": "note",
+      "text": "Sitzangaben und Transfermechanismen können sich ändern; maßgeblich ist die jeweils aktuelle, dem Kunden nach § 9 Abs. 2 mitgeteilte Fassung. Bei Diensten mit EU-Niederlassung wird die Verarbeitung vorrangig über die EU-Entität abgewickelt."
+    },
+    {
+      "t": "pagebreak"
+    },
+    {
+      "t": "h1",
+      "num": "",
+      "text": "Unterschriften"
+    },
+    {
+      "t": "p",
+      "text": "Die Parteien schließen diesen Vertrag zur Auftragsverarbeitung einschließlich seiner Anhänge 1 und 2 verbindlich ab."
+    },
+    {
+      "t": "spacer",
+      "h": 12
+    },
+    {
+      "t": "sig",
+      "cols": [
+        {
+          "role": "Für NexAI",
+          "lines": [
+            "Ort, Datum",
+            "",
+            "Maximilian Trenk (Gesellschafter)"
+          ]
+        },
+        {
+          "role": "Für NexAI",
+          "lines": [
+            "Ort, Datum",
+            "",
+            "Jason Brian Merklein (Gesellschafter)"
+          ]
+        },
+        {
+          "role": "Für den Kunden",
+          "lines": [
+            "Ort, Datum",
+            "",
+            "Name / Funktion"
+          ]
+        }
+      ]
+    },
+    {
+      "t": "spacer",
+      "h": 12
+    },
+    {
+      "t": "note",
+      "text": "Dieser AVV ist ein sorgfältig erstellter Entwurf. Er ersetzt keine Rechtsberatung und sollte vor Verwendung im Einzelfall anwaltlich geprüft und an die konkrete Verarbeitungssituation angepasst werden."
+    },
+    {
+      "t": "pagebreak"
+    },
+    {
+      "t": "title",
+      "text": "Anlage C – Service Level Agreement (SLA)"
+    },
+    {
+      "t": "subtitle",
+      "text": "Support- und Servicebedingungen für den laufenden Betrieb der Agenten und Anwendungen"
+    },
+    {
+      "t": "meta",
+      "text": "Stand: Juli 2026"
+    },
+    {
+      "t": "spacer",
+      "h": 6
+    },
+    {
+      "t": "h1",
+      "num": "1.",
+      "text": "Zweck und Geltung"
+    },
+    {
+      "t": "p",
+      "text": "Diese Anlage C (Service Level Agreement, nachfolgend \"SLA\") regelt die Support- und Servicebedingungen für die von der **NexAI – Next Generation Artificial Intelligence GbR**, Untere Bergstraße 13, 74586 Frankenhardt-Honhardt, vertreten durch die Gesellschafter Maximilian Trenk und Jason Brian Merklein (nachfolgend \"NexAI\"), gegenüber dem im Auftragsformular bezeichneten Kunden (nachfolgend \"Kunde\") erbrachten Betriebsleistungen, insbesondere Betrieb, Wartung, Hosting und Support der Agenten und Anwendungen."
+    },
+    {
+      "t": "num",
+      "items": [
+        "Diese Anlage C ist Bestandteil der Vertragsdokumente und ergänzt den Rahmenvertrag. Sie gilt für die Dauer des jeweiligen Betriebsverhältnisses und ausschließlich für Betriebsleistungen im Sinne des Dienstvertragsrechts; für Projektleistungen (einmalige Werkleistungen) gilt sie nicht.",
+        "Bei Widersprüchen zwischen dieser Anlage C und dem Rahmenvertrag gehen die Regelungen des Rahmenvertrags vor, soweit dort nicht ausdrücklich auf diese Anlage verwiesen wird.",
+        "Die in dieser Anlage genannten Support- und Reaktionszeiten setzen ein bestehendes, nicht gekündigtes und nicht (durch Zahlungsverzug oder aus anderem Grund berechtigt) ausgesetztes Vertragsverhältnis sowie die vollständige Erfüllung der fälligen Zahlungspflichten des Kunden voraus.",
+        "Die in den Vertragsdokumenten (insbesondere Rahmenvertrag, Anlage A und Anlage B (AVV)) definierten Begriffe gelten in dieser Anlage einheitlich fort."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "2.",
+      "text": "Servicezeiten"
+    },
+    {
+      "t": "num",
+      "items": [
+        "Die regulären **Servicezeiten** von NexAI sind Montag bis Freitag von **08:00 bis 17:00 Uhr** (gesetzliche Zeit in Deutschland, MEZ/MESZ), ausgenommen die gesetzlichen Feiertage am Sitz von NexAI im Bundesland **Baden-Württemberg**.",
+        "Als **Werktage** im Sinne dieser Anlage gelten Montag bis Freitag mit Ausnahme der vorgenannten gesetzlichen Feiertage.",
+        "Supportanfragen, die außerhalb der Servicezeiten eingehen, gelten als am nächsten Werktag zu Beginn der Servicezeiten (08:00 Uhr) eingegangen. Die in Abschnitt 4 genannten Reaktionszeiten beginnen erst mit diesem Zeitpunkt zu laufen und werden ausschließlich innerhalb der Servicezeiten berechnet.",
+        "NexAI ist nicht zu einer über die Servicezeiten hinausgehenden Erreichbarkeit, Rufbereitschaft oder Überwachung verpflichtet. Ein 24/7-Support oder eine 24/7-Überwachung wird nicht geschuldet."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "3.",
+      "text": "Supportkanäle"
+    },
+    {
+      "t": "p",
+      "text": "Support wird über die nachfolgenden Kanäle erbracht. NexAI ist berechtigt, den für die jeweilige Anfrage geeigneten Kanal zu bestimmen:"
+    },
+    {
+      "t": "bullets",
+      "items": [
+        "**E-Mail** an mbt@nex-a-i.com (bevorzugter Kanal für die Meldung und Dokumentation von Störungen);",
+        "**Telefon** unter 0176 80714816 innerhalb der Servicezeiten;",
+        "**Videokonferenz** nach vorheriger Terminvereinbarung;",
+        "**Fernwartung** (Remote-Zugriff) nach vorheriger Abstimmung und Freigabe durch den Kunden;",
+        "sofern von NexAI bereitgestellt: ein **Ticketsystem** zur strukturierten Erfassung und Nachverfolgung von Anfragen."
+      ]
+    },
+    {
+      "t": "num",
+      "items": [
+        "Maßgeblich für die Fristberechnung ist der Eingang der Anfrage über den jeweils von NexAI benannten oder genutzten Supportkanal. NexAI kann verlangen, dass Störungsmeldungen zur Nachvollziehbarkeit in Textform (insbesondere per E-Mail oder Ticketsystem) erfolgen.",
+        "Der Kunde benennt NexAI mindestens einen fachkundigen Ansprechpartner, der zur Meldung und Bearbeitung von Supportanfragen berechtigt ist."
+      ]
+    },
+    {
+      "t": "pagebreak"
+    },
+    {
+      "t": "h1",
+      "num": "4.",
+      "text": "Prioritäten und Reaktionszeiten"
+    },
+    {
+      "t": "p",
+      "text": "NexAI kategorisiert gemeldete Störungen nach den nachfolgenden Prioritätsstufen. Die Einordnung nimmt NexAI nach pflichtgemäßem Ermessen anhand der tatsächlichen Auswirkung auf den Betrieb und unter angemessener Berücksichtigung der Angaben des Kunden vor. Die genannten Zeiten sind **Erstreaktionszeiten** und laufen ausschließlich innerhalb der Servicezeiten (Abschnitt 2)."
+    },
+    {
+      "t": "h2",
+      "text": "4.1 Prioritätsstufen und Beispiele"
+    },
+    {
+      "t": "table",
+      "header": [
+        "Priorität",
+        "Definition",
+        "Beispiele",
+        "Erstreaktion"
+      ],
+      "rows": [
+        [
+          "P1 – Kritisch",
+          "Totalausfall; ein Agent ist vollständig funktionsunfähig und es besteht keine nutzbare Ausweichmöglichkeit.",
+          "Voice Agent nimmt keine Anrufe mehr entgegen; Chat Agent ist vollständig nicht erreichbar; kompletter Ausfall aller Agenten.",
+          "innerhalb von **8 Stunden**"
+        ],
+        [
+          "P2 – Hoch",
+          "Ausfall oder erhebliche Störung einer wesentlichen Funktion; die Kernnutzung ist stark beeinträchtigt, ein eingeschränkter Betrieb bleibt aber möglich.",
+          "Terminbuchung schlägt systematisch fehl; wesentliche Integration (z. B. Kalender/CRM) liefert keine Daten; wiederkehrende Abbrüche im Gesprächsverlauf.",
+          "innerhalb von **1 Werktag**"
+        ],
+        [
+          "P3 – Mittel",
+          "Störung einer Teilfunktion; einzelne, nicht geschäftskritische Funktionen sind beeinträchtigt, der Gesamtbetrieb ist im Wesentlichen nutzbar.",
+          "Fehlerhafte Formulierung in einer Ansage; einzelne Automatisierungsschritte mit Verzögerung; kosmetische oder nicht kritische Fehler.",
+          "innerhalb von **2 Werktagen**"
+        ],
+        [
+          "P4 – Niedrig",
+          "Allgemeine Anfrage, Auskunft oder Änderungswunsch ohne Störungscharakter.",
+          "Fragen zur Bedienung; Wunsch nach kleiner Anpassung; Auswertungs- oder Konfigurationsanfragen.",
+          "innerhalb von **3 Werktagen**"
+        ]
+      ]
+    },
+    {
+      "t": "h2",
+      "text": "4.2 Art der Reaktionszeit"
+    },
+    {
+      "t": "num",
+      "items": [
+        "Die **Erstreaktionszeit** bezeichnet den Zeitraum bis zur ersten inhaltlichen Rückmeldung von NexAI, mit der die Bearbeitung aufgenommen und das weitere Vorgehen mitgeteilt wird. Eine automatisierte Eingangsbestätigung stellt keine Erstreaktion dar.",
+        "NexAI schuldet die Erstreaktion innerhalb der genannten Zeiten als Bemühensschuld. Eine bestimmte **Wiederherstellungs-, Lösungs- oder Behebungszeit wird ausdrücklich nicht garantiert.** NexAI wird sich bemühen, gemeldete Störungen mit der nach den Umständen gebotenen Sorgfalt und in einer der Priorität angemessenen Weise zu bearbeiten und zu beheben.",
+        "Ursachen, die außerhalb des Einflussbereichs von NexAI liegen – insbesondere Störungen, Ausfälle, Wartungen oder Änderungen bei Subunternehmern und Drittdiensten (z. B. Vapi, Twilio, Make, OpenAI, ElevenLabs, Google, Hoster) sowie Ereignisse höherer Gewalt – hemmen den Lauf der Reaktionszeiten für die Dauer ihres Bestehens. NexAI wird den Kunden über solche Umstände, sobald erkannt, unterrichten.",
+        "Die Reaktionszeiten werden ferner gehemmt, solange NexAI auf die erforderliche Mitwirkung des Kunden (Abschnitt 10) wartet, insbesondere auf eine Fehlerbeschreibung, Rückfragenbeantwortung oder Bereitstellung von Zugängen."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "5.",
+      "text": "Enthaltener und nicht enthaltener Support"
+    },
+    {
+      "t": "h2",
+      "text": "5.1 Enthaltener Support"
+    },
+    {
+      "t": "p",
+      "text": "Im laufenden Beitrag enthalten sind – im Rahmen der Servicezeiten und der vereinbarten Freikontingente – insbesondere:"
+    },
+    {
+      "t": "bullets",
+      "items": [
+        "die Entgegennahme, Kategorisierung und Bearbeitung von Störungsmeldungen zu den beauftragten Agenten und Anwendungen;",
+        "die Analyse und, im Rahmen der Bemühensschuld, die Behebung von Störungen im Verantwortungsbereich von NexAI;",
+        "die laufende Betreuung, Wartung und Pflege der beauftragten Agenten und Anwendungen im vertraglich vereinbarten Umfang;",
+        "geringfügige Konfigurationsanpassungen bestehender Agenten und Anwendungen ohne wesentliche Änderung des Leistungsumfangs;",
+        "Auskünfte zur Bedienung und zum vereinbarten Funktionsumfang."
+      ]
+    },
+    {
+      "t": "h2",
+      "text": "5.2 Nicht enthaltener, gesondert zu vergütender Support"
+    },
+    {
+      "t": "p",
+      "text": "Nicht vom laufenden Beitrag umfasst und nur nach gesonderter Beauftragung und Vergütung geschuldet sind insbesondere:"
+    },
+    {
+      "t": "bullets",
+      "items": [
+        "die Entwicklung, Einrichtung oder Freischaltung **neuer Funktionen** oder wesentlicher Erweiterungen bestehender Agenten und Anwendungen;",
+        "die Erstellung, Einrichtung und Inbetriebnahme **weiterer oder neuer Agenten und Anwendungen**;",
+        "die Anbindung, Änderung oder Erweiterung von **Integrationen** und Schnittstellen zu Dritt- oder Kundensystemen;",
+        "**Schulungen**, Workshops und Einweisungen;",
+        "die Behebung von Störungen, die auf Ursachen im Verantwortungsbereich des Kunden, Dritter oder auf höhere Gewalt zurückzuführen sind (Aufwandsvergütung zu den jeweils gültigen Sätzen);",
+        "Leistungen außerhalb der Servicezeiten, soweit nicht gesondert vereinbart."
+      ]
+    },
+    {
+      "t": "num",
+      "items": [
+        "Nicht enthaltene Leistungen werden nach Aufwand zu den jeweils gültigen Netto-Stundensätzen von NexAI oder nach gesondertem Angebot abgerechnet. Alle Sätze verstehen sich netto zzgl. gesetzlicher Umsatzsteuer. NexAI wird den Kunden vor Aufnahme solcher Leistungen auf die Vergütungspflicht hinweisen."
+      ]
+    },
+    {
+      "t": "pagebreak"
+    },
+    {
+      "t": "h1",
+      "num": "6.",
+      "text": "Wartung und Wartungsfenster"
+    },
+    {
+      "t": "num",
+      "items": [
+        "NexAI ist berechtigt, zur Aufrechterhaltung und Verbesserung des Betriebs planbare Wartungsarbeiten durchzuführen. **Planbare Wartungen** werden nach Möglichkeit außerhalb der üblichen Geschäftszeiten des Kunden durchgeführt.",
+        "Planbare Wartungsarbeiten, die zu einer voraussichtlichen Beeinträchtigung der Erreichbarkeit der Agenten und Anwendungen führen, kündigt NexAI mit einer Frist von mindestens **48 Stunden** in Textform (z. B. per E-Mail) an.",
+        "**Notfall- und Sicherheitswartungen** – insbesondere zur Abwehr akuter Sicherheitsrisiken, zur Behebung schwerwiegender Störungen oder aufgrund zwingender Vorgaben von Subunternehmern – darf NexAI ohne Vorankündigung und jederzeit durchführen. NexAI wird den Kunden hierüber unverzüglich informieren.",
+        "Angekündigte planbare Wartungsfenster sowie kurzzeitige, wartungsbedingte Unterbrechungen oder Beeinträchtigungen gelten nicht als Nichtverfügbarkeit im Sinne von Abschnitt 7 und stellen keine Pflichtverletzung dar. Die zwingende gesetzliche Haftung von NexAI, insbesondere bei Vorsatz und grober Fahrlässigkeit sowie bei der Verletzung von Leben, Körper oder Gesundheit, bleibt unberührt."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "7.",
+      "text": "Verfügbarkeit"
+    },
+    {
+      "t": "num",
+      "items": [
+        "NexAI schuldet **keine garantierte Verfügbarkeit (Uptime)** der Agenten und Anwendungen. Als **unverbindliche Zielkennzahl** strebt NexAI für die von ihr selbst betriebene Orchestrierungsschicht eine Verfügbarkeit von **99 % im Monatsmittel** an.",
+        "Bei der Berechnung dieser Zielkennzahl bleiben unberücksichtigt: (a) Ausfälle, Störungen und Wartungen von Subunternehmern und Drittdiensten, (b) angekündigte und Notfall-Wartungsfenster (Abschnitt 6), (c) Ereignisse höherer Gewalt sowie (d) Störungen aus dem Verantwortungsbereich des Kunden oder Dritter.",
+        "Die Zielkennzahl stellt eine **Bemühensschuld** und **keine Beschaffenheits- oder Verfügbarkeitsgarantie** und keine zugesicherte Eigenschaft dar. Aus dem bloßen Nichterreichen der Zielkennzahl ergeben sich keine Vertragsstrafen, Gutschriften oder Minderungsansprüche, soweit nicht ausdrücklich abweichend vereinbart. Zwingende gesetzliche Ansprüche des Kunden bleiben unberührt.",
+        "Die Agenten beruhen auf wahrscheinlichkeitsbasierter KI-Technologie und sind naturgemäß nicht fehlerfrei; hierauf wird ausdrücklich hingewiesen. Eine Erfolgs-, Lead- oder Umsatzgarantie übernimmt NexAI nicht."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "8.",
+      "text": "Störungsmeldung, Fallback und Business Continuity"
+    },
+    {
+      "t": "num",
+      "items": [
+        "NexAI führt **keine 24/7-Überwachung** der Agenten und Anwendungen durch und sagt eine solche nicht zu. Die Erkennung und Meldung von Störungen erfolgt im Rahmen der Servicezeiten sowie durch Meldungen des Kunden.",
+        "Der Kunde ist selbst dafür verantwortlich, für den Fall einer Nichtverfügbarkeit oder Störung der Agenten und Anwendungen ein **angemessenes Ausweich- und Notfallverfahren (Fallback / Business Continuity)** vorzuhalten, das die Fortführung seiner geschäftskritischen Prozesse sicherstellt (z. B. Rufumleitung, manuelle Bearbeitung, alternative Kontaktwege).",
+        "Der Kunde ist verpflichtet, Störungen unverzüglich nach Kenntnis zu melden und den Schaden im Rahmen des Zumutbaren gering zu halten (**Schadensminderungsobliegenheit gemäß § 254 BGB**). Eine schuldhafte Verletzung dieser Obliegenheit kann Ansprüche des Kunden mindern oder ausschließen."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "9.",
+      "text": "Datensicherung"
+    },
+    {
+      "t": "num",
+      "items": [
+        "Der Kunde ist für die **Sicherung seiner eigenen Daten** selbst verantwortlich. Führendes System für Geschäftsdaten ist das jeweilige **Kundensystem**.",
+        "NexAI schuldet keine über die vertraglich vereinbarten Betriebsleistungen hinausgehende Datensicherung. Soweit eine Speicherung technisch abschaltbar ist, erfolgt keine Speicherung; im Übrigen gelten die Regelungen der Vertragsdokumente, insbesondere zur Aufbewahrung (regelmäßig sechs Monate) sowie zum 30-tägigen Export vor Löschung bei Vertragsende.",
+        "Vor Eingriffen, die mit einem Risiko für Datenbestände verbunden sein können, obliegt es dem Kunden, im Rahmen des Zumutbaren aktuelle Sicherungen der in seinen Systemen geführten Daten vorzuhalten."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "10.",
+      "text": "Drittanbieter und Mitwirkungspflichten des Kunden"
+    },
+    {
+      "t": "num",
+      "items": [
+        "Die Erbringung der Betriebsleistungen setzt die Verfügbarkeit und Funktionsfähigkeit von **Subunternehmern und Drittdiensten** voraus. NexAI hat auf deren Verfügbarkeit, Leistungsfähigkeit und Änderungen keinen Einfluss und übernimmt hierfür keine Gewähr. Störungen dieser Dienste liegen außerhalb des Verantwortungsbereichs von NexAI.",
+        "Der Kunde wirkt bei der Bearbeitung von Störungen im erforderlichen Umfang mit. Dazu gehört insbesondere: die Bereitstellung einer nachvollziehbaren **Fehlerbeschreibung** (Zeitpunkt, betroffener Agent, Auswirkung, gegebenenfalls Beispiele und Reproduktionsschritte), die zeitnahe Beantwortung von Rückfragen, die Benennung eines Ansprechpartners sowie die Bereitstellung erforderlicher **Zugänge**, Informationen und Freigaben.",
+        "Verzögerungen und Mehraufwände, die auf eine unzureichende oder verspätete Mitwirkung des Kunden zurückzuführen sind, gehen nicht zu Lasten von NexAI und hemmen den Lauf der Reaktionszeiten (Abschnitt 4.2 Ziffer 4)."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "11.",
+      "text": "Änderungsvorbehalt"
+    },
+    {
+      "t": "num",
+      "items": [
+        "NexAI ist berechtigt, dieses SLA mit Wirkung für die Zukunft anzupassen, soweit dies aus sachlichen Gründen – insbesondere aufgrund technischer Weiterentwicklungen, geänderter Leistungen von Subunternehmern oder geänderter rechtlicher Rahmenbedingungen – erforderlich ist und die Anpassung den Kunden nicht unangemessen benachteiligt. Der wesentliche Kern der geschuldeten Leistung bleibt unberührt.",
+        "Änderungen kündigt NexAI mindestens **sechs Wochen** vor ihrem Wirksamwerden in Textform an; dabei werden die geänderten Regelungen mitgeteilt oder in konsolidierter Fassung übermittelt.",
+        "Beeinträchtigt die Änderung die Interessen des Kunden nicht nur unerheblich, steht dem Kunden ein **Sonderkündigungsrecht** hinsichtlich des betroffenen Betriebsverhältnisses zum Zeitpunkt des Wirksamwerdens der Änderung zu. Kündigt der Kunde nicht, wird die Änderung zum angekündigten Zeitpunkt wirksam. Eine **Zustimmungsfiktion** wird nicht vereinbart; auf das Sonderkündigungsrecht und die Bedeutung eines Unterbleibens der Kündigung wird in der Änderungsankündigung gesondert hingewiesen."
+      ]
+    },
+    {
+      "t": "spacer",
+      "h": 6
+    },
+    {
+      "t": "note",
+      "text": "Dieses Dokument ist ein sorgfältig erstellter Entwurf und ersetzt keine Rechtsberatung im Einzelfall. Es sollte vor Verwendung für den konkreten Einzelfall anwaltlich geprüft werden."
+    },
+    {
+      "t": "spacer",
+      "h": 10
+    },
+    {
+      "t": "h1",
+      "num": "12.",
+      "text": "Unterschriften"
+    },
+    {
+      "t": "sig",
+      "cols": [
+        {
+          "role": "Für NexAI",
+          "lines": [
+            "Ort, Datum",
+            "",
+            "Maximilian Trenk (Gesellschafter)"
+          ]
+        },
+        {
+          "role": "Für NexAI",
+          "lines": [
+            "Ort, Datum",
+            "",
+            "Jason Brian Merklein (Gesellschafter)"
+          ]
+        },
+        {
+          "role": "Für den Kunden",
+          "lines": [
+            "Ort, Datum",
+            "",
+            "Name / Funktion"
+          ]
+        }
+      ]
+    },
+    {
+      "t": "pagebreak"
+    },
+    {
+      "t": "title",
+      "text": "Anlage D – Abnahmeprotokoll (Projekt-/Werkleistungen)"
+    },
+    {
+      "t": "subtitle",
+      "text": "Abnahme einmaliger Werkleistungen gemäß Rahmenvertrag und Auftragsformular"
+    },
+    {
+      "t": "meta",
+      "text": "Stand: Juli 2026"
+    },
+    {
+      "t": "p",
+      "text": "Dieses Abnahmeprotokoll dokumentiert die Abnahme der von NexAI erbrachten **Projektleistungen** (einmalige Werkleistungen, insbesondere die Ersteinrichtung von Agenten und die Einrichtung von Anwendungen) im Sinne der Vertragsdokumente. Es ergänzt den zwischen den Parteien geschlossenen Rahmenvertrag und das zugehörige Auftragsformular/den Leistungsschein und wird nach seiner Unterzeichnung Bestandteil der Vertragsdokumente."
+    },
+    {
+      "t": "h1",
+      "num": "1.",
+      "text": "Parteien"
+    },
+    {
+      "t": "h2",
+      "text": "Auftragnehmer"
+    },
+    {
+      "t": "p",
+      "text": "**NexAI – Next Generation Artificial Intelligence GbR**, Untere Bergstraße 13, 74586 Frankenhardt-Honhardt, Deutschland, vertreten durch die Gesellschafter Maximilian Trenk und Jason Brian Merklein, E-Mail mbt@nex-a-i.com, Telefon 0176 80714816 — nachfolgend „NexAI\"."
+    },
+    {
+      "t": "h2",
+      "text": "Kunde"
+    },
+    {
+      "t": "fill",
+      "label": "Firma",
+      "value": ""
+    },
+    {
+      "t": "fill",
+      "label": "Ansprechpartner",
+      "value": ""
+    },
+    {
+      "t": "fill",
+      "label": "Anschrift",
+      "value": ""
+    },
+    {
+      "t": "fill",
+      "label": "E-Mail",
+      "value": ""
+    },
+    {
+      "t": "fill",
+      "label": "Telefon",
+      "value": ""
+    },
+    {
+      "t": "p",
+      "text": "— nachfolgend „Kunde\"."
+    },
+    {
+      "t": "h1",
+      "num": "2.",
+      "text": "Projekt-/Feldangaben"
+    },
+    {
+      "t": "fill",
+      "label": "Projekt / Bezeichnung",
+      "value": ""
+    },
+    {
+      "t": "fill",
+      "label": "Auftragsformular / Leistungsschein Nr.",
+      "value": ""
+    },
+    {
+      "t": "fill",
+      "label": "Projektbeginn",
+      "value": ""
+    },
+    {
+      "t": "fill",
+      "label": "Datum Fertigstellungsanzeige",
+      "value": ""
+    },
+    {
+      "t": "fill",
+      "label": "Abnahmedatum",
+      "value": ""
+    },
+    {
+      "t": "fill",
+      "label": "Ort der Abnahme",
+      "value": ""
+    },
+    {
+      "t": "h1",
+      "num": "3.",
+      "text": "Gegenstand der Abnahme"
+    },
+    {
+      "t": "num",
+      "items": [
+        "Gegenstand dieses Protokolls ist die Abnahme der im vorgenannten Auftragsformular/Leistungsschein sowie in Anlage A (Leistungsbeschreibung) beschriebenen Projektleistungen. Es gelten ergänzend die Regelungen des Rahmenvertrages, insbesondere zu Abnahme, Vergütung und Gewährleistung, sowie der AGB (B2B).",
+        "Die Projektleistungen unterliegen dem Werkvertragsrecht (§§ 631 ff. BGB). Laufende Betriebsleistungen (Betrieb, Wartung, Hosting und Support der Agenten) sind nicht Gegenstand dieser Abnahme; sie richten sich nach den dienstvertraglichen Regelungen des Rahmenvertrages und der Anlage C (SLA).",
+        "Maßgeblich für den geschuldeten Leistungsumfang sind die vertraglich vereinbarten Spezifikationen gemäß Auftragsformular und Anlage A (Leistungsbeschreibung). Ergänzungs- oder Änderungswünsche außerhalb dieses Umfangs werden gesondert beauftragt und abgerechnet.",
+        "Werden mehrere Projektleistungen zu unterschiedlichen Zeitpunkten fertiggestellt, kann die Abnahme in sich abgeschlossener Teilleistungen mittels gesondertem Protokoll erfolgen (Teilabnahme); die Regelungen dieses Protokolls gelten für Teilabnahmen entsprechend."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "4.",
+      "text": "Gelieferte Leistungen"
+    },
+    {
+      "t": "p",
+      "text": "Die nachfolgend angekreuzten Leistungen wurden erbracht und werden zur Abnahme vorgelegt:"
+    },
+    {
+      "t": "checkbox",
+      "text": "Voice Agent (KI-Telefonassistent)",
+      "checked": false
+    },
+    {
+      "t": "checkbox",
+      "text": "Chat Agent (Website-/Messaging-Chatbot)",
+      "checked": false
+    },
+    {
+      "t": "checkbox",
+      "text": "NexAI CRM (Einrichtung und Inbetriebnahme)",
+      "checked": false
+    },
+    {
+      "t": "checkbox",
+      "text": "NexAI Kalender (Einrichtung und Inbetriebnahme)",
+      "checked": false
+    },
+    {
+      "t": "checkbox",
+      "text": "Terminbuchung / Kalender-Automatisierung",
+      "checked": false
+    },
+    {
+      "t": "checkbox",
+      "text": "CRM-Anbindung",
+      "checked": false
+    },
+    {
+      "t": "checkbox",
+      "text": "Kalender-Integration",
+      "checked": false
+    },
+    {
+      "t": "checkbox",
+      "text": "Google Sheets / Tabellen-Integration",
+      "checked": false
+    },
+    {
+      "t": "checkbox",
+      "text": "E-Mail-Automatisierung",
+      "checked": false
+    },
+    {
+      "t": "checkbox",
+      "text": "API-Integration",
+      "checked": false
+    },
+    {
+      "t": "checkbox",
+      "text": "Workflow-Automatisierung",
+      "checked": false
+    },
+    {
+      "t": "checkbox",
+      "text": "NexAI App / individuelle Anwendung (Einrichtung und Bereitstellung)",
+      "checked": false
+    },
+    {
+      "t": "checkbox",
+      "text": "Individuelle Entwicklung / individueller KI-Agent",
+      "checked": false
+    },
+    {
+      "t": "checkbox",
+      "text": "Sonstige:",
+      "checked": false
+    },
+    {
+      "t": "fill",
+      "label": "Sonstige (Beschreibung)",
+      "value": ""
+    },
+    {
+      "t": "h1",
+      "num": "5.",
+      "text": "Dokumentation und Übergabe"
+    },
+    {
+      "t": "p",
+      "text": "Im Rahmen der Übergabe wurden die nachfolgend angekreuzten Positionen bereitgestellt:"
+    },
+    {
+      "t": "checkbox",
+      "text": "Zugangsdaten / Zugänge übergeben bzw. eingerichtet (soweit vereinbart; Accounts und Infrastruktur laufen im Übrigen als Betriebsmittel über NexAI, ohne Herausgabeanspruch des Kunden)",
+      "checked": false
+    },
+    {
+      "t": "checkbox",
+      "text": "Einweisung / Schulung des Kunden durchgeführt",
+      "checked": false
+    },
+    {
+      "t": "checkbox",
+      "text": "Dokumentation / Bedienhinweise übergeben",
+      "checked": false
+    },
+    {
+      "t": "checkbox",
+      "text": "KI-Kennzeichnung / Transparenzhinweise (Art. 50 KI-VO) eingerichtet und aktiv",
+      "checked": false
+    },
+    {
+      "t": "checkbox",
+      "text": "Support-Ansprechpartner benannt",
+      "checked": false
+    },
+    {
+      "t": "fill",
+      "label": "Support-Ansprechpartner",
+      "value": ""
+    },
+    {
+      "t": "h1",
+      "num": "6.",
+      "text": "Restarbeiten"
+    },
+    {
+      "t": "p",
+      "text": "Bestehen zum Zeitpunkt der Abnahme noch offene Restarbeiten?"
+    },
+    {
+      "t": "checkbox",
+      "text": "Nein",
+      "checked": false
+    },
+    {
+      "t": "checkbox",
+      "text": "Ja – nachfolgend beschrieben, mit vereinbarter Erledigungsfrist",
+      "checked": false
+    },
+    {
+      "t": "fill",
+      "label": "Beschreibung der Restarbeiten",
+      "value": ""
+    },
+    {
+      "t": "fill",
+      "label": "Erledigung bis",
+      "value": ""
+    },
+    {
+      "t": "h1",
+      "num": "7.",
+      "text": "Mängel"
+    },
+    {
+      "t": "p",
+      "text": "Bestehen zum Zeitpunkt der Abnahme Mängel?"
+    },
+    {
+      "t": "checkbox",
+      "text": "Nein",
+      "checked": false
+    },
+    {
+      "t": "checkbox",
+      "text": "Ja – nachfolgend beschrieben",
+      "checked": false
+    },
+    {
+      "t": "fill",
+      "label": "Beschreibung der Mängel",
+      "value": ""
+    },
+    {
+      "t": "p",
+      "text": "Etwaige vorbehaltene Mängel sind vorstehend konkret zu bezeichnen. Behält sich der Kunde die Geltendmachung eines bei der Abnahme bekannten Mangels nicht vor, so stehen ihm die Rechte aus §§ 634 Nr. 1 bis 3 BGB insoweit nur zu, wenn er sich diese bei der Abnahme vorbehält (§ 640 Abs. 3 BGB); die weiteren Gewährleistungsrechte bleiben hiervon unberührt."
+    },
+    {
+      "t": "h1",
+      "num": "8.",
+      "text": "Abnahmeerklärung"
+    },
+    {
+      "t": "num",
+      "items": [
+        "Der Kunde bestätigt mit seiner Unterschrift, dass die vorgelegten Projektleistungen abgenommen werden. Die Parteien sind sich einig, dass die Leistungen im Wesentlichen vertragsgemäß erbracht wurden.",
+        "**Unwesentliche Mängel** berechtigen den Kunden nicht zur Verweigerung der Abnahme (§ 640 Abs. 1 Satz 2 BGB). Etwaige unter Ziffer 6 (Restarbeiten) und Ziffer 7 (Mängel) bezeichnete Positionen werden von NexAI im vereinbarten Rahmen und innerhalb angemessener Frist nachgeholt bzw. beseitigt; die diesbezüglichen Gewährleistungsrechte des Kunden bleiben unberührt.",
+        "**Abnahmefiktion (§ 640 Abs. 2 BGB):** Zeigt NexAI die Fertigstellung der Werkleistung an und setzt dem Kunden eine angemessene Frist zur Abnahme, so gilt die Werkleistung nach Ablauf dieser Frist als abgenommen, wenn der Kunde die Abnahme nicht innerhalb der Frist unter Angabe mindestens eines Mangels verweigert hat. Auf diese Rechtsfolge weist NexAI den Kunden in der Fertigstellungsanzeige gesondert hin.",
+        "**Beginn der Gewährleistungsfrist:** Mit der Abnahme – einschließlich der Fälle der Abnahmefiktion nach vorstehender Ziffer (3) sowie einer etwaigen Teilabnahme gemäß Ziffer 3 (4) – beginnt die auf **ein (1) Jahr** verkürzte Verjährungsfrist für Mängelansprüche des Kunden hinsichtlich der abgenommenen Werkleistungen. Die gesetzlich zwingenden Ausnahmen (Vorsatz, Arglist, Schäden aus der Verletzung des Lebens, des Körpers oder der Gesundheit sowie grobes Verschulden) bleiben unberührt; im Übrigen gelten die Regelungen des Rahmenvertrages und der AGB (B2B).",
+        "Mit der Abnahme geht die Gefahr auf den Kunden über und die Vergütung für die abgenommenen Projektleistungen wird gemäß den Regelungen der Vertragsdokumente fällig. Die Abnahme lässt die vertraglich vereinbarten Vergütungs-, Haftungs- und sonstigen Regelungen der Vertragsdokumente im Übrigen unberührt."
+      ]
+    },
+    {
+      "t": "spacer",
+      "h": 12
+    },
+    {
+      "t": "sig",
+      "cols": [
+        {
+          "role": "Für NexAI",
+          "lines": [
+            "Ort, Datum",
+            "",
+            "Maximilian Trenk (Gesellschafter)"
+          ]
+        },
+        {
+          "role": "Für NexAI",
+          "lines": [
+            "Ort, Datum",
+            "",
+            "Jason Brian Merklein (Gesellschafter)"
+          ]
+        },
+        {
+          "role": "Für den Kunden",
+          "lines": [
+            "Ort, Datum",
+            "",
+            "Name / Funktion"
+          ]
+        }
+      ]
+    },
+    {
+      "t": "spacer",
+      "h": 10
+    },
+    {
+      "t": "note",
+      "text": "Dieses Abnahmeprotokoll ist Teil eines sorgfältig erstellten Vertragsentwurfs. Es ersetzt keine Rechtsberatung und sollte für den konkreten Einzelfall anwaltlich geprüft werden."
+    },
+    {
+      "t": "pagebreak"
+    },
+    {
+      "t": "title",
+      "text": "SEPA-Firmenlastschriftmandat (B2B)"
+    },
+    {
+      "t": "subtitle",
+      "text": "Mandat für wiederkehrende Zahlungen im SEPA-Firmenlastschriftverfahren (SEPA Business-to-Business Direct Debit Mandate)"
+    },
+    {
+      "t": "meta",
+      "text": "Stand: Juli 2026"
+    },
+    {
+      "t": "spacer",
+      "h": 6
+    },
+    {
+      "t": "p",
+      "text": "Dieses Mandat ergänzt den zwischen NexAI und dem Kunden geschlossenen Rahmenvertrag sowie das zugehörige Auftragsformular/den Leistungsschein. Es berechtigt NexAI, die dort vereinbarten wiederkehrenden Beiträge (monatlicher bzw. jährlicher Beitrag) sowie den abgerechneten Mehrverbrauch (Overage) im Wege der SEPA-Firmenlastschrift von dem nachstehend bezeichneten Konto des Kunden einzuziehen. Im Übrigen gelten die Zahlungsbestimmungen des Rahmenvertrages und der AGB (B2B) fort."
+    },
+    {
+      "t": "h1",
+      "num": "1.",
+      "text": "Zahlungsempfänger / Gläubiger"
+    },
+    {
+      "t": "p",
+      "text": "**NexAI – Next Generation Artificial Intelligence GbR**\nUntere Bergstraße 13, 74586 Frankenhardt-Honhardt, Deutschland\nVertreten durch die Gesellschafter Maximilian Trenk und Jason Brian Merklein\nE-Mail: mbt@nex-a-i.com · Telefon: 0176 80714816\n— nachfolgend \"NexAI\" oder \"Gläubiger\" —"
+    },
+    {
+      "t": "fill",
+      "label": "Gläubiger-Identifikationsnummer (Creditor Identifier)",
+      "value": "____"
+    },
+    {
+      "t": "fill",
+      "label": "Mandatsreferenz",
+      "value": "____"
+    },
+    {
+      "t": "note",
+      "text": "Wird die Mandatsreferenz bei Mandatserteilung noch nicht vergeben, teilt NexAI sie dem Kunden spätestens mit der ersten Vorabankündigung (Pre-Notification) gesondert in Textform mit. Die Mandatsreferenz bildet zusammen mit der Gläubiger-Identifikationsnummer die eindeutige Kennung dieses Mandats."
+    },
+    {
+      "t": "h1",
+      "num": "2.",
+      "text": "Zahler / Kunde"
+    },
+    {
+      "t": "fill",
+      "label": "Name / Firma des Zahlers (Kontoinhaber)",
+      "value": ""
+    },
+    {
+      "t": "fill",
+      "label": "Anschrift (Straße, Hausnummer)",
+      "value": ""
+    },
+    {
+      "t": "fill",
+      "label": "PLZ, Ort, Land",
+      "value": ""
+    },
+    {
+      "t": "fill",
+      "label": "Kreditinstitut (Name der Bank)",
+      "value": ""
+    },
+    {
+      "t": "fill",
+      "label": "IBAN",
+      "value": ""
+    },
+    {
+      "t": "fill",
+      "label": "BIC",
+      "value": ""
+    },
+    {
+      "t": "note",
+      "text": "Der Zahler ist Nichtverbraucher (Unternehmer, juristische Person oder rechtsfähige Personengesellschaft) und damit zur Teilnahme am SEPA-Firmenlastschriftverfahren zugelassen. Das Firmenlastschriftverfahren ist Verbrauchern nicht eröffnet. Ist der Kontoinhaber nicht mit dem Kunden aus dem Rahmenvertrag identisch, sichert der Kunde zu, zur Erteilung dieses Mandats über das vorstehende Konto berechtigt zu sein."
+    },
+    {
+      "t": "h1",
+      "num": "3.",
+      "text": "Mandatstext (SEPA-Firmenlastschrift)"
+    },
+    {
+      "t": "p",
+      "text": "Ich/Wir ermächtige(n) NexAI, Zahlungen von meinem/unserem vorstehend bezeichneten Konto mittels **SEPA-Firmenlastschrift** einzuziehen. Zugleich weise(n) ich/wir mein/unser Kreditinstitut an, die von NexAI auf mein/unser Konto gezogenen SEPA-Firmenlastschriften einzulösen."
+    },
+    {
+      "t": "p",
+      "text": "Dieses Mandat gilt für **wiederkehrende Zahlungen** – insbesondere die vereinbarten monatlichen bzw. jährlichen Beiträge sowie den abgerechneten Mehrverbrauch (Overage) – und bleibt bis auf Widerruf gültig."
+    },
+    {
+      "t": "num",
+      "items": [
+        "**Kein Erstattungsanspruch nach Einlösung:** Im SEPA-Firmenlastschriftverfahren besteht – anders als bei der SEPA-Basislastschrift – nach erfolgter Einlösung kein Anspruch auf Erstattung des belasteten Betrages. Mit Belastung meines/unseres Kontos ist die Zahlung endgültig; ein Erstattungsverlangen ist ausgeschlossen (§ 675x Abs. 1 i. V. m. § 675e Abs. 4 BGB). Einwendungen gegen die Berechtigung der Forderung sind unmittelbar gegenüber NexAI geltend zu machen und lassen die Endgültigkeit der Zahlung unberührt.",
+        "**Registrierungspflicht bei der Bank:** Ich/Wir verpflichte(n) mich/uns, dieses Mandat unverzüglich, spätestens jedoch vor dem ersten Einzug, bei meinem/unserem Kreditinstitut zu bestätigen bzw. registrieren zu lassen. Ohne diese Registrierung kann die Bank den Einzug zurückweisen; hierdurch bedingte Rücklastschriften, Kosten und Verzögerungen gehen zu Lasten des Zahlers (Abschnitt 5).",
+        "**Prüfung durch die Bank:** Mein/Unser Kreditinstitut ist nicht verpflichtet, die Lastschrift einzulösen, insbesondere wenn das Konto nicht die erforderliche Deckung aufweist. Eine nur teilweise Einlösung erfolgt nicht.",
+        "**Änderungen der Kontoverbindung:** Änderungen der Kontoverbindung (IBAN, BIC, Kreditinstitut) oder der Kontoinhaberschaft sind NexAI unverzüglich in Textform mitzuteilen. Bei Änderung der Kontoverbindung ist auf Verlangen von NexAI ein neues Mandat zu erteilen.",
+        "**Widerruf:** Das Mandat kann jederzeit mit Wirkung für die Zukunft widerrufen werden. Der Widerruf ist gegenüber NexAI in Textform (z. B. E-Mail an mbt@nex-a-i.com) zu erklären; er lässt bereits fällige oder bereits eingezogene Forderungen sowie die Zahlungspflicht aus dem Rahmenvertrag unberührt. Bei Wegfall des Mandats erfolgt die Zahlung per Überweisung nach Abschnitt 6."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "4.",
+      "text": "Vorabankündigung (Pre-Notification)"
+    },
+    {
+      "t": "p",
+      "text": "NexAI kündigt jeden Einzug per SEPA-Firmenlastschrift vorab an (Pre-Notification). Die Frist für die Vorabankündigung wird einvernehmlich auf **einen (1) Kalendertag** vor Fälligkeit verkürzt. Die Vorabankündigung kann in Textform erfolgen, insbesondere per E-Mail oder als Bestandteil der Rechnung, und enthält Betrag und Fälligkeitsdatum. Bei wiederkehrenden Beiträgen gleichbleibender Höhe genügt eine einmalige Vorabankündigung unter Angabe von Betrag, Fälligkeitsturnus und Mandatsreferenz; ändert sich der Betrag (z. B. durch Mehrverbrauch/Overage), wird der geänderte Betrag rechtzeitig unter Wahrung der vorgenannten Frist angekündigt."
+    },
+    {
+      "t": "h1",
+      "num": "5.",
+      "text": "Rücklastschriften"
+    },
+    {
+      "t": "p",
+      "text": "Wird eine Lastschrift aus einem vom Kunden zu vertretenden Grund zurückgegeben – insbesondere mangels Kontodeckung, wegen fehlender oder nicht registrierter Mandatsbestätigung bei der Bank, wegen Widerspruchs oder Auflösung des Kontos –, so trägt der Kunde die hierdurch entstehenden Kosten. Der Kunde erstattet NexAI die **tatsächlich angefallenen Bankentgelte** der Rücklastschrift sowie eine **angemessene Bearbeitungspauschale** für den entstandenen Verwaltungsaufwand. Dem Kunden bleibt der Nachweis vorbehalten, dass ein Schaden oder eine Wertminderung überhaupt nicht oder in wesentlich geringerer Höhe entstanden ist. Die Geltendmachung eines weitergehenden Schadens sowie etwaiger Verzugsansprüche durch NexAI bleibt unberührt."
+    },
+    {
+      "t": "h1",
+      "num": "6.",
+      "text": "Zahlung per Überweisung (Fallback)"
+    },
+    {
+      "t": "p",
+      "text": "Erteilt der Kunde kein Firmenlastschriftmandat, ist ein solches unwirksam, wird es widerrufen oder scheitert der Einzug wiederholt aus vom Kunden zu vertretenden Gründen, so erfolgt die Zahlung per **Überweisung**. In diesem Fall sind die geschuldeten Beträge ohne Abzug so rechtzeitig auf das in der Rechnung angegebene Konto von NexAI zu überweisen, dass sie spätestens am **dritten (3.) Werktag vor Fälligkeit** angewiesen sind und NexAI fristgerecht gutgeschrieben werden."
+    },
+    {
+      "t": "h1",
+      "num": "7.",
+      "text": "Ort, Datum, Unterschrift des Zahlers"
+    },
+    {
+      "t": "p",
+      "text": "Mit meiner/unserer Unterschrift bestätige(n) ich/wir die Richtigkeit der vorstehenden Angaben, erteile(n) das SEPA-Firmenlastschriftmandat zugunsten von NexAI und erkenne(n) die vorstehenden Bedingungen an."
+    },
+    {
+      "t": "spacer",
+      "h": 10
+    },
+    {
+      "t": "sig",
+      "cols": [
+        {
+          "role": "Für den Kunden (Zahler / Kontoinhaber)",
+          "lines": [
+            "Ort, Datum",
+            "",
+            "Name / Funktion",
+            "",
+            "Unterschrift und ggf. Firmenstempel"
+          ]
+        }
+      ]
+    },
+    {
+      "t": "spacer",
+      "h": 8
+    },
+    {
+      "t": "note",
+      "text": "Hinweis: Zur Nutzung des SEPA-Firmenlastschriftverfahrens ist eine Gläubiger-Identifikationsnummer (Creditor Identifier) erforderlich. Diese ist bei der Deutschen Bundesbank zu beantragen und in Abschnitt 1 einzutragen."
+    },
+    {
+      "t": "note",
+      "text": "Dies ist ein sorgfältig erstellter Entwurf. Er ersetzt keine Rechtsberatung und sollte für den Einzelfall anwaltlich geprüft werden."
+    },
+    {
+      "t": "pagebreak"
+    },
+    {
+      "t": "title",
+      "text": "Allgemeine Geschäftsbedingungen (AGB) – B2B"
+    },
+    {
+      "t": "subtitle",
+      "text": "der NexAI – Next Generation Artificial Intelligence GbR für Leistungen im Zusammenhang mit KI-Agenten und digitalen Assistenten"
+    },
+    {
+      "t": "meta",
+      "text": "Stand: Juli 2026"
+    },
+    {
+      "t": "spacer",
+      "h": 6
+    },
+    {
+      "t": "h1",
+      "num": "§ 1",
+      "text": "Geltungsbereich und Vorrang der Individualabreden"
+    },
+    {
+      "t": "p",
+      "text": "Diese Allgemeinen Geschäftsbedingungen (nachfolgend \"AGB\") gelten für sämtliche Geschäftsbeziehungen zwischen der **NexAI – Next Generation Artificial Intelligence GbR**, Untere Bergstraße 13, 74586 Frankenhardt-Honhardt, Deutschland, vertreten durch die Gesellschafter Maximilian Trenk und Jason Brian Merklein, E-Mail mbt@nex-a-i.com, Telefon 0176 80714816 (nachfolgend \"NexAI\"), und ihren Kunden (nachfolgend \"Kunde\") über die Bereitstellung, Einrichtung und den Betrieb von KI-Agenten und digitalen Assistenten (nachfolgend \"Agenten\") sowie damit verbundene Leistungen."
+    },
+    {
+      "t": "num",
+      "items": [
+        "Diese AGB gelten ausschließlich gegenüber Unternehmern im Sinne des § 14 BGB, juristischen Personen des öffentlichen Rechts und öffentlich-rechtlichen Sondervermögen. Sie gelten nicht gegenüber Verbrauchern im Sinne des § 13 BGB.",
+        "Es gelten die zwischen den Parteien getroffenen Vertragsdokumente in folgender Rangfolge; im Falle von Widersprüchen geht das jeweils höherrangige Dokument vor: (1.) das Auftragsformular/der Leistungsschein einschließlich individueller Abreden, (2.) der Rahmenvertrag nebst seinen Anlagen A (Leistungsbeschreibung), B (Auftragsverarbeitungsvertrag), C (SLA) und D (Abnahmeprotokoll), (3.) diese AGB. Individuelle Vereinbarungen (§ 305b BGB) haben in jedem Fall Vorrang vor diesen AGB.",
+        "Diese AGB gelten auch für alle künftigen Geschäfte mit dem Kunden derselben Art, ohne dass NexAI in jedem Einzelfall erneut auf sie hinweisen müsste."
+      ]
+    },
+    {
+      "t": "h2",
+      "text": "Abwehr entgegenstehender Bedingungen"
+    },
+    {
+      "t": "num",
+      "items": [
+        "Entgegenstehende, abweichende oder ergänzende Allgemeine Geschäfts-, Einkaufs- oder sonstige Bedingungen des Kunden werden nicht Vertragsbestandteil, es sei denn, NexAI hat ihrer Geltung ausdrücklich in Textform zugestimmt.",
+        "Dies gilt auch dann, wenn NexAI in Kenntnis entgegenstehender oder abweichender Bedingungen des Kunden die Leistung vorbehaltlos ausführt oder eine Zahlung des Kunden vorbehaltlos annimmt. Ein bloßes Schweigen oder die vorbehaltlose Leistungserbringung stellt keine Anerkennung solcher Bedingungen dar."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "§ 2",
+      "text": "Leistungen"
+    },
+    {
+      "t": "num",
+      "items": [
+        "Gegenstand und Umfang der von NexAI zu erbringenden Leistungen ergeben sich abschließend aus dem Auftragsformular/Leistungsschein und der Anlage A (Leistungsbeschreibung). NexAI stellt danach je nach Beauftragung Agenten bereit, insbesondere Voice Agents, Chat Agents, Automatisierungen und individuelle KI-Agenten, sowie Anwendungen, insbesondere NexAI CRM, NexAI Kalender und individuelle Anwendungen, richtet diese ein und/oder betreibt sie laufend.",
+        "Die Leistungen von NexAI umfassen einmalige Werkleistungen wie die Ersteinrichtung von Agenten und die Einrichtung und Bereitstellung von Anwendungen (nachfolgend \"Projektleistungen\", Werkvertragsrecht) sowie den laufenden Betrieb, die Wartung, das Hosting und den Support der Agenten und Anwendungen (nachfolgend \"Betriebsleistungen\", Dienstvertragsrecht). Die rechtliche Einordnung der jeweiligen Leistung richtet sich nach ihrem Schwerpunkt.",
+        "Die von NexAI bereitgestellten Agenten sind KI-gestützte, wahrscheinlichkeitsbasierte Systeme. Ihre Aufgabe besteht in der Kommunikation mit Personen, die mit den Agenten interagieren (nachfolgend \"Endnutzer\"), insbesondere in der Auskunftserteilung, Terminvereinbarung und Kontaktaufnahme. Die Agenten dürfen keine rechtsverbindlichen Erklärungen im Namen des Kunden abgeben, insbesondere keine verbindlichen Preiszusagen, Bestellungen oder Vertragsabschlüsse tätigen.",
+        "Die Kennzeichnung der Agenten als KI-System sowie die zugehörigen Transparenzhinweise gegenüber Endnutzern nach Art. 50 der Verordnung (EU) 2024/1689 (KI-Verordnung) sind verbindlicher und nicht abschaltbarer Bestandteil der Leistung.",
+        "NexAI ist berechtigt, die Leistungen im Rahmen des vertraglich Vereinbarten fortzuentwickeln und technisch anzupassen, soweit dies dem technischen Fortschritt dient und die vereinbarte Funktionalität nicht wesentlich beeinträchtigt wird."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "§ 3",
+      "text": "Angebot und Vertragsschluss"
+    },
+    {
+      "t": "num",
+      "items": [
+        "Angebote von NexAI sind freibleibend und unverbindlich, sofern sie nicht ausdrücklich als verbindlich bezeichnet sind oder eine bestimmte Bindungsfrist enthalten.",
+        "Ein Vertrag kommt zustande, wenn der Kunde das Auftragsformular/den Leistungsschein in Textform (§ 126b BGB) oder mittels elektronischer Signatur annimmt und NexAI die Annahme bestätigt oder mit der Leistungserbringung beginnt.",
+        "Nebenabreden, Änderungen und Ergänzungen des Vertrages bedürfen zu ihrer Wirksamkeit der Textform. Dies gilt auch für die Aufhebung dieses Textformerfordernisses."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "§ 4",
+      "text": "Preise und Zahlungsbedingungen"
+    },
+    {
+      "t": "num",
+      "items": [
+        "Es fällt keine Einrichtungs- oder Setup-Gebühr an. Für die Leistungen ist ausschließlich ein monatlicher oder – bei entsprechender Wahl – ein jährlicher Beitrag nach Maßgabe des Auftragsformulars zu entrichten.",
+        "Alle Preise verstehen sich netto in Euro zzgl. der jeweils geltenden gesetzlichen Umsatzsteuer. NexAI unterliegt der Regelbesteuerung. Bis zur Erteilung einer Umsatzsteuer-Identifikationsnummer wird auf den Rechnungen die Steuernummer ausgewiesen.",
+        "Im Beitrag ist ein Nutzungskontingent enthalten (nachfolgend \"Freikontingent\"). Nutzung über das Freikontingent hinaus (nachfolgend \"Mehrverbrauch\" oder \"Overage\") wird zum im Auftragsformular vereinbarten Netto-Einheitspreis abgerechnet und zusammen mit dem Beitrag des Folgemonats in Rechnung gestellt. Auf Verlangen des Kunden stellt NexAI einen Einzelverbindungsnachweis zur Verfügung. Je Agent kann ein technisches Ausgaben-Limit (EUR-Spend-Cap) eingerichtet werden.",
+        "Rechnungen sind ohne Abzug innerhalb von 14 Tagen ab Zugang der Rechnung zur Zahlung fällig. Die Zahlung erfolgt wahlweise per SEPA-Firmenlastschrift (B2B-Firmenlastschriftmandat) oder per Überweisung nach Wahl des Kunden gemäß Auftragsformular.",
+        "Gerät der Kunde in Zahlungsverzug, ist NexAI berechtigt, Verzugszinsen in Höhe von 9 Prozentpunkten über dem jeweiligen Basiszinssatz sowie eine Pauschale in Höhe von 40 EUR gemäß § 288 Abs. 2 und Abs. 5 BGB zu verlangen. Die Pauschale ist auf einen geschuldeten Schadensersatz anzurechnen, soweit der Schaden in Kosten der Rechtsverfolgung begründet ist. Die Geltendmachung eines weitergehenden Verzugsschadens bleibt vorbehalten.",
+        "Befindet sich der Kunde mit fälligen Zahlungen in Verzug, ist NexAI nach vorheriger Ankündigung in Textform und fruchtlosem Ablauf einer angemessenen Nachfrist berechtigt, die Betriebsleistungen ganz oder teilweise auszusetzen, bis sämtliche fälligen Beträge ausgeglichen sind. Der Zahlungsanspruch bleibt für die Dauer der Aussetzung bestehen.",
+        "Der Kunde kann nur mit unbestrittenen oder rechtskräftig festgestellten Forderungen aufrechnen. Ein Zurückbehaltungsrecht steht ihm nur wegen Gegenansprüchen aus demselben Vertragsverhältnis zu."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "§ 5",
+      "text": "Änderung von Preisen und Bedingungen"
+    },
+    {
+      "t": "num",
+      "items": [
+        "NexAI ist berechtigt, dem Kunden Änderungen der Preise und dieser AGB mit einer Ankündigungsfrist von 6 Wochen in Textform anzubieten. Die Ankündigung benennt die betroffenen Regelungen, den Umfang der Änderung und den vorgesehenen Zeitpunkt des Inkrafttretens und weist den Kunden gesondert auf sein Kündigungsrecht sowie auf die Rechtsfolgen nach Absatz 2 hin.",
+        "Eine Zustimmung des Kunden wird nicht durch bloßes Schweigen fingiert; eine Zustimmungsfiktion findet nicht statt. Die angekündigten Änderungen werden nur wirksam, wenn der Kunde ihnen ausdrücklich in Textform zustimmt oder er die entgeltpflichtigen Leistungen nach Zugang der Ankündigung und nach dem gesonderten Hinweis nach Absatz 1 vorbehaltlos weiter in Anspruch nimmt; in der vorbehaltlosen Weiterinanspruchnahme liegt eine konkludente Zustimmung. Bis zum Wirksamwerden einer Änderung gelten die bisherigen Bedingungen fort.",
+        "Kommt eine Einigung über die angekündigte Änderung nicht zustande oder widerspricht der Kunde ihr, so sind sowohl NexAI als auch der Kunde berechtigt, das Vertragsverhältnis nach den Regelungen des Rahmenvertrages mit Wirkung zum vorgesehenen Zeitpunkt des Inkrafttretens der Änderung ordentlich zu kündigen. Kündigt keine Partei, bleiben die bisherigen Bedingungen unverändert bestehen."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "§ 6",
+      "text": "Mitwirkungspflichten und Änderungswünsche"
+    },
+    {
+      "t": "num",
+      "items": [
+        "Der Kunde stellt NexAI alle für die Leistungserbringung erforderlichen Informationen, Inhalte, Zugänge und Freigaben rechtzeitig, vollständig und in geeigneter Form zur Verfügung und benennt einen ansprechbaren Verantwortlichen. Die Mitwirkungshandlungen sind wesentliche Vertragspflichten.",
+        "Kommt der Kunde seinen Mitwirkungspflichten nicht rechtzeitig nach, verlängern sich vereinbarte Fristen angemessen. Mehraufwendungen, die NexAI hierdurch entstehen, sind vom Kunden nach Aufwand zu erstatten.",
+        "Änderungswünsche des Kunden, die über den vereinbarten Leistungsumfang hinausgehen, bedürfen einer gesonderten Vereinbarung und werden gesondert nach Aufwand vergütet, soweit nichts anderes vereinbart ist."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "§ 7",
+      "text": "Nutzungsrechte"
+    },
+    {
+      "t": "num",
+      "items": [
+        "Sämtliche Rechte an den von NexAI im Rahmen der Leistungserbringung entwickelten oder eingesetzten Systemen, Konfigurationen, Prompts, Skripten, Workflows und sonstigen Arbeitsergebnissen sowie an der zugrunde liegenden Software und Infrastruktur verbleiben bei NexAI bzw. den jeweiligen Rechteinhabern.",
+        "NexAI räumt dem Kunden für die Dauer des Vertrages ein einfaches, nicht ausschließliches, nicht übertragbares und zeitlich auf die Vertragslaufzeit befristetes Nutzungsrecht an den Agenten und den zu ihrer bestimmungsgemäßen Nutzung erforderlichen Arbeitsergebnissen ein.",
+        "Mit Beendigung des Vertrages erlischt das Nutzungsrecht des Kunden, soweit im Rahmenvertrag oder im Auftragsformular nichts Abweichendes vereinbart ist. Vom Kunden beigestellte Inhalte und seine eigenen Geschäftsdaten bleiben von dieser Regelung unberührt.",
+        "Accounts, Zugänge und die technische Infrastruktur zum Betrieb der Agenten stellt NexAI als eigene Betriebsmittel bereit; ein Herausgabeanspruch des Kunden hieran besteht nicht. Auf Wunsch des Kunden können abweichend hiervon kundeneigene Accounts verwendet werden."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "§ 8",
+      "text": "Drittanbieter und Subunternehmer"
+    },
+    {
+      "t": "num",
+      "items": [
+        "Zur Erbringung der Leistungen setzt NexAI Drittdienste und Unterauftragsverarbeiter ein (nachfolgend \"Subunternehmer\"), insbesondere Vapi, Twilio, Make, OpenAI, ElevenLabs, Google sowie Hosting-Anbieter. Der Kunde ist damit einverstanden. Die datenschutzrechtliche Einbindung richtet sich nach Anlage B (AVV).",
+        "Die Leistungen der Subunternehmer unterliegen deren eigenen Nutzungs- und Verfügbarkeitsbedingungen. NexAI hat auf Verfügbarkeit, Leistungsumfang und Fortbestand dieser Dienste nur eingeschränkten Einfluss.",
+        "NexAI haftet für Handlungen oder Unterlassungen der Subunternehmer nur nach Maßgabe des § 11 (Haftung) und nur, soweit NexAI ein eigenes Verschulden, insbesondere bei Auswahl, Anweisung oder Überwachung, trifft. Ausfälle, Störungen, Preis- oder Leistungsänderungen von Subunternehmern, die NexAI nicht zu vertreten hat, begründen keinen Mangel und keine Haftung von NexAI.",
+        "Laufende Kosten für Drittdienste, die dem Kunden im Auftragsformular gesondert zugewiesen oder als durchlaufende Posten ausgewiesen sind, trägt der Kunde."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "§ 9",
+      "text": "KI-Systeme und Eigenverantwortung"
+    },
+    {
+      "t": "num",
+      "items": [
+        "Die Agenten beruhen auf wahrscheinlichkeitsbasierten KI-Modellen. Ihre Ausgaben können unvollständig, fehlerhaft oder unerwartet sein. NexAI übernimmt keine Gewähr für die inhaltliche Richtigkeit, Vollständigkeit oder Fehlerfreiheit der von den Agenten erzeugten Inhalte und Antworten.",
+        "NexAI schuldet keinen bestimmten wirtschaftlichen Erfolg. Insbesondere wird keine Garantie für eine bestimmte Anzahl von Leads, Terminen, Abschlüssen, Umsätzen oder Reaktionen von Endnutzern übernommen.",
+        "Der Kunde bleibt für die Nutzung der Agenten und der von ihnen erzeugten Inhalte im eigenen Verantwortungsbereich verantwortlich, insbesondere für deren rechtliche Zulässigkeit im konkreten Einsatzkontext. Der Kunde hat die Ergebnisse in geschäftskritischen Fällen zu überprüfen.",
+        "Die Aufzeichnung und Transkription von Gesprächen ist standardmäßig deaktiviert und wird nur auf dokumentierte Weisung des Kunden aktiviert. In diesem Fall erfolgt gegenüber Endnutzern stets eine Pflicht-Ansage mit KI-Hinweis und, soweit einschlägig, einem Aufzeichnungshinweis.",
+        "Im Sinne der KI-Verordnung ist NexAI Anbieter und der Kunde Betreiber der jeweiligen Agenten; die konkrete Zuordnung ergibt sich je Agent aus dem Auftragsformular."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "§ 10",
+      "text": "Verfügbarkeit, Wartung und Support"
+    },
+    {
+      "t": "num",
+      "items": [
+        "NexAI erbringt die Betriebsleistungen mit der Sorgfalt eines ordentlichen Kaufmanns als Bemühensschuld. Eine bestimmte Verfügbarkeit wird nur geschuldet, soweit sie in Anlage C (SLA) ausdrücklich vereinbart ist.",
+        "Geplante Wartungs-, Aktualisierungs- und Instandhaltungsarbeiten, die NexAI nach Möglichkeit ankündigt und in nutzungsarme Zeiten legt, stellen keinen Mangel und keine Pflichtverletzung dar. Gleiches gilt für Beeinträchtigungen, die auf Störungen bei Subunternehmern oder auf höherer Gewalt beruhen.",
+        "Der Support wird nach Maßgabe des Vertrages und, soweit vereinbart, der Anlage C (SLA) erbracht."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "§ 11",
+      "text": "Haftung"
+    },
+    {
+      "t": "p",
+      "text": "Für die Haftung von NexAI gilt, gespiegelt zum Rahmenvertrag, die folgende abgestufte Regelung:"
+    },
+    {
+      "t": "num",
+      "items": [
+        "NexAI haftet unbeschränkt für Schäden aus der Verletzung des Lebens, des Körpers oder der Gesundheit, die auf einer Pflichtverletzung von NexAI, ihrer gesetzlichen Vertreter oder Erfüllungsgehilfen beruhen, sowie für Schäden, die auf Vorsatz oder grober Fahrlässigkeit von NexAI, ihrer gesetzlichen Vertreter oder Erfüllungsgehilfen beruhen. Ebenfalls unbeschränkt haftet NexAI, soweit eine Garantie übernommen wurde oder Ansprüche nach dem Produkthaftungsgesetz bestehen.",
+        "Bei der leicht fahrlässigen Verletzung einer wesentlichen Vertragspflicht (Kardinalpflicht), also einer Pflicht, deren Erfüllung die ordnungsgemäße Durchführung des Vertrages überhaupt erst ermöglicht und auf deren Einhaltung der Kunde regelmäßig vertrauen darf, ist die Haftung von NexAI auf den bei Vertragsschluss vorhersehbaren, vertragstypischen Schaden begrenzt, höchstens jedoch auf ____ EUR je Schadensfall.",
+        "Im Übrigen ist die Haftung von NexAI für leichte Fahrlässigkeit ausgeschlossen, insbesondere bei der Verletzung nicht wesentlicher Vertragspflichten."
+      ]
+    },
+    {
+      "t": "p",
+      "text": "Die vorstehenden Haftungsbeschränkungen gelten auch zugunsten der gesetzlichen Vertreter, Mitarbeiter und Erfüllungsgehilfen von NexAI. Eine Änderung der Beweislast zum Nachteil des Kunden ist mit den vorstehenden Regelungen nicht verbunden. Die einzelnen Absätze dieser Haftungsklausel sind je für sich wirksam; sollte eine Beschränkung unwirksam sein, bleiben die übrigen Beschränkungen davon unberührt (blue-pencil-fest)."
+    },
+    {
+      "t": "h1",
+      "num": "§ 12",
+      "text": "Datenschutz"
+    },
+    {
+      "t": "num",
+      "items": [
+        "Die Parteien beachten die jeweils geltenden datenschutzrechtlichen Bestimmungen. Soweit NexAI im Auftrag des Kunden personenbezogene Daten verarbeitet, gilt ergänzend die Anlage B (Auftragsverarbeitungsvertrag, AVV), die den Vorgaben des Art. 28 DSGVO entspricht.",
+        "Wo dies technisch abschaltbar ist, erfolgt keine Speicherung von Gesprächs- oder Interaktionsdaten. Ist eine Speicherung technisch nicht abschaltbar, werden die Daten für 6 Monate aufbewahrt und sodann gelöscht. Geschäftsdaten werden zusätzlich in den Systemen des Kunden geführt; diese sind das führende System.",
+        "Nach Vertragsende stellt NexAI dem Kunden die vorhandenen Daten innerhalb einer Frist von 30 Tagen zum Export bereit und löscht sie anschließend; über die Löschung erteilt NexAI auf Verlangen eine Löschbestätigung."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "§ 13",
+      "text": "Vertraulichkeit"
+    },
+    {
+      "t": "num",
+      "items": [
+        "Die Parteien verpflichten sich, alle im Rahmen der Zusammenarbeit erlangten vertraulichen Informationen der jeweils anderen Partei geheim zu halten, nur für Zwecke des Vertrages zu verwenden und nicht an Dritte weiterzugeben. Als vertraulich gelten Informationen, die als solche gekennzeichnet sind oder deren Vertraulichkeit sich aus der Natur der Information oder den Umständen ergibt.",
+        "Ausgenommen sind Informationen, die allgemein bekannt sind oder ohne Verstoß gegen diese Vereinbarung bekannt werden, die der empfangenden Partei bereits vor der Mitteilung bekannt waren, die sie rechtmäßig von Dritten erhalten hat oder unabhängig entwickelt hat, oder deren Offenlegung aufgrund gesetzlicher oder behördlicher Anordnung erforderlich ist.",
+        "Die Verpflichtung besteht für die Dauer des Vertrages und für einen Zeitraum von drei Jahren nach dessen Beendigung fort. Die Weitergabe an Subunternehmer im erforderlichen Umfang bleibt zulässig, sofern diese entsprechend zur Vertraulichkeit verpflichtet sind."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "§ 14",
+      "text": "Höhere Gewalt"
+    },
+    {
+      "t": "p",
+      "text": "Ereignisse höherer Gewalt, die NexAI die Leistungserbringung wesentlich erschweren oder vorübergehend unmöglich machen, befreien NexAI für die Dauer ihrer Auswirkungen von der Leistungspflicht. Als höhere Gewalt gelten insbesondere Naturkatastrophen, Epidemien und Pandemien, kriegerische Auseinandersetzungen, Terroranschläge, Arbeitskämpfe, behördliche Maßnahmen, großflächige Ausfälle von Telekommunikations- oder Energieinfrastruktur sowie schwerwiegende, nicht zu vertretende Störungen bei Subunternehmern. NexAI wird den Kunden über den Eintritt und die voraussichtliche Dauer unverzüglich informieren und sich um Abhilfe bemühen."
+    },
+    {
+      "t": "h1",
+      "num": "§ 15",
+      "text": "Referenzen"
+    },
+    {
+      "t": "p",
+      "text": "NexAI ist berechtigt, den Kunden und die für ihn erbrachten Leistungen zu Referenzzwecken, insbesondere unter Nennung des Namens und des Logos des Kunden, nur mit vorheriger Zustimmung des Kunden in Textform zu benennen. Die Zustimmung kann für die Zukunft widerrufen werden."
+    },
+    {
+      "t": "h1",
+      "num": "§ 16",
+      "text": "Textform für Kundenerklärungen"
+    },
+    {
+      "t": "p",
+      "text": "Erklärungen des Kunden, die das Vertragsverhältnis gestalten, insbesondere Kündigungen, Weisungen, Freigaben und Widersprüche, bedürfen zu ihrer Wirksamkeit mindestens der Textform (§ 126b BGB), soweit in den Vertragsdokumenten nichts Strengeres bestimmt ist."
+    },
+    {
+      "t": "h1",
+      "num": "§ 17",
+      "text": "Schlussbestimmungen"
+    },
+    {
+      "t": "num",
+      "items": [
+        "Es gilt das Recht der Bundesrepublik Deutschland unter Ausschluss des UN-Kaufrechts (CISG) und der Kollisionsnormen des internationalen Privatrechts.",
+        "Ausschließlicher Gerichtsstand für alle Streitigkeiten aus und im Zusammenhang mit dem Vertragsverhältnis ist, soweit der Kunde Kaufmann, juristische Person des öffentlichen Rechts oder öffentlich-rechtliches Sondervermögen ist, der Sitz von NexAI. NexAI ist daneben berechtigt, den Kunden an seinem allgemeinen Gerichtsstand zu verklagen.",
+        "Die Abtretung von Rechten und Pflichten des Kunden aus dem Vertrag bedarf der vorherigen Zustimmung von NexAI in Textform.",
+        "Sollten einzelne Bestimmungen dieser AGB ganz oder teilweise unwirksam oder undurchführbar sein oder werden, so wird die Wirksamkeit der übrigen Bestimmungen hiervon nicht berührt. Anstelle der unwirksamen oder undurchführbaren Bestimmung tritt die gesetzliche Regelung. Das Gleiche gilt für den Fall einer Regelungslücke."
+      ]
+    },
+    {
+      "t": "spacer",
+      "h": 8
+    },
+    {
+      "t": "note",
+      "text": "Diese Allgemeinen Geschäftsbedingungen stellen einen sorgfältig erstellten Entwurf dar und sollten vor Verwendung im Einzelfall anwaltlich geprüft werden."
+    },
+    {
+      "t": "spacer",
+      "h": 10
+    },
+    {
+      "t": "sig",
+      "cols": [
+        {
+          "role": "Für NexAI",
+          "lines": [
+            "Ort, Datum",
+            "",
+            "Maximilian Trenk (Gesellschafter)"
+          ]
+        },
+        {
+          "role": "Für NexAI",
+          "lines": [
+            "Ort, Datum",
+            "",
+            "Jason Brian Merklein (Gesellschafter)"
+          ]
+        },
+        {
+          "role": "Für den Kunden",
+          "lines": [
+            "Ort, Datum",
+            "",
+            "Name / Funktion"
+          ]
+        }
+      ]
+    }
+  ]
+}
