@@ -23,6 +23,8 @@ Beides ist **freigabepflichtig** und läuft über denselben Weg: OpenAI-Vertrieb
 
 ## Schritt 1 — Anfrage abschicken
 
+> **Fertig zum Kopieren:** [`OpenAI-Anfrage-zum-Abschicken.md`](OpenAI-Anfrage-zum-Abschicken.md) — dort steht nur Betreff und Text, mit Klickweg und der einen Stelle, die du noch eintragen musst (Organization ID). Der Abschnitt hier erklaert das Warum.
+
 **An:** über den Kontaktweg im OpenAI-Konto (Help → Messages → neue Anfrage) oder an den Vertrieb, falls ihr dort einen Ansprechpartner habt.
 **Wichtig:** aus dem Konto heraus schreiben, damit die Anfrage der Organisation zugeordnet wird.
 
