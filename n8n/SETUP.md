@@ -212,7 +212,7 @@ Addendum) im OpenAI-Konto akzeptieren. Bei Unsicherheit rechtlich prüfen lassen
    Kalender erscheint „Beratung NEXAI – Max Mustermann", im Sheet eine Zeile mit
    Status *Termin gebucht*.
 3. **Termin – belegter Slot:** denselben Slot nochmal anfragen (mit anderer
-   E-Mail) → Agent nennt 2–3 konkrete Alternativen (Werktag, 9–17 Uhr).
+   E-Mail) → Agent nennt 2–3 konkrete Alternativen (Mo–Fr 9–17 Uhr, Sa 9–12 Uhr).
 4. **Doppel-Buchung:** exakt dieselbe E-Mail + denselben Slot erneut → Agent bucht
    NICHT doppelt (Antwort „bereits gebucht").
 5. **Lead ohne Termin:** „Schickt mir Infos an info@firma.de" → Zeile im Sheet mit

@@ -9,10 +9,25 @@
 
 export const TZ = "Europe/Berlin";
 export const SLOT_MINUTES = 30;
-/** Erster möglicher Terminbeginn (Ortszeit). */
-export const DAY_START_HOUR = 9;
-/** Letztes mögliches Terminende (Ortszeit) — der letzte Slot beginnt 16:30. */
-export const DAY_END_HOUR = 17;
+
+/**
+ * Buchbare Zeiten je Wochentag (1 = Montag … 7 = Sonntag), als Ortszeit.
+ * Ein Tag ohne Eintrag ist nicht buchbar. Samstag ist bewusst kürzer:
+ * der Chat- und der Voice-Agent bieten dieselben Zeiten an.
+ */
+export const OPENING_HOURS: Record<number, { start: number; end: number }> = {
+  1: { start: 9, end: 17 },
+  2: { start: 9, end: 17 },
+  3: { start: 9, end: 17 },
+  4: { start: 9, end: 17 },
+  5: { start: 9, end: 17 },
+  6: { start: 9, end: 12 },
+};
+
+/** Erster möglicher Terminbeginn an einem Werktag (Ortszeit). */
+export const DAY_START_HOUR = OPENING_HOURS[1].start;
+/** Letztes mögliches Terminende an einem Werktag — der letzte Slot beginnt 16:30. */
+export const DAY_END_HOUR = OPENING_HOURS[1].end;
 /** Kein Termin darf kurzfristiger als das gebucht werden. */
 export const LEAD_TIME_MINUTES = 120;
 /** Wie weit im Voraus Termine angeboten werden. */
@@ -160,10 +175,11 @@ export function buildDays(busy: BusyInterval[], now: Date = new Date()): Booking
     // über Sommerzeitwechsel hinweg derselbe Kalendertag.
     const probe = new Date(now.getTime() + offset * 86_400_000);
     const { y, m, d, weekday } = zonedParts(probe);
-    if (weekday > 5) continue; // Wochenende
+    const hours = OPENING_HOURS[weekday];
+    if (!hours) continue; // an diesem Wochentag wird nicht gebucht
 
     const slots: Slot[] = [];
-    for (let hh = DAY_START_HOUR; hh < DAY_END_HOUR; hh++) {
+    for (let hh = hours.start; hh < hours.end; hh++) {
       for (let mm = 0; mm < 60; mm += SLOT_MINUTES) {
         const start = zonedToInstant(y, m, d, hh, mm);
         const startMs = start.getTime();
