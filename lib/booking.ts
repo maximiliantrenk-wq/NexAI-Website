@@ -10,7 +10,7 @@
 export const TZ = "Europe/Berlin";
 export const SLOT_MINUTES = 30;
 /** Erster möglicher Terminbeginn (Ortszeit). */
-export const DAY_START_HOUR = 8;
+export const DAY_START_HOUR = 9;
 /** Letztes mögliches Terminende (Ortszeit) — der letzte Slot beginnt 16:30. */
 export const DAY_END_HOUR = 17;
 /** Kein Termin darf kurzfristiger als das gebucht werden. */

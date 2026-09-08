@@ -1,6 +1,6 @@
 // NEXAI Voice · Buchung — Wunsch-Slot prüfen; bei Konflikt 3 Alternativen berechnen
 const TZ='Europe/Berlin';
-const DAY_START=8,DAY_END=17,SLOT_MIN=30,LEAD_MIN=120,HORIZON=14;
+const DAY_START=9,DAY_END=17,SLOT_MIN=30,LEAD_MIN=120,HORIZON=14;
 const WD=['','Montag','Dienstag','Mittwoch','Donnerstag','Freitag','Samstag','Sonntag'];
 const ov=(aS,aE,bS,bE)=>aS<bE&&bS<aE;
 function busyFromEvents(items){const busy=[];for(const it of items){const e=(it&&it.json)?it.json:it;if(!e)continue;if(e.status==='cancelled')continue;if(e.transparency==='transparent')continue;const s=e.start&&(e.start.dateTime||e.start.date);const en=e.end&&(e.end.dateTime||e.end.date);if(!s||!en)continue;const es=DateTime.fromISO(s).setZone(TZ),ee=DateTime.fromISO(en).setZone(TZ);if(!es.isValid||!ee.isValid)continue;busy.push([es,ee]);}return busy;}

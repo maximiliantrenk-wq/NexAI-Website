@@ -24,7 +24,7 @@ webhookPfad         =            # eindeutig, z. B. "autohaus-mueller"  → URL:
 begruessung         =            # erster Satz des Voice-/Chat-Agents
 fallbackTelefon     =            # Rückfallnummer, falls der Agent nicht weiterhelfen kann
 slotDauerMin        = 30         # Termin-Länge
-zeiten              =            # buchbare Zeiten, z. B. "Mo–Fr 8–17 Uhr"
+zeiten              =            # buchbare Zeiten, z. B. "Mo–Fr 9–17 Uhr"
 ```
 
 ---

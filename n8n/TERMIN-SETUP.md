@@ -27,7 +27,7 @@ legt Termine an. Geschäftszeiten, Raster, Vorlaufzeit und Horizont stehen in
 
 | Regel | Wert | wo ändern |
 |---|---|---|
-| Geschäftszeiten | Mo–Fr 08:00–17:00 | `DAY_START_HOUR` / `DAY_END_HOUR` |
+| Geschäftszeiten | Mo–Fr 09:00–17:00 | `DAY_START_HOUR` / `DAY_END_HOUR` |
 | Termindauer | 30 Minuten | `SLOT_MINUTES` |
 | Vorlaufzeit | 2 Stunden | `LEAD_TIME_MINUTES` |
 | Vorausschau | 14 Tage | `HORIZON_DAYS` |
