@@ -8,7 +8,7 @@
     },
     {
       "t": "meta",
-      "text": "Stand: Juli 2026 · Jeder Paragraph in 3 Sätzen, ohne Juristendeutsch"
+      "text": "Stand: September 2026 · Jeder Paragraph in 3 Sätzen, ohne Juristendeutsch"
     },
     {
       "t": "note",
@@ -167,7 +167,7 @@
     },
     {
       "t": "p",
-      "text": "Der Kunde stimmt zu, dass Daten bei euch und bei euren Dienstleistern (Vapi, Twilio, Make, OpenAI, ElevenLabs, Google, Hoster) gespeichert werden, wobei so wenig wie möglich gespeichert und Unvermeidbares nach 6 Monaten gelöscht wird. Das Kundensystem bleibt dabei das führende System. Wichtig: Der Kunde muss die Endnutzer selbst nach DSGVO informieren – tut er das nicht, muss er euch von Ansprüchen Dritter freistellen (also im Ernstfall eure Kosten tragen)."
+      "text": "Der Kunde stimmt zu, dass Daten bei euch und bei euren Dienstleistern (Vapi, Soniox, OpenAI, Google, easybell, Resend, Hetzner) gespeichert werden, wobei so wenig wie möglich gespeichert und Unvermeidbares nach 6 Monaten gelöscht wird. Das Kundensystem bleibt dabei das führende System. Wichtig: Der Kunde muss die Endnutzer selbst nach DSGVO informieren – tut er das nicht, muss er euch von Ansprüchen Dritter freistellen (also im Ernstfall eure Kosten tragen)."
     },
     {
       "t": "h2",
@@ -215,7 +215,7 @@
     },
     {
       "t": "p",
-      "text": "Ihr dürft Dienstleister wie Vapi, Twilio, Make, OpenAI, ElevenLabs, Google und Hoster einsetzen, deren Datenschutz über die Anlage B geregelt ist. Für Ausfälle dieser Dienste haftet ihr nicht pauschal, sondern nur, wenn euch selbst ein Verschulden trifft. Achtet darauf: Laufende Kosten von Drittdiensten, die durch die vom Kunden gewählte Nutzung entstehen, trägt der Kunde."
+      "text": "Ihr dürft Dienstleister wie Vapi, Soniox, OpenAI, Google, easybell, Resend und Hetzner einsetzen, deren Datenschutz über die Anlage B geregelt ist. Für Ausfälle dieser Dienste haftet ihr nicht pauschal, sondern nur, wenn euch selbst ein Verschulden trifft. Achtet darauf: Laufende Kosten von Drittdiensten, die durch die vom Kunden gewählte Nutzung entstehen, trägt der Kunde."
     },
     {
       "t": "h2",
@@ -670,7 +670,7 @@
     },
     {
       "t": "p",
-      "text": "Wenn Daten in Länder außerhalb der EU (v. a. USA) fließen, müsst ihr für rechtlich saubere Grundlagen sorgen. Praktisch stützt ihr das bevorzugt auf das EU-US Data Privacy Framework, sonst auf EU-Standardvertragsklauseln plus Zusatzmaßnahmen und eine Transfer-Prüfung (TIA). Wichtig: für Dienste ohne DPF-Zertifizierung (z. B. Vapi, ElevenLabs) braucht ihr vorsorglich den SCC-Weg, und der Kunde kann Nachweise verlangen."
+      "text": "Wenn Daten in Länder außerhalb der EU (v. a. USA) fließen, müsst ihr für rechtlich saubere Grundlagen sorgen. Praktisch stützt ihr das bevorzugt auf das EU-US Data Privacy Framework, sonst auf EU-Standardvertragsklauseln plus Zusatzmaßnahmen und eine Transfer-Prüfung (TIA). Wichtig: für Dienste ohne DPF-Zertifizierung (z. B. Vapi, Soniox, OpenAI) braucht ihr vorsorglich den SCC-Weg, und der Kunde kann Nachweise verlangen."
     },
     {
       "t": "h2",
@@ -751,7 +751,7 @@
     },
     {
       "t": "p",
-      "text": "Diese Tabelle nennt eure aktuellen Subunternehmer (Vapi, Twilio, Make, OpenAI, ElevenLabs, Google, Hosting) mit Sitz, Leistung, Datenarten und Transfermechanismus. Praktisch müsst ihr diese Liste aktuell halten und beim Hosting-Provider noch Land/Name eintragen. Wichtig: Änderungen an dieser Liste lösen die 14-Tage-Ankündigung aus § 9 aus, und die genannten Transferwege (DPF bzw. SCC) müssen für jeden Dienst wirklich vorliegen."
+      "text": "Diese Tabelle nennt eure aktuellen Subunternehmer (Vapi, Soniox, OpenAI, Google, easybell, Resend, Hetzner) mit Sitz, Leistung, Datenarten und Transfermechanismus. Praktisch müsst ihr diese Liste aktuell halten — sie ist der Stand vom September 2026. Wichtig: Änderungen an dieser Liste lösen die 14-Tage-Ankündigung aus § 9 aus, und die genannten Transferwege (DPF bzw. SCC) müssen für jeden Dienst wirklich vorliegen."
     },
     {
       "t": "h2",
@@ -788,7 +788,7 @@
     },
     {
       "t": "p",
-      "text": "Ihr seid Montag bis Freitag von 08:00 bis 17:00 Uhr erreichbar, außer an baden-württembergischen Feiertagen, und Anfragen nach Feierabend zählen erst am nächsten Werktag ab 08:00 als eingegangen. Das schützt euch davor, nachts oder am Wochenende reagieren zu müssen – die Uhr für Reaktionszeiten läuft nur innerhalb dieser Fenster. Wichtig: Ihr schuldet ausdrücklich keinen 24/7-Support und keine Rund-um-die-Uhr-Überwachung, das solltet ihr auch so kommunizieren."
+      "text": "Ihr seid Montag bis Freitag von 09:00 bis 17:00 Uhr erreichbar, außer an baden-württembergischen Feiertagen, und Anfragen nach Feierabend zählen erst am nächsten Werktag ab 09:00 als eingegangen. Das schützt euch davor, nachts oder am Wochenende reagieren zu müssen – die Uhr für Reaktionszeiten läuft nur innerhalb dieser Fenster. Wichtig: Ihr schuldet ausdrücklich keinen 24/7-Support und keine Rund-um-die-Uhr-Überwachung, das solltet ihr auch so kommunizieren."
     },
     {
       "t": "h2",
@@ -822,7 +822,7 @@
     },
     {
       "t": "p",
-      "text": "Hier wird klargestellt, dass die Erstreaktion nur die erste echte inhaltliche Rückmeldung ist (eine Auto-Antwort zählt nicht) und dass ihr ausdrücklich keine Lösungs- oder Wiederherstellungszeit garantiert. Für euch ist das der wichtigste Schutz: Ihr schuldet nur das Bemühen, nicht das Ergebnis bis zu einem festen Zeitpunkt. Merkt euch, dass die Uhr stoppt, wenn Drittdienste (Vapi, Twilio, OpenAI usw.) oder höhere Gewalt schuld sind oder ihr auf Zuarbeit des Kunden wartet – das nimmt euch den Druck bei fremdverursachten Problemen."
+      "text": "Hier wird klargestellt, dass die Erstreaktion nur die erste echte inhaltliche Rückmeldung ist (eine Auto-Antwort zählt nicht) und dass ihr ausdrücklich keine Lösungs- oder Wiederherstellungszeit garantiert. Für euch ist das der wichtigste Schutz: Ihr schuldet nur das Bemühen, nicht das Ergebnis bis zu einem festen Zeitpunkt. Merkt euch, dass die Uhr stoppt, wenn Drittdienste (Vapi, Soniox, OpenAI usw.) oder höhere Gewalt schuld sind oder ihr auf Zuarbeit des Kunden wartet – das nimmt euch den Druck bei fremdverursachten Problemen."
     },
     {
       "t": "h2",
@@ -1166,7 +1166,7 @@
     },
     {
       "t": "p",
-      "text": "Ihr dürft Drittdienste wie Vapi, Twilio, Make, OpenAI, ElevenLabs und Google einsetzen, und der Kunde ist damit einverstanden. Für Ausfälle, Preis- oder Leistungsänderungen dieser Dienste, die ihr nicht verschuldet habt, haftet ihr nicht — das ist wichtig, weil ihr auf diese Anbieter kaum Einfluss habt. Achtet darauf, laufende Drittkosten, die der Kunde tragen soll, im Auftragsformular sauber als durchlaufende Posten auszuweisen."
+      "text": "Ihr dürft Drittdienste wie Vapi, Soniox, OpenAI, Google, easybell und Resend einsetzen, und der Kunde ist damit einverstanden. Für Ausfälle, Preis- oder Leistungsänderungen dieser Dienste, die ihr nicht verschuldet habt, haftet ihr nicht — das ist wichtig, weil ihr auf diese Anbieter kaum Einfluss habt. Achtet darauf, laufende Drittkosten, die der Kunde tragen soll, im Auftragsformular sauber als durchlaufende Posten auszuweisen."
     },
     {
       "t": "h2",
