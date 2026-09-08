@@ -1,6 +1,8 @@
 {
   "Contact": {
-    "meta": { "title": "Contact" },
+    "meta": {
+      "title": "Contact"
+    },
     "hero": {
       "eyebrow": "Contact",
       "title": "Let's talk about your digital employee.",

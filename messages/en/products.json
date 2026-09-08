@@ -1,6 +1,8 @@
 {
   "Products": {
-    "meta": { "title": "Products" },
+    "meta": {
+      "title": "Products"
+    },
     "hero": {
       "eyebrow": "Products",
       "title": "Digital employees that start right away.",
