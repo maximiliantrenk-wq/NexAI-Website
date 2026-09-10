@@ -204,6 +204,11 @@
       "company": "NEXAI",
       "image": "/team/connor.jpg"
     },
+    "partners": {
+      "eyebrow": "Partners",
+      "intro": "Companies we work with.",
+      "visit": "Open {name} in a new tab"
+    },
     "cta": {
       "title": "Ready for your first digital employee?",
       "description": "Let's find out where AI has the biggest leverage in your business, in a free, no-obligation call.",
