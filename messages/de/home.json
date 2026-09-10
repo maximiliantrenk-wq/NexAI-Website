@@ -204,6 +204,11 @@
       "company": "NEXAI",
       "image": "/team/connor.jpg"
     },
+    "partners": {
+      "eyebrow": "Partner",
+      "intro": "Unternehmen, mit denen wir zusammenarbeiten.",
+      "visit": "{name} in neuem Tab öffnen"
+    },
     "cta": {
       "title": "Bereit für Ihren ersten digitalen Mitarbeiter?",
       "description": "Lassen Sie uns in einem unverbindlichen Gespräch herausfinden, wo AI bei Ihnen den größten Hebel hat.",
