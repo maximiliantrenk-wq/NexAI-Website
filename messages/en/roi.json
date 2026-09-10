@@ -1,19 +1,29 @@
 {
   "Roi": {
-    "meta": { "title": "ROI Calculator" },
+    "meta": {
+      "title": "ROI Calculator"
+    },
     "hero": {
       "eyebrow": "ROI Calculator",
       "title": "What do missed calls really cost you?",
       "description": "In a few seconds, work out how much time and revenue NEXAI brings back, with your own numbers."
     },
     "modeLabel": "What would you like to calculate?",
-    "mode": { "money": "Revenue", "time": "Time" },
+    "mode": {
+      "money": "Revenue",
+      "time": "Time"
+    },
     "modeHint": {
       "money": "Revenue recovered from calls that would otherwise be lost.",
       "time": "Time your team no longer spends on the phone."
     },
     "periodLabel": "Time frame",
-    "periods": { "day": "Day", "week": "Week", "month": "Month", "year": "Year" },
+    "periods": {
+      "day": "Day",
+      "week": "Week",
+      "month": "Month",
+      "year": "Year"
+    },
     "money": {
       "callsLabel": "Missed calls per {period}",
       "valueLabel": "Avg. value per call / customer (€)",
@@ -32,7 +42,10 @@
       "workdays": "≈ {days} working days per year"
     },
     "resultPer": "per {period}",
-    "units": { "h": "h", "min": "min" },
+    "units": {
+      "h": "h",
+      "min": "min"
+    },
     "note": "Non-binding example calculation. The share of calls captured by the voice agent is typically around 70 to 80 % depending on setup (default 75 %). Projection: 5 working days = 1 week, 4 weeks = 1 month, 12 months = 1 year.",
     "cta": "Free intro call",
     "ctaHint": "We'll show you how realistic this number is for your business."

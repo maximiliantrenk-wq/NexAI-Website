@@ -1,6 +1,8 @@
 {
   "Products": {
-    "meta": { "title": "Produkte" },
+    "meta": {
+      "title": "Produkte"
+    },
     "hero": {
       "eyebrow": "Produkte",
       "title": "Digitale Mitarbeiter, die sofort loslegen.",

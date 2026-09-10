@@ -1,6 +1,8 @@
 {
   "Services": {
-    "meta": { "title": "Services" },
+    "meta": {
+      "title": "Services"
+    },
     "hero": {
       "eyebrow": "Services",
       "title": "Intelligent AI employees for every area.",
@@ -111,11 +113,26 @@
       "eyebrow": "FAQ",
       "title": "Frequently asked questions.",
       "items": [
-        { "q": "How quickly is an AI agent ready?", "a": "Usually within 3 business days. With custom development it can take up to 10 business days." },
-        { "q": "Does it work with our existing programs?", "a": "Yes. We connect your agents to your phone, customer system, calendar, email and almost any other program you use." },
-        { "q": "Is it secure and privacy-compliant?", "a": "Yes. Data protection, clear access rights and traceability are part of every solution." },
-        { "q": "What if we need something very specific?", "a": "Then we check together whether it's feasible and, if needed, build a fully custom solution. There are almost no limits." },
-        { "q": "What does an AI agent cost?", "a": "There's no one-size-fits-all price. It varies from agent to agent, depending on scope and effort. Just get in touch and we'll put together a transparent offer." }
+        {
+          "q": "How quickly is an AI agent ready?",
+          "a": "Usually within 3 business days. With custom development it can take up to 10 business days."
+        },
+        {
+          "q": "Does it work with our existing programs?",
+          "a": "Yes. We connect your agents to your phone, customer system, calendar, email and almost any other program you use."
+        },
+        {
+          "q": "Is it secure and privacy-compliant?",
+          "a": "Yes. Data protection, clear access rights and traceability are part of every solution."
+        },
+        {
+          "q": "What if we need something very specific?",
+          "a": "Then we check together whether it's feasible and, if needed, build a fully custom solution. There are almost no limits."
+        },
+        {
+          "q": "What does an AI agent cost?",
+          "a": "There's no one-size-fits-all price. It varies from agent to agent, depending on scope and effort. Just get in touch and we'll put together a transparent offer."
+        }
       ]
     }
   }

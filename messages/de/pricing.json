@@ -1,6 +1,8 @@
 {
   "Pricing": {
-    "meta": { "title": "Preise" },
+    "meta": {
+      "title": "Preise"
+    },
     "hero": {
       "eyebrow": "Preise",
       "title": "Preise so individuell wie Ihr Agent.",
@@ -28,12 +30,30 @@
       "eyebrow": "FAQ",
       "title": "Häufige Fragen zu Preisen & Zusammenarbeit.",
       "items": [
-        { "q": "Was kostet ein Agent?", "a": "Das lässt sich nicht pauschal sagen. Die Preise unterscheiden sich von Agent zu Agent, je nach Umfang und Aufwand. Sagen Sie uns, was Sie brauchen, und Sie bekommen ein transparentes Angebot." },
-        { "q": "Wie schnell ist die AI einsatzbereit?", "a": "In der Regel innerhalb von 3 Werktagen. Bei individueller Gestaltung kann es bis zu 10 Werktage dauern." },
-        { "q": "Kann ich monatlich kündigen?", "a": "Ja. Die Zusammenarbeit ist monatlich kündbar, keine lange Bindung. Auf Wunsch rechnen wir auch jährlich ab." },
-        { "q": "Kann ich klein starten und später erweitern?", "a": "Natürlich. Viele starten mit einem Agenten und ergänzen später weitere. Sie zahlen nur für das, was Sie wirklich nutzen." },
-        { "q": "Was, wenn ich etwas Spezielles brauche?", "a": "Genau dafür ist die individuelle Lösung da: Wir stellen Leistungen, Umfang und Abrechnung genau nach Ihren Wünschen zusammen." },
-        { "q": "Kommen versteckte Kosten dazu?", "a": "Nein. Sie bekommen vorab ein transparentes Angebot. Einmalige Einrichtung oder Sonderwünsche besprechen wir offen, bevor es losgeht." }
+        {
+          "q": "Was kostet ein Agent?",
+          "a": "Das lässt sich nicht pauschal sagen. Die Preise unterscheiden sich von Agent zu Agent, je nach Umfang und Aufwand. Sagen Sie uns, was Sie brauchen, und Sie bekommen ein transparentes Angebot."
+        },
+        {
+          "q": "Wie schnell ist die AI einsatzbereit?",
+          "a": "In der Regel innerhalb von 3 Werktagen. Bei individueller Gestaltung kann es bis zu 10 Werktage dauern."
+        },
+        {
+          "q": "Kann ich monatlich kündigen?",
+          "a": "Ja. Die Zusammenarbeit ist monatlich kündbar, keine lange Bindung. Auf Wunsch rechnen wir auch jährlich ab."
+        },
+        {
+          "q": "Kann ich klein starten und später erweitern?",
+          "a": "Natürlich. Viele starten mit einem Agenten und ergänzen später weitere. Sie zahlen nur für das, was Sie wirklich nutzen."
+        },
+        {
+          "q": "Was, wenn ich etwas Spezielles brauche?",
+          "a": "Genau dafür ist die individuelle Lösung da: Wir stellen Leistungen, Umfang und Abrechnung genau nach Ihren Wünschen zusammen."
+        },
+        {
+          "q": "Kommen versteckte Kosten dazu?",
+          "a": "Nein. Sie bekommen vorab ein transparentes Angebot. Einmalige Einrichtung oder Sonderwünsche besprechen wir offen, bevor es losgeht."
+        }
       ]
     }
   }

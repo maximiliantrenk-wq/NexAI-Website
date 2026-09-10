@@ -1,6 +1,8 @@
 {
   "Contact": {
-    "meta": { "title": "Kontakt" },
+    "meta": {
+      "title": "Kontakt"
+    },
     "hero": {
       "eyebrow": "Kontakt",
       "title": "Lassen Sie uns über Ihren digitalen Mitarbeiter sprechen.",

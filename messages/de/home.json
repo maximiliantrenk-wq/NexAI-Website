@@ -13,9 +13,16 @@
     "demoMaintenance": "Die Live-Demo ist wegen Wartungsarbeiten momentan nicht verfügbar.",
     "trust": "Für Unternehmen, die mit AI schneller wachsen wollen",
     "badges": [
-      { "label": "DSGVO-konform" },
-      { "label": "Deutsches Unternehmen" },
-      { "label": "Ergebnisse messbar über ROI", "href": "/roi-rechner" }
+      {
+        "label": "DSGVO-konform"
+      },
+      {
+        "label": "Deutsches Unternehmen"
+      },
+      {
+        "label": "Ergebnisse messbar über ROI",
+        "href": "/roi-rechner"
+      }
     ],
     "console": {
       "label": "nexai · voice-agent",
@@ -73,12 +80,30 @@
       "eyebrow": "Wie wir arbeiten",
       "title": "Ein Team. Von der Idee bis zum Betrieb.",
       "items": [
-        { "title": "Analyse & Beratung", "description": "Wir finden die Prozesse, in denen AI den größten Hebel hat." },
-        { "title": "Individuelle Entwicklung", "description": "Jeder Agent wird exakt auf Ihre Abläufe zugeschnitten." },
-        { "title": "Volle Integration", "description": "Nahtlos verbunden mit Telefon, CRM, Kalender, E-Mail & Co." },
-        { "title": "Sicher & DSGVO-konform", "description": "Datenschutz, Zugriffskontrolle und Nachvollziehbarkeit inklusive." },
-        { "title": "Mehrsprachig", "description": "Ihre Agenten sprechen mit Kunden in mehreren Sprachen." },
-        { "title": "Betrieb & Optimierung", "description": "Wir überwachen, warten und verbessern kontinuierlich." }
+        {
+          "title": "Analyse & Beratung",
+          "description": "Wir finden die Prozesse, in denen AI den größten Hebel hat."
+        },
+        {
+          "title": "Individuelle Entwicklung",
+          "description": "Jeder Agent wird exakt auf Ihre Abläufe zugeschnitten."
+        },
+        {
+          "title": "Volle Integration",
+          "description": "Nahtlos verbunden mit Telefon, CRM, Kalender, E-Mail & Co."
+        },
+        {
+          "title": "Sicher & DSGVO-konform",
+          "description": "Datenschutz, Zugriffskontrolle und Nachvollziehbarkeit inklusive."
+        },
+        {
+          "title": "Mehrsprachig",
+          "description": "Ihre Agenten sprechen mit Kunden in mehreren Sprachen."
+        },
+        {
+          "title": "Betrieb & Optimierung",
+          "description": "Wir überwachen, warten und verbessern kontinuierlich."
+        }
       ]
     },
     "process": {
@@ -86,18 +111,46 @@
       "title": "Von der Idee zum digitalen Mitarbeiter.",
       "description": "Ein klarer, risikoarmer Weg: in Wochen, nicht Monaten.",
       "steps": [
-        { "n": "01", "title": "Analyse", "description": "Wir verstehen Ihre Prozesse und definieren den passenden AI-Agenten." },
-        { "n": "02", "title": "Entwicklung", "description": "Wir bauen den Agenten individuell und trainieren ihn auf Ihre Anforderungen." },
-        { "n": "03", "title": "Integration", "description": "Sichere Anbindung an Ihre Systeme: Telefon, CRM, Kalender und mehr." },
-        { "n": "04", "title": "Betrieb", "description": "Live-Betrieb mit Monitoring, Optimierung und laufender Weiterentwicklung." }
+        {
+          "n": "01",
+          "title": "Analyse",
+          "description": "Wir verstehen Ihre Prozesse und definieren den passenden AI-Agenten."
+        },
+        {
+          "n": "02",
+          "title": "Entwicklung",
+          "description": "Wir bauen den Agenten individuell und trainieren ihn auf Ihre Anforderungen."
+        },
+        {
+          "n": "03",
+          "title": "Integration",
+          "description": "Sichere Anbindung an Ihre Systeme: Telefon, CRM, Kalender und mehr."
+        },
+        {
+          "n": "04",
+          "title": "Betrieb",
+          "description": "Live-Betrieb mit Monitoring, Optimierung und laufender Weiterentwicklung."
+        }
       ]
     },
     "metrics": {
       "items": [
-        { "value": "24/7", "label": "erreichbar, ohne Pausen" },
-        { "value": "70-80%", "label": "weniger manuelle Arbeit" },
-        { "value": "3×", "label": "schnellere Reaktionszeiten" },
-        { "value": "100%", "label": "individuell entwickelt" }
+        {
+          "value": "24/7",
+          "label": "erreichbar, ohne Pausen"
+        },
+        {
+          "value": "70-80%",
+          "label": "weniger manuelle Arbeit"
+        },
+        {
+          "value": "3×",
+          "label": "schnellere Reaktionszeiten"
+        },
+        {
+          "value": "100%",
+          "label": "individuell entwickelt"
+        }
       ]
     },
     "products": {
@@ -106,12 +159,42 @@
       "description": "Fertige Lösungen, die Ihr Team entlasten, vom Telefon über Termine und Kundendaten bis zu Ihrer eigenen App.",
       "cta": "Alle Produkte ansehen",
       "items": [
-        { "slug": "voice-agent", "tag": "Telefon", "title": "Voice Agent", "result": "24/7 erreichbar & Terminvergabe" },
-        { "slug": "chat-agent", "tag": "Website & Chat", "title": "Chat Agent", "result": "Auskunft rund um die Uhr" },
-        { "slug": "nexai-kalender", "tag": "Termine", "title": "NexAI Kalender", "result": "Keine Doppelbuchung mehr" },
-        { "slug": "nexai-crm", "tag": "Kundenverwaltung", "title": "NexAI CRM", "result": "Alle Kunden an einem Ort" },
-        { "slug": "automatisierung", "tag": "Automatisierung", "title": "Automatisierung", "result": "80% weniger Handarbeit" },
-        { "slug": "nexai-app", "tag": "Individuelle App", "title": "NexAI App", "result": "Ihre App, ohne App-Store" }
+        {
+          "slug": "voice-agent",
+          "tag": "Telefon",
+          "title": "Voice Agent",
+          "result": "24/7 erreichbar & Terminvergabe"
+        },
+        {
+          "slug": "chat-agent",
+          "tag": "Website & Chat",
+          "title": "Chat Agent",
+          "result": "Auskunft rund um die Uhr"
+        },
+        {
+          "slug": "nexai-kalender",
+          "tag": "Termine",
+          "title": "NexAI Kalender",
+          "result": "Keine Doppelbuchung mehr"
+        },
+        {
+          "slug": "nexai-crm",
+          "tag": "Kundenverwaltung",
+          "title": "NexAI CRM",
+          "result": "Alle Kunden an einem Ort"
+        },
+        {
+          "slug": "automatisierung",
+          "tag": "Automatisierung",
+          "title": "Automatisierung",
+          "result": "80% weniger Handarbeit"
+        },
+        {
+          "slug": "nexai-app",
+          "tag": "Individuelle App",
+          "title": "NexAI App",
+          "result": "Ihre App, ohne App-Store"
+        }
       ]
     },
     "testimonial": {
