@@ -12,6 +12,7 @@ Kundenwebsite (beliebig)
         ▼
    n8n-Workflow des Kunden  (dupliziert aus der Vorlage)
         ├─ KI-Agent (OpenAI)  + System-Prompt mit den Kunden-Infos
+        ├─ suggest_slots    → schlägt 3 freie Termine vor, bucht nichts
         ├─ book_appointment → Google Calendar des Kunden
         └─ save_lead        → Google Sheet des Kunden
         ▼
@@ -47,15 +48,28 @@ In n8n beide Vorlagen duplizieren (⋯ → **Duplicate**) und mit dem Kundenname
 umbenennen, z. B. „Bäckerei Müller – Chat" und „Bäckerei Müller – Buchung".
 
 ### 2. Sub-Workflow im Haupt-Workflow neu verknüpfen
-Im duplizierten **Haupt**-Workflow die Node **book_appointment** öffnen → Feld
-*Workflow* → den **duplizierten Sub**-Workflow des Kunden auswählen (nicht die
-Vorlage!). Das ist der häufigste Fehler — unbedingt prüfen.
+Im duplizierten **Haupt**-Workflow **zwei** Nodes öffnen — **suggest_slots** und
+**book_appointment** — und in beiden das Feld *Workflow* auf den **duplizierten
+Sub**-Workflow des Kunden stellen (nicht die Vorlage!). Beide zeigen auf denselben
+Sub-Workflow und unterscheiden sich nur durch das feste Feld `mode`
+(`suggest` bzw. `book`) — das bleibt unverändert.
+
+Das ist der häufigste Fehler — unbedingt beide prüfen. Bleibt eines auf der
+Vorlage stehen, bucht der Kundenbot in **deinen** Kalender.
 
 ### 3. System-Prompt befüllen
 Im Haupt-Workflow die Node **AI Agent** → *Options → System Message* öffnen und
 alle Platzhalter ersetzen:
 `[FIRMENNAME]`, `[KURZBESCHREIBUNG …]`, `[LEISTUNGEN …]`, `[TELEFONNUMMER]`,
 `[ZIEL …]`, `[TERMINDAUER]`, `[VERFÜGBARE ZEITEN]`, Preisregel.
+
+> **Öffnungszeiten stehen an zwei Stellen.** Der Prompt verspricht sie nur, der
+> Code entscheidet. Im **Sub**-Workflow in den Nodes **Validate & Normalize** und
+> **Evaluate Availability** jeweils die Konstante `OPENING` auf die Zeiten des
+> Kunden setzen (Format: `{ 1: [9,17], … , 6: [9,12] }`, Wochentag 1=Mo…7=So,
+> fehlender Tag = geschlossen). Beide Nodes müssen **identisch** sein. Wird das
+> vergessen, nennt der Bot die Zeiten des Kunden und bucht trotzdem nach dem
+> Standardraster.
 
 ### 4. Google-Konten verbinden
 - **Modell A (du verwaltest alles):** Deine bestehenden Google-Zugänge nutzen und
@@ -75,11 +89,17 @@ alle Platzhalter ersetzen:
 Bei jeder Buchung verschickt Google automatisch eine **Einladung mit allen
 Termindaten** – an den Kunden (Endkunde) **und** an eine interne Adresse (der
 Betrieb bekommt so jede Buchung per Mail mit allen Kundendaten). Diese interne
-Adresse steht im Sub-Workflow in der Node **Validate & Normalize** ganz oben:
+Adresse steht im Sub-Workflow in der Node **Validate & Normalize**, im unteren
+Teil kurz vor `return`:
 `const NOTIFY_EMAIL = '[BENACHRICHTIGUNGS-EMAIL-DES-KUNDEN]';` → durch die
 E-Mail-Adresse des Betriebs ersetzen (z. B. `info@baeckerei-mueller.de`).
 So kommt **ohne** extra E-Mail-Dienst alles an — Google verschickt beide Mails.
 (Voraussetzung: der verbundene Google-Kalender darf Einladungen versenden.)
+
+Gehört der verbundene Kalender dem Betrieb ohnehin selbst, kannst du den
+Platzhalter stehen lassen — der Termin steht dann bereits in seinem Kalender.
+Ein **nicht ersetzter Platzhalter wird bewusst ignoriert**, damit eine vergessene
+Anpassung keine Buchung scheitern lässt.
 
 ### 5. Webhook eindeutig machen + Domain freigeben
 Im Haupt-Workflow die Node **Webhook** öffnen:

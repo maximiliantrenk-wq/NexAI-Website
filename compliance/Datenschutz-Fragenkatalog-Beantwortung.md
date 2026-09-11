@@ -38,8 +38,8 @@ Keine Eintragung. Eine GbR wird nicht ins Handelsregister eingetragen; eine Eint
 Gesellschaftsregister (eGbR) besteht ebenfalls nicht. Es gibt daher **keine Registernummer**.
 
 **7. USt-IdNr. / Wirtschafts-IdNr.:**
-USt-IdNr. nach § 27a UStG ist **in Beantragung** (bei Erteilung wird sie im Impressum ergänzt). Bis dahin
-verwenden wir die Steuernummer. Eine Wirtschafts-Identifikationsnummer liegt uns nicht gesondert vor.
+USt-IdNr. nach § 27a UStG ist **erteilt: DE463741277** und seit dem 10.09.2026 im Impressum eingetragen
+(deutsch und englisch). Eine Wirtschafts-Identifikationsnummer liegt uns nicht gesondert vor.
 
 **8. Zuständige Aufsichtsbehörde:**
 Datenschutzaufsicht: **Der Landesbeauftragte für den Datenschutz und die Informationsfreiheit

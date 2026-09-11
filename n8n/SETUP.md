@@ -16,8 +16,8 @@ Browser (Chat-Widget)
 /api/chat  (Next.js, versteckt die n8n-URL, prüft Secret, Timeout, Rate-Limit)
    ▼
 n8n Webhook  →  AI Agent (gpt-4.1-mini) + Memory
-                 ├─ check_availability  → Google Calendar (frei/belegt)
-                 ├─ book_appointment    → Sub-Workflow: prüfen → Termin + Sheet-Zeile / Alternativen
+                 ├─ suggest_slots       → Sub-Workflow (mode=suggest): 3 freie Termine, bucht nichts
+                 ├─ book_appointment    → Sub-Workflow (mode=book): prüfen → Termin + Sheet-Zeile / Alternativen
                  └─ save_lead           → Google Sheets (Lead ohne Termin)
    ▼
 Antwort { reply }  →  zurück ins Chat-Widget
@@ -117,11 +117,13 @@ Haupt-Workflow ihn auswählen kann.
 3. **Credentials zuweisen** (die JSONs enthalten bewusst keine Zugangsdaten — die
    betroffenen Nodes zeigen bis dahin eine rote Warnung):
    - **OpenAI Chat Model** → dein OpenAI-Credential (mit dem `sk-…`-Key).
-   - Alle **Google-Calendar-Nodes** (Haupt: `check_availability`; Sub: `Get Events (14d window)`, `Create Event`) → dein Google-Calendar-Credential.
+   - Alle **Google-Calendar-Nodes** (nur im Sub: `Get Events (14d window)`, `Create Event`) → dein Google-Calendar-Credential.
    - Alle **Google-Sheets-Nodes** (Haupt: `save_lead`; Sub: `Append Lead Row`) → dein Google-Sheets-Credential.
-4. **Sub-Workflow im Tool auswählen:** im Haupt-Workflow die Node
-   **`book_appointment`** öffnen → Feld *Workflow* → „NEXAI – Book Appointment
-   (Sub-Workflow)" auswählen. (Die ID ist absichtlich leer, weil sie pro
+4. **Sub-Workflow in beiden Tools auswählen:** im Haupt-Workflow die Nodes
+   **`suggest_slots`** und **`book_appointment`** öffnen → jeweils Feld *Workflow*
+   → „NEXAI – Book Appointment (Sub-Workflow)" auswählen. Beide zeigen auf
+   denselben Sub-Workflow und unterscheiden sich nur durch das feste Feld `mode`
+   (`suggest` bzw. `book`). (Die ID ist absichtlich leer, weil sie pro
    n8n-Instanz unterschiedlich ist.)
 5. **Header-Auth-Credential für den Webhook anlegen:** die Node **`Webhook`**
    öffnen → *Authentication* steht auf *Header Auth* → daneben *Create New Credential*:

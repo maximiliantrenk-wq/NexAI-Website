@@ -178,11 +178,11 @@ TLS/HTTPS durchgängig · Rate-Limiting + geheimer Header-Schlüssel + HMAC-Sign
 | **Upload-Härtung:** Allowlist (pdf/png/jpeg/webp), 10 MB-Limit, Zufallsdateinamen, Path-Traversal-Schutz, Auslieferung `Cache-Control: private, no-store` | ✅ |
 | **Eingabevalidierung** durchgängig (Zod) | ✅ |
 | **Audit-Log** (append-only) | ⚠️ „best effort", deckt nur **einen Teil** der Vorgänge ab (u. a. keine Lese-/Download-Protokollierung, keine Upload-Protokollierung) |
-| **MFA / 2FA** | ❌ **nicht vorhanden** |
-| **Login-Rate-Limit / Account-Lockout** | ❌ **nicht vorhanden** |
+| **MFA / 2FA** | ✅ **vorhanden** (seit 08.09.2026): TOTP nach RFC 6238, Pflicht für `admin`, `manager`, `vertriebsleiter`, `kommunikationsleiter`; Geheimnis und Wiederherstellungscodes verschlüsselt |
+| **Login-Rate-Limit / Account-Lockout** | ✅ **vorhanden seit 12.08.2026** — Sperre je E-Mail als primärer Schutz, IP-Deckel als Flut-Bremse; greift **vor** Datenbankabfrage und bcrypt. *(Der frühere Eintrag als nicht vorhanden war bereits überholt.)* |
 | **DB-Verschlüsselung in transit** | ⚠️ im Code **nicht** konfiguriert (läuft über internes Coolify/Hetzner-Netz) |
 | **Backups** | ⚠️ **nicht im Repo** — rein operativ über Coolify/Hetzner (extern zu bestätigen/dokumentieren) |
-| **Zugangsdaten-Mail** enthält **Initialpasswort im Klartext** (via Resend), Pflicht-Wechsel beim ersten Login | ⚠️ Datenschutz-/Sicherheitshinweis (s. Klärungsbedarf) |
+| **Zugangsdaten-Mail** | ✅ **entschärft am 08.09.2026** — kein Initialpasswort mehr. Einladung und Zurücksetzung laufen über einen **Einmal-Link** (`account_tokens`), gespeichert wird nur dessen SHA-256-Hash. Der Anlegende kennt das Passwort nicht mehr. |
 
 ### 2. Integrität, Vertraulichkeit, Verfügbarkeit
 
@@ -191,7 +191,7 @@ TLS/HTTPS durchgängig · Rate-Limiting + geheimer Header-Schlüssel + HMAC-Sign
 - **Verfügbarkeit:** verschlüsselte Backups (CRM: age-verschlüsselt, EU); Managed-Infrastruktur (Hetzner/Coolify/Vercel/Google). **Hinweis:** CRM und Portal laufen jeweils als **Single-Node ohne Hochverfügbarkeit** — Node-Ausfall bedeutet Downtime bis zum Restore (bewusster, akzeptierter Trade-off).
 
 ### In Umsetzung / Härtung
-Website: HMAC-Webhooks, Rotation des Automatisierungs-API-Schlüssels, n8n-Verlaufs-Pruning. · CRM: Retention-Policies pro Mandant produktiv setzen; Feldverschlüsselung für sensible Inhalte erweitern. · Portal: MFA + Login-Lockout ergänzen; DB-TLS erzwingen; Backup-Konzept dokumentieren; Audit-Abdeckung erweitern; Zugangsdaten-Mail entschärfen.
+Website: HMAC-Webhooks, Rotation des Automatisierungs-API-Schlüssels, n8n-Verlaufs-Pruning. · CRM: Retention-Policies pro Mandant produktiv setzen; Feldverschlüsselung für sensible Inhalte erweitern. · Portal: **MFA, Login-Lockout und Zugangsdaten-Mail erledigt (08.09.2026)**; offen bleiben DB-TLS erzwingen, Backup-Konzept dokumentieren, Audit-Abdeckung erweitern.
 
 ---
 
@@ -204,7 +204,7 @@ Website: HMAC-Webhooks, Rotation des Automatisierungs-API-Schlüssels, n8n-Verla
 
 **🟠 kurzfristig**
 4. **CRM-Retention produktiv scharf schalten** (Policies pro Mandant setzen — sonst löscht nichts automatisch).
-5. **Portal härten:** MFA + Login-Rate-Limit ergänzen; DB-TLS erzwingen; Zugangsdaten-Mail nicht mehr mit Klartext-Passwort (stattdessen Einmal-Link/Reset).
+5. **Portal härten:** ✅ MFA, Login-Rate-Limit und Einmal-Link statt Klartext-Passwort sind **umgesetzt** (08.09.2026). Offen bleibt: **DB-TLS erzwingen**.
 6. **AVV/DPA abschließen** — noch offen: Resend, Google Workspace, Vercel; für **Web-Push-Dienste** Empfänger/Rechtsgrundlage erfassen.
    *Erledigt (Stand 06.09.2026): Hetzner (AVV im Kundenpanel), OpenAI (Self-Serve-DPA), Vapi (DPA abgeschlossen). Deepgram entfällt — durch Soniox ersetzt, das über den Vapi-DPA abgedeckt ist. Die Tabellen oben führten Hetzner und OpenAI schon länger als erledigt; diese Liste war nicht nachgezogen.*
 7. ✅ **TIA/Drittlandbewertung erledigt 06.09.2026** — [Vapi](TIA-Vapi-Drittlandtransfer.md) (deckt Soniox mit ab), [OpenAI](TIA-OpenAI-Drittlandtransfer.md), [Resend](TIA-Resend-Drittlandtransfer.md). Deepgram entfällt.
