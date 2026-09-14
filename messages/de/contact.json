@@ -43,7 +43,7 @@
       "submit": "Termin verbindlich buchen",
       "submitting": "Wird gebucht …",
       "successTitle": "Termin steht!",
-      "success": "Sie erhalten gleich eine Kalendereinladung per E-Mail. Falls etwas dazwischenkommt, sagen Sie einfach über die Einladung ab.",
+      "success": "Sie erhalten gleich eine Bestätigung per E-Mail, mit einem Kalendereintrag zum Speichern. Falls etwas dazwischenkommt, verschieben oder sagen Sie den Termin über den Link in der E-Mail ab.",
       "errorRequired": "Bitte füllen Sie dieses Feld aus.",
       "errorEmail": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
       "errorTaken": "Dieser Termin wurde gerade vergeben. Wir laden die freien Zeiten neu …",

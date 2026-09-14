@@ -179,6 +179,7 @@ export function ApplicationForm() {
                     namespace="Recruiting.booking"
                     defaults={{ name: submitted.name, email: submitted.email, topic }}
                     hideTopic
+                    art="partner"
                   />
                 </div>
                 <p className="text-xs text-subtle">{t("successHint")}</p>

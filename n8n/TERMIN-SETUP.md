@@ -1,3 +1,7 @@
+> **Stand 13.09.2026: für die NexAI-Website nicht mehr in Gebrauch.** Die Buchung auf `/contact`
+> spricht direkt mit NexTime (`app/api/booking/route.ts`). Diese Anleitung gilt nur noch für
+> Installationen, die weiter in einen Google-Kalender buchen.
+
 # Terminbuchung auf der Website — Einrichtung
 
 Die Kontaktseite (`/contact`, Abschnitt „Termin buchen") zeigt freie Zeiten aus

@@ -1,25 +1,37 @@
+import { createHash } from "node:crypto";
 import { NextResponse } from "next/server";
 import { z } from "zod";
-import { buildDays, findSlot, type BusyInterval, TZ } from "@/lib/booking";
-import { sendMail, fieldsToHtml, fieldsToText } from "@/lib/email";
+import { saveLead } from "@/lib/crm";
 
-// Terminbuchung. Wie /api/chat ein gehärteter Proxy: n8n dient nur als
-// Google-Kalender-Adapter (belegte Zeiten lesen, Termin anlegen), sämtliche
-// Geschäftsregeln liegen in lib/booking.ts.
+// Terminbuchung auf /contact — direkt gegen den NexTime-Kalender.
 //
-// Bewusst so geschnitten: der Client bestimmt NICHT, welcher Termin gültig ist.
-// Beim Buchen werden die belegten Zeiten erneut geladen und der gewünschte Slot
-// gegen das frisch berechnete Raster geprüft — sonst könnte man per
-// direktem POST beliebige Zeiten (nachts, am Wochenende, doppelt) eintragen.
+// Bis zum 13.09.2026 lief sie über n8n in einen Google-Kalender, und die
+// Geschäftsregeln standen doppelt: hier in lib/booking.ts und im Voice-Agent.
+// Jetzt ist NexTime die einzige Wahrheit. Die freien Zeiten kommen aus genau
+// dem Kalender, in dem der Termin landet, und NexTime prüft beim Anlegen selbst
+// Öffnungszeiten, Vorlauf, Horizont und Belegung. Diese Route rechnet deshalb
+// nichts mehr aus: sie reicht weiter und hält den Schlüssel vom Browser fern.
+//
+// Die Bestätigung an den Gast und die Meldung an den Kalender verschickt NexTime.
+// Wie vorher über n8n landet jede neue Buchung zusätzlich als Lead im CRM.
 //
 // Benötigte Env:
-//   N8N_BOOKING_WEBHOOK_URL — n8n *Production* Webhook (nexai-website-termin)
-//   N8N_BOOKING_SECRET      — geteiltes Geheimnis, als `x-nexai-secret` gesendet
+//   NEXTIME_API_URL     — https://nextime.nex-a-i.com
+//   NEXTIME_API_KEY     — Schlüssel „Website" aus NexTime → Einstellungen → Schnittstelle
+//   NEXTIME_KALENDER_ID — Kalender, in dem die Buchungen landen
+//   NEXTIME_LEISTUNG_ID — Terminart: bestimmt Dauer, Puffer, Vorlauf und Horizont
+//   NEXTIME_LEISTUNG_ID_PARTNER — Terminart für Kennenlerngespräche mit Vertriebspartnern
 export const maxDuration = 60;
 
-const N8N_TIMEOUT_MS = 20_000;
+const TZ = "Europe/Berlin";
+const TIMEOUT_MS = 15_000;
+/** So weit reicht die Auswahl. Die Terminart lässt ohnehin nicht weiter nach vorn buchen. */
+const TAGE = 14;
 
-const slotsSchema = z.object({ action: z.literal("slots") });
+/** Wofür gebucht wird — bestimmt die Terminart in NexTime. */
+const artSchema = z.enum(["kunde", "partner"]).default("kunde");
+
+const slotsSchema = z.object({ action: z.literal("slots"), art: artSchema });
 
 const bookSchema = z.object({
   action: z.literal("book"),
@@ -28,6 +40,7 @@ const bookSchema = z.object({
   email: z.string().trim().email().max(120),
   topic: z.string().trim().max(500).optional().default(""),
   locale: z.enum(["de", "en"]),
+  art: artSchema,
   // Honigtopf: echte Menschen füllen das unsichtbare Feld nicht aus.
   company: z.string().max(0).optional(),
 });
@@ -49,81 +62,148 @@ function rateLimited(ip: string): boolean {
   return recent.length > RATE_LIMIT;
 }
 
+type Konfig = {
+  url: string;
+  schluessel: string;
+  kalenderId: string;
+  leistung: Record<"kunde" | "partner", string>;
+};
+
+function konfig(): Konfig | null {
+  const url = process.env.NEXTIME_API_URL?.trim().replace(/\/+$/, "");
+  const schluessel = process.env.NEXTIME_API_KEY?.trim();
+  const kalenderId = process.env.NEXTIME_KALENDER_ID?.trim();
+  const leistungId = process.env.NEXTIME_LEISTUNG_ID?.trim();
+  if (!url || !schluessel || !kalenderId || !leistungId) return null;
+  // Kennenlerngespräche haben eine eigene Terminart. Fehlt sie, gilt die für
+  // Kunden — lieber falsch beschriftet als gar nicht buchbar.
+  const partnerId = process.env.NEXTIME_LEISTUNG_ID_PARTNER?.trim() || leistungId;
+  return { url, schluessel, kalenderId, leistung: { kunde: leistungId, partner: partnerId } };
+}
+
 /**
  * Unterscheidbare Fehlergründe: bei einer Störung soll aus der Antwort
  * hervorgehen, WO es klemmt — Schlüssel, Zeitüberschreitung oder Datenform.
  */
-type N8nFailure = "auth" | "timeout" | "status" | "shape";
-type N8nResult =
+type Fehlergrund = "auth" | "timeout" | "status" | "shape";
+type Antwort =
   | { ok: true; data: unknown }
-  | { ok: false; reason: N8nFailure };
+  | { ok: false; reason: Fehlergrund; data?: unknown };
 
-async function callN8n(payload: unknown): Promise<N8nResult> {
-  const url = process.env.N8N_BOOKING_WEBHOOK_URL!;
-
+async function nextime(k: Konfig, pfad: string, rumpf?: unknown): Promise<Antwort> {
   const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), N8N_TIMEOUT_MS);
+  const timeout = setTimeout(() => controller.abort(), TIMEOUT_MS);
   try {
-    const res = await fetch(url, {
-      method: "POST",
+    const res = await fetch(`${k.url}${pfad}`, {
+      method: rumpf === undefined ? "GET" : "POST",
       headers: {
-        "Content-Type": "application/json",
-        ...(process.env.N8N_BOOKING_SECRET
-          ? { "x-nexai-secret": process.env.N8N_BOOKING_SECRET }
-          : {}),
+        Authorization: `Bearer ${k.schluessel}`,
+        ...(rumpf === undefined ? {} : { "Content-Type": "application/json" }),
       },
-      body: JSON.stringify(payload),
+      body: rumpf === undefined ? undefined : JSON.stringify(rumpf),
       signal: controller.signal,
+      cache: "no-store",
     });
+    const data = await res.json().catch(() => null);
 
     if (res.status === 401 || res.status === 403) {
-      console.error("[booking] n8n rejected the shared secret.");
+      console.error("[booking] NexTime hat den Schlüssel abgewiesen.");
       return { ok: false, reason: "auth" };
     }
     if (!res.ok) {
-      console.error("[booking] n8n responded", res.status);
-      return { ok: false, reason: "status" };
+      console.error("[booking] NexTime antwortete", res.status);
+      return { ok: false, reason: "status", data };
     }
-
-    const data = await res.json().catch(() => null);
     if (data === null) {
-      console.error("[booking] n8n returned no usable JSON.");
+      console.error("[booking] NexTime lieferte kein verwertbares JSON.");
       return { ok: false, reason: "shape" };
     }
     return { ok: true, data };
   } catch (err) {
     const timedOut = err instanceof Error && err.name === "AbortError";
-    console.error("[booking] n8n request failed:", err);
+    console.error("[booking] NexTime nicht erreichbar:", err);
     return { ok: false, reason: timedOut ? "timeout" : "status" };
   } finally {
     clearTimeout(timeout);
   }
 }
 
-type BusyResult =
-  | { ok: true; busy: BusyInterval[] }
-  | { ok: false; reason: N8nFailure };
+type FreieZeiten = {
+  leistung?: { dauerMin?: number };
+  tage?: Array<{ tag?: string; zeiten?: Array<{ zeit?: string; start?: string; ende?: string }> }>;
+};
+type Slot = { startISO: string; endISO: string; label: string };
+type BookingDay = { date: string; weekday: number; slots: Slot[] };
 
-async function fetchBusy(): Promise<BusyResult> {
-  const res = await callN8n({ action: "busy" });
-  if (!res.ok) return res;
+/** "YYYY-MM-DD" des Kalendertags in Berlin. */
+function tagInBerlin(d: Date): string {
+  return new Intl.DateTimeFormat("en-CA", {
+    timeZone: TZ,
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).format(d);
+}
 
-  // n8n antwortet je nach "Respond to Webhook"-Einstellung als Objekt oder
-  // als einelementiges Array.
-  const data = res.data as { busy?: unknown } | Array<{ busy?: unknown }>;
-  const raw = Array.isArray(data) ? data[0]?.busy : data?.busy;
-  if (!Array.isArray(raw)) {
-    console.error("[booking] n8n response has no busy array.");
-    return { ok: false, reason: "shape" };
-  }
+function plusTage(tag: string, n: number): string {
+  const d = new Date(`${tag}T12:00:00Z`);
+  d.setUTCDate(d.getUTCDate() + n);
+  return d.toISOString().slice(0, 10);
+}
 
+/** 1 = Montag … 7 = Sonntag, wie es die Oberfläche erwartet. */
+function wochentag(tag: string): number {
+  const d = new Date(`${tag}T12:00:00Z`).getUTCDay();
+  return d === 0 ? 7 : d;
+}
+
+/** Datum und Uhrzeit in Berliner Ortszeit — so erwartet sie der Kalender. */
+function ortszeit(d: Date): { datum: string; uhrzeit: string } {
+  const teile = Object.fromEntries(
+    new Intl.DateTimeFormat("en-GB", {
+      timeZone: TZ,
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+      hour: "2-digit",
+      minute: "2-digit",
+      hourCycle: "h23",
+    })
+      .formatToParts(d)
+      .map((p) => [p.type, p.value]),
+  );
   return {
-    ok: true,
-    busy: raw.filter(
-      (b): b is BusyInterval =>
-        !!b && typeof b.start === "string" && typeof b.end === "string",
-    ),
+    datum: `${teile.year}-${teile.month}-${teile.day}`,
+    uhrzeit: `${teile.hour}:${teile.minute}`,
   };
+}
+
+function alsTage(data: FreieZeiten): BookingDay[] | null {
+  if (!Array.isArray(data.tage)) return null;
+  return data.tage.flatMap((t) => {
+    if (typeof t.tag !== "string" || !Array.isArray(t.zeiten)) return [];
+    const slots = t.zeiten
+      .filter(
+        (z): z is { zeit: string; start: string; ende: string } =>
+          typeof z.zeit === "string" && typeof z.start === "string" && typeof z.ende === "string",
+      )
+      .map((z) => ({ startISO: z.start, endISO: z.ende, label: z.zeit }));
+    return slots.length ? [{ date: t.tag, weekday: wochentag(t.tag), slots }] : [];
+  });
+}
+
+function freieZeiten(
+  k: Konfig,
+  art: "kunde" | "partner",
+  von: string,
+  bis: string,
+): Promise<Antwort> {
+  const q = new URLSearchParams({ von, bis, kalenderId: k.kalenderId, leistungId: k.leistung[art] });
+  return nextime(k, `/api/v1/freie-zeiten?${q}`);
+}
+
+function upstream(reason: Fehlergrund) {
+  return NextResponse.json({ ok: false, reason: "upstream", detail: reason }, { status: 502 });
 }
 
 export async function POST(request: Request) {
@@ -135,7 +215,8 @@ export async function POST(request: Request) {
     return NextResponse.json({ ok: false, reason: "rate_limited" }, { status: 429 });
   }
 
-  if (!process.env.N8N_BOOKING_WEBHOOK_URL) {
+  const k = konfig();
+  if (!k) {
     // Noch nicht eingerichtet — die Oberfläche zeigt dann den Hinweis auf
     // Formular und Telefon statt einer Fehlermeldung.
     return NextResponse.json({ ok: false, reason: "unconfigured" }, { status: 503 });
@@ -151,15 +232,14 @@ export async function POST(request: Request) {
   const action = (body as { action?: unknown })?.action;
 
   // ---------------------------------------------------------------- Slots
-  if (slotsSchema.safeParse(body).success) {
-    const res = await fetchBusy();
-    if (!res.ok) {
-      return NextResponse.json(
-        { ok: false, reason: "upstream", detail: res.reason },
-        { status: 502 },
-      );
-    }
-    return NextResponse.json({ ok: true, tz: TZ, days: buildDays(res.busy) });
+  const slotsAnfrage = slotsSchema.safeParse(body);
+  if (slotsAnfrage.success) {
+    const heute = tagInBerlin(new Date());
+    const res = await freieZeiten(k, slotsAnfrage.data.art, heute, plusTage(heute, TAGE - 1));
+    if (!res.ok) return upstream(res.reason);
+    const days = alsTage(res.data as FreieZeiten);
+    if (!days) return upstream("shape");
+    return NextResponse.json({ ok: true, tz: TZ, days });
   }
 
   // ---------------------------------------------------------------- Buchen
@@ -168,71 +248,89 @@ export async function POST(request: Request) {
     if (!parsed.success) {
       return NextResponse.json({ ok: false, reason: "invalid" }, { status: 400 });
     }
-    const { startISO, name, email, topic, locale } = parsed.data;
+    const { startISO, name, email, topic, locale, art } = parsed.data;
+    const partner = art === "partner";
 
-    const busyRes = await fetchBusy();
-    if (!busyRes.ok) {
-      return NextResponse.json(
-        { ok: false, reason: "upstream", detail: busyRes.reason },
-        { status: 502 },
-      );
+    const wunsch = new Date(startISO);
+    if (Number.isNaN(wunsch.getTime())) {
+      return NextResponse.json({ ok: false, reason: "invalid" }, { status: 400 });
     }
+    const { datum, uhrzeit } = ortszeit(wunsch);
 
-    // Erneut prüfen: der Termin könnte zwischen Anzeige und Klick belegt worden
-    // sein, und ein direkter POST könnte beliebige Zeiten enthalten.
-    const slot = findSlot(startISO, busyRes.busy);
+    // Frisch nachsehen, ob die Zeit noch angeboten wird — zwischen Anzeige und
+    // Klick kann sie vergeben worden sein. Nebenbei liefert die Antwort die
+    // Dauer der Terminart, die der Kalender zum Anlegen braucht.
+    const angebot = await freieZeiten(k, art, datum, datum);
+    if (!angebot.ok) return upstream(angebot.reason);
+    const daten = angebot.data as FreieZeiten;
+    const tage = alsTage(daten);
+    const dauerMin = daten.leistung?.dauerMin;
+    if (!tage || typeof dauerMin !== "number") return upstream("shape");
+
+    const slot = tage
+      .flatMap((t) => t.slots)
+      .find((s) => new Date(s.startISO).getTime() === wunsch.getTime());
     if (!slot) {
       return NextResponse.json({ ok: false, reason: "taken" }, { status: 409 });
     }
 
-    const createRes = await callN8n({
-      action: "create",
-      startISO: slot.startISO,
-      endISO: slot.endISO,
-      name,
-      email,
-      topic,
-      locale,
+    const anlage = await nextime(k, "/api/v1/termine", {
+      datum,
+      start: uhrzeit,
+      dauerMin,
+      leistungId: k.leistung[art],
+      kalenderId: k.kalenderId,
+      // Im internen Kalender steht der Titel in der Übersicht, nicht der Kontakt.
+      titel: `${name} · ${partner ? "Vertriebspartner" : "Website"}`,
+      kunde: { name, email },
+      // In die Kontakt-Notiz, nicht in die Termin-Notiz: nur die geht beim
+      // Anonymisieren nach 12 Monaten mit. Connor sieht sie im Termin.
+      kundenNotiz: [`E-Mail: ${email}`, topic ? `Anliegen: ${topic}` : null, `Quelle: ${partner ? "Vertriebspartner-Seite" : "Website"} (${locale})`]
+        .filter(Boolean)
+        .join("\n"),
+      // Ein Doppelklick legt denselben Termin nicht zweimal an.
+      auftragId: `web-${createHash("sha256")
+        .update(`${email.toLowerCase()}|${slot.startISO}`)
+        .digest("hex")
+        .slice(0, 40)}`,
     });
-    if (!createRes.ok) {
-      return NextResponse.json(
-        { ok: false, reason: "upstream", detail: createRes.reason },
-        { status: 502 },
-      );
+    if (!anlage.ok) {
+      // Inzwischen vergeben oder nicht mehr im Angebot — für den Gast dasselbe.
+      if (JSON.stringify(anlage.data ?? "").includes("zeit_")) {
+        return NextResponse.json({ ok: false, reason: "taken" }, { status: 409 });
+      }
+      return upstream(anlage.reason);
     }
 
-    const created = createRes.data as { ok?: unknown } | Array<{ ok?: unknown }>;
-    const ok = Array.isArray(created) ? created[0]?.ok : created?.ok;
-    if (ok !== true) {
-      console.error("[booking] n8n did not confirm the creation.");
-      return NextResponse.json(
-        { ok: false, reason: "upstream", detail: "shape" },
-        { status: 502 },
-      );
+    /*
+      Lead im CRM, im selben Format wie bisher über n8n: Titel „Termin <Datum>",
+      Wiedervorlage zum Termin. Nur bei einer NEU angelegten Buchung — ein
+      Doppelklick bekommt von NexTime denselben Termin zurück und soll keinen
+      zweiten Lead erzeugen. saveLead wirft nie: ein CRM-Ausfall darf die
+      bereits bestätigte Buchung nicht kippen.
+    */
+    if ((anlage.data as { schonAngelegt?: unknown }).schonAngelegt !== true) {
+      const wann = `${new Intl.DateTimeFormat("de-DE", {
+        timeZone: TZ,
+        weekday: "long",
+        day: "2-digit",
+        month: "2-digit",
+        year: "numeric",
+        hour: "2-digit",
+        minute: "2-digit",
+        hourCycle: "h23",
+      }).format(wunsch)} Uhr`;
+      await saveLead({
+        name,
+        email,
+        source: partner ? "website-partnertermin" : "website-termin",
+        title: `${partner ? "Kennenlernen" : "Termin"} ${wann}`,
+        notes: [topic ? `Anliegen: ${topic}` : null, `Terminwunsch: ${wann}`]
+          .filter(Boolean)
+          .join("\n"),
+        nextFollowUpAt: slot.startISO,
+      });
     }
-
-    // Interne Benachrichtigung. Die Terminbestätigung an den Kunden verschickt
-    // Google selbst (er steht als Teilnehmer im Kalendereintrag) — das ist
-    // unabhängig davon, ob die Resend-Domain schon verifiziert ist.
-    const when = new Intl.DateTimeFormat("de-DE", {
-      timeZone: TZ,
-      dateStyle: "full",
-      timeStyle: "short",
-    }).format(new Date(slot.startISO));
-
-    const fields = {
-      Termin: `${when} (${TZ})`,
-      Name: name,
-      "E-Mail": email,
-      Anliegen: topic || "—",
-      Sprache: locale,
-    };
-    await sendMail({
-      subject: `Neuer Termin: ${name} — ${when}`,
-      html: fieldsToHtml(fields),
-      text: fieldsToText(fields),
-      replyTo: email,
-    });
 
     return NextResponse.json({ ok: true, startISO: slot.startISO });
   }
