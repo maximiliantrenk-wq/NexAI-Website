@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/ui/reveal";
 import { Aurora } from "./aurora";
 import { HeroArtifact } from "./hero-artifact";
+import { Partners } from "./partners";
 
 export function Hero() {
   const t = useTranslations("Hero");
@@ -144,6 +145,10 @@ export function Hero() {
 
         <Reveal delay={0.26} className="mt-12 w-full sm:mt-20">
           <HeroArtifact />
+        </Reveal>
+
+        <Reveal delay={0.3} className="mt-12 sm:mt-16">
+          <Partners />
         </Reveal>
 
         <Reveal delay={0.15}>

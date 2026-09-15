@@ -6,7 +6,6 @@ import { Process } from "@/components/sections/process";
 import { Metrics } from "@/components/sections/metrics";
 import { ProductHighlights } from "@/components/sections/product-highlights";
 import { Testimonial } from "@/components/sections/testimonial";
-import { Partners } from "@/components/sections/partners";
 import { CTASection } from "@/components/sections/cta";
 
 export default async function HomePage({
@@ -26,7 +25,6 @@ export default async function HomePage({
       <Metrics />
       <ProductHighlights />
       <Testimonial />
-      <Partners />
       <CTASection />
     </>
   );
