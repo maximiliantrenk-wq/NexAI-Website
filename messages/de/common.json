@@ -11,13 +11,16 @@
     "roiRechner": "ROI-Rechner",
     "about": "Über uns",
     "partner": "Partner",
+    "geschaeftspartner": "Geschäftspartner",
     "vertriebspartner": "Vertriebspartner (m/w/d)",
     "contact": "Kontakt",
     "imprint": "Impressum",
     "privacy": "Datenschutz",
     "cta": "Kostenloses Erstgespräch",
     "menu": "Menü",
-    "close": "Schließen"
+    "close": "Schließen",
+    "geschaeftspartnerHint": "Firmen, die NexAI zu ihrem Angebot dazunehmen",
+    "vertriebspartnerHint": "Selbstständig für NexAI verkaufen"
   },
   "Footer": {
     "tagline": "Wir entwickeln digitale Mitarbeiter, AI-Agenten, die Ihr Unternehmen entlasten und voranbringen.",

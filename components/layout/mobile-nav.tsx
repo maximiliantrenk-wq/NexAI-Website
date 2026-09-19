@@ -50,18 +50,38 @@ export function MobileNav({
             <nav className="flex flex-col gap-1 px-6 py-8">
               {navItems.map((item, i) => (
                 <motion.div
-                  key={item.href}
+                  key={item.key}
                   initial={{ opacity: 0, y: 12 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.05 + i * 0.05, ease: easeOutExpo }}
                 >
-                  <Link
-                    href={item.href}
-                    onClick={() => setOpen(false)}
-                    className="block border-b border-line py-4 text-2xl font-medium tracking-tight text-fg"
-                  >
-                    {t(item.key)}
-                  </Link>
+                  {"children" in item ? (
+                    <div className="border-b border-line py-4">
+                      <span className="block text-2xl font-medium tracking-tight text-fg">
+                        {t(item.key)}
+                      </span>
+                      <div className="mt-3 flex flex-col gap-3 pl-4">
+                        {item.children.map((eintrag) => (
+                          <Link
+                            key={eintrag.href}
+                            href={eintrag.href}
+                            onClick={() => setOpen(false)}
+                            className="text-lg text-muted"
+                          >
+                            {t(eintrag.key)}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  ) : (
+                    <Link
+                      href={item.href}
+                      onClick={() => setOpen(false)}
+                      className="block border-b border-line py-4 text-2xl font-medium tracking-tight text-fg"
+                    >
+                      {t(item.key)}
+                    </Link>
+                  )}
                 </motion.div>
               ))}
               <div className="mt-8 flex flex-col items-stretch gap-4">

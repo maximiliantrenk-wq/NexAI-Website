@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { navItems } from "@/lib/nav";
 import { cn } from "@/lib/utils";
 import { LocaleSwitcher } from "./locale-switcher";
+import { NavDropdown } from "./nav-dropdown";
 import { MobileNav } from "./mobile-nav";
 
 export function Header() {
@@ -37,15 +38,23 @@ export function Header() {
         <Logo />
 
         <nav className="hidden items-center gap-0.5 lg:flex">
-          {navItems.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="rounded-full px-3.5 py-2 text-sm text-muted transition-colors hover:text-fg"
-            >
-              {t(item.key)}
-            </Link>
-          ))}
+          {navItems.map((item) =>
+            "children" in item ? (
+              <NavDropdown
+                key={item.key}
+                label={t(item.key)}
+                items={item.children}
+              />
+            ) : (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="rounded-full px-3.5 py-2 text-sm text-muted transition-colors hover:text-fg"
+              >
+                {t(item.key)}
+              </Link>
+            ),
+          )}
         </nav>
 
         <div className="flex items-center gap-2.5">

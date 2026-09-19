@@ -66,39 +66,31 @@
     "partnerBenefits": {
       "eyebrow": "Für unsere Partner",
       "title": "Ihr Vorteil als NexAI-Partner.",
-      "description": "Ein modernes AI-Angebot, das Ihre Kunden begeistert, ohne dass Sie eine Zeile Code schreiben.",
+      "description": "Zwei Wege zu verdienen, ohne eigene Entwicklung und ohne Aufwand auf Ihrer Seite.",
       "items": [
         {
-          "title": "Zusätzliches Leistungsangebot",
-          "description": "Erweitern Sie Ihr Portfolio um AI-Automatisierung, ohne eigene Entwicklung, Technik oder Personal."
+          "title": "Einmalprovision je gewonnenem Kunden",
+          "description": "Für jeden Kunden, den Sie bringen, erhalten Sie eine Provision auf den ersten Monatsbeitrag. Ausgezahlt nach Abschluss, auf einen Schlag oder je Abschluss."
         },
         {
-          "title": "Mehr Umsatz pro Kunde",
-          "description": "Cross- und Upselling mit einem gefragten Zusatzprodukt, und wiederkehrende statt einmaliger Umsätze."
+          "title": "Lifetime-Provision",
+          "description": "Dazu eine monatliche Beteiligung am laufenden Umsatz, solange der Kunde bei uns bleibt. Sie verdienen weiter, ohne weiteren Aufwand."
         },
         {
-          "title": "White-Label möglich",
-          "description": "Auf Wunsch bieten Sie die Lösung unter Ihrer eigenen Marke an. NexAI bleibt im Hintergrund."
+          "title": "Kein Aufwand auf Ihrer Seite",
+          "description": "Einrichtung, Betrieb, Support und Optimierung übernehmen wir. Sie brauchen keine Entwickler, keine Technik und kein zusätzliches Personal."
         },
         {
-          "title": "Bessere Ergebnisse für Ihre Kunden",
-          "description": "Mehr abgeschlossene Anfragen aus denselben Leads. Ihre Arbeit wirkt sichtbar und messbar."
+          "title": "Ein Angebot mehr im Portfolio",
+          "description": "Sie verkaufen AI-Automatisierung mit, ohne selbst zu entwickeln. Mehr Umsatz pro Kunde aus der Beziehung, die Sie ohnehin haben."
         },
         {
-          "title": "Stärkere Kundenbindung",
-          "description": "Wer bessere Ergebnisse liefert, bleibt unverzichtbar. Zufriedene Kunden bleiben länger."
+          "title": "Der Kunde bleibt Ihrer",
+          "description": "Wir gehen nicht an Ihnen vorbei. Sie bleiben der Ansprechpartner, wir arbeiten im Hintergrund."
         },
         {
-          "title": "Klarer Wettbewerbsvorteil",
-          "description": "Heben Sie sich mit einem modernen AI-Angebot von Mitbewerbern ab, die es (noch) nicht haben."
-        },
-        {
-          "title": "Technischer Support & gemeinsame Projekte",
-          "description": "Wir übernehmen Einrichtung, Betrieb und Optimierung. Sie behalten die Kundenbeziehung."
-        },
-        {
-          "title": "Individuelle Lösungen",
-          "description": "Vom fertigen Agenten bis zur maßgeschneiderten Automatisierung, passend zu jedem Kundenprojekt."
+          "title": "Ihre Marke oder unsere",
+          "description": "Auf Wunsch tritt NexAI komplett in den Hintergrund, und Sie bieten die Lösung unter Ihrem Namen an."
         }
       ]
     },
@@ -122,22 +114,6 @@
         {
           "title": "Schnellere Reaktionszeiten",
           "description": "Interessenten bekommen in Sekunden eine Antwort, nicht erst nach Stunden."
-        },
-        {
-          "title": "Weniger Personalaufwand",
-          "description": "Routineanfragen erledigt die AI. Das Team konzentriert sich auf das Wesentliche."
-        },
-        {
-          "title": "Mehr abgeschlossene Anfragen",
-          "description": "Qualifizierte, vorbereitete Leads landen sofort im CRM, bereit für den Abschluss."
-        },
-        {
-          "title": "Automatisierte Prozesse & Zeitersparnis",
-          "description": "Wiederkehrende Abläufe laufen von selbst. Das spart täglich Zeit und Kosten."
-        },
-        {
-          "title": "Skalierbar mitwachsend",
-          "description": "Ob 10 oder 1.000 Anfragen am Tag, die Lösung wächst ohne zusätzliches Personal mit."
         }
       ]
     },
@@ -147,37 +123,16 @@
       "description": "Grundsätzlich für alle Unternehmen, deren Kunden durch AI-Automatisierung einen echten Mehrwert gewinnen. Zum Beispiel:",
       "items": [
         {
-          "title": "Marketing-Agenturen"
-        },
-        {
-          "title": "SEO-Agenturen"
-        },
-        {
-          "title": "Google-Ads-Agenturen"
-        },
-        {
-          "title": "Social-Media-Agenturen"
-        },
-        {
-          "title": "Webdesign-Agenturen"
-        },
-        {
-          "title": "Digitalagenturen"
+          "title": "Marketing- & Werbeagenturen"
         },
         {
           "title": "IT-Dienstleister & Systemhäuser"
         },
         {
-          "title": "Softwareunternehmen"
-        },
-        {
-          "title": "CRM-Anbieter"
+          "title": "Softwareunternehmen & CRM-Anbieter"
         },
         {
           "title": "Unternehmens- & Digitalisierungsberater"
-        },
-        {
-          "title": "Automatisierungsagenturen"
         },
         {
           "title": "Telekommunikation & Callcenter"
@@ -218,13 +173,8 @@
       "description": "Moderne AI-Technologie, persönlich betreut und sauber in bestehende Systeme integriert.",
       "items": [
         "Rund um die Uhr erreichbar",
-        "Unbegrenzt skalierbar",
-        "DSGVO-konforme Prozesse (soweit technisch und organisatorisch umgesetzt)",
         "Individuelle Entwicklung statt Lösung von der Stange",
         "Persönliche Betreuung mit festem Ansprechpartner",
-        "Schnelle Einrichtung",
-        "Laufende Optimierung",
-        "Moderne AI-Technologie",
         "Integration in bestehende Systeme"
       ]
     },
@@ -234,63 +184,19 @@
       "items": [
         {
           "q": "Ist NexAI eine Konkurrenz für uns?",
-          "a": "Nein. NexAI ersetzt Ihr Angebot nicht, sondern erweitert es. Sie bleiben der Ansprechpartner Ihres Kunden. Wir liefern die AI-Technologie im Hintergrund."
+          "a": "Nein. Wir ersetzen Ihr Angebot nicht, wir erweitern es. Sie bleiben der Ansprechpartner Ihres Kunden, wir liefern die AI-Technologie im Hintergrund."
         },
         {
-          "q": "Was kostet mich die Partnerschaft?",
-          "a": "Die Partnerschaft selbst ist unkompliziert. Das konkrete Modell, Empfehlung, gemeinsame Projekte, Provision oder White-Label, stimmen wir individuell im Partnergespräch ab."
-        },
-        {
-          "q": "Verdiene ich an der Partnerschaft?",
-          "a": "Ja. Je nach Modell durch Cross- und Upselling in Ihrem Portfolio, wiederkehrende Umsätze oder eine Vergütung für vermittelte Kunden. Die Details klären wir gemeinsam."
-        },
-        {
-          "q": "Kann ich die Lösung unter meiner eigenen Marke anbieten?",
-          "a": "Ja, White-Label ist möglich. Auf Wunsch tritt NexAI komplett im Hintergrund auf, und Sie bieten die Lösung unter Ihrem Namen an."
+          "q": "Was verdiene ich an einer Partnerschaft?",
+          "a": "Für jeden Kunden, den Sie bringen, erhalten Sie eine Einmalprovision auf den ersten Monatsbeitrag und zusätzlich eine monatliche Beteiligung, solange der Kunde bleibt. Die Höhe stimmen wir im Partnergespräch ab, je nachdem, ob Sie nur empfehlen oder den Abschluss selbst übernehmen."
         },
         {
           "q": "Muss ich technisches Know-how mitbringen?",
-          "a": "Nein. Wir übernehmen Konzeption, Einrichtung, Betrieb und Optimierung. Sie brauchen keine Entwickler und kein AI-Wissen."
-        },
-        {
-          "q": "Wie läuft die Zusammenarbeit ab?",
-          "a": "Erst ein unverbindliches Partnergespräch, dann ein passendes Konzept für Ihre Kunden, anschließend Umsetzung und laufender Betrieb. Sie behalten dabei stets die Kundenbeziehung."
-        },
-        {
-          "q": "Für welche Kunden eignet sich NexAI?",
-          "a": "Für nahezu jedes Unternehmen mit eingehenden Anfragen oder Anrufen, vom Handwerksbetrieb über Praxen und Kanzleien bis zu Dienstleistern und Onlineshops."
-        },
-        {
-          "q": "Wie schnell ist eine Lösung beim Kunden einsatzbereit?",
-          "a": "In der Regel innerhalb weniger Werktage. Bei individueller Gestaltung kann es bis zu 10 Werktage dauern."
-        },
-        {
-          "q": "Wer betreut die Kunden technisch?",
-          "a": "Das übernimmt NexAI: Einrichtung, Betrieb und laufende Optimierung. So haben Sie keinen zusätzlichen Aufwand."
-        },
-        {
-          "q": "Wie ist der Datenschutz geregelt?",
-          "a": "Datenschutz nach DSGVO hat für uns hohe Priorität, soweit technisch und organisatorisch umgesetzt."
-        },
-        {
-          "q": "Welche Systeme lassen sich anbinden?",
-          "a": "Telefonanlage, CRM, Kalender, E-Mail und viele weitere Tools. Bestehende Prozesse Ihrer Kunden binden wir sauber ein."
-        },
-        {
-          "q": "Was kostet die Lösung für den Endkunden?",
-          "a": "Die Preise unterscheiden sich von Agent zu Agent, je nach Umfang und Aufwand. Für jedes Projekt erstellen wir ein transparentes Angebot."
+          "a": "Nein. Konzept, Einrichtung, Betrieb und Optimierung übernehmen wir. Sie brauchen keine Entwickler und kein AI-Wissen, nur den Draht zu Ihrem Kunden."
         },
         {
           "q": "Gibt es Mindestmengen oder lange Vertragslaufzeiten?",
-          "a": "Nein. Sie bringen so viele oder wenige Kunden ein, wie Sie möchten, flexibel und ohne lange Bindung."
-        },
-        {
-          "q": "Wie unterscheidet sich das von Standard-Chatbots?",
-          "a": "NexAI liefert keine Baukasten-Bots, sondern echte AI-Agenten: individuell entwickelt, in Ihre Systeme integriert und darauf ausgelegt, im echten Betrieb zuverlässig zu bestehen."
-        },
-        {
-          "q": "Was passiert nach dem Partnergespräch?",
-          "a": "Sie erhalten ein unverbindliches Konzept mit konkreten nächsten Schritten. Erst wenn es für beide Seiten passt, starten wir."
+          "a": "Nein. Sie bringen so viele oder so wenige Kunden ein, wie Sie möchten. Keine Abnahmepflicht, keine lange Bindung."
         }
       ]
     },

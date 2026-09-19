@@ -3,21 +3,15 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { useTranslations } from "next-intl";
 import {
   ArrowRight,
-  Award,
+  BadgeEuro,
   CalendarCheck,
-  CheckCircle2,
   Clock,
   HeartHandshake,
   Layers,
   LifeBuoy,
   PhoneCall,
-  Puzzle,
-  Scaling,
+  Repeat,
   Tag,
-  Target,
-  Timer,
-  TrendingUp,
-  Users,
   Zap,
 } from "lucide-react";
 import { PageHero } from "@/components/sections/page-hero";
@@ -57,26 +51,15 @@ const btnBase =
   "group inline-flex h-[52px] items-center justify-center gap-2 rounded-full px-7 text-[15px] font-medium transition-[transform,background,box-shadow,color,border-color] duration-200 ease-out active:scale-[0.98]";
 
 const partnerIcons = [
-  Layers,
-  TrendingUp,
-  Tag,
-  Target,
-  HeartHandshake,
-  Award,
+  BadgeEuro,
+  Repeat,
   LifeBuoy,
-  Puzzle,
+  Layers,
+  HeartHandshake,
+  Tag,
 ];
 
-const customerIcons = [
-  Clock,
-  PhoneCall,
-  CalendarCheck,
-  Zap,
-  Users,
-  CheckCircle2,
-  Timer,
-  Scaling,
-];
+const customerIcons = [Clock, PhoneCall, CalendarCheck, Zap];
 
 function PartnerContent() {
   const t = useTranslations("Partner.hero");

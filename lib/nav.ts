@@ -1,10 +1,19 @@
-export const navItems = [
+export type NavLink = { href: string; key: string };
+export type NavEntry = NavLink | { key: string; children: readonly NavLink[] };
+
+export const navItems: readonly NavEntry[] = [
   { href: "/services", key: "services" },
   { href: "/produkte", key: "products" },
   { href: "/pricing", key: "pricing" },
   { href: "/roi-rechner", key: "roiRechner" },
   { href: "/about", key: "about" },
-  { href: "/partner", key: "partner" },
+  {
+    key: "partner",
+    children: [
+      { href: "/partner", key: "geschaeftspartner" },
+      { href: "/vertriebspartner", key: "vertriebspartner" },
+    ],
+  },
 ] as const;
 
 export const footerNav = {
@@ -15,7 +24,7 @@ export const footerNav = {
   ],
   company: [
     { href: "/about", key: "about" },
-    { href: "/partner", key: "partner" },
+    { href: "/partner", key: "geschaeftspartner" },
     { href: "/vertriebspartner", key: "vertriebspartner" },
     { href: "/contact", key: "contact" },
   ],

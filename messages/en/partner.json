@@ -66,39 +66,31 @@
     "partnerBenefits": {
       "eyebrow": "For our partners",
       "title": "Your advantage as a NexAI partner.",
-      "description": "A modern AI offering that delights your clients, without you writing a single line of code.",
+      "description": "Two ways to earn, with no development work and no effort on your side.",
       "items": [
         {
-          "title": "An extra service to offer",
-          "description": "Add AI automation to your portfolio, with no development, tech or staff of your own."
+          "title": "One-off commission per customer won",
+          "description": "For every customer you bring, you receive a commission on the first monthly fee. Paid after closing, in one go or per deal."
         },
         {
-          "title": "More revenue per client",
-          "description": "Cross- and up-sell an in-demand add-on, and earn recurring instead of one-off revenue."
+          "title": "Lifetime commission",
+          "description": "On top of that, a monthly share of the running revenue for as long as the customer stays with us. You keep earning without extra work."
         },
         {
-          "title": "White-label ready",
-          "description": "Offer the solution under your own brand if you like. NexAI stays in the background."
+          "title": "No effort on your side",
+          "description": "Setup, operation, support and optimisation are on us. You need no developers, no technology and no extra staff."
         },
         {
-          "title": "Better results for your clients",
-          "description": "More closed enquiries from the same leads. Your work becomes visible and measurable."
+          "title": "One more offer in your portfolio",
+          "description": "You sell AI automation alongside your own services without building anything. More revenue per customer from the relationship you already have."
         },
         {
-          "title": "Stronger client retention",
-          "description": "Deliver better results and you become indispensable. Happy clients stay longer."
+          "title": "The customer stays yours",
+          "description": "We don't go around you. You remain the contact, we work in the background."
         },
         {
-          "title": "A clear competitive edge",
-          "description": "Stand out with a modern AI offering that competitors don't (yet) have."
-        },
-        {
-          "title": "Technical support & joint projects",
-          "description": "We handle setup, operation and optimisation. You keep the client relationship."
-        },
-        {
-          "title": "Tailored solutions",
-          "description": "From a ready-made agent to bespoke automation, a fit for every client project."
+          "title": "Your brand or ours",
+          "description": "On request NexAI stays completely in the background and you offer the solution under your own name."
         }
       ]
     },
@@ -122,22 +114,6 @@
         {
           "title": "Faster response times",
           "description": "Prospects get an answer in seconds, not hours later."
-        },
-        {
-          "title": "Less workload for staff",
-          "description": "The AI handles routine enquiries. The team focuses on what matters."
-        },
-        {
-          "title": "More closed enquiries",
-          "description": "Qualified, prepared leads land in the CRM instantly, ready to close."
-        },
-        {
-          "title": "Automated processes & time saved",
-          "description": "Repetitive workflows run on their own, saving time and cost every day."
-        },
-        {
-          "title": "Scales as they grow",
-          "description": "Whether 10 or 1,000 enquiries a day, the solution scales without extra staff."
         }
       ]
     },
@@ -147,37 +123,16 @@
       "description": "Broadly, for any company whose clients gain real value from AI automation. For example:",
       "items": [
         {
-          "title": "Marketing agencies"
-        },
-        {
-          "title": "SEO agencies"
-        },
-        {
-          "title": "Google Ads agencies"
-        },
-        {
-          "title": "Social media agencies"
-        },
-        {
-          "title": "Web design agencies"
-        },
-        {
-          "title": "Digital agencies"
+          "title": "Marketing & advertising agencies"
         },
         {
           "title": "IT service providers & system houses"
         },
         {
-          "title": "Software companies"
-        },
-        {
-          "title": "CRM providers"
+          "title": "Software companies & CRM vendors"
         },
         {
           "title": "Business & digitalisation consultants"
-        },
-        {
-          "title": "Automation agencies"
         },
         {
           "title": "Telecoms & call centres"
@@ -218,13 +173,8 @@
       "description": "Modern AI technology, personally supported and cleanly integrated into existing systems.",
       "items": [
         "Available around the clock",
-        "Unlimited scalability",
-        "GDPR-compliant processes (as far as technically and organisationally implemented)",
         "Bespoke development, not off-the-shelf",
         "Personal support with a dedicated contact",
-        "Fast setup",
-        "Ongoing optimisation",
-        "Modern AI technology",
         "Integration into existing systems"
       ]
     },
@@ -234,63 +184,19 @@
       "items": [
         {
           "q": "Is NexAI a competitor to us?",
-          "a": "No. NexAI doesn't replace your offering, it extends it. You stay your client's point of contact. We deliver the AI technology in the background."
+          "a": "No. We don't replace your offering, we extend it. You stay your customer's contact, we deliver the AI technology in the background."
         },
         {
-          "q": "What does the partnership cost me?",
-          "a": "The partnership itself is straightforward. We agree the exact model, referral, joint projects, commission or white-label, individually in the partner call."
-        },
-        {
-          "q": "Do I earn from the partnership?",
-          "a": "Yes. Depending on the model, through cross- and up-selling in your portfolio, recurring revenue, or a commission for referred clients. We work out the details together."
-        },
-        {
-          "q": "Can I offer the solution under my own brand?",
-          "a": "Yes, white-label is possible. On request, NexAI stays entirely in the background and you offer the solution under your own name."
+          "q": "What do I earn from a partnership?",
+          "a": "For every customer you bring, you receive a one-off commission on the first monthly fee plus a monthly share for as long as the customer stays. We agree the amount in the partner call, depending on whether you only refer or close the deal yourself."
         },
         {
           "q": "Do I need technical know-how?",
-          "a": "No. We handle concept, setup, operation and optimisation. You need no developers and no AI expertise."
+          "a": "No. Concept, setup, operation and optimisation are on us. You need no developers and no AI expertise, just the relationship with your customer."
         },
         {
-          "q": "How does the collaboration work?",
-          "a": "First a no-obligation partner call, then a fitting concept for your clients, followed by implementation and ongoing operation, and you always keep the client relationship."
-        },
-        {
-          "q": "Which clients is NexAI suited for?",
-          "a": "Almost any business with inbound enquiries or calls, from trades and practices to law firms, service providers and online shops."
-        },
-        {
-          "q": "How quickly is a solution ready for a client?",
-          "a": "Usually within a few business days. With custom development it can take up to 10 business days."
-        },
-        {
-          "q": "Who supports the clients technically?",
-          "a": "NexAI does: setup, operation and ongoing optimisation. That means no extra workload for you."
-        },
-        {
-          "q": "How is data protection handled?",
-          "a": "Data protection under GDPR is a high priority for us, as far as technically and organisationally implemented."
-        },
-        {
-          "q": "Which systems can be integrated?",
-          "a": "Phone systems, CRM, calendar, email and many more tools. We cleanly connect your clients' existing processes."
-        },
-        {
-          "q": "What does the solution cost the end customer?",
-          "a": "Prices vary from agent to agent, depending on scope and effort. We prepare a transparent offer for every project."
-        },
-        {
-          "q": "Are there minimum volumes or long contracts?",
-          "a": "No. You bring in as many or as few clients as you like, flexibly and without a long commitment."
-        },
-        {
-          "q": "How is this different from standard chatbots?",
-          "a": "NexAI doesn't ship template bots but real AI agents: custom-built, integrated into your systems and designed to hold up reliably in real operation."
-        },
-        {
-          "q": "What happens after the partner call?",
-          "a": "You receive a no-obligation concept with concrete next steps. We only start once it's a fit for both sides."
+          "q": "Are there minimum volumes or long contract terms?",
+          "a": "No. You bring in as many or as few customers as you like. No minimum purchase, no long commitment."
         }
       ]
     },

@@ -38,44 +38,6 @@
     }
   },
   "Home": {
-    "services": {
-      "eyebrow": "What we build",
-      "title": "Digital employees for every area.",
-      "description": "Not off-the-shelf chatbots, but intelligent AI agents that work like real employees, built for your industry and fully integrated.",
-      "cta": "See all services",
-      "items": [
-        {
-          "name": "AI Voice Agents",
-          "description": "Phone assistants that answer every call around the clock and reliably book appointments, so no call and no appointment is ever missed again."
-        },
-        {
-          "name": "AI Chatbots",
-          "description": "Modern chatbots for your website, app or internal systems: they advise, recommend and handle support."
-        },
-        {
-          "name": "Online booking calendar",
-          "description": "Customers book themselves, get confirmations and reminders by email or SMS, and double bookings are impossible."
-        },
-        {
-          "name": "CRM & customer management",
-          "description": "Calls, enquiries, appointments and tasks come together automatically in one customer system, on servers in Germany."
-        },
-        {
-          "name": "Automations",
-          "description": "We automate almost any digital business process, from email and calendar to CRM and ERP."
-        },
-        {
-          "name": "Inventory & Stock Management",
-          "description": "An agent for stock levels, inventory and reordering, tracked automatically and connected to your systems."
-        }
-      ],
-      "custom": {
-        "tag": "Custom AI Agents",
-        "title": "Got a special idea?",
-        "description": "Every business works differently. For special cases we assess technical feasibility together and build a fully bespoke AI agent. There are almost no fixed limits.",
-        "cta": "Discuss feasibility"
-      }
-    },
     "capabilities": {
       "eyebrow": "How we work",
       "title": "One team. From idea to operations.",
@@ -91,14 +53,6 @@
         {
           "title": "Full integration",
           "description": "Seamlessly connected to phone, CRM, calendar, email & more."
-        },
-        {
-          "title": "Secure & GDPR-compliant",
-          "description": "Data protection, access control and traceability included."
-        },
-        {
-          "title": "Multilingual",
-          "description": "Your agents talk to customers in multiple languages."
         },
         {
           "title": "Operations & optimisation",
@@ -195,7 +149,13 @@
           "title": "NexAI App",
           "result": "Your app, no app store"
         }
-      ]
+      ],
+      "custom": {
+        "tag": "Custom AI Agents",
+        "title": "Got a special idea?",
+        "description": "Every business works differently. For special cases we assess technical feasibility together and build a fully bespoke AI agent. There are almost no fixed limits.",
+        "cta": "Discuss feasibility"
+      }
     },
     "testimonial": {
       "quote": "What matters to us isn't how impressive an AI looks, but what it actually takes off your plate. We build digital employees that measurably help from day one: no more missed calls, no more missed appointments.",

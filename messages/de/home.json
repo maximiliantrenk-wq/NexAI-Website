@@ -38,44 +38,6 @@
     }
   },
   "Home": {
-    "services": {
-      "eyebrow": "Was wir bauen",
-      "title": "Digitale Mitarbeiter für jeden Bereich.",
-      "description": "Keine Standard-Chatbots, sondern intelligente AI-Agenten, die wie echte Mitarbeiter arbeiten, individuell für Ihre Branche entwickelt und voll integriert.",
-      "cta": "Alle Leistungen ansehen",
-      "items": [
-        {
-          "name": "AI Voice Agents",
-          "description": "Telefonassistenten, die rund um die Uhr jeden Anruf annehmen und Termine zuverlässig buchen, damit kein Anruf und kein Termin mehr verloren geht."
-        },
-        {
-          "name": "AI Chatbots",
-          "description": "Moderne Chatbots für Webseite, App oder interne Systeme: beraten, empfehlen und übernehmen den Support."
-        },
-        {
-          "name": "Online-Terminkalender",
-          "description": "Kunden buchen selbst, bekommen Bestätigung und Erinnerung per E-Mail oder SMS, Doppelbuchungen sind ausgeschlossen."
-        },
-        {
-          "name": "CRM & Kundenverwaltung",
-          "description": "Anrufe, Anfragen, Termine und Aufgaben laufen automatisch in einem Kundensystem zusammen, auf Servern in Deutschland."
-        },
-        {
-          "name": "Automatisierungen",
-          "description": "Wir automatisieren nahezu jeden digitalen Geschäftsprozess, von E-Mail und Kalender bis CRM und ERP."
-        },
-        {
-          "name": "Lagerverwaltung & Inventur",
-          "description": "Ein Agent für Bestände, Inventur und Nachbestellung, automatisch erfasst und in Ihre Systeme integriert."
-        }
-      ],
-      "custom": {
-        "tag": "Individuelle AI-Agenten",
-        "title": "Sie haben eine besondere Idee?",
-        "description": "Jedes Unternehmen arbeitet anders. Für Spezialfälle prüfen wir gemeinsam die technische Machbarkeit und entwickeln einen maßgeschneiderten AI-Agenten. Es gibt nahezu keine festen Grenzen.",
-        "cta": "Machbarkeit besprechen"
-      }
-    },
     "capabilities": {
       "eyebrow": "Wie wir arbeiten",
       "title": "Ein Team. Von der Idee bis zum Betrieb.",
@@ -91,14 +53,6 @@
         {
           "title": "Volle Integration",
           "description": "Nahtlos verbunden mit Telefon, CRM, Kalender, E-Mail & Co."
-        },
-        {
-          "title": "Sicher & DSGVO-konform",
-          "description": "Datenschutz, Zugriffskontrolle und Nachvollziehbarkeit inklusive."
-        },
-        {
-          "title": "Mehrsprachig",
-          "description": "Ihre Agenten sprechen mit Kunden in mehreren Sprachen."
         },
         {
           "title": "Betrieb & Optimierung",
@@ -195,7 +149,13 @@
           "title": "NexAI App",
           "result": "Ihre App, ohne App-Store"
         }
-      ]
+      ],
+      "custom": {
+        "tag": "Individuelle AI-Agenten",
+        "title": "Sie haben eine besondere Idee?",
+        "description": "Jedes Unternehmen arbeitet anders. Für Spezialfälle prüfen wir gemeinsam die technische Machbarkeit und entwickeln einen maßgeschneiderten AI-Agenten. Es gibt nahezu keine festen Grenzen.",
+        "cta": "Machbarkeit besprechen"
+      }
     },
     "testimonial": {
       "quote": "Für uns zählt nicht, wie beeindruckend eine AI wirkt, sondern was sie im Alltag wirklich abnimmt. Wir entwickeln digitale Mitarbeiter, die ab dem ersten Tag messbar entlasten: kein verpasster Anruf, kein verpasster Termin mehr.",

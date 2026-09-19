@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Sparkles } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/ui/container";
@@ -7,9 +7,11 @@ import { Section, SectionHeading } from "@/components/ui/section";
 import { Reveal, RevealGroup, RevealItem } from "@/components/ui/reveal";
 import { Button } from "@/components/ui/button";
 import { WaveOverlay } from "@/components/ui/wave-overlay";
+import { Glow } from "@/components/ui/glow";
 import { productGradients, productImages } from "@/content/products";
 
 type Item = { slug: string; tag: string; title: string; result: string };
+type Custom = { tag: string; title: string; description: string; cta: string };
 
 // Jede Karte belegt 2 von 4 (md) bzw. 2 von 6 (lg) Spalten. So steht eine
 // unvollständige letzte Reihe zentriert statt links zu hängen (5 Karten → 3 + 2).
@@ -28,6 +30,7 @@ function spalten(i: number, n: number) {
 export function ProductHighlights() {
   const t = useTranslations("Home.products");
   const items = t.raw("items") as Item[];
+  const custom = t.raw("custom") as Custom;
 
   return (
     <Section id="products-preview">
@@ -98,6 +101,34 @@ export function ProductHighlights() {
             );
           })}
         </RevealGroup>
+
+        {/* Individuelle Agenten. Stand bis 19.09. im Leistungsblock daruber,
+            der mit seinen sechs Kacheln diesen hier gedoppelt hat. */}
+        <Reveal className="mt-5">
+          <div className="relative isolate overflow-hidden rounded-2xl p-8 sm:p-10">
+            <Glow
+              className="right-0 top-0 h-72 w-96 translate-x-1/3 -translate-y-1/3"
+              intensity={0.28}
+            />
+            <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+              <div className="max-w-xl">
+                <span className="inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.16em] text-blue-bright">
+                  <Sparkles className="size-3.5" />
+                  {custom.tag}
+                </span>
+                <h3 className="mt-4 text-2xl font-semibold tracking-tight">
+                  {custom.title}
+                </h3>
+                <p className="mt-3 text-[15px] leading-relaxed text-muted">
+                  {custom.description}
+                </p>
+              </div>
+              <Button href="/contact" variant="secondary" withArrow>
+                {custom.cta}
+              </Button>
+            </div>
+          </div>
+        </Reveal>
       </Container>
     </Section>
   );

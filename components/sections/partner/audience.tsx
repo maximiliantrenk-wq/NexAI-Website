@@ -1,17 +1,10 @@
 import {
   Briefcase,
   Building2,
-  Code2,
-  Cog,
   Database,
-  Layers,
   Megaphone,
-  MousePointerClick,
-  Palette,
   PhoneCall,
-  Search,
   Server,
-  Share2,
 } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Container } from "@/components/ui/container";
@@ -22,16 +15,9 @@ type Item = { title: string };
 
 const ICONS = [
   Megaphone,
-  Search,
-  MousePointerClick,
-  Share2,
-  Palette,
-  Layers,
   Server,
-  Code2,
   Database,
   Briefcase,
-  Cog,
   PhoneCall,
   Building2,
 ];
