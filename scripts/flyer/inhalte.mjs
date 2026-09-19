@@ -97,7 +97,7 @@ export const seite2 = {
   kennzahlenHinweis: "Unsere Zielwerte, keine Messergebnisse.",
   cta: {
     eyebrow: "NÄCHSTER SCHRITT",
-    titel: "15 Minuten Analyse, kostenlos und unverbindlich.",
+    titel: "30 Minuten Analyse, kostenlos und unverbindlich.",
     text: "Wir sehen uns an, wo bei Ihnen Anrufe, Anfragen und Termine liegen bleiben, und sagen Ihnen ehrlich, ob sich AI dafür lohnt.",
   },
 };
