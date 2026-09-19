@@ -54,6 +54,7 @@ export const seite1 = {
     titel: "Rufen Sie unseren Agenten an.",
     text: "Er geht rund um die Uhr ran und sagt Ihnen zu Beginn, dass er eine AI ist.",
     qrHinweis: "Code scannen",
+    direkt: "Lieber direkt mit uns sprechen?",
   },
 };
 

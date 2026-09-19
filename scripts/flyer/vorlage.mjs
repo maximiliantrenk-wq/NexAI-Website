@@ -145,6 +145,9 @@ a{color:inherit;text-decoration:none}
 .cta h3{margin-top:11px;font-size:25px;font-weight:600;letter-spacing:-.02em}
 .cta-tel{margin-top:13px;font-size:34px;font-weight:700;letter-spacing:-.02em;color:${C.fg}}
 .cta p{margin-top:9px;font-size:14px;line-height:1.5;color:${C.muted};max-width:360px}
+.cta-direkt{margin-top:15px;display:inline-flex;align-items:center;gap:9px;
+  font-size:14px;color:${C.muted}}
+.cta-direkt b{font-weight:600;font-size:15.5px;color:${C.fg}}
 .qr-block{text-align:center;flex-shrink:0}
 .qr{display:block;border-radius:8px;background:#fff;padding:9px;width:122px;height:122px}
 .qr-hinweis{margin-top:9px;font-size:12px;color:${C.subtle}}
@@ -220,6 +223,7 @@ export function rendern({ schriftSans, schriftMono }) {
         <h3>${s1.cta.titel}</h3>
         <a class="cta-tel" href="${marke.demoLink}">${marke.demoAnzeige}</a>
         <p>${s1.cta.text}</p>
+        <a class="cta-direkt" href="${marke.mobilLink}">${icon("phone", { size: 16, stroke: C.blauHell, width: 1.9 })}${s1.cta.direkt} <b>${marke.mobilAnzeige}</b></a>
       </div>
       <a class="qr-block" href="${marke.webUrl}">
         ${qr()}
