@@ -56,7 +56,7 @@ export function NavDropdown({
       </button>
 
       {offen && (
-        <div className="absolute left-0 top-full z-50 mt-2 min-w-[280px] rounded-2xl border border-line bg-bg/95 p-1.5 shadow-[0_18px_44px_-12px_rgba(0,0,0,0.8)] backdrop-blur-xl">
+        <div className="absolute right-0 top-full z-50 mt-2 min-w-[280px] rounded-2xl border border-line bg-bg/95 p-1.5 shadow-[0_18px_44px_-12px_rgba(0,0,0,0.8)] backdrop-blur-xl">
           {items.map((eintrag) => (
             <Link
               key={eintrag.href}
