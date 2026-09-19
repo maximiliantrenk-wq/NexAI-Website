@@ -7,6 +7,10 @@
 //  - Fakten-Ledger B2: 24/7 bezieht sich auf den AGENTEN, nie auf NexAI.
 //  - Datenschutz nur qualifiziert ("nach der DSGVO verarbeitet", AV-Vertrag),
 //    kein Siegel-Versprechen wie "DSGVO-konform".
+//  - AI Act: Max hat am 19.09.2026 entschieden, dass nur die allgemeine Aussage
+//    "entsprechen dem EU AI Act" drauf steht. Der konkrete, vorfuehrbare Satz
+//    (Voice Agent gibt sich zu Beginn als AI zu erkennen, Art. 50) ist auf seinen
+//    Wunsch raus. Nicht eigenmaechtig wieder einbauen.
 //  - Die Demo-Nummer ist die Vapi-Nummer "NexAI Hauptnummer". Vor jedem Druck
 //    prüfen, ob sie registriert ist (Vapi registriert sich nur einmal).
 
@@ -89,7 +93,7 @@ export const seite2 = {
   datenschutz: {
     icon: "shield-check",
     titel: "Datenschutz und AI Act",
-    text: "Ihre Daten werden nach der DSGVO verarbeitet: mit Auftragsverarbeitungsvertrag, festen Löschfristen und einer transparenten Datenschutzerklärung. Unser Voice Agent sagt außerdem zu Beginn jedes Gesprächs, dass er eine AI ist, wie es der EU AI Act in Artikel 50 verlangt.",
+    text: "Ihre Daten werden nach der DSGVO verarbeitet: mit Auftragsverarbeitungsvertrag, festen Löschfristen und einer transparenten Datenschutzerklärung. Unsere AI-Lösungen entsprechen dem EU AI Act.",
   },
   kennzahlen: [
     { wert: "24/7", label: "Agent erreichbar" },
