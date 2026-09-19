@@ -145,9 +145,11 @@ a{color:inherit;text-decoration:none}
 .cta h3{margin-top:11px;font-size:25px;font-weight:600;letter-spacing:-.02em}
 .cta-tel{margin-top:13px;font-size:34px;font-weight:700;letter-spacing:-.02em;color:${C.fg}}
 .cta p{margin-top:9px;font-size:14px;line-height:1.5;color:${C.muted};max-width:360px}
-.cta-direkt{margin-top:15px;display:inline-flex;align-items:center;gap:9px;
-  font-size:14px;color:${C.muted}}
-.cta-direkt b{font-weight:600;font-size:15.5px;color:${C.fg}}
+.cta-direkt{margin-top:15px;font-size:14px;color:${C.muted}}
+.cd-label{display:inline-flex;align-items:center;gap:9px;white-space:nowrap}
+.cd-nummern{display:block;margin-top:7px;white-space:nowrap}
+.cta-direkt b{font-weight:600;font-size:15.5px;color:${C.fg};white-space:nowrap}
+.trenner{color:${C.subtle};margin:0 9px}
 .qr-block{text-align:center;flex-shrink:0}
 .qr{display:block;border-radius:8px;background:#fff;padding:9px;width:122px;height:122px}
 .qr-hinweis{margin-top:9px;font-size:12px;color:${C.subtle}}
@@ -174,8 +176,8 @@ a{color:inherit;text-decoration:none}
 .cta2 h3{margin-top:10px;font-size:23px}
 .cta2 p{margin-top:8px;max-width:none;font-size:14px}
 .kontakt{margin-top:18px;padding-top:16px;border-top:1px solid ${C.linie};
-  display:flex;align-items:center;gap:26px;flex-wrap:wrap}
-.kontakt a,.kontakt span{display:inline-flex;align-items:center;gap:9px;font-size:15px;font-weight:500}
+  display:flex;align-items:center;gap:14px 22px;flex-wrap:wrap}
+.kontakt a,.kontakt span{display:inline-flex;align-items:center;gap:9px;font-size:15px;font-weight:500;white-space:nowrap}
 .kontakt svg{flex-shrink:0}
 
 .fuss{margin-top:18px;font-size:11.5px;color:${C.subtle};text-align:center}
@@ -223,7 +225,10 @@ export function rendern({ schriftSans, schriftMono }) {
         <h3>${s1.cta.titel}</h3>
         <a class="cta-tel" href="${marke.demoLink}">${marke.demoAnzeige}</a>
         <p>${s1.cta.text}</p>
-        <a class="cta-direkt" href="${marke.mobilLink}">${icon("phone", { size: 16, stroke: C.blauHell, width: 1.9 })}${s1.cta.direkt} <b>${marke.mobilAnzeige}</b></a>
+        <div class="cta-direkt">
+          <span class="cd-label">${icon("phone", { size: 16, stroke: C.blauHell, width: 1.9 })}${s1.cta.direkt}</span>
+          <span class="cd-nummern"><a href="${marke.mobilJason.link}"><b>${marke.mobilJason.anzeige}</b></a><span class="trenner">·</span><a href="${marke.mobilMax.link}"><b>${marke.mobilMax.anzeige}</b></a></span>
+        </div>
       </div>
       <a class="qr-block" href="${marke.webUrl}">
         ${qr()}
@@ -250,7 +255,8 @@ export function rendern({ schriftSans, schriftMono }) {
       <h3>${s2.cta.titel}</h3>
       <p>${s2.cta.text}</p>
       <div class="kontakt">
-        <a href="${marke.mobilLink}">${kontaktIcon("phone")}${marke.mobilAnzeige}</a>
+        <a href="${marke.mobilJason.link}">${kontaktIcon("phone")}${marke.mobilJason.anzeige}</a>
+        <a href="${marke.mobilMax.link}">${kontaktIcon("phone")}${marke.mobilMax.anzeige}</a>
         <a href="${marke.mailLink}">${kontaktIcon("mail")}${marke.mailAnzeige}</a>
         <a href="${marke.webUrl}">${kontaktIcon("globe")}${marke.web}</a>
       </div>

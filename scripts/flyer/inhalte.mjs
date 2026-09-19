@@ -17,8 +17,9 @@ export const marke = {
   webUrl: "https://www.nex-a-i.com/de",
   demoAnzeige: "07959 3100191",
   demoLink: "tel:+4979593100191",
-  mobilAnzeige: "0176 80714816",
-  mobilLink: "tel:+4917680714816",
+  // ACHTUNG, war schon einmal vertauscht: 0176 gehört Jason, 0172 gehört Max.
+  mobilJason: { anzeige: "0176 80714816", link: "tel:+4917680714816" },
+  mobilMax: { anzeige: "0172 8456815", link: "tel:+491728456815" },
   mailAnzeige: "mbt@nex-a-i.com",
   mailLink: "mailto:mbt@nex-a-i.com",
   fusszeile:
