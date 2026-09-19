@@ -17,10 +17,10 @@ export const marke = {
   webUrl: "https://www.nex-a-i.com/de",
   demoAnzeige: "07959 3100191",
   demoLink: "tel:+4979593100191",
-  // ACHTUNG, war schon einmal vertauscht: 0176 gehört Jason, 0172 gehört Max.
+  // ACHTUNG, war schon einmal vertauscht: 0176 gehört Brian, 0172 gehört Max.
   // Reihenfolge auf dem Flyer: Max zuerst, weil auch die E-Mail seine ist.
   mobilMax: { name: "Max", anzeige: "0172 8456815", link: "tel:+491728456815" },
-  mobilJason: { name: "Jason", anzeige: "0176 80714816", link: "tel:+4917680714816" },
+  mobilBrian: { name: "Brian", anzeige: "0176 80714816", link: "tel:+4917680714816" },
   mailAnzeige: "mbt@nex-a-i.com",
   mailLink: "mailto:mbt@nex-a-i.com",
   fusszeile:

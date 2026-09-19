@@ -229,7 +229,7 @@ export function rendern({ schriftSans, schriftMono }) {
         <p>${s1.cta.text}</p>
         <div class="cta-direkt">
           <span class="cd-label">${icon("phone", { size: 16, stroke: C.blauHell, width: 1.9 })}${s1.cta.direkt}</span>
-          <span class="cd-nummern"><a href="${marke.mobilMax.link}"><span class="cd-name">${marke.mobilMax.name}</span> <b>${marke.mobilMax.anzeige}</b></a><span class="trenner">·</span><a href="${marke.mobilJason.link}"><span class="cd-name">${marke.mobilJason.name}</span> <b>${marke.mobilJason.anzeige}</b></a></span>
+          <span class="cd-nummern"><a href="${marke.mobilMax.link}"><span class="cd-name">${marke.mobilMax.name}</span> <b>${marke.mobilMax.anzeige}</b></a><span class="trenner">·</span><a href="${marke.mobilBrian.link}"><span class="cd-name">${marke.mobilBrian.name}</span> <b>${marke.mobilBrian.anzeige}</b></a></span>
         </div>
       </div>
       <a class="qr-block" href="${marke.webUrl}">
@@ -258,7 +258,7 @@ export function rendern({ schriftSans, schriftMono }) {
       <p>${s2.cta.text}</p>
       <div class="kontakt">
         <a href="${marke.mobilMax.link}">${kontaktIcon("phone")}<span class="k-name">${marke.mobilMax.name}</span>${marke.mobilMax.anzeige}</a>
-        <a href="${marke.mobilJason.link}">${kontaktIcon("phone")}<span class="k-name">${marke.mobilJason.name}</span>${marke.mobilJason.anzeige}</a>
+        <a href="${marke.mobilBrian.link}">${kontaktIcon("phone")}<span class="k-name">${marke.mobilBrian.name}</span>${marke.mobilBrian.anzeige}</a>
         <a href="${marke.mailLink}">${kontaktIcon("mail")}${marke.mailAnzeige}</a>
         <a href="${marke.webUrl}">${kontaktIcon("globe")}${marke.web}</a>
       </div>
