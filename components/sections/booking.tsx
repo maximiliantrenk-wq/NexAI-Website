@@ -22,6 +22,7 @@ export function Booking({
   namespace = "Contact.booking",
   defaults,
   hideTopic = false,
+  art = "kunde",
 }: {
   /** Übersetzungs-Namespace mit denselben Keys wie Contact.booking. */
   namespace?: string;
@@ -29,6 +30,8 @@ export function Booking({
   defaults?: BookingDefaults;
   /** Thema fest vorgeben statt abfragen (wird unsichtbar mitgesendet). */
   hideTopic?: boolean;
+  /** Wofür gebucht wird: Kundengespräch oder Kennenlernen als Vertriebspartner. */
+  art?: "kunde" | "partner";
 } = {}) {
   const t = useTranslations(namespace);
   const locale = useLocale();
@@ -48,7 +51,7 @@ export function Booking({
       const res = await fetch("/api/booking", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ action: "slots" }),
+        body: JSON.stringify({ action: "slots", art }),
       });
       const data = await res.json().catch(() => null);
       if (!res.ok || !data?.ok || !Array.isArray(data.days)) {
@@ -159,6 +162,7 @@ export function Booking({
           {fmtFull(slot.startISO)}
         </p>
         <BookingForm
+          art={art}
           slot={slot}
           locale={locale}
           namespace={namespace}
@@ -234,6 +238,7 @@ function Shell({
 }
 
 function BookingForm({
+  art,
   slot,
   locale,
   namespace,
@@ -247,6 +252,7 @@ function BookingForm({
   namespace: string;
   defaults?: BookingDefaults;
   hideTopic: boolean;
+  art: "kunde" | "partner";
   onBooked: (startISO: string) => void;
   onTaken: () => void;
 }) {
@@ -287,6 +293,7 @@ function BookingForm({
           topic: values.topic ?? "",
           company: values.company ?? "",
           locale,
+          art,
         }),
       });
       const data = await res.json().catch(() => null);

@@ -43,7 +43,7 @@
       "submit": "Confirm booking",
       "submitting": "Booking …",
       "successTitle": "You're booked!",
-      "success": "A calendar invitation is on its way to your inbox. If something comes up, just decline through the invitation.",
+      "success": "A confirmation is on its way to your inbox, with a calendar entry to save. If something comes up, reschedule or cancel through the link in that email.",
       "errorRequired": "Please fill in this field.",
       "errorEmail": "Please enter a valid email address.",
       "errorTaken": "That slot was just taken. Reloading the available times …",

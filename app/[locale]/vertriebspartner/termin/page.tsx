@@ -42,7 +42,7 @@ function TerminContent() {
       <Section className="pt-0">
         <Container>
           <div className="mx-auto max-w-2xl">
-            <Booking namespace="Recruiting.booking" />
+            <Booking namespace="Recruiting.booking" art="partner" />
             <Link
               href="/vertriebspartner"
               className="mt-8 inline-flex items-center gap-1.5 text-sm text-muted transition-colors hover:text-fg"
