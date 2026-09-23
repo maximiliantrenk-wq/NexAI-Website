@@ -1,7 +1,15 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
-type Partner = { name: string; href: string; logo: string; width: number; height: number };
+type Partner = {
+  name: string;
+  href: string;
+  logo: string;
+  width: number;
+  height: number;
+  /** Logo ist schon für dunklen Grund gemacht — dann nicht weiß einfärben. */
+  hellesLogo?: boolean;
+};
 
 /*
   Partner im ersten Bildschirm, über der Zeile „Für Unternehmen, die mit AI
@@ -29,6 +37,17 @@ const PARTNERS: Partner[] = [
     width: 640,
     height: 161,
   },
+  {
+    // Das Logo ist für dunklen Grund gezeichnet: weißer Schriftzug, weißes „d"
+    // im roten Kreis. Der Weiß-Filter der anderen würde genau dieses „d"
+    // verschlucken, der Kreis bliebe eine leere Scheibe.
+    name: "dykiert beratung",
+    href: "https://www.dykiert-beratung.de",
+    logo: "/partner/dykiert.webp",
+    width: 640,
+    height: 115,
+    hellesLogo: true,
+  },
 ];
 
 export function Partners() {
@@ -53,7 +72,11 @@ export function Partners() {
                 width={partner.width}
                 height={partner.height}
                 sizes="160px"
-                className="h-7 w-auto opacity-60 transition duration-300 [filter:brightness(0)_invert(1)] group-hover:opacity-100 group-hover:[filter:none] group-focus-visible:opacity-100 group-focus-visible:[filter:none] sm:h-8"
+                className={
+                  partner.hellesLogo
+                    ? "h-7 w-auto opacity-70 transition duration-300 [filter:grayscale(1)_brightness(1.55)] group-hover:opacity-100 group-hover:[filter:none] group-focus-visible:opacity-100 group-focus-visible:[filter:none] sm:h-8"
+                    : "h-7 w-auto opacity-60 transition duration-300 [filter:brightness(0)_invert(1)] group-hover:opacity-100 group-hover:[filter:none] group-focus-visible:opacity-100 group-focus-visible:[filter:none] sm:h-8"
+                }
               />
             </a>
           </li>
