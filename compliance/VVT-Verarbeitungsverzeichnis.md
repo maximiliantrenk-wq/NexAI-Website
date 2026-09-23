@@ -114,6 +114,19 @@ Empfänger-Kürzel (Drittland-Mechanismus): **Resend** (US, **DPF** — hilfswei
 - **Rechtsgrundlage:** Art. 6(1)f (Bereitstellung von Arbeitsmitteln). **Empfänger:** Hetzner (DE). **Drittland:** keines. **Löschung:** durch den Eigentümer oder mit dem Konto. **Bewusst ohne Regelfrist:** der Zweck — Bereitstellung von Arbeitsmitteln — besteht fort, solange die Unterlage genutzt wird. Stattdessen **jährliche Sichtung**, ob Unterlagen noch gebraucht werden.
 - **Besonderheiten:** Private Dateien sind nur für den Hochladenden sichtbar, auch nicht für die Leitung. Dateien liegen außerhalb des Web-Wurzelverzeichnisses und werden über eine geprüfte Ausgabe-Route ausgeliefert.
 
+### A19 Portal — NexAI Sales Assistent (Training, Gesprächsauswertung, Frage-Antwort)
+- **Zweck:** Schulung der Vertriebspartner (Lernbibliothek, Einwand-Bibliothek), **Training gegen ein Sprachmodell** (Einwand-Simulator), **Auswertung eigener Verkaufsgespräche** anhand selbst eingefügter Mitschriften, Frage-Antwort über die freigegebenen Lektionen, Wissens-Check als Bedingung der Vertriebsfreigabe. **Betroffene:** Vertriebspartner und Team-Mitglieder; bei Mitschriften zusätzlich **Dritte** — die Gesprächspartner auf Kundenseite.
+- **Daten:** `sales_modules` / `sales_lessons` / `sales_objections` (Firmenwissen, Ersteller); `sales_lesson_progress` (wer was gelesen hat); `sales_runs` / `sales_run_turns` / `sales_run_objections` (**Rollenspiele: was der Partner geschrieben hat**, Härtegrad, Branche, Guardrail-Befunde je Zug); `sales_transcripts` (**Mitschrift eines echten Gesprächs**, Titel, Datum, Branche, Zeichenzahl, Bestätigung „keine heimliche Aufnahme", Zahl der geschwärzten Stellen); `sales_reviews` (Auswertung, Phasenbewertung, Zitate, Freigabe an die Leitung); `sales_kb_chunks` (Abschnitte der Lektionen); `sales_kb_messages` (**gestellte Fragen und Antworten**); `sales_quiz_questions` / `sales_quiz_attempts` (**Testergebnisse je Person**); `sales_uploads` (angefangene Video-Uploads).
+- **Rechtsgrundlage:** Art. 6(1)b und Art. 6(1)f (Schulung und Qualifizierung der Vertriebspartner). Für **Mitschriften** stützt sich die Verarbeitung der Daten des Gesprächspartners auf Art. 6(1)f — berechtigtes Interesse an der Qualifizierung des Vertriebs; die Abwägung trägt, weil die Mitschrift **freiwillig gekürzt und geschwärzt** wird, keine Aufzeichnung verwendet werden darf und die Frist kurz ist.
+- **Empfänger:** Hetzner (DE); **OpenAI Ireland Limited / OpenAI L.L.C.** für Rollenspiel, Auswertung und Frage-Antwort. **Drittland:** US — **Art. 46 (SCC)**, siehe [`TIA-OpenAI-Drittlandtransfer.md`](TIA-OpenAI-Drittlandtransfer.md); OpenAI ist **nicht** DPF-zertifiziert.
+- **Löschung:** **Rollenspiele samt Auswertung 12 Monate**; **Mitschriften samt Auswertung 6 Monate** (kürzer, weil sie Daten Dritter enthalten); **Frage-Verlauf 12 Monate**; angefangene Uploads **24 Stunden**. Lektionen, Einwände und Testfragen sind Firmenwissen ohne Regelfrist. Testergebnisse und die Vertriebsfreigabe bleiben als Qualifikationsnachweis, bis das Konto endet.
+- **Besonderheiten:**
+  - **Keine Audioaufnahme, an keiner Stelle.** Das Datenmodell hat dafür keine Spalte; eingegeben wird ausschließlich Text. Vor dem Speichern muss der Partner bestätigen, dass keine heimliche Aufzeichnung verwendet wurde (**§ 201 StGB** trifft ihn persönlich). Die Bestätigung wird serverseitig erzwungen.
+  - **Datenvermeidung vor der Übermittlung:** Ein Abgleich findet E-Mail-Adressen, Telefonnummern, IBANs und Straßenangaben und ersetzt sie auf Wunsch, bevor der Text das Haus verlässt (Art. 5 Abs. 1 lit. c). **Namen erkennt der Abgleich nicht** — das steht so in der Oberfläche.
+  - **Auswertungen sind privat.** Weder Leitung noch Geschäftsführung sehen sie; sichtbar wird nur, was ein Partner **einzeln freigibt**. Grund ist nicht nur Datenschutz: Wer weiß, dass mitgelesen wird, übt keine schwachen Gespräche.
+  - **Leistungsdaten:** Testergebnisse, Durchlaufzahlen und Auswertungen sind Leistungsdaten über Selbstständige — dieselbe Einordnung wie bei `lead_calls` (A15).
+  - Die Frage-Antwort antwortet **ausschließlich** aus freigegebenen Lektionen und prüft jedes Zitat gegen den Quelltext; ohne Treffer wird das Modell gar nicht erst aufgerufen.
+
 ### Löschfristen im Überblick
 
 *Festgelegt am 06.09.2026. Ausschlaggebend ist immer die kürzeste anwendbare Frist; gesetzliche Aufbewahrungspflichten gehen vor.*
@@ -135,6 +148,12 @@ Empfänger-Kürzel (Drittland-Mechanismus): **Resend** (US, **DPF** — hilfswei
 | A17 | Team-Kanal, Direktnachrichten | **12 Monate** | Art. 5(1)e |
 | A18 | Bibliothek | keine Regelfrist, **jährliche Sichtung** | Zweck besteht fort |
 | A10 | Lernbereich | durch die Nutzerin / mit dem Konto | Zweckfortfall |
+| A19 | **Rollenspiele** + Auswertung | **12 Monate** | Leistungsdaten, Zweckfortfall |
+| A19 | **Gesprächsmitschriften** + Auswertung | **6 Monate** | enthalten Daten Dritter |
+| A19 | Frage-Verlauf | 12 Monate | Zweckfortfall |
+| A19 | angefangene Video-Uploads | 24 Stunden | Hausordnung (Plattenplatz) |
+| A19 | Lektionen, Einwände, Testfragen | keine Regelfrist | Firmenwissen |
+| A19 | Testergebnisse, Vertriebsfreigabe | mit dem Konto | Qualifikationsnachweis |
 
 > ⚠️ **Festgelegt ist nicht durchgesetzt.** Technisch erzwungen ist bislang **nur A14** (`nexai-portal/lib/retention.ts`). Für alle übrigen Fristen fehlt ein Löschlauf — bis der existiert, sind diese Werte eine Selbstverpflichtung auf dem Papier. → offener Punkt.
 

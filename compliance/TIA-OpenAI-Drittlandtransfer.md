@@ -34,8 +34,11 @@ Die Übermittlung ist auf Grundlage der **Standardvertragsklauseln** fortführba
 | **B** | **Chat-Agent** auf der Website und beim Kunden | über self-hosted n8n | eigener NexAI-Zugang |
 | **C** | **Social-Media-Agent** | über n8n | eigener NexAI-Zugang |
 | **D** | **NexAI Study** (privater Lernbereich im Portal) | direkt aus dem Portal | eigener NexAI-Zugang |
+| **E** | **NexAI Sales Assistent** (Portal, seit 09/2026) — Einwand-Simulator, Auswertung von Gesprächsmitschriften, Frage-Antwort | direkt aus dem Portal, **derselbe Schlüssel wie D** | eigener NexAI-Zugang |
 
 **Wichtige Abgrenzung:** Für **A** greifen die Einstellungen des NexAI-OpenAI-Kontos **nicht**, wenn Vapi den Aufruf auf eigene Rechnung ausführt. Dann ist OpenAI dort Unterauftragsverarbeiter **von Vapi**, und die Absicherung läuft über den Vapi-DPA. Diese Frage entscheidet, welche Maßnahmen unten überhaupt auf den Sprachassistenten wirken. → O-1.
+
+**Zu E (neu, 23.09.2026):** Hier gehen erstmals **Texte über echte Kundengespräche** an OpenAI — nicht als Aufzeichnung, sondern als Mitschrift, die ein Vertriebspartner selbst eintippt. Drei Dinge begrenzen das Risiko vor der Übermittlung: Es gibt **keinen Audio-Weg** (das Datenmodell kennt keine Dateispalte), ein Abgleich **schwärzt E-Mail, Telefon, IBAN und Adresse** auf Wunsch des Partners, und die **Frist ist mit sechs Monaten die kürzeste im Portal**. Namen bleiben allerdings stehen — der Abgleich kann sie nicht sicher erkennen, und die Oberfläche sagt das ausdrücklich. Die Maßnahmen M-8 (EU-Region) und M-9 (Zero Data Retention) wirken auf E genauso wie auf D und sind hier eher noch dringlicher, weil Kundengespräche betroffen sind.
 
 **Nicht mehr einschlägig:** Die Sprachsynthese lief früher über OpenAI TTS. Seit der Assistenten-Umstellung übernimmt das Vapi selbst (siehe Vapi-TIA).
 
