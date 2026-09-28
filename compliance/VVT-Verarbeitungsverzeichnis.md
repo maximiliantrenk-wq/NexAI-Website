@@ -2,11 +2,11 @@
 
 **Verantwortlicher / Auftragsverarbeiter:** NexAI – Next Generation Artificial Intelligence GbR, Untere Bergstraße 13, 74586 Frankenhardt-Honhardt · Gesellschafter: Maximilian Trenk, Jason Brian Merklein · Kontakt Datenschutz: mbt@nex-a-i.com
 **Stand:** September 2026 · **Aufsichtsbehörde:** LfDI Baden-Württemberg
-**Drittland-Folgenabschätzungen** liegen vor: [Vapi](TIA-Vapi-Drittlandtransfer.md) (deckt Soniox mit ab) · [OpenAI](TIA-OpenAI-Drittlandtransfer.md) · [Resend](TIA-Resend-Drittlandtransfer.md) — für Resend greift Art. 45 (DPF), die SCC-Bewertung liegt als Rückfall bei.
+**Drittland-Folgenabschätzungen** liegen vor: [Vapi](TIA-Vapi-Drittlandtransfer.md) (deckt Soniox mit ab) · [OpenAI](TIA-OpenAI-Drittlandtransfer.md) · [Anthropic](TIA-Anthropic-Drittlandtransfer.md) · [Resend](TIA-Resend-Drittlandtransfer.md) — für Resend greift Art. 45 (DPF), die SCC-Bewertung liegt als Rückfall bei.
 
 > ⚠️ **Kein Rechtsrat.** Vorlage zur Erfüllung der Rechenschaftspflicht (Art. 5 Abs. 2, Art. 30 DSGVO). Laufend fortschreiben; vor Verwendung vom DSB/Anwalt prüfen lassen. Löschfristen = interne Defaults, mit der Datenschutzerklärung abgeglichen.
 
-Empfänger-Kürzel (Drittland-Mechanismus): **Resend** (US, **DPF** — hilfsweise SCC) · **Google** IE/US (DPF/SCC) · **OpenAI** IE/US (**SCC, nicht DPF-zertifiziert** — Prüfung 06.09.2026; No-Training) · **Vapi** (US, SCC+TIA — Orchestrierung **und** Sprachsynthese) · **Soniox** (US, STT, Unterauftragsverarbeiter von Vapi, SCC+TIA über den Vapi-DPA) · **easybell** (DE) · **Hetzner** (DE, Server der **Website**, der self-hosted n8n **und des NexAI-CRM**) · **NexAI-CRM** (self-hosted, DE — eigene zentrale Kundenverwaltung, keine Drittlandübermittlung) · **Explorium** (Datenprovider) · **Web-Push-Infrastruktur** der Browserhersteller (Google/Apple/Mozilla, i. d. R. US — nur Endpunkt und Benachrichtigungsinhalt, siehe A11).
+Empfänger-Kürzel (Drittland-Mechanismus): **Resend** (US, **DPF** — hilfsweise SCC) · **Google** IE/US (DPF/SCC) · **OpenAI** IE/US (**SCC, nicht DPF-zertifiziert** — Prüfung 06.09.2026; No-Training) · **Vapi** (US, SCC+TIA — Orchestrierung **und** Sprachsynthese) · **Soniox** (US, STT, Unterauftragsverarbeiter von Vapi, SCC+TIA über den Vapi-DPA) · **easybell** (DE) · **Hetzner** (DE, Server der **Website**, der self-hosted n8n **und des NexAI-CRM**) · **NexAI-CRM** (self-hosted, DE — eigene zentrale Kundenverwaltung, keine Drittlandübermittlung) · **Anthropic** (US, Sprachmodell des E-Mail-Agenten, **SCC, nicht DPF-auffindbar** — Prüfung 28.09.2026) · **Explorium** (Datenprovider) · **Web-Push-Infrastruktur** der Browserhersteller (Google/Apple/Mozilla, i. d. R. US — nur Endpunkt und Benachrichtigungsinhalt, siehe A11).
 
 ---
 
@@ -66,6 +66,23 @@ Empfänger-Kürzel (Drittland-Mechanismus): **Resend** (US, **DPF** — hilfswei
 ---
 
 ---
+
+### A20 E-Mail-Agent (eigene Korrespondenz)
+- **Zweck:** Sichtung, Einstufung und Betrugspruefung der eigenen geschaeftlichen E-Mail, Antwortentwuerfe zur Freigabe, Erinnerung an unbeantwortete Nachrichten, Durchsuchbarkeit des eigenen Archivs. **Kein Kundenprodukt**, Werkzeug fuer einen einzelnen Nutzer auf seinem Rechner.
+- **Betroffene:** Absender und Empfaenger der Korrespondenz (Kunden, Interessenten, Partner, Bewerber, Dienstleister, Behoerden); **mittelbar Dritte**, die in Texten oder Anhaengen vorkommen.
+- **Daten:** Kopfdaten (Absender, Empfaenger, Kopie, Betreff, Zeitpunkt, Pruefergebnisse des Empfangsservers), **vollstaendiger Nachrichtentext**, **Anhaenge vollstaendig**; daraus erzeugt: Einstufung, Kurzfassung, erkannte Fristen, Betrugsbewertung, Antwortentwuerfe, Rueckfragen, Zusammenfassungen verlinkter Seiten, Stilprofil aus eigenen gesendeten Nachrichten.
+- **Rechtsgrundlage:** Art. 6(1)f (Organisation der eigenen Korrespondenz, Schutz vor Betrugsversuchen); bei Vertragskorrespondenz zusaetzlich Art. 6(1)b; bei Bewerbungen Art. 6(1)b i. V. m. § 26 BDSG.
+- **Empfaenger:** **Anthropic PBC** (US, Sprachmodell: Einstufung, Entwuerfe, Linkzusammenfassungen); **Google Workspace** (Postfaecher, ohnehin A2/A8); **NexAI-CRM (self-hosted DE)** nur nach ausdruecklicher Freigabe je Kontakt; **NexTime (DE)** nur Abfrage freier Zeiten, ohne Personenbezug. Verarbeitung und Speicherung sonst **ausschliesslich lokal auf dem Rechner von Maximilian Trenk**.
+- **Drittland:** USA ueber Anthropic → **Art. 46 SCC** (Anthropic war am 28.09.2026 in der DPF-Teilnehmerliste **nicht auffindbar**, also wie OpenAI kein Art. 45) → [TIA](TIA-Anthropic-Drittlandtransfer.md).
+- **Loeschung:** **keine Regelfrist.** Die lokale Kopie besteht, solange das Postfach besteht; sie ist eine Zweitschrift dessen, was ohnehin bei Google liegt. Geloescht wird auf Verlangen einer betroffenen Person oder auf Entscheidung des Verantwortlichen, technisch umgesetzt ueber `npm run cli vergessen <adresse> --wirklich` (loescht Nachrichten, Anhaenge, Einstufungen, Entwuerfe, Korrekturen und Suchindex). Auskunft nach Art. 15 ueber `npm run cli auskunft <adresse>`.
+- **TOMs:** verschluesselte lokale Datenbank (SQLCipher, Schluessel im Systemschluesselbund), Verzeichnis 700 / Datei 600, Postfachzugang ueber App-Passwoerter im Schluesselbund, Oberflaeche nur mit Zugangstoken, Nachrichteninhalt wird nie als HTML dargestellt und laedt nichts nach.
+- **Besonderheiten:**
+  - **Art. 9 ist nicht ausgeschlossen.** Anhaenge gehen vollstaendig an das Modell. Schickt jemand eine Arbeitsunfaehigkeitsbescheinigung oder Vergleichbares, verlassen diese Daten mit der Einstufung die EU. Der Agent kann das vorher nicht zuverlaessig erkennen. **Einzige wirksame Abhilfe waere der Verarbeitungsort Frankfurt** (TIA Schritt 4.3).
+  - **Zwei Postfaecher, eines privat.** Das private fiele fuer sich unter Art. 2 Abs. 2 lit. c; da es im selben System verarbeitet wird, wird es nach dem strengeren Massstab behandelt.
+  - **Nichts wird ohne Freigabe versendet.** Automatischer Versand nur an Adressen einer selbst gepflegten Freigabeliste und nur bei Entwuerfen ohne offene Luecke und ohne Warnung. Die Liste ist derzeit leer.
+  - **Art. 50 AI Act, offener Punkt:** Sobald tatsaechlich automatisch versendet wird, geht Text an einen Menschen, der von einem KI-System stammt. Ob das eine Kennzeichnungspflicht ausloest, ist vor der ersten Nutzung der Freigabeliste zu klaeren. Solange jeder Entwurf einzeln freigegeben wird, ist Max der Absender.
+  - **Links aus Nachrichten** werden nur aus unverdaechtigen, nicht werblichen Nachrichten abgerufen, nie aus dem eigenen Netz, ohne Cookies und ohne Anmeldung; Tracking- und Abmeldelinks nie.
+  - **Keine automatisierte Entscheidung** im Sinne von Art. 22: Einstufungen steuern nur die Anzeige, jede Aussenwirkung haengt an einer Freigabe.
 
 ## Portal app.nex-a-i.com (A11–A18)
 
@@ -148,6 +165,7 @@ Empfänger-Kürzel (Drittland-Mechanismus): **Resend** (US, **DPF** — hilfswei
 | A17 | Team-Kanal, Direktnachrichten | **12 Monate** | Art. 5(1)e |
 | A18 | Bibliothek | keine Regelfrist, **jährliche Sichtung** | Zweck besteht fort |
 | A10 | Lernbereich | durch die Nutzerin / mit dem Konto | Zweckfortfall |
+| A20 | **E-Mail-Kopie samt Anhaengen** | **keine Regelfrist**, Loeschung auf Verlangen | Zweitschrift des Postfachs, [A20](#a20-e-mail-agent-eigene-korrespondenz) |
 | A19 | **Rollenspiele** + Auswertung | **12 Monate** | Leistungsdaten, Zweckfortfall |
 | A19 | **Gesprächsmitschriften** + Auswertung | **6 Monate** | enthalten Daten Dritter |
 | A19 | Frage-Verlauf | 12 Monate | Zweckfortfall |
