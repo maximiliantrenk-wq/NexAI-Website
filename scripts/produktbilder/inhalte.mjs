@@ -115,10 +115,10 @@ export const produkte = {
     objektIcon: "messages-square",
     tagline: ["Verkaufen üben,", "bevor es zählt."],
     features: [
-      { icon: "library", titel: "Lernbibliothek", text: "Ihre Videos, Texte und Leitfäden an einem Ort." },
+      { icon: "upload", titel: "Eigene Videos", text: "Selbst hochladen, auch mehrstündige Schulungen." },
+      { icon: "library", titel: "Eigener Stoff", text: "Texte, Leitfäden und Anhänge selbst einpflegen." },
       { icon: "messages-square", titel: "Rollenspiel", text: "Einwände üben, vier Härtegrade." },
       { icon: "clipboard-check", titel: "Auswertung", text: "Was lief gut, woran lag es, welche Lektion hilft." },
-      { icon: "quote", titel: "Mit Beleg", text: "Jede Aussage mit Fundstelle aus dem Gespräch." },
       { icon: "shield-check", titel: "Freigabe zum Kunden", text: "Erst nach bestandenem Wissens-Check." },
     ],
     rechts:
