@@ -5,7 +5,7 @@
     "titleRest": "that automate your processes, effortlessly",
     "subtitle": "We build intelligent AI agents: voice, chat, sales and automation, tailored to your company and fully integrated into your workflows.",
     "ctaPrimary": "Free intro call",
-    "ctaSecondary": "Explore services",
+    "ctaSecondary": "Explore products",
     "ctaDemo": "Live demo: call our AI now",
     "ctaRoi": "Calculate ROI",
     "demoPhone": "+49 7959 3100191",
@@ -172,7 +172,7 @@
       "title": "Ready for your first digital employee?",
       "description": "Let's find out where AI has the biggest leverage in your business, in a free, no-obligation call.",
       "primary": "Free intro call",
-      "secondary": "Explore services"
+      "secondary": "Explore products"
     }
   }
 }

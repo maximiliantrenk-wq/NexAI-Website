@@ -2,7 +2,6 @@ export type NavLink = { href: string; key: string };
 export type NavEntry = NavLink | { key: string; children: readonly NavLink[] };
 
 export const navItems: readonly NavEntry[] = [
-  { href: "/services", key: "services" },
   { href: "/produkte", key: "products" },
   { href: "/pricing", key: "pricing" },
   { href: "/roi-rechner", key: "roiRechner" },
@@ -18,7 +17,6 @@ export const navItems: readonly NavEntry[] = [
 
 export const footerNav = {
   product: [
-    { href: "/services", key: "services" },
     { href: "/produkte", key: "products" },
     { href: "/pricing", key: "pricing" },
   ],

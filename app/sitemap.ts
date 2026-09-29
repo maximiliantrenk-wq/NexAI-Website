@@ -28,7 +28,6 @@ function contentFiles(path: string): string[] {
     return ["app/[locale]/vertriebspartner/[role]/page.tsx", ...messages("recruiting"), "content/commission.ts"];
   }
   const einfach: Record<string, string[]> = {
-    "/services": ["app/[locale]/services/page.tsx", ...messages("services")],
     "/produkte": ["app/[locale]/produkte/page.tsx", ...messages("products"), "content/products.ts"],
     "/pricing": ["app/[locale]/pricing/page.tsx", ...messages("pricing")],
     "/about": ["app/[locale]/about/page.tsx", ...messages("about")],
@@ -51,7 +50,6 @@ function lastModified(path: string): string {
 
 const paths = [
   "",
-  "/services",
   "/produkte",
   "/pricing",
   "/about",

@@ -117,6 +117,42 @@
           "In your brand and your colours",
           "Connected to your systems"
         ]
+      },
+      {
+        "slug": "sales-assistent",
+        "tag": "Sales",
+        "title": "NexAI Sales Assistant",
+        "summary": "A training space for your sales team: practise, review, improve.",
+        "result": "Conversations that land",
+        "what": "The Sales Assistant brings together what makes a sales team better: a learning library with your own videos and texts, a role play against the AI that drills objections at four difficulty levels, and a review of real conversation transcripts. Plus a question-and-answer over your own material and a knowledge check that grants clearance for customer contact.",
+        "benefit": "New people get confident faster, and they practise in a role play instead of on a real customer. Every review says what went wrong and points to the lesson that covers it.",
+        "example": "A sales rep drills the objection “too expensive” at the hard level. Afterwards the review is there: a score per conversation phase, three levers for next time, quoted passages from the rep's own words and the matching lesson.",
+        "features": [
+          "Learning library with videos, texts and attachments",
+          "Role play against the AI, four difficulty levels",
+          "Review of real conversation transcripts",
+          "Answers backed by quotes from your own material",
+          "Knowledge check with clearance for customer contact",
+          "Reviews stay private, the rep decides what to share"
+        ]
+      },
+      {
+        "slug": "mail-agent",
+        "tag": "Email",
+        "title": "NexAI Mail Agent",
+        "summary": "An assistant for your inbox: reads along, flags what matters, drafts the reply.",
+        "result": "Nothing slips through",
+        "what": "The Mail Agent reads your inbox several times a day, sums up what matters, pulls out deadlines and appointments and checks every message for fraud attempts. For every mail that needs an answer it puts a finished draft in front of you. Nothing goes out without your approval.",
+        "benefit": "You see in two minutes what the day needs instead of sorting a hundred messages. And you answer faster, because the draft is already there, in your own tone and with the figures from your own records.",
+        "example": "In the morning the briefing is ready: three mails need an answer, one deadline runs out on Friday, and a supposed invoice is a fraud attempt, spotted by seven signals including a sender address that merely resembles the real one. The three answers sit next to it as drafts.",
+        "features": [
+          "Briefing several times a day, the noise in one line",
+          "Deadlines and appointments as their own block",
+          "Reply drafts, nothing sent without approval",
+          "Fraud and phishing check",
+          "Reminds you of mails left unanswered",
+          "Searches your whole archive in seconds"
+        ]
       }
     ],
     "cta": {

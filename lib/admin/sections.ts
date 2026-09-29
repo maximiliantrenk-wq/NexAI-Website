@@ -22,15 +22,11 @@ export const SECTIONS: Section[] = [
     description: "Die große Überschrift oben, die Abschnitte darunter, Zahlen und Knöpfe.",
   },
   {
-    id: "services",
-    title: "Leistungen",
-    description: "Die Seite „Leistungen“ mit den einzelnen Angeboten.",
-  },
-  {
     id: "products",
     title: "Produkte",
     description:
-      "Die sechs Produktseiten: Voice-Agent, Chat-Agent, NexAI Kalender, NexAI CRM, Automatisierung, NexAI App.",
+      "Die acht Produktseiten: Voice-Agent, Chat-Agent, NexAI Kalender, NexAI CRM, Automatisierung, "
+      + "NexAI App, NexAI Sales Assistent, NexAI Mail Agent.",
   },
   {
     id: "pricing",

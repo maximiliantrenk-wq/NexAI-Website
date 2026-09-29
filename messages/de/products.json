@@ -117,6 +117,42 @@
           "In Ihrer Marke und Ihren Farben",
           "Verbunden mit Ihren Systemen"
         ]
+      },
+      {
+        "slug": "sales-assistent",
+        "tag": "Vertrieb",
+        "title": "NexAI Sales Assistent",
+        "summary": "Ein Trainingsbereich für Ihr Vertriebsteam: üben, auswerten, besser werden.",
+        "result": "Gespräche, die sitzen",
+        "what": "Der Sales Assistent bündelt an einem Ort, was Vertrieb besser macht: eine Lernbibliothek mit Ihren eigenen Videos und Texten, ein Rollenspiel gegen die AI, in dem Einwände in vier Härtegraden geübt werden, und eine Auswertung echter Gesprächsmitschriften. Dazu eine Frage-Antwort über Ihre Unterlagen und ein Wissens-Check, der die Freigabe für den Kundenkontakt vergibt.",
+        "benefit": "Neue Leute werden schneller sicher, und geübt wird im Rollenspiel statt am echten Kunden. Jede Auswertung sagt konkret, woran es lag, und verweist auf die Lektion, die dazu passt.",
+        "example": "Ein Verkäufer übt den Einwand „zu teuer“ auf der Stufe hart. Nach dem Gespräch steht die Auswertung da: eine Bewertung je Gesprächsphase, drei Hebel für das nächste Mal, wörtlich belegte Stellen aus dem eigenen Gespräch und die passende Lektion.",
+        "features": [
+          "Lernbibliothek mit Videos, Texten und Anhängen",
+          "Rollenspiel gegen die AI, vier Härtegrade",
+          "Auswertung echter Gesprächsmitschriften",
+          "Antworten mit Beleg aus Ihren eigenen Unterlagen",
+          "Wissens-Check mit Freigabe für den Kundenkontakt",
+          "Auswertungen bleiben privat, Freigabe entscheidet der Verkäufer"
+        ]
+      },
+      {
+        "slug": "mail-agent",
+        "tag": "E-Mail",
+        "title": "NexAI Mail Agent",
+        "summary": "Ein Assistent fürs Postfach: liest mit, meldet das Wichtige, schreibt die Antwort vor.",
+        "result": "Kein Anliegen bleibt liegen",
+        "what": "Der Mail Agent liest Ihr Postfach mehrmals am Tag, fasst zusammen, was wichtig ist, hebt Fristen und Termine heraus und prüft jede Nachricht auf Betrugsversuche. Zu jeder Mail, die eine Antwort braucht, legt er einen fertigen Entwurf vor. Verschickt wird nur, was Sie freigeben.",
+        "benefit": "Sie sehen in zwei Minuten, was der Tag verlangt, statt hundert Nachrichten zu sortieren. Und Sie antworten schneller, weil der Entwurf schon dasteht, im eigenen Ton und mit den Zahlen aus Ihren Unterlagen.",
+        "example": "Morgens steht das Briefing bereit: drei Mails brauchen eine Antwort, eine Frist läuft am Freitag ab, und eine angebliche Rechnung ist ein Betrugsversuch, erkannt an sieben Merkmalen, darunter eine Absenderadresse, die der echten nur ähnlich sieht. Die drei Antworten liegen als Entwurf daneben.",
+        "features": [
+          "Briefing mehrmals am Tag, Unwichtiges in einer Zeile",
+          "Fristen und Termine als eigener Block",
+          "Antwortentwürfe, verschickt wird nur nach Freigabe",
+          "Prüfung auf Betrug und Phishing",
+          "Erinnert an Mails, die ohne Antwort geblieben sind",
+          "Durchsucht das ganze Archiv in Sekunden"
+        ]
       }
     ],
     "cta": {

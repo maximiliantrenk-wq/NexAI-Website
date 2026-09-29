@@ -109,4 +109,54 @@ export const produkte = {
         <div class="push" style="top:450px"><div class="pi">${icon("download", { size: 18, stroke: "#fff", width: 2 })}</div><div><div class="pn">Zum Home-Bildschirm</div><div class="pd">Installieren ohne App-Store, in Sekunden.</div></div><span class="pz">Tipp</span></div>
       </div>`,
   },
+  "sales-assistent": {
+    name: "Sales Assistent",
+    markeIcon: "graduation-cap",
+    objektIcon: "messages-square",
+    tagline: ["Verkaufen üben,", "bevor es zählt."],
+    features: [
+      { icon: "library", titel: "Lernbibliothek", text: "Ihre Videos, Texte und Leitfäden an einem Ort." },
+      { icon: "messages-square", titel: "Rollenspiel", text: "Einwände üben, vier Härtegrade." },
+      { icon: "clipboard-check", titel: "Auswertung", text: "Was lief gut, woran lag es, welche Lektion hilft." },
+      { icon: "quote", titel: "Mit Beleg", text: "Jede Aussage mit Fundstelle aus dem Gespräch." },
+      { icon: "shield-check", titel: "Freigabe zum Kunden", text: "Erst nach bestandenem Wissens-Check." },
+    ],
+    rechts:
+      kopf("messages-square", "Rollenspiel · Einwand „zu teuer“", "Stufe: hart · Branche: Handwerk", "Ausgewertet") +
+      `<div class="karte"><div class="abschnitt" style="margin-top:0">Gesprächsverlauf</div>` +
+      `<div class="zeile"><span class="zt">Kunde</span><span class="zd">„Das ist deutlich zu teuer für uns.“</span></div>` +
+      `<div class="zeile"><span class="zt">Sie</span><span class="zd">„Womit vergleichen Sie gerade, damit ich es einordnen kann?“</span></div>` +
+      `<div class="zeile"><span class="zt">Kunde</span><span class="zd">„Mit dem Angebot vom Wettbewerb, das ist günstiger.“</span></div>` +
+      `<div class="zeile"><span class="zt">Sie</span><span class="zd">„Verstehe. Was kostet Sie ein verpasster Anruf am Tag?“</span></div></div>` +
+      `<div class="abschnitt">Auswertung</div>` +
+      ereignis("thumbs-up", "Nachgefragt statt gerechtfertigt", "Bedarf geöffnet, bevor über den Preis geredet wurde", "Hebel 1", chip("Stark", "ok")) +
+      ereignis("circle-alert", "Nutzen zu spät beziffert", "Die Rechnung kam erst im vierten Zug", "Hebel 2", chip("Üben", "lila")) +
+      ereignis("book-open", "Passende Lektion", "Preisgespräch: vom Einwand zur Rechnung", "Modul 3", chip("Vorgeschlagen", "blau")) +
+      `<div class="stats">${stat("Gesprächsphasen erreicht", "4 von 5")}${stat("Belegte Fundstellen", "5")}${stat("Geübte Einwände", "12")}</div>`,
+  },
+
+  "mail-agent": {
+    name: "Mail Agent",
+    markeIcon: "mail",
+    objektIcon: "inbox",
+    tagline: ["Das Postfach liest mit.", "Antworten liegen bereit."],
+    features: [
+      { icon: "sun", titel: "Briefing am Morgen", text: "Was wichtig ist, in einer Übersicht." },
+      { icon: "calendar-clock", titel: "Fristen zuerst", text: "Termine und Fristen als eigener Block." },
+      { icon: "pen-line", titel: "Antwort liegt bereit", text: "Fertiger Entwurf in Ihrem Ton." },
+      { icon: "shield-alert", titel: "Betrug erkannt", text: "Gefälschte Absender fallen auf." },
+      { icon: "send", titel: "Erst auf Ihr Wort", text: "Verschickt wird nur, was Sie freigeben." },
+    ],
+    rechts:
+      kopf("inbox", "Briefing · Dienstag, 7:30 Uhr", "32 neue Nachrichten · 3 brauchen Sie", "Bereit") +
+      `<div class="abschnitt" style="margin-top:0">Wichtig heute</div>` +
+      ereignis("file-text", "Angebot Dachdecker Berger", "Fragt nach Termin diese Woche · Entwurf liegt bereit", "6:41", chip("Antwort offen", "lila")) +
+      ereignis("calendar-clock", "Frist: Rückmeldung Förderantrag", "Läuft am Freitag ab · aus dem Anhang gelesen", "Fr", chip("Frist", "blau")) +
+      ereignis("shield-alert", "Angebliche Rechnung 4711", "Absender ähnelt der echten Adresse · 7 Auffälligkeiten", "5:02", chip("Betrug", "warn")) +
+      `<div class="abschnitt">Antwortentwurf</div>` +
+      `<div class="karte"><div class="kn">An: berger@beispiel-dach.de</div>` +
+      `<div class="zd" style="margin-top:8px">Guten Tag Herr Berger,<br>vielen Dank für Ihre Nachricht. Donnerstag um 14:00 Uhr passt bei uns.<br>Sie bekommen die Bestätigung direkt im Anschluss.</div>` +
+      `<div class="join" style="margin-top:12px">${chip("Freigeben und senden", "ok")}${chip("Bearbeiten")}${chip("Später")}</div></div>` +
+      `<div class="stats">${stat("Zusammengefasst", "29")}${stat("Brauchen Sie", "3")}${stat("Betrug geblockt", "1")}</div>`,
+  },
 };

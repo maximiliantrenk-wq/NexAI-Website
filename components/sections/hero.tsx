@@ -86,7 +86,7 @@ export function Hero() {
               </Button>
             )}
             <Button
-              href="/services"
+              href="/produkte"
               size="lg"
               variant="secondary"
               className="w-full sm:w-auto"

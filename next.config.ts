@@ -13,6 +13,9 @@ const nextConfig: NextConfig = {
       // Produkte umbenannt (07.09.2026): alte Adressen dauerhaft weiterleiten.
       { source: "/:locale(de|en)/produkte/vertriebs-agent", destination: "/:locale/produkte/nexai-crm", permanent: true },
       { source: "/:locale(de|en)/produkte/social-media-agent", destination: "/:locale/produkte/nexai-kalender", permanent: true },
+      // Leistungsseite entfaellt (30.09.2026): die Produkte sagen dasselbe mit Bildern.
+      { source: "/:locale(de|en)/services", destination: "/:locale/produkte", permanent: true },
+      { source: "/services", destination: "/de/produkte", permanent: true },
     ];
   },
 };

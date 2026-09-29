@@ -6,6 +6,8 @@ export const productSlugs = [
   "nexai-crm",
   "automatisierung",
   "nexai-app",
+  "sales-assistent",
+  "mail-agent",
 ] as const;
 
 export type ProductSlug = (typeof productSlugs)[number];
@@ -43,4 +45,6 @@ export const productImages: Record<string, string> = {
   "nexai-crm": "/products/nexai-crm.webp",
   automatisierung: "/products/automatisierung.webp",
   "nexai-app": "/products/nexai-app.webp",
+  "sales-assistent": "/products/sales-assistent.webp",
+  "mail-agent": "/products/mail-agent.webp",
 };

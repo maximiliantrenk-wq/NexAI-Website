@@ -41,7 +41,7 @@ export function CTASection({
                 {t("primary")}
               </Button>
               {hasSecondary && (
-                <Button href="/services" size="lg" variant="secondary">
+                <Button href="/produkte" size="lg" variant="secondary">
                   {t("secondary")}
                 </Button>
               )}
