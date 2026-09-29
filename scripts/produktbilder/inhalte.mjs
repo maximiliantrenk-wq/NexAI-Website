@@ -113,13 +113,13 @@ export const produkte = {
     name: "Sales Assistent",
     markeIcon: "graduation-cap",
     objektIcon: "messages-square",
-    tagline: ["Verkaufen üben,", "bevor es zählt."],
+    tagline: ["Gefüllt geliefert.", "Verkaufen üben, bevor es zählt."],
     features: [
-      { icon: "upload", titel: "Eigene Videos", text: "Selbst hochladen, auch mehrstündige Schulungen." },
-      { icon: "library", titel: "Eigener Stoff", text: "Texte, Leitfäden und Anhänge selbst einpflegen." },
+      { icon: "library", titel: "Kommt gefüllt", text: "Einwandbehandlung, Gesprächsführung, Abschluss." },
+      { icon: "shield-question-mark", titel: "Einwand-Bibliothek", text: "Fertige Antworten und Spickzettel fürs Telefonat." },
       { icon: "messages-square", titel: "Rollenspiel", text: "Einwände üben, vier Härtegrade." },
       { icon: "clipboard-check", titel: "Auswertung", text: "Was lief gut, woran lag es, welche Lektion hilft." },
-      { icon: "shield-check", titel: "Freigabe zum Kunden", text: "Erst nach bestandenem Wissens-Check." },
+      { icon: "upload", titel: "Eigenes ergänzen", text: "Eigene Videos und Unterlagen jederzeit dazu." },
     ],
     rechts:
       kopf("messages-square", "Rollenspiel · Einwand „zu teuer“", "Stufe: hart · Branche: Handwerk", "Ausgewertet") +
