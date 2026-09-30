@@ -3,6 +3,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { useTranslations } from "next-intl";
 import { PageHero } from "@/components/sections/page-hero";
 import { ProductGrid } from "@/components/sections/product-grid";
+import { CustomAgent } from "@/components/sections/custom-agent";
 import { CTASection } from "@/components/sections/cta";
 
 export async function generateMetadata({
@@ -35,6 +36,7 @@ function ProdukteContent() {
         description={t("description")}
       />
       <ProductGrid />
+      <CustomAgent />
       <CTASection namespace="Products.cta" />
     </>
   );
