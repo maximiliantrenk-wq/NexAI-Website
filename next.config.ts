@@ -16,6 +16,10 @@ const nextConfig: NextConfig = {
       // Leistungsseite entfaellt (30.09.2026): die Produkte sagen dasselbe mit Bildern.
       { source: "/:locale(de|en)/services", destination: "/:locale/produkte", permanent: true },
       { source: "/services", destination: "/de/produkte", permanent: true },
+      // Am Telefon gesagt (Art.-14-Hinweis der Lead-Recherche im Portal): „nex-a-i.com/datenschutz".
+      // Die Seite heisst intern /privacy; ohne Weiterleitung endete der Hinweis auf einer 404.
+      { source: "/datenschutz", destination: "/de/privacy", permanent: false },
+      { source: "/:locale(de|en)/datenschutz", destination: "/:locale/privacy", permanent: false },
     ];
   },
 };
