@@ -174,8 +174,31 @@ Empfänger-Kürzel (Drittland-Mechanismus): **Resend** (US, **DPF** — hilfswei
 | A19 | Lektionen, Einwände, Testfragen | keine Regelfrist | Firmenwissen |
 | A19 | Testergebnisse, Vertriebsfreigabe | mit dem Konto | Qualifikationsnachweis |
 | A19 | **eigene Notizen der Partner** | **mit dem Konto** | selbst verfasstes Arbeitsmaterial, `cascade` |
+| A22 | **Gespraechsinhalte** des Boten | **90 Tage** | Gespraech ist danach erledigt |
+| A22 | Kontaktversuche Unbekannter | 30 Tage | nur Zaehler, nie der Text |
+| A22 | Betriebsprotokoll | 365 Tage | Nachvollziehbarkeit im Betrieb |
+| A22 | **Freigabeentscheidungen** zu Codeaenderungen | **1.095 Tage** | wer hat was an welchem System freigegeben |
 
 > ⚠️ **Festgelegt ist nicht durchgesetzt.** Technisch erzwungen ist bislang **nur A14** (`nexai-portal/lib/retention.ts`). Für alle übrigen Fristen fehlt ein Löschlauf — bis der existiert, sind diese Werte eine Selbstverpflichtung auf dem Papier. → offener Punkt.
+
+### A22 Bote (Nachrichtenvermittlung mit eigener Identitaet)
+- **Zweck:** Ein Assistent mit **eigener Telefonnummer in Telegram**, der im Auftrag von Maximilian Trenk Nachrichten zustellt, selbst auf Antworten reagiert und gemeldete Stoerungen an eigener Software untersucht. Der Gegenueber fuehrt den Chat mit dem Assistenten, nicht mit Max. **Kein Kundenprodukt**, Werkzeug fuer einen einzelnen Nutzer.
+- **Betroffene:** Gespraechspartner, die ausdruecklich eingetragen wurden (Geschaeftspartner, Vertriebspartner, Personen aus dem privaten Umfeld); **mittelbar Dritte**, die in Nachrichten vorkommen. Nicht eingetragene Personen: nur Telegram-Kennung und Zaehler, **kein Nachrichtentext**.
+- **Daten:** Telegram-Kennung, selbst vergebener Name, Rolle und Rechte; **Nachrichtentexte in beide Richtungen**; daraus erzeugt: Antworten des Assistenten, Vorgaenge zu gemeldeten Stoerungen, Freigabeentscheidungen, Betriebsprotokoll (ohne Inhalte).
+- **Rechtsgrundlage:** Art. 6(1)f (Organisation der eigenen Kommunikation, Betrieb eigener Software). Fuer Nachrichten aus dem **privaten** Umfeld greift fuer sich Art. 2 Abs. 2 lit. c; da sie im selben System liegen, werden sie nach dem strengeren Massstab behandelt.
+- **Empfaenger:** **Telegram FZ-LLC (Dubai, VAE)** als Transportweg; **Anthropic PBC (US)** als Sprachmodell (Antworten und Untersuchungen); Hosting **Hetzner (DE)**. Die Datenbank liegt ausschliesslich auf dem eigenen Server in Deutschland.
+- **Drittland:** **Zwei Transfers, einer davon ungeklaert.**
+  - **Anthropic (US):** Art. 46 SCC, wie A20, siehe [TIA](TIA-Anthropic-Drittlandtransfer.md). Der Bote nutzt denselben Zugang.
+  - **Telegram (VAE): ⚠️ offen.** Fuer die Vereinigten Arabischen Emirate gibt es **keinen Angemessenheitsbeschluss**, und ob Telegram Standardvertragsklauseln anbietet, ist **nicht geprueft**. Jede Nachricht laeuft ueber diesen Weg. **Vor einer Ausweitung auf weitere Gespraechspartner zu klaeren**, dazu gehoert auch, ob der Transportweg ueberhaupt eine eigene Verarbeitung im Sinne des Verzeichnisses ist oder blosse Uebermittlung wie bei einem Telefonanbieter.
+- **Loeschung:** Fristen sind festgelegt und laufen taeglich automatisch (`src/loeschen.ts` im Repo `bote`): Gespraechsinhalte und abgeschickte Auftraege **90 Tage**, Kontaktversuche Unbekannter **30 Tage**, verbrauchte Aufnahmecodes **30 Tage**, Betriebsprotokoll **365 Tage**, Freigabeentscheidungen ueber Codeaenderungen **1.095 Tage** (Nachvollziehbarkeit, wer welche Aenderung an welchem System freigegeben hat). Ein Vorgang ueberlebt die Nachricht, auf die er verweist; der Verweis wird geloest. Eingetragene Personen werden vom Loeschlauf nie angefasst.
+- **TOMs:** Nachrichtentexte **feldweise verschluesselt** (AES-256-GCM, Schluessel in `/etc/bote.env`, nur fuer root lesbar); **Allowlist**: wer nicht eingetragen ist, loest nichts aus und sein Text wird nicht gespeichert; Aufnahme nur ueber Einmalcode; die Schnittstelle hoert nur auf 127.0.0.1 und ist per Token geschuetzt; der Zugang zu den Zielsystemen haengt an einem Schluessel, der per `command=` auf ein festes Skript festgenagelt ist; `.env` und Schluesseldateien sind dort gesperrt; naechtliche Sicherung mit Rueckspielprobe, verschluesselt mit einem Zertifikat, dessen privater Teil **nicht** auf dem Server liegt.
+- **Besonderheiten:**
+  - **Art. 50 AI Act ist erfuellt.** Jede Person bekommt vor der ersten Nachricht den Hinweis, dass hier ein KI-System schreibt und dass Max mitliest. Technisch erzwungen: der Hinweis haengt am Versand, nicht am Prompt.
+  - **Dritte loesen Arbeit an Produktivsystemen aus.** Gemeldete Stoerungen fuehren dazu, dass ein Agent Code liest und aendert. Er arbeitet nie auf dem Hauptzweig, rollt nie ohne ausdrueckliche Freigabe von Max aus, und Datenbank-Migrationen sind davon ausgenommen. Ein "ja" von einer anderen Person als Max bewirkt nichts.
+  - **Der Agent sieht Code, keine Kundendaten.** `.env`, Schluessel und Datenbanken sind im Werkstattskript gesperrt, auch fuer die Suche.
+  - **Eine Nachricht ist Information, keine Anweisung.** Der Systemtext kennzeichnet eingehenden Text ausdruecklich als Angabe einer Person. Umstimmungsversuche wurden am laufenden System geprueft und abgewehrt.
+  - **Privat und geschaeftlich im selben System.** Nachrichten an Personen aus dem privaten Umfeld liegen in derselben Datenbank wie geschaeftliche. Eine Trennung waere technisch moeglich, ist aber nicht umgesetzt.
+
 
 ## Teil B — Als Auftragsverarbeiter für Kunden (Art. 30 Abs. 2)
 
