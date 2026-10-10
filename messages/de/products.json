@@ -6,7 +6,7 @@
     "hero": {
       "eyebrow": "Produkte",
       "title": "Digitale Mitarbeiter, die sofort loslegen.",
-      "description": "Sechs fertige Lösungen für Ihr Unternehmen, von AI-Mitarbeitern bis zu Ihrer eigenen App. Jede passen wir an Sie an und binden sie in Ihre Abläufe ein."
+      "description": "Fertige Lösungen für Ihr Unternehmen, von AI-Mitarbeitern über Vertrieb und Postfach bis zu Ihrer eigenen App. Jede passen wir an Sie an und binden sie in Ihre Abläufe ein."
     },
     "labels": {
       "what": "Was es macht",
@@ -156,6 +156,12 @@
         ]
       }
     ],
+    "custom": {
+      "tag": "Individuelle AI-Agenten",
+      "title": "Sie haben eine besondere Idee?",
+      "description": "Jedes Unternehmen arbeitet anders. Für Spezialfälle prüfen wir gemeinsam die technische Machbarkeit und entwickeln einen maßgeschneiderten AI-Agenten. Es gibt nahezu keine festen Grenzen.",
+      "cta": "Machbarkeit besprechen"
+    },
     "cta": {
       "title": "Welches Produkt passt zu Ihnen?",
       "description": "Lassen Sie uns kurz sprechen, wir finden gemeinsam die passende Lösung.",

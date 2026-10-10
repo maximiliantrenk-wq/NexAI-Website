@@ -6,7 +6,7 @@
     "hero": {
       "eyebrow": "Products",
       "title": "Digital employees that start right away.",
-      "description": "Six ready-made solutions for your business, from AI employees to your own app. Each one tailored to you and built into your workflows."
+      "description": "Ready-made solutions for your business, from AI employees through sales and inbox to your own app. Each one tailored to you and built into your workflows."
     },
     "labels": {
       "what": "What it does",
@@ -156,6 +156,12 @@
         ]
       }
     ],
+    "custom": {
+      "tag": "Custom AI Agents",
+      "title": "Got a special idea?",
+      "description": "Every business works differently. For special cases we assess technical feasibility together and build a fully bespoke AI agent. There are almost no fixed limits.",
+      "cta": "Discuss feasibility"
+    },
     "cta": {
       "title": "Which product fits you?",
       "description": "Let's have a quick chat. Together we'll find the right solution.",

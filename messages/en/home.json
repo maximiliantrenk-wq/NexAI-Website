@@ -107,56 +107,6 @@
         }
       ]
     },
-    "products": {
-      "eyebrow": "Products",
-      "title": "Digital employees for every area.",
-      "description": "Ready-made solutions that take work off your team, from phone and appointments to customer data and your own app.",
-      "cta": "View all products",
-      "items": [
-        {
-          "slug": "voice-agent",
-          "tag": "Phone",
-          "title": "Voice Agent",
-          "result": "Available 24/7, books appointments"
-        },
-        {
-          "slug": "chat-agent",
-          "tag": "Website & Chat",
-          "title": "Chat Agent",
-          "result": "Answers around the clock"
-        },
-        {
-          "slug": "nexai-kalender",
-          "tag": "Appointments",
-          "title": "NexAI Calendar",
-          "result": "No more double bookings"
-        },
-        {
-          "slug": "nexai-crm",
-          "tag": "Customer management",
-          "title": "NexAI CRM",
-          "result": "All customers in one place"
-        },
-        {
-          "slug": "automatisierung",
-          "tag": "Automation",
-          "title": "Automation",
-          "result": "80% less manual work"
-        },
-        {
-          "slug": "nexai-app",
-          "tag": "Custom app",
-          "title": "NexAI App",
-          "result": "Your app, no app store"
-        }
-      ],
-      "custom": {
-        "tag": "Custom AI Agents",
-        "title": "Got a special idea?",
-        "description": "Every business works differently. For special cases we assess technical feasibility together and build a fully bespoke AI agent. There are almost no fixed limits.",
-        "cta": "Discuss feasibility"
-      }
-    },
     "testimonial": {
       "quote": "What matters to us isn't how impressive an AI looks, but what it actually takes off your plate. We build digital employees that measurably help from day one: no more missed calls, no more missed appointments.",
       "author": "Connor Reimann",

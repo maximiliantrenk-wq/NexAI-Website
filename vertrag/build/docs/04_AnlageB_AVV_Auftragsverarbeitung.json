@@ -558,6 +558,13 @@
           "EU-SCC Modul 3 + Zusatzmaßnahmen + TIA (kein DPF); No-Training-Konfiguration"
         ],
         [
+          "Anthropic PBC",
+          "USA",
+          "Sprachmodell / KI-Verarbeitung (Einstufung eingehender Nachrichten, Antwortentwürfe, Übersetzung, Zusammenfassung verlinkter Seiten); eingesetzt im NexAI Mail Agent",
+          "Inhalte eingehender und gesendeter Nachrichten samt Anhängen, Metadaten",
+          "EU-SCC Modul 3 + Zusatzmaßnahmen + TIA (kein DPF); No-Training-Konfiguration"
+        ],
+        [
           "Google LLC / Google Ireland Ltd.",
           "EU / USA",
           "Kalender-, Sheets-, Gmail-/Workspace-Dienste (Terminverwaltung, Bestätigungen, Lead-Ablage)",
