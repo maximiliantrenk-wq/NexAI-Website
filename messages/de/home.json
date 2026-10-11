@@ -123,6 +123,99 @@
       "description": "Lassen Sie uns in einem unverbindlichen Gespräch herausfinden, wo AI bei Ihnen den größten Hebel hat.",
       "primary": "Kostenloses Erstgespräch",
       "secondary": "Produkte entdecken"
+    },
+    "film": {
+      "eyebrow": "Rundgang",
+      "title": "So arbeitet NexAI in Ihrem Unternehmen",
+      "description": "Scrollen Sie durch das Büro. An jedem Platz sehen Sie, welches Produkt dort für Sie arbeitet.",
+      "hint": "Scrollen",
+      "loading": "Film wird geladen",
+      "stationsLabel": "Stationen",
+      "stations": {
+        "voice": {
+          "label": "Voice Agent",
+          "tag": "Telefon",
+          "title": "Voice Agent",
+          "points": [
+            "Rund um die Uhr erreichbar",
+            "Bucht Termine automatisch",
+            "Beantwortet Kundenanfragen",
+            "Verbindbar mit Ihren Systemen"
+          ]
+        },
+        "crm": {
+          "label": "CRM",
+          "tag": "Kundenverwaltung",
+          "title": "NexAI CRM",
+          "points": [
+            "Jeder Anruf und jede Anfrage landet automatisch darin",
+            "Erinnert von selbst an Rückrufe und Aufgaben",
+            "Mit Angeboten, Rechnungen und DATEV-Export",
+            "Server in Deutschland, mit Datenschutz-Center"
+          ]
+        },
+        "chat": {
+          "label": "Chat Agent",
+          "tag": "Website & Chat",
+          "title": "Chat Agent",
+          "points": [
+            "Rund um die Uhr erreichbar",
+            "Beantwortet Fragen auf Ihrer Website",
+            "Lässt sich auch in Ihre App einbinden",
+            "Gewinnt neue Anfragen und bucht Termine"
+          ]
+        },
+        "app": {
+          "label": "App",
+          "tag": "App-Entwicklung",
+          "title": "Wir entwickeln Apps für Unternehmen",
+          "points": [
+            "In Ihrer Marke, auf iPhone, Android und Desktop",
+            "Ohne App-Store: sofort installiert, sofort aktuell",
+            "Zum Festpreis, und die App gehört Ihnen",
+            "Betrieb in Deutschland, 7 Jahre Sicherheitsupdates"
+          ]
+        },
+        "calendar": {
+          "label": "Kalender",
+          "tag": "Termine",
+          "title": "NexAI Kalender",
+          "points": [
+            "Kunden buchen selbst, auch nachts und am Wochenende",
+            "Erinnerung per SMS oder E-Mail",
+            "Keine Doppelbuchungen mehr",
+            "Buchungslink für Website, WhatsApp und Social Media"
+          ]
+        },
+        "mail": {
+          "label": "Mail Agent",
+          "tag": "E-Mail",
+          "title": "NexAI Mail Agent",
+          "points": [
+            "Meldet mehrmals am Tag, was wirklich wichtig ist",
+            "Schreibt Antworten vor, in Ihrem Ton",
+            "Erkennt Betrug und Phishing",
+            "Verschickt wird nur, was Sie freigeben"
+          ]
+        },
+        "sales": {
+          "label": "Sales Assistent",
+          "tag": "Vertrieb",
+          "title": "NexAI Sales Assistent",
+          "points": [
+            "Fertiges Verkaufstraining ab dem ersten Tag",
+            "Rollenspiel gegen die AI, in vier Härtegraden",
+            "Wertet echte Gespräche aus, mit Tipps fürs nächste Mal",
+            "Neue Verkäufer werden schneller sicher"
+          ]
+        }
+      },
+      "end": {
+        "title": "Wir machen Unternehmen intelligenter.",
+        "description": "Alles, was Sie gerade gesehen haben, und dazu Automatisierungen, die Ihre Programme verbinden.",
+        "primary": "Kostenloses Erstgespräch",
+        "secondary": "Alle Produkte"
+      }
     }
   }
 }

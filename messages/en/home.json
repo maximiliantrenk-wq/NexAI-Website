@@ -123,6 +123,99 @@
       "description": "Let's find out where AI has the biggest leverage in your business, in a free, no-obligation call.",
       "primary": "Free intro call",
       "secondary": "Explore products"
+    },
+    "film": {
+      "eyebrow": "Walkthrough",
+      "title": "How NexAI works in your business",
+      "description": "Scroll through the office. At every desk you'll see which product is working for you there.",
+      "hint": "Scroll",
+      "loading": "Loading film",
+      "stationsLabel": "Stations",
+      "stations": {
+        "voice": {
+          "label": "Voice Agent",
+          "tag": "Phone",
+          "title": "Voice Agent",
+          "points": [
+            "Available around the clock",
+            "Books appointments automatically",
+            "Answers customer enquiries",
+            "Connects with your systems"
+          ]
+        },
+        "crm": {
+          "label": "CRM",
+          "tag": "Customer management",
+          "title": "NexAI CRM",
+          "points": [
+            "Every call and every enquiry lands in it automatically",
+            "Reminds you of call-backs and tasks on its own",
+            "With quotes, invoices and DATEV export",
+            "Servers in Germany, with a privacy center"
+          ]
+        },
+        "chat": {
+          "label": "Chat Agent",
+          "tag": "Website & Chat",
+          "title": "Chat Agent",
+          "points": [
+            "Available around the clock",
+            "Answers questions on your website",
+            "Can also be built into your app",
+            "Wins new enquiries and books appointments"
+          ]
+        },
+        "app": {
+          "label": "App",
+          "tag": "App development",
+          "title": "We build apps for businesses",
+          "points": [
+            "In your brand, on iPhone, Android and desktop",
+            "No app store: installed instantly, always up to date",
+            "At a fixed price, and the app is yours",
+            "Hosted in Germany, 7 years of security updates"
+          ]
+        },
+        "calendar": {
+          "label": "Calendar",
+          "tag": "Appointments",
+          "title": "NexAI Calendar",
+          "points": [
+            "Customers book themselves, even at night and on weekends",
+            "Reminders by text message or email",
+            "No more double bookings",
+            "Booking link for your website, WhatsApp and social media"
+          ]
+        },
+        "mail": {
+          "label": "Mail Agent",
+          "tag": "Email",
+          "title": "NexAI Mail Agent",
+          "points": [
+            "Reports what really matters, several times a day",
+            "Drafts replies in your tone",
+            "Detects fraud and phishing",
+            "Only what you approve gets sent"
+          ]
+        },
+        "sales": {
+          "label": "Sales Assistant",
+          "tag": "Sales",
+          "title": "NexAI Sales Assistant",
+          "points": [
+            "Ready-made sales training from day one",
+            "Role-play against the AI at four difficulty levels",
+            "Analyses real conversations, with tips for next time",
+            "New salespeople gain confidence faster"
+          ]
+        }
+      },
+      "end": {
+        "title": "We make businesses smarter.",
+        "description": "Everything you've just seen, plus automations that connect your tools.",
+        "primary": "Free intro call",
+        "secondary": "All products"
+      }
     }
   }
 }
