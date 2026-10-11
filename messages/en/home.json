@@ -125,9 +125,7 @@
       "secondary": "Explore products"
     },
     "film": {
-      "eyebrow": "Walkthrough",
-      "title": "How NexAI works in your business",
-      "description": "Scroll through the office. At every desk you'll see which product is working for you there.",
+      "label": "Tour of an office running on NexAI",
       "hint": "Scroll",
       "loading": "Loading film",
       "stationsLabel": "Stations",

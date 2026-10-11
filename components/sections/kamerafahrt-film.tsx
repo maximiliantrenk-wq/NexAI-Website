@@ -35,7 +35,8 @@ import { cn } from "@/lib/utils";
  */
 
 const DAUER = 80.5; // Sekunden Film
-const INTRO_BIS = 5; // Einleitung blendet bis hierhin aus
+const HERO_WEG = [0.6, 3.2] as const; // Hero-Text blendet in diesem Abschnitt aus
+const BAND = [1.0, 5.0] as const; // hochkant: vom Vollbild zum 16:9-Band
 const ENDE_AB = 74.5; // Schlussbild blendet ab hier ein
 
 type StationKey = "voice" | "crm" | "chat" | "app" | "calendar" | "mail" | "sales";
@@ -53,9 +54,7 @@ const STATIONEN: { key: StationKey; von: number; bis: number; icon: LucideIcon }
 export type Station = { label: string; tag: string; title: string; points: string[] };
 
 export type KamerafahrtTexte = {
-  eyebrow: string;
-  title: string;
-  description: string;
+  label: string;
   hint: string;
   loading: string;
   stationsLabel: string;
@@ -73,15 +72,26 @@ function weich(a: number, b: number, x: number) {
   return t * t * (3 - 2 * t);
 }
 
-export function KamerafahrtFilm({ texte }: { texte: KamerafahrtTexte }) {
+export function KamerafahrtFilm({
+  texte,
+  hero,
+}: {
+  texte: KamerafahrtTexte;
+  /** Text des ersten Bildschirms, liegt auf dem ersten Filmbild */
+  hero: React.ReactNode;
+}) {
   const sektion = useRef<HTMLElement>(null);
+  const buehne = useRef<HTMLDivElement>(null);
   const video = useRef<HTMLVideoElement>(null);
   const intro = useRef<HTMLDivElement>(null);
+  const schleier = useRef<HTMLDivElement>(null);
+  const leiste = useRef<HTMLElement>(null);
   const ende = useRef<HTMLDivElement>(null);
   const fortschritt = useRef<HTMLDivElement>(null);
   const bereit = useRef(false);
   const zeit = useRef(0);
   const [aktiv, setAktiv] = useState(-1);
+  const [heroWeg, setHeroWeg] = useState(false);
   const [endeSichtbar, setEndeSichtbar] = useState(false);
   const [ladeAnteil, setLadeAnteil] = useState<number | null>(null);
   const ohneBewegung = useReducedMotion();
@@ -102,11 +112,12 @@ export function KamerafahrtFilm({ texte }: { texte: KamerafahrtTexte }) {
     if (v && bereit.current && !v.seeking && Math.abs(v.currentTime - t) > 0.5 / 30) {
       v.currentTime = t;
     }
-    if (intro.current) {
-      const a = 1 - weich(INTRO_BIS - 2, INTRO_BIS, t);
-      intro.current.style.opacity = String(a);
-      intro.current.style.visibility = a < 0.01 ? "hidden" : "visible";
-    }
+    const h = weich(HERO_WEG[0], HERO_WEG[1], t);
+    if (intro.current) intro.current.style.opacity = String(1 - h);
+    if (schleier.current) schleier.current.style.opacity = String(1 - h);
+    setHeroWeg(h > 0.95);
+    buehne.current?.style.setProperty("--band", String(weich(BAND[0], BAND[1], t)));
+    if (leiste.current) leiste.current.style.opacity = String(weich(3, 5, t));
     const e = weich(ENDE_AB, ENDE_AB + 3, t);
     if (ende.current) ende.current.style.opacity = String(e);
     setEndeSichtbar(e > 0.5);
@@ -196,11 +207,17 @@ export function KamerafahrtFilm({ texte }: { texte: KamerafahrtTexte }) {
     v.addEventListener("loadeddata", bildDa, { once: true });
     v.addEventListener("seeked", gesprungen);
 
+    // Erst nach dem Laden der Seite, damit der Film Text und Schrift nicht ausbremst
+    const starten = () => {
+      const los = () => window.setTimeout(() => void laden(), 200);
+      if (document.readyState === "complete") los();
+      else window.addEventListener("load", los, { once: true });
+    };
     const io = new IntersectionObserver(
       ([eintrag]) => {
         if (eintrag.isIntersecting) {
           io.disconnect();
-          void laden();
+          starten();
         }
       },
       { rootMargin: "150% 0px" },
@@ -234,12 +251,14 @@ export function KamerafahrtFilm({ texte }: { texte: KamerafahrtTexte }) {
     <section
       ref={sektion}
       id="rundgang"
-      aria-label={texte.title}
+      aria-label={texte.label}
       className="relative h-[1000vh]"
     >
-      <div className="sticky top-0 h-svh overflow-hidden bg-bg">
-        {/* Film: quer bildfüllend, hochkant als 16:9-Band unter der Kopfzeile */}
-        <div className="absolute inset-0 portrait:relative portrait:inset-auto portrait:mt-[max(88px,13svh)] portrait:aspect-video portrait:w-full">
+      <div ref={buehne} className="sticky top-0 h-svh overflow-hidden bg-bg">
+        {/* Film: quer bildfüllend. Hochkant erst bildfüllend unter dem Hero-Text,
+            dann schrumpft er beim Losfahren zum 16:9-Band unter der Kopfzeile
+            (--band läuft von 0 nach 1). */}
+        <div className="absolute inset-0 portrait:bottom-auto portrait:top-[calc(var(--band,0)_*_max(88px,13svh))] portrait:h-[calc(100svh_-_var(--band,0)_*_(100svh_-_56.25vw))]">
           <video
             ref={video}
             className="h-full w-full object-cover"
@@ -251,29 +270,17 @@ export function KamerafahrtFilm({ texte }: { texte: KamerafahrtTexte }) {
             aria-hidden
             tabIndex={-1}
           />
-          {/* Übergänge zur Seite: oben aus dem Hero, unten in die nächste Sektion */}
-          <div className="pointer-events-none absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-bg to-transparent portrait:h-10" />
+          {/* Oben unter der Kopfzeile abdunkeln, unten in die nächste Sektion */}
+          <div className="pointer-events-none absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-bg/80 to-transparent portrait:h-10" />
           <div className="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-bg/90 to-transparent portrait:h-10" />
           <div className="pointer-events-none absolute inset-y-0 left-0 w-[40%] bg-gradient-to-r from-bg/45 to-transparent portrait:hidden" />
         </div>
 
-        {/* Einleitung */}
+        {/* Schleier hinter dem Hero-Text, damit er auf der hellen Fassade lesbar bleibt */}
         <div
-          ref={intro}
-          className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_top,rgba(8,9,13,0.94)_0%,rgba(8,9,13,0.6)_42%,rgba(8,9,13,0)_72%)] portrait:bg-none"
-        >
-          <div className="absolute inset-x-0 bottom-[12%] px-6 sm:left-[6%] sm:right-auto sm:max-w-xl sm:px-0 portrait:bottom-auto portrait:top-[calc(max(88px,13svh)+56.25vw+28px)]">
-            <p className="eyebrow">{texte.eyebrow}</p>
-            <h2 className="mt-4 text-balance text-4xl font-semibold leading-[1.05] tracking-[-0.02em] sm:text-5xl lg:text-6xl">
-              {texte.title}
-            </h2>
-            <p className="mt-5 max-w-md text-[17px] leading-relaxed text-muted">{texte.description}</p>
-            <p className="mt-8 flex items-center gap-2 text-[13px] font-medium uppercase tracking-[0.16em] text-subtle">
-              <ChevronDown className="size-4 motion-safe:animate-bounce" />
-              {texte.hint}
-            </p>
-          </div>
-        </div>
+          ref={schleier}
+          className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_70%_at_50%_48%,rgba(8,9,13,0.76)_0%,rgba(8,9,13,0.5)_55%,rgba(8,9,13,0.28)_100%)]"
+        />
 
         {/* Fenster der aktiven Station */}
         <div className="absolute bottom-[6%] left-[3.4%] right-4 sm:right-auto portrait:inset-x-4 portrait:bottom-auto portrait:top-[calc(max(88px,13svh)+56.25vw+20px)]">
@@ -298,8 +305,9 @@ export function KamerafahrtFilm({ texte }: { texte: KamerafahrtTexte }) {
 
         {/* Stationen am rechten Rand: zeigt, wo man ist, und springt per Klick */}
         <nav
+          ref={leiste}
           aria-label={texte.stationsLabel}
-          className="absolute right-8 top-1/2 hidden -translate-y-1/2 xl:block portrait:hidden"
+          className="absolute right-8 top-1/2 hidden -translate-y-1/2 opacity-0 xl:block portrait:hidden"
         >
           <div className="relative rounded-2xl border border-white/[0.08] bg-bg/50 py-4 pl-4 pr-4 backdrop-blur-md">
             <div className="absolute bottom-6 right-[21px] top-6 w-px bg-white/10" />
@@ -384,6 +392,21 @@ export function KamerafahrtFilm({ texte }: { texte: KamerafahrtTexte }) {
             {texte.loading} · {Math.round(ladeAnteil * 100)} %
           </div>
         )}
+      </div>
+
+      {/* Hero-Text auf dem ersten Filmbild. Er klebt nicht, sondern läuft beim
+          Scrollen ganz normal nach oben weg, während der Film stehen bleibt und
+          losfährt — so wird auch auf kleinen Handys nichts abgeschnitten. */}
+      <div
+        ref={intro}
+        inert={heroWeg}
+        className="absolute inset-x-0 top-0 z-10 flex min-h-svh flex-col items-center justify-center px-6 pb-28 pt-28 sm:px-8 sm:pt-32"
+      >
+        <div className="w-full max-w-5xl">{hero}</div>
+        <p className="absolute bottom-8 left-1/2 flex -translate-x-1/2 items-center gap-2 text-[12px] font-medium uppercase tracking-[0.16em] text-subtle">
+          <ChevronDown className="size-4 motion-safe:animate-bounce" />
+          {texte.hint}
+        </p>
       </div>
 
       {/* Alle Fenster als Text, für Bildschirmleser und Suchmaschinen */}

@@ -125,9 +125,7 @@
       "secondary": "Produkte entdecken"
     },
     "film": {
-      "eyebrow": "Rundgang",
-      "title": "So arbeitet NexAI in Ihrem Unternehmen",
-      "description": "Scrollen Sie durch das Büro. An jedem Platz sehen Sie, welches Produkt dort für Sie arbeitet.",
+      "label": "Rundgang durch ein Büro mit NexAI",
       "hint": "Scrollen",
       "loading": "Film wird geladen",
       "stationsLabel": "Stationen",

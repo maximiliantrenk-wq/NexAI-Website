@@ -1,4 +1,6 @@
+import { preload } from "react-dom";
 import { useTranslations } from "next-intl";
+import { Hero } from "./hero";
 import { KamerafahrtFilm, type KamerafahrtTexte } from "./kamerafahrt-film";
 
 // Reihenfolge der Produkt-Links im Schlussbild: wie im Film, dann das, was
@@ -18,10 +20,11 @@ export function Kamerafahrt() {
   const t = useTranslations("Home.film");
   const produkte = useTranslations("Products").raw("items") as { slug: string; title: string }[];
 
+  // Das erste Filmbild ist jetzt der Hintergrund des ersten Bildschirms
+  preload("/film/kamerafahrt-poster.jpg", { as: "image", fetchPriority: "high" });
+
   const texte: KamerafahrtTexte = {
-    eyebrow: t("eyebrow"),
-    title: t("title"),
-    description: t("description"),
+    label: t("label"),
     hint: t("hint"),
     loading: t("loading"),
     stationsLabel: t("stationsLabel"),
@@ -33,5 +36,5 @@ export function Kamerafahrt() {
     }),
   };
 
-  return <KamerafahrtFilm texte={texte} />;
+  return <KamerafahrtFilm texte={texte} hero={<Hero />} />;
 }
