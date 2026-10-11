@@ -22,7 +22,8 @@ import { cn } from "@/lib/utils";
 /*
  * Kamerafahrt durch das NexAI-Büro, gesteuert über das Scrollen.
  *
- * Die Sektion ist zehn Bildschirmhöhen lang, darin klebt ein Bildschirm, und
+ * Die Sektion ist sechzehn Bildschirmhöhen lang (bei zehn kam man beim Lesen
+ * nicht hinterher, Max 11.10.), darin klebt ein Bildschirm, und
  * die Scrollposition bestimmt das Filmbild — runter fährt die Kamera vorwärts,
  * hoch zurück. Gerendert ist der Film in Blender (Quelle: ~/Developer/NexAI/
  * NexAI-Film/buero), die Fenster mit den Produktpunkten sind HTML: scharf,
@@ -135,7 +136,7 @@ export function KamerafahrtFilm({
     const schritt = () => {
       const ziel = zielzeit();
       const d = ziel - zeit.current;
-      zeit.current = ohneBewegung || Math.abs(d) < 0.004 ? ziel : zeit.current + d * 0.2;
+      zeit.current = ohneBewegung || Math.abs(d) < 0.004 ? ziel : zeit.current + d * 0.14;
       anwenden(zeit.current);
       if (sichtbar) raf = requestAnimationFrame(schritt);
     };
@@ -252,7 +253,7 @@ export function KamerafahrtFilm({
       ref={sektion}
       id="rundgang"
       aria-label={texte.label}
-      className="relative h-[1000vh]"
+      className="relative h-[1600vh]"
     >
       <div ref={buehne} className="sticky top-0 h-svh overflow-hidden bg-bg">
         {/* Film: quer bildfüllend. Hochkant erst bildfüllend unter dem Hero-Text,
