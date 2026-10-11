@@ -1,5 +1,6 @@
 import { setRequestLocale } from "next-intl/server";
-import { Hero } from "@/components/sections/hero";
+import { HeroProof } from "@/components/sections/hero";
+import { Kamerafahrt } from "@/components/sections/kamerafahrt";
 import { Capabilities } from "@/components/sections/capabilities";
 import { Process } from "@/components/sections/process";
 import { Metrics } from "@/components/sections/metrics";
@@ -16,7 +17,8 @@ export default async function HomePage({
 
   return (
     <>
-      <Hero />
+      <Kamerafahrt />
+      <HeroProof />
       <Capabilities />
       <Process />
       <Metrics />
