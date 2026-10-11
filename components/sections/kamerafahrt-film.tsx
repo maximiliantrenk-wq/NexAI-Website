@@ -18,6 +18,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "@/i18n/navigation";
 import { easeOutExpo } from "@/lib/motion";
 import { cn } from "@/lib/utils";
+import { Spieler, type Ladestand } from "./kamerafahrt-spieler";
 
 /*
  * Kamerafahrt durch das NexAI-Büro, gesteuert über das Scrollen.
@@ -30,9 +31,9 @@ import { cn } from "@/lib/utils";
  * zweisprachig und für Suchmaschinen lesbar. Die Zeiten unten gehören zu den
  * Haltepunkten der Kamera (drehbuch.py) und dürfen sich nur mit dem Film ändern.
  *
- * Damit ein Sprung im Film nichts kostet, hat die Datei alle 10 Bilder ein
- * Schlüsselbild und keine umsortierten Bilder; sie wird einmal ganz geladen
- * und spielt dann aus dem Speicher.
+ * Der Film liegt in zehn Teilstücken vor (siehe kamerafahrt-spieler.ts), alle
+ * 10 Bilder ein Schlüsselbild, keine umsortierten Bilder, damit ein Sprung im
+ * Film nichts kostet.
  */
 
 const DAUER = 80.5; // Sekunden Film
@@ -64,8 +65,13 @@ export type KamerafahrtTexte = {
   products: { slug: string; title: string }[];
 };
 
-const QUELLE_GROSS = "/film/kamerafahrt-1080.mp4";
-const QUELLE_KLEIN = "/film/kamerafahrt-720.mp4";
+// Teilstücke: 30 Bilder je Sekunde, 242 Bilder je Stück, 2415 Bilder insgesamt
+const FPS = 30;
+const BILDER_JE_TEIL = 242;
+const BILDER = 2415;
+const TEILE = Math.ceil(BILDER / BILDER_JE_TEIL);
+const quellen = (groesse: 720 | 1080) =>
+  Array.from({ length: TEILE }, (_, k) => `/film/kamerafahrt-${groesse}-${String(k).padStart(2, "0")}.mp4`);
 const POSTER = "/film/kamerafahrt-poster.jpg";
 
 function weich(a: number, b: number, x: number) {
@@ -83,18 +89,21 @@ export function KamerafahrtFilm({
 }) {
   const sektion = useRef<HTMLElement>(null);
   const buehne = useRef<HTMLDivElement>(null);
-  const video = useRef<HTMLVideoElement>(null);
+  const videoA = useRef<HTMLVideoElement>(null);
+  const videoB = useRef<HTMLVideoElement>(null);
+  const spieler = useRef<Spieler | null>(null);
   const intro = useRef<HTMLDivElement>(null);
   const schleier = useRef<HTMLDivElement>(null);
   const leiste = useRef<HTMLElement>(null);
   const ende = useRef<HTMLDivElement>(null);
   const fortschritt = useRef<HTMLDivElement>(null);
-  const bereit = useRef(false);
   const zeit = useRef(0);
+  // Zuletzt gesetzte Werte: Stil und Zustand nur schreiben, wenn sie sich ändern
+  const zuletzt = useRef({ aktiv: -2, heroWeg: false, ende: false, band: -1, laden: "" });
   const [aktiv, setAktiv] = useState(-1);
   const [heroWeg, setHeroWeg] = useState(false);
   const [endeSichtbar, setEndeSichtbar] = useState(false);
-  const [ladeAnteil, setLadeAnteil] = useState<number | null>(null);
+  const [ladeAnzeige, setLadeAnzeige] = useState<number | null>(null);
   const ohneBewegung = useReducedMotion();
 
   /** Filmzeit, die zur aktuellen Scrollposition gehört. */
@@ -102,28 +111,30 @@ export function KamerafahrtFilm({
     const s = sektion.current;
     if (!s) return 0;
     const r = s.getBoundingClientRect();
-    const lauf = r.height - window.innerHeight;
+    // Höhe der Bühne statt window.innerHeight: Die ändert sich auf dem Handy,
+    // wenn die Adressleiste ein- und ausfährt, und der Film spränge mit.
+    const lauf = r.height - (buehne.current?.offsetHeight ?? window.innerHeight);
     const p = lauf > 0 ? Math.min(Math.max(-r.top / lauf, 0), 1) : 0;
     return p * (DAUER - 1 / 30);
   }, []);
 
   /** Alles, was an der Filmzeit hängt: Bild, Einleitung, Fenster, Schluss. */
   const anwenden = useCallback((t: number) => {
-    const v = video.current;
-    if (v && bereit.current && !v.seeking && Math.abs(v.currentTime - t) > 0.5 / 30) {
-      v.currentTime = t;
-    }
+    spieler.current?.ziel(t);
+    const z = zuletzt.current;
     const h = weich(HERO_WEG[0], HERO_WEG[1], t);
     if (intro.current) intro.current.style.opacity = String(1 - h);
     if (schleier.current) schleier.current.style.opacity = String(1 - h);
-    setHeroWeg(h > 0.95);
-    buehne.current?.style.setProperty("--band", String(weich(BAND[0], BAND[1], t)));
+    if (h > 0.95 !== z.heroWeg) setHeroWeg((z.heroWeg = h > 0.95));
+    const band = Math.round(weich(BAND[0], BAND[1], t) * 1000) / 1000;
+    if (band !== z.band) buehne.current?.style.setProperty("--band", String((z.band = band)));
     if (leiste.current) leiste.current.style.opacity = String(weich(3, 5, t));
     const e = weich(ENDE_AB, ENDE_AB + 3, t);
     if (ende.current) ende.current.style.opacity = String(e);
-    setEndeSichtbar(e > 0.5);
+    if (e > 0.5 !== z.ende) setEndeSichtbar((z.ende = e > 0.5));
     if (fortschritt.current) fortschritt.current.style.transform = `scaleY(${t / DAUER})`;
-    setAktiv(STATIONEN.findIndex((st) => t >= st.von && t <= st.bis));
+    const a = STATIONEN.findIndex((st) => t >= st.von && t <= st.bis);
+    if (a !== z.aktiv) setAktiv((z.aktiv = a));
   }, []);
 
   // Scrollen → Filmzeit. Läuft nur, solange die Sektion im Bild ist, und
@@ -155,91 +166,35 @@ export function KamerafahrtFilm({
     };
   }, [anwenden, zielzeit, ohneBewegung]);
 
-  // Film laden, sobald die Sektion näher kommt: einmal ganz, dann aus dem
-  // Speicher. Beim Scrubben über das Netz würde jeder Sprung neu nachladen.
+  // Teilstücke laden und abspielen. Große Fassung nur, wo sie auch zu sehen ist.
   useEffect(() => {
-    const s = sektion.current;
-    const v = video.current;
-    if (!s || !v) return;
-    let adresse: string | null = null;
-    let abgebrochen = false;
-    const steuerung = new AbortController();
-
-    const laden = async () => {
-      const sparen = (navigator as Navigator & { connection?: { saveData?: boolean } }).connection
-        ?.saveData;
-      const pixel = window.innerWidth * Math.min(window.devicePixelRatio || 1, 2);
-      const quelle = sparen || pixel <= 1400 ? QUELLE_KLEIN : QUELLE_GROSS;
-      setLadeAnteil(0);
-      try {
-        const antwort = await fetch(quelle, { signal: steuerung.signal });
-        if (!antwort.ok || !antwort.body) throw new Error(String(antwort.status));
-        const gesamt = Number(antwort.headers.get("content-length")) || 0;
-        const leser = antwort.body.getReader();
-        const teile: BlobPart[] = [];
-        let geladen = 0;
-        for (;;) {
-          const { done, value } = await leser.read();
-          if (done) break;
-          teile.push(value);
-          geladen += value.byteLength;
-          if (gesamt) setLadeAnteil(geladen / gesamt);
-        }
-        if (abgebrochen) return;
-        adresse = URL.createObjectURL(new Blob(teile, { type: "video/mp4" }));
-        v.src = adresse;
-      } catch {
-        if (abgebrochen) return;
-        v.src = quelle; // Rückfall: direkt vom Server, Sprünge laden dann nach
+    const a = videoA.current;
+    const b = videoB.current;
+    if (!a || !b) return;
+    const sparen = (navigator as Navigator & { connection?: { saveData?: boolean } }).connection?.saveData;
+    const pixel = window.innerWidth * Math.min(window.devicePixelRatio || 1, 2);
+    const s = new Spieler([a, b], quellen(sparen || pixel <= 1400 ? 720 : 1080), FPS, BILDER_JE_TEIL, BILDER, (stand: Ladestand) => {
+      // Anzeige nur, solange an der aktuellen Stelle noch nichts da ist
+      const text = stand.aktuellDa ? "" : String(Math.round(stand.anteil * 100));
+      if (text !== zuletzt.current.laden) {
+        zuletzt.current.laden = text;
+        setLadeAnzeige(text ? Number(text) : null);
       }
-      v.load();
-    };
-
-    const bildDa = () => {
-      bereit.current = true;
-      setLadeAnteil(null);
-      // iOS zeigt neu angesprungene Bilder erst, nachdem einmal abgespielt wurde
-      v.play()
-        .then(() => v.pause())
-        .catch(() => {})
-        .finally(() => anwenden(zeit.current));
-    };
-    const gesprungen = () => anwenden(zeit.current);
-    v.addEventListener("loadeddata", bildDa, { once: true });
-    v.addEventListener("seeked", gesprungen);
-
-    // Erst nach dem Laden der Seite, damit der Film Text und Schrift nicht ausbremst
-    const starten = () => {
-      const los = () => window.setTimeout(() => void laden(), 200);
-      if (document.readyState === "complete") los();
-      else window.addEventListener("load", los, { once: true });
-    };
-    const io = new IntersectionObserver(
-      ([eintrag]) => {
-        if (eintrag.isIntersecting) {
-          io.disconnect();
-          starten();
-        }
-      },
-      { rootMargin: "150% 0px" },
-    );
-    io.observe(s);
+    });
+    spieler.current = s;
+    s.ziel(zeit.current);
     return () => {
-      abgebrochen = true;
-      steuerung.abort();
-      io.disconnect();
-      v.removeEventListener("loadeddata", bildDa);
-      v.removeEventListener("seeked", gesprungen);
-      if (adresse) URL.revokeObjectURL(adresse);
+      s.zerstoeren();
+      spieler.current = null;
     };
-  }, [anwenden]);
+  }, []);
 
   /** Sprung zu einer Station über die Punkte am Rand. */
   const springe = (i: number) => {
     const s = sektion.current;
     if (!s) return;
     const st = STATIONEN[i];
-    const lauf = s.offsetHeight - window.innerHeight;
+    const lauf = s.offsetHeight - (buehne.current?.offsetHeight ?? window.innerHeight);
     const t = st.von + Math.min(1.2, (st.bis - st.von) / 3);
     const oben = s.getBoundingClientRect().top + window.scrollY;
     window.scrollTo({ top: oben + (t / (DAUER - 1 / 30)) * lauf, behavior: ohneBewegung ? "auto" : "smooth" });
@@ -260,10 +215,21 @@ export function KamerafahrtFilm({
             dann schrumpft er beim Losfahren zum 16:9-Band unter der Kopfzeile
             (--band läuft von 0 nach 1). */}
         <div className="absolute inset-0 portrait:bottom-auto portrait:top-[calc(var(--band,0)_*_max(88px,13svh))] portrait:h-[calc(100svh_-_var(--band,0)_*_(100svh_-_56.25vw))]">
+          {/* Zwei Videos übereinander: eins zeigt, das andere hält das nächste Stück bereit */}
           <video
-            ref={video}
-            className="h-full w-full object-cover"
+            ref={videoA}
+            className="absolute inset-0 h-full w-full object-cover"
             poster={POSTER}
+            muted
+            playsInline
+            preload="none"
+            disablePictureInPicture
+            aria-hidden
+            tabIndex={-1}
+          />
+          <video
+            ref={videoB}
+            className="absolute inset-0 h-full w-full object-cover opacity-0"
             muted
             playsInline
             preload="none"
@@ -388,9 +354,9 @@ export function KamerafahrtFilm({
         </div>
 
         {/* Ladeanzeige, solange der Film noch kommt */}
-        {ladeAnteil !== null && (
+        {ladeAnzeige !== null && (
           <div className="absolute bottom-5 right-5 rounded-full border border-white/10 bg-bg/70 px-3 py-1.5 text-[12px] text-muted backdrop-blur-md">
-            {texte.loading} · {Math.round(ladeAnteil * 100)} %
+            {texte.loading} · {ladeAnzeige} %
           </div>
         )}
       </div>
