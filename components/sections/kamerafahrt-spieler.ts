@@ -157,7 +157,12 @@ export class Spieler {
     v.load();
   }
 
-  /** Fehlende Stücke laden, nächstgelegene zuerst, höchstens zwei gleichzeitig. */
+  /**
+   * Fehlende Stücke laden, nächstgelegene zuerst, höchstens zwei gleichzeitig.
+   * Solange das Stück an der aktuellen Stelle fehlt, lädt nur dieses: Zwei
+   * gleichzeitig teilen sich die Leitung, und das erste Bild käme doppelt so
+   * spät (live gemessen 4,6 s bis zum ersten bewegten Bild bei 4 MB/s).
+   */
   private nachladen() {
     if (this.aus) return;
     const n = this.quellen.length;
@@ -167,9 +172,11 @@ export class Spieler {
         if (k >= 0 && k < n && !reihe.includes(k)) reihe.push(k);
       }
     }
+    const fehlt = !this.adressen[this.teilJetzt];
     for (const k of reihe) {
-      if (this.laufend.size >= 2) break;
       if (this.adressen[k] || this.laufend.has(k)) continue;
+      if (fehlt && k !== this.teilJetzt) break;
+      if (!fehlt && this.laufend.size >= 2) break;
       this.laufend.add(k);
       fetch(this.quellen[k], { signal: this.steuerung.signal })
         .then((a) => {
