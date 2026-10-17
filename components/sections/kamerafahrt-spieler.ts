@@ -20,7 +20,6 @@ type Platz = {
   video: HTMLVideoElement;
   teil: number; // welches Stück geladen ist, -1 = keins
   bereit: boolean;
-  entsperrt: boolean;
 };
 
 export type Ladestand = {
@@ -40,6 +39,7 @@ export class Spieler {
   private richtung = 1;
   private letzteZeit = 0;
   private aus = false;
+  private wartetAufBeruehrung = false;
 
   constructor(
     videos: [HTMLVideoElement, HTMLVideoElement],
@@ -49,7 +49,7 @@ export class Spieler {
     private gesamtBilder: number,
     private melden: (stand: Ladestand) => void,
   ) {
-    this.plaetze = videos.map((video) => ({ video, teil: -1, bereit: false, entsperrt: false })) as [
+    this.plaetze = videos.map((video) => ({ video, teil: -1, bereit: false })) as [
       Platz,
       Platz,
     ];
@@ -140,21 +140,36 @@ export class Spieler {
     p.bereit = false;
     const v = p.video;
     const fertig = () => {
-      if (p.teil !== teil) return; // inzwischen neu belegt
+      if (p.teil !== teil || p.bereit) return; // inzwischen neu belegt
+      v.pause();
       v.currentTime = lokal;
       p.bereit = true;
-      // iOS zeigt angesprungene Bilder erst, nachdem einmal abgespielt wurde
-      if (!p.entsperrt) {
-        p.entsperrt = true;
-        v.play()
-          .then(() => v.pause())
-          .catch(() => {});
-      }
       this.ziel(this.letzteZeit);
     };
     v.addEventListener("loadeddata", fertig, { once: true });
     v.src = adresse;
     v.load();
+    // iOS lädt Videodaten erst, wenn abgespielt wird. Ohne play() kommt dort
+    // `loadeddata` nie, und der Film bleibt auf dem Standbild stehen, während
+    // die Fenster weiter erscheinen (Max, 17.10.2026: „wenn ich runterscrolle
+    // passiert nichts“). Also bei jedem Stück kurz anspielen; `fertig` hält beim
+    // ersten Bild wieder an.
+    this.anspielen(v);
+  }
+
+  private anspielen(v: HTMLVideoElement) {
+    v.play().catch((fehler: unknown) => {
+      // AbortError heißt nur: `fertig` hat schon angehalten. NotAllowedError
+      // kommt im Stromsparmodus — dann erst nach der nächsten Berührung.
+      if ((fehler as { name?: string })?.name !== "NotAllowedError" || this.wartetAufBeruehrung) return;
+      this.wartetAufBeruehrung = true;
+      const nochmal = () => {
+        this.wartetAufBeruehrung = false;
+        for (const p of this.plaetze) if (p.teil >= 0 && !p.bereit) this.anspielen(p.video);
+      };
+      window.addEventListener("touchend", nochmal, { once: true });
+      window.addEventListener("click", nochmal, { once: true });
+    });
   }
 
   /**

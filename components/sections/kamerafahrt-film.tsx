@@ -222,7 +222,7 @@ export function KamerafahrtFilm({
             poster={POSTER}
             muted
             playsInline
-            preload="none"
+            preload="auto"
             disablePictureInPicture
             aria-hidden
             tabIndex={-1}
@@ -232,7 +232,7 @@ export function KamerafahrtFilm({
             className="absolute inset-0 h-full w-full object-cover opacity-0"
             muted
             playsInline
-            preload="none"
+            preload="auto"
             disablePictureInPicture
             aria-hidden
             tabIndex={-1}
