@@ -2,19 +2,19 @@
   "Recruiting": {
     "meta": {
       "title": "Remote setter & closer jobs (m/f/d), commission based",
-      "description": "NexAI is looking for self-employed setters and closers (m/f/d) to sell AI employees: one-off commission on the close plus monthly commission for as long as the customer stays. No clawbacks, remote across DACH. Apply now."
+      "description": "NexAI is looking for self-employed setters and closers (m/f/d) to sell AI employees: one-off commission on the close plus monthly commission as a senior for as long as customer and contract continue. No clawbacks, remote across DACH. Apply now."
     },
     "hero": {
       "eyebrow": "Sales partners (m/f/d) · Remote · DACH",
-      "title": "Sell AI employees. Earn every month for as long as the customer stays.",
-      "description": "NexAI is looking for self-employed setters and closers (m/f/d) who win businesses over the phone. Commission only, no base: a one-off commission on the close and a monthly commission that keeps running for as long as the customer stays. No clawbacks, no cap.",
+      "title": "Sell AI employees. Earn every month for as long as customer and contract run.",
+      "description": "NexAI is looking for self-employed setters and closers (m/f/d) who win businesses over the phone. Commission only, no base: a one-off commission on the close and, as a senior, a monthly commission for as long as the customer pays and your sales partner contract runs. No clawbacks, no cap.",
       "primary": "Apply now",
       "secondary": "How it works",
       "reassurance": "No fees, no courses, no starter kit. You sell, we provide the product, the leads and the tech.",
       "facts": [
         "100 % remote",
         "Commission only",
-        "Recurring monthly commission",
+        "Monthly commission as a senior",
         "No clawbacks"
       ]
     },
@@ -57,7 +57,7 @@
       },
       "labels": {
         "oneTime": "One-off commission in the first month, for junior and senior",
-        "monthly": "Monthly commission from month 2, recurring, as a senior",
+        "monthly": "Monthly commission from month 2, as a senior, while customer and contract continue",
         "monthlyJunior": "No monthly commission yet as a junior",
         "promotion": "Promotion to senior",
         "fit": "A fit if",
@@ -98,7 +98,7 @@
         "If a customer pays annually, the one-off commission is still based on the monthly amount. The monthly commission is then paid as a bundle on the anniversary."
       ],
       "customersTitle": "Your customers",
-      "customersText": "Trades businesses, medical practices, law firms, service providers. B2B, on the phone, cold calling verified company contacts. If you expect warm enquiries from coaching ads, this is the wrong place. If you can do real B2B sales, it's the right one."
+      "customersText": "Trades businesses, car dealerships, service providers. We deliberately do not approach medical, dental and veterinary practices, therapists, pharmacies, law firms, tax advisers or notaries at present. B2B, on the phone, with company contacts where there is a concrete reason for the call. If you expect warm enquiries from coaching ads, this is the wrong place. If you can do real B2B sales, it's the right one."
     },
     "path": {
       "eyebrow": "Your path to senior",
@@ -121,10 +121,10 @@
       "seniorTitle": "Senior means",
       "senior": [
         "Higher one-off commission than at junior level.",
-        "Recurring monthly commission for as long as the customer stays.",
+        "Monthly commission for as long as the customer pays and your contract runs.",
         "Sales meetings optional, onboarding complete."
       ],
-      "note": "As a junior, one or two sales meetings per week are part of onboarding. We listen in on selected calls for coaching; calls are only recorded with an announcement and the customer's consent. The goal is to get better, not to control."
+      "note": "As a junior, one or two sales meetings per week are part of onboarding. With your agreement, someone from the team listens in on selected calls for coaching, but only if the person you are calling has agreed at the start; calls are only recorded with the express consent of everyone involved. The goal is to get better, not to control."
     },
     "support": {
       "eyebrow": "What you get",
@@ -235,7 +235,7 @@
         },
         {
           "q": "When is commission paid out?",
-          "a": "After the customer's payment has arrived at NexAI, monthly against your invoice. The one-off commission comes with the customer's first payment, the monthly commission from the second month with every further payment for as long as the customer stays."
+          "a": "After the customer's payment has arrived at NexAI, monthly against your invoice. The one-off commission comes with the customer's first payment, the monthly commission from the second month with every further payment for as long as the customer pays and your contract runs."
         },
         {
           "q": "What does 'no clawbacks' mean?",
@@ -267,7 +267,7 @@
         },
         {
           "q": "What does the contract look like, and how do I cancel?",
-          "a": "A sales partner contract under German law: self-employed, no base pay, no minimum term, cancellable by either side with four weeks' notice to the end of the month. Commission claims that have already arisen remain. You receive the contract before signing and read it at your own pace."
+          "a": "A sales partner contract under §§ 84 et seq. of the German Commercial Code: self-employed, no base pay, no minimum term. Either side can terminate to the end of a month, at least with the statutory notice periods (§ 89 HGB: one month in the first contract year, two in the second, three in years three to five, six thereafter; one month for part-time agents, § 92b HGB). The monthly commission ends with the contract; claims that have already arisen and any statutory indemnity under § 89b HGB remain. You receive the contract before signing and read it at your own pace."
         },
         {
           "q": "I'm in Austria or Switzerland. Does that work?",
@@ -370,10 +370,10 @@
     },
     "jsonld": {
       "title": "Sales partner setter / closer (m/f/d), self-employed, commission only, remote",
-      "description": "NexAI is looking for self-employed setters and closers (m/f/d) in the DACH region who win small and medium-sized businesses over the phone for digital employees (AI voice agent, chat agent, booking calendar, automation). Work as a self-employed commercial agent under § 84 of the German Commercial Code, 100 % remote, free time management, no exclusivity. Compensation is purely performance-based, no base pay: a one-off commission on the net base in the customer's first month (depending on role and level), from the second month a recurring monthly commission for senior positions, no customer cap, no clawbacks; the exact rates are shared in the intro call. Requirements: registered business (or equivalent self-employment in AT/CH), business-fluent German, phone, laptop and internet. NexAI provides verified company contacts, appointments from the setter pool, a live demo number, customer deck, partner portal, CRM and coaching.",
+      "description": "NexAI is looking for self-employed setters and closers (m/f/d) in the DACH region who win small and medium-sized businesses over the phone for digital employees (AI voice agent, chat agent, booking calendar, automation). Work as a self-employed commercial agent under § 84 of the German Commercial Code, 100 % remote, free time management, no exclusivity. Compensation is purely performance-based, no base pay: a one-off commission on the net base in the customer's first month (depending on role and level), from the second month a monthly commission for senior positions for as long as the customer pays and the contract runs, no customer cap, no clawbacks; the exact rates are shared in the intro call. Requirements: registered business (or equivalent self-employment in AT/CH), business-fluent German, phone, laptop and internet. NexAI provides verified company contacts, appointments from the setter pool, a live demo number, customer deck, partner portal, CRM and coaching.",
       "responsibilities": "Setter: call decision-makers in small and medium-sized businesses, spark interest, book qualified appointments. Closer: run sales conversations, show the AI live, close contracts. Setter + closer: both in one person.",
       "qualifications": "Registered business or equivalent self-employment, business-fluent German, phone sales experience an advantage, own hardware and internet connection.",
-      "incentive": "Commission only, no base pay: one-off commission on the net base in the first month; monthly commission from month 2 for senior positions, recurring, no cap, no clawbacks. Exact rates shared in the intro call."
+      "incentive": "Commission only, no base pay: one-off commission on the net base in the first month; monthly commission from month 2 for senior positions while customer and contract continue, no cap, no clawbacks. Exact rates shared in the intro call."
     },
     "more": {
       "eyebrow": "More on the roles",
@@ -387,7 +387,7 @@
         {
           "slug": "setter-job",
           "title": "Setter job from home",
-          "description": "Verified contacts, consent check, appointments for closers."
+          "description": "Verified contacts with a reason to call, appointments for closers."
         },
         {
           "slug": "handelsvertreter",
@@ -400,16 +400,16 @@
       "closerJob": {
         "meta": {
           "title": "Remote closer job: closing deals for AI employees (m/f/d), commission only",
-          "description": "Closer job from home: you run sales conversations for digital AI employees, appointments come from the setter pool. Self-employed, one-off commission plus recurring monthly commission. Apply now."
+          "description": "Closer job from home: you run sales conversations for digital AI employees, appointments come from the setter pool. Self-employed, one-off commission plus monthly commission as a senior. Apply now."
         },
         "hero": {
           "eyebrow": "Closer (m/f/d) · Remote · DACH",
           "title": "Remote closer job: you bring the deal home, we deliver appointments and product.",
-          "description": "Sales conversations for digital employees: AI agents that answer the phone for small and medium-sized businesses, reply in chat and take over office work. Self-employed, commission only, one-off commission on the close plus monthly commission for as long as the customer stays."
+          "description": "Sales conversations for digital employees: AI agents that answer the phone for small and medium-sized businesses, reply in chat and take over office work. Self-employed, commission only, one-off commission on the close plus monthly commission as a senior for as long as the customer pays and your contract runs."
         },
         "intro": {
           "title": "What sets this closer job apart from the usual ones",
-          "body": "Most closer jobs in the DACH scene sell coaching, courses or consulting: a high one-off price, one close, done. At NexAI you sell a subscription. The customer pays monthly, and as a senior you earn on every one of those months. That is not a bonus, it is the core of the model. The target group is different from coaching: trades businesses, medical practices, law firms and service providers that lose calls or drown in office work. If you can run a sales conversation with a master roofer, you are in the right place."
+          "body": "Most closer jobs in the DACH scene sell coaching, courses or consulting: a high one-off price, one close, done. At NexAI you sell a subscription. The customer pays monthly, and as a senior you earn on every one of those months. That is not a bonus, it is the core of the model. The target group is different from coaching: trades businesses, car dealerships and service providers that lose calls or drown in office work. If you can run a sales conversation with a master roofer, you are in the right place."
         },
         "day": {
           "eyebrow": "What the week looks like",
@@ -443,7 +443,7 @@
               "need a base salary or employment",
               "are only used to warm inbound leads from ads",
               "expect appointments in series before setters are in place",
-              "don't fancy tradespeople, practices and law firms",
+              "don't fancy tradespeople, car dealerships and service providers",
               "shy away from registering a business and invoicing"
             ]
           },
@@ -482,7 +482,7 @@
             },
             {
               "q": "How high is the commission?",
-              "a": "A one-off commission on the close and, as a senior, a monthly commission for as long as the customer stays, no clawbacks, no cap. We show the exact rates in the intro call and in the career system PDF you receive by email after applying."
+              "a": "A one-off commission on the close and, as a senior, a monthly commission for as long as the customer pays and your contract runs, no clawbacks, no cap. We show the exact rates in the intro call and in the contract."
             }
           ]
         },
@@ -494,10 +494,10 @@
         },
         "jsonld": {
           "title": "Closer (m/f/d) for AI employees, self-employed, commission only, remote",
-          "description": "NexAI is looking for self-employed closers (m/f/d) in the DACH region to run sales conversations for digital employees (AI voice agent, chat agent, booking calendar, automation) with small and medium-sized businesses. Appointments come from the setter pool; the product can be demonstrated via a live demo number. Work as a self-employed commercial agent under § 84 of the German Commercial Code, 100 % remote, free time management, no exclusivity. Compensation is purely performance-based, no base pay: a one-off commission on the close and, as a senior, a recurring monthly commission for as long as the customer stays, no clawbacks, no customer cap; exact rates are shared in the intro call. Requirements: registered business or equivalent self-employment (DE/AT/CH), business-fluent German, sales conversation experience, own hardware.",
+          "description": "NexAI is looking for self-employed closers (m/f/d) in the DACH region to run sales conversations for digital employees (AI voice agent, chat agent, booking calendar, automation) with small and medium-sized businesses. Appointments come from the setter pool; the product can be demonstrated via a live demo number. Work as a self-employed commercial agent under § 84 of the German Commercial Code, 100 % remote, free time management, no exclusivity. Compensation is purely performance-based, no base pay: a one-off commission on the close and, as a senior, a monthly commission for as long as the customer pays and the contract runs, no clawbacks, no customer cap; exact rates are shared in the intro call. Requirements: registered business or equivalent self-employment (DE/AT/CH), business-fluent German, sales conversation experience, own hardware.",
           "responsibilities": "Run sales conversations with decision-makers, demonstrate the AI live, explain offers, close deals, hand over to the NexAI team.",
           "qualifications": "Registered business or equivalent self-employment, business-fluent German, B2B sales conversation experience, own hardware and internet connection.",
-          "incentive": "Commission only, no base pay: one-off commission on the close; monthly commission for senior positions, recurring for as long as the customer stays, no clawbacks, no cap. Exact rates in the intro call."
+          "incentive": "Commission only, no base pay: one-off commission on the close; monthly commission for senior positions while customer and contract continue, no clawbacks, no cap. Exact rates in the intro call."
         }
       },
       "setterJob": {
@@ -508,11 +508,11 @@
         "hero": {
           "eyebrow": "Setter (m/f/d) · Remote · DACH",
           "title": "Setter job from home: you open doors, we deliver the contacts.",
-          "description": "You call decision-makers in trades, practices and services, spark interest in digital AI employees and book qualified appointments for the closer. Self-employed, commission only, with verified company contacts instead of your own research."
+          "description": "You call decision-makers in trades, car dealerships and services, spark interest in digital AI employees and book qualified appointments for the closer. Self-employed, commission only, with verified company contacts instead of your own research."
         },
         "intro": {
           "title": "What sets this setter job apart from call centres and coaching setting",
-          "body": "You don't work through a list someone bought, and you don't set appointments for a coaching someone books out of curiosity. You call businesses with a measurable problem: missed calls, full inboxes, office work after hours. For that you have a product the business can test immediately by calling our AI. And you are not paid per appointment but share in the customer: once on the close and, as a senior, every month for as long as the customer stays."
+          "body": "You don't work through a list someone bought, and you don't set appointments for a coaching someone books out of curiosity. You call businesses with a measurable problem: missed calls, full inboxes, office work after hours. For that you have a product the business can test immediately by calling our AI. And you are not paid per appointment but share in the customer: once on the close and, as a senior, every month for as long as the customer pays and your contract runs."
         },
         "day": {
           "eyebrow": "What the week looks like",
@@ -522,7 +522,7 @@
             {
               "n": "01",
               "title": "Call contacts from the CRM",
-              "description": "Verified company contacts with decision-maker and phone number, assigned to you. You start with the consent check so every call stays clean, and log the result in the CRM."
+              "description": "Verified company contacts with decision-maker and phone number, assigned to you. You only call when there is a concrete reason, and you log the reason and the result in the CRM."
             },
             {
               "n": "02",
@@ -554,7 +554,7 @@
             "title": "Exactly right if you",
             "items": [
               "enjoy the phone and take a no in your stride",
-              "like structure: fixed times, clear numbers, a clean CRM",
+              "like structure: your own fixed calling times, clear numbers, a clean CRM",
               "want a product the customer can test immediately",
               "prefer a share in the customer over pay per appointment",
               "want to grow into setter + closer"
@@ -573,7 +573,7 @@
             },
             {
               "q": "Is cold calling allowed?",
-              "a": "In B2B under certain conditions, and that is exactly what our guidelines are for: consent check at the start, opt-out list in the CRM, no second call after a no, call documentation. That is part of onboarding."
+              "a": "With businesses only when there is a concrete reason, such as a current job ad for phone staff or a referral; the product fitting the industry is not enough (§ 7(2) no. 1 UWG). You log the reason and the result of every call, anyone who says no is blocked and not called again, and we don't call companies in Austria. That is part of onboarding."
             },
             {
               "q": "How many calls per week?",
@@ -581,7 +581,7 @@
             },
             {
               "q": "Am I paid per appointment?",
-              "a": "No, per customer. A one-off commission when the customer closes and pays, and as a senior a monthly commission for as long as the customer stays. An appointment without a deal earns nothing; a customer who stays earns every month."
+              "a": "No, per customer. A one-off commission when the customer closes and pays, and as a senior a monthly commission for as long as the customer pays and your contract runs. An appointment without a deal earns nothing; a customer who stays earns every month."
             },
             {
               "q": "Can I move from setter to closer?",
@@ -597,16 +597,16 @@
         },
         "jsonld": {
           "title": "Setter (m/f/d) for AI employees, self-employed, commission only, work from home",
-          "description": "NexAI is looking for self-employed setters (m/f/d) in the DACH region who call decision-makers in small and medium-sized businesses and book qualified appointments for closers. NexAI provides verified company contacts, CRM, guidelines for compliant outreach and coaching. Work as a self-employed commercial agent under § 84 of the German Commercial Code, 100 % remote, free time management, no exclusivity. Compensation is purely performance-based, no base pay: a one-off commission when the referred customer closes, as a senior a recurring monthly commission for as long as the customer stays, no clawbacks, no customer cap; exact rates are shared in the intro call. Requirements: registered business or equivalent self-employment (DE/AT/CH), business-fluent German, enjoyment of phoning, own hardware.",
+          "description": "NexAI is looking for self-employed setters (m/f/d) in the DACH region who call decision-makers in small and medium-sized businesses and book qualified appointments for closers. NexAI provides verified company contacts, CRM, guidelines for outreach under § 7 UWG and coaching. Work as a self-employed commercial agent under § 84 of the German Commercial Code, 100 % remote, free time management, no exclusivity. Compensation is purely performance-based, no base pay: a one-off commission when the referred customer closes, as a senior a monthly commission for as long as the customer pays and the contract runs, no clawbacks, no customer cap; exact rates are shared in the intro call. Requirements: registered business or equivalent self-employment (DE/AT/CH), business-fluent German, enjoyment of phoning, own hardware.",
           "responsibilities": "Call decision-makers, spark interest, offer the live demo, book qualified appointments and hand them over to closers in the CRM.",
           "qualifications": "Registered business or equivalent self-employment, business-fluent German, phone strength, structure and clean documentation, own hardware and internet connection.",
-          "incentive": "Commission only, no base pay: one-off commission when the referred customer closes; monthly commission for senior positions, recurring for as long as the customer stays, no clawbacks, no cap. Exact rates in the intro call."
+          "incentive": "Commission only, no base pay: one-off commission when the referred customer closes; monthly commission for senior positions while customer and contract continue, no clawbacks, no cap. Exact rates in the intro call."
         }
       },
       "handelsvertreter": {
         "meta": {
           "title": "Commercial agent (m/f/d) for AI software: recurring commission instead of one-off deal",
-          "description": "Commercial agency under § 84 HGB for digital AI employees: monthly subscription, commission on the close and recurring on the customer base. No exclusivity, nationwide, remote. Become a sales partner now."
+          "description": "Commercial agency under § 84 HGB for digital AI employees: monthly subscription, commission on the close and, as a senior, ongoing on the customer base. No exclusivity, nationwide, remote. Become a sales partner now."
         },
         "hero": {
           "eyebrow": "Commercial agent (m/f/d) · § 84 HGB · Remote",
@@ -615,7 +615,7 @@
         },
         "intro": {
           "title": "Why a subscription product is interesting for commercial agents",
-          "body": "Many agencies pay once: close, commission, next customer. NexAI's digital employees are paid monthly, and that is exactly how they are brokered: a one-off commission on the close and, as a senior, a monthly commission that runs for as long as the customer pays. Add a product that proves itself in two minutes on the phone, and a target group every agent knows: trades, practices, law firms, service providers. If you already look after businesses in your region, you can carry NexAI alongside your other agencies."
+          "body": "Many agencies pay once: close, commission, next customer. NexAI's digital employees are paid monthly, and that is exactly how they are brokered: a one-off commission on the close and, as a senior, a monthly commission that runs for as long as the customer pays and the contract continues. Add a product that proves itself in two minutes on the phone, and a target group every agent knows: trades, car dealerships, service providers. If you already look after businesses in your region, you can carry NexAI alongside your other agencies."
         },
         "day": {
           "eyebrow": "Collaboration",
@@ -660,7 +660,7 @@
               "are looking for a second, recurring income stream",
               "expect a contract, a statement of account and clear rules",
               "want a product with a live demo instead of a brochure",
-              "master cold calling and run it compliantly"
+              "master phone prospecting and only call with a concrete reason"
             ]
           },
           "resultLabel": "Then read the questions below and apply.",

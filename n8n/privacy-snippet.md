@@ -1,33 +1,27 @@
-# Datenschutz-Absatz für den Chatbot
+# Datenschutz-Baustein für Kunden: KI-Chat-Assistent
 
-Der Website-Chatbot verarbeitet personenbezogene Daten und leitet sie an
-Auftragsverarbeiter (n8n, OpenAI, Google) weiter. Das sollte in der
-Datenschutzerklärung stehen. Unten ein **vorbereiteter Abschnitt** — keine
-Rechtsberatung; bei Unsicherheit anwaltlich prüfen lassen.
+> **Stand 17.10.2026 (Rechtsprüfung Welle 1, D-06).** Das ist ein Baustein für die Datenschutzerklärung **unserer Kunden**
+> (der Kunde ist Verantwortlicher, NexAI Auftragsverarbeiter). NexAIs eigene Datenschutzerklärung steht in
+> `messages/*/legal.json` und ist dort bereits aktuell. Platzhalter in [eckigen Klammern] je Kunde ausfüllen.
+>
+> **Pflichten des Kunden, die wir im Verkauf offen ansprechen:** Ein KI-Agent, der mit Kunden durch Konversation
+> interagiert, steht auf der Muss-Liste der Datenschutzkonferenz (Nr. 11) → der Kunde muss eine
+> Datenschutz-Folgenabschätzung machen (Art. 35 Abs. 4 DSGVO) und deshalb einen Datenschutzbeauftragten benennen
+> (§ 38 Abs. 1 Satz 2 BDSG, unabhängig von der Mitarbeiterzahl). NexAI liefert dafür den DSFA-Baustein
+> (`compliance/DSFA-Voice-Agent.md`, Abschnitt 7).
 
-Füge das jeweilige Objekt in das `sections`-Array unter `Legal.privacy` ein:
-- Deutsch → `messages/de/legal.json`
-- Englisch → `messages/en/legal.json`
+## KI-Chat-Assistent
 
-## Deutsch — in `messages/de/legal.json` → `Legal.privacy.sections`
+Auf unserer Website können Sie einem KI-gestützten Chat-Assistenten schreiben; er ist kein Mensch.
 
-```json
-{
-  "heading": "Chatbot / KI-Assistent",
-  "body": "Auf unserer Website bieten wir einen KI-gestützten Chat-Assistenten an. Wenn Sie den Chat nutzen, verarbeiten wir die von Ihnen eingegebenen Nachrichten sowie ggf. freiwillig angegebene Kontaktdaten (Name, E-Mail, Telefonnummer) und Ihr Anliegen, um Ihre Anfrage zu beantworten und – auf Ihren Wunsch – einen Beratungstermin zu vereinbaren. Zur Verarbeitung der Nachrichten und zur Automatisierung setzen wir Dienstleister als Auftragsverarbeiter ein: die Automatisierungsplattform n8n, das Sprachmodell von OpenAI (OpenAI Ireland Ltd.) sowie Google (Google Calendar und Google Sheets) zur Terminverwaltung und Speicherung Ihrer Anfrage. Dabei kann eine Übermittlung in Drittländer (z. B. USA) erfolgen; wir stützen diese auf die EU-Standardvertragsklauseln. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (Anbahnung/Erfüllung eines Vertrags) sowie Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an effizienter Kommunikation). Die Angabe von Daten ist freiwillig; ohne Kontaktdaten können wir jedoch keinen Termin vereinbaren."
-}
-```
+Beim Seitenaufruf lädt Ihr Browser das Chatfenster vom Server unseres Dienstleisters; dabei werden IP-Adresse und Verbindungsdaten übertragen. Schreiben Sie eine Nachricht, verarbeiten wir Ihre Eingaben und Ihre freiwilligen Angaben (Name, E-Mail-Adresse, Telefonnummer, Anliegen, Wunschtermin).
 
-## Englisch — in `messages/en/legal.json` → `Legal.privacy.sections`
+Erst nach Ihrer ersten Nachricht legt das Fenster eine zufällige Sitzungskennung und den Verlauf im Sitzungsspeicher Ihres Browsers ab; beim Schließen des Tabs ist beides gelöscht (§ 25 Abs. 2 Nr. 2 TDDDG).
 
-```json
-{
-  "heading": "Chatbot / AI assistant",
-  "body": "Our website offers an AI-powered chat assistant. When you use the chat, we process the messages you enter and any contact details you voluntarily provide (name, email, phone number) together with your request, in order to answer your enquiry and — at your request — arrange a consultation appointment. To process the messages and automate these steps we use service providers acting as processors: the automation platform n8n, the language model provided by OpenAI (OpenAI Ireland Ltd.), and Google (Google Calendar and Google Sheets) for appointment handling and storing your request. This may involve a transfer to third countries (e.g. the USA), which we base on the EU Standard Contractual Clauses. The legal basis is Art. 6(1)(b) GDPR (initiation/performance of a contract) and Art. 6(1)(f) GDPR (legitimate interest in efficient communication). Providing data is voluntary; however, without contact details we cannot arrange an appointment."
-}
-```
+Rechtsgrundlagen: Art. 6 Abs. 1 lit. b DSGVO (Anfrage, Termin) und Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einem schnell erreichbaren, stabilen Kontaktweg).
 
-> Hinweis: Die genannten Anbieter/Rechtsgrundlagen sind ein üblicher Vorschlag,
-> keine verbindliche Rechtsauskunft. Prüfe insbesondere, ob OpenAI-DPA und
-> Google-Auftragsverarbeitung akzeptiert sind, und passe den Text an eure
-> tatsächliche Konfiguration an.
+Auftragsverarbeiter (Art. 28 DSGVO) ist die NexAI – Next Generation Artificial Intelligence GbR, Untere Bergstraße 13, 74586 Frankenhardt-Honhardt, mit Hetzner Online GmbH, Gunzenhausen (Server in Deutschland) und OpenAI Ireland Ltd., Dublin (Sprachmodell; Verarbeitung durch OpenAI, L.L.C., USA möglich)[; Google Ireland Ltd., Dublin (Kalender und Einladungsmail) — nur wenn so eingerichtet].
+
+OpenAI ist nicht nach dem EU-U.S. Data Privacy Framework zertifiziert; die Übermittlung in die USA stützt sich auf die EU-Standardvertragsklauseln (Art. 46 Abs. 2 lit. c DSGVO), eine Kopie erhalten Sie bei uns. OpenAI speichert Ein- und Ausgaben bis zu 30 Tage zur Missbrauchserkennung und verwendet sie nicht zum Training. Ihre Anfragen löschen wir [X] Monate nach dem letzten Kontakt.
+
+Ihre Angaben sind freiwillig. Der Verarbeitung auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO können Sie aus Gründen Ihrer besonderen Situation jederzeit widersprechen.

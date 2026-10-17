@@ -28,7 +28,10 @@ export const PROMOTION = {
 export const DEMO_PHONE = { display: "07959 3100191", href: "tel:+4979593100191" } as const;
 
 /** Karrieresystem als PDF (Kopie des Partner-Decks, wird nur per Bestätigungsmail verlinkt) — leer lassen, wenn es keins gibt. */
-export const KARRIERE_PDF_PATH = "/downloads/NexAI-Karrieresystem.pdf";
+// Offline seit 17.10.2026 (Rechtsprüfung Welle 1, D-01–D-04): Hochrechnung ohne realistische
+// Grundlage, Mithören ohne Wissen des Angerufenen, Anstellungsmerkmale. Erst nach Überarbeitung
+// wieder veröffentlichen. Leer = die Bewerbungsmail verschickt keinen Link.
+export const KARRIERE_PDF_PATH: string = "";
 
 /** Veröffentlichungsdatum des JobPostings (bei größeren Änderungen aktualisieren). */
 export const DATE_POSTED = "2026-08-22";

@@ -1,41 +1,36 @@
-# Datenschutz-Absatz für den Voice-/Telefon-Assistenten (Vapi)
+# Datenschutz-Baustein für Kunden: KI-Telefonassistent
 
-Der KI-Sprachassistent verarbeitet personenbezogene Daten und nutzt mehrere
-Auftragsverarbeiter (Vapi, Soniox, OpenAI, Google Calendar) sowie eure
-selbst gehostete n8n-Instanz. Das gehört in die Datenschutzerklärung.
-**Keine Rechtsberatung** — vor Live-Gang anwaltlich/DSB prüfen lassen.
+> **Stand 17.10.2026 (Rechtsprüfung Welle 1, D-06).** Das ist ein Baustein für die Datenschutzerklärung **unserer Kunden**
+> (der Kunde ist Verantwortlicher, NexAI Auftragsverarbeiter). NexAIs eigene Datenschutzerklärung steht in
+> `messages/*/legal.json` und ist dort bereits aktuell. Platzhalter in [eckigen Klammern] je Kunde ausfüllen.
+>
+> **Pflichten des Kunden, die wir im Verkauf offen ansprechen:** Ein KI-Agent, der mit Kunden durch Konversation
+> interagiert, steht auf der Muss-Liste der Datenschutzkonferenz (Nr. 11) → der Kunde muss eine
+> Datenschutz-Folgenabschätzung machen (Art. 35 Abs. 4 DSGVO) und deshalb einen Datenschutzbeauftragten benennen
+> (§ 38 Abs. 1 Satz 2 BDSG, unabhängig von der Mitarbeiterzahl). NexAI liefert dafür den DSFA-Baustein
+> (`compliance/DSFA-Voice-Agent.md`, Abschnitt 7).
 
-Einsetzen in das `sections`-Array unter `Legal.privacy`:
-- Deutsch → `messages/de/legal.json`
-- Englisch → `messages/en/legal.json`
+## KI-Telefonassistent
 
-Vor Veröffentlichung anpassen: **[X Monate]** = eure Aufbewahrungsfrist.
+Rufen Sie unter [Rufnummer] an, nimmt ein KI-gestützter Telefonassistent den Anruf an; er sagt Ihnen das zu Beginn. Möchten Sie lieber einen Menschen sprechen, sagen Sie es.
 
-## Deutsch — in `messages/de/legal.json` → `Legal.privacy.sections`
+Verarbeitet werden Ihre Rufnummer (sofern übermittelt), Zeitpunkt und Dauer des Anrufs, der Gesprächsinhalt, soweit zur Bearbeitung nötig, und Ihre Angaben (Name, Anliegen, Wunschtermin, ggf. E-Mail-Adresse).
 
-```json
-{
-  "heading": "KI-Telefon-/Sprachassistent",
-  "body": "Für Terminanfragen bieten wir einen KI-gestützten Sprachassistenten an. Wenn Sie mit dem Assistenten sprechen, verarbeiten wir die von Ihnen genannten Angaben (Name, Telefonnummer, Anliegen sowie Ihren Wunschtermin), um Ihre Anfrage zu bearbeiten und einen Beratungstermin zu vereinbaren. Das Gespräch wird nicht aufgezeichnet. Zur Sprachverarbeitung und Automatisierung setzen wir Dienstleister als Auftragsverarbeiter ein: Vapi (Sprachassistent, Telefonie und Sprachsynthese), Soniox (Spracherkennung, von Vapi als Unterauftragsverarbeiter eingesetzt), OpenAI (Sprachmodell) sowie Google (Google Calendar zur Terminverwaltung). Die Automatisierung und die Speicherung Ihrer Termindaten erfolgen über unsere selbst gehostete Plattform n8n auf einem Server innerhalb der EU. Bei einigen dieser Dienstleister kann eine Übermittlung in Drittländer (z. B. USA) erfolgen; wir stützen diese auf einen Angemessenheitsbeschluss (EU-US Data Privacy Framework) bzw. die EU-Standardvertragsklauseln. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (Anbahnung und Erfüllung eines Vertrags) sowie Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an effizienter Terminvereinbarung). Die Angabe der Daten ist freiwillig; ohne Kontaktdaten und Wunschtermin können wir jedoch keinen Termin vereinbaren. Ihre Termindaten werden nach [X Monaten] gelöscht, soweit keine gesetzlichen Aufbewahrungspflichten entgegenstehen."
-}
-```
+Zweck: Bearbeitung Ihrer Anfrage und Terminvereinbarung (Art. 6 Abs. 1 lit. b DSGVO), im Übrigen unser berechtigtes Interesse an telefonischer Erreichbarkeit (Art. 6 Abs. 1 lit. f DSGVO). Bitte nennen Sie keine Gesundheitsdaten.
 
-## Englisch — in `messages/en/legal.json` → `Legal.privacy.sections`
+Das Gespräch wird nicht als Ton aufgezeichnet.
 
-```json
-{
-  "heading": "AI phone / voice assistant",
-  "body": "For appointment requests we offer an AI-powered voice assistant. When you speak with the assistant, we process the details you provide (name, phone number, your request and your preferred appointment time) in order to handle your enquiry and arrange a consultation appointment. The call is not recorded. To process speech and automate these steps we use service providers acting as processors: Vapi (voice assistant, telephony and speech synthesis), Soniox (speech recognition, engaged by Vapi as a sub-processor), OpenAI (language model) and Google (Google Calendar for appointment handling). Automation and the storage of your appointment data run on our self-hosted n8n platform on a server located within the EU. Some of these providers may involve a transfer to third countries (e.g. the USA); we base this on an adequacy decision (EU-US Data Privacy Framework) or the EU Standard Contractual Clauses. The legal basis is Art. 6(1)(b) GDPR (initiation and performance of a contract) and Art. 6(1)(f) GDPR (legitimate interest in efficient appointment scheduling). Providing the data is voluntary; however, without contact details and a preferred time we cannot arrange an appointment. Your appointment data is deleted after [X months], unless statutory retention obligations apply."
-}
-```
+Auftragsverarbeiter (Art. 28 DSGVO) ist die NexAI – Next Generation Artificial Intelligence GbR, Untere Bergstraße 13, 74586 Frankenhardt-Honhardt. Sie setzt ein: Vapi, Inc., San Francisco, USA (Gesprächssteuerung, Telefonie, Sprachausgabe); Soniox, Inc., Foster City, USA (Spracherkennung, Unterauftragsverarbeiter von Vapi); OpenAI Ireland Ltd., Dublin (Sprachmodell; Verarbeitung durch OpenAI, L.L.C., USA möglich); [easybell GmbH, Berlin (Telefonanschluss) — nur wenn so eingerichtet]; Hetzner Online GmbH, Gunzenhausen (Server in Deutschland für Automatisierung, CRM und Kundenportal); [Google Ireland Ltd., Dublin (Google Kalender und Gmail für Termin und Bestätigung) — nur wenn so eingerichtet].
 
-## Compliance-Checkliste (kurz, damit später keine Probleme)
-- [ ] **Google Workspace AVV** (Cloud Data Processing Addendum) im Admin bestätigt — deckt Google Calendar.
-- [x] **AVV / DPA** mit **Vapi** und **OpenAI** (OpenAI Ireland Ltd.) abgeschlossen (Stand 06.09.2026). **Soniox** ist über den Vapi-DPA als Unterauftragsverarbeiter abgedeckt; Deepgram ist nicht mehr im Einsatz.
-- [ ] **n8n** = eigener EU-Server → Leads liegen in der n8n-Data-Table (kein US-Transfer). Falls Server bei einem Hoster: dessen AVV.
-- [ ] Datenschutzerklärung um obigen Absatz ergänzt (DE + EN), **[X Monate]** gesetzt.
-- [ ] **Löschkonzept**: Aufbewahrungsfrist definiert; optional späterer n8n-Cleanup-Workflow.
-- [ ] Keine Anrufaufzeichnung (Vapi „Recording" aus) — bestätigt.
+Vapi, Soniox und OpenAI sind nicht nach dem EU-U.S. Data Privacy Framework zertifiziert; die Übermittlung in die USA stützt sich auf die EU-Standardvertragsklauseln (Art. 46 Abs. 2 lit. c DSGVO), eine Kopie erhalten Sie bei uns. [Google LLC ist nach dem Data Privacy Framework zertifiziert (Art. 45 DSGVO).]
 
-> Hinweis: Anbieter/Rechtsgrundlagen sind ein üblicher Vorschlag, keine verbindliche Rechtsauskunft.
-> An eure tatsächliche Konfiguration anpassen und anwaltlich/DSB prüfen lassen.
+Vapi speichert eine Anrufübersicht und ein technisches Protokoll des Gesprächsverlaufs zur Fehlersuche für rund 14 Tage. Termin- und Kontaktdaten löschen wir [X] Monate nach dem Termin, soweit keine Aufbewahrungspflichten bestehen.
+
+Ihre Angaben sind freiwillig; ohne Name, Rufnummer und Wunschtermin können wir keinen Termin vereinbaren. Der Verarbeitung auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO können Sie aus Gründen Ihrer besonderen Situation jederzeit widersprechen.
+
+## Checkliste vor dem Livegang beim Kunden
+- [ ] Begrüßung beginnt mit dem KI-Hinweis („Guten Tag, hier ist der KI-Assistent von [Firma] …“), Unterbrechen der Begrüßung aus (Art. 50 Abs. 1 und 5 KI-VO).
+- [ ] Prompt: gibt sich nie als Mensch aus, bestätigt auf Nachfrage sofort, dass er eine KI ist.
+- [ ] Aufzeichnung und Transkript in Vapi aus.
+- [ ] AVV mit dem Kunden unterschrieben (Anlage B), Unterauftragsverarbeiter dort wie oben.
+- [ ] Kunde hat DSFA und Datenschutzbeauftragten (siehe Kasten oben).

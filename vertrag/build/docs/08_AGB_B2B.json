@@ -12,7 +12,7 @@
     },
     {
       "t": "meta",
-      "text": "Stand: September 2026"
+      "text": "Stand: Oktober 2026"
     },
     {
       "t": "spacer",
@@ -82,10 +82,11 @@
     {
       "t": "num",
       "items": [
-        "Es fällt keine Einrichtungs- oder Setup-Gebühr an. Für die Leistungen ist ausschließlich ein monatlicher oder – bei entsprechender Wahl – ein jährlicher Beitrag nach Maßgabe des Auftragsformulars zu entrichten.",
-        "Alle Preise verstehen sich netto in Euro zzgl. der jeweils geltenden gesetzlichen Umsatzsteuer. NexAI unterliegt der Regelbesteuerung. Bis zur Erteilung einer Umsatzsteuer-Identifikationsnummer wird auf den Rechnungen die Steuernummer ausgewiesen.",
+        "Eine einmalige Einrichtungsgebühr fällt nur an, wenn und soweit sie im Auftragsformular vereinbart ist; sie ist mangels abweichender Vereinbarung mit der Abnahme der Einrichtung fällig. Im Übrigen ist für die Leistungen ein monatlicher oder – bei entsprechender Wahl – ein jährlicher Beitrag nach Maßgabe des Auftragsformulars zu entrichten.",
+        "Alle Preise verstehen sich netto in Euro zzgl. der jeweils geltenden gesetzlichen Umsatzsteuer. NexAI unterliegt der Regelbesteuerung; die Umsatzsteuer-Identifikationsnummer von NexAI lautet DE463741277.",
         "Im Beitrag ist ein Nutzungskontingent enthalten (nachfolgend \"Freikontingent\"). Nutzung über das Freikontingent hinaus (nachfolgend \"Mehrverbrauch\" oder \"Overage\") wird zum im Auftragsformular vereinbarten Netto-Einheitspreis abgerechnet und zusammen mit dem Beitrag des Folgemonats in Rechnung gestellt. Auf Verlangen des Kunden stellt NexAI einen Einzelverbindungsnachweis zur Verfügung. Je Agent kann ein technisches Ausgaben-Limit (EUR-Spend-Cap) eingerichtet werden.",
         "Rechnungen sind ohne Abzug innerhalb von 14 Tagen ab Zugang der Rechnung zur Zahlung fällig. Die Zahlung erfolgt wahlweise per SEPA-Firmenlastschrift (B2B-Firmenlastschriftmandat) oder per Überweisung nach Wahl des Kunden gemäß Auftragsformular.",
+        "Rechnungen, Stornorechnungen, Zahlungserinnerungen und Mahnungen übermittelt NexAI elektronisch an die vom Kunden im Auftragsformular benannte Rechnungs-E-Mail-Adresse. Soweit NexAI gesetzlich verpflichtet ist, eine elektronische Rechnung im Sinne des § 14 Absatz 1 Satz 3 UStG auszustellen, erhält der Kunde die Rechnung in einem diesen Anforderungen entsprechenden strukturierten Format (z. B. ZUGFeRD oder XRechnung). Im Übrigen, insbesondere soweit eine Übergangsregelung eine andere Form zulässt, stimmt der Kunde der Übermittlung von Rechnungen als PDF-Datei per E-Mail zu (§ 14 Absatz 1 Satz 5 UStG). Der Kunde teilt Änderungen seiner Rechnungsanschrift und seiner Rechnungs-E-Mail-Adresse unverzüglich in Textform mit.",
         "Gerät der Kunde in Zahlungsverzug, ist NexAI berechtigt, Verzugszinsen in Höhe von 9 Prozentpunkten über dem jeweiligen Basiszinssatz sowie eine Pauschale in Höhe von 40 EUR gemäß § 288 Abs. 2 und Abs. 5 BGB zu verlangen. Die Pauschale ist auf einen geschuldeten Schadensersatz anzurechnen, soweit der Schaden in Kosten der Rechtsverfolgung begründet ist. Die Geltendmachung eines weitergehenden Verzugsschadens bleibt vorbehalten.",
         "Befindet sich der Kunde mit fälligen Zahlungen in Verzug, ist NexAI nach vorheriger Ankündigung in Textform und fruchtlosem Ablauf einer angemessenen Nachfrist berechtigt, die Betriebsleistungen ganz oder teilweise auszusetzen, bis sämtliche fälligen Beträge ausgeglichen sind. Der Zahlungsanspruch bleibt für die Dauer der Aussetzung bestehen.",
         "Der Kunde kann nur mit unbestrittenen oder rechtskräftig festgestellten Forderungen aufrechnen. Ein Zurückbehaltungsrecht steht ihm nur wegen Gegenansprüchen aus demselben Vertragsverhältnis zu."

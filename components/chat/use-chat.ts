@@ -72,8 +72,10 @@ export function useChat({
   const [messages, setMessages] = useState<ChatMessage[]>(boot.messages);
   const [sending, setSending] = useState(false);
 
-  // Persist after every change.
+  // Persist after every change — but only once the chat is actually used, so a
+  // page view alone stores nothing in the browser (§ 25 TDDDG).
   useEffect(() => {
+    if (messages.length === 0) return;
     try {
       const data: Persisted = { sessionId, messages };
       sessionStorage.setItem(STORAGE_KEY, JSON.stringify(data));

@@ -15,7 +15,7 @@
 
 ## 0. Ergebnis vorweg
 
-**Die Schwellwertprüfung fällt eindeutig aus, und zwar anders als bei der Konzeption angenommen: Eine Datenschutz-Folgenabschätzung ist Pflicht, nicht Ermessen.** Der Verarbeitungsvorgang steht **wörtlich auf der Muss-Liste der deutschen Aufsichtsbehörden** (Nr. 9: Einsatz künstlicher Intelligenz zur Steuerung der Interaktion mit den Betroffenen; als Beispiel wird dort ausdrücklich ein System genannt, das mit Kunden durch Konversation interagiert). Damit erübrigt sich jede Abwägung über Kriterienzahlen — steht ein Vorgang auf der Liste, ist die Folgenabschätzung durchzuführen.
+**Die Schwellwertprüfung fällt eindeutig aus, und zwar anders als bei der Konzeption angenommen: Eine Datenschutz-Folgenabschätzung ist Pflicht, nicht Ermessen.** Der Verarbeitungsvorgang steht **wörtlich auf der Muss-Liste der deutschen Aufsichtsbehörden** (Nr. 11: Einsatz künstlicher Intelligenz zur Steuerung der Interaktion mit den Betroffenen; als Beispiel wird dort ausdrücklich ein System genannt, das mit Kunden durch Konversation interagiert). Damit erübrigt sich jede Abwägung über Kriterienzahlen — steht ein Vorgang auf der Liste, ist die Folgenabschätzung durchzuführen.
 
 Daraus folgen drei Dinge, von denen zwei zusätzliche Pflichten auslösen:
 
@@ -39,11 +39,13 @@ Daraus folgen drei Dinge, von denen zwei zusätzliche Pflichten auslösen:
 
 ### 1.2 Liste der Aufsichtsbehörden nach Art. 35 Abs. 4 (Muss-Liste) — **einschlägig**
 
-Die Liste der Datenschutzkonferenz nennt unter **Nr. 9**:
+Die Liste der Datenschutzkonferenz (Version 1.1 vom 17.10.2018) nennt unter **Nr. 11**:
 
 > „Einsatz von künstlicher Intelligenz zur Verarbeitung personenbezogener Daten zur Steuerung der Interaktion mit den Betroffenen oder zur Bewertung persönlicher Aspekte der betroffenen Person."
 
 Als Beispiele werden dort **„Kundensupport mittels künstlicher Intelligenz"** und ein System genannt, das **„mit Kunden durch Konversation interagiert"**. Das beschreibt den Voice Agent nicht sinngemäß, sondern wörtlich: Er steuert die Interaktion mit dem Anrufer vollständig, entscheidet über Rückfragen, Terminvorschläge und Weiterleitung.
+
+> **Prüfvermerk 17.10.2026:** Wortlaut und Beispiele am amtlichen PDF der DSK nachgeprüft (dort Nr. 11, nicht Nr. 9 wie in der Erstfassung). Die Fassung 1.1 ist weiterhin die auf datenschutzkonferenz-online.de verlinkte. Die Einstufung hält. Folge nach § 38 Abs. 1 Satz 2 BDSG: Datenschutzbeauftragter zu benennen. Hinweis: Der Website-Chat (VVT A4) „interagiert mit Kunden durch Konversation“ ebenso und ist deshalb in diese Folgenabschätzung aufzunehmen oder gesondert zu bewerten.
 
 **Konsequenz:** Die Folgenabschätzung ist durchzuführen. Ein Abwägen anhand der Kriterienzahl (1.3) ist dafür nicht mehr nötig; die Kriterien werden trotzdem geprüft, weil sie die Risikoanalyse in Abschnitt 5 strukturieren.
 
@@ -227,7 +229,7 @@ Jeder der folgenden Punkte macht eine Neubewertung erforderlich, bevor er umgese
 
 ## Quellen
 
-- Liste der Verarbeitungstätigkeiten, für die eine Datenschutz-Folgenabschätzung durchzuführen ist (DSK-Muss-Liste, Version 1.1), Nr. 9 — veröffentlicht unter anderem durch das [Bayerische Landesamt für Datenschutzaufsicht](https://www.lda.bayern.de/media/dsfa_muss_liste_dsk_de.pdf) und die [LDI Nordrhein-Westfalen](https://www.ldi.nrw.de/system/files/media/document/file/dsk_dsfa_muss-liste_version_1_1_deutsch_4.pdf)
+- Liste der Verarbeitungstätigkeiten, für die eine Datenschutz-Folgenabschätzung durchzuführen ist (DSK-Muss-Liste, Version 1.1), Nr. 11 — veröffentlicht unter anderem durch das [Bayerische Landesamt für Datenschutzaufsicht](https://www.lda.bayern.de/media/dsfa_muss_liste_dsk_de.pdf) und die [LDI Nordrhein-Westfalen](https://www.ldi.nrw.de/system/files/media/document/file/dsk_dsfa_muss-liste_version_1_1_deutsch_4.pdf)
 - Artikel-29-Datenschutzgruppe, Leitlinien zur Datenschutz-Folgenabschätzung, WP 248 rev.01
 - [§ 38 BDSG](https://www.gesetze-im-internet.de/bdsg_2018/__38.html) — Datenschutzbeauftragte nichtöffentlicher Stellen
 - DSK, Orientierungshilfe Künstliche Intelligenz und Datenschutz (Mai 2024)

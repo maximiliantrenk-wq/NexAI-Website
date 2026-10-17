@@ -41,6 +41,8 @@ export async function POST(request: Request) {
     Status: "Double-Opt-In bestätigt",
     Zeitpunkt: new Date().toISOString(),
     Quelle: "Newsletter (Footer)",
+    // Wortlaut der Einwilligung: messages/*/common.json → Footer.newsletterConsent
+    Einwilligungstext: "Footer-Hinweis, Fassung Oktober 2026",
   };
 
   const notify = await sendMail({
