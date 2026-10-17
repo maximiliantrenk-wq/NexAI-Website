@@ -8,7 +8,7 @@
     },
     {
       "t": "meta",
-      "text": "Stand: September 2026 · Jeder Paragraph in 3 Sätzen, ohne Juristendeutsch"
+      "text": "Stand: Oktober 2026 · Jeder Paragraph in 3 Sätzen, ohne Juristendeutsch"
     },
     {
       "t": "note",
@@ -87,7 +87,7 @@
     },
     {
       "t": "p",
-      "text": "Alle Preise sind netto, es gibt keine Setup-Gebühr, sondern nur einen monatlichen oder jährlichen Beitrag mit einem enthaltenen Freikontingent; Mehrverbrauch wird extra abgerechnet. Für euch heißt das: Overage rechnet ihr nachträglich mit dem Folgemonat ab, und ihr könnt pro Agent ein Ausgaben-Limit (Spend-Cap) setzen und bei Erreichen die Leistung pausieren. Rechnungen sind in 14 Tagen fällig, und bei Zahlungsverzug bekommt ihr 9 % über Basiszins plus 40 EUR Pauschale – zahlbar per Lastschrift oder Überweisung."
+      "text": "Alle Preise sind netto; eine einmalige Einrichtungsgebühr gibt es nur, wenn sie im Auftragsformular steht, sonst einen monatlichen oder jährlichen Beitrag mit einem enthaltenen Freikontingent; Mehrverbrauch wird extra abgerechnet. Rechnungen gehen per E-Mail an die Rechnungsadresse des Kunden – als E-Rechnung, wo das Gesetz sie verlangt, sonst als PDF, dem der Kunde im Vertrag zustimmt. Für euch heißt das: Overage rechnet ihr nachträglich mit dem Folgemonat ab, und ihr könnt pro Agent ein Ausgaben-Limit (Spend-Cap) setzen und bei Erreichen die Leistung pausieren. Rechnungen sind in 14 Tagen fällig, und bei Zahlungsverzug bekommt ihr 9 % über Basiszins plus 40 EUR Pauschale – zahlbar per Lastschrift oder Überweisung."
     },
     {
       "t": "h2",
@@ -319,7 +319,7 @@
     },
     {
       "t": "p",
-      "text": "Hier steht, dass es keine Setup-Gebühr gibt, sondern nur einen monatlichen oder jährlichen Beitrag, und Projektleistungen wie die Einrichtung einer Anwendung extra einmalig kosten. In die Tabelle tragt ihr die einzelnen Posten und die Summe ein — alle Preise immer netto plus Mehrwertsteuer. Achtet darauf, den Abrechnungsturnus (z. B. monatlich im Voraus) einzutragen, und denkt daran, bis zur USt-IdNr. eure Steuernummer auf die Rechnung zu schreiben."
+      "text": "Hier steht, dass eine einmalige Einrichtungsgebühr nur anfällt, wenn ihr sie als einmalige Position in die Tabelle eintragt, sonst nur der monatliche oder jährliche Beitrag, und dass Projektleistungen wie die Einrichtung einer Anwendung extra einmalig kosten. In die Tabelle tragt ihr die einzelnen Posten und die Summe ein — alle Preise immer netto plus Mehrwertsteuer. Achtet darauf, den Abrechnungsturnus (z. B. monatlich im Voraus) einzutragen, und lasst euch oben die Rechnungs-E-Mail-Adresse des Kunden geben; eure USt-IdNr. DE463741277 steht auf jeder Rechnung."
     },
     {
       "t": "h2",
@@ -516,7 +516,7 @@
     },
     {
       "t": "p",
-      "text": "Die Ersteinrichtung der Agenten und Anwendungen (Grundkonfiguration, Wissensbasis, Workflows, Anbindungen, Tests) ist ebenfalls eine Werkleistung. Wichtig für euch: dafür wird KEINE separate Setup-Gebühr verlangt, sie ist mit dem monatlichen oder jährlichen Beitrag abgegolten. Achtet darauf, dass eine Ausnahme davon nur gilt, wenn das Auftragsformular ausdrücklich etwas anderes festlegt."
+      "text": "Die Ersteinrichtung der Agenten und Anwendungen (Grundkonfiguration, Wissensbasis, Workflows, Anbindungen, Tests) ist ebenfalls eine Werkleistung. Wichtig für euch: Eine Einrichtungsgebühr gibt es nur, wenn sie im Auftragsformular vereinbart ist; sonst ist die Einrichtung mit dem monatlichen oder jährlichen Beitrag abgegolten."
     },
     {
       "t": "h2",
@@ -1134,7 +1134,7 @@
     },
     {
       "t": "p",
-      "text": "Es gibt keine Setup-Gebühr, sondern nur einen monatlichen oder jährlichen Beitrag mit einem enthaltenen Freikontingent; Mehrverbrauch wird extra mit dem Folgemonat abgerechnet. Rechnungen sind netto plus Umsatzsteuer und innerhalb von 14 Tagen fällig; bei Zahlungsverzug dürft ihr Verzugszinsen und 40 EUR Pauschale verlangen und nach Vorwarnung sogar den Betrieb pausieren. Praktisch könnt ihr pro Agent ein Ausgaben-Limit (Spend-Cap) einrichten, damit euch der Mehrverbrauch nicht aus dem Ruder läuft — der Kunde kann außerdem nur mit unstrittigen Forderungen aufrechnen."
+      "text": "Eine Einrichtungsgebühr gibt es nur, wenn sie im Auftragsformular vereinbart ist, ansonsten einen monatlichen oder jährlichen Beitrag mit einem enthaltenen Freikontingent; Mehrverbrauch wird extra mit dem Folgemonat abgerechnet. Rechnungen sind netto plus Umsatzsteuer und innerhalb von 14 Tagen fällig; bei Zahlungsverzug dürft ihr Verzugszinsen und 40 EUR Pauschale verlangen und nach Vorwarnung sogar den Betrieb pausieren. Praktisch könnt ihr pro Agent ein Ausgaben-Limit (Spend-Cap) einrichten, damit euch der Mehrverbrauch nicht aus dem Ruder läuft — der Kunde kann außerdem nur mit unstrittigen Forderungen aufrechnen."
     },
     {
       "t": "h2",

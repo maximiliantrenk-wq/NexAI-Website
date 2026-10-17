@@ -1,6 +1,6 @@
 # NexAI – B2B-Vertragswerk
 
-Modulares Vertragspaket für **NexAI – Next Generation Artificial Intelligence GbR** (Stand: September 2026).
+Modulares Vertragspaket für **NexAI – Next Generation Artificial Intelligence GbR** (Stand: Oktober 2026).
 Jedes Dokument liegt als **Word (.docx, zum Ausfüllen/Bearbeiten)** und **PDF (zum Unterschreiben)** vor.
 
 ## Inhalt (Reihenfolge)
@@ -24,7 +24,8 @@ und dem Kunden unterzeichnet. Anlagen A, C werden mitgezeichnet; Anlage D erst b
 Vor dem Versand an einen Kunden ausfüllen:
 
 - **Kundendaten** (Firma, Anschrift, Vertretung, Kontakt) – im Rahmenvertrag, Auftragsformular, AVV.
-- **Eigene Steuer-Angaben:** USt-IdNr. – solange nicht vorhanden, **Steuernummer** eintragen.
+- **Rechnungs-E-Mail-Adresse** des Kunden – im Auftragsformular (Rechnungen gehen per E-Mail, siehe § 7 Rahmenvertrag / § 4 AGB).
+- **Einrichtungsgebühr** (falls vereinbart) – als einmalige Position in der Tabelle des Auftragsformulars.
 - **Preise:** monatlicher bzw. jährlicher Beitrag, **Freikontingent** (z. B. Freiminuten), **Overage-Preis**
   (z. B. `____ EUR/Min. netto`) – im Auftragsformular.
 - **EUR-Spend-Cap** je Agent (technisches Kostenlimit) – im Auftragsformular.

@@ -13,7 +13,7 @@
     },
     {
       "t": "meta",
-      "text": "Stand: September 2026"
+      "text": "Stand: Oktober 2026"
     },
     {
       "t": "spacer",
@@ -77,6 +77,11 @@
     {
       "t": "fill",
       "label": "E-Mail",
+      "value": ""
+    },
+    {
+      "t": "fill",
+      "label": "Rechnungs-E-Mail-Adresse (für Rechnungen und Mahnungen)",
       "value": ""
     },
     {
@@ -288,7 +293,7 @@
     },
     {
       "t": "p",
-      "text": "Für die Ersteinrichtung der Agenten wird **keine Einrichtungs- oder Setup-Gebühr** erhoben. Für Betriebsleistungen fällt ausschließlich der nachstehend vereinbarte monatliche **oder** jährliche Beitrag an. Projektleistungen (insbesondere die Einrichtung von Anwendungen) werden, soweit beauftragt, gesondert und einmalig vergütet. Alle Beträge verstehen sich **netto zzgl. der gesetzlichen Umsatzsteuer**."
+      "text": "Für die Ersteinrichtung fällt eine **einmalige Einrichtungsgebühr** nur an, wenn sie in der nachstehenden Tabelle als einmalige Position eingetragen ist. Für Betriebsleistungen fällt der nachstehend vereinbarte monatliche **oder** jährliche Beitrag an. Projektleistungen (insbesondere die Einrichtung von Anwendungen) werden, soweit beauftragt, gesondert und einmalig vergütet. Alle Beträge verstehen sich **netto zzgl. der gesetzlichen Umsatzsteuer**."
     },
     {
       "t": "table",
@@ -332,7 +337,7 @@
     },
     {
       "t": "note",
-      "text": "Umsatzsteuer: Regelbesteuerung; alle Preise netto zzgl. gesetzlicher USt. Bis zur Erteilung der USt-IdNr. wird die Steuernummer auf der Rechnung ausgewiesen."
+      "text": "Umsatzsteuer: Regelbesteuerung; alle Preise netto zzgl. gesetzlicher USt. USt-IdNr. von NexAI: DE463741277."
     },
     {
       "t": "spacer",

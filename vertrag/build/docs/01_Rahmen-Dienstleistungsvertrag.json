@@ -8,7 +8,7 @@
     },
     {
       "t": "meta",
-      "text": "Stand: September 2026"
+      "text": "Stand: Oktober 2026"
     },
     {
       "t": "p",
@@ -186,13 +186,14 @@
     {
       "t": "num",
       "items": [
-        "Alle Preise verstehen sich **netto zzgl. der gesetzlichen Umsatzsteuer**. NexAI unterliegt der Regelbesteuerung; bis zur Erteilung einer USt-IdNr. wird die Steuernummer auf der Rechnung ausgewiesen.",
-        "Es wird **keine Einrichtungs-/Setup-Gebühr** erhoben. Geschuldet ist ausschließlich ein **monatlicher oder — nach Wahl im Auftragsformular — jährlicher Beitrag** gemäß Auftragsformular.",
+        "Alle Preise verstehen sich **netto zzgl. der gesetzlichen Umsatzsteuer**. NexAI unterliegt der Regelbesteuerung; die Umsatzsteuer-Identifikationsnummer von NexAI lautet DE463741277.",
+        "Eine **einmalige Einrichtungsgebühr** fällt nur an, wenn und soweit sie im Auftragsformular vereinbart ist; sie ist mangels abweichender Vereinbarung mit der Abnahme der Einrichtung fällig. Im Übrigen ist ein **monatlicher oder — nach Wahl im Auftragsformular — jährlicher Beitrag** gemäß Auftragsformular geschuldet.",
         "Im Beitrag ist ein **Freikontingent** an Nutzung enthalten (z. B. Gesprächsminuten, Nachrichten, Vorgänge). Nutzung über das Freikontingent hinaus (**Mehrverbrauch / Overage**) wird zum im Auftragsformular vereinbarten Netto-Einheitspreis (z. B. \"____ EUR/Min.\") abgerechnet.",
         "Der Mehrverbrauch wird nachgelagert mit dem **Folgemonatsbeitrag** abgerechnet. NexAI stellt auf Verlangen einen **Einzelverbindungs-/Nutzungsnachweis** zur Verfügung. Je Agent kann ein technisches EUR-Spend-Cap vereinbart werden; bei Erreichen des Caps ist NexAI berechtigt, die Weiterleistung bis zur Freigabe eines höheren Caps auszusetzen.",
         "Überschreitet der Mehrverbrauch eine im Auftragsformular festgelegte Overage-Schwelle, ist der darüber hinausgehende Betrag **sofort fällig** und kann zwischenabgerechnet werden.",
         "Der jährliche Beitrag ist im Voraus für die jeweilige Laufzeit fällig; der monatliche Beitrag ist im Voraus zu Beginn des jeweiligen Monats fällig.",
         "Die Zahlung erfolgt nach Wahl des Kunden per **SEPA-Firmenlastschrift (B2B-Firmenlastschriftmandat)** oder per **Überweisung** auf das in der Rechnung genannte Konto. Rechnungen sind, sofern nichts anderes vereinbart ist, ohne Abzug binnen 14 Tagen ab Zugang zur Zahlung fällig.",
+        "Rechnungen, Stornorechnungen, Zahlungserinnerungen und Mahnungen übermittelt NexAI elektronisch an die vom Kunden im Auftragsformular benannte Rechnungs-E-Mail-Adresse. Soweit NexAI gesetzlich verpflichtet ist, eine elektronische Rechnung im Sinne des § 14 Absatz 1 Satz 3 UStG auszustellen, erhält der Kunde die Rechnung in einem diesen Anforderungen entsprechenden strukturierten Format (z. B. ZUGFeRD oder XRechnung). Im Übrigen, insbesondere soweit eine Übergangsregelung eine andere Form zulässt, stimmt der Kunde der Übermittlung von Rechnungen als PDF-Datei per E-Mail zu (§ 14 Absatz 1 Satz 5 UStG). Der Kunde teilt Änderungen seiner Rechnungsanschrift und seiner Rechnungs-E-Mail-Adresse unverzüglich in Textform mit.",
         "Bei Zahlungsverzug schuldet der Kunde Verzugszinsen in Höhe von **neun (9) Prozentpunkten über dem Basiszinssatz** sowie eine Pauschale von **40 EUR** (§ 288 Abs. 2, Abs. 5 BGB). Die Geltendmachung eines weitergehenden Schadens bleibt vorbehalten; die Pauschale ist auf einen geschuldeten Schadensersatz anzurechnen, soweit der Schaden in Kosten der Rechtsverfolgung begründet ist."
       ]
     },
