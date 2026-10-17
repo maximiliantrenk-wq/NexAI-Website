@@ -135,7 +135,7 @@
         },
         {
           "heading": "7. Wie lange wir Daten speichern",
-          "body": "– Zugang: solange er besteht. Nach dem Entzug oder Vertragsende stellen wir dem Kunden die Daten 30 Tage zum Export bereit und löschen sie danach, soweit keine Aufbewahrungspflicht entgegensteht.\n– Anmeldungen enden mit dem Abmelden oder laufen ab: im CRM nach 12 Stunden, in NexTime nach 90 Tagen, im Postfachassistenten nach 30 Tagen.\n– Protokolle: CRM-Prüfprotokoll rund 12 Monate; NexTime-Änderungsprotokoll 24 Monate; im Postfachassistenten der Wortlaut freigegebener Mails im Freigabeprotokoll 3 Jahre, die Protokollzeile selbst bis zum Ende des sechsten Kalenderjahres nach der Freigabe (wie Kopien abgesandter Handelsbriefe, § 257 HGB).\n– Im Kundenauftrag kann der Kunde kürzere Fristen festlegen."
+          "body": "– Zugang: solange er besteht. Nach dem Entzug oder Vertragsende stellen wir dem Kunden die Daten 30 Tage zum Export bereit und löschen sie danach, soweit keine Aufbewahrungspflicht entgegensteht.\n– Anmeldungen enden mit dem Abmelden oder laufen ab: im CRM nach 12 Stunden, in NexTime nach 90 Tagen, im Postfachassistenten nach 30 Tagen.\n– Protokolle: Das Prüfprotokoll des CRM wird derzeit noch nicht automatisch gelöscht, eine Löschung nach 12 Monaten ist in Vorbereitung; NexTime-Änderungsprotokoll 24 Monate; im Postfachassistenten der Wortlaut freigegebener Mails im Freigabeprotokoll 3 Jahre, die Protokollzeile selbst bis zum Ende des sechsten Kalenderjahres nach der Freigabe (wie Kopien abgesandter Handelsbriefe, § 257 HGB).\n– Im Kundenauftrag kann der Kunde kürzere Fristen festlegen."
         },
         {
           "heading": "8. Cookies",

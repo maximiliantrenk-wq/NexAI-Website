@@ -135,7 +135,7 @@
         },
         {
           "heading": "7. How long we keep data",
-          "body": "– Account: as long as it exists. After it is revoked or the contract ends, we make the data available to the customer for export for 30 days and then delete it, unless statutory retention obligations apply.\n– Sign-ins end when you sign out or expire: in the CRM after 12 hours, in NexTime after 90 days, in the mailbox assistant after 30 days.\n– Logs: CRM audit log around 12 months; NexTime change log 24 months; in the mailbox assistant the wording of approved emails in the approval log 3 years, the log line itself until the end of the sixth calendar year after approval (like copies of business letters sent, § 257 HGB).\n– When acting for a customer, the customer can set shorter periods."
+          "body": "– Account: as long as it exists. After it is revoked or the contract ends, we make the data available to the customer for export for 30 days and then delete it, unless statutory retention obligations apply.\n– Sign-ins end when you sign out or expire: in the CRM after 12 hours, in NexTime after 90 days, in the mailbox assistant after 30 days.\n– Logs: the CRM audit log is currently not yet deleted automatically, deletion after 12 months is being prepared; NexTime change log 24 months; in the mailbox assistant the wording of approved emails in the approval log 3 years, the log line itself until the end of the sixth calendar year after approval (like copies of business letters sent, § 257 HGB).\n– When acting for a customer, the customer can set shorter periods."
         },
         {
           "heading": "8. Cookies",
