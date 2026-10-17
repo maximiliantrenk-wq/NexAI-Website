@@ -40,7 +40,8 @@
     "newsletterCta": "Subscribe",
     "newsletterPlaceholder": "Email address",
     "newsletterSuccess": "Almost there! Please confirm via the link in the email we just sent you.",
-    "newsletterError": "Something went wrong. Please try again."
+    "newsletterError": "Something went wrong. Please try again.",
+    "newsletterConsent": "By clicking “Subscribe” I agree that NEXAI may email me information on applied AI and on NEXAI’s services once or twice a month. I can withdraw at any time via the unsubscribe link in every email or at mbt@nex-a-i.com. More in the <link>privacy policy</link>."
   },
   "Newsletter": {
     "confirmMeta": "Confirm newsletter",

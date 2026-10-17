@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { Check, Loader2 } from "lucide-react";
+import { Link } from "@/i18n/navigation";
 
 export function NewsletterForm() {
   const t = useTranslations("Footer");
@@ -81,6 +82,18 @@ export function NewsletterForm() {
       {status === "error" && (
         <p className="mt-2 text-xs text-red-400">{t("newsletterError")}</p>
       )}
+      <p className="mt-2 text-[11px] leading-relaxed text-subtle">
+        {t.rich("newsletterConsent", {
+          link: (chunks) => (
+            <Link
+              href="/privacy"
+              className="underline underline-offset-2 transition-colors hover:text-fg"
+            >
+              {chunks}
+            </Link>
+          ),
+        })}
+      </p>
     </form>
   );
 }

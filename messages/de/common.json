@@ -40,7 +40,8 @@
     "newsletterCta": "Abonnieren",
     "newsletterPlaceholder": "E-Mail-Adresse",
     "newsletterSuccess": "Fast geschafft! Bitte bestätigen Sie den Link in der E-Mail, die wir Ihnen gerade gesendet haben.",
-    "newsletterError": "Hat nicht geklappt. Bitte später erneut."
+    "newsletterError": "Hat nicht geklappt. Bitte später erneut.",
+    "newsletterConsent": "Mit „Abonnieren“ willige ich ein, dass NEXAI mir ein- bis zweimal im Monat E-Mails mit Informationen zu angewandter AI und zu den Leistungen von NEXAI schickt. Widerruf jederzeit über den Abmeldelink in jeder E-Mail oder an mbt@nex-a-i.com. Mehr in der <link>Datenschutzerklärung</link>."
   },
   "Newsletter": {
     "confirmMeta": "Newsletter bestätigen",
