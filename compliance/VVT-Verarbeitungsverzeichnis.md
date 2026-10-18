@@ -208,13 +208,18 @@ Empfänger-Kürzel (Drittland-Mechanismus): **Resend** (US, **DPF** — hilfswei
 - **Zugriff (TOMs):** Vertriebspartner und Manager sehen nur eigene Vorgänge; Inhaber, Geschäftsführung, Vertriebs- und Kommunikationsleitung sehen alle (`seesFullBook`) und können jedes PDF öffnen. Endgültig löschen nur die Geschäftsführung (`canDeleteSignatures`); zurückziehen kann, wer den Vorgang sieht. Empfehlungsgeber haben keinen Zugriff. Link-Token nur gehasht und verschlüsselt, Prüfsumme jeder Fassung im Protokoll, Siegel über das fertige PDF; ohne konfiguriertes Siegel kein neuer Vorgang.
 - **Besonderheiten:** Elektronische Signatur nach Art. 3 Nr. 10 eIDAS-VO, **weder fortgeschritten noch qualifiziert**. Sie genügt für formfreie Verträge und im Zweifel für vereinbarte Schrift- oder elektronische Form (§ 127 BGB), **nicht für die gesetzliche Schriftform** (§ 126 Abs. 1, 3, § 126a BGB), etwa Wettbewerbsabreden nach § 90a Abs. 1 HGB.
 - **Datenschutzhinweis:** Portal-Datenschutzerklärung (`lib/legal.ts`) Abschnitt „Elektronische Unterschriften“ und Kurzhinweis mit gesondertem Widerspruchshinweis auf der Unterschriftsseite (`messages/*/signPublic.json`). Wortlaut: `~/Developer/recht/pruefungen/2026-10-18-unterschriften-datenschutz.md` (Rechtsprüfung 18.10.2026).
-- **Sicherungen:** Die Tabellen liegen in der Portal-Datenbank und damit rund 30 Tage im nächtlichen Abzug (wie A21). **Die PDF-Dateien nicht:** Laut Einrichtung vom 22.09.2026 ist `/root/sicherung-portal.sh` ein reines `pg_dump`; `UPLOAD_DIR` (`/app/.data/uploads`, Coolify-Volume) wird nicht gesichert (am Server nicht nachgeprüft). Siehe „Bekannte Lücken“.
+- **Sicherungen:** Die Tabellen liegen in der Portal-Datenbank und damit rund 30 Tage im nächtlichen Abzug (wie A21). **Die PDF-Dateien seit 18.10.2026 ebenfalls:**
+  - `/root/sicherung-dateien.sh`, täglich 03:50 UTC; es sichert das Volume unter `/app/.data`.
+  - Verschlüsselt mit dem Zertifikat des Datenbank-Abzugs; der Schlüssel liegt nur auf Max' Mac.
+  - Abgelegt auf der CRM-Box (Hetzner, DE), 30 Nächte; lokal nichts.
+  - Erster Lauf am 18.10.: 48 Dateien.
+  - Quelle: nexai-portal `infra/` (PR #26).
 - **Nachfolger NexSign** (Entscheidung Max 18.10.2026; eigene App `nexsign`, geplant unter sign.nex-a-i.com, **noch nicht live**; das Portal leitet nach der Einrichtung dorthin um). Zweck, Betroffene, Rechtsgrundlagen, Empfänger und Fristen wie oben, mit diesen Abweichungen (geprüft an `nexsign` `4cd060c`):
   - eigene Datenbank (PGlite) und PDFs in `/app/.data` auf dem Coolify-Volume, derselbe Hetzner-Server; kein Sicherheitsprotokoll (A11), nur das Ereignisprotokoll `ereignisse`
   - **Konto-Spiegel** `nutzer` (Name, E-Mail, Rolle, Inhaber, letzte Anmeldung) aus einem signierten, 2 Minuten und einmal gültigen Ausweis des Portals; Sitzungs-Cookie 30 Tage, in der Datenbank nur als Hash (§ 25 Abs. 2 Nr. 2 TDDDG)
   - **Text- und Ankreuzfelder:** Einträge in `vorgaenge.angaben` und auf der Protokollseite
   - Löschlauf `lib/server/loeschlauf.ts`: Entwurf **7 Tage nach der letzten Bearbeitung**, sonst wie oben; abgelaufene Sitzungen und Ausweise werden gelöscht; **Konto-Spiegel 12 Monate nach der letzten Anmeldung** (ohne Anmeldung ab Anlage), verlustfrei, weil Name und E-Mail im Vorgang stehen.
-  - **Sicherung: keine.** Die Portal-Sicherung (`pg_dump` der Postgres-Container) erfasst weder die PGlite-Datenbank noch die PDFs. Vor dem Livegang nötig (siehe „Bekannte Lücken“).
+  - **Sicherung:** `sicherung-dateien.sh` nimmt jedes Volume unter `/app/.data` mit, also NexSign automatisch, sobald es läuft; die PGlite-Datenbank wird dafür kurz per `docker pause` angehalten. Dieser Weg ist erst nach dem Livegang mit einem Handstart geprüft.
   - Texte: Kundenseite in NexSign `4cd060c`, Portal-DSE Abschnitt 14 „(NexSign)“ in nexai-portal PR #25 (erst mit dem Livegang mergen); Wortlaut in der Rechtsprüfung `2026-10-18-unterschriften-datenschutz.md`, Teil E. Nach dem Livegang diesen Eintrag auf NexSign umschreiben.
 - **Offene Punkte:**
   - Server-Log: Die catch-Blöcke in `app/actions/signatures.ts` schrieben `error.message` (bei Datenbankfehlern samt Abfrageparametern) ins Log. Behoben in nexai-portal PR #23 (nur noch Fehlerart und DB-Code), noch nicht live.
@@ -323,7 +328,14 @@ Empfänger-Kürzel (Drittland-Mechanismus): **Resend** (US, **DPF** — hilfswei
 
 **🟠 Freitextfelder ohne Grenze.** `customers.notes` (A13), `leads.note`/`callNote` (A15), Termin-Notizen (A16) und die Lernunterlagen (A10) können besondere Kategorien enthalten, ohne dass etwas es verhindert.
 
-**🔴 Hochgeladene und erzeugte Dateien des Portals sind nicht gesichert** (aufgefallen bei A24, 18.10.2026). Die nächtliche Sicherung ist laut Einrichtung vom 22.09.2026 ein reines `pg_dump`; das Datei-Volume `UPLOAD_DIR` ist nicht dabei (am Server nicht nachgeprüft). Betroffen sind unterschriebene Verträge (A24) und hochgeladene Rechnungen und Belege (A14). Für NexSign (Nachfolger von A24) gilt es erst recht: Dort ist auch die Datenbank nicht gesichert. Fällt das Volume aus, sind sie verloren. Das verfehlt Art. 32 Abs. 1 lit. c DSGVO („die Verfügbarkeit … bei einem physischen oder technischen Zwischenfall rasch wiederherzustellen“). Für aufbewahrungspflichtige Unterlagen verlangt § 147 Abs. 2 Nr. 2 AO außerdem, dass sie „während der Dauer der Aufbewahrungsfrist jederzeit verfügbar sind“. → Volume in die verschlüsselte Sicherung aufnehmen.
+**✅ Behoben am 18.10.2026: Datei-Sicherung** (`/root/sicherung-dateien.sh`, täglich 03:50 UTC, verschlüsselt auf die CRM-Box, 30 Nächte, nexai-portal `infra/`).
+- **Ausgenommen** sind Lektionsvideos (`*.mp4/.webm/.mov`, bis 4 GiB): `openssl smime` kann so große Archive nicht verlässlich entschlüsseln. Es ist Schulungsmaterial ohne Aufbewahrungspflicht.
+- **Offen:**
+  - Der Wächter auf der CRM-Box prüft die Datei-Archive erst nach dem Ausrollen von Punkt 4.
+  - Eine Rückspielprobe mit dem echten Schlüssel steht aus.
+- Ursprünglicher Befund:
+
+~~**🔴 Hochgeladene und erzeugte Dateien des Portals sind nicht gesichert** (aufgefallen bei A24, 18.10.2026). Die nächtliche Sicherung ist laut Einrichtung vom 22.09.2026 ein reines `pg_dump`; das Datei-Volume `UPLOAD_DIR` ist nicht dabei (am Server nicht nachgeprüft). Betroffen sind unterschriebene Verträge (A24) und hochgeladene Rechnungen und Belege (A14). Für NexSign (Nachfolger von A24) gilt es erst recht: Dort ist auch die Datenbank nicht gesichert. Fällt das Volume aus, sind sie verloren. Das verfehlt Art. 32 Abs. 1 lit. c DSGVO („die Verfügbarkeit … bei einem physischen oder technischen Zwischenfall rasch wiederherzustellen“). Für aufbewahrungspflichtige Unterlagen verlangt § 147 Abs. 2 Nr. 2 AO außerdem, dass sie „während der Dauer der Aufbewahrungsfrist jederzeit verfügbar sind“. → Volume in die verschlüsselte Sicherung aufnehmen.~~
 
 **🟡 Rechtsgrundlage von A10** (Art. 6(1)b) ist eine vorläufige Einordnung und vom Anwalt zu bestätigen.
 
