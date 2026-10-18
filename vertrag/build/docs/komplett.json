@@ -2410,7 +2410,7 @@
         [
           "Hetzner Online GmbH",
           "Industriestraße 25, 91710 Gunzenhausen; Rechenzentren in Deutschland",
-          "Hosting und Betrieb der von NexAI selbst betriebenen Systeme (Automatisierungen/n8n, NexAI CRM bei Betrieb durch NexAI, NexAI Kalender, NexAI Mailagent, NexAI App) und Ablage der Sicherungen",
+          "Hosting und Betrieb der von NexAI selbst betriebenen Systeme (Automatisierungen/n8n, NexAI CRM bei Betrieb durch NexAI, NexAI Kalender, NexAI Mailagent einschließlich nächtlicher verschlüsselter Sicherung, NexAI App) und Ablage der Sicherungen",
           "je nach Leistung: Kontakt-, Vorgangs-, Termin-, Aufgaben-, Beleg- und Protokolldaten; beim NexAI Mailagent zusätzlich gespiegelte Nachrichten samt Anhängen, Entwürfe, Freigabeprotokoll und Anmeldedaten der Nutzer des Kunden",
           "kein Drittland; AVV nach Art. 28 DSGVO"
         ],
@@ -2546,7 +2546,7 @@
         [
           "NexAI CRM",
           "Änderungsprotokoll",
-          "derzeit keine automatische Löschung"
+          "12 Monate; Einträge zu Auskunfts- und Löschanträgen bis zum Ende des dritten Jahres nach dem Eintragsjahr; Einträge zur Abrechnung bis zum Ende des zehnten Jahres"
         ],
         [
           "NexAI CRM",
