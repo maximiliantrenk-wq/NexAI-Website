@@ -49,7 +49,7 @@
     },
     "roles": {
       "eyebrow": "Positions & commission",
-      "title": "Three roles, two levels, one model.",
+      "title": "Two roles, two levels, one model.",
       "description": "Every role starts as a junior and becomes a senior after onboarding. Commission is calculated on the customer's net base: the customer's payment minus NexAI's costs for operation, technology and support. We show you the exact rates in the intro call and in the career system you receive as a PDF after applying.",
       "levels": {
         "junior": "Junior",
@@ -73,20 +73,12 @@
           "fit": "you enjoy the phone, don't take a no personally and like structure."
         },
         {
-          "key": "closer",
-          "name": "Closer",
-          "tagline": "You get the signature.",
-          "tasks": "You run the sales conversations on appointments from the setter pool, show the AI live and bring the contract home.",
-          "promotion": "Within 4 weeks with 3, 5, 7 and 10 appointments held per week and at least 2 closed deals.",
-          "fit": "you run sales conversations, like objections and close cleanly."
-        },
-        {
           "key": "both",
           "name": "Setter + Closer",
           "tagline": "You do both.",
-          "tasks": "You book your own appointments and close them yourself. The commission is the sum of both roles, no split with anyone.",
-          "promotion": "The criteria of both roles, each on your own appointments.",
-          "fit": "you want to go the whole way from the first call to the signature yourself."
+          "tasks": "You book your own appointments, also get appointments from the setter pool and run the sales conversations: you show the AI live and bring the contract home. On your own appointments the commission is the sum of both roles, no split with anyone.",
+          "promotion": "The criteria of both roles within 4 weeks: as a setter 50, 75, 100 and 125 calls per week and at least 3 appointments that took place, as a closer 3, 5, 7 and 10 appointments held per week and at least 2 closed deals.",
+          "fit": "you run sales conversations, like objections and want to go the whole way from the first call to the signature."
         }
       ],
       "basisTitle": "How the net base works",
@@ -112,12 +104,12 @@
           "extra": "Plus at least 3 appointments that took place within the 4 weeks."
         },
         {
-          "role": "Junior Closer",
-          "metric": "Appointments held per week",
+          "role": "Junior Setter + Closer",
+          "metric": "Appointments held per week, plus the calls as a setter",
           "extra": "Plus at least 2 closed deals within the 4 weeks."
         }
       ],
-      "bothNote": "Setter + Closer: both sets of criteria, each on your own appointments.",
+      "bothNote": "As a setter + closer you meet both sets of criteria: the calls as a setter and the appointments as a closer.",
       "seniorTitle": "Senior means",
       "senior": [
         "Higher one-off commission than at junior level.",
@@ -137,7 +129,7 @@
         },
         {
           "title": "Appointments from the setter pool",
-          "description": "Closers get the appointments our setters book, with background on the business. We don't promise a minimum number; you can see the pipeline at any time."
+          "description": "Setters + closers get the appointments our setters book on top of their own, with background on the business. We don't promise a minimum number; you can see the pipeline at any time."
         },
         {
           "title": "Live demo on the phone",
@@ -254,8 +246,8 @@
           "a": "From public company sources, checked by us: industry, decision-maker, phone number. They are cold B2B contacts, not enquiries. What becomes of them is decided by your call."
         },
         {
-          "q": "How many appointments do I get as a closer?",
-          "a": "As many as our setters book. We don't promise a fixed number because we can't guarantee it. You can book appointments yourself at any time; for those customers the setter + closer commission applies."
+          "q": "How many appointments do I get as a setter + closer?",
+          "a": "Your own, plus as many as our setters book. We don't promise a fixed number because we can't guarantee it. For customers from your own appointments the setter + closer commission applies."
         },
         {
           "q": "What does the product cost the customer?",
@@ -364,24 +356,24 @@
       },
       "eyebrow": "Sales partners (m/f/d)",
       "title": "Pick your slot.",
-      "description": "30 minutes with Maximilian Trenk. You have applied as a setter or closer, or want to, and we clarify everything else in the call.",
+      "description": "30 minutes with Maximilian Trenk. You have applied as a setter or as a setter + closer, or want to, and we clarify everything else in the call.",
       "back": "Back to the sales partner page"
     },
     "jsonld": {
       "title": "Sales partner setter / closer (m/f/d), self-employed, commission only, remote",
       "description": "NexAI is looking for self-employed setters and closers (m/f/d) in the DACH region who win small and medium-sized businesses over the phone for digital employees (AI voice agent, chat agent, booking calendar, automation). Work as a self-employed commercial agent under § 84 of the German Commercial Code, 100 % remote, free time management, no exclusivity. Compensation is purely performance-based, no base pay: a one-off commission on the net base in the customer's first month (depending on role and level), from the second month a monthly commission for senior positions for as long as the customer pays and the contract runs, no customer cap, no clawbacks; the exact rates are shared in the intro call. Requirements: registered business (or equivalent self-employment in AT/CH), business-fluent German, phone, laptop and internet. NexAI provides verified company contacts, appointments from the setter pool, a live demo number, customer deck, partner portal, CRM and coaching.",
-      "responsibilities": "Setter: call decision-makers in small and medium-sized businesses, spark interest, book qualified appointments. Closer: run sales conversations, show the AI live, close contracts. Setter + closer: both in one person.",
+      "responsibilities": "Setter: call decision-makers in small and medium-sized businesses, spark interest, book qualified appointments. Setter + closer: additionally run sales conversations, show the AI live and close contracts, on their own appointments and appointments from the setter pool.",
       "qualifications": "Registered business or equivalent self-employment, business-fluent German, phone sales experience an advantage, own hardware and internet connection.",
       "incentive": "Commission only, no base pay: one-off commission on the net base in the first month; monthly commission from month 2 for senior positions while customer and contract continue, no cap, no clawbacks. Exact rates shared in the intro call."
     },
     "more": {
       "eyebrow": "More on the roles",
-      "title": "Closer, setter or commercial agent: what to expect in detail.",
+      "title": "Setter + closer, setter or commercial agent: what to expect in detail.",
       "items": [
         {
           "slug": "closer-job",
           "title": "Remote closer job",
-          "description": "Sales conversations, appointments from the setter pool, subscription instead of one-off deal."
+          "description": "Your own appointments plus appointments from the setter pool, subscription instead of one-off deal."
         },
         {
           "slug": "setter-job",
@@ -398,17 +390,17 @@
     "pages": {
       "closerJob": {
         "meta": {
-          "title": "Remote closer job: closing deals for AI employees (m/f/d), commission only",
-          "description": "Closer job from home: you run sales conversations for digital AI employees, appointments come from the setter pool. Self-employed, one-off commission plus monthly commission as a senior. Apply now."
+          "title": "Remote closer job as a setter + closer: selling AI employees (m/f/d), commission only",
+          "description": "Closer job from home as a setter + closer: you book your own appointments, also get appointments from the setter pool and run the sales conversations for digital AI employees. Self-employed, one-off commission plus monthly commission as a senior. Apply now."
         },
         "hero": {
-          "eyebrow": "Closer (m/f/d) · Remote · DACH",
-          "title": "Remote closer job: you bring the deal home, we deliver appointments and product.",
+          "eyebrow": "Setter + closer (m/f/d) · Remote · DACH",
+          "title": "Remote closer job: you book appointments and bring the deal home, we deliver more appointments and the product.",
           "description": "Sales conversations for digital employees: AI agents that answer the phone for small and medium-sized businesses, reply in chat and take over office work. Self-employed, commission only, one-off commission on the close plus monthly commission as a senior for as long as the customer pays and your contract runs."
         },
         "intro": {
           "title": "What sets this closer job apart from the usual ones",
-          "body": "Most closer jobs in the DACH scene sell coaching, courses or consulting: a high one-off price, one close, done. At NexAI you sell a subscription. The customer pays monthly, and as a senior you earn on every one of those months. That is not a bonus, it is the core of the model. The target group is different from coaching: trades businesses, car dealerships and service providers that lose calls or drown in office work. If you can run a sales conversation with a master roofer, you are in the right place."
+          "body": "Most closer jobs in the DACH scene sell coaching, courses or consulting: a high one-off price, one close, done. At NexAI you sell a subscription. The customer pays monthly, and as a senior you earn on every one of those months. That is not a bonus, it is the core of the model. The target group is different from coaching: trades businesses, car dealerships and service providers that lose calls or drown in office work. If you can run a sales conversation with a master roofer, you are in the right place. And you don't just close: as a setter + closer you also book your own appointments, and for those customers the commission of both roles applies."
         },
         "day": {
           "eyebrow": "What the week looks like",
@@ -417,8 +409,8 @@
           "steps": [
             {
               "n": "01",
-              "title": "Take an appointment from the setter pool",
-              "description": "In the CRM you see who booked it, which industry, what the concern is and whether the customer has already called the demo number."
+              "title": "Take an appointment or book your own",
+              "description": "Appointments come from our setters or from you. For appointments from the pool you see in the CRM who booked them, which industry, what the concern is and whether the customer has already called the demo number."
             },
             {
               "n": "02",
@@ -452,7 +444,7 @@
               "run sales conversations and like objections",
               "want to sell a product that needs explaining but is tangible",
               "prefer earning every month over earning once",
-              "can book your own appointments when the pool is thin",
+              "also pick up the phone yourself and book your own appointments",
               "want to join a growing company early"
             ]
           },
@@ -460,16 +452,16 @@
           "resultText": "Application in two minutes, then you book your intro call right away."
         },
         "faq": {
-          "eyebrow": "Closer FAQ",
+          "eyebrow": "Setter + closer FAQ",
           "title": "Questions closers ask us.",
           "items": [
             {
-              "q": "Where do my appointments come from as a closer?",
-              "a": "From the setter pool: our setters book appointments with decision-makers and hand them over in the CRM with background information. We don't promise a minimum number. You can book appointments yourself at any time; for those customers the setter + closer commission applies."
+              "q": "Where do my appointments come from?",
+              "a": "From two sources: you book your own, and our setters book appointments with decision-makers and hand them over to you in the CRM with background information. We don't promise a minimum number from the setter pool. For customers from your own appointments the setter + closer commission applies."
             },
             {
               "q": "How long is a sales conversation, and how many appointments do I need?",
-              "a": "A conversation takes about 30 to 45 minutes, usually by video or phone. Promotion to senior requires rising appointment numbers and closed deals over four weeks; the criteria are published on the sales partner page."
+              "a": "A conversation takes about 30 to 45 minutes, usually by video or phone. Promotion to senior requires the criteria of both roles over four weeks: calls as a setter as well as rising appointment numbers and closed deals as a closer. The criteria are published on the sales partner page."
             },
             {
               "q": "Do I need AI knowledge?",
@@ -486,15 +478,15 @@
           ]
         },
         "cta": {
-          "title": "Become a closer",
+          "title": "Become a setter + closer",
           "description": "Two minutes to apply, thirty minutes to talk, then we both decide.",
           "primary": "Apply now",
           "secondary": "See all positions"
         },
         "jsonld": {
-          "title": "Closer (m/f/d) for AI employees, self-employed, commission only, remote",
-          "description": "NexAI is looking for self-employed closers (m/f/d) in the DACH region to run sales conversations for digital employees (AI voice agent, chat agent, booking calendar, automation) with small and medium-sized businesses. Appointments come from the setter pool; the product can be demonstrated via a live demo number. Work as a self-employed commercial agent under § 84 of the German Commercial Code, 100 % remote, free time management, no exclusivity. Compensation is purely performance-based, no base pay: a one-off commission on the close and, as a senior, a monthly commission for as long as the customer pays and the contract runs, no clawbacks, no customer cap; exact rates are shared in the intro call. Requirements: registered business or equivalent self-employment (DE/AT/CH), business-fluent German, sales conversation experience, own hardware.",
-          "responsibilities": "Run sales conversations with decision-makers, demonstrate the AI live, explain offers, close deals, hand over to the NexAI team.",
+          "title": "Setter + closer (m/f/d) for AI employees, self-employed, commission only, remote",
+          "description": "NexAI is looking for self-employed setters + closers (m/f/d) in the DACH region to book their own appointments with small and medium-sized businesses and run sales conversations for digital employees (AI voice agent, chat agent, booking calendar, automation). Further appointments come from the setter pool; the product can be demonstrated via a live demo number. Work as a self-employed commercial agent under § 84 of the German Commercial Code, 100 % remote, free time management, no exclusivity. Compensation is purely performance-based, no base pay: a one-off commission on the close and, as a senior, a monthly commission for as long as the customer pays and the contract runs, no clawbacks, no customer cap; exact rates are shared in the intro call. Requirements: registered business or equivalent self-employment (DE/AT/CH), business-fluent German, sales conversation experience, own hardware.",
+          "responsibilities": "Book your own appointments with decision-makers, take over appointments from the setter pool, run sales conversations, demonstrate the AI live, explain offers, close deals, hand over to the NexAI team.",
           "qualifications": "Registered business or equivalent self-employment, business-fluent German, B2B sales conversation experience, own hardware and internet connection.",
           "incentive": "Commission only, no base pay: one-off commission on the close; monthly commission for senior positions while customer and contract continue, no clawbacks, no cap. Exact rates in the intro call."
         }
@@ -583,7 +575,7 @@
               "a": "No, per customer. A one-off commission when the customer closes and pays, and as a senior a monthly commission for as long as the customer pays and your contract runs. An appointment without a deal earns nothing; a customer who stays earns every month."
             },
             {
-              "q": "Can I move from setter to closer?",
+              "q": "Can I move from setter to setter + closer?",
               "a": "Yes. Many setters eventually book their own appointments and close them; then the setter + closer commission applies. If you convince in the conversation, you get the closer onboarding on top."
             }
           ]
