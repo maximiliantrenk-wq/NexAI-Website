@@ -1,0 +1,7 @@
+# Sicherheitskontakt der NexAI – Next Generation Artificial Intelligence GbR
+# Meldungen zu Schwachstellen in unseren Produkten bitte an die folgenden Kontakte.
+Contact: mailto:mbt@nex-a-i.com
+Contact: tel:+4917680714816
+Expires: 2027-09-30T22:00:00.000Z
+Preferred-Languages: de, en
+Canonical: https://nex-a-i.com/.well-known/security.txt
