@@ -299,7 +299,6 @@
       "role": "Which role do you want?",
       "roles": {
         "setter": "Setter",
-        "closer": "Closer",
         "both": "Setter + Closer"
       },
       "experience": "Sales experience",
@@ -489,7 +488,7 @@
         "cta": {
           "title": "Become a closer",
           "description": "Two minutes to apply, thirty minutes to talk, then we both decide.",
-          "primary": "Apply as a closer",
+          "primary": "Apply now",
           "secondary": "See all positions"
         },
         "jsonld": {
