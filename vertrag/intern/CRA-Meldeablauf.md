@@ -20,7 +20,7 @@ Eine bloß gemeldete, nicht ausgenutzte Schwachstelle löst **keine** Pflichtmel
 
 ## 2. Wer?
 
-- **Verantwortlich:** Maximilian Trenk. **Vertretung:** [Jason Brian Merklein – zu bestätigen].
+- **Verantwortlich:** Maximilian Trenk. **Vertretung** bei Urlaub und Krankheit: Jason Brian Merklein (intern „Brian“), festgelegt von Max am 18.10.2026.
 - Wer zuerst davon erfährt (auch Bote, Wächter, Kundenanruf), schreibt sofort **Uhrzeit der Kenntnis** ins
   Vorgangsprotokoll [Ablage: …]. **Ab da laufen die Fristen.**
 
@@ -69,6 +69,6 @@ Art. 64 Abs. 2).
 ## 7. Vorbereitung (einmalig, Max)
 
 1. security@nex-a-i.com anlegen und testen; dann `security.txt` Variante A (`vertrag/intern/security-txt.md`).
-2. Konto auf der ENISA-Meldeplattform anlegen; Vertretung ebenfalls berechtigen.
+2. Konto auf der ENISA-Meldeplattform anlegen; Jason Brian Merklein als Vertretung ebenfalls berechtigen.
 3. Lizenzregister anlegen, bevor die erste Kauflizenz ausgeliefert wird.
 4. Diesen Ablauf beim ersten Verkauf einmal trocken durchspielen (Uhrzeit → 24 h → 72 h).
