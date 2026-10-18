@@ -126,7 +126,7 @@
         "Notizen und Freitexte, die der Kunde oder Endnutzer in einer Anwendung erfassen;",
         "Zugangs- und Protokolldaten der Nutzerkonten des Kunden (Anmeldedaten – Passwörter ausschließlich als Prüfsumme –, Sitzungen, Änderungsprotokoll);",
         "Metadaten und technische Daten (Verbindungs-/Nutzungsdaten, Zeitstempel, Kennungen, Kanal, Dauer, technische Protokolldaten);",
-        "beim NexAI Mailagent: vollständiger Inhalt von Nachrichten und Anhängen, Kopf- und Verkehrsdaten, in der Korrespondenz enthaltene Zahlungsdaten (insbesondere Bankverbindungen) sowie die vom System erzeugten Bewertungen (Einstufung, Zusammenfassung, Tonfall, Betrugsbewertung, erkannte Fristen und Rechnungen), Antwortentwürfe, das Freigabeprotokoll (Person, Zeitpunkt, Aktion, Betreff, Wortlaut, Prüfsumme) und das Verwaltungsprotokoll; ferner Name, Anmeldeadresse und Rolle der vom Kunden angelegten Personen und die ihnen zugeordneten Postfächer, ein Abdruck des Passworts, das verschlüsselt gespeicherte Geheimnis des zweiten Faktors, offene Sitzungen, Zuweisungen, interne Notizen und Abwesenheiten mit Vertretung sowie die verschlüsselt gespeicherten Zugangsdaten zu den Postfächern des Kunden."
+        "beim NexAI Mailagent: vollständiger Inhalt von Nachrichten und Anhängen, Kopf- und Verkehrsdaten, in der Korrespondenz enthaltene Zahlungsdaten (insbesondere Bankverbindungen) sowie die vom System erzeugten Bewertungen (Einstufung, Zusammenfassung, Tonfall, Betrugsbewertung, erkannte Fristen und Rechnungen), Antwortentwürfe, das Freigabeprotokoll (Person, Zeitpunkt, Aktion, Betreff, Wortlaut, Prüfsumme), das Verwaltungsprotokoll und zu selbsttätig versandten Antworten Empfänger, Betreff und Message-ID (Schleifenschutz); ferner Name, Anmeldeadresse und Rolle der vom Kunden angelegten Personen und die ihnen zugeordneten Postfächer, ein Abdruck des Passworts, das verschlüsselt gespeicherte Geheimnis des zweiten Faktors, offene Sitzungen, Zuweisungen, interne Notizen und Abwesenheiten mit Vertretung sowie die verschlüsselt gespeicherten Zugangsdaten zu den Postfächern des Kunden."
       ]
     },
     {
@@ -785,6 +785,11 @@
         [
           "NexAI Mailagent",
           "Tagesübersichten",
+          "wie Nachrichten (Vorgabe 180 Tage)"
+        ],
+        [
+          "NexAI Mailagent",
+          "Schleifenschutz der Automatik (Empfänger, Betreff und Message-ID selbsttätig versandter Antworten)",
           "wie Nachrichten (Vorgabe 180 Tage)"
         ],
         [
