@@ -784,8 +784,13 @@
         ],
         [
           "NexAI Mailagent",
-          "Tagesübersichten; gespeicherte Bankverbindungen bekannter Absender",
-          "derzeit keine automatische Löschung [Frist von Max festzulegen; setzt voraus: Aufnahme in den Löschlauf]"
+          "Tagesübersichten",
+          "wie Nachrichten (Vorgabe 180 Tage) [setzt voraus: Mailagent-Version 5fdebe0 ausgerollt]"
+        ],
+        [
+          "NexAI Mailagent",
+          "gespeicherte Bankverbindungen bekannter Absender (Betrugserkennung)",
+          "24 Monate nach der letzten Nennung, nicht änderbar [setzt voraus: Mailagent-Version 5fdebe0 ausgerollt]"
         ],
         [
           "Datensicherungen",
