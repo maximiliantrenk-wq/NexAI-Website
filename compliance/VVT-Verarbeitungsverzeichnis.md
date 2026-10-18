@@ -188,11 +188,12 @@ Empfänger-Kürzel (Drittland-Mechanismus): **Resend** (US, **DPF** — hilfswei
 - **Dokumentation:** `nexai-portal/docs/lead-intelligence/privacy.md` (Zweck, Daten, Rechtsgrundlage, Art. 14, Fristen, Betroffenenrechte, Datenflüsse, Zugriff), `operations.md` (Betrieb, Sicherung), `data-sources.md` (Quellen); Stand 10.10.2026, Commit `6f2c67a`. Dort heißt dieser Eintrag noch „A19"; die Nummer war im Verzeichnis schon vergeben.
 
 ### A24 NexSign — Elektronische Unterschriften (sign.nex-a-i.com)
-*Eigene App `nexsign` auf dem Portal-Server, live seit 18.10.2026 um 21:13 UTC. Der Menüpunkt „Unterschriften“ im Portal führt dorthin. Geprüft an `nexsign` `837b8f1` und am Live-Stand vom 18.10.2026, 22:30 UTC.*
+*Eigene App `nexsign` auf dem Portal-Server, live seit 18.10.2026 um 21:13 UTC. Der Menüpunkt „Unterschriften“ im Portal führt dorthin. Geprüft an `nexsign` `837b8f1` und am Live-Stand vom 18.10.2026, 22:30 UTC; Ablehnung, Erinnerungen und Vorlagen an `f50c6d6`/`203494e`/`02fcb47` (live seit 18./19.10.2026).*
 
 - **Zweck:** Verträge zwischen NexAI und Geschäftskunden elektronisch unterschreiben lassen und nachweisen, wer wann welche Fassung unterschrieben hat.
   - Ein Vertriebspartner, ein Manager oder die Leitung öffnet NexSign aus dem Portal, lädt ein PDF hoch (bis 40 MB), legt die Felder fest und unterschreibt **selbst** für NexAI.
-  - Der Kunde öffnet das Dokument über einen persönlichen Link ohne Konto, gibt seinen Namen ein, füllt die ihm zugewiesenen Felder aus, bestätigt den Inhalt und unterschreibt.
+  - Der Kunde öffnet das Dokument über einen persönlichen Link ohne Konto, gibt seinen Namen ein, füllt die ihm zugewiesenen Felder aus, bestätigt den Inhalt und unterschreibt. Er kann auch ablehnen und dabei freiwillig einen Grund angeben (höchstens 500 Zeichen).
+  - Wiederkehrende Verträge kann ein Nutzer als **Vorlage** speichern: PDF samt Feldlage, persönlich oder von der Leitung für alle freigegeben.
   - Das fertige PDF erhält eine Protokollseite und ein technisches Siegel von NexAI (selbst ausgestelltes Zertifikat, kein qualifiziertes Siegel).
 - **Betroffene:**
   - Unterzeichnende auf Kundenseite: Vertreter oder Ansprechpartner des Geschäftskunden, bei Einzelunternehmern der Kunde selbst
@@ -209,10 +210,12 @@ Empfänger-Kürzel (Drittland-Mechanismus): **Resend** (US, **DPF** — hilfswei
     - Name, Portal-E-Mail und Unterschriftszeitpunkt der für NexAI unterzeichnenden Person
     - Link-Token nur als Hash und verschlüsselt, Ablauf, erster Abruf
     - vom Kunden: eingegebener Name, Zeitpunkt, **IP-Adresse und Browserkennung** der Unterschrift
-    - Abschluss bzw. Rückzug
-  - `ereignisse`: Aktion, handelnder Nutzer, Prüfsumme, Zeitpunkt. IP und Browserkennung gibt es nur beim **ersten Abruf des Links** (oft die Link-Vorschau eines Messengers oder das Gerät des Vertriebspartners) und bei der Unterschrift des Kunden.
+    - Abschluss, Rückzug bzw. **Ablehnung durch den Kunden** (Zeitpunkt, freiwilliger Grund)
+    - Zeitpunkte der Erinnerungen an den Ersteller (`erinnertAm`, `ablaufGewarntAm`)
+  - `ereignisse`: Aktion, handelnder Nutzer, Prüfsumme, Zeitpunkt. IP und Browserkennung gibt es nur beim **ersten Abruf des Links** (oft die Link-Vorschau eines Messengers oder das Gerät des Vertriebspartners), bei der Unterschrift des Kunden und bei seiner Ablehnung (`kunde_abgelehnt`).
   - **Protokollseite im fertigen PDF:** Name und Portal-E-Mail der für NexAI unterzeichnenden Person; Name, Zeitpunkt, IP und Browserkennung des Kunden; Einträge in den Feldern; der Ablauf einschließlich der IP des ersten Abrufs.
   - Inhalt des Vertrags (Firmenangaben, Ansprechpartner, Leistungen, Preise). Die Unterschrift existiert nur als Bild im PDF: kein gesondertes Unterschriftsbild, keine biometrischen Daten.
+  - `vorlagen`: Titel, Ersteller, „für alle“, Pfad, Dateiname, SHA-256, Größe, Seitenzahl, Felder; höchstens 50 je Nutzer. Vorlagen sind nur für Muster ohne Kundendaten gedacht. Der Dialog warnt davor, verhindert es aber technisch nicht.
   - `bremsen`: Missbrauchsbremse, Schlüssel nur als HMAC, gelöscht nach Ablauf des Fensters. `loeschliste`: Dateien, deren Löschen nachgeholt wird.
 - **Rechtsgrundlage:**
   - Unterzeichnende Kunden, die selbst Vertragspartei sind (Einzelunternehmer): Art. 6(1)b.
@@ -221,9 +224,13 @@ Empfänger-Kürzel (Drittland-Mechanismus): **Resend** (US, **DPF** — hilfswei
   - Im Dokument nur genannte Personen: Art. 6(1)f (vollständige Vertragsdokumentation).
   - Aufbewahrung des Vertrags: Art. 6(1)c i. V. m. § 147 Abs. 1 Nr. 2, 3 bzw. 5, Abs. 3 Satz 1 AO (sechs Jahre). Dient er als Buchungsbeleg, gilt Nr. 4 (acht Jahre).
   - Protokoll (IP, Browserkennung, Zeitpunkte): Art. 6(1)f (Nachweis des Vertragsschlusses).
+  - Ablehnung samt Grund: Art. 6(1)b (vorvertragliche Maßnahme), wenn der Ablehnende selbst Vertragspartei wäre, sonst Art. 6(1)f. Berechtigtes Interesse: Der Ersteller und die Geschäftsführung erfahren davon und können nachfassen. Der Grund ist freiwillig.
+  - Erinnerungen an den Ersteller: für seine Daten Art. 6(1)b (Zusammenarbeit mit NexAI); für den Abrufzeitpunkt des Kunden Art. 6(1)b bei Einzelunternehmern, sonst Art. 6(1)f (berechtigtes Interesse: vor Ablauf des Links nachfassen, damit der Vertrag zustande kommt).
 - **Empfänger:**
   - Hetzner (DE, derselbe Server wie das Portal).
   - **Resend** (US, DPF) für die Abschluss-Mail an die Geschäftsführung (`NOTIFY_ADMIN`) und an den Ersteller. Das versiegelte PDF samt Protokollseite hängt als Anhang daran, wenn es höchstens 28 MB hat. Größere PDFs gehen nicht über Resend; die Mail enthält dann nur einen Link auf die Vorgangsseite in NexSign, die eine Anmeldung verlangt.
+  - **Ablehnung:** Mail über Resend an dieselben Empfänger, mit Titel, Vorgangsnummer und Zeitpunkt, ohne PDF. Den Grund enthält sie nicht, nur den Hinweis, ob einer angegeben wurde. Den Grund sehen die Empfänger nur in NexSign, bis der Löschlauf ihn nach 7 Tagen mitnimmt (`203494e`).
+  - **Erinnerungen** über Resend nur an den Ersteller: 3 Tage nach seiner Unterschrift („noch nicht unterschrieben“, mit Zeitpunkt des ersten Abrufs, der auch eine Messenger-Vorschau sein kann, oder „noch nicht abgerufen“) und 2 Tage vor Ablauf des Links. An den Kunden geht nichts.
   - Der Kunde lädt das fertige PDF bis 30 Tage nach Abschluss über seinen Link herunter, also auch mit Name und Portal-E-Mail der für NexAI unterzeichnenden Person.
   - Den Link übermittelt der Ersteller selbst. Die Knöpfe WhatsApp, E-Mail und SMS öffnen nur sein eigenes Programm; NexSign speichert keine Kundenadresse und versendet den Link nicht.
   - Kein externer Signatur- oder Vertrauensdienst; die Felderkennung läuft lokal.
@@ -231,7 +238,8 @@ Empfänger-Kürzel (Drittland-Mechanismus): **Resend** (US, **DPF** — hilfswei
 - **Löschung** (`lib/server/loeschlauf.ts`, beim Start und alle 24 Stunden):
   - Entwurf: 7 Tage nach der letzten Bearbeitung
   - offener Vorgang mit abgelaufenem Link (14 Tage gültig, eine Verlängerung setzt neu an): 7 Tage nach Ablauf
-  - zurückgezogener Vorgang: Dateien sofort (sonst über die Löschliste nachgeholt), Datensatz nach 7 Tagen; das Ereignisprotokoll fällt mit dem Vorgang weg
+  - zurückgezogener oder **abgelehnter** Vorgang: Link und Dateien sofort (sonst über die Löschliste nachgeholt), Datensatz samt Grund nach 7 Tagen; das Ereignisprotokoll fällt mit dem Vorgang weg
+  - Vorlagen: persönliche mit dem Konto-Spiegel (12 Monate nach der letzten Anmeldung), sonst bis zum Löschen durch den Ersteller oder die Leitung; freigegebene bleiben ohne Ersteller bestehen
   - Konto-Spiegel: 12 Monate nach der letzten Anmeldung, ohne Anmeldung ab Anlage. Das geht verlustfrei, weil Name und E-Mail im Vorgang stehen.
   - abgelaufene Sitzungen, Ausweise und Bremsen
   - **Abgeschlossene Vorgänge löscht der Lauf nie.** Sie werden aufbewahrt, solange der Vertrag läuft, und danach bis zum Ende der steuerlichen Aufbewahrungsfrist: sechs Jahre ab Schluss des Kalenderjahres der Unterzeichnung (§ 147 Abs. 3 Satz 1, Abs. 4 AO). Die Frist läuft aber nicht ab, solange der Vertrag für Steuern mit offener Festsetzungsfrist von Bedeutung ist (§ 147 Abs. 3 Satz 5 AO).
@@ -252,6 +260,13 @@ Empfänger-Kürzel (Drittland-Mechanismus): **Resend** (US, **DPF** — hilfswei
   - Portal-Datenschutzerklärung Abschnitt 14 „Elektronische Unterschriften (NexSign)“, live seit dem Portal-Deploy vom 18.10.2026, 22:21 UTC (`9e6edcb`).
   - Auf der Kundenseite von NexSign ein Kurzhinweis und, getrennt davon, der Widerspruchshinweis.
   - Wortlaut: `~/Developer/recht/pruefungen/2026-10-18-unterschriften-datenschutz.md`, Teil E.
+- **Mangel Vorlagen** (Art. 5 Abs. 1 lit. e, Art. 25 Abs. 1, Art. 32 DSGVO), umzusetzen bis [von Max festzulegen]:
+  - Vorlagen entstehen nur aus dem hochgeladenen PDF eines Vorgangs, also meist aus einem Kundenvertrag. Davor schützt nur ein Hinweis im Eingabefenster.
+  - Enthält eine Vorlage Kundendaten, bleibt das PDF über die 7-Tage-Löschung hinaus gespeichert, die DSE Abschnitt 14 zusagt. Nach einer Freigabe ist es für alle Nutzer sichtbar.
+  - Maßnahmen:
+  - beim Speichern eine Bestätigung „enthält keine Daten von Kunden oder anderen Personen“
+  - Freigabe für alle nur nach Sichtprüfung durch die Leitung
+  - Vorlagen, die 12 Monate unbenutzt sind, löschen
 - **Vorgänger:** Das Portal-Modul „Unterschriften“ (18.10.2026, Tabellen `signature_requests`/`signature_events`) wurde nie mit echten Vorgängen genutzt; am 18.10.2026 um 22:30 UTC lagen dort 0 Datensätze. Der Menüpunkt leitet zu NexSign. Der Portal-Löschlauf (`unterschriftLiegengebliebenTage = 7`) bleibt für die leeren Tabellen aktiv.
 
 ### Löschfristen im Überblick
@@ -296,6 +311,8 @@ Empfänger-Kürzel (Drittland-Mechanismus): **Resend** (US, **DPF** — hilfswei
 | A24 | NexSign: **abgeschlossene Verträge** samt Protokoll | Vertragslaufzeit, dann i. d. R. **6 Jahre** ab Schluss des Jahres des Vertragsendes; von Hand | § 147 Abs. 3, 4 AO; Protokoll Art. 6(1)f |
 | A24 | NexSign: Konto-Spiegel der Nutzer | **12 Monate** nach letzter Anmeldung | Zweckfortfall |
 | A24 | NexSign: Sitzungen | 30 Tage | Ablauf |
+| A24 | NexSign: abgelehnte Vorgänge samt Grund | Dateien sofort, Datensatz **7 Tage** | Zweckfortfall |
+| A24 | NexSign: Vorlagen | persönliche mit dem Konto-Spiegel (12 Monate), sonst bis zum Löschen | Muster ohne Kundendaten, technisch noch nicht sichergestellt (siehe Mangel Vorlagen) |
 | A22 | **Gespraechsinhalte** des Boten | **90 Tage** | Gespraech ist danach erledigt |
 | A22 | Kontaktversuche Unbekannter | 30 Tage | nur Zaehler, nie der Text |
 | A22 | Betriebsprotokoll | 365 Tage | Nachvollziehbarkeit im Betrieb |
