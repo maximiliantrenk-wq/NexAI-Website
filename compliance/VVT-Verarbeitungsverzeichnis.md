@@ -201,16 +201,17 @@ Empfänger-Kürzel (Drittland-Mechanismus): **Resend** (US, **DPF** — hilfswei
 - **Löschung** (täglicher Lauf `lib/retention-sweep.ts`, `unterschriftLiegengebliebenTage = 7`, praktisch am 7. oder 8. Tag):
   - Entwurf ohne Unterschrift: 7 Tage nach dem Hochladen
   - offener Vorgang mit abgelaufenem Link (14 Tage gültig, eine Verlängerung setzt neu an): 7 Tage nach Ablauf
-  - zurückgezogener Vorgang: Dateien sofort, Datensatz nach 7 Tagen
+  - zurückgezogener Vorgang: Dateien sofort (schlägt das fehl, holt der Löschlauf es über `pending_file_deletions` nach), Datensatz nach 7 Tagen
   - das Ereignisprotokoll fällt mit dem Vorgang weg
   - **abgeschlossene Vorgänge löscht der Lauf nicht.** Aufbewahrt, solange der Vertrag läuft, danach bis zum Ende der steuerlichen Aufbewahrungsfrist: sechs Jahre ab Schluss des Kalenderjahres der Unterzeichnung (§ 147 Abs. 3 Satz 1, Abs. 4 AO), aber kein Ablauf, solange der Vertrag für Steuern mit offener Festsetzungsfrist von Bedeutung ist (§ 147 Abs. 3 Satz 5 AO). Praktische Regel: frühestens sechs Jahre nach Schluss des Kalenderjahres, in dem der Vertrag endet; dann löscht die Geschäftsführung von Hand. Keine technische Sperre und keine Erinnerung, nur eine Rückfrage beim Löschen.
   - Kopien der Abschluss-Mail in den Postfächern der Empfänger folgen deren Postfachregeln.
 - **Zugriff (TOMs):** Vertriebspartner und Manager sehen nur eigene Vorgänge; Inhaber, Geschäftsführung, Vertriebs- und Kommunikationsleitung sehen alle (`seesFullBook`) und können jedes PDF öffnen. Endgültig löschen nur die Geschäftsführung (`canDeleteSignatures`); zurückziehen kann, wer den Vorgang sieht. Empfehlungsgeber haben keinen Zugriff. Link-Token nur gehasht und verschlüsselt, Prüfsumme jeder Fassung im Protokoll, Siegel über das fertige PDF; ohne konfiguriertes Siegel kein neuer Vorgang.
 - **Besonderheiten:** Elektronische Signatur nach Art. 3 Nr. 10 eIDAS-VO, **weder fortgeschritten noch qualifiziert**. Sie genügt für formfreie Verträge und im Zweifel für vereinbarte Schrift- oder elektronische Form (§ 127 BGB), **nicht für die gesetzliche Schriftform** (§ 126 Abs. 1, 3, § 126a BGB), etwa Wettbewerbsabreden nach § 90a Abs. 1 HGB.
 - **Datenschutzhinweis:** Portal-Datenschutzerklärung (`lib/legal.ts`) Abschnitt „Elektronische Unterschriften“ und Kurzhinweis mit gesondertem Widerspruchshinweis auf der Unterschriftsseite (`messages/*/signPublic.json`). Wortlaut: `~/Developer/recht/pruefungen/2026-10-18-unterschriften-datenschutz.md` (Rechtsprüfung 18.10.2026).
+- **Sicherungen:** Die Tabellen liegen in der Portal-Datenbank und damit rund 30 Tage im nächtlichen Abzug (wie A21). **Die PDF-Dateien nicht:** Laut Einrichtung vom 22.09.2026 ist `/root/sicherung-portal.sh` ein reines `pg_dump`; `UPLOAD_DIR` (`/app/.data/uploads`, Coolify-Volume) wird nicht gesichert (am Server nicht nachgeprüft). Siehe „Bekannte Lücken“.
 - **Offene Punkte:**
-  - In den catch-Blöcken von `app/actions/signatures.ts` landet `error.message` im Server-Log; bei Datenbankfehlern stehen dort die Abfrageparameter (Kundenname, IP, UA, E-Mail). Nur `error.name` oder einen Code loggen.
-  - Ob `UPLOAD_DIR` in den nächtlichen Abzug (A21, „Sicherungen“) eingeht, ist nicht geprüft; die Tabellen liegen in der Portal-Datenbank und sind damit rund 30 Tage in den Abzügen.
+  - Server-Log: Die catch-Blöcke in `app/actions/signatures.ts` schrieben `error.message` (bei Datenbankfehlern samt Abfrageparametern) ins Log. Behoben in nexai-portal PR #23 (nur noch Fehlerart und DB-Code), noch nicht live.
+  - Sicherung der PDF-Dateien fehlt (oben).
 
 ### Löschfristen im Überblick
 
@@ -314,6 +315,8 @@ Empfänger-Kürzel (Drittland-Mechanismus): **Resend** (US, **DPF** — hilfswei
 **🟠 Zugriff der Betreiber auf private Inhalte.** Direktnachrichten (A17) und der Lernbereich (A10) sind gegenüber anderen Nutzern abgeschottet, nicht gegenüber jemandem mit Datenbankzugang. Eine schriftliche Regelung dazu fehlt.
 
 **🟠 Freitextfelder ohne Grenze.** `customers.notes` (A13), `leads.note`/`callNote` (A15), Termin-Notizen (A16) und die Lernunterlagen (A10) können besondere Kategorien enthalten, ohne dass etwas es verhindert.
+
+**🔴 Hochgeladene und erzeugte Dateien des Portals sind nicht gesichert** (aufgefallen bei A24, 18.10.2026). Die nächtliche Sicherung ist laut Einrichtung vom 22.09.2026 ein reines `pg_dump`; das Datei-Volume `UPLOAD_DIR` ist nicht dabei (am Server nicht nachgeprüft). Betroffen sind unterschriebene Verträge (A24) und hochgeladene Rechnungen und Belege (A14). Fällt das Volume aus, sind sie verloren. Das verfehlt Art. 32 Abs. 1 lit. c DSGVO („die Verfügbarkeit … bei einem physischen oder technischen Zwischenfall rasch wiederherzustellen“). Für aufbewahrungspflichtige Unterlagen verlangt § 147 Abs. 2 Nr. 2 AO außerdem, dass sie „während der Dauer der Aufbewahrungsfrist jederzeit verfügbar sind“. → Volume in die verschlüsselte Sicherung aufnehmen.
 
 **🟡 Rechtsgrundlage von A10** (Art. 6(1)b) ist eine vorläufige Einordnung und vom Anwalt zu bestätigen.
 
