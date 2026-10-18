@@ -307,11 +307,6 @@
     },
     {
       "t": "checkbox",
-      "text": "**Selbsttätiger Versand** von Antworten an Absender auf der Freigabeliste wird vereinbart (Anlage A Ziffer 5.4 Abs. (1) Satz 2; gesonderte Vereinbarung im Sinne von § 6 Abs. (2) des Rahmenvertrags).",
-      "checked": false
-    },
-    {
-      "t": "checkbox",
       "text": "Nur bei Anbindung über Google Workspace mit domänenweiter Delegierung: Der Kunde weiß, dass die Delegierung technisch den Zugriff auf alle Postfächer seiner Domäne ermöglicht und die Beschränkung auf die oben benannten Postfächer durch NexAI erfolgt.",
       "checked": false
     },

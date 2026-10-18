@@ -301,7 +301,7 @@
     },
     {
       "t": "p",
-      "text": "Hier wird angekreuzt, was gebucht ist. Neu: der Mailagent mit eigener Ziffer 3.3 (Postfächer, Zugänge, Aufbewahrungsfristen, Kostendeckel, selbsttätiger Versand nur mit eigenem Kreuz) und Ziffer 3.4 für Kauflizenz und Festpreis-App mit dem Enddatum der Sicherheitsupdates (Monat/Jahr). Der Voice Agent ist nur für eingehende Gespräche angekreuzt, ausgehend ist derzeit nicht lieferbar."
+      "text": "Hier wird angekreuzt, was gebucht ist. Neu: der Mailagent mit eigener Ziffer 3.3 (Postfächer, Zugänge, Aufbewahrungsfristen, Kostendeckel) und Ziffer 3.4 für Kauflizenz und Festpreis-App mit dem Enddatum der Sicherheitsupdates (Monat/Jahr). Der Voice Agent ist nur für eingehende Gespräche angekreuzt, ausgehend ist derzeit nicht lieferbar."
     },
     {
       "t": "h2",
@@ -497,7 +497,7 @@
     },
     {
       "t": "p",
-      "text": "Der Mailagent steht jetzt im Vertrag: Er spiegelt die Postfächer, stuft ein, erkennt Fristen, Rechnungen und Betrug und schreibt Entwürfe, die ein Mensch freigibt. Selbsttätiger Versand nur, wenn er im Auftragsformular angekreuzt ist; wer dann für den Inhalt einsteht, entscheidet Max noch. Die Aufbewahrungsfristen kommen aus dem Löschcode (180/90/90 Tage, Protokoll 1.095 Tage, Zeile sechs Jahre), und der Mailagent ist ausdrücklich kein Archiv für Handelsbriefe."
+      "text": "Der Mailagent steht jetzt im Vertrag: Er spiegelt die Postfächer, stuft ein, erkennt Fristen, Rechnungen und Betrug und schreibt Entwürfe, die ein Mensch freigibt. Selbsttätiger Versand nur an Adressen, die die Verwaltung des Kunden in der Anwendung auf die Freigabeliste setzt; jede Eintragung gilt als gesonderte Vereinbarung, ein Kreuz im Auftragsformular gibt es dafür nicht. Wer für den Inhalt einsteht, entscheidet Max noch. Die Aufbewahrungsfristen kommen aus dem Löschcode (180/90/90 Tage, Protokoll 1.095 Tage, Zeile sechs Jahre), und der Mailagent ist ausdrücklich kein Archiv für Handelsbriefe."
     },
     {
       "t": "h2",
@@ -775,7 +775,7 @@
     },
     {
       "t": "p",
-      "text": "Neu: eine Tabelle mit allen Fristen je System, die Werte stammen aus dem Code, der löscht. Seit 18.10. wird auch das CRM-Protokoll gelöscht; Tagesübersichten und gemerkte Bankverbindungen des Mailagenten löschen ab der nächsten Mailagent-Version (Bankverbindungen nach 24 Monaten)."
+      "text": "Neu: eine Tabelle mit allen Fristen je System, die Werte stammen aus dem Code, der löscht. Seit 18.10. wird auch das CRM-Protokoll gelöscht; seit 19.10. löscht der Mailagent auch Tagesübersichten (wie Nachrichten) und gemerkte Bankverbindungen (24 Monate nach der letzten Nennung)."
     },
     {
       "t": "h2",
