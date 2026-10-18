@@ -11,7 +11,7 @@ Jedes Dokument liegt als **Word (.docx, zum Ausfüllen/Bearbeiten)** und **PDF (
 | 02 | **Auftragsformular / Leistungsschein** | Pro Kunde ausfüllen: Leistungen, Beitrag, Laufzeit, Zahlart |
 | 03 | **Anlage A – Leistungsbeschreibung** | Was die Agenten und Anwendungen (CRM, Kalender, App, Mailagent) leisten (und was nicht) |
 | 04 | **Anlage B – AVV (Art. 28 DSGVO)** | Auftragsverarbeitung, TOMs, Subunternehmer, Speicher- und Löschfristen (Anhang 3) |
-| 05 | **Anlage C – SLA** | Support, Reaktionszeiten, Verfügbarkeit ([98] % als Beschaffenheit), Datensicherung, Pflege bei Kauflizenz |
+| 05 | **Anlage C – SLA** | Support, Reaktionszeiten, Verfügbarkeit (98 % als Beschaffenheit), Datensicherung, Pflege bei Kauflizenz |
 | 06 | **Anlage D – Abnahmeprotokoll** | Abnahme von Projektleistungen (Ersteinrichtung, Anwendungen) |
 | 07 | **SEPA-Firmenlastschriftmandat** | Nur bei Zahlart Lastschrift |
 | 08 | **AGB (B2B)** | Allgemeine Bedingungen (widerspruchsfrei zum Rahmenvertrag) |
@@ -31,7 +31,7 @@ Vor dem Versand an einen Kunden ausfüllen:
 - **Preise:** monatlicher bzw. jährlicher Beitrag, **Freikontingent** (z. B. Freiminuten), **Overage-Preis**
   (z. B. `____ EUR/Min. netto`) – im Auftragsformular.
 - **EUR-Spend-Cap** je Agent (technisches Kostenlimit) – im Auftragsformular.
-- **Haftungsobergrenze**: steht als `[25.000] EUR je Schadensfall` bzw. `[die Auftragssumme]` in eckigen Klammern im Rahmenvertrag § 12 und in den AGB § 11 – vor dem ersten Einsatz von Max zu bestätigen; ein Jahres-Aggregat gibt es nicht mehr.
+- **Haftungsobergrenze**: 25.000 EUR je Schadensfall bzw. die höhere Auftragssumme (Rahmenvertrag § 12 Abs. 2, AGB § 11 Abs. 2), von Max am 18.10.2026 bestätigt; ein Jahres-Aggregat gibt es nicht.
 - **Eckige Klammern** `[…]` und **`[setzt voraus: …]`**: offene Werte bzw. Zusagen, die erst mit der genannten technischen Voraussetzung gelten. Liste: `~/Developer/recht/pruefungen/2026-10-17-welle-2.md`, Abschnitt „Umsetzung 18.10.2026 (SaaS/SLA)“.
 - **Mailagent** (Ziffer 3.3 des Auftragsformulars) und **Kauflizenz / Festpreis-App** (Ziffer 3.4, Enddatum der Sicherheitsupdates Monat/Jahr).
 - **SEPA:** Gläubiger-Identifikationsnummer (bei der Deutschen Bundesbank beantragen) + Mandatsreferenz.
