@@ -84,7 +84,7 @@ Empfänger-Kürzel (Drittland-Mechanismus): **Resend** (US, **DPF** — hilfswei
   - **Links aus Nachrichten** werden nur aus unverdaechtigen, nicht werblichen Nachrichten abgerufen, nie aus dem eigenen Netz, ohne Cookies und ohne Anmeldung; Tracking- und Abmeldelinks nie.
   - **Keine automatisierte Entscheidung** im Sinne von Art. 22: Einstufungen steuern nur die Anzeige, jede Aussenwirkung haengt an einer Freigabe.
 
-## Portal app.nex-a-i.com (A11–A19, A21, A23)
+## Portal app.nex-a-i.com (A11–A19, A21, A23, A24)
 
 *Selbst betriebene PWA auf dem Hetzner-Server (DE), Postgres. Rollen: `admin`, `manager`, `vertriebsleiter`, `kommunikationsleiter`, `partner`, `empfehlungsgeber`, `customer`, `privat`. Grundlage der folgenden Einträge ist das Datenbankschema (`nexai-portal/db/schema.ts`, 40 Tabellen, Stand 06.09.2026), nicht eine Beschreibung. Der Lernbereich `privat` steht getrennt als **A10**.*
 
@@ -187,6 +187,31 @@ Empfänger-Kürzel (Drittland-Mechanismus): **Resend** (US, **DPF** — hilfswei
   - **Sicherungsfrist nur zum Teil belegt:** Belegt sind das Einrichtungsskript und der Bestand auf der Zielkiste. Das Skript auf der Portal-Kiste selbst ist ohne SSH-Zugang dorthin nicht einsehbar. Ob Hetzner-Serversicherungen oder Snapshots der beiden Kisten weitere Kopien halten, ist nicht geprüft.
 - **Dokumentation:** `nexai-portal/docs/lead-intelligence/privacy.md` (Zweck, Daten, Rechtsgrundlage, Art. 14, Fristen, Betroffenenrechte, Datenflüsse, Zugriff), `operations.md` (Betrieb, Sicherung), `data-sources.md` (Quellen); Stand 10.10.2026, Commit `6f2c67a`. Dort heißt dieser Eintrag noch „A19"; die Nummer war im Verzeichnis schon vergeben.
 
+### A24 Portal — Elektronische Unterschriften (Modul „Unterschriften“)
+- **Zweck:** Verträge zwischen NexAI und Geschäftskunden elektronisch unterschreiben lassen und nachweisen, wer wann welche Fassung unterschrieben hat. Ein Vertriebspartner, ein Manager oder die Leitung lädt ein PDF hoch, legt die Felder fest und unterschreibt **selbst** für NexAI. Unterschreiben darf nur, wer den Vorgang angelegt hat. Der Kunde öffnet das Dokument über einen persönlichen Link ohne Konto, gibt seinen Namen ein, bestätigt den Inhalt und unterschreibt. Das fertige PDF erhält eine Protokollseite und ein technisches Siegel von NexAI (selbst ausgestelltes Zertifikat, kein qualifiziertes Siegel).
+- **Betroffene:** Unterzeichnende auf Kundenseite (Vertreter oder Ansprechpartner des Geschäftskunden, bei Einzelunternehmern der Kunde selbst); für NexAI unterzeichnende Vertriebspartner, Manager und Leitung; im Dokument genannte Personen.
+- **Daten:**
+  - `signature_requests`: Titel, Status, Ersteller, Partner; Pfade und SHA-256 von Original-, Arbeits- und Endfassung, ursprünglicher Dateiname und Größe, Seitenzahl, Feldpositionen; Name, Portal-E-Mail und Unterschriftszeitpunkt der für NexAI unterzeichnenden Person; Link-Token nur als Hash und verschlüsselt, Ablauf, erster Abruf; vom Kunden eingegebener Name, Zeitpunkt, **IP-Adresse und User-Agent** der Unterschrift; Abschluss bzw. Rückzug.
+  - `signature_events`: Aktion, handelnder Zugang, IP, User-Agent, Prüfsumme, Zeitpunkt. IP und UA nur beim **ersten Abruf des Links** und bei der Unterschrift des Kunden. Den ersten Abruf löst oft die Link-Vorschau eines Messengers aus oder der Vertriebspartner selbst; dann sind es IP und UA dieses Dienstes bzw. Geräts.
+  - **Protokollseite im fertigen PDF** (`lib/signatures/pdf.ts`): Name und Portal-E-Mail der für NexAI unterzeichnenden Person; Name, Zeitpunkt, IP und User-Agent des Kunden; der Ablauf einschließlich der IP des ersten Abrufs.
+  - PDF-Dateien unter `UPLOAD_DIR`; Original- und Arbeitsfassung werden beim Abschluss geleert. Inhalt des Vertrags (Firmenangaben, Ansprechpartner, Leistungen, Preise). Die Unterschrift existiert nur als Bild im PDF; kein gesondertes Unterschriftsbild, keine biometrischen Daten.
+  - Im **Sicherheitsprotokoll** (A11): Anlegen, Unterschrift für NexAI, Link, Zurückziehen, Abschluss und Löschen mit Vorgangs-ID, beim Löschen auch Titel und Status; ohne IP und UA. **Missbrauchsbremse** je IP und je Link nur als HMAC (`request_limits`), gelöscht nach Ablauf des Fensters.
+- **Rechtsgrundlage:** Unterzeichnende Kunden, die selbst Vertragspartei sind (Einzelunternehmer): Art. 6(1)b. Wer für ein Unternehmen unterschreibt: Art. 6(1)f, berechtigtes Interesse von NexAI und Kunde an einem wirksamen und nachweisbaren Vertragsschluss. Für NexAI Unterzeichnende: Art. 6(1)b (Vertriebspartner- bzw. Dienstvertrag). Im Dokument nur genannte Personen: Art. 6(1)f (vollständige Vertragsdokumentation). Aufbewahrung des Vertrags: Art. 6(1)c i. V. m. § 147 Abs. 1 Nr. 2, 3 bzw. 5, Abs. 3 Satz 1 AO (sechs Jahre); dient er als Buchungsbeleg, Nr. 4 (acht Jahre). Protokoll (IP, UA, Zeitpunkte): Art. 6(1)f (Nachweis des Vertragsschlusses).
+- **Empfänger:** Hetzner (DE, Portal-Server). **Resend** (US, DPF) für die Abschluss-Mail mit dem versiegelten PDF **samt Protokollseite** an die Geschäftsführung (aktive Zugänge `admin` bzw. Inhaber) und an den Ersteller. Der Kunde lädt dasselbe PDF bis 30 Tage nach Abschluss über seinen Link herunter, also auch mit Name und Portal-E-Mail der für NexAI unterzeichnenden Person. Den Link übermittelt der Ersteller selbst; das Portal speichert keine Kunden-E-Mail und versendet den Link nicht. Kein externer Signatur- oder Vertrauensdienst. **Drittland:** US über Resend (DPF, hilfsweise SCC), nur die Abschluss-Mail.
+- **Löschung** (täglicher Lauf `lib/retention-sweep.ts`, `unterschriftLiegengebliebenTage = 7`, praktisch am 7. oder 8. Tag):
+  - Entwurf ohne Unterschrift: 7 Tage nach dem Hochladen
+  - offener Vorgang mit abgelaufenem Link (14 Tage gültig, eine Verlängerung setzt neu an): 7 Tage nach Ablauf
+  - zurückgezogener Vorgang: Dateien sofort, Datensatz nach 7 Tagen
+  - das Ereignisprotokoll fällt mit dem Vorgang weg
+  - **abgeschlossene Vorgänge löscht der Lauf nicht.** Aufbewahrt, solange der Vertrag läuft, danach bis zum Ende der steuerlichen Aufbewahrungsfrist: sechs Jahre ab Schluss des Kalenderjahres der Unterzeichnung (§ 147 Abs. 3 Satz 1, Abs. 4 AO), aber kein Ablauf, solange der Vertrag für Steuern mit offener Festsetzungsfrist von Bedeutung ist (§ 147 Abs. 3 Satz 5 AO). Praktische Regel: frühestens sechs Jahre nach Schluss des Kalenderjahres, in dem der Vertrag endet; dann löscht die Geschäftsführung von Hand. Keine technische Sperre und keine Erinnerung, nur eine Rückfrage beim Löschen.
+  - Kopien der Abschluss-Mail in den Postfächern der Empfänger folgen deren Postfachregeln.
+- **Zugriff (TOMs):** Vertriebspartner und Manager sehen nur eigene Vorgänge; Inhaber, Geschäftsführung, Vertriebs- und Kommunikationsleitung sehen alle (`seesFullBook`) und können jedes PDF öffnen. Endgültig löschen nur die Geschäftsführung (`canDeleteSignatures`); zurückziehen kann, wer den Vorgang sieht. Empfehlungsgeber haben keinen Zugriff. Link-Token nur gehasht und verschlüsselt, Prüfsumme jeder Fassung im Protokoll, Siegel über das fertige PDF; ohne konfiguriertes Siegel kein neuer Vorgang.
+- **Besonderheiten:** Elektronische Signatur nach Art. 3 Nr. 10 eIDAS-VO, **weder fortgeschritten noch qualifiziert**. Sie genügt für formfreie Verträge und im Zweifel für vereinbarte Schrift- oder elektronische Form (§ 127 BGB), **nicht für die gesetzliche Schriftform** (§ 126 Abs. 1, 3, § 126a BGB), etwa Wettbewerbsabreden nach § 90a Abs. 1 HGB.
+- **Datenschutzhinweis:** Portal-Datenschutzerklärung (`lib/legal.ts`) Abschnitt „Elektronische Unterschriften“ und Kurzhinweis mit gesondertem Widerspruchshinweis auf der Unterschriftsseite (`messages/*/signPublic.json`). Wortlaut: `~/Developer/recht/pruefungen/2026-10-18-unterschriften-datenschutz.md` (Rechtsprüfung 18.10.2026).
+- **Offene Punkte:**
+  - In den catch-Blöcken von `app/actions/signatures.ts` landet `error.message` im Server-Log; bei Datenbankfehlern stehen dort die Abfrageparameter (Kundenname, IP, UA, E-Mail). Nur `error.name` oder einen Code loggen.
+  - Ob `UPLOAD_DIR` in den nächtlichen Abzug (A21, „Sicherungen“) eingeht, ist nicht geprüft; die Tabellen liegen in der Portal-Datenbank und sind damit rund 30 Tage in den Abzügen.
+
 ### Löschfristen im Überblick
 
 *Festgelegt am 06.09.2026. Ausschlaggebend ist immer die kürzeste anwendbare Frist; gesetzliche Aufbewahrungspflichten gehen vor.*
@@ -225,6 +250,8 @@ Empfänger-Kürzel (Drittland-Mechanismus): **Resend** (US, **DPF** — hilfswei
 | A21 | Outreach-Protokoll | 36 Monate | Beleg zu § 7 UWG |
 | A21 | **Sperrliste** (nur Prüfsumme) | **unbefristet** | Art. 21 Abs. 3 |
 | A21 | Portal-Sicherungen | 30 jüngste Abzüge, rund **30 Tage** | Einrichtungsskript 22.09.2026 |
+| A24 | Unterschriftsvorgänge ohne Abschluss (Entwurf, Link abgelaufen, zurückgezogen) | **7 Tage** | Zweckfortfall |
+| A24 | **abgeschlossene Verträge** samt Protokoll | Vertragslaufzeit, dann i. d. R. **6 Jahre** ab Schluss des Jahres des Vertragsendes; von Hand | § 147 Abs. 3, 4 AO; Protokoll Art. 6(1)f |
 | A22 | **Gespraechsinhalte** des Boten | **90 Tage** | Gespraech ist danach erledigt |
 | A22 | Kontaktversuche Unbekannter | 30 Tage | nur Zaehler, nie der Text |
 | A22 | Betriebsprotokoll | 365 Tage | Nachvollziehbarkeit im Betrieb |
