@@ -1,0 +1,200 @@
+{
+  "filename": "10_AnlageE_Kauflizenz",
+  "doc_title": "Anlage E – Kauflizenz und Projektanwendungen",
+  "doc_subtitle": "Anlage zum Rahmenvertrag: dauerhafte Nutzungsrechte, Aktualisierungen, Pflege und Betrieb",
+  "blocks": [
+    {
+      "t": "title",
+      "text": "Anlage E – Kauflizenz und Projektanwendungen"
+    },
+    {
+      "t": "subtitle",
+      "text": "Anlage zum Rahmenvertrag: dauerhafte Nutzungsrechte, Aktualisierungen, Pflege und Betrieb"
+    },
+    {
+      "t": "meta",
+      "text": "Stand: Oktober 2026"
+    },
+    {
+      "t": "spacer",
+      "h": 6
+    },
+    {
+      "t": "p",
+      "text": "Diese Anlage E ergänzt den Rahmenvertrag zwischen der **NexAI – Next Generation Artificial Intelligence GbR**, Untere Bergstraße 13, 74586 Frankenhardt-Honhardt, vertreten durch die Gesellschafter Maximilian Trenk und Jason Brian Merklein (nachfolgend \"NexAI\"), und dem im Auftragsformular bezeichneten Kunden (nachfolgend \"Kunde\")."
+    },
+    {
+      "t": "h1",
+      "num": "1.",
+      "text": "Geltungsbereich und Begriffe"
+    },
+    {
+      "t": "num",
+      "items": [
+        "Diese Anlage gilt, wenn im Auftragsformular (Ziffer 3.4) eine **Kauflizenz** oder eine **Projektanwendung zum Festpreis** vereinbart ist. Kauflizenz ist die Überlassung einer Anwendung von NexAI (derzeit NexAI CRM) gegen eine einmalige Lizenzvergütung je Zugang zum Betrieb auf der Infrastruktur des Kunden. Projektanwendung ist eine für den Kunden individuell entwickelte Anwendung (NexAI App) gegen Festpreis, die NexAI während der Pflege betreibt (Ziffer 8).",
+        "Diese Anlage geht § 10 Abs. (2) des Rahmenvertrags und § 7 der AGB vor (§ 10 Abs. (5) des Rahmenvertrags). Im Übrigen gelten der Rahmenvertrag und seine Anlagen.",
+        "**Unterstützungszeitraum** ist der Zeitraum, in dem NexAI für eine Anwendung Sicherheitsaktualisierungen bereitstellt. Er beträgt **sieben (7) Jahre** ab dem Lizenzkauf (Kauflizenz) bzw. ab der Abnahme (Projektanwendung). Sein Enddatum mit Monat und Jahr steht im Auftragsformular (Ziffer 3.4).",
+        "**Version** ist der jeweils von NexAI bereitgestellte Stand der Anwendung mit seiner Versionskennung [setzt voraus: Versionskennung der Anwendung]. Die beim Lizenzkauf überlassene Version wird bei der Abnahme der Installation (Anlage D) festgehalten."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "2.",
+      "text": "Nutzungsrecht bei der Kauflizenz"
+    },
+    {
+      "t": "num",
+      "items": [
+        "Mit vollständiger Zahlung der Lizenzvergütung räumt NexAI dem Kunden das zeitlich unbefristete, nicht ausschließliche Recht ein, die Anwendung in der überlassenen und in jeder später bereitgestellten Version mit der vereinbarten Zahl von Zugängen für eigene Geschäftszwecke zu nutzen. Bis zur vollständigen Zahlung ist die Nutzung vorläufig gestattet.",
+        "Ein Zugang ist die Möglichkeit einer natürlichen Person, sich an der Anwendung anzumelden; er ist persönlich und nicht zur gemeinsamen Nutzung durch mehrere Personen bestimmt. Weitere Zugänge kann der Kunde zur jeweils gültigen Lizenzvergütung hinzukaufen.",
+        "Der Kunde darf die für den bestimmungsgemäßen Betrieb erforderlichen Vervielfältigungen anfertigen, insbesondere die Installation auf seiner Infrastruktur und Sicherungskopien (§ 69d Abs. 2 UrhG). Ein Betrieb der Anwendung als Dienst für Dritte ist nicht gestattet.",
+        "Lieferform: [von Max zu entscheiden – Quelltext oder fertige, signierte Abbilder]. Rechte an wiederverwendbaren Bestandteilen, Werkzeugen und Kenntnissen von NexAI bleiben bei NexAI (§ 10 Abs. (1) des Rahmenvertrags).",
+        "[Weitergabe an Dritte – von Max zu entscheiden; Vorschlag: zulässig nur für die Lizenz insgesamt, wenn der Kunde die eigene Nutzung vollständig aufgibt, seine Kopien unbrauchbar macht und NexAI den Erwerber in Textform mitteilt.]"
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "3.",
+      "text": "Aktualisierungen und Unterstützungszeitraum"
+    },
+    {
+      "t": "num",
+      "items": [
+        "Während des Unterstützungszeitraums stellt NexAI jedem Kunden die jeweils neueste Version der Anwendung mit allen Sicherheits- und Funktionsaktualisierungen **kostenlos** bereit, unabhängig davon, ob Pflege vereinbart ist [setzt voraus: Update-Weg für Kundeninstallationen].",
+        "Sicherheitsaktualisierungen stellt NexAI unverzüglich nach Behebung einer Schwachstelle über einen gesicherten Verteilweg bereit, soweit technisch machbar getrennt von Funktionsaktualisierungen und zusammen mit Hinweisen zu den zu treffenden Maßnahmen (vgl. Verordnung (EU) 2024/2847, Anhang I Teil II Nr. 2, 7 und 8) [setzt voraus: Update-Weg für Kundeninstallationen].",
+        "Jede bereitgestellte Sicherheitsaktualisierung bleibt mindestens zehn (10) Jahre nach ihrer Bereitstellung oder für die restliche Dauer des Unterstützungszeitraums abrufbar, je nachdem, welcher Zeitraum länger ist (vgl. Art. 13 Abs. 9 der Verordnung (EU) 2024/2847) [setzt voraus: Update-Weg für Kundeninstallationen].",
+        "NexAI weist den Kunden spätestens [sechs (6) Monate] vor dem Ende des Unterstützungszeitraums in Textform auf das Ende hin und zeigt, soweit technisch machbar, in der Anwendung eine entsprechende Mitteilung an [setzt voraus: Hinweisfunktion in der Anwendung]. Nach dem Ende stellt NexAI keine Sicherheitsaktualisierungen mehr bereit; der weitere Betrieb erfolgt auf Risiko des Kunden. Eine Verlängerung kann gesondert vereinbart werden.",
+        "Beim Lizenzkauf übergibt NexAI die Nutzerinformation nach Anhang II der Verordnung (EU) 2024/2847 mit der Kontaktstelle für Sicherheitsmeldungen, dem Enddatum des Unterstützungszeitraums und Hinweisen zur sicheren Installation und Nutzung.",
+        "Schwachstellen meldet der Kunde an security@nex-a-i.com [setzt voraus: Postfach eingerichtet; bis dahin mbt@nex-a-i.com]. Erlangt NexAI Kenntnis von einer aktiv ausgenutzten Schwachstelle oder einem schwerwiegenden Sicherheitsvorfall, der die Anwendung betrifft, informiert NexAI den Kunden darüber und über Maßnahmen, die er ergreifen kann (vgl. Art. 14 Abs. 8 der Verordnung (EU) 2024/2847)."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "4.",
+      "text": "Betrieb durch den Kunden"
+    },
+    {
+      "t": "num",
+      "items": [
+        "Der Kunde betreibt die Anwendung auf seiner eigenen Infrastruktur. Für Bereitstellung, Betrieb, Verfügbarkeit, Überwachung, Absicherung und Datensicherung dieser Infrastruktur ist der Kunde verantwortlich; die Systemvoraussetzungen nennt die Dokumentation. Anlage C gilt nur nach ihrer Ziffer 12.",
+        "Der Kunde spielt bereitgestellte Sicherheitsaktualisierungen innerhalb von [vierzehn (14) Tagen] nach Bereitstellung ein, als kritisch gekennzeichnete unverzüglich, oder ermöglicht NexAI das Einspielen über den Wartungszugang. Unterlässt er das, muss er sich Schäden, die bei rechtzeitigem Einspielen nicht eingetreten wären, nach § 254 BGB anrechnen lassen.",
+        "Der Kunde sichert die Daten der Anwendung nach dem Stand der Technik, mindestens täglich. Bei einfacher Fahrlässigkeit haftet NexAI für den Verlust von Daten in der vom Kunden betriebenen Anwendung nur in Höhe des Aufwands, der bei ordnungsgemäßer, dem Risiko angemessener Datensicherung durch den Kunden zu ihrer Wiederherstellung erforderlich gewesen wäre; § 12 Abs. (1) des Rahmenvertrags bleibt unberührt.",
+        "Bindet die Anwendung Dienste Dritter ein (etwa für E-Mail- oder SMS-Versand oder KI-Funktionen), schließt der Kunde die erforderlichen Verträge mit diesen Diensten selbst, soweit im Auftragsformular nichts anderes vereinbart ist."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "5.",
+      "text": "Wartungszugang"
+    },
+    {
+      "t": "num",
+      "items": [
+        "Der Kunde gewährt NexAI den im Auftragsformular beschriebenen Fernzugang zur Installation (Wartungszugang), soweit er für Installation, Einspielen von Aktualisierungen, Störungsbeseitigung und Support erforderlich ist.",
+        "NexAI nutzt den Wartungszugang nur zu diesen Zwecken und nach vorheriger Absprache, bei als kritisch gekennzeichneten Sicherheitsaktualisierungen auch kurzfristig nach Ankündigung. NexAI dokumentiert jeden Zugriff mit Anlass und Zeitpunkt und stellt die Aufzeichnungen dem Kunden auf Verlangen zur Verfügung.",
+        "Der Kunde kann den Wartungszugang jederzeit sperren. Leistungen, die den Zugang voraussetzen, ruhen für diese Zeit; Ziffer 4 Abs. (2) Satz 2 gilt entsprechend.",
+        "Bei Vertragsende gibt NexAI den Wartungszugang zurück und löscht die bei ihr gespeicherten Zugangsdaten."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "6.",
+      "text": "Datenschutz beim Betrieb durch den Kunden"
+    },
+    {
+      "t": "num",
+      "items": [
+        "Der Kunde ist für die in der Anwendung verarbeiteten personenbezogenen Daten Verantwortlicher. NexAI hat außerhalb von Wartungs- und Supportzugriffen keinen Zugriff auf diese Daten.",
+        "Soweit NexAI bei Wartungs- und Supportzugriffen personenbezogene Daten verarbeitet oder nicht ausschließen kann, dass sie dabei zur Kenntnis gelangen, ist NexAI Auftragsverarbeiter; dafür gilt Anlage B. Unterauftragsverarbeiter setzt NexAI dabei nur nach § 9 der Anlage B ein.",
+        "Die Maßnahmen nach Anhang 1 der Anlage B betreffen die von NexAI betriebenen Systeme; für seine Infrastruktur trifft der Kunde die Maßnahmen nach Art. 32 DSGVO."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "7.",
+      "text": "Pflege (Support)"
+    },
+    {
+      "t": "num",
+      "items": [
+        "Pflege kann für die Zeit ab dem zweiten Jahr nach der Überlassung vereinbart werden (Auftragsformular Ziffer 3.4). Die Vergütung ist der im Auftragsformular genannte Jahresbetrag (Regelsatz 18 % des Listenpreises je Zugang); sie wird zu Beginn jedes Pflegejahres im Voraus berechnet.",
+        "Die Pflege umfasst ausschließlich Support und Reaktionszeiten nach Anlage C Ziffer 12. Aktualisierungen erhält der Kunde nach Ziffer 3 unabhängig von der Pflege.",
+        "Die Pflege läuft jeweils zwölf (12) Monate und verlängert sich um weitere zwölf (12) Monate, wenn sie nicht mit einer Frist von [drei (3) Monaten] zum Ende eines Pflegejahres in Textform gekündigt wird.",
+        "Die Kündigung der Pflege lässt das Nutzungsrecht (Ziffer 2) und die Aktualisierungen (Ziffer 3) unberührt. Ohne Pflege erbringt NexAI Supportleistungen nach Aufwand."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "8.",
+      "text": "Projektanwendungen zum Festpreis (NexAI App)"
+    },
+    {
+      "t": "num",
+      "items": [
+        "Die Entwicklung der Projektanwendung ist eine Projektleistung (Werkvertrag) und wird nach Anlage D abgenommen. Festpreis und Zahlungsplan ergeben sich aus dem Auftragsformular; ohne Zahlungsplan ist der Festpreis mit der Abnahme fällig.",
+        "Mit vollständiger Zahlung erhält der Kunde das zeitlich unbefristete, nicht ausschließliche Recht, die Projektanwendung in der abgenommenen und in jeder später bereitgestellten Fassung für eigene Zwecke zu nutzen; Ziffer 2 Abs. (4) und (5) gilt entsprechend.",
+        "Im ersten Jahr nach der Abnahme und danach während der Pflege betreibt NexAI die Projektanwendung auf eigenen Servern; die Serverkosten sind bis zu der im Auftragsformular genannten Nutzung (aktive Nutzer, Speicher) enthalten. Die Pflege umfasst Betrieb, Funktionsaktualisierungen, Support, Überwachung und Datensicherung. Für den Betrieb gelten Anlage B und Anlage C wie für andere von NexAI betriebene Anwendungen. Über die genannte Nutzung hinaus vereinbaren die Parteien die Vergütung gesondert; NexAI schaltet die Anwendung deswegen nicht ab.",
+        "Sicherheitsaktualisierungen stellt NexAI während des Unterstützungszeitraums kostenlos bereit; solange NexAI die Projektanwendung betreibt, spielt NexAI sie selbst ein.",
+        "Endet die Pflege, [stellt NexAI den Betrieb zum Ende des Pflegejahres ein und übergibt dem Kunden auf Wunsch ein lauffähiges Abbild der Projektanwendung in der zuletzt bereitgestellten Fassung mit Installationshinweisen zum Betrieb auf eigener Infrastruktur; danach gelten die Ziffern 3 bis 6 entsprechend – von Max zu entscheiden]. Für die Daten gilt § 21 des Rahmenvertrags."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "9.",
+      "text": "Haftung und Schlussbestimmungen"
+    },
+    {
+      "t": "num",
+      "items": [
+        "Für die Haftung gilt § 12 des Rahmenvertrags; Ziffer 4 Abs. (2) und (3) bleibt unberührt.",
+        "Im Übrigen gelten der Rahmenvertrag und seine Anlagen."
+      ]
+    },
+    {
+      "t": "spacer",
+      "h": 6
+    },
+    {
+      "t": "note",
+      "text": "Fassung Oktober 2026. Entwurf, von NexAI erstellt; die anwaltliche Prüfung folgt. Eckige Klammern kennzeichnen Werte und Regelungen, die vor Verwendung festzulegen sind; „[setzt voraus: …]“ kennzeichnet Zusagen, die erst gelten, wenn die genannte technische Voraussetzung erfüllt ist."
+    },
+    {
+      "t": "spacer",
+      "h": 10
+    },
+    {
+      "t": "h1",
+      "num": "10.",
+      "text": "Unterschriften"
+    },
+    {
+      "t": "sig",
+      "cols": [
+        {
+          "role": "Für NexAI",
+          "lines": [
+            "Ort, Datum",
+            "",
+            "Maximilian Trenk (Gesellschafter)"
+          ]
+        },
+        {
+          "role": "Für NexAI",
+          "lines": [
+            "Ort, Datum",
+            "",
+            "Jason Brian Merklein (Gesellschafter)"
+          ]
+        },
+        {
+          "role": "Für den Kunden",
+          "lines": [
+            "Ort, Datum",
+            "",
+            "Name / Funktion"
+          ]
+        }
+      ]
+    }
+  ]
+}

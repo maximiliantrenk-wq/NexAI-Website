@@ -9,7 +9,7 @@
     },
     {
       "t": "subtitle",
-      "text": "Individualabrede zum Rahmenvertrag über KI-Agenten und digitale Assistenten"
+      "text": "Leistungsschein zum Rahmenvertrag über KI-Agenten und Anwendungen"
     },
     {
       "t": "meta",
@@ -21,7 +21,7 @@
     },
     {
       "t": "p",
-      "text": "Dieses Auftragsformular (nachfolgend \"Leistungsschein\") konkretisiert die konkret beauftragten Leistungen, Beträge und Rahmenbedingungen zwischen den nachstehenden Parteien. Er ist ein **Vertragsdokument** im Sinne des Rahmenvertrags und stellt eine **Individualabrede** dar. Bei Widersprüchen zwischen diesem Leistungsschein, dem Rahmenvertrag, den Anlagen und den AGB (B2B) gilt die im Rahmenvertrag festgelegte Rangfolge. Die in diesem Leistungsschein getroffenen individuellen Vereinbarungen gehen den AGB (B2B) als Individualabrede nach § 305b BGB vor."
+      "text": "Dieses Auftragsformular (nachfolgend \"Leistungsschein\") konkretisiert die konkret beauftragten Leistungen, Beträge und Rahmenbedingungen zwischen den nachstehenden Parteien. Er ist ein **Vertragsdokument** im Sinne des Rahmenvertrags. Bei Widersprüchen zwischen diesem Leistungsschein, dem Rahmenvertrag, den Anlagen und den AGB (B2B) gilt die im Rahmenvertrag festgelegte Rangfolge. Die in diesem Leistungsschein individuell ausgehandelten Eintragungen gehen den übrigen Vertragsdokumenten nach § 305b BGB vor."
     },
     {
       "t": "spacer",
@@ -115,8 +115,8 @@
     {
       "t": "num",
       "items": [
-        "Diesem Leistungsschein liegt der zwischen den Parteien geschlossene Rahmenvertrag über die Bereitstellung und den Betrieb von KI-Agenten (nachfolgend \"Rahmenvertrag\") nebst seinen Anlagen zugrunde. Die dort definierten Begriffe gelten in diesem Leistungsschein einheitlich.",
-        "Mit Unterzeichnung dieses Leistungsscheins bestätigt der Kunde, dass ihm der Rahmenvertrag, die AGB (B2B) sowie die Anlagen A (Leistungsbeschreibung), B (AVV), C (SLA) und D (Abnahmeprotokoll) vorliegen und Vertragsbestandteil sind.",
+        "Diesem Leistungsschein liegt der zwischen den Parteien geschlossene Rahmenvertrag über KI-Agenten und Anwendungen (nachfolgend \"Rahmenvertrag\") nebst seinen Anlagen zugrunde. Die dort definierten Begriffe gelten in diesem Leistungsschein einheitlich.",
+        "Mit Unterzeichnung dieses Leistungsscheins bestätigt der Kunde, dass ihm der Rahmenvertrag, die AGB (B2B) sowie die Anlagen A (Leistungsbeschreibung), B (AVV), C (SLA), D (Abnahmeprotokoll) und, soweit eine Kauflizenz oder Projektanwendung beauftragt ist, E (Kauflizenz und Projektanwendungen) vorliegen und Vertragsbestandteil sind.",
         "Die datenschutzrechtliche Rollenverteilung (Verantwortlicher / Auftragsverarbeiter) richtet sich nach Anlage B (AVV); die Rollenverteilung nach der KI-VO ergibt sich aus Ziffer 4 dieses Leistungsscheins."
       ]
     },
@@ -144,7 +144,7 @@
     },
     {
       "t": "checkbox",
-      "text": "**Voice Agent** (KI-Telefonassistent für ein- und/oder ausgehende Gespräche)",
+      "text": "**Voice Agent** (KI-Telefonassistent für eingehende Gespräche; ausgehende Gespräche sind derzeit nicht verfügbar und nur nach gesonderter Beauftragung nach § 15 des Rahmenvertrags möglich)",
       "checked": false
     },
     {
@@ -154,12 +154,17 @@
     },
     {
       "t": "checkbox",
-      "text": "**NexAI CRM** (Kundensystem: Kontakte, Anfragen, Termine, Aufgaben, Berichte)",
+      "text": "**NexAI CRM – Betrieb durch NexAI** (Kundensystem; nur nach gesonderter Vereinbarung, Regelfall ist die Kauflizenz nach Ziffer 3.4)",
       "checked": false
     },
     {
       "t": "checkbox",
       "text": "**NexAI Kalender** (Online-Terminbuchung mit Bestätigung und Erinnerung)",
+      "checked": false
+    },
+    {
+      "t": "checkbox",
+      "text": "**NexAI Mailagent** (Postfachassistent: Einstufung, Fristen, Rechnungen, Betrugsprüfung und Antwortentwürfe zur Freigabe; Angaben nach Ziffer 3.3)",
       "checked": false
     },
     {
@@ -174,7 +179,7 @@
     },
     {
       "t": "checkbox",
-      "text": "**NexAI App** (individuelle installierbare Anwendung für Kunden oder Beschäftigte)",
+      "text": "**NexAI App** (individuelle installierbare Anwendung für Kunden oder Beschäftigte; Betrieb und Pflege der Projektanwendung nach Anlage E Ziffer 8)",
       "checked": false
     },
     {
@@ -183,12 +188,229 @@
     },
     {
       "t": "checkbox",
-      "text": "**Einrichtung und Bereitstellung von Anwendungen** (NexAI CRM, NexAI Kalender, NexAI App; Abnahme nach Anlage D)",
+      "text": "**Einrichtung und Bereitstellung von Anwendungen** (NexAI Kalender, NexAI Mailagent, NexAI App; Abnahme nach Anlage D)",
+      "checked": false
+    },
+    {
+      "t": "checkbox",
+      "text": "**Installation des NexAI CRM** auf der Infrastruktur des Kunden (Kauflizenz nach Ziffer 3.4; Abnahme nach Anlage D)",
       "checked": false
     },
     {
       "t": "note",
-      "text": "Projektleistungen unterliegen dem Werkvertragsrecht, Betriebsleistungen dem Dienstvertragsrecht. Setzt der Kunde einen Agenten für ausgehende Ansprache oder Direktwerbung ein, gelten die besonderen Compliance-Zusicherungen des Kunden nach dem Rahmenvertrag (zulässige Ansprache nach § 7 UWG, Informationspflichten nach Art. 14 DSGVO, Opt-out-Dokumentation)."
+      "text": "Projektleistungen unterliegen dem Werkvertragsrecht; für Betriebsleistungen gilt § 3 Abs. (2) des Rahmenvertrags. Ausgehende Werbung durch Agenten nur mit vorheriger ausdrücklicher Einwilligung jedes Angesprochenen (§ 15 des Rahmenvertrags)."
+    },
+    {
+      "t": "h2",
+      "text": "3.3 Angaben zum NexAI Mailagent"
+    },
+    {
+      "t": "p",
+      "text": "Nur auszufüllen, wenn der NexAI Mailagent beauftragt ist; ohne diese Angaben ist eine Einrichtung nicht möglich. Die Leistung beschreibt Anlage A Ziffer 5.4; datenschutzrechtlich ist NexAI Auftragsverarbeiter (Anlage B)."
+    },
+    {
+      "t": "fill",
+      "label": "Postfach 1 (Adresse und Zweck)",
+      "value": ""
+    },
+    {
+      "t": "fill",
+      "label": "Postfach 2 (Adresse und Zweck)",
+      "value": ""
+    },
+    {
+      "t": "fill",
+      "label": "Postfach 3 (Adresse und Zweck)",
+      "value": ""
+    },
+    {
+      "t": "fill",
+      "label": "Anzahl der Zugänge (im monatlichen Beitrag enthalten: 3)",
+      "value": ""
+    },
+    {
+      "t": "fill",
+      "label": "Anzahl der Postfächer (im monatlichen Beitrag enthalten: 3)",
+      "value": ""
+    },
+    {
+      "t": "fill",
+      "label": "Personen mit Zugang (Name, Rolle)",
+      "value": ""
+    },
+    {
+      "t": "fill",
+      "label": "Zugriff je Person auf Postfächer",
+      "value": ""
+    },
+    {
+      "t": "fill",
+      "label": "Person(en), die Entwürfe freigeben",
+      "value": ""
+    },
+    {
+      "t": "fill",
+      "label": "Zwei-Personen-Freigabe ab Betrag / weitere Auslöser",
+      "value": "____ EUR / ____"
+    },
+    {
+      "t": "p",
+      "text": "**Aufbewahrungsdauer** im Mailagenten (Anlage A Ziffer 5.4 Abs. (10)); ohne Eintrag gilt die Vorgabe, mindestens jedoch sieben (7) Tage:"
+    },
+    {
+      "t": "fill",
+      "label": "Nachrichten samt Auswertung (Vorgabe 180 Tage)",
+      "value": "____ Tage"
+    },
+    {
+      "t": "fill",
+      "label": "Anhänge (Vorgabe 90 Tage)",
+      "value": "____ Tage"
+    },
+    {
+      "t": "fill",
+      "label": "Verworfene Entwürfe (Vorgabe 90 Tage)",
+      "value": "____ Tage"
+    },
+    {
+      "t": "fill",
+      "label": "Wortlaut im Freigabeprotokoll und Verwaltungsprotokoll (Vorgabe 1.095 Tage)",
+      "value": "____ Tage"
+    },
+    {
+      "t": "fill",
+      "label": "Übrige Angaben im Freigabeprotokoll (Vorgabe 6 volle Kalenderjahre nach dem Jahr der Freigabe)",
+      "value": "____ Jahre"
+    },
+    {
+      "t": "note",
+      "text": "Eine Frist über der Vorgabe vereinbaren die Parteien hiermit ausdrücklich; der Kunde bestätigt sie zusätzlich in der Anwendung. Für die längere Aufbewahrung muss beim Kunden eine Rechtsgrundlage bestehen."
+    },
+    {
+      "t": "fill",
+      "label": "Kostendeckel für den Modellverbrauch je Monat",
+      "value": "____ EUR"
+    },
+    {
+      "t": "p",
+      "text": "**Verarbeitung der Modellanfragen:** Die Modellanfragen werden derzeit von Anthropic Ireland, Limited mit Weiterübermittlung an Anthropic, PBC in die USA auf Grundlage der EU-Standardvertragsklauseln verarbeitet (Anlage B, Anhang 2). NexAI stellt auf eine Verarbeitung ausschließlich in Rechenzentren in der Europäischen Union (Amazon Web Services EMEA SARL, Amazon Bedrock) um, sobald sie für den Mailagenten verfügbar ist, und teilt dies mit einer Frist von vierzehn (14) Tagen mit (Anlage B § 9 Abs. (2))."
+    },
+    {
+      "t": "checkbox",
+      "text": "Betrieb auf einem gemeinsam genutzten Server (eigene Instanz, eigene Datenbank)",
+      "checked": false
+    },
+    {
+      "t": "checkbox",
+      "text": "Betrieb auf einem eigenen Server",
+      "checked": false
+    },
+    {
+      "t": "checkbox",
+      "text": "**Selbsttätiger Versand** von Antworten an Absender auf der Freigabeliste wird vereinbart (Anlage A Ziffer 5.4 Abs. (1) Satz 2; gesonderte Vereinbarung im Sinne von § 6 Abs. (2) des Rahmenvertrags).",
+      "checked": false
+    },
+    {
+      "t": "checkbox",
+      "text": "Nur bei Anbindung über Google Workspace mit domänenweiter Delegierung: Der Kunde weiß, dass die Delegierung technisch den Zugriff auf alle Postfächer seiner Domäne ermöglicht und die Beschränkung auf die oben benannten Postfächer durch NexAI erfolgt.",
+      "checked": false
+    },
+    {
+      "t": "checkbox",
+      "text": "Der Kunde bestätigt, dass die benannten Postfächer nicht dem Schutz eines Berufsgeheimnisses nach § 203 StGB unterliegen (Anlage B § 3a) und dass eine etwaige Beteiligung des Betriebsrats in seinem Haus erfolgt ist.",
+      "checked": false
+    },
+    {
+      "t": "p",
+      "text": "**Buchung in der Anwendung:** Weitere Zugänge und Postfächer kann der Kunde nach Anlage A Ziffer 5.4 Abs. (13) in der Anwendung beauftragen. Die Beauftragung kommt mit der Bestätigung in der Anwendung zustande; § 24 Abs. (1) des Rahmenvertrags gilt insoweit nicht. Maßgeblich ist das Verwaltungsprotokoll. NexAI bestätigt jede Beauftragung per E-Mail an die hinterlegte Rechnungsadresse [setzt voraus: Buchungsmeldung an NexAI in jeder Kundeninstanz eingerichtet]."
+    },
+    {
+      "t": "h2",
+      "text": "3.4 Kauflizenz und Projektanwendungen (Anlage E)"
+    },
+    {
+      "t": "p",
+      "text": "Nur auszufüllen, wenn eine Kauflizenz oder eine Projektanwendung zum Festpreis beauftragt ist."
+    },
+    {
+      "t": "checkbox",
+      "text": "**Kauflizenz NexAI CRM** (einmalige Lizenzvergütung je Zugang; Betrieb auf der Infrastruktur des Kunden)",
+      "checked": false
+    },
+    {
+      "t": "fill",
+      "label": "Anzahl der Zugänge",
+      "value": ""
+    },
+    {
+      "t": "fill",
+      "label": "Lizenzvergütung einmalig (netto)",
+      "value": "____ EUR"
+    },
+    {
+      "t": "fill",
+      "label": "Infrastruktur des Kunden (Server, Standort, Betreiber)",
+      "value": ""
+    },
+    {
+      "t": "fill",
+      "label": "Wartungszugang (Art des Zugangs, Ansprechpartner des Kunden)",
+      "value": ""
+    },
+    {
+      "t": "fill",
+      "label": "Datum der Überlassung (Lizenzkauf)",
+      "value": ""
+    },
+    {
+      "t": "fill",
+      "label": "Ende des Unterstützungszeitraums – Sicherheitsaktualisierungen bis (Monat/Jahr; sieben Jahre ab Lizenzkauf)",
+      "value": "____ / ____"
+    },
+    {
+      "t": "checkbox",
+      "text": "**Pflege** ab dem zweiten Jahr nach Überlassung (Support und Reaktionszeiten nach Anlage C Ziffer 12; Regelsatz 18 % des Listenpreises je Zugang und Jahr)",
+      "checked": false
+    },
+    {
+      "t": "fill",
+      "label": "Pflegevergütung (netto)",
+      "value": "____ EUR/Jahr"
+    },
+    {
+      "t": "checkbox",
+      "text": "**Projektanwendung zum Festpreis** (NexAI App; Werkleistung mit Abnahme nach Anlage D; Betrieb und Pflege nach Anlage E Ziffer 8)",
+      "checked": false
+    },
+    {
+      "t": "fill",
+      "label": "Paket / Leistungsbeschreibung",
+      "value": ""
+    },
+    {
+      "t": "fill",
+      "label": "Festpreis (netto)",
+      "value": "____ EUR"
+    },
+    {
+      "t": "fill",
+      "label": "Zahlungsplan",
+      "value": ""
+    },
+    {
+      "t": "fill",
+      "label": "Von der Pflege umfasste Nutzung (aktive Nutzer / Speicher)",
+      "value": ""
+    },
+    {
+      "t": "fill",
+      "label": "Pflegevergütung ab dem zweiten Jahr (netto)",
+      "value": "____ EUR/Jahr"
+    },
+    {
+      "t": "fill",
+      "label": "Sicherheitsaktualisierungen bis (Monat/Jahr; sieben Jahre ab Abnahme)",
+      "value": "____ / ____"
     },
     {
       "t": "spacer",
@@ -201,7 +423,7 @@
     },
     {
       "t": "p",
-      "text": "Für jeden beauftragten Agenten ist der verbindliche Einsatzzweck festzulegen. Der Kunde bestätigt für jeden Agenten, dass **kein Hochrisiko-Einsatz nach Anhang III der Verordnung (EU) 2024/1689 (KI-VO)** vorliegt und die Agenten ausschließlich für die angegebenen Zwecke eingesetzt werden. NexAI ist für die Bereitstellung und den Betrieb **Anbieter**, der Kunde als bestimmungsgemäßer Einsetzender **Betreiber** im Sinne der KI-VO; die Betreiberpflichten (u. a. zweckkonforme Verwendung, menschliche Aufsicht) obliegen dem Kunden."
+      "text": "Für jeden beauftragten Agenten und für den NexAI Mailagent ist der verbindliche Einsatzzweck festzulegen. Der Kunde bestätigt, dass **kein Hochrisiko-Einsatz nach Anhang III der Verordnung (EU) 2024/1689 (KI-VO)** vorliegt und die Systeme ausschließlich für die angegebenen Zwecke eingesetzt werden. Für die hier bezeichneten Systeme ist NexAI **Anbieter**, der Kunde **Betreiber** im Sinne der KI-VO. Unabhängig von der Rollenfrage setzt NexAI die Pflichten aus Art. 50 Abs. 1 und 2 KI-VO technisch um, für vor dem 2. August 2026 in Verkehr gebrachte Systeme nach Art. 111 Abs. 4 KI-VO bis zum 2. Dezember 2026. Der Kunde sorgt für die KI-Kompetenz seines Personals (Art. 4 KI-VO), wofür NexAI eine Einweisung bereitstellt, und erfüllt Art. 50 Abs. 4 KI-VO bei Stimm- oder Bildnachbildungen."
     },
     {
       "t": "h2",
@@ -276,6 +498,25 @@
       "checked": false
     },
     {
+      "t": "h2",
+      "text": "NexAI Mailagent"
+    },
+    {
+      "t": "fill",
+      "label": "Verbindlicher Einsatzzweck",
+      "value": "Bearbeitung der geschäftlichen E-Mail-Korrespondenz des Kunden (Anlage A Ziffer 5.4 Abs. (11))"
+    },
+    {
+      "t": "checkbox",
+      "text": "Der Kunde bestätigt: **KEIN Hochrisiko-Einsatz** nach Anhang III KI-VO; insbesondere keine Beobachtung oder Bewertung der Leistung oder des Verhaltens von Beschäftigten.",
+      "checked": false
+    },
+    {
+      "t": "checkbox",
+      "text": "Rollenzuordnung KI-VO: **NexAI = Anbieter**, **Kunde = Betreiber**.",
+      "checked": false
+    },
+    {
       "t": "note",
       "text": "Bei mehr als drei Agenten ist eine gleichlautende Fortsetzung als Beiblatt zu diesem Leistungsschein zu verwenden."
     },
@@ -293,7 +534,7 @@
     },
     {
       "t": "p",
-      "text": "Für die Ersteinrichtung fällt eine **einmalige Einrichtungsgebühr** nur an, wenn sie in der nachstehenden Tabelle als einmalige Position eingetragen ist. Für Betriebsleistungen fällt der nachstehend vereinbarte monatliche **oder** jährliche Beitrag an. Projektleistungen (insbesondere die Einrichtung von Anwendungen) werden, soweit beauftragt, gesondert und einmalig vergütet. Alle Beträge verstehen sich **netto zzgl. der gesetzlichen Umsatzsteuer**."
+      "text": "Für die Ersteinrichtung fällt eine **einmalige Einrichtungsgebühr** nur an, wenn sie in der nachstehenden Tabelle als einmalige Position eingetragen ist. Für Betriebsleistungen fällt der nachstehend vereinbarte monatliche **oder** jährliche Beitrag an. Projektleistungen (insbesondere die Einrichtung von Anwendungen) werden, soweit beauftragt, gesondert und einmalig vergütet. Für Kauflizenzen und Projektanwendungen gelten Ziffer 3.4 und Anlage E. Alle Beträge verstehen sich **netto zzgl. der gesetzlichen Umsatzsteuer**."
     },
     {
       "t": "table",
@@ -368,6 +609,15 @@
       "value": ""
     },
     {
+      "t": "fill",
+      "label": "Schwelle für die Zwischenabrechnung des Mehrverbrauchs (§ 7 Abs. (5) des Rahmenvertrags)",
+      "value": "____ EUR"
+    },
+    {
+      "t": "p",
+      "text": "**NexAI Mailagent:** Im monatlichen Beitrag ist Modellverbrauch im Gegenwert von 20,00 EUR netto enthalten. Verbrauch ist das von NexAI für die Instanz des Kunden an den Modellanbieter geschuldete Entgelt nach dessen Preisliste, umgerechnet zum Referenzkurs der Europäischen Zentralbank am Monatsende und in der Monatsauswertung ausgewiesen; Mehrverbrauch wird mit einem Aufschlag von 20 % berechnet. Bei Erreichen von achtzig Prozent des Kostendeckels (Ziffer 3.3) warnt die Anwendung, bei Erreichen des Deckels stellt sie Einstufung und Entwürfe ein, bis der Kunde NexAI in Textform anweist, den Deckel anzuheben [setzt voraus: Kostendeckel und Verbrauchsausweis in EUR; Abrechnung des Mehrverbrauchs aus der Anwendung]."
+    },
+    {
       "t": "spacer",
       "h": 4
     },
@@ -378,7 +628,7 @@
     },
     {
       "t": "p",
-      "text": "Zur Kostenbegrenzung wird je Agent ein technisches Ausgabenlimit (EUR-Spend-Cap) hinterlegt. Bei Erreichen des Limits kann der Betrieb des betreffenden Agenten technisch gedrosselt oder ausgesetzt werden. Eine Anhebung des Limits bedarf einer dokumentierten Weisung des Kunden."
+      "text": "Zur Kostenbegrenzung wird je Agent ein technisches Ausgabenlimit (EUR-Spend-Cap) hinterlegt. Ist kein Spend-Cap eingetragen, gilt als Spend-Cap das [Doppelte] des monatlichen Beitrags des betreffenden Agenten. Bei Erreichen des Limits kann der Betrieb des betreffenden Agenten technisch gedrosselt oder ausgesetzt werden. Eine Anhebung des Limits bedarf einer dokumentierten Weisung des Kunden."
     },
     {
       "t": "fill",
@@ -434,7 +684,7 @@
     },
     {
       "t": "checkbox",
-      "text": "**Jahresmodell** — Mindestlaufzeit 12 Monate, keine anteilige Rückerstattung (der gewährte Rabatt ist Gegenleistung für die Bindung); Verlängerung um jeweils 12 Monate, Kündigung mit einer Frist von einem Monat zum Laufzeitende.",
+      "text": "**Jahresmodell** — Mindestlaufzeit 12 Monate; bei ordentlicher Beendigung keine anteilige Rückerstattung des gewährten Preisvorteils (§ 8 Abs. (2) des Rahmenvertrags); Verlängerung um jeweils 12 Monate, Kündigung mit einer Frist von einem Monat zum Laufzeitende.",
       "checked": false
     },
     {
@@ -452,7 +702,7 @@
     },
     {
       "t": "checkbox",
-      "text": "Der Kunde bestätigt: Die Agenten geben **KEINE rechtsverbindlichen Zusagen** ab (keine verbindlichen Preise, Bestellungen oder Vertragsabschlüsse). Sie sind auf **Auskunft und Terminvereinbarung** beschränkt (**keine Abschlussvollmacht**).",
+      "text": "Der Kunde bestätigt: Die Agenten geben **KEINE rechtsverbindlichen Zusagen** ab (keine Preis- oder Konditionszusagen, Bestellungen oder Vertragsschlüsse). Sie sind auf **Auskunft und Terminvereinbarung** innerhalb der hinterlegten Verfügbarkeiten beschränkt (**keine Abschlussvollmacht**, § 6 des Rahmenvertrags).",
       "checked": false
     },
     {
@@ -466,20 +716,20 @@
     },
     {
       "t": "p",
-      "text": "Die **KI-Kennzeichnung/Transparenzpflicht nach Art. 50 KI-VO** ist verbindlicher, nicht abschaltbarer Leistungsbestandteil: Endnutzer werden stets darauf hingewiesen, dass sie mit einem KI-System interagieren."
+      "text": "Die **KI-Kennzeichnung/Transparenzpflicht nach Art. 50 KI-VO** ist verbindlicher, nicht abschaltbarer Leistungsbestandteil: Endnutzer werden stets darauf hingewiesen, dass sie mit einem KI-System interagieren. Für den NexAI Mailagent gilt Anlage A Ziffer 5.4 Abs. (6)."
     },
     {
       "t": "p",
-      "text": "**Aufzeichnung/Transkription** von Gesprächen ist **standardmäßig deaktiviert** und wird nur auf dokumentierte Weisung des Kunden aktiviert. Bei aktivierter Aufzeichnung erfolgt zusätzlich zur KI-Ansage ein Aufzeichnungshinweis. Der Kunde ist für das Vorliegen einer tragfähigen Rechtsgrundlage der Aufzeichnung verantwortlich."
+      "text": "Eine **Tonaufzeichnung** von Gesprächen ist **standardmäßig deaktiviert**; Wortprotokolle speichert NexAI nicht dauerhaft (§ 5 des Rahmenvertrags). Beides wird nur auf dokumentierte Weisung des Kunden aktiviert; dann erfolgt zusätzlich zur KI-Ansage ein Aufzeichnungshinweis. Der Kunde ist für das Vorliegen einer tragfähigen Rechtsgrundlage verantwortlich."
     },
     {
       "t": "checkbox",
-      "text": "Aufzeichnung/Transkription **deaktiviert (Standard)**.",
+      "text": "Tonaufzeichnung und dauerhafte Speicherung von Wortprotokollen **deaktiviert (Standard)**.",
       "checked": false
     },
     {
       "t": "checkbox",
-      "text": "Aufzeichnung/Transkription **auf Weisung aktiviert** (Pflicht-Ansage mit Aufzeichnungshinweis).",
+      "text": "Tonaufzeichnung bzw. dauerhafte Speicherung von Wortprotokollen **auf Weisung aktiviert** (Pflicht-Ansage mit Aufzeichnungshinweis).",
       "checked": false
     },
     {
@@ -532,8 +782,12 @@
     },
     {
       "t": "fill",
-      "label": "Optionale Rückfallnummer (Fallback bei Nichterreichbarkeit des Agenten)",
+      "label": "Rückfallnummer für gescheiterte Weiterleitungen im Gespräch",
       "value": ""
+    },
+    {
+      "t": "note",
+      "text": "Bei Ausfall der Telefonie erfolgt keine automatische Umleitung; der Kunde richtet hierfür eine Rufumleitung bei seinem Netzbetreiber ein (Anlage C Ziffer 8 Abs. (2))."
     },
     {
       "t": "spacer",
@@ -551,7 +805,7 @@
     },
     {
       "t": "note",
-      "text": "Übliche Einrichtungsdauer ab vollständiger Bereitstellung der erforderlichen Mitwirkung und Zugänge: 3–10 Werktage. Der genannte Zeitpunkt ist ein unverbindlicher Zielwert, kein Fixtermin im Sinne des § 323 Abs. 2 Nr. 2 BGB."
+      "text": "Übliche Einrichtungsdauer ab vollständiger Bereitstellung der erforderlichen Mitwirkung und Zugänge: 3–10 Werktage; bei Projektanwendungen nach dem vereinbarten Zeitplan. Der genannte Zeitpunkt ist ein unverbindlicher Zielwert, kein Fixtermin im Sinne des § 323 Abs. 2 Nr. 2 BGB."
     },
     {
       "t": "spacer",
@@ -628,7 +882,7 @@
     },
     {
       "t": "note",
-      "text": "Dieser Leistungsschein ist ein sorgfältig erstellter Entwurf und sollte für den konkreten Einzelfall anwaltlich geprüft werden."
+      "text": "Fassung Oktober 2026. Entwurf, von NexAI erstellt; die anwaltliche Prüfung folgt. Eckige Klammern kennzeichnen Werte und Regelungen, die vor Verwendung festzulegen sind; „[setzt voraus: …]“ kennzeichnet Zusagen, die erst gelten, wenn die genannte technische Voraussetzung erfüllt ist."
     }
   ]
 }
