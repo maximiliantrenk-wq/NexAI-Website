@@ -6,7 +6,8 @@
 export type Role = "setter" | "closer" | "both";
 export type Level = "junior" | "senior";
 
-export const ROLES: readonly Role[] = ["setter", "closer", "both"];
+/** Wählbar in der Bewerbung. Nur als Closer bewerben geht nicht (Max, 18.10.2026): Setter oder Setter + Closer. */
+export const ROLES: readonly Role[] = ["setter", "both"];
 
 /** SEO-Unterseiten je Rolle unter /vertriebspartner/<slug> (Inhalt in messages/<locale>/recruiting.json → Recruiting.pages). */
 export const ROLE_PAGES = ["closer-job", "setter-job", "handelsvertreter"] as const;

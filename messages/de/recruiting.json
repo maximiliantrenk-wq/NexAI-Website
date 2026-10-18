@@ -299,7 +299,6 @@
       "role": "Welche Rolle willst du?",
       "roles": {
         "setter": "Setter",
-        "closer": "Closer",
         "both": "Setter + Closer"
       },
       "experience": "Erfahrung im Vertrieb",
@@ -489,7 +488,7 @@
         "cta": {
           "title": "Closer werden",
           "description": "Zwei Minuten Bewerbung, dreißig Minuten Gespräch, dann entscheiden wir beide.",
-          "primary": "Jetzt als Closer bewerben",
+          "primary": "Jetzt bewerben",
           "secondary": "Alle Positionen ansehen"
         },
         "jsonld": {
