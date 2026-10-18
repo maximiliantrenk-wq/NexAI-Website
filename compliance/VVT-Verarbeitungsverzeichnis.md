@@ -214,12 +214,12 @@ Empfänger-Kürzel (Drittland-Mechanismus): **Resend** (US, **DPF** — hilfswei
   - Abgelegt auf der CRM-Box (Hetzner, DE), 30 Nächte; lokal nichts.
   - Erster Lauf am 18.10.: 48 Dateien.
   - Quelle: nexai-portal `infra/` (PR #26).
-- **Nachfolger NexSign** (Entscheidung Max 18.10.2026; eigene App `nexsign`, geplant unter sign.nex-a-i.com, **noch nicht live**; das Portal leitet nach der Einrichtung dorthin um). Zweck, Betroffene, Rechtsgrundlagen, Empfänger und Fristen wie oben, mit diesen Abweichungen (geprüft an `nexsign` `4cd060c`):
+- **Nachfolger NexSign** (Entscheidung Max 18.10.2026; eigene App `nexsign`, **live seit 18.10.2026, 21:13 UTC** unter sign.nex-a-i.com, Volume `hhaatdfcphfsy3gfknzr7y2w-nexsign-data`; das Portal leitet nach seinem nächsten Deploy dorthin um). Zweck, Betroffene, Rechtsgrundlagen, Empfänger und Fristen wie oben, mit diesen Abweichungen (geprüft an `nexsign` `4cd060c`):
   - eigene Datenbank (PGlite) und PDFs in `/app/.data` auf dem Coolify-Volume, derselbe Hetzner-Server; kein Sicherheitsprotokoll (A11), nur das Ereignisprotokoll `ereignisse`
   - **Konto-Spiegel** `nutzer` (Name, E-Mail, Rolle, Inhaber, letzte Anmeldung) aus einem signierten, 2 Minuten und einmal gültigen Ausweis des Portals; Sitzungs-Cookie 30 Tage, in der Datenbank nur als Hash (§ 25 Abs. 2 Nr. 2 TDDDG)
   - **Text- und Ankreuzfelder:** Einträge in `vorgaenge.angaben` und auf der Protokollseite
   - Löschlauf `lib/server/loeschlauf.ts`: Entwurf **7 Tage nach der letzten Bearbeitung**, sonst wie oben; abgelaufene Sitzungen und Ausweise werden gelöscht; **Konto-Spiegel 12 Monate nach der letzten Anmeldung** (ohne Anmeldung ab Anlage), verlustfrei, weil Name und E-Mail im Vorgang stehen.
-  - **Sicherung:** `sicherung-dateien.sh` nimmt jedes Volume unter `/app/.data` mit, also NexSign automatisch, sobald es läuft; die PGlite-Datenbank wird dafür kurz per `docker pause` angehalten. Dieser Weg ist erst nach dem Livegang mit einem Handstart geprüft.
+  - **Sicherung:** `sicherung-dateien.sh` nimmt jedes Volume unter `/app/.data` mit, also NexSign automatisch, sobald es läuft; die PGlite-Datenbank wird dafür kurz per `docker pause` angehalten. Geprüft am 18.10. um 21:14 UTC per Handstart: 1013 Dateien, „angehalten: ja“, NexSign danach gesund.
   - Texte: Kundenseite in NexSign `4cd060c`, Portal-DSE Abschnitt 14 „(NexSign)“ in nexai-portal PR #25 (erst mit dem Livegang mergen); Wortlaut in der Rechtsprüfung `2026-10-18-unterschriften-datenschutz.md`, Teil E. Nach dem Livegang diesen Eintrag auf NexSign umschreiben.
 - **Offene Punkte:**
   - Server-Log: Die catch-Blöcke in `app/actions/signatures.ts` schrieben `error.message` (bei Datenbankfehlern samt Abfrageparametern) ins Log. Behoben in nexai-portal PR #23 (nur noch Fehlerart und DB-Code), noch nicht live.
