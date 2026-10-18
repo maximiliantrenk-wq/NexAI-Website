@@ -775,7 +775,7 @@
     },
     {
       "t": "p",
-      "text": "Neu: eine Tabelle mit allen Fristen je System, die Werte stammen aus dem Code, der löscht. Wo noch nicht gelöscht wird (CRM-Protokoll, Tagesübersichten des Mailagenten), steht das offen drin."
+      "text": "Neu: eine Tabelle mit allen Fristen je System, die Werte stammen aus dem Code, der löscht. Seit 18.10. wird auch das CRM-Protokoll gelöscht; Tagesübersichten und gemerkte Bankverbindungen des Mailagenten löschen ab der nächsten Mailagent-Version (Bankverbindungen nach 24 Monaten)."
     },
     {
       "t": "h2",
