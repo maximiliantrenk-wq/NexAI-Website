@@ -1,15 +1,33 @@
 # Datenschutz-Folgenabschätzung — KI-Telefonassistent (Voice Agent)
 
-**Stand:** September 2026 (Erstfassung, 07.09.2026)
+**Stand:** 17.10.2026 (Fassung 2; Erstfassung 07.09.2026)
 **Verantwortlicher:** NexAI – Next Generation Artificial Intelligence GbR, Untere Bergstraße 13, 74586 Frankenhardt-Honhardt · Gesellschafter: Maximilian Trenk, Jason Brian Merklein · Kontakt Datenschutz: mbt@nex-a-i.com
 **Aufsichtsbehörde:** LfDI Baden-Württemberg, Heilbronner Straße 35, 70191 Stuttgart
 **Gegenstand:** Verarbeitung personenbezogener Daten von Anrufern durch einen KI-gestützten Telefonassistenten — für die eigene Rufnummer von NexAI (VVT **A6**) sowie, als Zulieferbaustein, für Assistenten im Auftrag von Kunden.
 
-> ⚠️ **Kein Rechtsrat.** Dieses Dokument erfüllt die Rechenschaftspflicht (Art. 5 Abs. 2 DSGVO) und dokumentiert die Prüfung nach Art. 35 DSGVO. Es ersetzt **keine** anwaltliche Prüfung und keine Stellungnahme eines Datenschutzbeauftragten. Vor Verwendung gegenüber Kunden oder Behörden prüfen lassen.
+> **Hinweis zur Bewertung.** Dieses Dokument erfüllt die Rechenschaftspflicht (Art. 5 Abs. 2 DSGVO) und dokumentiert die Prüfung nach Art. 35 DSGVO. Art. 35 Abs. 2 DSGVO lautet: „Der Verantwortliche holt bei der Durchführung einer Datenschutz-Folgenabschätzung den Rat des Datenschutzbeauftragten, sofern ein solcher benannt wurde, ein." NexAI ist nach § 38 Abs. 1 Satz 2 BDSG zur Benennung verpflichtet, hat mit Stand 17.10.2026 aber noch niemanden benannt (O-1). Zu den Bewertungen dieses Dokuments — insbesondere zur Restrisiko-Entscheidung in Abschnitt 8 — ist der Rat des zu benennenden Datenschutzbeauftragten einzuholen und zu dokumentieren (Art. 35 Abs. 2, Art. 39 Abs. 1 lit. c DSGVO; O-2, O-3), bevor das Dokument gegenüber Kunden oder Behörden verwendet wird. Die Entscheidung bleibt beim Verantwortlichen; weicht NexAI vom Rat ab, werden die Gründe festgehalten. Durchgeführt hat diese Folgenabschätzung für den Verantwortlichen Maximilian Trenk (Gesellschafter). *Wortlaut: DSGVO, konsolidierte Fassung vom 04.05.2016, [EUR-Lex CELEX 02016R0679-20160504](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02016R0679-20160504), abgerufen am 17.10.2026.*
 
-**Methodik:** Art. 35 Abs. 7 DSGVO; Schwellwertprüfung nach Art. 35 Abs. 1, 3 und 4 unter Heranziehung der Liste der Aufsichtsbehörden (DSK-Muss-Liste) und der neun Kriterien der Leitlinien WP 248 rev.01. Grundlage sind der Live-Stand der Vapi-Konfiguration (07.09.2026 über die Schnittstelle gelesen), der Asterisk-Dialplan, der CRM-Quellcode, das Verarbeitungsverzeichnis und die vorliegenden Drittland-Bewertungen.
+**Methodik:** Art. 35 Abs. 7 DSGVO; Schwellwertprüfung nach Art. 35 Abs. 1, 3 und 4 unter Heranziehung der Liste der Aufsichtsbehörden (DSK-Muss-Liste) und der neun Kriterien der Leitlinien WP 248 rev.01. Grundlage der Erstfassung waren der Live-Stand der Vapi-Konfiguration (07.09.2026 über die Schnittstelle gelesen), der Asterisk-Dialplan, der CRM-Quellcode, das Verarbeitungsverzeichnis und die vorliegenden Drittland-Bewertungen. **Grundlage der Fassung 2** ist eine erneute Erhebung am 17.10.2026: Vapi-Assistent 6bb4f397, Anrufdatensätze und Gesprächsprotokolle bei Vapi, Weitergabe der Anrufernummer durch die Telefonanlage, die n8n-Werkzeuge, NexTime und die Löschregeln im CRM.
 
 **Verwandte Dokumente:** [`VVT-Verarbeitungsverzeichnis.md`](VVT-Verarbeitungsverzeichnis.md) (A6) · [`TIA-Vapi-Drittlandtransfer.md`](TIA-Vapi-Drittlandtransfer.md) · [`TIA-OpenAI-Drittlandtransfer.md`](TIA-OpenAI-Drittlandtransfer.md) · [`AVV-Subprozessoren-Tracker.md`](AVV-Subprozessoren-Tracker.md) · [`Sperrvermerk-Berufsgeheimnistraeger.md`](Sperrvermerk-Berufsgeheimnistraeger.md) · `vertrag/build/docs/04_AnlageB_AVV_Auftragsverarbeitung.json`
+
+---
+
+## Änderungen in Fassung 2 (17.10.2026)
+
+Anlass ist Art. 35 Abs. 11 DSGVO: Die Überprüfung ist „zumindest" durchzuführen, „wenn hinsichtlich des mit den Verarbeitungsvorgängen verbundenen Risikos Änderungen eingetreten sind". Die erneute Erhebung hat Abweichungen ergeben, die das Ergebnis berühren:
+
+| Abschnitt | Erstfassung | Fassung 2 |
+|---|---|---|
+| 0, 3.2, 3.3, 4, 8 | Gesprächsinhalt nur flüchtig, keine gespeicherte Transkription | Kein Ton, kein Transkript im Anrufdatensatz — aber Vapi führt je Anruf ein **Textprotokoll** der erkannten Sätze und Modellantworten, rund 14 Tage, ohne Zero Data Retention im Tarif (neu **R11**) |
+| 3.1, 3.2 | Kalender bei Google | Buchung über n8n in **NexTime** (selbst betrieben, DE); Bestätigung und Erinnerung per E-Mail über **Resend** (USA) |
+| 1.3, 3.1, 5, 6 | Zusammenführung der Anrufer über die Rufnummer | Die Telefonanlage meldet die NexAI-Nummer als Anrufernummer; alle Anrufe hängen im CRM an **einem** Kontakt (**R5** neu gefasst) |
+| 3.2, 4, 5, 6 | Löschfristen pauschal, Regel je Mandant offen | CRM-Regeln für Anrufe, Leads und Termin-Anfragen (180 Tage); **für Kontakte bewusst keine Regel** (Lücke, **R9**) |
+| 5, 6 | R3: Rückbestätigung im Gespräch | E-Mail-Adresse setzt das Programm zusammen; Pflicht-Vorlesen; Buchung nur mit Bestätigungscode |
+| 5, 6 | — | Neu **R12** (Webhooks ohne Geheimnis-Prüfung) und **R13** (Vapi-Schlüssel wurde in einer lokalen KI-Assistenzsitzung im Klartext angezeigt) |
+| 3.1, 3.2 | Sprachausgabe über Vapi | Stimme „Sid" läuft auf einem ElevenLabs-Modell; ob ElevenLabs Unterauftragsverarbeiter von Vapi ist, ist offen |
+| Hinweis, 0, 8, 10 | Anwaltliche Bestätigung | Rat des zu benennenden Datenschutzbeauftragten (Art. 35 Abs. 2); Restrisiko „mittel" mit zwei Maßnahmen und Zieltermin |
+| 10 | 7 offene Punkte | 17 offene Punkte mit Zuständigkeit und Status (O-17: Website-Chat) |
 
 ---
 
@@ -21,9 +39,9 @@ Daraus folgen drei Dinge, von denen zwei zusätzliche Pflichten auslösen:
 
 1. **Diese Folgenabschätzung ist erforderlich** und liegt hiermit vor. Sie deckt **A6**, den Assistenten auf der eigenen Rufnummer, für den NexAI Verantwortlicher ist.
 2. **Für Kundenagenten ist der Kunde Verantwortlicher**, nicht NexAI. Die Pflicht zur Folgenabschätzung trifft ihn; NexAI schuldet nach Art. 28 Abs. 3 lit. f Unterstützung. Abschnitt 7 stellt dafür einen Zulieferbaustein bereit.
-3. **§ 38 Abs. 1 Satz 2 BDSG:** Wer Verarbeitungen vornimmt, die einer Folgenabschätzung unterliegen, muss **unabhängig von der Zahl der Beschäftigten** einen Datenschutzbeauftragten benennen. Das trifft NexAI — und es trifft **jeden Kunden**, der den Assistenten einsetzt, auch den Handwerksbetrieb mit fünf Mitarbeitern. Dieser Punkt gehört in das Verkaufsgespräch, nicht in die Überraschung nach Vertragsschluss.
+3. **§ 38 Abs. 1 Satz 2 BDSG:** Wer Verarbeitungen vornimmt, die einer Folgenabschätzung unterliegen, muss **unabhängig von der Zahl der Beschäftigten** einen Datenschutzbeauftragten benennen. Das trifft NexAI — und es trifft **jeden Kunden**, der den Assistenten einsetzt, auch den Handwerksbetrieb mit fünf Mitarbeitern. Dieser Punkt gehört in das Verkaufsgespräch, nicht in die Überraschung nach Vertragsschluss. **Stand 17.10.2026 ist für NexAI noch niemand benannt (O-1).**
 
-**Gesamtbewertung des Risikos nach Maßnahmen: mittel und tragbar.** Ausschlaggebend dafür ist die Nichtspeicherung: Es wird weder Audio noch Transkript aufgezeichnet, die Datenkategorien sind eng, dauerhaft gespeichert wird ausschließlich in Deutschland. Ein Restrisiko bleibt beim Drittlandtransfer und ist technisch nicht auflösbar; es erreicht nach hiesiger Bewertung aber nicht die Schwelle, ab der nach Art. 36 DSGVO die Aufsichtsbehörde vorab zu konsultieren wäre. **Diese Einschätzung sollte der Anwalt oder der künftige Datenschutzbeauftragte bestätigen**, weil sie die einzige wirklich wertende Stelle dieses Dokuments ist.
+**Gesamtbewertung des Risikos nach Maßnahmen: mittel und tragbar — unter der Voraussetzung, dass zwei offene Sicherheitsmaßnahmen bis zum vorgeschlagenen Zieltermin umgesetzt werden.** Die Erstfassung stützte sich tragend auf die Nichtspeicherung. Diese Annahme hält nur zum Teil: Es wird kein Ton aufgezeichnet, im Anrufdatensatz steht kein Transkript, und Vapi erzeugt keine Zusammenfassung; Vapi hält aber je Anruf ein Textprotokoll des Gesprächs rund 14 Tage in den USA vor (R11). Daneben sind zwei Sicherheitslücken offen: Der Vapi-API-Schlüssel wurde am 17.10.2026 in einer lokalen KI-Assistenzsitzung im Klartext angezeigt und ist noch nicht rotiert (R13), und die Werkzeug-Webhooks nehmen Anfragen live ohne Geheimnis-Prüfung an (R12). **Maßnahmen mit Zieltermin (Vorschlag, von Max festzulegen): Schlüsselrotation (O-8) und Webhook-Geheimnis im Live-Betrieb (O-9) bis 24.10.2026.** Ein Restrisiko bleibt beim Drittlandtransfer und ist technisch nicht auflösbar; es erreicht nach hiesiger Bewertung nicht die Schwelle, ab der nach Art. 36 DSGVO die Aufsichtsbehörde vorab zu konsultieren wäre. **Zu dieser Einschätzung ist der Rat des zu benennenden Datenschutzbeauftragten einzuholen (Art. 35 Abs. 2 DSGVO)**, weil sie die einzige wirklich wertende Stelle dieses Dokuments ist.
 
 ---
 
@@ -60,12 +78,12 @@ Als Beispiele werden dort **„Kundensupport mittels künstlicher Intelligenz"**
 | 3 | Systematische Überwachung | nein |
 | 4 | Besondere Kategorien oder höchst persönliche Daten | **teilweise** — nicht bezweckt, aber im Sprachkanal nicht ausschließbar (R2) |
 | 5 | Umfangreiche Verarbeitung | nein — je Verantwortlichem ein Betrieb mit regional begrenztem Anrufaufkommen |
-| 6 | Abgleich oder Zusammenführung von Datensätzen | **teilweise** — Anrufer werden im CRM über die Rufnummer mit bestehenden Kontakten zusammengeführt (Entdopplung) |
+| 6 | Abgleich oder Zusammenführung von Datensätzen | **teilweise** — vorgesehen ist, Anrufer im CRM über die Rufnummer mit bestehenden Kontakten zusammenzuführen (Entdopplung). Diese Zusammenführung über die Rufnummer greift derzeit nicht, weil die Telefonanlage die NexAI-Nummer als Anrufernummer weitergibt. Stattdessen werden alle Anrufe ungewollt in einem Sammelkontakt zusammengeführt (3.1, R5). Mit Behebung (O-15) greift die vorgesehene Zusammenführung wieder. |
 | 7 | Daten schutzbedürftiger Betroffener | nein — allgemeine Öffentlichkeit; kein Beschäftigten- oder Patientenverhältnis |
 | 8 | **Innovative Technologie** | **ja** — KI-gestützte Sprachverarbeitung in Echtzeit |
 | 9 | Betroffene an der Ausübung von Rechten hindern | nein — Weiterleitung an einen Menschen ist jederzeit möglich und im Prompt vorgesehen |
 
-**Ein Kriterium klar erfüllt, drei teilweise.** Bereits zwei erfüllte Kriterien lassen nach WP 248 regelmäßig auf ein hohes Risiko schließen. Zusammen mit 1.2 ist das Ergebnis eindeutig.
+**Ein Kriterium klar erfüllt, drei teilweise (davon eines nur angelegt).** Bereits zwei erfüllte Kriterien lassen nach WP 248 regelmäßig auf ein hohes Risiko schließen. Zusammen mit 1.2 ist das Ergebnis eindeutig.
 
 ---
 
@@ -88,31 +106,33 @@ Diese Trennung ist wichtig und wird in der Praxis oft verwischt: NexAI kann die 
 
 Zweck ist die telefonische Erreichbarkeit außerhalb der Kapazität der Mitarbeiter: Anliegen aufnehmen, Auskunft geben, Termine vereinbaren, bei Bedarf an einen Menschen weiterverbinden. Ohne den Assistenten bleiben Anrufe unbeantwortet — das ist der berechtigte Zweck, und er ist messbar.
 
-Ablauf eines Anrufs:
+Ablauf eines Anrufs (Stand 17.10.2026):
 
 1. Anrufer wählt die Rufnummer; easybell (Deutschland) stellt den Anruf zu.
-2. Die eigene Telefonanlage (Asterisk, Server bei Hetzner in Deutschland) nimmt an und übergibt an Vapi.
-3. Vapi (USA) führt den Dialog: Spracherkennung durch Soniox (USA), Antwortgenerierung durch OpenAI (Irland/USA), Sprachausgabe über Vapi.
-4. Für Terminanfragen ruft der Assistent Werkzeuge auf, die auf die **eigene Automatisierungsinstanz in Deutschland** zeigen; von dort wird der Kalender abgefragt und gebucht.
-5. Auf Wunsch des Anrufers oder bei komplexen Anliegen sendet Vapi ein REFER an die eigene Telefonanlage, die an einen Menschen weiterverbindet.
-6. Nach Gesprächsende meldet Vapi einen Abschlussbericht an das **selbst betriebene CRM in Deutschland**; dort entstehen Kontakt-, Anruf- und Terminsatz.
+2. Die eigene Telefonanlage (Asterisk, Server bei Hetzner in Deutschland) nimmt an und übergibt an Vapi. **Dabei setzt sie als Anrufernummer die NexAI-Nummer (+49 7959 3100191).** Vapi meldet deshalb bei jedem Anruf die eigene Nummer; die tatsächliche Rufnummer des Anrufers kommt bei Vapi und im CRM nicht an. Die Änderung an der Telefonanlage ist offen (O-15).
+3. Vapi (USA) führt den Dialog: Spracherkennung durch Soniox (USA), Antwortgenerierung durch OpenAI (Modell gpt-4.1; Irland/USA — über wessen OpenAI-Konto der Aufruf läuft, ist offen, O-13), Sprachausgabe über Vapi mit der Stimme „Sid" auf dem ElevenLabs-Modell `eleven_turbo_v2_5` (ob ElevenLabs dabei Unterauftragsverarbeiter von Vapi ist, ist offen, O-14). Vapi legt je Anruf ein Textprotokoll mit den erkannten Sätzen des Anrufers und den Antworten des Modells an (3.2).
+4. Für Terminanfragen ruft der Assistent die Werkzeuge `check_availability` und `book_appointment_make` auf. Sie zeigen auf die **eigene n8n-Instanz in Deutschland** (Hetzner); n8n fragt freie Zeiten in **NexTime** ab — dem selbst betriebenen Terminkalender, ebenfalls bei Hetzner in Deutschland — und bucht dort. Die Webhooks prüfen im Live-Betrieb derzeit **kein Geheimnis** (O-9).
+5. **Seit 17.10.2026 (ca. 18:05 Uhr)** setzt n8n die E-Mail-Adresse nach festen Regeln aus dem Gehörten zusammen (Punkt, Minus, Unterstrich und @ nur, wenn das Wort gesagt wurde); ist die Adresse unvollständig, fragt der Assistent nach. Vor der Buchung liest der Assistent Name (Nachname buchstabiert) und E-Mail-Adresse in einem vom Programm vorgegebenen Wortlaut vor; gebucht wird nur mit einem Bestätigungscode, der an Name und E-Mail-Adresse hängt. Ohne E-Mail-Adresse wird ohne Vorlesen gebucht.
+6. Hat der Anrufer eine E-Mail-Adresse genannt, erhält er Bestätigung und Erinnerung per E-Mail über **Resend, Inc. (USA)**. Das Beratungsgespräch führt ein selbstständiger Vertriebspartner, der dafür Zugriff auf den Termin erhält (Datenschutzerklärung Abschnitt 11).
+7. Auf Wunsch des Anrufers oder bei komplexen Anliegen sendet Vapi ein REFER an die eigene Telefonanlage, die an einen Menschen weiterverbindet.
+8. Nach Gesprächsende meldet Vapi einen Abschlussbericht (end-of-call-report: Zeiten, Dauer, Status, gegebenenfalls Zusammenfassung, Anrufernummer) an das **selbst betriebene CRM in Deutschland**; andere Vapi-Daten verarbeitet das CRM nicht. Das CRM legt über die Anrufernummer einen Kontakt an — wegen Schritt 2 hängen derzeit **alle Telefonanrufe an einem einzigen Kontakt mit der NexAI-Nummer**. Zusätzlich speichert n8n beim Buchen Name, E-Mail-Adresse, Telefon und Anliegen als Kontakt und Lead im CRM.
 
 ### 3.2 Daten, Betroffene, Rechtsgrundlagen
 
 | | |
 |---|---|
 | **Betroffene** | Anrufer (Interessenten, Kunden, gelegentlich Unbeteiligte bei Falschwahl) |
-| **Datenarten** | Rufnummer, Name, Anliegen in eigenen Worten, Wunschtermin, gegebenenfalls E-Mail-Adresse, Verbindungs- und Metadaten (Zeit, Dauer, Ergebnis) |
-| **Gesprächsinhalt** | wird **flüchtig** verarbeitet; keine Aufzeichnung, keine gespeicherte Transkription (in Vapi deaktiviert, Beleg 08.08.2026) |
+| **Datenarten** | Rufnummer des Anrufers: **liegt derzeit nur bei easybell** (Verkehrsdaten des Anbieters). Die Telefonanlage ersetzt sie schon beim Eingang durch die NexAI-Nummer (Endpoint-Einstellung `callerid`). Geprüft am 17.10.2026: Die Gesprächsdatensätze der Anlage (`Master.csv`, 134 Einträge vom 20.08. bis 17.10.2026) enthalten keine fremde Nummer, und der Anrufdatensatz und das Protokoll bei Vapi enthalten nur die eigenen Nummern. Bei NexAI und Vapi wird die echte Anrufernummer derzeit also nirgends gespeichert (3.1 Schritt 2, O-15), Name, Anliegen in eigenen Worten, Wunschtermin, gegebenenfalls E-Mail-Adresse, beim Buchen ein Feld „Telefon" (ob genannt oder technisch übergeben, ist nicht geprüft), Verbindungs- und Metadaten (Zeit, Dauer, Status/Ergebnis) |
+| **Gesprächsinhalt** | **Kein Ton** (`recordingEnabled=false`); Transkript-Speicherung am Assistenten aus; im Anrufdatensatz stehen keine Gesprächsnachrichten und kein Transkript (geprüft 17.10.2026). **Aber:** Vapi führt je Anruf ein ausführliches Protokoll mit den erkannten Sätzen des Anrufers und den Antworten des Modells, abrufbar über die Schnittstelle (`artifact.presignedLogUrl`, Link rund 1 Stunde gültig; `GET /logs?callId=`), laut Datenschutzerklärung rund 14 Tage. Zero Data Retention ist im Vapi-Tarif von NexAI (Pay-as-you-go) nicht enthalten (Dashboard: „Your subscription does not include ZDR"). Der Gesprächsinhalt liegt damit **befristet als Text in den USA** vor. Die automatische Zusammenfassung ist am Assistenten ausgeschaltet (`analysisPlan.summaryPlan.enabled=false`, geprüft 17.10.2026); ins CRM gelangen der Abschlussbericht ohne Gesprächsinhalt und beim Buchen das kurz erfasste Anliegen. |
 | **Rechtsgrundlagen** | Art. 6 Abs. 1 lit. b (Anbahnung/Durchführung, insbesondere Terminvereinbarung); Art. 6 Abs. 1 lit. f für die effiziente Bearbeitung allgemeiner Anfragen |
-| **Empfänger** | Vapi (US), Soniox (US, über Vapi), OpenAI (IE/US), easybell (DE), Hetzner (DE, Auftragsverarbeiter für Hosting), Google (Kalender, IE/US) |
-| **Drittland** | USA auf Grundlage der Standardvertragsklauseln mit Folgenabschätzung ([Vapi](TIA-Vapi-Drittlandtransfer.md), [OpenAI](TIA-OpenAI-Drittlandtransfer.md)); Google auf Grundlage des Angemessenheitsbeschlusses |
-| **Speicherort dauerhaft** | ausschließlich Deutschland (CRM und Automatisierung bei Hetzner) |
-| **Löschfristen** | Termindaten 6 Monate; Leads 6 Monate; Anrufmetadaten nach Aufbewahrungsregel des jeweiligen Mandanten |
+| **Empfänger** | Vapi (US), Soniox (US, über Vapi), OpenAI (IE/US; Konto offen, O-13), ElevenLabs (Modell hinter der Vapi-Stimme; Rolle offen, O-14), easybell (DE), Hetzner (DE, Auftragsverarbeiter für Hosting von Telefonanlage, n8n, NexTime und CRM), Resend (US, Bestätigungs- und Erinnerungsmails), selbstständiger Vertriebspartner (Zugriff auf den Termin) |
+| **Drittland** | USA auf Grundlage der Standardvertragsklauseln mit Folgenabschätzung ([Vapi](TIA-Vapi-Drittlandtransfer.md), [OpenAI](TIA-OpenAI-Drittlandtransfer.md)); welches Modul mit Vapi für die eigene Rufnummer gilt, ist ungeklärt (vermutlich Modul 2, O-12). Resend: DPF-zertifiziert und Standardvertragsklauseln (Stand der Prüfung 06.09.2026, damals „Active — Re-certification under Review"; vor Verwendung neu abfragen). ElevenLabs: offen (O-14). |
+| **Speicherort dauerhaft** | Deutschland (CRM, NexTime und n8n bei Hetzner). **Befristet in den USA:** Gesprächsprotokoll bei Vapi, rund 14 Tage; OpenAI bis zu 30 Tage, falls der Sprachaufruf über ein NexAI-Konto ohne Nichtspeicherung läuft, über Vapis Konto unbekannt (O-13); Resend: Zustellprotokolle, Dauer nicht erhoben. |
+| **Löschfristen** | Vapi-Gesprächsprotokoll: rund 14 Tage (Angabe der Datenschutzerklärung; Beleg aus Vertrag oder Dokumentation offen, O-11)<br>NexTime: Anonymisierung 12 Monate nach dem letzten Termin<br>CRM, Anrufe: 180 Tage ab Erstellung, hart gelöscht<br>CRM, Leads und Termin-Anfragen: 180 Tage ab letzter Aktivität, hart gelöscht<br>CRM-Löschlauf alle 10 Minuten; Datensätze unter Legal Hold werden übersprungen; Regeln am 17.10.2026 eingerichtet bzw. in Einrichtung<br>**CRM, Kontakte: keine Regel** — bewusst, weil die Aktivität im CRM Belege und Rechnungen nicht mitzählt und Kunden mit Aufbewahrungspflicht (8 bzw. 10 Jahre) sonst mitgelöscht würden; Kontakte aus Telefonbuchungen bleiben bis zum Bau eines Filters über 6 Monate hinaus stehen (Lücke, R9, O-10)<br>Versandprotokolle der E-Mails: 6 Monate (Datenschutzerklärung Abschnitt 10)<br>n8n-Ausführungsprotokolle und OpenAI: nicht erhoben (O-16, O-13) |
 
 ### 3.3 Was ausdrücklich nicht stattfindet
 
-Keine Anrufaufzeichnung. Keine gespeicherte Transkription. Keine Stimmungs- oder Emotionsanalyse. Keine Stimmerkennung oder biometrische Identifizierung. Keine ausgehenden Werbeanrufe — ausgehende Anrufe sind technisch nicht möglich. Keine Profilbildung über Anrufer hinweg. Kein Training von Modellen mit den Gesprächsdaten (vertraglich zugesichert).
+Keine Anrufaufzeichnung (Ton). Kein Transkript im Anrufdatensatz und keines im CRM — das Textprotokoll bei Vapi (3.2) ist davon ausdrücklich **nicht** erfasst. Keine Stimmungs- oder Emotionsanalyse. Keine Stimmerkennung oder biometrische Identifizierung. Keine ausgehenden Werbeanrufe — ausgehende Anrufe sind technisch nicht möglich. Keine Profilbildung über Anrufer hinweg. Kein Training von Modellen mit den Gesprächsdaten (vertraglich zugesichert).
 
 ---
 
@@ -124,13 +144,15 @@ Keine Anrufaufzeichnung. Keine gespeicherte Transkription. Keine Stimmungs- oder
 - *Externes Callcenter mit Menschen:* verarbeitet **mehr** Daten (Menschen hören zu, Gespräche werden dort regelmäßig aufgezeichnet) und ist damit nicht milder.
 - *Assistent ohne Anliegenerfassung, nur Terminvergabe:* wäre milder und bleibt als Rückfallgestaltung vorgemerkt, erreicht den Zweck der Vorqualifizierung aber nicht.
 
-**Datenminimierung.** Erhoben wird, was für Rückruf und Termin nötig ist. Der Gesprächsinhalt wird nicht dauerhaft gespeichert. Der Abschlussbericht ans CRM enthält strukturierte Felder und eine Zusammenfassung, kein Wortprotokoll.
+**Datenminimierung.** Erhoben wird, was für Rückruf und Termin nötig ist. Ins CRM gelangt kein Wortprotokoll, sondern nur der Abschlussbericht mit strukturierten Feldern und gegebenenfalls einer Zusammenfassung. Bei Vapi entsteht dagegen ein Textprotokoll des Gesprächs (3.2), das im heutigen Tarif ohne Zero Data Retention anfällt; ob es sich anders vermeiden oder vorzeitig löschen lässt, ist offen (O-11). Das ist der wesentliche Abstrich gegenüber der Erstfassung (R11).
 
-**Speicherbegrenzung.** Fristen sind in der Datenschutzerklärung benannt und im CRM technisch durchsetzbar; die Durchsetzung setzt eine je Mandant gesetzte Regel voraus (offener Punkt, Abschnitt 6).
+**Richtigkeit.** Seit 17.10.2026 bildet das Programm die E-Mail-Adresse nach festen Regeln, der Assistent liest Name und Adresse im vorgegebenen Wortlaut vor, und gebucht wird nur mit einem Bestätigungscode (3.1 Schritt 5). Ohne E-Mail-Adresse entfällt das Vorlesen.
 
-**Transparenz.** Der Assistent weist zu Gesprächsbeginn darauf hin, dass es sich um ein KI-System handelt (Art. 50 KI-Verordnung). Die Datenschutzerklärung beschreibt die Verarbeitung einschließlich der Empfänger und der Drittlandgrundlage.
+**Speicherbegrenzung.** Fristen sind in der Datenschutzerklärung benannt. Im CRM sind seit 17.10.2026 Regeln für Anrufe, Leads und Termin-Anfragen eingerichtet bzw. in Einrichtung (3.2). Für Kontakte fehlt eine Regel. Die Datenschutzerklärung (Abschnitt 11) sagt dagegen: „den Eintrag im CRM löschen wir nach sechs Monaten, soweit keine gesetzlichen Aufbewahrungspflichten entgegenstehen"; für Kontakte aus Telefonbuchungen hält diese Zusage bis zum Filter (O-10) nicht.
 
-**Betroffenenrechte.** Auskunft, Berichtigung und Löschung werden über das CRM bedient, das Suche, Export und Löschung je betroffener Person unterstützt. Ein Widerspruch gegen die Verarbeitung durch den Assistenten ist praktisch immer möglich: Der Anrufer kann jederzeit einen Menschen verlangen, und der Assistent ist angewiesen, dem zu folgen.
+**Transparenz.** Der Assistent weist zu Gesprächsbeginn darauf hin, dass es sich um ein KI-System handelt (Art. 50 KI-Verordnung). Die Datenschutzerklärung beschreibt die Verarbeitung einschließlich der Empfänger und der Drittlandgrundlage und nennt seit 17.10.2026 das Gesprächsprotokoll bei Vapi mit rund 14 Tagen. Nicht genannt ist ElevenLabs (Rolle offen, O-14); die Aussage zur Löschung im CRM trifft für Kontakte derzeit nicht zu (siehe Speicherbegrenzung).
+
+**Betroffenenrechte.** Auskunft, Berichtigung und Löschung werden über das CRM bedient, das Suche, Export und Löschung je betroffener Person unterstützt. **Einschränkung:** Weil alle Telefonanrufe derzeit an einem Sammelkontakt mit der NexAI-Nummer hängen (3.1 Schritt 2 und 8), lassen sich die Anrufdatensätze einer Person nicht über ihren Kontakt finden, sondern nur über Zeitpunkt und Zusammenfassung; eine Löschung des Sammelkontakts träfe alle Anrufer. Das Vapi-Protokoll ist innerhalb der rund 14 Tage je Anruf über die Schnittstelle abrufbar; ob Vapi einzelne Protokolle auf Anforderung löscht, ist offen (O-11). Ein Widerspruch gegen die Verarbeitung durch den Assistenten ist praktisch immer möglich: Der Anrufer kann jederzeit einen Menschen verlangen, und der Assistent ist angewiesen, dem zu folgen.
 
 ---
 
@@ -140,16 +162,19 @@ Bewertet nach Eintrittswahrscheinlichkeit (EW) und Schwere (S), je gering / mitt
 
 | # | Risiko | EW | S | Bewertung |
 |---|---|---|---|---|
-| **R1** | Zugriff US-amerikanischer Behörden auf Gesprächsinhalte während der Verarbeitung | gering | hoch | **mittel** — Inhalte existieren dort nur flüchtig; technisch nicht ausschließbar (EDPB-Anwendungsfall 6) |
-| **R2** | Anrufer offenbart spontan besondere Kategorien („ich hatte einen Unfall", „mein Vater ist verstorben") | **hoch** | mittel | **mittel** — im Sprachkanal unvermeidbar; wird nicht gespeichert, fließt aber durch die US-Kette |
-| **R3** | Fehlerkennung: falscher Name, falsche Rufnummer, falscher Termin | mittel | gering | **gering** — Rückbestätigung im Gespräch; Terminkonflikte werden gegen den Kalender geprüft |
+| **R1** | Zugriff US-amerikanischer Behörden auf Gesprächsinhalte während der Verarbeitung | gering | hoch | **mittel** — während des Anrufs flüchtig; der gespeicherte Bestand bei Vapi ist gesondert unter R11 bewertet; technisch nicht ausschließbar (EDPB-Anwendungsfall 6) |
+| **R2** | Anrufer offenbart spontan besondere Kategorien („ich hatte einen Unfall", „mein Vater ist verstorben") | **hoch** | mittel | **mittel** — im Sprachkanal unvermeidbar; kein Wortprotokoll und keine Zusammenfassung im CRM, allenfalls im kurz erfassten Anliegen; fließt aber durch die US-Kette und liegt rund 14 Tage im Vapi-Protokoll (R11) |
+| **R3** | Fehlerkennung: falscher Name, falsche E-Mail-Adresse, falscher Termin; bei falscher Adresse geht die Bestätigung samt Link zum Verschieben oder Absagen an einen Dritten | mittel (bis zum Beleg) | mittel | **mittel, nach Beleg gering** — Adresse programmgebildet, Pflicht-Vorlesen und Bestätigungscode (seit 17.10.2026, auf einer Testkopie geprüft); die Wirksamkeit am Live-Telefon ist noch nicht durch einen Buchungsanruf belegt (Stand 17.10.2026 abends); ohne E-Mail-Adresse wird ohne Vorlesen gebucht, dort bleibt das Risiko eines falsch erfassten Namens |
 | **R4** | Der Assistent sagt etwas Unzutreffendes zu, der Anrufer verlässt sich darauf | mittel | mittel | **mittel** — vertraglich ausgeschlossene Vollmacht schützt rechtlich, nicht faktisch |
-| **R5** | Verwechslung von Personen bei der Zusammenführung über die Rufnummer (gemeinsam genutzte Anschlüsse) | gering | mittel | **gering** |
+| **R5** | **Neu gefasst:** Alle Telefonanrufe hängen im CRM an einem Sammelkontakt mit der NexAI-Nummer; Zusammenfassungen verschiedener Anrufer stehen nebeneinander, Auskunft und Löschung je Person sind über den Kontakt nicht möglich. Das Risiko der Erstfassung (Verwechslung bei gemeinsam genutzten Anschlüssen) ruht, bis die echte Anrufernummer übergeben wird, und lebt dann wieder auf | **hoch** (eingetreten) | mittel | **mittel** |
 | **R6** | Menschen, die mit einem Sprachsystem nicht sprechen können oder wollen, erreichen den Betrieb nicht | mittel | mittel | **mittel** — mindert sich durch die jederzeitige Weiterleitung an Menschen |
 | **R7** | Ausfall der Telefonie; dringende Anliegen erreichen niemanden | mittel | mittel | **mittel** — die Telefonanlage ist heute ein einzelner Ausfallpunkt |
-| **R8** | Unbefugter Zugriff auf die im CRM gespeicherten Anruf- und Kontaktdaten | gering | mittel | **gering** — Mandantentrennung auf Datenbankebene, Zwei-Faktor-Pflicht, verschlüsselte Sicherungen |
-| **R9** | Daten werden nicht gelöscht, weil keine Aufbewahrungsregel gesetzt ist | **hoch** | mittel | **mittel** — die Löschmaschine läuft, aber nur mit gesetzter Regel |
+| **R8** | Unbefugter Zugriff auf die im CRM gespeicherten Anruf- und Kontaktdaten | gering | mittel | **gering** — Mandantentrennung auf Datenbankebene, Zwei-Faktor-Pflicht, verschlüsselte Sicherungen; der Zugang zu Vapi ist gesondert unter R13 bewertet |
+| **R9** | Daten werden nicht gelöscht: Für Kontakte besteht bewusst keine Regel, Kontakte aus Telefonbuchungen bleiben über 6 Monate hinaus stehen — entgegen der Aussage in der Datenschutzerklärung | **hoch** | mittel | **mittel** — für Anrufe, Leads und Termin-Anfragen seit 17.10.2026 Regeln eingerichtet bzw. in Einrichtung |
 | **R10** | Verbindungsdaten der Telefonanlage (wer wann anrief) werden unbegrenzt vorgehalten | mittel | gering | **gering** |
+| **R11** | **Neu:** Gesprächsinhalt als Textprotokoll bei Vapi in den USA (erkannte Sätze und Modellantworten), rund 14 Tage, über die Schnittstelle abrufbar; Zero Data Retention im Tarif nicht enthalten. Bestand für Herausgabeanordnungen, Behördenzugriff und Vorfälle beim Anbieter — einschließlich spontan offenbarter besonderer Kategorien (R2) | gering | hoch | **mittel** — die Frist ist kurz, das Volumen gering; das Argument der TIA, eine Anordnung träfe „auf nichts Gespeichertes", trägt aber nicht mehr |
+| **R12** | **Neu — Sicherheit der Verarbeitung (Art. 32 Abs. 1 lit. b DSGVO: „die Fähigkeit, die Vertraulichkeit, Integrität, Verfügbarkeit und Belastbarkeit der Systeme und Dienste im Zusammenhang mit der Verarbeitung auf Dauer sicherzustellen"):** Die Werkzeug-Webhooks (n8n) prüfen live kein Geheimnis. Wer die Adresse kennt, kann Verfügbarkeiten abfragen und Termine auf fremde Namen und E-Mail-Adressen buchen; die Angaben landen in NexTime und als Kontakt und Lead im CRM, Resend verschickt Bestätigungen an beliebige Adressen. Ob die Antworten der Webhooks personenbezogene Daten enthalten, ist nicht geprüft | mittel | mittel | **mittel** |
+| **R13** | **Neu:** Der Vapi-API-Schlüssel wurde am 17.10.2026 bei einer Fehlersuche in der Ausgabe einer lokalen KI-Assistenzsitzung (auf dem Rechner eines Gesellschafters) im Klartext angezeigt. Er steht damit im lokalen Sitzungsprotokoll und lag dem Anbieter des Assistenten vor; ein Hinweis auf Zugriff Dritter besteht nicht. Wer den Schlüssel hat, kann laut Vapi-Schnittstellenbeschreibung die Gesprächsprotokolle der letzten rund 14 Tage abrufen, die Werkzeugadressen auslesen (→ R12) und die Konfiguration des Assistenten ändern | gering (angenommen, solange nichts Gegenteiliges bekannt ist) | hoch | **mittel** — bis zur Rotation (O-8); danach gering |
 
 ---
 
@@ -157,16 +182,19 @@ Bewertet nach Eintrittswahrscheinlichkeit (EW) und Schwere (S), je gering / mitt
 
 | # | Bereits umgesetzt | Noch offen |
 |---|---|---|
-| R1 | Aufzeichnung und Transkription deaktiviert; enge Datenkategorien; Standardvertragsklauseln mit Folgenabschätzung; dauerhafte Speicherung ausschließlich in Deutschland | EU-Region und Nichtspeicherung bei OpenAI aktivieren, sobald geklärt ist, über wessen Zugang der Sprachaufruf läuft; mittelfristig Ablösung durch einen europäischen Sprach-Stack |
-| R2 | Keine Speicherung des Gesprächsinhalts; Prompt fordert keine Gesundheits- oder sonstigen sensiblen Angaben ab; [Sperrvermerk](Sperrvermerk-Berufsgeheimnistraeger.md) für einschlägige Branchen | Sensitivitäts-Riegel vor die Einrichtung ziehen — heute greift er erst beim Speichern und verhindert den Transfer nicht |
-| R3 | Rückbestätigung des Termins im Gespräch; Konfliktprüfung gegen den Kalender vor der Zusage | — |
+| R1 | Ton-Aufzeichnung und Transkript-Speicherung am Assistenten deaktiviert (geprüft 17.10.2026); enge Datenkategorien; Standardvertragsklauseln mit Folgenabschätzung; dauerhafte Speicherung ausschließlich in Deutschland; TIA Vapi in Teilen überholt (O-16), SCC-Modul ungeklärt (O-12) | Modul der Standardvertragsklauseln mit Vapi klären (O-12); EU-Region und Nichtspeicherung bei OpenAI aktivieren, sobald geklärt ist, über wessen Zugang der Sprachaufruf läuft (O-13, O-6); mittelfristig Ablösung durch einen europäischen Sprach-Stack |
+| R2 | Kein Wortprotokoll und keine automatische Zusammenfassung im CRM; Prompt fordert keine Gesundheits- oder sonstigen sensiblen Angaben ab; [Sperrvermerk](Sperrvermerk-Berufsgeheimnistraeger.md) für einschlägige Branchen | Sensitivitäts-Riegel vor die Einrichtung ziehen — heute greift er erst beim Speichern und verhindert den Transfer nicht (O-4); Vapi-Protokoll siehe R11 |
+| R3 | Seit 17.10.2026: E-Mail-Adresse vom Programm nach festen Regeln gebildet, Rückfrage bei unvollständiger Adresse, Pflicht-Vorlesen von Name (buchstabiert) und E-Mail-Adresse im vorgegebenen Wortlaut, Buchung nur mit Bestätigungscode; Rückbestätigung des Termins im Gespräch; Konfliktprüfung gegen NexTime vor der Zusage | Prüfen, ob der Name auch bei Buchungen ohne E-Mail-Adresse vorgelesen werden soll |
 | R4 | Vertraglicher Ausschluss rechtsverbindlicher Erklärungen; Prompt-Leitplanken; Hinweis auf fachkundige Stellen statt eigener Beratung | Formulierungen im Prompt regelmäßig prüfen; Grenzfälle aus echten Gesprächen sammeln |
-| R5 | Entdopplung über die vollständige Rufnummer statt über Namensähnlichkeit | — |
+| R5 | Entdopplung über die vollständige Rufnummer statt über Namensähnlichkeit ist im CRM angelegt — greift aber erst, wenn die echte Anrufernummer ankommt | Telefonanlage so ändern, dass die echte Anrufernummer übergeben wird (O-15) — **vorher** Neubewertung nach Abschnitt 9; danach Sammelkontakt auflösen; bis dahin Auskunft und Löschung für Anrufe über Zeitpunkt und Zusammenfassung bedienen |
 | R6 | Weiterleitung an einen Menschen jederzeit auf Zuruf; Rückruf-Werkzeug, wenn die Weiterleitung scheitert | Alternativer Kontaktweg (E-Mail, Formular) in der Ansage nennen |
 | R7 | Automatischer Neustart der Telefonanlage; Rückfallweg über den Anbieter vorhanden | Überwachung und geübter Notfallweg; der Kunde hält nach Service-Level ein eigenes Ausweichverfahren vor |
-| R8 | Mandantentrennung auf Datenbankebene, Zwei-Faktor-Pflicht, Zugriffsprotokoll, verschlüsselte Sicherungen, Transkripte verschlüsselt gespeichert | — |
-| R9 | Löschmaschine im CRM mit Fristen, Aktionen und Protokoll; Löschsperre für Einzelfälle | Aufbewahrungsregeln je Mandant fest in das Onboarding aufnehmen |
+| R8 | Mandantentrennung auf Datenbankebene, Zwei-Faktor-Pflicht, Zugriffsprotokoll, verschlüsselte Sicherungen, Transkripte verschlüsselt gespeichert (vom Telefonassistenten kommt kein Transkript an, nur der Abschlussbericht) | — |
+| R9 | Löschmaschine im CRM mit Fristen, Aktionen und Protokoll; Löschsperre (Legal Hold) für Einzelfälle; Regeln für Anrufe (180 Tage ab Erstellung), Leads und Termin-Anfragen (180 Tage ab letzter Aktivität), hart, Lauf alle 10 Minuten — am 17.10.2026 eingerichtet bzw. in Einrichtung, erster Lauf noch nicht belegt; NexTime anonymisiert nach 12 Monaten | Löschregel für Kontakte mit Filter, der Kunden mit Belegen oder Rechnungen ausnimmt (O-10); Wirksamkeit der neuen Regeln nach dem ersten Lauf belegen; Aufbewahrungsregeln je Mandant fest in das Onboarding aufnehmen (O-5) |
 | R10 | — | Aufbewahrungsgrenze für die Verbindungsdaten der Telefonanlage setzen; Zugriff beschränken und auf das Fernmeldegeheimnis verpflichten |
+| R11 | Ton wird nicht aufgezeichnet; Transkript nicht im Anrufdatensatz; keine Zusammenfassung; Frist von rund 14 Tagen in der Datenschutzerklärung offengelegt (seit 17.10.2026) | Detailprotokoll am Assistenten abschalten (`artifactPlan.loggingEnabled=false`, kostenlos; schließt das Textprotokoll für neue Anrufe, Webhook- und API-Protokolle — darunter die Werkzeugaufrufe mit Name und E-Mail — bleiben ohne ZDR bestehen); Zero Data Retention bzw. Tarif mit Vapi klären, Frist mit Beleg festhalten, vorzeitige Löschung prüfen (O-11); TIA Vapi (M-1, 1.2, Ergebnis) angleichen (O-16) |
+| R12 | — | Technische Maßnahme nach Art. 32 Abs. 1 lit. b: Prüfung des Kopffelds `x-nexai-secret` ist gebaut und auf einer Testkopie geprüft (ohne Geheimnis Antwort 403); im Live-Betrieb übertragen (O-9); prüfen, welche Daten die Webhooks zurückgeben |
+| R13 | — | Schlüssel rotieren (O-8); die neue Fassung nur in der Schlüsselablage hinterlegen, nicht in Konfigurationsdateien im Klartext |
 
 ---
 
@@ -174,7 +202,7 @@ Bewertet nach Eintrittswahrscheinlichkeit (EW) und Schwere (S), je gering / mitt
 
 Ein Kunde, der den Assistenten einsetzt, benötigt eine eigene Folgenabschätzung. NexAI stellt ihm dafür bereit:
 
-- die **Beschreibung der Verarbeitung** aus Abschnitt 3 einschließlich Empfängerliste, Speicherorten und Fristen,
+- die **Beschreibung der Verarbeitung** aus Abschnitt 3 einschließlich Empfängerliste, Speicherorten und Fristen — ausdrücklich auch des **Gesprächsprotokolls bei Vapi** (rund 14 Tage, im heutigen Tarif ohne Zero Data Retention), das der Kunde in seiner Folgenabschätzung und seiner Datenschutzerklärung abbilden muss,
 - die **Risikoanalyse** aus Abschnitt 5 mit den technischen Maßnahmen aus Abschnitt 6,
 - die **Drittland-Folgenabschätzungen** für Vapi und OpenAI,
 - das **Verzeichnis der Unterauftragsverarbeiter** (Anhang 2 des Auftragsverarbeitungsvertrags),
@@ -188,11 +216,13 @@ Der Kunde muss selbst ergänzen und verantworten: seine Zwecke und Rechtsgrundla
 
 ## 8. Verbleibendes Risiko und Entscheidung
 
-Nach Umsetzung der Maßnahmen aus Abschnitt 6 verbleibt ein Risiko in zwei Punkten:
+Nach Umsetzung der Maßnahmen aus Abschnitt 6 verbleibt ein Risiko in drei Punkten:
 
-**R1 (Drittlandzugriff)** ist technisch nicht auflösbar, solange die Sprachverarbeitung außerhalb der EU stattfindet. Es wird durch Nichtspeicherung, enge Datenkategorien und die vertraglichen Garantien so weit gemindert, wie es geht. **R2 (spontane Offenbarung)** ist dem Sprachkanal eigen und lässt sich nur durch Nichtspeicherung und den Ausschluss einschlägiger Branchen begrenzen.
+**R1 und R11 (Drittlandzugriff)** sind technisch nicht auflösbar, solange die Sprachverarbeitung außerhalb der EU stattfindet. Anders als in der Erstfassung angenommen, entsteht bei Vapi ein befristeter Bestand: das Textprotokoll je Anruf, rund 14 Tage. Die Minderung stützt sich deshalb nicht mehr auf Nichtspeicherung, sondern auf die kurze Frist, die engen Datenkategorien, das geringe Volumen und die vertraglichen Garantien. **R2 (spontane Offenbarung)** ist dem Sprachkanal eigen; solche Angaben gelangen allenfalls über das kurz erfasste Anliegen ins CRM, liegen aber rund 14 Tage im Vapi-Protokoll und lassen sich sonst nur durch den Ausschluss einschlägiger Branchen begrenzen.
 
-**Bewertung:** Das Restrisiko wird als **mittel** eingestuft, nicht als hoch im Sinne von Art. 36 Abs. 1 DSGVO. Tragend dafür ist, dass keine Inhalte dauerhaft außerhalb der EU entstehen und keine besonderen Kategorien planmäßig verarbeitet werden. **Eine vorherige Konsultation der Aufsichtsbehörde ist danach nicht erforderlich.** Diese Einschätzung ist die einzige echte Wertung dieses Dokuments und sollte anwaltlich bestätigt werden.
+**R12 (Webhooks) und R13 (Schlüssel)** sind keine Restrisiken, sondern offene Sicherheitslücken mit bekannter Abhilfe.
+
+**Bewertung:** Das Restrisiko wird als **mittel** eingestuft, nicht als hoch im Sinne von Art. 36 Abs. 1 DSGVO. Tragend dafür sind: keine Tonaufzeichnung, kein Transkript und keine Zusammenfassung im CRM, ein befristeter Bestand in den USA (Vapi rund 14 Tage; OpenAI bis zu 30 Tage, falls über ein NexAI-Konto ohne Nichtspeicherung, O-13) und keine planmäßige Verarbeitung besonderer Kategorien. **Voraussetzung ist, dass O-8 (Schlüsselrotation) und O-9 (Webhook-Geheimnis im Live-Betrieb) bis zum Zieltermin umgesetzt werden (Vorschlag: 24.10.2026, von Max festzulegen).** Bis dahin sind R12 und R13 mittel. Gelingt die Umsetzung bis zum Zieltermin nicht, wird der Telefonassistent bis zur Umsetzung abgeschaltet; lassen sich die Maßnahmen gar nicht umsetzen, ist die Aufsichtsbehörde nach Art. 36 Abs. 1 DSGVO vor der weiteren Verarbeitung zu konsultieren. Stellt sich heraus, dass Vapi das Protokoll länger als rund 14 Tage vorhält (O-11), ist R11 neu zu bewerten. Zu dieser Einschätzung — der einzigen echten Wertung dieses Dokuments — ist der Rat des zu benennenden Datenschutzbeauftragten einzuholen (Art. 35 Abs. 2, Art. 39 Abs. 1 lit. c DSGVO).
 
 ---
 
@@ -202,28 +232,40 @@ Jeder der folgenden Punkte macht eine Neubewertung erforderlich, bevor er umgese
 
 | Auslöser | Folge |
 |---|---|
-| Aufzeichnung oder Transkription wird für einen Kunden aktiviert | Inhalte entstehen dauerhaft; R1 steigt auf hoch; § 201 StGB und Einwilligungen kommen hinzu |
+| Ton-Aufzeichnung oder Transkript-Speicherung wird aktiviert — für NexAI oder einen Kunden | Inhalte entstehen dauerhaft; R1 steigt auf hoch; § 201 StGB und Einwilligungen kommen hinzu |
+| Die Telefonanlage übergibt die echte Anrufernummer an Vapi (O-15) | Rufnummer gelangt in die USA (auch ins Vapi-Protokoll) und ins CRM; die Zusammenführung über die Rufnummer setzt ein (Kriterium 6, R5 in der Fassung der Erstbewertung); Sammelkontakt auflösen |
+| Vapi-Tarif oder Protokollfrist ändern sich (Zero Data Retention, längere oder kürzere Frist) | R11 neu bewerten; Datenschutzerklärung Abschnitte 4 und 11 angleichen |
 | Ein Berufsgeheimnisträger wird bedient | [Sperrvermerk](Sperrvermerk-Berufsgeheimnistraeger.md) greift; volle Neubewertung, voraussichtlich Art. 36 |
 | Ausgehende Anrufe werden möglich | Neuer Verarbeitungszweck, § 7 UWG, andere Betroffenenerwartung |
 | Stimmungs-, Emotions- oder Stimmerkennung wird eingeschaltet | Biometrie beziehungsweise Bewertung persönlicher Aspekte; neue Rechtsgrundlage nötig |
-| Wechsel von Sprachmodell, Spracherkennung oder Sprachausgabe | Empfängerwechsel: 14 Tage Vorabinformation an Kunden, Anhang 2 anpassen, Drittlandbewertung prüfen |
+| Wechsel von Sprachmodell, Spracherkennung oder Sprachausgabe — einschließlich des Modells hinter der Vapi-Stimme (derzeit ElevenLabs, O-14) | Empfängerwechsel: 14 Tage Vorabinformation an Kunden, Anhang 2 anpassen, Drittlandbewertung prüfen |
 | Anrufaufkommen wächst deutlich oder mehrere Mandanten werden zusammengeführt | Kriterium „umfangreiche Verarbeitung" neu prüfen |
 
 ---
 
 ## 10. Offene Punkte und Wiedervorlage
 
-| | Punkt | Zuständig |
-|---|---|---|
-| O-1 | **Datenschutzbeauftragten benennen** (§ 38 Abs. 1 Satz 2 BDSG) und der Aufsichtsbehörde melden | NexAI |
-| O-2 | Diese Folgenabschätzung dem Datenschutzbeauftragten zur Stellungnahme vorlegen (Art. 35 Abs. 2) | NexAI |
-| O-3 | Anwaltliche Bestätigung der Bewertung in Abschnitt 8 | NexAI |
-| O-4 | Sensitivitäts-Riegel vor die Einrichtung ziehen | NexAI |
-| O-5 | Aufbewahrungsregeln je Mandant verpflichtend im Onboarding | NexAI |
-| O-6 | EU-Region und Nichtspeicherung bei OpenAI, sofern über eigenen Zugang möglich | NexAI |
-| O-7 | Zulieferbaustein für Kunden als eigenes Dokument ausformulieren | NexAI |
+| | Punkt | Zuständig | Status 17.10.2026 |
+|---|---|---|---|
+| O-1 | **Datenschutzbeauftragten benennen** (§ 38 Abs. 1 Satz 2 BDSG), Kontaktdaten veröffentlichen und der Aufsichtsbehörde mitteilen (Art. 37 Abs. 7 DSGVO). **Nicht durch einen Gesellschafter:** Nach Art. 38 Abs. 6 Satz 2 DSGVO stellt der Verantwortliche sicher, „dass derartige Aufgaben und Pflichten nicht zu einem Interessenkonflikt führen"; wer Zwecke und Mittel der Verarbeitung festlegt, darf nicht Datenschutzbeauftragter sein (BAG, Urteil vom 06.06.2023 – 9 AZR 383/19, Rn. 23, unter Verweis auf EuGH, Urteil vom 09.02.2023 – C-453/21, Rn. 44). Ob ein Interessenkonflikt vorliegt, ist im Einzelfall festzustellen (EuGH C-453/21 Rn. 45 f.); bei den Gesellschaftern einer GbR, die alle Verarbeitungen selbst festlegen, ist das eindeutig. Die Gesellschafter legen Zwecke und Mittel fest — etwa die Löschregeln vom 17.10.2026. In Betracht kommt ein externer Datenschutzbeauftragter auf Grundlage eines Dienstleistungsvertrags (Art. 37 Abs. 6 DSGVO) | Max | **offen** — niemand benannt |
+| O-2 | Diese Folgenabschätzung dem Datenschutzbeauftragten zur Stellungnahme vorlegen (Art. 35 Abs. 2) | Max | offen — nach O-1 |
+| O-3 | Stellungnahme des Datenschutzbeauftragten zu Abschnitt 8 einholen und dokumentieren (Art. 35 Abs. 2, Art. 39 Abs. 1 lit. c) | Datenschutzbeauftragter / Max | offen — nach O-1 |
+| O-4 | Sensitivitäts-Riegel vor die Einrichtung ziehen | NexAI | offen |
+| O-5 | Aufbewahrungsregeln je Mandant verpflichtend im Onboarding | NexAI | offen; für den eigenen Mandanten Anrufe, Leads und Termin-Anfragen seit 17.10.2026 eingerichtet bzw. in Einrichtung |
+| O-6 | EU-Region und Nichtspeicherung bei OpenAI, sofern über eigenen Zugang möglich | NexAI | offen — hängt an O-13 |
+| O-7 | Zulieferbaustein für Kunden als eigenes Dokument ausformulieren | NexAI | offen |
+| O-8 | **Vapi-API-Schlüssel rotieren** (am 17.10.2026 in einer lokalen KI-Assistenzsitzung im Klartext angezeigt, R13) | Max | **offen — Zieltermin-Vorschlag 24.10.2026 (Abschnitt 8)** |
+| O-9 | **Webhook-Geheimnis (`x-nexai-secret`) in den Live-Betrieb übertragen** | Max / NexAI | **gebaut, auf Testkopie geprüft; live offen — Zieltermin-Vorschlag 24.10.2026 (Abschnitt 8); braucht einen Testanruf** |
+| O-10 | Löschregel für Kontakte mit Filter für Kunden mit Belegen oder Rechnungen (Aufbewahrungspflicht 8/10 Jahre); bis dahin ist die Zusage in Abschnitt 11 der Datenschutzerklärung („den Eintrag im CRM löschen wir nach sechs Monaten, soweit keine gesetzlichen Aufbewahrungspflichten entgegenstehen") für Kontakte nicht erfüllt | NexAI | offen |
+| O-11 | Vapi-Protokoll: Detailprotokoll abschalten (`loggingEnabled=false`, mit Testanruf); Zero Data Retention bzw. Tarif klären (laut Preisseite 17.10.2026 im Paket „Core", ob für Bestandskonten buchbar, offen); Frist von rund 14 Tagen mit Beleg festhalten; vorzeitige Löschung einzelner Protokolle prüfen | Max | offen — ZDR im Pay-as-you-go-Tarif laut Dashboard nicht enthalten |
+| O-12 | Modul der Standardvertragsklauseln mit Vapi für die eigene Rufnummer klären (vermutlich Modul 2, Verantwortlicher → Auftragsverarbeiter; AVV Anlage B nennt bislang nur Modul 3) | Max | offen |
+| O-13 | Klären, über wessen OpenAI-Konto der Assistent läuft (eigenes NexAI-Konto oder Vapis Konto); davon hängen Vertragsgrundlage, Speicherdauer und O-6 ab | Max | offen |
+| O-14 | Klären, ob ElevenLabs (Modell `eleven_turbo_v2_5` hinter der Vapi-Stimme „Sid") Unterauftragsverarbeiter von Vapi ist; der AVV-Tracker sagt bislang, „Sid" sei eine Vapi-eigene Stimme ohne dritten Empfänger | Max | offen |
+| O-15 | Telefonanlage: echte Anrufernummer an Vapi übergeben — erst nach Neubewertung (Abschnitt 9) | NexAI | offen |
+| O-16 | Folgedokumente angleichen: TIA Vapi (Zusammenfassung Nr. 1, 1.2 Speicherung beim Importeur, 3.3 CLOUD Act, M-1, M-3, Ergebnis), TIA OpenAI (Abgrenzung „bei Vapi entsteht kein Bestand"), OpenAI-Antraege-EU-Region-und-ZDR.md, VVT A6 (Empfänger, Löschfristen, Verweis „Nr. 9"), AVV-Tracker (Google-Kalender, ElevenLabs), Datenschutzerklärung (Kontakte im CRM, ElevenLabs); Aufbewahrung der n8n-Ausführungsprotokolle erheben | NexAI | offen |
+| O-17 | **Website-Chat (VVT A4)** fällt ebenfalls unter DSK-Muss-Liste Nr. 11 („System, welches mit Kunden durch Konversation interagiert", Prüfvermerk 1.2). Er ist in dieser Fassung **nicht** bewertet. Entweder hier aufnehmen — Art. 35 Abs. 1 Satz 2 DSGVO: „Für die Untersuchung mehrerer ähnlicher Verarbeitungsvorgänge mit ähnlich hohen Risiken kann eine einzige Abschätzung vorgenommen werden." — oder gesondert bewerten. Unterschiede: kein Telefon und kein Vapi, dafür OpenAI über n8n und Chatverläufe (6 Monate laut Datenschutzerklärung Abschnitt 9) | NexAI | **offen** |
 
-**Wiedervorlage:** jährlich, erstmals **September 2027** — sowie unverzüglich bei Eintritt eines Auslösers aus Abschnitt 9. Die Drittland-Bewertungen sind unabhängig davon **vor dem 17.03.2027** zu erneuern.
+**Wiedervorlage:** jährlich, erstmals **September 2027** — sowie unverzüglich bei Eintritt eines Auslösers aus Abschnitt 9 und nach Erledigung von O-8 und O-9 (Bedingungen der Bewertung in Abschnitt 8). Die Drittland-Bewertungen sind unabhängig davon **vor dem 17.03.2027** zu erneuern.
 
 ---
 
@@ -231,5 +273,10 @@ Jeder der folgenden Punkte macht eine Neubewertung erforderlich, bevor er umgese
 
 - Liste der Verarbeitungstätigkeiten, für die eine Datenschutz-Folgenabschätzung durchzuführen ist (DSK-Muss-Liste, Version 1.1), Nr. 11 — veröffentlicht unter anderem durch das [Bayerische Landesamt für Datenschutzaufsicht](https://www.lda.bayern.de/media/dsfa_muss_liste_dsk_de.pdf) und die [LDI Nordrhein-Westfalen](https://www.ldi.nrw.de/system/files/media/document/file/dsk_dsfa_muss-liste_version_1_1_deutsch_4.pdf)
 - Artikel-29-Datenschutzgruppe, Leitlinien zur Datenschutz-Folgenabschätzung, WP 248 rev.01
+- [DSGVO](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02016R0679-20160504), Art. 35 Abs. 2 und 11, Art. 36, Art. 37 Abs. 6 und 7, Art. 38 Abs. 6, Art. 39 Abs. 1 lit. c — konsolidierte Fassung vom 04.05.2016, Wortlaut abgerufen am 17.10.2026
 - [§ 38 BDSG](https://www.gesetze-im-internet.de/bdsg_2018/__38.html) — Datenschutzbeauftragte nichtöffentlicher Stellen
+- BAG, Urteil vom 06.06.2023 – 9 AZR 383/19 (ECLI:DE:BAG:2023:060623.U.9AZR383.19.0), Rn. 22 f. — Interessenkonflikt des Datenschutzbeauftragten
+- EuGH, Urteil vom 09.02.2023 – C-453/21 (X-FAB Dresden), ECLI:EU:C:2023:79, Rn. 44–46 — [EUR-Lex](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:62021CJ0453)
+- Vapi-Dokumentation, abgerufen 17.10.2026: [Call recording / artifactPlan.loggingEnabled](https://docs.vapi.ai/assistants/call-recording), [Logs](https://docs.vapi.ai/observability/logs/overview), [Preise](https://vapi.ai/pricing)
 - DSK, Orientierungshilfe Künstliche Intelligenz und Datenschutz (Mai 2024)
+- Eigene Erhebung 17.10.2026: Vapi-Assistent und Anrufdatensätze, Vapi-Dashboard (Tarif), Telefonanlage, n8n-Werkzeuge, CRM-Löschregeln; Datenschutzerklärung (messages/de/legal.json, Abschnitte 4, 10 und 11, Stand origin/main 17.10.2026)
