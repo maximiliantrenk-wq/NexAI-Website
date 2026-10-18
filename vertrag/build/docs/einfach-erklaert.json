@@ -151,7 +151,7 @@
     },
     {
       "t": "p",
-      "text": "Unbeschränkt haftet ihr bei Vorsatz, grober Fahrlässigkeit, Personenschäden, Garantie und Produkthaftung. Bei einfacher Fahrlässigkeit nur für zentrale Pflichten und höchstens [25.000] EUR je Schadensfall oder die höhere Auftragssumme – ein Jahresdeckel fällt weg, weil er vorhersehbare Schäden abschneiden würde. Die Zahl steht in eckigen Klammern, bis Max sie bestätigt; neu ist außerdem der Ausschluss der Haftung ohne Verschulden für anfängliche Mängel bei gehosteten Anwendungen."
+      "text": "Unbeschränkt haftet ihr bei Vorsatz, grober Fahrlässigkeit, Personenschäden, Garantie und Produkthaftung. Bei einfacher Fahrlässigkeit nur für zentrale Pflichten und höchstens 25.000 EUR je Schadensfall oder die höhere Auftragssumme – ein Jahresdeckel fällt weg, weil er vorhersehbare Schäden abschneiden würde. Die Zahl steht in eckigen Klammern, bis Max sie bestätigt; neu ist außerdem der Ausschluss der Haftung ohne Verschulden für anfängliche Mängel bei gehosteten Anwendungen."
     },
     {
       "t": "h2",
@@ -239,7 +239,7 @@
     },
     {
       "t": "p",
-      "text": "Neu: Für gehostete Anwendungen und eure Vermittlungsschicht sagt ihr eine feste Verfügbarkeit zu ([98] % im Monat, Anlage C Ziffer 7). Wird sie verfehlt, mindert sich der Beitrag pauschal. Für die Verarbeitung durch Drittdienste und für Kauflizenzen gibt es keine Zusage."
+      "text": "Neu: Für gehostete Anwendungen und eure Vermittlungsschicht sagt ihr eine feste Verfügbarkeit zu (98 % im Monat, Anlage C Ziffer 7). Wird sie verfehlt, mindert sich der Beitrag pauschal. Für die Verarbeitung durch Drittdienste und für Kauflizenzen gibt es keine Zusage."
     },
     {
       "t": "h2",
@@ -812,7 +812,7 @@
     },
     {
       "t": "p",
-      "text": "Montag bis Freitag 9 bis 17 Uhr, kein 24/7. Neu: Seid ihr im Urlaub oder krank, kündigt ihr das an und benennt eine Vertretung – wer das ist, muss Max noch festlegen."
+      "text": "Montag bis Freitag 9 bis 17 Uhr, kein 24/7. Neu: Seid ihr im Urlaub oder krank, kündigt ihr das an; die Vertretung übernimmt Brian (im Vertrag mit vollem Namen Jason Brian Merklein), mit denselben Reaktionszeiten, P1 also 4 Servicestunden."
     },
     {
       "t": "h2",
@@ -821,7 +821,7 @@
     },
     {
       "t": "p",
-      "text": "E-Mail, Telefon 0176 80714816 (Max) für P1-Fälle, Video, Fernwartung. Sicherheitslücken gehen an security@nex-a-i.com, sobald das Postfach eingerichtet ist."
+      "text": "E-Mail, Telefon 0176 80714816 (Firmennummer) für P1-Fälle, Video, Fernwartung. Sicherheitslücken gehen an security@nex-a-i.com, sobald das Postfach eingerichtet ist."
     },
     {
       "t": "h2",
@@ -889,7 +889,7 @@
     },
     {
       "t": "p",
-      "text": "Neu und wichtig: [98] % im Monat als feste Zusage für gehostete Anwendungen und eure Vermittlungsschicht. Darunter mindert sich der Beitrag um 5, 15 oder 30 %, zweimal unter 90 % erlaubt die Kündigung. Eine externe Messung gibt es noch nicht; bis dahin zählen Störungsmeldungen und eure Aufzeichnungen."
+      "text": "Neu und wichtig: 98 % im Monat als feste Zusage für gehostete Anwendungen und eure Vermittlungsschicht. Darunter mindert sich der Beitrag um 5, 15 oder 30 %, zweimal unter 90 % erlaubt die Kündigung. Eine externe Messung gibt es noch nicht; bis dahin zählen Störungsmeldungen und eure Aufzeichnungen."
     },
     {
       "t": "h2",
@@ -1222,7 +1222,7 @@
     },
     {
       "t": "p",
-      "text": "Gleich wie im Rahmenvertrag: [25.000] EUR je Schadensfall oder die höhere Auftragssumme, kein Jahresdeckel, keine Haftung ohne Verschulden für anfängliche Mängel."
+      "text": "Gleich wie im Rahmenvertrag: 25.000 EUR je Schadensfall oder die höhere Auftragssumme, kein Jahresdeckel, keine Haftung ohne Verschulden für anfängliche Mängel."
     },
     {
       "t": "h2",
@@ -1278,7 +1278,7 @@
     },
     {
       "t": "p",
-      "text": "Schlussvermerk: Entwurf, von NexAI erstellt, anwaltliche Prüfung folgt. Vor dem ersten Einsatz muss Max die Haftungssumme bestätigen."
+      "text": "Schlussvermerk: Entwurf, von NexAI erstellt, anwaltliche Prüfung folgt. Die Haftungssumme von 25.000 EUR je Schadensfall hat Max am 18.10.2026 bestätigt."
     },
     {
       "t": "pagebreak"
@@ -1298,7 +1298,7 @@
     },
     {
       "t": "p",
-      "text": "Wer die Lizenz bezahlt hat, darf das CRM dauerhaft nutzen, auch jede neuere Version. Ob ihr Quelltext oder fertige Abbilder liefert und ob der Kunde die Lizenz weitergeben darf, entscheidet Max noch."
+      "text": "Wer die Lizenz bezahlt hat, darf das CRM dauerhaft nutzen, auch jede neuere Version. Geliefert werden fertige, signierte Programmpakete, kein Quelltext (Max, 18.10.2026). Ob der Kunde die Lizenz weitergeben darf, entscheidet Max noch."
     },
     {
       "t": "h2",
