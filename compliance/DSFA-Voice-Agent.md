@@ -243,6 +243,26 @@ Jeder der folgenden Punkte macht eine Neubewertung erforderlich, bevor er umgese
 
 ---
 
+### 9.1 Neubewertung vor Umsetzung von O-15 (18.10.2026)
+
+**Änderung.** Die Telefonanlage übernimmt die Rufnummer aus dem `From`-Kopf des eingehenden Anrufs und gibt sie an Vapi weiter. Bisher ersetzt sie sie durch die NexAI-Nummer (3.2). Übernommen wird nur eine Ziffernfolge. **Unterdrückte Rufnummern** (`anonymous`) werden nicht übernommen. Die `P-Asserted-Identity`, in der der Anbieter die Nummer trotz Unterdrückung mitliefern kann, wird bewusst nicht gelesen. Der Weiterleitungsweg zu den Gesellschaftern bleibt unverändert.
+
+**Neue Datenflüsse.**
+- Rufnummer → Vapi (USA): im Anrufdatensatz (`customer.number`) und im Textprotokoll, rund 14 Tage (R11).
+- Rufnummer → CRM: je Anrufer ein eigener Kontakt statt des Sammelkontakts. Anrufe werden nach 180 Tagen gelöscht, Kontakte nach 2 Jahren Inaktivität anonymisiert (3.2).
+- Rufnummer → Gesprächsdatensätze der Anlage (`Master.csv`). Diese wurden bisher nie rotiert. **Neu ist eine Aufbewahrungsgrenze:** monatliche Rotation mit 3 Generationen, also rund 3–4 Monate (R10).
+
+**Zweck und Erforderlichkeit.** Rückruf ohne erneutes Erfragen der Nummer. Zuordnung eines Anrufs zu einer Person — erst damit lassen sich Auskunft und Löschung je Person bedienen (heute ist das beim Sammelkontakt nicht möglich, R5). Entdopplung im CRM. Mildere Mittel, die das leisten, gibt es nicht. Die Rechtsgrundlagen bleiben dieselben (3.2). Die Datenschutzerklärung (Abschnitt 11) nennt die Telefonnummer und Vapi als Empfänger bereits.
+
+**Auswirkung auf die Risiken.**
+- **R5** kehrt zur Fassung der Erstbewertung zurück (Verwechslung bei gemeinsam genutzten Anschlüssen): gering. Der Sammelkontakt wächst nicht weiter. Alte Anrufe bleiben bis zur Löschfrist daran hängen.
+- **R10** betrifft künftig echte Rufnummern und ist durch die neue Aufbewahrungsgrenze begrenzt: gering.
+- **R11** bleibt mittel. Die Rufnummer kommt im Vapi-Bestand hinzu, die Frist bleibt rund 14 Tage.
+
+**Ergebnis.** Das Restrisiko bleibt **mittel**, die Umsetzung ist vertretbar. Ausgeführt wird die Änderung durch Max per Skript mit Sicherung und Rückweg. Danach folgt ein Testanruf (Rufnummer kommt bei Vapi an, Weiterleitung klingelt weiter). Zu dieser Bewertung ist der Rat des Datenschutzbeauftragten einzuholen, sobald er benannt ist (O-2).
+
+---
+
 ## 10. Offene Punkte und Wiedervorlage
 
 | | Punkt | Zuständig | Status 17.10.2026 |
@@ -261,7 +281,7 @@ Jeder der folgenden Punkte macht eine Neubewertung erforderlich, bevor er umgese
 | O-12 | Modul der Standardvertragsklauseln mit Vapi für die eigene Rufnummer klären (vermutlich Modul 2, Verantwortlicher → Auftragsverarbeiter; AVV Anlage B nennt bislang nur Modul 3) | Max | offen |
 | O-13 | Klären, über wessen OpenAI-Konto der Assistent läuft (eigenes NexAI-Konto oder Vapis Konto); davon hängen Vertragsgrundlage, Speicherdauer und O-6 ab | Max | offen |
 | O-14 | Klären, ob ElevenLabs (Modell `eleven_turbo_v2_5` hinter der Vapi-Stimme „Sid") Unterauftragsverarbeiter von Vapi ist; der AVV-Tracker sagt bislang, „Sid" sei eine Vapi-eigene Stimme ohne dritten Empfänger | Max | offen |
-| O-15 | Telefonanlage: echte Anrufernummer an Vapi übergeben — erst nach Neubewertung (Abschnitt 9) | NexAI | offen |
+| O-15 | Telefonanlage: echte Anrufernummer an Vapi übergeben — Neubewertung erledigt (9.1); Aufbewahrungsgrenze für `Master.csv` | Max (Skript) | **bewertet 18.10.2026; Skript vorbereitet, Ausführung und Testanruf offen** |
 | O-16 | Folgedokumente angleichen: TIA Vapi (Zusammenfassung Nr. 1, 1.2 Speicherung beim Importeur, 3.3 CLOUD Act, M-1, M-3, Ergebnis), TIA OpenAI (Abgrenzung „bei Vapi entsteht kein Bestand"), OpenAI-Antraege-EU-Region-und-ZDR.md, VVT A6 (Empfänger, Löschfristen, Verweis „Nr. 9"), AVV-Tracker (Google-Kalender, ElevenLabs), Datenschutzerklärung (Kontakte im CRM, ElevenLabs); Aufbewahrung der n8n-Ausführungsprotokolle erheben | NexAI | offen |
 | O-17 | **Website-Chat (VVT A4)** fällt ebenfalls unter DSK-Muss-Liste Nr. 11 („System, welches mit Kunden durch Konversation interagiert", Prüfvermerk 1.2). Er ist in dieser Fassung **nicht** bewertet. Entweder hier aufnehmen — Art. 35 Abs. 1 Satz 2 DSGVO: „Für die Untersuchung mehrerer ähnlicher Verarbeitungsvorgänge mit ähnlich hohen Risiken kann eine einzige Abschätzung vorgenommen werden." — oder gesondert bewerten. Unterschiede: kein Telefon und kein Vapi, dafür OpenAI über n8n und Chatverläufe (6 Monate laut Datenschutzerklärung Abschnitt 9) | NexAI | **offen** |
 
