@@ -188,15 +188,17 @@ Empfänger-Kürzel (Drittland-Mechanismus): **Resend** (US, **DPF** — hilfswei
 - **Dokumentation:** `nexai-portal/docs/lead-intelligence/privacy.md` (Zweck, Daten, Rechtsgrundlage, Art. 14, Fristen, Betroffenenrechte, Datenflüsse, Zugriff), `operations.md` (Betrieb, Sicherung), `data-sources.md` (Quellen); Stand 10.10.2026, Commit `6f2c67a`. Dort heißt dieser Eintrag noch „A19"; die Nummer war im Verzeichnis schon vergeben.
 
 ### A24 NexSign — Elektronische Unterschriften (sign.nex-a-i.com)
-*Eigene App `nexsign` auf dem Portal-Server, live seit 18.10.2026 um 21:13 UTC. Der Menüpunkt „Unterschriften“ im Portal führt dorthin. Geprüft an `nexsign` `837b8f1` und am Live-Stand vom 18.10.2026, 22:30 UTC; Ablehnung, Erinnerungen und Vorlagen an `f50c6d6`/`203494e`/`02fcb47` (live seit 18./19.10.2026).*
+*Eigene App `nexsign` auf dem Portal-Server, live seit 18.10.2026 um 21:13 UTC. Der Menüpunkt „Unterschriften“ im Portal führt dorthin. Geprüft an `nexsign` `837b8f1` und am Live-Stand vom 18.10.2026, 22:30 UTC; Ablehnung, Erinnerungen und Vorlagen an `f50c6d6`/`203494e`/`02fcb47` (live seit 18./19.10.2026). Weitere Unterzeichner an `b58b3f4` (live seit 21.10.2026, 00:33 MESZ, Max' Anordnung), zwei Protokoll-Fassungen an `84f05ec` (live seit 21.10.2026, 00:57 MESZ).*
 
 - **Zweck:** Verträge zwischen NexAI und Geschäftskunden elektronisch unterschreiben lassen und nachweisen, wer wann welche Fassung unterschrieben hat.
   - Ein Vertriebspartner, ein Manager oder die Leitung öffnet NexSign aus dem Portal, lädt ein PDF hoch (bis 40 MB), legt die Felder fest und unterschreibt **selbst** für NexAI.
   - Der Kunde öffnet das Dokument über einen persönlichen Link ohne Konto, gibt seinen Namen ein, füllt die ihm zugewiesenen Felder aus, bestätigt den Inhalt und unterschreibt. Er kann auch ablehnen und dabei freiwillig einen Grund angeben (höchstens 500 Zeichen).
+  - **Weitere Unterzeichner:** Neben dem Kunden können bis zu drei weitere Personen unterschreiben (z. B. zweiter Geschäftsführer, Geschäftspartner), jede mit eigenem Link; Reihenfolge beliebig. Der Ersteller vergibt je Person eine Rollenbezeichnung (höchstens 40 Zeichen; Hinweis im Formular: „Nur die Rolle – keine privaten Angaben (etwa zu Gesundheit oder Familie).“). Eine Ablehnung durch eine Person beendet den Vorgang für alle; die anderen sehen nur „Vorgang beendet“, ohne Grund, Person und Dokument.
   - Wiederkehrende Verträge kann ein Nutzer als **Vorlage** speichern: nur die Lage der Felder, persönlich oder von der Leitung für alle freigegeben. Beim Verwenden lädt er das PDF des neuen Kunden hoch, die Felder landen an derselben Stelle.
   - Das fertige PDF erhält eine Protokollseite und ein technisches Siegel von NexAI (selbst ausgestelltes Zertifikat, kein qualifiziertes Siegel).
 - **Betroffene:**
   - Unterzeichnende auf Kundenseite: Vertreter oder Ansprechpartner des Geschäftskunden, bei Einzelunternehmern der Kunde selbst
+  - bis zu drei weitere Unterzeichnende je Vorgang (weitere Vertreter des Kunden oder Dritte, etwa Geschäftspartner)
   - Nutzer von NexSign: Vertriebspartner, Manager und Leitung, die für NexAI unterschreiben
   - im Dokument genannte Personen
 - **Daten** (PGlite-Datenbank `/app/.data/pglite`, Dateien `/app/.data/dateien`, Coolify-Volume `hhaatdfcphfsy3gfknzr7y2w-nexsign-data`):
@@ -212,8 +214,13 @@ Empfänger-Kürzel (Drittland-Mechanismus): **Resend** (US, **DPF** — hilfswei
     - vom Kunden: eingegebener Name, Zeitpunkt, **IP-Adresse und Browserkennung** der Unterschrift
     - Abschluss, Rückzug bzw. **Ablehnung durch den Kunden** (Zeitpunkt, freiwilliger Grund)
     - Zeitpunkte der Erinnerungen an den Ersteller (`erinnertAm`, `ablaufGewarntAm`)
-  - `ereignisse`: Aktion, handelnder Nutzer, Prüfsumme, Zeitpunkt. IP und Browserkennung gibt es nur beim **ersten Abruf des Links** (oft die Link-Vorschau eines Messengers oder das Gerät des Vertriebspartners), bei der Unterschrift des Kunden und bei seiner Ablehnung (`kunde_abgelehnt`).
-  - **Protokollseite im fertigen PDF:** Name und Portal-E-Mail der für NexAI unterzeichnenden Person; Name, Zeitpunkt, IP und Browserkennung des Kunden; Einträge in den Feldern; der Ablauf einschließlich der IP des ersten Abrufs.
+  - `unterzeichner` (seit `b58b3f4`, cascade mit dem Vorgang): je unterzeichnende Person Rolle, Bezeichnung, Link als Hash und verschlüsselt, erster Abruf, eingegebener Name, Unterschriftszeitpunkt, **IP-Adresse und Browserkennung**. Die Kundendaten wurden aus `vorgaenge` hierher übernommen; die alten Spalten `kunde_*` in `vorgaenge` bleiben stehen, werden nicht mehr gelesen und fallen mit dem Vorgang weg.
+  - `vorgaenge` zusätzlich: `bezeichnungen` (Rollenbezeichnungen), `abgelehnt_von` (Rolle der ablehnenden Person), `kopiePfad`/`kopieSha256` (Fassung für die Unterzeichner).
+  - `ereignisse`: Aktion, handelnder Nutzer bzw. Rolle (`rolle`), Prüfsumme, Zeitpunkt. IP und Browserkennung gibt es nur beim **ersten Abruf des Links** (oft die Link-Vorschau eines Messengers oder das Gerät des Vertriebspartners), bei der Unterschrift des Kunden und bei seiner Ablehnung (`kunde_abgelehnt`).
+  - **Protokollseite, zwei Fassungen** (seit `84f05ec`):
+    - **vollständige Fassung für NexAI** (`fertigPfad`): Name und Portal-E-Mail der für NexAI unterzeichnenden Person; je unterzeichnende Person Rolle, Name, Zeitpunkt, IP und Browserkennung; Einträge in den Feldern; der Ablauf einschließlich der IP des ersten Abrufs.
+    - **Fassung für die Unterzeichner** (`kopiePfad`): je Person Rolle, Name, Zeitpunkt und Prüfsumme der unterschriebenen Fassung; **ohne IP, Browserkennung und Abrufe**, mit dem Satz „Fassung für die Unterzeichner: IP-Adressen und Browserangaben stehen nur in der Fassung für NexAI.“ Gilt auch, wenn nur der Kunde unterschreibt. Grund: Art. 5 Abs. 1 lit. c (Empfehlung Rechtssitzung 21.10.2026).
+    - Altfälle: Vorgänge, die vor dem 21.10.2026, 00:57 MESZ, abgeschlossen wurden, haben nur die vollständige Fassung; ihr Link liefert sie bis zum Ablauf der 30 Tage.
   - Inhalt des Vertrags (Firmenangaben, Ansprechpartner, Leistungen, Preise). Die Unterschrift existiert nur als Bild im PDF: kein gesondertes Unterschriftsbild, keine biometrischen Daten.
   - `vorlagen`: Name (vom Nutzer vergeben, Pflicht, nicht aus dem Dateinamen), Ersteller, „für alle“, Seitenzahl und **nur die Lage der Felder** (Art, Rolle, Pflicht, Seite, Position; `nurLage()`); höchstens 50 je Nutzer. **Kein PDF, kein Text aus dem Dokument, keine Einträge** (Entscheidung Max 20.10.2026, nexsign `5135347`; Migration 0002 hat alle älteren Vorlagen samt PDF gelöscht). Restrisiko: Ein Nutzer tippt einen Kundennamen in den Vorlagennamen; der Dialog bittet „ohne Kundennamen“.
   - `bremsen`: Missbrauchsbremse, Schlüssel nur als HMAC, gelöscht nach Ablauf des Fensters. `loeschliste`: Dateien, deren Löschen nachgeholt wird.
@@ -224,6 +231,7 @@ Empfänger-Kürzel (Drittland-Mechanismus): **Resend** (US, **DPF** — hilfswei
   - Im Dokument nur genannte Personen: Art. 6(1)f (vollständige Vertragsdokumentation).
   - Aufbewahrung des Vertrags: Art. 6(1)c i. V. m. § 147 Abs. 1 Nr. 2, 3 bzw. 5, Abs. 3 Satz 1 AO (sechs Jahre). Dient er als Buchungsbeleg, gilt Nr. 4 (acht Jahre).
   - Protokoll (IP, Browserkennung, Zeitpunkte): Art. 6(1)f (Nachweis des Vertragsschlusses).
+  - Weitere Unterzeichner sehen Unterschrift, Name und Zeitpunkt der anderen (Zwischenfassung und Fassung für die Unterzeichner): Art. 6(1)f. Berechtigtes Interesse aller Beteiligten: Jeder erhält den vollständig unterschriebenen Vertrag und den Nachweis, wer wann unterschrieben hat. IP und Browserkennung gehen nicht an sie (Datenminimierung).
   - Ablehnung samt Grund: Art. 6(1)b (vorvertragliche Maßnahme), wenn der Ablehnende selbst Vertragspartei wäre, sonst Art. 6(1)f. Berechtigtes Interesse: Der Ersteller und die Geschäftsführung erfahren davon und können nachfassen. Der Grund ist freiwillig.
   - Erinnerungen an den Ersteller: für seine Daten Art. 6(1)b (Zusammenarbeit mit NexAI); für den Abrufzeitpunkt des Kunden Art. 6(1)b bei Einzelunternehmern, sonst Art. 6(1)f (berechtigtes Interesse: vor Ablauf des Links nachfassen, damit der Vertrag zustande kommt).
 - **Empfänger:**
@@ -231,13 +239,16 @@ Empfänger-Kürzel (Drittland-Mechanismus): **Resend** (US, **DPF** — hilfswei
   - **Resend** (US, DPF) für die Abschluss-Mail an die Geschäftsführung (`NOTIFY_ADMIN`) und an den Ersteller. Das versiegelte PDF samt Protokollseite hängt als Anhang daran, wenn es höchstens 28 MB hat. Größere PDFs gehen nicht über Resend; die Mail enthält dann nur einen Link auf die Vorgangsseite in NexSign, die eine Anmeldung verlangt.
   - **Ablehnung:** Mail über Resend an dieselben Empfänger, mit Titel, Vorgangsnummer und Zeitpunkt, ohne PDF. Den Grund enthält sie nicht, nur den Hinweis, ob einer angegeben wurde. Den Grund sehen die Empfänger nur in NexSign, bis der Löschlauf ihn nach 7 Tagen mitnimmt (`203494e`).
   - **Erinnerungen** über Resend nur an den Ersteller: 3 Tage nach seiner Unterschrift („noch nicht unterschrieben“, mit Zeitpunkt des ersten Abrufs, der auch eine Messenger-Vorschau sein kann, oder „noch nicht abgerufen“) und 2 Tage vor Ablauf des Links. An den Kunden geht nichts.
-  - Der Kunde lädt das fertige PDF bis 30 Tage nach Abschluss über seinen Link herunter, also auch mit Name und Portal-E-Mail der für NexAI unterzeichnenden Person.
+  - Die unterzeichnenden Personen sehen vor ihrer Unterschrift die Zwischenfassung mit den schon gesetzten Unterschriften und laden nach dem Abschluss bis 30 Tage lang die **Fassung für die Unterzeichner** über ihren Link herunter (mit Name und Portal-E-Mail der für NexAI unterzeichnenden Person, ohne IP und Browserkennung).
+  - Bei einer Ablehnung nennt die Mail an Geschäftsführung und Ersteller, wer abgelehnt hat (Rolle).
   - Den Link übermittelt der Ersteller selbst. Die Knöpfe WhatsApp, E-Mail und SMS öffnen nur sein eigenes Programm; NexSign speichert keine Kundenadresse und versendet den Link nicht.
   - Kein externer Signatur- oder Vertrauensdienst; die Felderkennung läuft lokal.
 - **Drittland:** US über Resend (DPF, hilfsweise SCC), nur die Abschluss-Mail.
 - **Löschung** (`lib/server/loeschlauf.ts`, beim Start und alle 24 Stunden):
   - Entwurf: 7 Tage nach der letzten Bearbeitung
   - offener Vorgang mit abgelaufenem Link (14 Tage gültig, eine Verlängerung setzt neu an): 7 Tage nach Ablauf
+  - **Fassung für die Unterzeichner** (`kopiePfad`): 30 Tage nach Abschluss (`KOPIE_TAGE`, seit `84f05ec`); die vollständige Fassung bleibt
+  - nach einer Ablehnung bleibt der Link-Hash bis zur Löschung des Vorgangs (7 Tage), damit der Link „Vorgang beendet“ zeigen kann; der verschlüsselte Link ist sofort weg
   - zurückgezogener oder **abgelehnter** Vorgang: Link und Dateien sofort (sonst über die Löschliste nachgeholt), Datensatz samt Grund nach 7 Tagen; das Ereignisprotokoll fällt mit dem Vorgang weg
   - Vorlagen: persönliche mit dem Konto-Spiegel (12 Monate nach der letzten Anmeldung), sonst bis zum Löschen durch den Ersteller oder die Leitung; freigegebene bleiben ohne Ersteller bestehen
   - Konto-Spiegel: 12 Monate nach der letzten Anmeldung, ohne Anmeldung ab Anlage. Das geht verlustfrei, weil Name und E-Mail im Vorgang stehen.
@@ -306,6 +317,7 @@ Empfänger-Kürzel (Drittland-Mechanismus): **Resend** (US, **DPF** — hilfswei
 | A24 | NexSign: Konto-Spiegel der Nutzer | **12 Monate** nach letzter Anmeldung | Zweckfortfall |
 | A24 | NexSign: Sitzungen | 30 Tage | Ablauf |
 | A24 | NexSign: abgelehnte Vorgänge samt Grund | Dateien sofort, Datensatz **7 Tage** | Zweckfortfall |
+| A24 | NexSign: Fassung für die Unterzeichner (ohne IP/Browser) | **30 Tage** nach Abschluss, automatisch | Zweckfortfall (Download-Frist) |
 | A24 | NexSign: Vorlagen (nur Feldlage und Name) | persönliche mit dem Konto-Spiegel (12 Monate), sonst bis zum Löschen | keine Kundendaten (`5135347`) |
 | A22 | **Gespraechsinhalte** des Boten | **90 Tage** | Gespraech ist danach erledigt |
 | A22 | Kontaktversuche Unbekannter | 30 Tage | nur Zaehler, nie der Text |
