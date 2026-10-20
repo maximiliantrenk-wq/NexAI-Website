@@ -31,7 +31,7 @@
     },
     {
       "t": "p",
-      "text": "Hier stehen oben ihr als NexAI GbR (mit Max und Jason als Gesellschafter) fest eingetragen, darunter kommen die Felder für die Kundendaten. Beim Ausfüllen tragt ihr Firma, Adresse, Ansprechpartner und Steuernummer des Kunden ein. Achtet darauf, dass wirklich die vertretungsberechtigte Person unterschreibt, sonst ist der Vertrag im Zweifel angreifbar."
+      "text": "Hier stehen oben ihr als NexAI GbR (mit Max und Jason als Gesellschafter) fest eingetragen, darunter kommen die Felder für die Kundendaten. Beim Ausfüllen tragt ihr Firma, Adresse, Ansprechpartner und Steuernummer des Kunden ein. Neu: Jeder von euch beiden darf allein unterschreiben (gegenseitige Ermächtigung), und Closer sowie die Vertriebsleitung dürfen „in Vollmacht für NexAI“ unterschreiben, aber nur die unveränderten Vorlagen zu Listenpreisen. Achtet beim Kunden darauf, dass wirklich die vertretungsberechtigte Person unterschreibt."
     },
     {
       "t": "h2",
@@ -255,7 +255,7 @@
     },
     {
       "t": "p",
-      "text": "Am Ende steht ehrlich: Entwurf, von NexAI erstellt, anwaltliche Prüfung folgt. Danach unterschreiben Max, Jason und der Kunde. Vorher müssen die eckigen Klammern (Haftungssumme, Auftragssumme) entschieden sein."
+      "text": "Am Ende steht ehrlich: Entwurf, von NexAI erstellt, anwaltliche Prüfung folgt. Danach unterschreiben für NexAI einer von euch oder eine bevollmächtigte Person (Closer, Vertriebsleitung) und der Kunde. Vorher müssen die eckigen Klammern (Haftungssumme, Auftragssumme) entschieden sein."
     },
     {
       "t": "pagebreak"
@@ -418,7 +418,7 @@
     },
     {
       "t": "p",
-      "text": "Beide Gesellschafter und der Kunde unterschreiben. Der Schlussvermerk sagt ehrlich: Entwurf, von NexAI erstellt, anwaltliche Prüfung folgt."
+      "text": "Für NexAI unterschreibt einer von euch oder ein Closer oder die Vertriebsleitung „in Vollmacht für NexAI“, dazu der Kunde. Neu direkt über den Unterschriften: der Hinweis, was die Vollmacht deckt (nur unveränderte Vorlagen, nur Listenpreise, keine Kauflizenz), mit einem Ankreuzfeld für den Kunden. Ziffer 5 hat dafür eine eigene Spalte für den Listenpreis. Weicht ein Closer oder die Vertriebsleitung davon ab, gilt der Vertrag erst, wenn einer von euch ihn in Textform genehmigt; lehnt ihr ab, kommt er nicht zustande. Erklärungen des Kunden zum Vertrag gehen an mbt@, nicht an den Vertrieb. Der Schlussvermerk sagt ehrlich: Entwurf, von NexAI erstellt, anwaltliche Prüfung folgt."
     },
     {
       "t": "pagebreak"
@@ -783,7 +783,7 @@
     },
     {
       "t": "p",
-      "text": "Beide Gesellschafter und der Kunde unterschreiben den AVV mit seinen drei Anhängen."
+      "text": "Für NexAI unterschreibt einer von euch oder eine bevollmächtigte Person (Closer, Vertriebsleitung), dazu der Kunde. Der AVV gilt mit seinen drei Anhängen unverändert; ändern dürfen ihn nur Max oder Jason."
     },
     {
       "t": "pagebreak"
@@ -942,7 +942,7 @@
     },
     {
       "t": "p",
-      "text": "Am Ende unterschreiben beide NexAI-Gesellschafter (Maximilian Trenk und Jason Brian Merklein) sowie der Kunde, jeweils mit Ort und Datum. Das macht die Anlage C rechtsverbindlich und Teil des Vertragswerks. Achtet darauf, dass wirklich alle drei Felder ausgefüllt und datiert sind, bevor der Betrieb startet, und beachtet den Hinweis, dass dies ein Entwurf ist, der vor dem echten Einsatz anwaltlich geprüft werden sollte."
+      "text": "Am Ende unterschreiben für NexAI einer von euch oder eine bevollmächtigte Person (Closer, Vertriebsleitung) sowie der Kunde, jeweils mit Ort und Datum. Das macht die Anlage C rechtsverbindlich und Teil des Vertragswerks. Achtet darauf, dass wirklich alle drei Felder ausgefüllt und datiert sind, bevor der Betrieb startet, und beachtet den Hinweis, dass dies ein Entwurf ist, der vor dem echten Einsatz anwaltlich geprüft werden sollte."
     },
     {
       "t": "pagebreak"
@@ -1041,7 +1041,7 @@
     },
     {
       "t": "p",
-      "text": "Beide Gesellschafter und der Kunde unterschreiben. Schlussvermerk: Entwurf, von NexAI erstellt, anwaltliche Prüfung folgt."
+      "text": "Für NexAI unterschreibt einer von euch, nie ein Closer (Abnahmen deckt die Vollmacht nicht), dazu der Kunde. Schlussvermerk: Entwurf, von NexAI erstellt, anwaltliche Prüfung folgt."
     },
     {
       "t": "pagebreak"
@@ -1158,7 +1158,7 @@
     },
     {
       "t": "p",
-      "text": "Angebote sind unverbindlich, der Vertrag entsteht mit dem Auftragsformular. Neu: Vertriebspartner dürfen keine Zusagen machen, die vom Vertrag abweichen – das schützt besser als die alte Schriftformklausel."
+      "text": "Angebote sind unverbindlich, der Vertrag entsteht mit dem Auftragsformular. Der Vertrag entsteht mit der Unterschrift beider Seiten, nicht mehr schon mit dem Beginn der Leistung. Vertriebspartner unterschreiben nur im Rahmen ihrer Vollmacht (Ziffer 16 des Leistungsscheins); Abweichungen vom Vertrag oder von den Listenpreisen deckt sie nicht."
     },
     {
       "t": "h2",

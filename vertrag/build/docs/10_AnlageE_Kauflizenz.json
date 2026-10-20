@@ -21,7 +21,7 @@
     },
     {
       "t": "p",
-      "text": "Diese Anlage E ergänzt den Rahmenvertrag zwischen der **NexAI – Next Generation Artificial Intelligence GbR**, Untere Bergstraße 13, 74586 Frankenhardt-Honhardt, vertreten durch die Gesellschafter Maximilian Trenk und Jason Brian Merklein (nachfolgend \"NexAI\"), und dem im Auftragsformular bezeichneten Kunden (nachfolgend \"Kunde\")."
+      "text": "Diese Anlage E ergänzt den Rahmenvertrag zwischen der **NexAI – Next Generation Artificial Intelligence GbR**, Untere Bergstraße 13, 74586 Frankenhardt-Honhardt, vertreten durch die Gesellschafter Maximilian Trenk und Jason Brian Merklein, jeder allein (§ 720 Abs. 2 BGB), oder durch eine bevollmächtigte Person (Ziffer 16 des Leistungsscheins) (nachfolgend \"NexAI\"), und dem im Auftragsformular bezeichneten Kunden (nachfolgend \"Kunde\")."
     },
     {
       "t": "h1",
@@ -175,15 +175,7 @@
           "lines": [
             "Ort, Datum",
             "",
-            "Maximilian Trenk (Gesellschafter)"
-          ]
-        },
-        {
-          "role": "Für NexAI",
-          "lines": [
-            "Ort, Datum",
-            "",
-            "Jason Brian Merklein (Gesellschafter)"
+            "Name (Gesellschafter)"
           ]
         },
         {

@@ -20,7 +20,7 @@
     },
     {
       "t": "p",
-      "text": "**NexAI – Next Generation Artificial Intelligence GbR**, Untere Bergstraße 13, 74586 Frankenhardt-Honhardt, Deutschland, vertreten durch die Gesellschafter Maximilian Trenk und Jason Brian Merklein, E-Mail mbt@nex-a-i.com, Telefon 0176 80714816 — nachfolgend **\"NexAI\"**."
+      "text": "**NexAI – Next Generation Artificial Intelligence GbR**, Untere Bergstraße 13, 74586 Frankenhardt-Honhardt, Deutschland, vertreten durch die Gesellschafter Maximilian Trenk und Jason Brian Merklein, jeder allein (§ 720 Abs. 2 BGB), oder durch eine bevollmächtigte Person (Ziffer 16 des Leistungsscheins), E-Mail mbt@nex-a-i.com, Telefon 0176 80714816 — nachfolgend **\"NexAI\"**."
     },
     {
       "t": "h2",
@@ -105,7 +105,7 @@
     {
       "t": "num",
       "items": [
-        "Verträge kommen durch Unterzeichnung des Auftragsformulars durch beide Parteien oder durch übereinstimmende Erklärungen in Textform (§ 126b BGB) zustande. Eine qualifizierte oder fortgeschrittene elektronische Signatur im Sinne der eIDAS-Verordnung (VO (EU) Nr. 910/2014) steht der Textform gleich.",
+        "Verträge kommen durch Unterzeichnung des Auftragsformulars durch beide Parteien oder durch übereinstimmende Erklärungen in Textform (§ 126b BGB) zustande. Eine qualifizierte oder fortgeschrittene elektronische Signatur im Sinne der eIDAS-Verordnung (VO (EU) Nr. 910/2014) steht der Textform gleich. Ebenso genügt die Unterzeichnung über die Anwendung NexSign (elektronische Signatur mit Protokollseite und Siegel). Für die Unterschrift für NexAI durch bevollmächtigte Personen gilt der Hinweis zur Unterschrift in Ziffer 16 des Leistungsscheins.",
         "Erklärungen, Freigaben und Weisungen des Kunden im laufenden Betrieb (insbesondere nach § 5, § 6 Abs. (2) und § 7 Abs. (4)) können in Textform, per E-Mail oder über ein von NexAI bereitgestelltes Ticket-/Freigabesystem oder über die Einstellungen einer Anwendung erfolgen, soweit die Anwendung dies vorsieht.",
         "NexAI dokumentiert wesentliche vertragsrelevante Erklärungen, Freigaben und Weisungen des Kunden revisionssicher und stellt dem Kunden auf Verlangen einen Auszug zur Verfügung."
       ]
@@ -485,15 +485,7 @@
           "lines": [
             "Ort, Datum",
             "",
-            "Maximilian Trenk (Gesellschafter)"
-          ]
-        },
-        {
-          "role": "Für NexAI",
-          "lines": [
-            "Ort, Datum",
-            "",
-            "Jason Brian Merklein (Gesellschafter)"
+            "Name, Funktion (Gesellschafter oder in Vollmacht für NexAI)"
           ]
         },
         {
@@ -544,7 +536,7 @@
     },
     {
       "t": "p",
-      "text": "NexAI – Next Generation Artificial Intelligence GbR, Untere Bergstraße 13, 74586 Frankenhardt-Honhardt, Deutschland, vertreten durch die Gesellschafter Maximilian Trenk und Jason Brian Merklein, E-Mail mbt@nex-a-i.com, Telefon 0176 80714816."
+      "text": "NexAI – Next Generation Artificial Intelligence GbR, Untere Bergstraße 13, 74586 Frankenhardt-Honhardt, Deutschland, vertreten durch die Gesellschafter Maximilian Trenk und Jason Brian Merklein, jeder allein (§ 720 Abs. 2 BGB), oder durch eine bevollmächtigte Person (Ziffer 16 des Leistungsscheins), E-Mail mbt@nex-a-i.com, Telefon 0176 80714816."
     },
     {
       "t": "h2",
@@ -1042,35 +1034,45 @@
       "header": [
         "Position / Leistung",
         "Modell (monatlich / jährlich / einmalig)",
-        "Netto-Betrag (EUR)"
+        "Listenpreis netto (EUR)",
+        "Vereinbart netto (EUR)"
       ],
       "rows": [
         [
-          "",
-          "",
-          ""
+          "____",
+          "____",
+          "____",
+          "____"
         ],
         [
-          "",
-          "",
-          ""
+          "____",
+          "____",
+          "____",
+          "____"
         ],
         [
-          "",
-          "",
-          ""
+          "____",
+          "____",
+          "____",
+          "____"
         ],
         [
-          "",
-          "",
-          ""
+          "____",
+          "____",
+          "____",
+          "____"
         ],
         [
           "**Summe (netto)**",
           "",
+          "____ EUR",
           "____ EUR"
         ]
       ]
+    },
+    {
+      "t": "note",
+      "text": "Listenpreis ist der Preis der NexAI-Preisliste am Tag der Unterzeichnung. Weicht der vereinbarte Betrag vom Listenpreis ab und hat für NexAI kein Gesellschafter unterschrieben, wird der Vertrag erst wirksam, wenn ein Gesellschafter von NexAI ihn in Textform genehmigt; verweigert NexAI die Genehmigung, kommt der Vertrag nicht zustande (Ziffer 16)."
     },
     {
       "t": "fill",
@@ -1345,6 +1347,15 @@
       "text": "Die Parteien bestätigen die Richtigkeit der vorstehenden Angaben. Dieser Leistungsschein wird mit beidseitiger Unterzeichnung wirksam und ist Bestandteil des Rahmenvertrags."
     },
     {
+      "t": "p",
+      "text": "**Hinweis zur Unterschrift für NexAI.** Für NexAI unterschreibt ein Gesellschafter (jeder ist nach § 720 Abs. 2 BGB allein ermächtigt) oder eine von NexAI bevollmächtigte Person aus dem Vertrieb (Closer oder Vertriebsleitung) mit dem Zusatz „in Vollmacht für NexAI“. Diese Personen sind selbständige Handelsvertreter. Die Vollmacht dieser Personen umfasst nur Verträge mit Unternehmern (§ 14 BGB) mit Sitz in Deutschland und nur den Abschluss in den unveränderten, von NexAI freigegebenen Vertragsdokumenten (Rahmenvertrag, dieser Leistungsschein, Anlagen A bis C, AGB, Vertrag zur Auftragsverarbeitung); Preise, Mengen und Kontingente (Ziffern 5 und 6) nur nach der Preisliste von NexAI. Nicht umfasst sind insbesondere Abweichungen vom Listenpreis, Rabatte, Freimonate, Stundungen, der Verzicht auf Einrichtungsgebühren, Sonderkonditionen und sonstige Zusagen, Abweichungen von den Vorgabewerten dieses Leistungsscheins (etwa Aufbewahrungsfristen über der Vorgabe, Kostendeckel und Spend-Cap), freie Leistungsbeschreibungen, die Ablösesumme (Ziffer 15), Änderungen, Streichungen oder Ergänzungen der Vertragsdokumente einschließlich des Vertrags zur Auftragsverarbeitung und Einträge zu ergänzenden oder abweichenden Subunternehmern, Kauflizenzen und Projektanwendungen (Ziffer 3.4, Anlage E), das Abnahmeprotokoll (Anlage D) sowie die Annahme von Zahlungen. Enthält ein von einer bevollmächtigten Person unterschriebener Vertrag solche Abreden, wird er erst wirksam, wenn ein Gesellschafter von NexAI ihn in Textform genehmigt; verweigert NexAI die Genehmigung, kommt er nicht zustande. Zusagen außerhalb der Vertragsdokumente binden NexAI nur, wenn ein Gesellschafter sie in Textform bestätigt. Personen aus dem Vertrieb von NexAI, auch Closer und die Vertriebsleitung, sind nicht ermächtigt, für NexAI Mängelanzeigen und ähnliche Erklärungen (§ 91 Abs. 2, § 55 Abs. 4 HGB), Abnahmeerklärungen, Kündigungen oder sonstige Erklärungen zum Vertrag entgegenzunehmen. Solche Erklärungen sind an mbt@nex-a-i.com zu richten, Störungsmeldungen auch über die Supportkanäle nach Anlage C Ziffer 3. Jeder Gesellschafter ist auch allein ermächtigt, für NexAI Verträge abzulehnen und ihre Genehmigung zu verweigern."
+    },
+    {
+      "t": "checkbox",
+      "text": "Der Kunde hat den Hinweis zur Unterschrift für NexAI zur Kenntnis genommen.",
+      "checked": false
+    },
+    {
       "t": "spacer",
       "h": 8
     },
@@ -1356,15 +1367,7 @@
           "lines": [
             "Ort, Datum",
             "",
-            "Maximilian Trenk (Gesellschafter)"
-          ]
-        },
-        {
-          "role": "Für NexAI",
-          "lines": [
-            "Ort, Datum",
-            "",
-            "Jason Brian Merklein (Gesellschafter)"
+            "Name, Funktion (Gesellschafter oder in Vollmacht für NexAI)"
           ]
         },
         {
@@ -1411,7 +1414,7 @@
     },
     {
       "t": "p",
-      "text": "Diese Anlage A (Leistungsbeschreibung) konkretisiert den Gegenstand und den Umfang der von der **NexAI – Next Generation Artificial Intelligence GbR**, Untere Bergstraße 13, 74586 Frankenhardt-Honhardt, Deutschland, vertreten durch die Gesellschafter Maximilian Trenk und Jason Brian Merklein (nachfolgend \"NexAI\"), gegenüber dem Kunden (nachfolgend \"Kunde\") erbrachten Leistungen. Sie ist Bestandteil des Rahmenvertrages und gilt nur in Verbindung mit dem jeweils unterzeichneten Auftragsformular/Leistungsschein."
+      "text": "Diese Anlage A (Leistungsbeschreibung) konkretisiert den Gegenstand und den Umfang der von der **NexAI – Next Generation Artificial Intelligence GbR**, Untere Bergstraße 13, 74586 Frankenhardt-Honhardt, Deutschland, vertreten durch die Gesellschafter Maximilian Trenk und Jason Brian Merklein, jeder allein (§ 720 Abs. 2 BGB), oder durch eine bevollmächtigte Person (Ziffer 16 des Leistungsscheins) (nachfolgend \"NexAI\"), gegenüber dem Kunden (nachfolgend \"Kunde\") erbrachten Leistungen. Sie ist Bestandteil des Rahmenvertrages und gilt nur in Verbindung mit dem jeweils unterzeichneten Auftragsformular/Leistungsschein."
     },
     {
       "t": "num",
@@ -1841,7 +1844,7 @@
     },
     {
       "t": "p",
-      "text": "**Auftragsverarbeiter:** NexAI – Next Generation Artificial Intelligence GbR, Untere Bergstraße 13, 74586 Frankenhardt-Honhardt, Deutschland, vertreten durch die Gesellschafter Maximilian Trenk und Jason Brian Merklein, E-Mail mbt@nex-a-i.com, Telefon 0176 80714816 — nachfolgend \"NexAI\"."
+      "text": "**Auftragsverarbeiter:** NexAI – Next Generation Artificial Intelligence GbR, Untere Bergstraße 13, 74586 Frankenhardt-Honhardt, Deutschland, vertreten durch die Gesellschafter Maximilian Trenk und Jason Brian Merklein, jeder allein (§ 720 Abs. 2 BGB), oder durch eine bevollmächtigte Person (Ziffer 16 des Leistungsscheins), E-Mail mbt@nex-a-i.com, Telefon 0176 80714816 — nachfolgend \"NexAI\"."
     },
     {
       "t": "p",
@@ -2646,6 +2649,10 @@
       "h": 12
     },
     {
+      "t": "p",
+      "text": "Für die Unterschrift für NexAI durch bevollmächtigte Personen gilt der Hinweis zur Unterschrift in Ziffer 16 des Leistungsscheins."
+    },
+    {
       "t": "sig",
       "cols": [
         {
@@ -2653,15 +2660,7 @@
           "lines": [
             "Ort, Datum",
             "",
-            "Maximilian Trenk (Gesellschafter)"
-          ]
-        },
-        {
-          "role": "Für NexAI",
-          "lines": [
-            "Ort, Datum",
-            "",
-            "Jason Brian Merklein (Gesellschafter)"
+            "Name, Funktion (Gesellschafter oder in Vollmacht für NexAI)"
           ]
         },
         {
@@ -2708,7 +2707,7 @@
     },
     {
       "t": "p",
-      "text": "Diese Anlage C (Service Level Agreement, nachfolgend \"SLA\") regelt die Support- und Servicebedingungen für die von der **NexAI – Next Generation Artificial Intelligence GbR**, Untere Bergstraße 13, 74586 Frankenhardt-Honhardt, vertreten durch die Gesellschafter Maximilian Trenk und Jason Brian Merklein (nachfolgend \"NexAI\"), gegenüber dem im Auftragsformular bezeichneten Kunden (nachfolgend \"Kunde\") erbrachten Betriebsleistungen, insbesondere Betrieb, Wartung, Hosting und Support der Agenten und Anwendungen."
+      "text": "Diese Anlage C (Service Level Agreement, nachfolgend \"SLA\") regelt die Support- und Servicebedingungen für die von der **NexAI – Next Generation Artificial Intelligence GbR**, Untere Bergstraße 13, 74586 Frankenhardt-Honhardt, vertreten durch die Gesellschafter Maximilian Trenk und Jason Brian Merklein, jeder allein (§ 720 Abs. 2 BGB), oder durch eine bevollmächtigte Person (Ziffer 16 des Leistungsscheins) (nachfolgend \"NexAI\"), gegenüber dem im Auftragsformular bezeichneten Kunden (nachfolgend \"Kunde\") erbrachten Betriebsleistungen, insbesondere Betrieb, Wartung, Hosting und Support der Agenten und Anwendungen."
     },
     {
       "t": "num",
@@ -3001,15 +3000,7 @@
           "lines": [
             "Ort, Datum",
             "",
-            "Maximilian Trenk (Gesellschafter)"
-          ]
-        },
-        {
-          "role": "Für NexAI",
-          "lines": [
-            "Ort, Datum",
-            "",
-            "Jason Brian Merklein (Gesellschafter)"
+            "Name, Funktion (Gesellschafter oder in Vollmacht für NexAI)"
           ]
         },
         {
@@ -3052,7 +3043,7 @@
     },
     {
       "t": "p",
-      "text": "**NexAI – Next Generation Artificial Intelligence GbR**, Untere Bergstraße 13, 74586 Frankenhardt-Honhardt, Deutschland, vertreten durch die Gesellschafter Maximilian Trenk und Jason Brian Merklein, E-Mail mbt@nex-a-i.com, Telefon 0176 80714816 — nachfolgend „NexAI\"."
+      "text": "**NexAI – Next Generation Artificial Intelligence GbR**, Untere Bergstraße 13, 74586 Frankenhardt-Honhardt, Deutschland, vertreten durch die Gesellschafter Maximilian Trenk und Jason Brian Merklein, jeder allein (§ 720 Abs. 2 BGB), oder durch eine bevollmächtigte Person (Ziffer 16 des Leistungsscheins), E-Mail mbt@nex-a-i.com, Telefon 0176 80714816 — nachfolgend „NexAI\"."
     },
     {
       "t": "h2",
@@ -3348,15 +3339,7 @@
           "lines": [
             "Ort, Datum",
             "",
-            "Maximilian Trenk (Gesellschafter)"
-          ]
-        },
-        {
-          "role": "Für NexAI",
-          "lines": [
-            "Ort, Datum",
-            "",
-            "Jason Brian Merklein (Gesellschafter)"
+            "Name (Gesellschafter)"
           ]
         },
         {
@@ -3578,7 +3561,7 @@
     },
     {
       "t": "p",
-      "text": "Diese Allgemeinen Geschäftsbedingungen (nachfolgend \"AGB\") gelten für sämtliche Geschäftsbeziehungen zwischen der **NexAI – Next Generation Artificial Intelligence GbR**, Untere Bergstraße 13, 74586 Frankenhardt-Honhardt, Deutschland, vertreten durch die Gesellschafter Maximilian Trenk und Jason Brian Merklein, E-Mail mbt@nex-a-i.com, Telefon 0176 80714816 (nachfolgend \"NexAI\"), und ihren Kunden (nachfolgend \"Kunde\") über die Bereitstellung, Einrichtung und den Betrieb von KI-Agenten und digitalen Assistenten (nachfolgend \"Agenten\"), von Softwareanwendungen (nachfolgend \"Anwendungen\") sowie damit verbundene Leistungen."
+      "text": "Diese Allgemeinen Geschäftsbedingungen (nachfolgend \"AGB\") gelten für sämtliche Geschäftsbeziehungen zwischen der **NexAI – Next Generation Artificial Intelligence GbR**, Untere Bergstraße 13, 74586 Frankenhardt-Honhardt, Deutschland, vertreten durch die Gesellschafter Maximilian Trenk und Jason Brian Merklein, jeder allein (§ 720 Abs. 2 BGB), oder durch eine bevollmächtigte Person (Ziffer 16 des Leistungsscheins), E-Mail mbt@nex-a-i.com, Telefon 0176 80714816 (nachfolgend \"NexAI\"), und ihren Kunden (nachfolgend \"Kunde\") über die Bereitstellung, Einrichtung und den Betrieb von KI-Agenten und digitalen Assistenten (nachfolgend \"Agenten\"), von Softwareanwendungen (nachfolgend \"Anwendungen\") sowie damit verbundene Leistungen."
     },
     {
       "t": "num",
@@ -3623,8 +3606,8 @@
       "t": "num",
       "items": [
         "Angebote von NexAI sind freibleibend und unverbindlich, sofern sie nicht ausdrücklich als verbindlich bezeichnet sind oder eine bestimmte Bindungsfrist enthalten.",
-        "Ein Vertrag kommt zustande, wenn der Kunde das Auftragsformular/den Leistungsschein in Textform (§ 126b BGB) oder mittels elektronischer Signatur annimmt und NexAI die Annahme bestätigt oder mit der Leistungserbringung beginnt.",
-        "Änderungen und Ergänzungen des Vertrags sollen zu Beweiszwecken in Textform festgehalten werden. Vertriebspartner von NexAI sind nicht bevollmächtigt, für NexAI Vereinbarungen zu treffen oder Zusagen zu geben, die von den Vertragsdokumenten abweichen oder über sie hinausgehen."
+        "Ein Vertrag kommt mit der Unterzeichnung des Auftragsformulars/Leistungsscheins durch beide Parteien zustande, auch in Textform (§ 126b BGB) oder mittels elektronischer Signatur, etwa über NexSign.",
+        "Änderungen und Ergänzungen des Vertrags sollen zu Beweiszwecken in Textform festgehalten werden. Vertriebspartner von NexAI unterzeichnen für NexAI nur im Rahmen ihrer Vollmacht nach dem Hinweis zur Unterschrift in Ziffer 16 des Leistungsscheins; Vereinbarungen oder Zusagen, die von den Vertragsdokumenten oder den Listenpreisen abweichen oder über sie hinausgehen, sind davon nicht gedeckt."
       ]
     },
     {
@@ -3836,15 +3819,7 @@
           "lines": [
             "Ort, Datum",
             "",
-            "Maximilian Trenk (Gesellschafter)"
-          ]
-        },
-        {
-          "role": "Für NexAI",
-          "lines": [
-            "Ort, Datum",
-            "",
-            "Jason Brian Merklein (Gesellschafter)"
+            "Name, Funktion (Gesellschafter oder in Vollmacht für NexAI)"
           ]
         },
         {
@@ -3878,7 +3853,7 @@
     },
     {
       "t": "p",
-      "text": "Diese Anlage E ergänzt den Rahmenvertrag zwischen der **NexAI – Next Generation Artificial Intelligence GbR**, Untere Bergstraße 13, 74586 Frankenhardt-Honhardt, vertreten durch die Gesellschafter Maximilian Trenk und Jason Brian Merklein (nachfolgend \"NexAI\"), und dem im Auftragsformular bezeichneten Kunden (nachfolgend \"Kunde\")."
+      "text": "Diese Anlage E ergänzt den Rahmenvertrag zwischen der **NexAI – Next Generation Artificial Intelligence GbR**, Untere Bergstraße 13, 74586 Frankenhardt-Honhardt, vertreten durch die Gesellschafter Maximilian Trenk und Jason Brian Merklein, jeder allein (§ 720 Abs. 2 BGB), oder durch eine bevollmächtigte Person (Ziffer 16 des Leistungsscheins) (nachfolgend \"NexAI\"), und dem im Auftragsformular bezeichneten Kunden (nachfolgend \"Kunde\")."
     },
     {
       "t": "h1",
@@ -4032,15 +4007,7 @@
           "lines": [
             "Ort, Datum",
             "",
-            "Maximilian Trenk (Gesellschafter)"
-          ]
-        },
-        {
-          "role": "Für NexAI",
-          "lines": [
-            "Ort, Datum",
-            "",
-            "Jason Brian Merklein (Gesellschafter)"
+            "Name (Gesellschafter)"
           ]
         },
         {
