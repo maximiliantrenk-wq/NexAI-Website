@@ -193,7 +193,7 @@ Empfänger-Kürzel (Drittland-Mechanismus): **Resend** (US, **DPF** — hilfswei
 - **Zweck:** Verträge zwischen NexAI und Geschäftskunden elektronisch unterschreiben lassen und nachweisen, wer wann welche Fassung unterschrieben hat.
   - Ein Vertriebspartner, ein Manager oder die Leitung öffnet NexSign aus dem Portal, lädt ein PDF hoch (bis 40 MB), legt die Felder fest und unterschreibt **selbst** für NexAI.
   - Der Kunde öffnet das Dokument über einen persönlichen Link ohne Konto, gibt seinen Namen ein, füllt die ihm zugewiesenen Felder aus, bestätigt den Inhalt und unterschreibt. Er kann auch ablehnen und dabei freiwillig einen Grund angeben (höchstens 500 Zeichen).
-  - Wiederkehrende Verträge kann ein Nutzer als **Vorlage** speichern: PDF samt Feldlage, persönlich oder von der Leitung für alle freigegeben.
+  - Wiederkehrende Verträge kann ein Nutzer als **Vorlage** speichern: nur die Lage der Felder, persönlich oder von der Leitung für alle freigegeben. Beim Verwenden lädt er das PDF des neuen Kunden hoch, die Felder landen an derselben Stelle.
   - Das fertige PDF erhält eine Protokollseite und ein technisches Siegel von NexAI (selbst ausgestelltes Zertifikat, kein qualifiziertes Siegel).
 - **Betroffene:**
   - Unterzeichnende auf Kundenseite: Vertreter oder Ansprechpartner des Geschäftskunden, bei Einzelunternehmern der Kunde selbst
@@ -215,7 +215,7 @@ Empfänger-Kürzel (Drittland-Mechanismus): **Resend** (US, **DPF** — hilfswei
   - `ereignisse`: Aktion, handelnder Nutzer, Prüfsumme, Zeitpunkt. IP und Browserkennung gibt es nur beim **ersten Abruf des Links** (oft die Link-Vorschau eines Messengers oder das Gerät des Vertriebspartners), bei der Unterschrift des Kunden und bei seiner Ablehnung (`kunde_abgelehnt`).
   - **Protokollseite im fertigen PDF:** Name und Portal-E-Mail der für NexAI unterzeichnenden Person; Name, Zeitpunkt, IP und Browserkennung des Kunden; Einträge in den Feldern; der Ablauf einschließlich der IP des ersten Abrufs.
   - Inhalt des Vertrags (Firmenangaben, Ansprechpartner, Leistungen, Preise). Die Unterschrift existiert nur als Bild im PDF: kein gesondertes Unterschriftsbild, keine biometrischen Daten.
-  - `vorlagen`: Titel, Ersteller, „für alle“, Pfad, Dateiname, SHA-256, Größe, Seitenzahl, Felder; höchstens 50 je Nutzer. Vorlagen sind nur für Muster ohne Kundendaten gedacht. Der Dialog warnt davor, verhindert es aber technisch nicht.
+  - `vorlagen`: Name (vom Nutzer vergeben, Pflicht, nicht aus dem Dateinamen), Ersteller, „für alle“, Seitenzahl und **nur die Lage der Felder** (Art, Rolle, Pflicht, Seite, Position; `nurLage()`); höchstens 50 je Nutzer. **Kein PDF, kein Text aus dem Dokument, keine Einträge** (Entscheidung Max 20.10.2026, nexsign `5135347`; Migration 0002 hat alle älteren Vorlagen samt PDF gelöscht). Restrisiko: Ein Nutzer tippt einen Kundennamen in den Vorlagennamen; der Dialog bittet „ohne Kundennamen“.
   - `bremsen`: Missbrauchsbremse, Schlüssel nur als HMAC, gelöscht nach Ablauf des Fensters. `loeschliste`: Dateien, deren Löschen nachgeholt wird.
 - **Rechtsgrundlage:**
   - Unterzeichnende Kunden, die selbst Vertragspartei sind (Einzelunternehmer): Art. 6(1)b.
@@ -260,13 +260,7 @@ Empfänger-Kürzel (Drittland-Mechanismus): **Resend** (US, **DPF** — hilfswei
   - Portal-Datenschutzerklärung Abschnitt 14 „Elektronische Unterschriften (NexSign)“, live seit dem Portal-Deploy vom 18.10.2026, 22:21 UTC (`9e6edcb`).
   - Auf der Kundenseite von NexSign ein Kurzhinweis und, getrennt davon, der Widerspruchshinweis.
   - Wortlaut: `~/Developer/recht/pruefungen/2026-10-18-unterschriften-datenschutz.md`, Teil E.
-- **Mangel Vorlagen** (Art. 5 Abs. 1 lit. e, Art. 25 Abs. 1, Art. 32 DSGVO), umzusetzen bis [von Max festzulegen]:
-  - Vorlagen entstehen nur aus dem hochgeladenen PDF eines Vorgangs, also meist aus einem Kundenvertrag. Davor schützt nur ein Hinweis im Eingabefenster.
-  - Enthält eine Vorlage Kundendaten, bleibt das PDF über die 7-Tage-Löschung hinaus gespeichert, die DSE Abschnitt 14 zusagt. Nach einer Freigabe ist es für alle Nutzer sichtbar.
-  - Maßnahmen:
-  - beim Speichern eine Bestätigung „enthält keine Daten von Kunden oder anderen Personen“
-  - Freigabe für alle nur nach Sichtprüfung durch die Leitung
-  - Vorlagen, die 12 Monate unbenutzt sind, löschen
+- **✅ Mangel Vorlagen behoben (20.10.2026):** Bis `5135347` speicherten Vorlagen das hochgeladene PDF, meist einen echten Kundenvertrag, und unterliefen so die 7-Tage-Löschung (Art. 5 Abs. 1 lit. e, Art. 25 Abs. 1, Art. 32). Jetzt speichern sie nur noch die Lage der Felder; ältere Vorlagen sind gelöscht.
 - **Vorgänger:** Das Portal-Modul „Unterschriften“ (18.10.2026, Tabellen `signature_requests`/`signature_events`) wurde nie mit echten Vorgängen genutzt; am 18.10.2026 um 22:30 UTC lagen dort 0 Datensätze. Der Menüpunkt leitet zu NexSign. Der Portal-Löschlauf (`unterschriftLiegengebliebenTage = 7`) bleibt für die leeren Tabellen aktiv.
 
 ### Löschfristen im Überblick
@@ -312,7 +306,7 @@ Empfänger-Kürzel (Drittland-Mechanismus): **Resend** (US, **DPF** — hilfswei
 | A24 | NexSign: Konto-Spiegel der Nutzer | **12 Monate** nach letzter Anmeldung | Zweckfortfall |
 | A24 | NexSign: Sitzungen | 30 Tage | Ablauf |
 | A24 | NexSign: abgelehnte Vorgänge samt Grund | Dateien sofort, Datensatz **7 Tage** | Zweckfortfall |
-| A24 | NexSign: Vorlagen | persönliche mit dem Konto-Spiegel (12 Monate), sonst bis zum Löschen | Muster ohne Kundendaten, technisch noch nicht sichergestellt (siehe Mangel Vorlagen) |
+| A24 | NexSign: Vorlagen (nur Feldlage und Name) | persönliche mit dem Konto-Spiegel (12 Monate), sonst bis zum Löschen | keine Kundendaten (`5135347`) |
 | A22 | **Gespraechsinhalte** des Boten | **90 Tage** | Gespraech ist danach erledigt |
 | A22 | Kontaktversuche Unbekannter | 30 Tage | nur Zaehler, nie der Text |
 | A22 | Betriebsprotokoll | 365 Tage | Nachvollziehbarkeit im Betrieb |
