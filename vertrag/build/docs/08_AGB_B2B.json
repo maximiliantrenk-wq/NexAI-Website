@@ -8,11 +8,11 @@
     },
     {
       "t": "subtitle",
-      "text": "der NexAI – Next Generation Artificial Intelligence GbR für Leistungen im Zusammenhang mit KI-Agenten und digitalen Assistenten"
+      "text": "der NexAI – Next Generation Artificial Intelligence GbR für Leistungen im Zusammenhang mit KI-Agenten, Anwendungen und digitalen Assistenten"
     },
     {
       "t": "meta",
-      "text": "Stand: September 2026"
+      "text": "Stand: Oktober 2026"
     },
     {
       "t": "spacer",
@@ -25,13 +25,13 @@
     },
     {
       "t": "p",
-      "text": "Diese Allgemeinen Geschäftsbedingungen (nachfolgend \"AGB\") gelten für sämtliche Geschäftsbeziehungen zwischen der **NexAI – Next Generation Artificial Intelligence GbR**, Untere Bergstraße 13, 74586 Frankenhardt-Honhardt, Deutschland, vertreten durch die Gesellschafter Maximilian Trenk und Jason Brian Merklein, E-Mail mbt@nex-a-i.com, Telefon 0176 80714816 (nachfolgend \"NexAI\"), und ihren Kunden (nachfolgend \"Kunde\") über die Bereitstellung, Einrichtung und den Betrieb von KI-Agenten und digitalen Assistenten (nachfolgend \"Agenten\") sowie damit verbundene Leistungen."
+      "text": "Diese Allgemeinen Geschäftsbedingungen (nachfolgend \"AGB\") gelten für sämtliche Geschäftsbeziehungen zwischen der **NexAI – Next Generation Artificial Intelligence GbR**, Untere Bergstraße 13, 74586 Frankenhardt-Honhardt, Deutschland, vertreten durch die Gesellschafter Maximilian Trenk und Jason Brian Merklein, jeder allein (§ 720 Abs. 2 BGB), oder durch eine bevollmächtigte Person (Ziffer 16 des Leistungsscheins), E-Mail mbt@nex-a-i.com, Telefon 0176 80714816 (nachfolgend \"NexAI\"), und ihren Kunden (nachfolgend \"Kunde\") über die Bereitstellung, Einrichtung und den Betrieb von KI-Agenten und digitalen Assistenten (nachfolgend \"Agenten\"), von Softwareanwendungen (nachfolgend \"Anwendungen\") sowie damit verbundene Leistungen."
     },
     {
       "t": "num",
       "items": [
         "Diese AGB gelten ausschließlich gegenüber Unternehmern im Sinne des § 14 BGB, juristischen Personen des öffentlichen Rechts und öffentlich-rechtlichen Sondervermögen. Sie gelten nicht gegenüber Verbrauchern im Sinne des § 13 BGB.",
-        "Es gelten die zwischen den Parteien getroffenen Vertragsdokumente in folgender Rangfolge; im Falle von Widersprüchen geht das jeweils höherrangige Dokument vor: (1.) das Auftragsformular/der Leistungsschein einschließlich individueller Abreden, (2.) der Rahmenvertrag nebst seinen Anlagen A (Leistungsbeschreibung), B (Auftragsverarbeitungsvertrag), C (SLA) und D (Abnahmeprotokoll), (3.) diese AGB. Individuelle Vereinbarungen (§ 305b BGB) haben in jedem Fall Vorrang vor diesen AGB.",
+        "Es gilt die Rangfolge der Vertragsdokumente nach § 1 Abs. (4) bis (6) des Rahmenvertrags. Individuelle Vereinbarungen (§ 305b BGB) haben in jedem Fall Vorrang vor diesen AGB.",
         "Diese AGB gelten auch für alle künftigen Geschäfte mit dem Kunden derselben Art, ohne dass NexAI in jedem Einzelfall erneut auf sie hinweisen müsste."
       ]
     },
@@ -54,11 +54,11 @@
     {
       "t": "num",
       "items": [
-        "Gegenstand und Umfang der von NexAI zu erbringenden Leistungen ergeben sich abschließend aus dem Auftragsformular/Leistungsschein und der Anlage A (Leistungsbeschreibung). NexAI stellt danach je nach Beauftragung Agenten bereit, insbesondere Voice Agents, Chat Agents, Automatisierungen und individuelle KI-Agenten, sowie Anwendungen, insbesondere NexAI CRM, NexAI Kalender und individuelle Anwendungen, richtet diese ein und/oder betreibt sie laufend.",
-        "Die Leistungen von NexAI umfassen einmalige Werkleistungen wie die Ersteinrichtung von Agenten und die Einrichtung und Bereitstellung von Anwendungen (nachfolgend \"Projektleistungen\", Werkvertragsrecht) sowie den laufenden Betrieb, die Wartung, das Hosting und den Support der Agenten und Anwendungen (nachfolgend \"Betriebsleistungen\", Dienstvertragsrecht). Die rechtliche Einordnung der jeweiligen Leistung richtet sich nach ihrem Schwerpunkt.",
-        "Die von NexAI bereitgestellten Agenten sind KI-gestützte, wahrscheinlichkeitsbasierte Systeme. Ihre Aufgabe besteht in der Kommunikation mit Personen, die mit den Agenten interagieren (nachfolgend \"Endnutzer\"), insbesondere in der Auskunftserteilung, Terminvereinbarung und Kontaktaufnahme. Die Agenten dürfen keine rechtsverbindlichen Erklärungen im Namen des Kunden abgeben, insbesondere keine verbindlichen Preiszusagen, Bestellungen oder Vertragsabschlüsse tätigen.",
-        "Die Kennzeichnung der Agenten als KI-System sowie die zugehörigen Transparenzhinweise gegenüber Endnutzern nach Art. 50 der Verordnung (EU) 2024/1689 (KI-Verordnung) sind verbindlicher und nicht abschaltbarer Bestandteil der Leistung.",
-        "NexAI ist berechtigt, die Leistungen im Rahmen des vertraglich Vereinbarten fortzuentwickeln und technisch anzupassen, soweit dies dem technischen Fortschritt dient und die vereinbarte Funktionalität nicht wesentlich beeinträchtigt wird."
+        "Gegenstand und Umfang der von NexAI zu erbringenden Leistungen ergeben sich abschließend aus dem Auftragsformular/Leistungsschein und der Anlage A (Leistungsbeschreibung). NexAI stellt danach je nach Beauftragung Agenten bereit, insbesondere Voice Agents, Chat Agents, Automatisierungen und individuelle KI-Agenten, sowie Anwendungen, insbesondere NexAI CRM, NexAI Kalender, NexAI Mailagent und individuelle Anwendungen, richtet diese ein und/oder betreibt sie laufend oder überlässt sie als Kauflizenz (Anlage E).",
+        "Die Leistungen von NexAI umfassen einmalige Werkleistungen wie die Ersteinrichtung von Agenten und die Einrichtung und Bereitstellung von Anwendungen (nachfolgend \"Projektleistungen\", Werkvertragsrecht) sowie den laufenden Betrieb, die Wartung, das Hosting und den Support der Agenten und der von NexAI betriebenen Anwendungen (nachfolgend \"Betriebsleistungen\"). Für die rechtliche Einordnung der Betriebsleistungen gilt § 3 Abs. (2) des Rahmenvertrags; für Kauflizenzen und Projektanwendungen zum Festpreis gilt Anlage E.",
+        "Die von NexAI bereitgestellten Agenten sind KI-gestützte, wahrscheinlichkeitsbasierte Systeme. Ihre Aufgabe besteht in der Kommunikation mit Personen, die mit den Agenten interagieren (nachfolgend \"Endnutzer\"), insbesondere in der Auskunftserteilung, Terminvereinbarung und Kontaktaufnahme. Die Agenten sind so konzipiert, dass sie keine Preis- oder Konditionszusagen, Bestellungen oder Vertragsschlüsse im Namen des Kunden erklären; ausgenommen ist die Vereinbarung von Terminen innerhalb der vom Kunden hinterlegten Verfügbarkeiten (§ 6 des Rahmenvertrags).",
+        "Die Kennzeichnung der Agenten als KI-System sowie die zugehörigen Transparenzhinweise gegenüber Endnutzern nach Art. 50 der Verordnung (EU) 2024/1689 (KI-Verordnung) sind verbindlicher und nicht abschaltbarer Bestandteil der Leistung. Für den NexAI Mailagent gilt Anlage A Ziffer 5.4 Abs. (6).",
+        "NexAI darf die Leistungen technisch weiterentwickeln und anpassen, soweit die vereinbarte Funktionalität erhalten bleibt und die Änderung für den Kunden unter Berücksichtigung der Interessen von NexAI zumutbar ist, insbesondere bei Änderungen, die durch Wechsel oder Änderung eines Subunternehmers, durch Sicherheitsanforderungen oder durch geänderte Rechtsvorschriften veranlasst sind. Entfällt eine vereinbarte Funktion oder wird sie nicht nur unerheblich eingeschränkt, kündigt NexAI dies mindestens sechs Wochen vorher in Textform an; der Kunde kann den betroffenen Einzelvertrag zum Zeitpunkt der Änderung kündigen."
       ]
     },
     {
@@ -70,8 +70,8 @@
       "t": "num",
       "items": [
         "Angebote von NexAI sind freibleibend und unverbindlich, sofern sie nicht ausdrücklich als verbindlich bezeichnet sind oder eine bestimmte Bindungsfrist enthalten.",
-        "Ein Vertrag kommt zustande, wenn der Kunde das Auftragsformular/den Leistungsschein in Textform (§ 126b BGB) oder mittels elektronischer Signatur annimmt und NexAI die Annahme bestätigt oder mit der Leistungserbringung beginnt.",
-        "Nebenabreden, Änderungen und Ergänzungen des Vertrages bedürfen zu ihrer Wirksamkeit der Textform. Dies gilt auch für die Aufhebung dieses Textformerfordernisses."
+        "Ein Vertrag kommt mit der Unterzeichnung des Auftragsformulars/Leistungsscheins durch beide Parteien zustande, auch in Textform (§ 126b BGB) oder mittels elektronischer Signatur, etwa über NexSign.",
+        "Änderungen und Ergänzungen des Vertrags sollen zu Beweiszwecken in Textform festgehalten werden. Vertriebspartner von NexAI unterzeichnen für NexAI nur im Rahmen ihrer Vollmacht nach dem Hinweis zur Unterschrift in Ziffer 16 des Leistungsscheins; Vereinbarungen oder Zusagen, die von den Vertragsdokumenten oder den Listenpreisen abweichen oder über sie hinausgehen, sind davon nicht gedeckt."
       ]
     },
     {
@@ -82,13 +82,14 @@
     {
       "t": "num",
       "items": [
-        "Es fällt keine Einrichtungs- oder Setup-Gebühr an. Für die Leistungen ist ausschließlich ein monatlicher oder – bei entsprechender Wahl – ein jährlicher Beitrag nach Maßgabe des Auftragsformulars zu entrichten.",
-        "Alle Preise verstehen sich netto in Euro zzgl. der jeweils geltenden gesetzlichen Umsatzsteuer. NexAI unterliegt der Regelbesteuerung. Bis zur Erteilung einer Umsatzsteuer-Identifikationsnummer wird auf den Rechnungen die Steuernummer ausgewiesen.",
+        "Eine einmalige Einrichtungsgebühr fällt nur an, wenn und soweit sie im Auftragsformular vereinbart ist; sie ist mangels abweichender Vereinbarung mit der Abnahme der Einrichtung fällig. Im Übrigen ist für die Leistungen ein monatlicher oder – bei entsprechender Wahl – ein jährlicher Beitrag nach Maßgabe des Auftragsformulars zu entrichten. Für Kauflizenzen und Projektanwendungen zum Festpreis gilt Anlage E.",
+        "Alle Preise verstehen sich netto in Euro zzgl. der jeweils geltenden gesetzlichen Umsatzsteuer. NexAI unterliegt der Regelbesteuerung; die Umsatzsteuer-Identifikationsnummer von NexAI lautet DE463741277.",
         "Im Beitrag ist ein Nutzungskontingent enthalten (nachfolgend \"Freikontingent\"). Nutzung über das Freikontingent hinaus (nachfolgend \"Mehrverbrauch\" oder \"Overage\") wird zum im Auftragsformular vereinbarten Netto-Einheitspreis abgerechnet und zusammen mit dem Beitrag des Folgemonats in Rechnung gestellt. Auf Verlangen des Kunden stellt NexAI einen Einzelverbindungsnachweis zur Verfügung. Je Agent kann ein technisches Ausgaben-Limit (EUR-Spend-Cap) eingerichtet werden.",
         "Rechnungen sind ohne Abzug innerhalb von 14 Tagen ab Zugang der Rechnung zur Zahlung fällig. Die Zahlung erfolgt wahlweise per SEPA-Firmenlastschrift (B2B-Firmenlastschriftmandat) oder per Überweisung nach Wahl des Kunden gemäß Auftragsformular.",
+        "Rechnungen, Stornorechnungen, Zahlungserinnerungen und Mahnungen übermittelt NexAI elektronisch an die vom Kunden im Auftragsformular oder später in Textform oder in der Anwendung benannte Rechnungs-E-Mail-Adresse. Soweit NexAI gesetzlich verpflichtet ist, eine elektronische Rechnung im Sinne des § 14 Absatz 1 Satz 3 UStG auszustellen, erhält der Kunde die Rechnung in einem diesen Anforderungen entsprechenden strukturierten Format (z. B. ZUGFeRD oder XRechnung). Im Übrigen, insbesondere soweit eine Übergangsregelung eine andere Form zulässt, stimmt der Kunde der Übermittlung von Rechnungen als PDF-Datei per E-Mail zu (§ 14 Absatz 1 Satz 5 UStG). Der Kunde teilt Änderungen seiner Rechnungsanschrift und seiner Rechnungs-E-Mail-Adresse unverzüglich in Textform mit.",
         "Gerät der Kunde in Zahlungsverzug, ist NexAI berechtigt, Verzugszinsen in Höhe von 9 Prozentpunkten über dem jeweiligen Basiszinssatz sowie eine Pauschale in Höhe von 40 EUR gemäß § 288 Abs. 2 und Abs. 5 BGB zu verlangen. Die Pauschale ist auf einen geschuldeten Schadensersatz anzurechnen, soweit der Schaden in Kosten der Rechtsverfolgung begründet ist. Die Geltendmachung eines weitergehenden Verzugsschadens bleibt vorbehalten.",
-        "Befindet sich der Kunde mit fälligen Zahlungen in Verzug, ist NexAI nach vorheriger Ankündigung in Textform und fruchtlosem Ablauf einer angemessenen Nachfrist berechtigt, die Betriebsleistungen ganz oder teilweise auszusetzen, bis sämtliche fälligen Beträge ausgeglichen sind. Der Zahlungsanspruch bleibt für die Dauer der Aussetzung bestehen.",
-        "Der Kunde kann nur mit unbestrittenen oder rechtskräftig festgestellten Forderungen aufrechnen. Ein Zurückbehaltungsrecht steht ihm nur wegen Gegenansprüchen aus demselben Vertragsverhältnis zu."
+        "Befindet sich der Kunde mit fälligen Zahlungen in Verzug, ist NexAI nach vorheriger Ankündigung in Textform und fruchtlosem Ablauf einer Nachfrist von sieben (7) Tagen berechtigt, die Betriebsleistungen ganz oder teilweise auszusetzen, bis sämtliche fälligen Beträge ausgeglichen sind. Der Zahlungsanspruch bleibt für die Dauer der Aussetzung bestehen.",
+        "Der Kunde kann nur mit unbestrittenen, rechtskräftig festgestellten oder entscheidungsreifen Gegenforderungen aufrechnen; dies gilt nicht für Gegenforderungen wegen Mängeln oder unvollständiger Erfüllung derselben Leistung, insbesondere auf Ersatz von Mängelbeseitigungs- oder Fertigstellungskosten. Ein Zurückbehaltungsrecht steht dem Kunden nur wegen Gegenansprüchen aus demselben Vertragsverhältnis zu; § 320 BGB bleibt unberührt."
       ]
     },
     {
@@ -99,9 +100,8 @@
     {
       "t": "num",
       "items": [
-        "NexAI ist berechtigt, dem Kunden Änderungen der Preise und dieser AGB mit einer Ankündigungsfrist von 6 Wochen in Textform anzubieten. Die Ankündigung benennt die betroffenen Regelungen, den Umfang der Änderung und den vorgesehenen Zeitpunkt des Inkrafttretens und weist den Kunden gesondert auf sein Kündigungsrecht sowie auf die Rechtsfolgen nach Absatz 2 hin.",
-        "Eine Zustimmung des Kunden wird nicht durch bloßes Schweigen fingiert; eine Zustimmungsfiktion findet nicht statt. Die angekündigten Änderungen werden nur wirksam, wenn der Kunde ihnen ausdrücklich in Textform zustimmt oder er die entgeltpflichtigen Leistungen nach Zugang der Ankündigung und nach dem gesonderten Hinweis nach Absatz 1 vorbehaltlos weiter in Anspruch nimmt; in der vorbehaltlosen Weiterinanspruchnahme liegt eine konkludente Zustimmung. Bis zum Wirksamwerden einer Änderung gelten die bisherigen Bedingungen fort.",
-        "Kommt eine Einigung über die angekündigte Änderung nicht zustande oder widerspricht der Kunde ihr, so sind sowohl NexAI als auch der Kunde berechtigt, das Vertragsverhältnis nach den Regelungen des Rahmenvertrages mit Wirkung zum vorgesehenen Zeitpunkt des Inkrafttretens der Änderung ordentlich zu kündigen. Kündigt keine Partei, bleiben die bisherigen Bedingungen unverändert bestehen."
+        "Für Preisänderungen gilt der Abschnitt Preisanpassung in § 7 Abs. (10) des Rahmenvertrags.",
+        "Andere Änderungen dieser AGB oder der Vertragsdokumente werden nur wirksam, wenn der Kunde ihnen in Textform zustimmt. Stimmt er nicht zu, gelten die bisherigen Bedingungen fort; das Recht beider Parteien zur ordentlichen Kündigung bleibt unberührt."
       ]
     },
     {
@@ -126,9 +126,9 @@
       "t": "num",
       "items": [
         "Sämtliche Rechte an den von NexAI im Rahmen der Leistungserbringung entwickelten oder eingesetzten Systemen, Konfigurationen, Prompts, Skripten, Workflows und sonstigen Arbeitsergebnissen sowie an der zugrunde liegenden Software und Infrastruktur verbleiben bei NexAI bzw. den jeweiligen Rechteinhabern.",
-        "NexAI räumt dem Kunden für die Dauer des Vertrages ein einfaches, nicht ausschließliches, nicht übertragbares und zeitlich auf die Vertragslaufzeit befristetes Nutzungsrecht an den Agenten und den zu ihrer bestimmungsgemäßen Nutzung erforderlichen Arbeitsergebnissen ein.",
-        "Mit Beendigung des Vertrages erlischt das Nutzungsrecht des Kunden, soweit im Rahmenvertrag oder im Auftragsformular nichts Abweichendes vereinbart ist. Vom Kunden beigestellte Inhalte und seine eigenen Geschäftsdaten bleiben von dieser Regelung unberührt.",
-        "Accounts, Zugänge und die technische Infrastruktur zum Betrieb der Agenten stellt NexAI als eigene Betriebsmittel bereit; ein Herausgabeanspruch des Kunden hieran besteht nicht. Auf Wunsch des Kunden können abweichend hiervon kundeneigene Accounts verwendet werden."
+        "NexAI räumt dem Kunden für die Dauer des Vertrages ein einfaches, nicht ausschließliches, nicht übertragbares und zeitlich auf die Vertragslaufzeit befristetes Nutzungsrecht an den Agenten, den von NexAI betriebenen Anwendungen und den zu ihrer bestimmungsgemäßen Nutzung erforderlichen Arbeitsergebnissen ein.",
+        "Mit Beendigung des Vertrages erlischt das Nutzungsrecht des Kunden, soweit im Rahmenvertrag, im Auftragsformular oder in Anlage E (Kauflizenz und Projektanwendungen) nichts Abweichendes vereinbart ist. Vom Kunden beigestellte Inhalte und seine eigenen Geschäftsdaten bleiben von dieser Regelung unberührt.",
+        "Accounts, Zugänge und die technische Infrastruktur zum Betrieb der Agenten stellt NexAI als eigene Betriebsmittel bereit; ein Herausgabeanspruch des Kunden hieran besteht vorbehaltlich Anlage E nicht. Auf Wunsch des Kunden können abweichend hiervon kundeneigene Accounts verwendet werden."
       ]
     },
     {
@@ -139,9 +139,9 @@
     {
       "t": "num",
       "items": [
-        "Zur Erbringung der Leistungen setzt NexAI Drittdienste und Unterauftragsverarbeiter ein (nachfolgend \"Subunternehmer\"), insbesondere Vapi, Twilio, Make, OpenAI, ElevenLabs, Google sowie Hosting-Anbieter. Der Kunde ist damit einverstanden. Die datenschutzrechtliche Einbindung richtet sich nach Anlage B (AVV).",
+        "Zur Erbringung der Leistungen setzt NexAI Drittdienste und Unterauftragsverarbeiter ein (nachfolgend \"Subunternehmer\"), insbesondere die in Anlage B, Anhang 2 aufgeführten Unterauftragsverarbeiter in der jeweils nach Anlage B mitgeteilten Fassung. Der Kunde ist damit einverstanden. Die datenschutzrechtliche Einbindung richtet sich nach Anlage B (AVV).",
         "Die Leistungen der Subunternehmer unterliegen deren eigenen Nutzungs- und Verfügbarkeitsbedingungen. NexAI hat auf Verfügbarkeit, Leistungsumfang und Fortbestand dieser Dienste nur eingeschränkten Einfluss.",
-        "NexAI haftet für Handlungen oder Unterlassungen der Subunternehmer nur nach Maßgabe des § 11 (Haftung) und nur, soweit NexAI ein eigenes Verschulden, insbesondere bei Auswahl, Anweisung oder Überwachung, trifft. Ausfälle, Störungen, Preis- oder Leistungsänderungen von Subunternehmern, die NexAI nicht zu vertreten hat, begründen keinen Mangel und keine Haftung von NexAI.",
+        "Für Subunternehmer, deren sich NexAI zur Erfüllung ihrer Pflichten bedient, haftet NexAI wie für eigenes Verschulden (§ 278 BGB), jeweils nach Maßgabe des § 11; § 20 Abs. (2) des Rahmenvertrags gilt.",
         "Laufende Kosten für Drittdienste, die dem Kunden im Auftragsformular gesondert zugewiesen oder als durchlaufende Posten ausgewiesen sind, trägt der Kunde."
       ]
     },
@@ -156,8 +156,9 @@
         "Die Agenten beruhen auf wahrscheinlichkeitsbasierten KI-Modellen. Ihre Ausgaben können unvollständig, fehlerhaft oder unerwartet sein. NexAI übernimmt keine Gewähr für die inhaltliche Richtigkeit, Vollständigkeit oder Fehlerfreiheit der von den Agenten erzeugten Inhalte und Antworten.",
         "NexAI schuldet keinen bestimmten wirtschaftlichen Erfolg. Insbesondere wird keine Garantie für eine bestimmte Anzahl von Leads, Terminen, Abschlüssen, Umsätzen oder Reaktionen von Endnutzern übernommen.",
         "Der Kunde bleibt für die Nutzung der Agenten und der von ihnen erzeugten Inhalte im eigenen Verantwortungsbereich verantwortlich, insbesondere für deren rechtliche Zulässigkeit im konkreten Einsatzkontext. Der Kunde hat die Ergebnisse in geschäftskritischen Fällen zu überprüfen.",
-        "Die Aufzeichnung und Transkription von Gesprächen ist standardmäßig deaktiviert und wird nur auf dokumentierte Weisung des Kunden aktiviert. In diesem Fall erfolgt gegenüber Endnutzern stets eine Pflicht-Ansage mit KI-Hinweis und, soweit einschlägig, einem Aufzeichnungshinweis.",
-        "Im Sinne der KI-Verordnung ist NexAI Anbieter und der Kunde Betreiber der jeweiligen Agenten; die konkrete Zuordnung ergibt sich je Agent aus dem Auftragsformular."
+        "Eine Tonaufzeichnung von Gesprächen ist standardmäßig deaktiviert; Wortprotokolle speichert NexAI nicht dauerhaft (§ 5 des Rahmenvertrags). Beides wird nur auf dokumentierte Weisung des Kunden aktiviert. In diesem Fall erfolgt gegenüber Endnutzern stets eine Pflicht-Ansage mit KI-Hinweis und, soweit einschlägig, einem Aufzeichnungshinweis.",
+        "Im Sinne der KI-Verordnung ist NexAI Anbieter und der Kunde Betreiber der jeweiligen Agenten; die konkrete Zuordnung ergibt sich je Agent aus dem Auftragsformular.",
+        "Für Anwendungen mit KI-Funktionen, insbesondere den NexAI Mailagent, gelten die Absätze (1) bis (3) entsprechend."
       ]
     },
     {
@@ -168,8 +169,8 @@
     {
       "t": "num",
       "items": [
-        "NexAI erbringt die Betriebsleistungen mit der Sorgfalt eines ordentlichen Kaufmanns als Bemühensschuld. Eine bestimmte Verfügbarkeit wird nur geschuldet, soweit sie in Anlage C (SLA) ausdrücklich vereinbart ist.",
-        "Geplante Wartungs-, Aktualisierungs- und Instandhaltungsarbeiten, die NexAI nach Möglichkeit ankündigt und in nutzungsarme Zeiten legt, stellen keinen Mangel und keine Pflichtverletzung dar. Gleiches gilt für Beeinträchtigungen, die auf Störungen bei Subunternehmern oder auf höherer Gewalt beruhen.",
+        "NexAI erbringt die Betriebsleistungen mit der Sorgfalt eines ordentlichen Kaufmanns. Eine bestimmte Verfügbarkeit wird nur geschuldet, soweit sie in Anlage C (SLA) vereinbart ist.",
+        "Geplante Wartungs-, Aktualisierungs- und Instandhaltungsarbeiten, die NexAI nach Anlage C ankündigt und nach Möglichkeit in nutzungsarme Zeiten legt, stellen keinen Mangel und keine Pflichtverletzung dar. Gleiches gilt für Beeinträchtigungen durch Störungen bei Subunternehmern, die NexAI nicht zu vertreten hat, und durch höhere Gewalt.",
         "Der Support wird nach Maßgabe des Vertrages und, soweit vereinbart, der Anlage C (SLA) erbracht."
       ]
     },
@@ -185,9 +186,10 @@
     {
       "t": "num",
       "items": [
-        "NexAI haftet unbeschränkt für Schäden aus der Verletzung des Lebens, des Körpers oder der Gesundheit, die auf einer Pflichtverletzung von NexAI, ihrer gesetzlichen Vertreter oder Erfüllungsgehilfen beruhen, sowie für Schäden, die auf Vorsatz oder grober Fahrlässigkeit von NexAI, ihrer gesetzlichen Vertreter oder Erfüllungsgehilfen beruhen. Ebenfalls unbeschränkt haftet NexAI, soweit eine Garantie übernommen wurde oder Ansprüche nach dem Produkthaftungsgesetz bestehen.",
-        "Bei der leicht fahrlässigen Verletzung einer wesentlichen Vertragspflicht (Kardinalpflicht), also einer Pflicht, deren Erfüllung die ordnungsgemäße Durchführung des Vertrages überhaupt erst ermöglicht und auf deren Einhaltung der Kunde regelmäßig vertrauen darf, ist die Haftung von NexAI auf den bei Vertragsschluss vorhersehbaren, vertragstypischen Schaden begrenzt, höchstens jedoch auf ____ EUR je Schadensfall.",
-        "Im Übrigen ist die Haftung von NexAI für leichte Fahrlässigkeit ausgeschlossen, insbesondere bei der Verletzung nicht wesentlicher Vertragspflichten."
+        "NexAI haftet unbeschränkt für Schäden aus der Verletzung des Lebens, des Körpers oder der Gesundheit, die auf einer Pflichtverletzung von NexAI, ihrer gesetzlichen Vertreter oder Erfüllungsgehilfen beruhen, sowie für Schäden, die auf Vorsatz oder grober Fahrlässigkeit von NexAI, ihrer gesetzlichen Vertreter oder Erfüllungsgehilfen beruhen. Ebenfalls unbeschränkt haftet NexAI, soweit eine Garantie übernommen wurde oder Ansprüche nach dem Produkthaftungsgesetz oder nach anderen Vorschriften bestehen, die eine Haftungsbeschränkung zwingend ausschließen.",
+        "Bei einfacher Fahrlässigkeit haftet NexAI nur bei Verletzung einer wesentlichen Vertragspflicht, also einer Pflicht, deren Erfüllung die ordnungsgemäße Durchführung des Vertrags überhaupt erst ermöglicht und auf deren Einhaltung der Kunde regelmäßig vertrauen darf. In diesem Fall ist die Haftung auf den bei Vertragsschluss vorhersehbaren, vertragstypischen Schaden begrenzt, höchstens jedoch auf 25.000 EUR je Schadensfall oder, wenn die Auftragssumme des betroffenen Einzelvertrags höher ist, auf die Auftragssumme. Auftragssumme ist die Summe der im Einzelvertrag vereinbarten einmaligen Vergütungen und der für die ersten zwölf (12) Monate vereinbarten laufenden Vergütungen, jeweils netto. Eine Begrenzung auf einen Jahresbetrag besteht nicht.",
+        "Im Übrigen ist die Haftung von NexAI für leichte Fahrlässigkeit ausgeschlossen, insbesondere bei der Verletzung nicht wesentlicher Vertragspflichten.",
+        "Soweit auf die Bereitstellung einer Anwendung Mietrecht anzuwenden ist, haftet NexAI für Mängel, die bereits bei Vertragsschluss vorhanden waren, nur, wenn NexAI sie zu vertreten hat (§ 12 Abs. (7) des Rahmenvertrags)."
       ]
     },
     {
@@ -203,8 +205,8 @@
       "t": "num",
       "items": [
         "Die Parteien beachten die jeweils geltenden datenschutzrechtlichen Bestimmungen. Soweit NexAI im Auftrag des Kunden personenbezogene Daten verarbeitet, gilt ergänzend die Anlage B (Auftragsverarbeitungsvertrag, AVV), die den Vorgaben des Art. 28 DSGVO entspricht.",
-        "Wo dies technisch abschaltbar ist, erfolgt keine Speicherung von Gesprächs- oder Interaktionsdaten. Ist eine Speicherung technisch nicht abschaltbar, werden die Daten für 6 Monate aufbewahrt und sodann gelöscht. Geschäftsdaten werden zusätzlich in den Systemen des Kunden geführt; diese sind das führende System.",
-        "Nach Vertragsende stellt NexAI dem Kunden die vorhandenen Daten innerhalb einer Frist von 30 Tagen zum Export bereit und löscht sie anschließend; über die Löschung erteilt NexAI auf Verlangen eine Löschbestätigung."
+        "Für die Speicherung und Löschung von Daten gelten § 14 Abs. (3) des Rahmenvertrags und Anlage B (§ 8 und Anhang 3).",
+        "Nach Vertragsende stellt NexAI dem Kunden die vorhandenen Daten dreißig (30) Tage lang zum Export bereit, löscht sie anschließend und übersendet unaufgefordert eine Löschbestätigung (§ 21 des Rahmenvertrags, Anlage B § 12)."
       ]
     },
     {
@@ -227,7 +229,7 @@
     },
     {
       "t": "p",
-      "text": "Ereignisse höherer Gewalt, die NexAI die Leistungserbringung wesentlich erschweren oder vorübergehend unmöglich machen, befreien NexAI für die Dauer ihrer Auswirkungen von der Leistungspflicht. Als höhere Gewalt gelten insbesondere Naturkatastrophen, Epidemien und Pandemien, kriegerische Auseinandersetzungen, Terroranschläge, Arbeitskämpfe, behördliche Maßnahmen, großflächige Ausfälle von Telekommunikations- oder Energieinfrastruktur sowie schwerwiegende, nicht zu vertretende Störungen bei Subunternehmern. NexAI wird den Kunden über den Eintritt und die voraussichtliche Dauer unverzüglich informieren und sich um Abhilfe bemühen."
+      "text": "Für höhere Gewalt gilt § 22 des Rahmenvertrags. NexAI informiert den Kunden über den Eintritt und die voraussichtliche Dauer unverzüglich und bemüht sich um Abhilfe."
     },
     {
       "t": "h1",
@@ -256,7 +258,7 @@
       "t": "num",
       "items": [
         "Es gilt das Recht der Bundesrepublik Deutschland unter Ausschluss des UN-Kaufrechts (CISG) und der Kollisionsnormen des internationalen Privatrechts.",
-        "Ausschließlicher Gerichtsstand für alle Streitigkeiten aus und im Zusammenhang mit dem Vertragsverhältnis ist, soweit der Kunde Kaufmann, juristische Person des öffentlichen Rechts oder öffentlich-rechtliches Sondervermögen ist, der Sitz von NexAI. NexAI ist daneben berechtigt, den Kunden an seinem allgemeinen Gerichtsstand zu verklagen.",
+        "Sind beide Parteien Kaufleute oder ist der Kunde eine juristische Person des öffentlichen Rechts oder ein öffentlich-rechtliches Sondervermögen, ist Gerichtsstand für alle Streitigkeiten aus und im Zusammenhang mit dem Vertragsverhältnis der Sitz von NexAI; NexAI kann den Kunden auch an seinem allgemeinen Gerichtsstand verklagen. Dasselbe gilt, wenn der Kunde keinen allgemeinen Gerichtsstand im Inland hat. Im Übrigen gelten die gesetzlichen Gerichtsstände.",
         "Die Abtretung von Rechten und Pflichten des Kunden aus dem Vertrag bedarf der vorherigen Zustimmung von NexAI in Textform.",
         "Sollten einzelne Bestimmungen dieser AGB ganz oder teilweise unwirksam oder undurchführbar sein oder werden, so wird die Wirksamkeit der übrigen Bestimmungen hiervon nicht berührt. Anstelle der unwirksamen oder undurchführbaren Bestimmung tritt die gesetzliche Regelung. Das Gleiche gilt für den Fall einer Regelungslücke."
       ]
@@ -267,7 +269,7 @@
     },
     {
       "t": "note",
-      "text": "Diese Allgemeinen Geschäftsbedingungen stellen einen sorgfältig erstellten Entwurf dar und sollten vor Verwendung im Einzelfall anwaltlich geprüft werden."
+      "text": "Fassung Oktober 2026. Entwurf, von NexAI erstellt; die anwaltliche Prüfung folgt. Eckige Klammern kennzeichnen Werte und Regelungen, die vor Verwendung festzulegen sind; „[setzt voraus: …]“ kennzeichnet Zusagen, die erst gelten, wenn die genannte technische Voraussetzung erfüllt ist."
     },
     {
       "t": "spacer",
@@ -281,15 +283,7 @@
           "lines": [
             "Ort, Datum",
             "",
-            "Maximilian Trenk (Gesellschafter)"
-          ]
-        },
-        {
-          "role": "Für NexAI",
-          "lines": [
-            "Ort, Datum",
-            "",
-            "Jason Brian Merklein (Gesellschafter)"
+            "Name, Funktion (Gesellschafter oder in Vollmacht für NexAI)"
           ]
         },
         {

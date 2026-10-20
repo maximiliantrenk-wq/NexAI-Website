@@ -286,8 +286,6 @@ export function ChatWidget() {
                 {t("disclaimer")}
               </p>
               <p className="mt-1 flex flex-wrap items-center justify-center gap-x-1.5 text-center text-[11px] text-subtle">
-                <span>{t("compliance")}</span>
-                <span aria-hidden>·</span>
                 <Link
                   href="/privacy"
                   className="underline underline-offset-2 transition-colors hover:text-fg"
@@ -357,6 +355,7 @@ function Bubble({
         </span>
       )}
       <div
+        data-ai-generated={isUser ? undefined : "true"}
         className={cn(
           "max-w-[85%] whitespace-pre-wrap break-words rounded-2xl px-3.5 py-2.5 text-[14px] leading-relaxed",
           isUser

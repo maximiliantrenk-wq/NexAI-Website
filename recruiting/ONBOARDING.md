@@ -21,7 +21,7 @@ Reihenfolge einhalten. Ohne Vertrag und Gewerbenachweis keine Leads, ohne Leitfa
 - [ ] Hinweis: Provisions-Engine im Portal rechnet noch das alte Modell (28/13). Bis zum Umbau Provisionen der neuen Partner manuell prüfen, vor dem ersten Kundenauftrag Engine umbauen.
 
 ## 4. Material
-- [ ] Karrieresystem-PDF (`public/downloads/NexAI-Karrieresystem.pdf`)
+- [ ] Karrieresystem-PDF — **offline seit 17.10.2026** (Rechtsprüfung, Befunde D-01 bis D-04); erst überarbeitet wieder veröffentlichen
 - [ ] Kundendeck (`~/Desktop/NexAI-Praesentationen/NexAI_Kundenpraesentation_Animiert.pdf`) und ROI-Rechner (nex-a-i.com/de/roi-rechner)
 - [ ] Live-Demo-Nummer 07959 3100191 (AI sagt zu Beginn, dass sie eine AI ist)
 - [ ] Vertriebsprozess (3 Termine) und Sales-Master-Guide (`~/Desktop/NexAI-Praesentationen/`)

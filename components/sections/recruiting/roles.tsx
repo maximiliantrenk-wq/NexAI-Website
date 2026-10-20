@@ -16,7 +16,7 @@ type Item = {
 
 const dt = "font-mono text-[11px] uppercase tracking-[0.14em] text-subtle";
 
-/** Die drei Positionen — bewusst ohne Provisionszahlen (die stehen nur im Karrieresystem-Deck). */
+/** Die zwei Positionen (Setter, Setter + Closer; nur Closer gibt es seit 18.10.2026 nicht mehr) — bewusst ohne Provisionszahlen (die stehen nur im Karrieresystem-Deck). */
 export function Roles() {
   const t = useTranslations("Recruiting.roles");
   const items = t.raw("items") as Item[];
@@ -31,7 +31,7 @@ export function Roles() {
           description={t("description")}
         />
 
-        <RevealGroup className="mt-10 grid gap-x-8 gap-y-10 sm:mt-14 lg:grid-cols-3">
+        <RevealGroup className="mt-10 grid gap-x-8 gap-y-10 sm:mt-14 lg:grid-cols-2">
           {items.map((item) => (
             <RevealItem key={item.key} className="border-t border-line pt-6">
               <p className="eyebrow">{item.tagline}</p>

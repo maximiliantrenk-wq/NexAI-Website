@@ -12,7 +12,7 @@
     },
     {
       "t": "meta",
-      "text": "Stand: September 2026"
+      "text": "Stand: Oktober 2026"
     },
     {
       "t": "p",
@@ -29,7 +29,7 @@
     },
     {
       "t": "p",
-      "text": "**NexAI – Next Generation Artificial Intelligence GbR**, Untere Bergstraße 13, 74586 Frankenhardt-Honhardt, Deutschland, vertreten durch die Gesellschafter Maximilian Trenk und Jason Brian Merklein, E-Mail mbt@nex-a-i.com, Telefon 0176 80714816 — nachfolgend „NexAI\"."
+      "text": "**NexAI – Next Generation Artificial Intelligence GbR**, Untere Bergstraße 13, 74586 Frankenhardt-Honhardt, Deutschland, vertreten durch die Gesellschafter Maximilian Trenk und Jason Brian Merklein, jeder allein (§ 720 Abs. 2 BGB), oder durch eine bevollmächtigte Person (Ziffer 16 des Leistungsscheins), E-Mail mbt@nex-a-i.com, Telefon 0176 80714816 — nachfolgend „NexAI\"."
     },
     {
       "t": "h2",
@@ -108,7 +108,7 @@
       "t": "num",
       "items": [
         "Gegenstand dieses Protokolls ist die Abnahme der im vorgenannten Auftragsformular/Leistungsschein sowie in Anlage A (Leistungsbeschreibung) beschriebenen Projektleistungen. Es gelten ergänzend die Regelungen des Rahmenvertrages, insbesondere zu Abnahme, Vergütung und Gewährleistung, sowie der AGB (B2B).",
-        "Die Projektleistungen unterliegen dem Werkvertragsrecht (§§ 631 ff. BGB). Laufende Betriebsleistungen (Betrieb, Wartung, Hosting und Support der Agenten) sind nicht Gegenstand dieser Abnahme; sie richten sich nach den dienstvertraglichen Regelungen des Rahmenvertrages und der Anlage C (SLA).",
+        "Die Projektleistungen unterliegen dem Werkvertragsrecht (§§ 631 ff. BGB). Laufende Betriebsleistungen (Betrieb, Wartung, Hosting und Support der Agenten und der von NexAI betriebenen Anwendungen) sind nicht Gegenstand dieser Abnahme; sie richten sich nach § 3 Abs. (2) des Rahmenvertrages und der Anlage C (SLA).",
         "Maßgeblich für den geschuldeten Leistungsumfang sind die vertraglich vereinbarten Spezifikationen gemäß Auftragsformular und Anlage A (Leistungsbeschreibung). Ergänzungs- oder Änderungswünsche außerhalb dieses Umfangs werden gesondert beauftragt und abgerechnet.",
         "Werden mehrere Projektleistungen zu unterschiedlichen Zeitpunkten fertiggestellt, kann die Abnahme in sich abgeschlossener Teilleistungen mittels gesondertem Protokoll erfolgen (Teilabnahme); die Regelungen dieses Protokolls gelten für Teilabnahmen entsprechend."
       ]
@@ -134,12 +134,17 @@
     },
     {
       "t": "checkbox",
-      "text": "NexAI CRM (Einrichtung und Inbetriebnahme)",
+      "text": "NexAI CRM (Installation und Inbetriebnahme; bei Kauflizenz auf der Infrastruktur des Kunden)",
       "checked": false
     },
     {
       "t": "checkbox",
       "text": "NexAI Kalender (Einrichtung und Inbetriebnahme)",
+      "checked": false
+    },
+    {
+      "t": "checkbox",
+      "text": "NexAI Mailagent (Einrichtung: Postfach angebunden und Probeabruf erfolgreich, Hausregeln, Signatur und Faktenverzeichnis hinterlegt, Einweisung erfolgt)",
       "checked": false
     },
     {
@@ -208,7 +213,7 @@
     },
     {
       "t": "checkbox",
-      "text": "Zugangsdaten / Zugänge übergeben bzw. eingerichtet (soweit vereinbart; Accounts und Infrastruktur laufen im Übrigen als Betriebsmittel über NexAI, ohne Herausgabeanspruch des Kunden)",
+      "text": "Zugangsdaten / Zugänge übergeben bzw. eingerichtet (soweit vereinbart; Accounts und Infrastruktur laufen im Übrigen als Betriebsmittel über NexAI, ohne Herausgabeanspruch des Kunden; bei der Kauflizenz gilt Anlage E)",
       "checked": false
     },
     {
@@ -291,7 +296,7 @@
     },
     {
       "t": "p",
-      "text": "Etwaige vorbehaltene Mängel sind vorstehend konkret zu bezeichnen. Behält sich der Kunde die Geltendmachung eines bei der Abnahme bekannten Mangels nicht vor, so stehen ihm die Rechte aus §§ 634 Nr. 1 bis 3 BGB insoweit nur zu, wenn er sich diese bei der Abnahme vorbehält (§ 640 Abs. 3 BGB); die weiteren Gewährleistungsrechte bleiben hiervon unberührt."
+      "text": "Etwaige vorbehaltene Mängel sind vorstehend konkret zu bezeichnen. Nimmt der Kunde ab, obwohl er einen Mangel kennt, stehen ihm Nacherfüllung, Selbstvornahme, Rücktritt und Minderung (§ 634 Nr. 1 bis 3 BGB) wegen dieses Mangels nur zu, wenn er ihn vorstehend vorbehält (§ 640 Abs. 3 BGB); Schadensersatz bleibt unberührt."
     },
     {
       "t": "h1",
@@ -303,8 +308,8 @@
       "items": [
         "Der Kunde bestätigt mit seiner Unterschrift, dass die vorgelegten Projektleistungen abgenommen werden. Die Parteien sind sich einig, dass die Leistungen im Wesentlichen vertragsgemäß erbracht wurden.",
         "**Unwesentliche Mängel** berechtigen den Kunden nicht zur Verweigerung der Abnahme (§ 640 Abs. 1 Satz 2 BGB). Etwaige unter Ziffer 6 (Restarbeiten) und Ziffer 7 (Mängel) bezeichnete Positionen werden von NexAI im vereinbarten Rahmen und innerhalb angemessener Frist nachgeholt bzw. beseitigt; die diesbezüglichen Gewährleistungsrechte des Kunden bleiben unberührt.",
-        "**Abnahmefiktion (§ 640 Abs. 2 BGB):** Zeigt NexAI die Fertigstellung der Werkleistung an und setzt dem Kunden eine angemessene Frist zur Abnahme, so gilt die Werkleistung nach Ablauf dieser Frist als abgenommen, wenn der Kunde die Abnahme nicht innerhalb der Frist unter Angabe mindestens eines Mangels verweigert hat. Auf diese Rechtsfolge weist NexAI den Kunden in der Fertigstellungsanzeige gesondert hin.",
-        "**Beginn der Gewährleistungsfrist:** Mit der Abnahme – einschließlich der Fälle der Abnahmefiktion nach vorstehender Ziffer (3) sowie einer etwaigen Teilabnahme gemäß Ziffer 3 (4) – beginnt die auf **ein (1) Jahr** verkürzte Verjährungsfrist für Mängelansprüche des Kunden hinsichtlich der abgenommenen Werkleistungen. Die gesetzlich zwingenden Ausnahmen (Vorsatz, Arglist, Schäden aus der Verletzung des Lebens, des Körpers oder der Gesundheit sowie grobes Verschulden) bleiben unberührt; im Übrigen gelten die Regelungen des Rahmenvertrages und der AGB (B2B).",
+        "**Abnahmefiktion (§ 640 Abs. 2 BGB):** Zeigt NexAI die Fertigstellung der Werkleistung in Textform an und verweigert der Kunde die Abnahme nicht binnen einer **Frist von zehn (10) Werktagen** unter Angabe mindestens eines Mangels, gilt die Werkleistung als abgenommen. Gleiches gilt, wenn der Kunde die Leistung nach der Fertigstellungsanzeige zehn (10) Werktage produktiv nutzt, ohne einen wesentlichen Mangel zu rügen (§ 3 Ziffer (1) Abs. (2) des Rahmenvertrages). Auf diese Rechtsfolgen weist NexAI den Kunden in der Fertigstellungsanzeige gesondert hin.",
+        "**Verjährung:** Die Verjährungsfrist für Mängelansprüche hinsichtlich der abgenommenen Werkleistungen beträgt **ein (1) Jahr** ab dem gesetzlichen Verjährungsbeginn (§ 3 Ziffer (1) Abs. (3) des Rahmenvertrages); soweit das Gesetz den Beginn an die Abnahme knüpft (§ 634a Abs. 2 BGB), steht die Abnahmefiktion nach vorstehender Ziffer (3) und eine Teilabnahme nach Ziffer 3 (4) der Abnahme gleich. Die Ausnahmen des Rahmenvertrages (Verletzung des Lebens, des Körpers oder der Gesundheit, Vorsatz, grobe Fahrlässigkeit, Arglist, Garantie, Produkthaftungsgesetz) bleiben unberührt.",
         "Mit der Abnahme geht die Gefahr auf den Kunden über und die Vergütung für die abgenommenen Projektleistungen wird gemäß den Regelungen der Vertragsdokumente fällig. Die Abnahme lässt die vertraglich vereinbarten Vergütungs-, Haftungs- und sonstigen Regelungen der Vertragsdokumente im Übrigen unberührt."
       ]
     },
@@ -320,15 +325,7 @@
           "lines": [
             "Ort, Datum",
             "",
-            "Maximilian Trenk (Gesellschafter)"
-          ]
-        },
-        {
-          "role": "Für NexAI",
-          "lines": [
-            "Ort, Datum",
-            "",
-            "Jason Brian Merklein (Gesellschafter)"
+            "Name (Gesellschafter)"
           ]
         },
         {
@@ -347,7 +344,7 @@
     },
     {
       "t": "note",
-      "text": "Dieses Abnahmeprotokoll ist Teil eines sorgfältig erstellten Vertragsentwurfs. Es ersetzt keine Rechtsberatung und sollte für den konkreten Einzelfall anwaltlich geprüft werden."
+      "text": "Fassung Oktober 2026. Entwurf, von NexAI erstellt; die anwaltliche Prüfung folgt. Eckige Klammern kennzeichnen Werte und Regelungen, die vor Verwendung festzulegen sind; „[setzt voraus: …]“ kennzeichnet Zusagen, die erst gelten, wenn die genannte technische Voraussetzung erfüllt ist."
     }
   ]
 }

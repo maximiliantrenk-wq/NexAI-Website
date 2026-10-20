@@ -33,7 +33,7 @@ const schema = z.object({
   name: z.string().trim().min(2).max(80),
   email: z.string().trim().email().max(120),
   phone: z.string().trim().regex(/^[+0-9 ()/.-]{6,40}$/),
-  role: z.enum(["setter", "closer", "both"]),
+  role: z.enum(["setter", "both"]), // nur als Closer bewerben geht nicht (Max, 18.10.2026)
   experience: z.enum(["none", "lt1", "1to3", "gt3"]),
   availability: z.enum(["lt10", "10to20", "20to30", "gt30"]),
   profile: z.string().trim().max(200).optional(),
@@ -46,8 +46,8 @@ const schema = z.object({
 });
 
 const ROLE_LABEL = {
-  de: { setter: "Setter", closer: "Closer", both: "Setter + Closer" },
-  en: { setter: "Setter", closer: "Closer", both: "Setter + Closer" },
+  de: { setter: "Setter", both: "Setter + Closer" },
+  en: { setter: "Setter", both: "Setter + Closer" },
 } as const;
 const EXPERIENCE_LABEL = {
   none: "keine (Einstieg)",

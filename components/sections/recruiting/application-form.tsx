@@ -36,7 +36,7 @@ export function ApplicationForm() {
       .string()
       .trim()
       .regex(/^[+0-9 ()/.-]{6,40}$/, t("errorPhone")),
-    role: z.enum(["setter", "closer", "both"], { message: t("errorSelect") }),
+    role: z.enum(["setter", "both"], { message: t("errorSelect") }),
     experience: z.enum(EXPERIENCE, { message: t("errorSelect") }),
     availability: z.enum(AVAILABILITY, { message: t("errorSelect") }),
     profile: z.string().trim().max(200).optional(),
@@ -54,7 +54,7 @@ export function ApplicationForm() {
     setError,
   } = useForm<FormValues>({
     resolver: zodResolver(schema),
-    defaultValues: { role: "closer", experience: undefined, availability: undefined },
+    defaultValues: { role: undefined, experience: undefined, availability: undefined },
   });
 
   const role = useWatch({ control, name: "role" });

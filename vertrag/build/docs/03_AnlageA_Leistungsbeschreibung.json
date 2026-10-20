@@ -13,7 +13,7 @@
     },
     {
       "t": "meta",
-      "text": "Stand: September 2026"
+      "text": "Stand: Oktober 2026"
     },
     {
       "t": "spacer",
@@ -26,7 +26,7 @@
     },
     {
       "t": "p",
-      "text": "Diese Anlage A (Leistungsbeschreibung) konkretisiert den Gegenstand und den Umfang der von der **NexAI – Next Generation Artificial Intelligence GbR**, Untere Bergstraße 13, 74586 Frankenhardt-Honhardt, Deutschland, vertreten durch die Gesellschafter Maximilian Trenk und Jason Brian Merklein (nachfolgend \"NexAI\"), gegenüber dem Kunden (nachfolgend \"Kunde\") erbrachten Leistungen. Sie ist Bestandteil des Rahmenvertrages und gilt nur in Verbindung mit dem jeweils unterzeichneten Auftragsformular/Leistungsschein."
+      "text": "Diese Anlage A (Leistungsbeschreibung) konkretisiert den Gegenstand und den Umfang der von der **NexAI – Next Generation Artificial Intelligence GbR**, Untere Bergstraße 13, 74586 Frankenhardt-Honhardt, Deutschland, vertreten durch die Gesellschafter Maximilian Trenk und Jason Brian Merklein, jeder allein (§ 720 Abs. 2 BGB), oder durch eine bevollmächtigte Person (Ziffer 16 des Leistungsscheins) (nachfolgend \"NexAI\"), gegenüber dem Kunden (nachfolgend \"Kunde\") erbrachten Leistungen. Sie ist Bestandteil des Rahmenvertrages und gilt nur in Verbindung mit dem jeweils unterzeichneten Auftragsformular/Leistungsschein."
     },
     {
       "t": "num",
@@ -34,7 +34,7 @@
         "Maßgeblich für den im Einzelfall geschuldeten Leistungsumfang sind ausschließlich das jeweils unterzeichnete **Auftragsformular/Leistungsschein** in Verbindung mit dieser Anlage A. Diese Anlage beschreibt den möglichen Leistungskatalog; geschuldet ist nur, was im Auftragsformular ausdrücklich als beauftragt gekennzeichnet ist.",
         "Leistungen, die weder im Auftragsformular noch in dieser Anlage A ausdrücklich aufgeführt sind, sind **nicht geschuldet**. Sie können durch gesonderte schriftliche Vereinbarung (Change Request) beauftragt werden.",
         "Bei Widersprüchen zwischen den Vertragsdokumenten gilt die im Rahmenvertrag festgelegte Rangfolge. Das Auftragsformular geht dieser Anlage A vor, soweit es abweichende oder ergänzende Festlegungen zum Leistungsumfang trifft.",
-        "Die in dieser Anlage verwendeten definierten Begriffe (insbesondere \"Agenten\", \"Endnutzer\", \"Projektleistungen\", \"Betriebsleistungen\", \"Freikontingent\", \"Mehrverbrauch\", \"Subunternehmer\") haben die im Rahmenvertrag festgelegte Bedeutung."
+        "Die in dieser Anlage verwendeten definierten Begriffe (insbesondere \"Agenten\", \"Anwendungen\", \"Endnutzer\", \"Projektleistungen\", \"Betriebsleistungen\", \"Freikontingent\", \"Mehrverbrauch\", \"Subunternehmer\") haben die im Rahmenvertrag festgelegte Bedeutung."
       ]
     },
     {
@@ -44,18 +44,18 @@
     },
     {
       "t": "p",
-      "text": "NexAI stellt dem Kunden **Agenten** (KI-gestützte digitale Assistenten) und **Anwendungen** (Softwareanwendungen wie NexAI CRM, NexAI Kalender und individuelle Anwendungen) bereit und betreibt diese. Die Leistungen gliedern sich in zwei rechtlich unterschiedlich einzuordnende Kategorien:"
+      "text": "NexAI stellt dem Kunden **Agenten** (KI-gestützte digitale Assistenten) und **Anwendungen** (Softwareanwendungen wie NexAI CRM, NexAI Kalender, NexAI Mailagent und individuelle Anwendungen) bereit und betreibt diese oder überlässt sie als Kauflizenz (Anlage E). Die Leistungen gliedern sich in zwei rechtlich unterschiedlich einzuordnende Kategorien:"
     },
     {
       "t": "num",
       "items": [
-        "**Projektleistungen** – einmalige Werkleistungen mit definiertem Erfolg, insbesondere die Einrichtung und Bereitstellung von Anwendungen (Ziffern 7 bis 9) sowie die Ersteinrichtung der Agenten (Ziffer 10). Es gilt Werkvertragsrecht; die Abnahme richtet sich nach Anlage D (Abnahmeprotokoll).",
-        "**Betriebsleistungen** – laufender Betrieb, Konfigurationspflege, Wartung, Hosting/Bereitstellung der erforderlichen Infrastruktur sowie Support der Agenten und Anwendungen. Es gilt Dienstvertragsrecht; die Verfügbarkeit richtet sich nach Anlage C (SLA)."
+        "**Projektleistungen** – einmalige Werkleistungen mit definiertem Erfolg, insbesondere die Einrichtung und Bereitstellung von Anwendungen (Ziffer 5 sowie Ziffer 8, soweit dort Anwendungen entwickelt werden) sowie die Ersteinrichtung der Agenten (Ziffer 10). Es gilt Werkvertragsrecht; die Abnahme richtet sich nach Anlage D (Abnahmeprotokoll).",
+        "**Betriebsleistungen** – laufender Betrieb, Konfigurationspflege, Wartung, Hosting/Bereitstellung der erforderlichen Infrastruktur sowie Support der Agenten und der von NexAI betriebenen Anwendungen. Die rechtliche Einordnung richtet sich nach § 3 Abs. (2) des Rahmenvertrages; die Verfügbarkeit richtet sich nach Anlage C (SLA). Für Anwendungen, die als Kauflizenz überlassen werden, gilt Anlage E."
       ]
     },
     {
       "t": "p",
-      "text": "Welche der nachstehend in den Ziffern 3 bis 9 beschriebenen Agenten und Leistungen konkret beauftragt sind, ergibt sich aus dem Auftragsformular. Der jeweils in einem Modul enthaltene Funktionsumfang, das Freikontingent, der Netto-Einheitspreis für Mehrverbrauch (Overage) sowie etwaige mengen- oder verbrauchsabhängige Grenzen einschließlich eines technischen EUR-Spend-Caps je Agent werden im Auftragsformular festgelegt."
+      "text": "Welche der nachstehend in den Ziffern 3 bis 8 beschriebenen Agenten und Leistungen konkret beauftragt sind, ergibt sich aus dem Auftragsformular. Der jeweils in einem Modul enthaltene Funktionsumfang, das Freikontingent, der Netto-Einheitspreis für Mehrverbrauch (Overage) sowie etwaige mengen- oder verbrauchsabhängige Grenzen einschließlich eines technischen EUR-Spend-Caps je Agent werden im Auftragsformular festgelegt."
     },
     {
       "t": "pagebreak"
@@ -67,12 +67,12 @@
     },
     {
       "t": "p",
-      "text": "Der Voice Agent nimmt Sprachanrufe entgegen und/oder tätigt ausgehende Anrufe und interagiert im Rahmen der konfigurierten Wissensbasis und Dialoglogik mit Endnutzern. Der Funktionsumfang umfasst – soweit im Auftragsformular beauftragt – insbesondere:"
+      "text": "Der Voice Agent nimmt Sprachanrufe entgegen und interagiert im Rahmen der konfigurierten Wissensbasis und Dialoglogik mit Endnutzern. Der Funktionsumfang umfasst – soweit im Auftragsformular beauftragt – insbesondere:"
     },
     {
       "t": "bullets",
       "items": [
-        "Annahme eingehender Anrufe rund um die Uhr sowie – bei entsprechender Beauftragung – Tätigung ausgehender Anrufe im Rahmen zulässiger Kampagnen (vgl. die Compliance-Zusicherungen des Kunden nach § 15 des Rahmenvertrages)",
+        "Annahme eingehender Anrufe rund um die Uhr; ausgehende Anrufe sind derzeit nicht verfügbar und nur nach gesonderter Beauftragung möglich (§ 15 des Rahmenvertrages)",
         "Beantwortung häufiger Fragen (FAQ) auf Grundlage der vom Kunden bereitgestellten Wissensbasis (Öffnungszeiten, Leistungen, Anfahrt, Konditionen und vergleichbare Auskünfte)",
         "Vereinbaren, Verschieben und Absagen von Terminen unter Anbindung an das vom Kunden genutzte Kalender-/Buchungssystem, einschließlich Rückbestätigung des Termins (Read-Back) zur Vermeidung von Doppelbuchungen",
         "Weiterleitung (Transfer) an eine vom Kunden benannte Rufnummer oder Durchwahl bei komplexen Anliegen oder auf Wunsch des Endnutzers",
@@ -84,7 +84,7 @@
     },
     {
       "t": "note",
-      "text": "Zu Beginn jedes Gesprächs – eingehend wie ausgehend – erfolgt die verpflichtende KI-Ansage nach Ziffer 11. Aufzeichnung und Transkription sind standardmäßig deaktiviert (Ziffer 12)."
+      "text": "Zu Beginn jedes Gesprächs erfolgt die verpflichtende KI-Ansage nach Ziffer 11. Eine Tonaufzeichnung erfolgt standardmäßig nicht (Ziffer 12)."
     },
     {
       "t": "h1",
@@ -111,6 +111,153 @@
     {
       "t": "note",
       "text": "Der KI-Hinweis nach Ziffer 11 wird im Chat deutlich sichtbar ausgewiesen."
+    },
+    {
+      "t": "pagebreak"
+    },
+    {
+      "t": "h1",
+      "num": "5.",
+      "text": "Anwendungen"
+    },
+    {
+      "t": "p",
+      "text": "Die nachstehenden Anwendungen stellt NexAI bereit, soweit sie im Auftragsformular beauftragt sind. Ihre Einrichtung ist eine Projektleistung (Ziffer 2 Abs. (1)); ihr Betrieb durch NexAI ist eine Betriebsleistung. Für die Kauflizenz und für Projektanwendungen zum Festpreis gilt ergänzend Anlage E."
+    },
+    {
+      "t": "h2",
+      "text": "5.1 NexAI CRM (Kundensystem)"
+    },
+    {
+      "t": "p",
+      "text": "Das NexAI CRM ist eine Softwareanwendung zur Verwaltung von Kontakten, Unternehmen, Anfragen und Vorgängen des Kunden. Es wird dem Kunden als **Kauflizenz** zum Betrieb auf seiner eigenen Infrastruktur überlassen (Anlage E); ein Betrieb durch NexAI erfolgt nur, wenn er im Auftragsformular gesondert vereinbart ist. Der Funktionsumfang umfasst – soweit im Auftragsformular beauftragt – insbesondere:"
+    },
+    {
+      "t": "bullets",
+      "items": [
+        "Verwaltung von Kontakten und Unternehmen einschließlich Notizen, Dateianhängen und Änderungshistorie",
+        "Erfassung von Anfragen (Leads) aus den angebundenen Kanälen, insbesondere aus den beauftragten Agenten und aus Formularen der Website des Kunden",
+        "Dokumentation von Anrufen einschließlich Gesprächsprotokoll, soweit der Voice Agent beauftragt und die Übergabe eingerichtet ist",
+        "Aufgaben mit Fälligkeit und automatischer Erinnerung",
+        "Abbildung von Verkaufschancen in konfigurierbaren Phasen (Pipelines)",
+        "Auswertungen und Berichte mit Ausgabe als Tabelle (CSV) und als PDF",
+        "Benutzerkonten mit Rollen- und Rechteverwaltung sowie Anmeldung mit zweitem Faktor",
+        "Funktionen zur Wahrnehmung von Betroffenenrechten und zur Einhaltung von Löschfristen",
+        "Rechnungsstellung einschließlich elektronischer Rechnungen (ZUGFeRD/XRechnung) und Ausgabe von Buchungsdaten im DATEV-Format, soweit im Auftragsformular vereinbart und für den Kunden freigeschaltet"
+      ]
+    },
+    {
+      "t": "note",
+      "text": "Bei der Kauflizenz betreibt der Kunde das NexAI CRM auf seiner eigenen Infrastruktur (Anlage E). Bei Betrieb durch NexAI läuft es auf Servern in Deutschland (Anlage B, Anhang 2); die Daten verschiedener Kunden sind technisch voneinander getrennt. Für die Richtigkeit und Aktualität der eingegebenen Daten sowie für die Vergabe der Zugriffsrechte innerhalb seines Bereichs ist der Kunde verantwortlich. Die Übernahme von Daten aus einem Vorsystem ist nur geschuldet, soweit sie im Auftragsformular ausdrücklich vereinbart ist (Ziffer 14)."
+    },
+    {
+      "t": "h2",
+      "text": "5.2 NexAI Kalender (Online-Terminbuchung)"
+    },
+    {
+      "t": "p",
+      "text": "Der NexAI Kalender ist eine von NexAI bereitgestellte und betriebene Softwareanwendung. Endnutzer buchen darüber selbst Termine beim Kunden; der Kunde verwaltet darin seine Termine. Der Funktionsumfang umfasst – soweit im Auftragsformular beauftragt – insbesondere:"
+    },
+    {
+      "t": "bullets",
+      "items": [
+        "Öffentliche Buchungsseite mit Auswahl von Leistung, Datum und Uhrzeit, erreichbar über einen Link oder eingebettet in die Website des Kunden",
+        "Belegung des gewählten Termins bereits während des Ausfüllens (Reservierung) sowie technische Absicherung gegen Doppelbuchungen",
+        "Versand von Bestätigungen und Erinnerungen per E-Mail und/oder SMS nach Maßgabe des Auftragsformulars",
+        "Verwaltung der Termine in Tages-, Wochen-, Monats- und Listenansicht einschließlich Verschieben, Absagen und Sperrzeiten",
+        "Verwaltung von Leistungen, Öffnungszeiten, Pausen, Urlaub und Feiertagen",
+        "Kundenkartei mit Terminverlauf und Notizen",
+        "Bereitstellung als installierbare Anwendung auf Mobilgerät und Rechner einschließlich Push-Benachrichtigungen",
+        "Abonnement der Termine in einem Kalender des Kunden (einseitige Übernahme)"
+      ]
+    },
+    {
+      "t": "note",
+      "text": "Der Versand von SMS erfolgt über einen Unterauftragsverarbeiter (Anlage B, Anhang 2) und wird, soweit im Auftragsformular vereinbart, mengenabhängig vergütet. Die Anzeige der Rufnummer des Kunden als Absender setzt deren Verifizierung beim Versanddienstleister voraus; diese Mitwirkung obliegt dem Kunden. Für die Richtigkeit der hinterlegten Leistungen, Preise und Öffnungszeiten ist der Kunde verantwortlich."
+    },
+    {
+      "t": "h2",
+      "text": "5.3 NexAI App (individuelle Anwendung)"
+    },
+    {
+      "t": "p",
+      "text": "Sofern im Auftragsformular beauftragt, entwickelt und betreibt NexAI eine individuelle Anwendung, die im Namen und im Erscheinungsbild des Kunden auftritt und von Endnutzern auf Mobilgerät und Rechner installiert werden kann. Der Funktionsumfang wird je Projekt festgelegt und umfasst – soweit vereinbart – insbesondere:"
+    },
+    {
+      "t": "bullets",
+      "items": [
+        "Kundenportal (z. B. Aufträge, Rechnungen, Dokumente, Statusanzeige)",
+        "Anwendung für Beschäftigte des Kunden (z. B. Aufgaben, interne Nachrichten, Belegerfassung)",
+        "Buchungs- und Terminfunktionen",
+        "Push-Benachrichtigungen",
+        "Anbindung an die beauftragten Agenten und Anwendungen sowie an Systeme des Kunden über verfügbare Schnittstellen",
+        "Gestaltung im Erscheinungsbild des Kunden (Name, Logo, Farben)"
+      ]
+    },
+    {
+      "t": "note",
+      "text": "Die Anwendung wird als installierbare Web-Anwendung bereitgestellt; eine Veröffentlichung in den App-Stores von Apple oder Google ist nicht geschuldet (Ziffer 14). Der konkrete Leistungsumfang, die einzubindenden Systeme sowie etwaige Abnahmekriterien werden im Auftragsformular oder in einer gesonderten Leistungsbeschreibung je Projekt festgelegt und sind als solche Bestandteil dieser Anlage A. Enthält die Anwendung KI-gestützte Funktionen, gelten die Ziffern 11 bis 13 entsprechend. Für Festpreis, Nutzungsrecht, Betrieb und Pflege gilt Anlage E Ziffer 8."
+    },
+    {
+      "t": "h2",
+      "text": "5.4 NexAI Mailagent (Postfachassistent)"
+    },
+    {
+      "t": "p",
+      "text": "Der NexAI Mailagent ist eine von NexAI bereitgestellte und betriebene Softwareanwendung, die die im Auftragsformular benannten E-Mail-Postfächer des Kunden spiegelt, eingehende Nachrichten einstuft und Antwortentwürfe zur Freigabe durch den Kunden vorlegt. Der Funktionsumfang umfasst – soweit im Auftragsformular beauftragt – insbesondere:"
+    },
+    {
+      "t": "bullets",
+      "items": [
+        "Spiegelung der benannten Postfächer (Anbindung nach Absatz (8))",
+        "Einstufung jeder eingehenden Nachricht nach Art und Dringlichkeit sowie Kurzfassung ihres Inhalts",
+        "Erkennung von Fristen und Terminwünschen mit Übernahme in eine Wiedervorlage",
+        "Erkennung von Rechnungen und Mahnungen einschließlich Betrag, Fälligkeit und Gläubiger sowie Übersicht der offenen Forderungen",
+        "Prüfung jeder Nachricht auf Betrugsmerkmale, insbesondere auf eine geänderte Bankverbindung eines bereits bekannten Absenders",
+        "Erstellung von Antwortentwürfen auf Grundlage der vom Kunden bereitgestellten Hausregeln, Signaturen, Antwortvorlagen und des Faktenverzeichnisses",
+        "Kennzeichnung fehlender Angaben im Entwurf als offene Lücke; fehlende Angaben werden nicht ergänzt",
+        "Freigeben, Ändern oder Verwerfen von Entwürfen durch die im Auftragsformular benannten Personen",
+        "Protokollierung jeder Freigabe mit Person, Zeitpunkt, Betreff, Wortlaut und Prüfsumme in einer verketteten Form, die nachträgliche Änderungen erkennbar macht",
+        "Freigabe durch zwei Personen (Vier-Augen-Prinzip) nach den im Auftragsformular festgelegten Schwellen",
+        "Zuweisung von Nachrichten an Personen des Kunden, jeweils begrenzt auf die für diese Person freigegebenen Postfächer",
+        "Volltextsuche im gespiegelten Bestand und Auskunft aus diesem Bestand",
+        "Auswertung von Textinhalten aus PDF-Anhängen",
+        "Monatliche Auswertung über Aufkommen, Bearbeitung und Modellverbrauch",
+        "Kostendeckel für den Modellverbrauch mit Warnung bei Erreichen von achtzig Prozent und Einstellung der Einstufung bei Erreichen des Deckels",
+        "Durchsetzung der Aufbewahrungsfristen nach Absatz (10) durch einen täglichen Löschlauf",
+        "Erzeugung des Verarbeitungsverzeichnisses, der Anlage zu den technischen und organisatorischen Maßnahmen und eines Prüfberichts aus der jeweils laufenden Einrichtung",
+        "Verarbeitung der Modellanfragen nach Ziffer 3.3 des Auftragsformulars"
+      ]
+    },
+    {
+      "t": "p",
+      "text": "Ergänzend gilt für den Mailagenten:"
+    },
+    {
+      "t": "num",
+      "items": [
+        "**Versand.** Antworten an Dritte versendet der Mailagent nur nach Freigabe durch eine natürliche Person des Kunden. Ausgenommen sind Antworten auf Nachrichten von Absendern, deren Adresse eine Person mit der Rolle Verwaltung in der Anwendung auf die Freigabeliste setzt (selbsttätiger Versand). Jede solche Eintragung ist eine gesonderte Vereinbarung der Parteien im Sinne von § 6 Abs. (2) des Rahmenvertrages über den selbsttätigen Versand an diese Adresse; NexAI nimmt sie bereits mit diesem Vertrag an. Zugleich ist sie eine dokumentierte Weisung im Sinne von Anlage B. Die Anwendung hält Person und Zeitpunkt jeder Eintragung fest; die Verwaltung kann eine Eintragung jederzeit zurücknehmen. Der Kunde stellt sicher, dass die Rolle Verwaltung nur Personen erhalten, die ihn insoweit vertreten dürfen. Selbsttätig versendet der Mailagent nur, wenn der Entwurf keine offene Lücke, Rückfrage, Warnung oder Platzhalter enthält, der Absender nicht als auffällig eingestuft ist, kein Versuch einer Anweisung an die Anwendung erkannt wurde, der Mailagent im Entwurf keine Erklärung erkannt hat, mit der ein Vertrag geschlossen, geändert oder beendet, ein Anspruch anerkannt oder abgelehnt oder ein Antrag beschieden wird, die eingehende Nachricht nicht als Antwort auf eine selbsttätig versandte Antwort erkannt wurde und die Antwort nach den Freigaberegeln keine Freigabe durch zwei Personen erfordert. Die Erkennung arbeitet mit Merkmalen der Nachrichten; sie kann nicht jede solche Erklärung oder Antwort ausschließen. Solche Antworten tragen den Hinweis nach Absatz (6) und sind Erklärungen des Kunden (§ 6 Abs. (3) des Rahmenvertrages); Signaturen und Hinweise darin enthalten keine Werbung. [Von Max zu entscheiden: Für ihren Inhalt ist im Verhältnis der Parteien der Kunde verantwortlich, soweit der Mailagent die vorstehenden Sicherungen eingehalten hat; im Übrigen haftet NexAI nach § 12 des Rahmenvertrages.] Systemnachrichten der Anwendung, insbesondere Anmeldelinks und Buchungsmeldungen an NexAI, sind keine Antworten im Sinne dieses Absatzes.",
+        "Inhalte eingehender Nachrichten werden ausschließlich als Daten verarbeitet, nicht als Anweisung an die Anwendung. Enthält eine Nachricht eine Handlungsaufforderung, insbesondere eine Weiterleitungs- oder Zahlungsanweisung, wird diese nicht ausgeführt, sondern dem Kunden angezeigt.",
+        "Antworten werden ausschließlich an Adressen aus dem jeweiligen Nachrichtenverlauf oder an eine vom Kunden benannte Adresse versendet. Adressen, die lediglich im Text einer Nachricht stehen, werden nicht verwendet.",
+        "Der Mailagent löscht keine Nachrichten in den Postfächern des Kunden. Er kann Nachrichten in einen Archivordner verschieben, soweit der Kunde diese Funktion eingeschaltet lässt; ein solches Verschieben ist umkehrbar. Der Mailagent versendet keine Werbung und keine Kaltakquise und ersetzt kein Ticketsystem.",
+        "Aus Anhängen werden Textinhalte nur aus PDF-Dateien ausgewertet. Textverarbeitungs- und Tabellendateien, insbesondere Word und Excel, werden nicht ausgewertet.",
+        "**KI-Kennzeichnung.** Jede vom Mailagenten erstellte Nachricht trägt eine maschinenlesbare KI-Kennzeichnung im Nachrichtenkopf. Selbsttätig versandte Nachrichten (Absatz (1) Satz 2) tragen zusätzlich einen sichtbaren, nicht abschaltbaren Hinweis auf den Versand ohne menschliche Prüfung. Unter freigegebenen Nachrichten steht ein sichtbarer, nicht abschaltbarer Hinweis auf die Unterstützung durch KI; den Wortlaut legt NexAI fest.",
+        "Der Mailagent wird je Kunde in einer eigenen Instanz mit eigener Datenbank und eigenem Datenbestand betrieben.",
+        "**Anbindung der Postfächer.** Die Zugänge zu den Postfächern stellt der Kunde bereit; er benennt mindestens eine Person, die Entwürfe freigibt. Die Anbindung erfolgt über IMAP/SMTP mit Anwendungspasswort oder über eine OAuth-Anmeldung, soweit NexAI sie für den Anbieter des Postfachs bereitstellt. Stellt ein Postfachanbieter den genutzten Anmeldeweg ein, bemüht sich NexAI um einen Ersatzweg; ist keiner verfügbar, kann jede Partei die Leistung für das betroffene Postfach mit einer Frist von einem Monat kündigen. Bei Microsoft 365 setzt die Anbindung über OAuth die Zustimmung eines Administrators des Kunden voraus.",
+        "**KI-Funktionen.** Der Mailagent ist eine Anwendung mit KI-Funktionen. Für Einstufung, Zusammenfassung und Antwortentwürfe gelten die Ziffern 13 und 15 Abs. (3) entsprechend; die Kennzeichnung richtet sich nach Absatz (6).",
+        "**Aufbewahrung und Löschung.** a) Beim Mailagenten ist die Aufbewahrung der gespiegelten Korrespondenz und des Freigabeprotokolls Teil der Leistung; § 14 Abs. (3) Buchst. (a) des Rahmenvertrages gilt nicht. b) Die Aufbewahrungsdauer wird in Ziffer 3.3 des Auftragsformulars je Datenart vereinbart. Ohne Eintrag gelten: Nachrichten mit Einstufung, Kurzfassung, Fristen, Notizen, Zuweisungen und Suchindex 180 Tage ab dem Datum der Nachricht; Anhänge und ihr ausgelesener Text 90 Tage; verworfene Entwürfe 90 Tage; der Wortlaut im Freigabeprotokoll und das Verwaltungsprotokoll 1.095 Tage; die übrigen Angaben einer Zeile des Freigabeprotokolls (Person, Zeitpunkt, Aktion, Prüfsummen) bis zum Ablauf des sechsten vollen Kalenderjahres nach dem Jahr der Freigabe; Tagesübersichten wie Nachrichten; gespeicherte Bankverbindungen bekannter Absender 24 Monate nach ihrer letzten Nennung. c) Der Kunde kann die Fristen in der Anwendung ändern, ausgenommen die Frist für gespeicherte Bankverbindungen, die der Betrugserkennung dient; jede Änderung ist eine dokumentierte Weisung (Anlage B § 4 Abs. (5)). Fristen unter sieben Tagen sind ausgeschlossen. Eine Verlängerung über die Vorgabe wird erst wirksam, wenn der Kunde sie in der Anwendung ausdrücklich bestätigt; für die längere Aufbewahrung muss beim Kunden eine Rechtsgrundlage bestehen. Eine Verkürzung wirkt mit dem nächsten Löschlauf; danach gelöschte Daten lassen sich nicht wiederherstellen. d) NexAI setzt die Fristen durch einen täglichen Löschlauf durch [setzt voraus: Löschlauf in der Instanz des Kunden scharf geschaltet]. In Sicherungskopien bleiben gelöschte Daten bis zu deren turnusmäßigem Überschreiben erhalten (Anlage B, Anhang 3). e) Der Mailagent ist kein Archiv zur Erfüllung gesetzlicher Aufbewahrungspflichten, insbesondere nicht nach § 257 HGB und § 147 AO; empfangene und abgesandte Handels- und Geschäftsbriefe bewahrt der Kunde in seinen eigenen Systemen auf, führendes System ist das Postfach des Kunden. Von jeder Antwort, die der Mailagent versendet, liegt eine unveränderte Kopie im Ordner für gesendete Nachrichten des jeweiligen Postfachs [setzt voraus: Ablage im Gesendet-Ordner in der Instanz des Kunden ausgerollt]. f) Nach Beendigung des Vertrags gilt Anlage B § 12 auch für das Freigabeprotokoll und das Verwaltungsprotokoll; die Fristen nach Buchstabe b verlängern die Speicherung bei NexAI nicht über das Vertragsende hinaus.",
+        "**Zweckbestimmung.** Der Mailagent ist zur Bearbeitung von Geschäftskorrespondenz bestimmt, nicht zur Beobachtung oder Bewertung der Leistung oder des Verhaltens von Beschäftigten. Zuweisungen und Erinnerungen dienen der Vorgangsbearbeitung; personenbezogene Leistungsauswertungen sind nicht vorgesehen. Eine Verwendung zu diesem Zweck ist dem Kunden untersagt (vgl. Art. 25 Abs. 1 Buchst. c KI-VO).",
+        "**Zugänge und Postfächer.** Im monatlichen Beitrag sind drei Zugänge und drei Postfächer enthalten. Ein Zugang ist die Möglichkeit einer natürlichen Person, sich an der Anwendung anzumelden; er ist persönlich und nicht zur gemeinsamen Nutzung durch mehrere Personen bestimmt. Ein Postfach ist eine E-Mail-Adresse, deren Nachrichten die Anwendung abruft. Die Zahl der Zugänge und der Postfächer wird in der Anwendung hinterlegt und dort durchgesetzt. Bereits eingerichtete Zugänge und angebundene Postfächer bleiben von einer späteren Änderung der Zahl unberührt.",
+        "**Buchung in der Anwendung.** Eine Person mit der Rolle Verwaltung kann in der Anwendung einen weiteren Zugang oder ein weiteres Postfach beauftragen, jeweils einzeln und bis zu einer Gesamtzahl von zehn. Die Anwendung nennt vor der Beauftragung den Preis nach dem Auftragsformular; die Beauftragung erfolgt durch ausdrückliche Bestätigung (Ziffer 3.3 des Auftragsformulars). Der weitere Zugang oder das weitere Postfach steht sofort zur Verfügung; die Vergütung ist ab dem Tag der Beauftragung geschuldet, für den laufenden Monat anteilig nach Tagen. Die Anwendung hält Person, Zeitpunkt und Preis jeder Beauftragung fest. Der Kunde stellt sicher, dass die Rolle Verwaltung nur Personen erhalten, die ihn insoweit vertreten dürfen. Darüber hinausgehende Mengen und abweichende Konditionen werden gesondert vereinbart.",
+        "**Rückgabe in der Anwendung.** Auf demselben Weg kann die Verwaltung einen zusätzlich beauftragten Zugang oder ein zusätzlich beauftragtes Postfach zurückgeben, sofern es nicht belegt ist; die drei im Beitrag enthaltenen sind ausgenommen. Mit der Rückgabe entfällt der Platz sofort; die Vergütung für den laufenden Monat bleibt geschuldet und entfällt ab dem folgenden Monat. Bei jährlicher Zahlweise wird ein weiterer Zugang oder ein weiteres Postfach für zwölf Monate ab dem Tag der Beauftragung beauftragt und zum Preis von zehn Monatsbeträgen im Voraus berechnet; eine Rückgabe innerhalb dieser zwölf Monate lässt den Platz sofort entfallen, die Vergütung bleibt bis zum Ende der zwölf Monate geschuldet und wird nicht erstattet.",
+        "**Rechnungsadresse und Rechnungsstellung.** Der Kunde hinterlegt in der Anwendung die Adresse, an die NexAI Rechnungen nach § 7 Abs. (8) des Rahmenvertrages übermittelt, und hält sie aktuell; ohne hinterlegte Adresse ist die Einrichtung nicht abgeschlossen. Die monatliche Vergütung wird zu Beginn eines jeden Monats im Voraus in Rechnung gestellt; anteilige Beträge für im Vormonat beauftragte Plätze werden mit dieser Rechnung abgerechnet. Abweichend von § 7 Abs. (7) des Rahmenvertrages erfolgt die Zahlung per Überweisung, bis NexAI für den Mailagenten den Lastschrifteinzug anbietet.",
+        "**Selbstverwaltung.** Der Kunde verwaltet seine Zugänge selbst: Er legt Personen an, entzieht ihnen den Zugang und bestimmt, welche Postfächer sie sehen. Passwörter setzt jede Person selbst; sie werden nur als Prüfwert gespeichert und sind für NexAI nicht lesbar. Personen mit der Rolle Verwaltung müssen einen zweiten Faktor einrichten; für alle übrigen Personen steht er zur Verfügung. NexAI legt den ersten Zugang der Verwaltung an und greift auf Zugänge und Inhalte nur auf Weisung des Kunden oder zur Störungsbeseitigung zu; NexAI dokumentiert jeden solchen Zugriff mit Anlass."
+      ]
+    },
+    {
+      "t": "h1",
+      "num": "6.",
+      "text": "(entfallen)"
     },
     {
       "t": "pagebreak"
@@ -153,82 +300,8 @@
     },
     {
       "t": "h1",
-      "text": "NexAI CRM (Kundensystem)"
-    },
-    {
-      "t": "p",
-      "text": "Das NexAI CRM ist eine von NexAI bereitgestellte und betriebene Softwareanwendung zur Verwaltung von Kontakten, Unternehmen, Anfragen und Vorgängen des Kunden. Der Funktionsumfang umfasst – soweit im Auftragsformular beauftragt – insbesondere:"
-    },
-    {
-      "t": "bullets",
-      "items": [
-        "Verwaltung von Kontakten und Unternehmen einschließlich Notizen, Dateianhängen und Änderungshistorie",
-        "Erfassung von Anfragen (Leads) aus den angebundenen Kanälen, insbesondere aus den beauftragten Agenten und aus Formularen der Website des Kunden",
-        "Dokumentation von Anrufen einschließlich Gesprächsprotokoll, soweit der Voice Agent beauftragt und die Übergabe eingerichtet ist",
-        "Aufgaben mit Fälligkeit und automatischer Erinnerung",
-        "Abbildung von Verkaufschancen in konfigurierbaren Phasen (Pipelines)",
-        "Auswertungen und Berichte mit Ausgabe als Tabelle (CSV) und als PDF",
-        "Benutzerkonten mit Rollen- und Rechteverwaltung sowie Anmeldung mit zweitem Faktor",
-        "Funktionen zur Wahrnehmung von Betroffenenrechten und zur Einhaltung von Löschfristen"
-      ]
-    },
-    {
-      "t": "note",
-      "text": "Das NexAI CRM wird auf Servern in Deutschland betrieben (Anlage B, Anhang 2). Die Daten verschiedener Kunden sind technisch voneinander getrennt. Für die Richtigkeit und Aktualität der eingegebenen Daten sowie für die Vergabe der Zugriffsrechte innerhalb seines Bereichs ist der Kunde verantwortlich. Die Übernahme von Daten aus einem Vorsystem ist nur geschuldet, soweit sie im Auftragsformular ausdrücklich vereinbart ist (Ziffer 14)."
-    },
-    {
-      "t": "h1",
-      "text": "NexAI Kalender (Online-Terminbuchung)"
-    },
-    {
-      "t": "p",
-      "text": "Der NexAI Kalender ist eine von NexAI bereitgestellte und betriebene Softwareanwendung. Endnutzer buchen darüber selbst Termine beim Kunden; der Kunde verwaltet darin seine Termine. Der Funktionsumfang umfasst – soweit im Auftragsformular beauftragt – insbesondere:"
-    },
-    {
-      "t": "bullets",
-      "items": [
-        "Öffentliche Buchungsseite mit Auswahl von Leistung, Datum und Uhrzeit, erreichbar über einen Link oder eingebettet in die Website des Kunden",
-        "Belegung des gewählten Termins bereits während des Ausfüllens (Reservierung) sowie technische Absicherung gegen Doppelbuchungen",
-        "Versand von Bestätigungen und Erinnerungen per E-Mail und/oder SMS nach Maßgabe des Auftragsformulars",
-        "Verwaltung der Termine in Tages-, Wochen-, Monats- und Listenansicht einschließlich Verschieben, Absagen und Sperrzeiten",
-        "Verwaltung von Leistungen, Öffnungszeiten, Pausen, Urlaub und Feiertagen",
-        "Kundenkartei mit Terminverlauf und Notizen",
-        "Bereitstellung als installierbare Anwendung auf Mobilgerät und Rechner einschließlich Push-Benachrichtigungen",
-        "Abonnement der Termine in einem Kalender des Kunden (einseitige Übernahme)"
-      ]
-    },
-    {
-      "t": "note",
-      "text": "Der Versand von SMS erfolgt über einen Unterauftragsverarbeiter (Anlage B, Anhang 2) und wird, soweit im Auftragsformular vereinbart, mengenabhängig vergütet. Die Anzeige der Rufnummer des Kunden als Absender setzt deren Verifizierung beim Versanddienstleister voraus; diese Mitwirkung obliegt dem Kunden. Für die Richtigkeit der hinterlegten Leistungen, Preise und Öffnungszeiten ist der Kunde verantwortlich."
-    },
-    {
-      "t": "pagebreak"
-    },
-    {
-      "t": "h1",
-      "text": "NexAI App (individuelle Anwendung)"
-    },
-    {
-      "t": "p",
-      "text": "Sofern im Auftragsformular beauftragt, entwickelt und betreibt NexAI eine individuelle Anwendung, die im Namen und im Erscheinungsbild des Kunden auftritt und von Endnutzern auf Mobilgerät und Rechner installiert werden kann. Der Funktionsumfang wird je Projekt festgelegt und umfasst – soweit vereinbart – insbesondere:"
-    },
-    {
-      "t": "bullets",
-      "items": [
-        "Kundenportal (z. B. Aufträge, Rechnungen, Dokumente, Statusanzeige)",
-        "Anwendung für Beschäftigte des Kunden (z. B. Aufgaben, interne Nachrichten, Belegerfassung)",
-        "Buchungs- und Terminfunktionen",
-        "Push-Benachrichtigungen",
-        "Anbindung an die beauftragten Agenten und Anwendungen sowie an Systeme des Kunden über verfügbare Schnittstellen",
-        "Gestaltung im Erscheinungsbild des Kunden (Name, Logo, Farben)"
-      ]
-    },
-    {
-      "t": "note",
-      "text": "Die Anwendung wird als installierbare Web-Anwendung bereitgestellt; eine Veröffentlichung in den App-Stores von Apple oder Google ist nicht geschuldet (Ziffer 14). Der konkrete Leistungsumfang, die einzubindenden Systeme sowie etwaige Abnahmekriterien werden im Auftragsformular oder in einer gesonderten Leistungsbeschreibung je Projekt festgelegt und sind als solche Bestandteil dieser Anlage A. Enthält die Anwendung KI-gestützte Funktionen, gelten die Ziffern 11 bis 13 entsprechend."
-    },
-    {
-      "t": "pagebreak"
+      "num": "9.",
+      "text": "(entfallen)"
     },
     {
       "t": "h1",
@@ -252,7 +325,7 @@
     },
     {
       "t": "p",
-      "text": "Für die Ersteinrichtung wird **keine gesonderte Einrichtungs- oder Setup-Gebühr** erhoben; sie ist mit dem vereinbarten monatlichen oder jährlichen Beitrag abgegolten, soweit im Auftragsformular nicht ausdrücklich anders bestimmt."
+      "text": "Eine gesonderte **Einrichtungsgebühr** fällt nur an, soweit sie im Auftragsformular vereinbart ist; andernfalls ist die Ersteinrichtung mit dem vereinbarten monatlichen oder jährlichen Beitrag abgegolten."
     },
     {
       "t": "h1",
@@ -267,9 +340,11 @@
       "t": "num",
       "items": [
         "Beim **Voice Agent** erfolgt zu Beginn jedes Gesprächs eine Pflicht-Ansage. Der Standard-Wortlaut lautet – anpassbar an den Kundennamen, inhaltlich jedoch verbindlich: **\"Guten Tag, Sie sprechen mit einem KI-Assistenten der [Firma des Kunden]. Wie kann ich Ihnen helfen?\"**",
-        "Beim **Chat Agent** und beim **Social-Media-Agent** wird der KI-Hinweis in der Benutzeroberfläche deutlich sichtbar ausgewiesen (z. B. \"KI-Assistent\").",
-        "Ist die Aufzeichnung eines Gesprächs im Ausnahmefall auf dokumentierte Weisung des Kunden aktiviert (Ziffer 12), wird die Ansage um einen **Aufzeichnungshinweis** ergänzt, z. B.: **\"Dieses Gespräch wird zu Qualitätszwecken aufgezeichnet. Wenn Sie damit nicht einverstanden sind, teilen Sie mir dies bitte mit.\"**",
-        "Die Ansage bzw. der Hinweis kann durch den Kunden nicht deaktiviert werden. Weisungen, die auf eine Entfernung oder Verschleierung der KI-Kennzeichnung gerichtet sind, wird NexAI nicht befolgen; NexAI ist berechtigt, den Betrieb eines Agenten auszusetzen, solange eine solche Weisung aufrechterhalten wird."
+        "Beim **Chat Agent** wird der KI-Hinweis in der Benutzeroberfläche deutlich sichtbar ausgewiesen (z. B. \"KI-Assistent\").",
+        "Ist die Tonaufzeichnung eines Gesprächs im Ausnahmefall auf dokumentierte Weisung des Kunden aktiviert (Ziffer 12), wird die Ansage um einen **Aufzeichnungshinweis** ergänzt, z. B.: **\"Dieses Gespräch wird zu Qualitätszwecken aufgezeichnet. Wenn Sie damit nicht einverstanden sind, teilen Sie mir dies bitte mit.\"**",
+        "Die Ansage bzw. der Hinweis kann durch den Kunden nicht deaktiviert werden. Weisungen, die auf eine Entfernung oder Verschleierung der KI-Kennzeichnung gerichtet sind, wird NexAI nicht befolgen; NexAI ist berechtigt, den Betrieb eines Agenten auszusetzen, solange eine solche Weisung aufrechterhalten wird.",
+        "Inhalte, die die Agenten und die KI-Funktionen der Anwendungen erzeugen, kennzeichnet NexAI zusätzlich maschinenlesbar als künstlich erzeugt (Art. 50 Abs. 2 KI-VO), soweit dies nach dem Stand der Technik für das jeweilige Ausgabeformat möglich ist, insbesondere durch Kopfzeilen bei E-Mails, ein Kennzeichen im Chat-Fenster und ein Kennzeichen des Sprachdienstes bei Audio [setzt voraus für Chat und Sprachausgabe: Umsetzung bis zum 2. Dezember 2026, Art. 111 Abs. 4 KI-VO]. Der Kunde entfernt diese Kennzeichnung nicht.",
+        "Für den NexAI Mailagent gilt Ziffer 5.4 Abs. (6)."
       ]
     },
     {
@@ -280,11 +355,11 @@
     {
       "t": "num",
       "items": [
-        "Die **Aufzeichnung und Transkription** von Gesprächen ist **standardmäßig deaktiviert**. Eine Aktivierung erfolgt ausschließlich auf **dokumentierte Weisung** des Kunden (Betreiber im Sinne der KI-VO) und nur, soweit der Kunde die datenschutz- und sonstige rechtliche Zulässigkeit sicherstellt.",
-        "Ist die Aufzeichnung/Transkription aktiviert, erfolgt stets der Aufzeichnungshinweis nach Ziffer 11 Absatz (3). Die Aufbewahrung der Aufzeichnungen und Transkripte beträgt **sechs (6) Monate** ab Erstellung; danach werden sie gelöscht, soweit keine gesetzliche Aufbewahrungspflicht entgegensteht.",
+        "Eine **Tonaufzeichnung** von Gesprächen ist **standardmäßig deaktiviert**. Die Sprache wird während des Gesprächs zur Verarbeitung in Text umgewandelt; ein Wortprotokoll speichert NexAI nicht dauerhaft, es sei denn, der Kunde hat die Übergabe eines Gesprächsprotokolls in eine Anwendung beauftragt. Der Plattformanbieter des Voice Agent bewahrt ein technisches Gesprächsprotokoll für bis zu [14] Tage auf (Anlage B, Anhang 3). Eine Tonaufzeichnung oder eine darüber hinausgehende Speicherung des Wortprotokolls erfolgt nur auf **dokumentierte Weisung** des Kunden (Betreiber im Sinne der KI-VO) und nur, soweit der Kunde die datenschutz- und sonstige rechtliche Zulässigkeit sicherstellt.",
+        "Ist die Tonaufzeichnung oder die Speicherung des Wortprotokolls aktiviert, erfolgt stets der Aufzeichnungshinweis nach Ziffer 11 Absatz (3). Die Aufbewahrung der Aufzeichnungen und Wortprotokolle beträgt höchstens sechs (6) Monate ab Erstellung, soweit der Kunde keine kürzere Frist bestimmt; danach werden sie gelöscht.",
         "Eine **Speicherung in privaten Endnutzer-Accounts** findet nicht statt. Die Verarbeitung erfolgt im Rahmen der von NexAI eingesetzten Betriebsmittel und der in Anlage B (AVV) benannten Subunternehmer.",
-        "Aufzeichnungen und Transkripte werden dem Kunden auf Anfrage im Rahmen der technischen Möglichkeiten bereitgestellt.",
-        "Die weiteren Regelungen zur Datenspeicherung – keine Speicherung, soweit technisch abschaltbar; Aufbewahrung von sechs Monaten, soweit nicht abschaltbar; führendes Kundensystem für Geschäftsdaten; 30-tägiger Export vor Löschung bei Vertragsende nebst Löschbestätigung – ergeben sich aus dem Rahmenvertrag und Anlage B (AVV)."
+        "Aufzeichnungen und Wortprotokolle werden dem Kunden auf Anfrage im Rahmen der technischen Möglichkeiten bereitgestellt.",
+        "Die Speicher- und Löschregeln je Agent und Anwendung ergeben sich aus § 14 Abs. (3) des Rahmenvertrages sowie aus Anlage B (§ 8 und Anhang 3); bei Vertragsende gilt § 21 des Rahmenvertrages."
       ]
     },
     {
@@ -302,7 +377,7 @@
     {
       "t": "bullets",
       "items": [
-        "**Keine rechtsverbindlichen Zusagen:** Die Agenten geben keine verbindlichen Zusagen zu Preisen, Bestellungen oder Verträgen ab. Sie erteilen ausschließlich unverbindliche Auskünfte und vereinbaren Termine.",
+        "**Keine rechtsverbindlichen Zusagen:** Die Agenten geben keine verbindlichen Zusagen zu Preisen, Bestellungen oder Verträgen ab. Sie erteilen ausschließlich unverbindliche Auskünfte und vereinbaren Termine innerhalb der vom Kunden hinterlegten Verfügbarkeiten.",
         "**Keine Fachberatung:** Die Agenten erteilen keine medizinische, rechtliche oder steuerliche Beratung. Bei entsprechenden Anliegen erfolgt ein Hinweis auf fachkundige Stellen bzw. eine Weiterleitung.",
         "**Eskalations- und Rückfragelogik:** Bei unklaren, komplexen oder außerhalb der Wissensbasis liegenden Anliegen stellt der Agent Rückfragen oder eskaliert an einen menschlichen Ansprechpartner bzw. an eine vom Kunden benannte Stelle.",
         "**Kalender-Read-Back:** Zur Vermeidung von Doppelbuchungen erfolgt vor der Terminbestätigung ein Abgleich mit dem angebundenen Kalender (Read-Back) im Rahmen der technischen Möglichkeiten des angebundenen Systems.",
@@ -331,7 +406,7 @@
         "Recherche und Ansprache potenzieller Kunden des Kunden (Akquise, Lead-Recherche)",
         "Planung, Schaltung und Betreuung bezahlter Werbekampagnen (z. B. Google Ads, Social Ads) sowie das damit verbundene Mediabudget",
         "Grafik-, Logo- und Corporate-Design-Leistungen",
-        "Hosting, Wartung oder Betrieb kundeneigener oder fremder Systeme, die nicht Bestandteil der von NexAI bereitgestellten Betriebsmittel sind",
+        "Hosting, Wartung oder Betrieb kundeneigener oder fremder Systeme, die nicht Bestandteil der von NexAI bereitgestellten Betriebsmittel sind, soweit nicht nach Anlage E (Kauflizenz) oder im Auftragsformular vereinbart",
         "Schulungen, Workshops und Einweisungen, soweit nicht ausdrücklich vereinbart",
         "Beschaffung von Lizenzen, Guthaben oder Zugängen zu Drittdiensten, soweit nicht im Beitrag enthalten oder ausdrücklich vereinbart",
         "Übernahme von Daten aus Vorsystemen (Datenmigration), soweit nicht ausdrücklich im Auftragsformular vereinbart",
@@ -346,7 +421,7 @@
     {
       "t": "num",
       "items": [
-        "NexAI schuldet die vertragsgemäße Bereitstellung und den vertragsgemäßen Betrieb der Agenten nach Maßgabe dieser Anlage A und des Auftragsformulars. NexAI schuldet **keinen wirtschaftlichen Erfolg**.",
+        "NexAI schuldet die vertragsgemäße Bereitstellung und den vertragsgemäßen Betrieb der Agenten und Anwendungen nach Maßgabe dieser Anlage A und des Auftragsformulars. NexAI schuldet **keinen wirtschaftlichen Erfolg**.",
         "Es wird **keine Garantie** für eine bestimmte Anzahl an Leads, Terminen, Abschlüssen, Reichweiten oder für einen bestimmten Umsatz übernommen. Eine dahingehende Beschaffenheit wird nicht als geschuldet vereinbart.",
         "Die Agenten beruhen auf **wahrscheinlichkeitsbasierten KI-Verfahren** und sind naturgemäß **nicht in jedem Einzelfall fehlerfrei**. Die Parteien vereinbaren als geschuldete Beschaffenheit den Betrieb der Agenten im Rahmen des vereinbarten Leistungsbildes und der Guardrails (Ziffer 13). Vereinzelte inhaltliche Unrichtigkeiten, Missverständnisse oder nicht abschließend bearbeitete Anfragen begründen für sich genommen keinen Mangel, solange die Agenten im Rahmen dieses Leistungsbildes arbeiten; die gesetzlichen Mängelrechte des Kunden bei einem Abweichen von der vereinbarten Beschaffenheit bleiben unberührt.",
         "Die Verfügbarkeit richtet sich nach Anlage C (SLA); die Haftung richtet sich nach den Regelungen des Rahmenvertrages (§ Haftung) und der AGB (B2B)."
@@ -358,7 +433,7 @@
     },
     {
       "t": "note",
-      "text": "Diese Anlage A ist Bestandteil des Rahmenvertrages und gilt nur in Verbindung mit dem jeweiligen Auftragsformular. Es handelt sich um einen sorgfältig erstellten Entwurf, der für den konkreten Einzelfall anwaltlich geprüft werden sollte."
+      "text": "Diese Anlage A ist Bestandteil des Rahmenvertrages und gilt nur in Verbindung mit dem jeweiligen Auftragsformular. Fassung Oktober 2026. Entwurf, von NexAI erstellt; die anwaltliche Prüfung folgt. Eckige Klammern kennzeichnen Werte und Regelungen, die vor Verwendung festzulegen sind; „[setzt voraus: …]“ kennzeichnet Zusagen, die erst gelten, wenn die genannte technische Voraussetzung erfüllt ist."
     }
   ]
 }

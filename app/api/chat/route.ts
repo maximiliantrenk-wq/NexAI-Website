@@ -107,7 +107,8 @@ export async function POST(request: Request) {
       return NextResponse.json({ ok: false }, { status: 502 });
     }
 
-    return NextResponse.json({ ok: true, reply });
+    // aiGenerated: maschinenlesbare Kennzeichnung der KI-Ausgabe (Art. 50 Abs. 2 KI-VO)
+    return NextResponse.json({ ok: true, reply, aiGenerated: true });
   } catch (err) {
     // AbortError (timeout) or network failure → upstream unavailable.
     console.error("[chat] proxy request failed:", err);
