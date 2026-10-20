@@ -17,8 +17,8 @@ Jedes Dokument liegt als **Word (.docx, zum Ausfüllen/Bearbeiten)** und **PDF (
 | 08 | **AGB (B2B)** | Allgemeine Bedingungen (widerspruchsfrei zum Rahmenvertrag) |
 | 10 | **Anlage E – Kauflizenz und Projektanwendungen** | Nur bei CRM-Kauflizenz oder Festpreis-App: dauerhaftes Nutzungsrecht, 7 Jahre Sicherheitsupdates, Pflege, Wartungszugang |
 
-**Unterschrift:** Rahmenvertrag + Auftragsformular + AVV (+ ggf. SEPA-Mandat) werden von **beiden Gesellschaftern**
-und dem Kunden unterzeichnet. Anlagen A, C (und bei Kauflizenz oder Festpreis-App E) werden mitgezeichnet; Anlage D erst bei Projektabnahme.
+**Unterschrift:** Rahmenvertrag + Auftragsformular + AVV (+ ggf. SEPA-Mandat) unterschreibt für NexAI **ein Gesellschafter** (gegenseitige Ermächtigung nach § 720 Abs. 2 BGB) **oder eine bevollmächtigte Person** (Closer nach Vertriebspartnervertrag 3.1 § 13 bzw. Vollmachtsurkunde, Vertriebsleitung nach ihrem Vertrag), dazu der Kunde. Die Vollmacht deckt nur unveränderte, freigegebene Vorlagen zu Listenpreisen; Anlage D (Abnahme) und Anlage E (Kauflizenz/Festpreis-App) unterschreiben nur die Gesellschafter. Der Hinweis dazu steht im Leistungsschein Ziffer 16. Anlagen A und C (und bei Kauflizenz oder Festpreis-App E) werden mitgezeichnet; Anlage D erst bei Projektabnahme.
+
 `09_Vertriebspartnervertrag_Setter-Closer` gehört nicht zum Kundenvertragswerk.
 
 ## Ausfüll-Checkliste (Platzhalter `____`)

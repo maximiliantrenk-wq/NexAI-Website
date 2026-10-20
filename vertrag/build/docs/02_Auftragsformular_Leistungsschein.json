@@ -38,7 +38,7 @@
     },
     {
       "t": "p",
-      "text": "NexAI – Next Generation Artificial Intelligence GbR, Untere Bergstraße 13, 74586 Frankenhardt-Honhardt, Deutschland, vertreten durch die Gesellschafter Maximilian Trenk und Jason Brian Merklein, E-Mail mbt@nex-a-i.com, Telefon 0176 80714816."
+      "text": "NexAI – Next Generation Artificial Intelligence GbR, Untere Bergstraße 13, 74586 Frankenhardt-Honhardt, Deutschland, vertreten durch die Gesellschafter Maximilian Trenk und Jason Brian Merklein, jeder allein (§ 720 Abs. 2 BGB), oder durch eine bevollmächtigte Person (Ziffer 16 des Leistungsscheins), E-Mail mbt@nex-a-i.com, Telefon 0176 80714816."
     },
     {
       "t": "h2",
@@ -536,35 +536,45 @@
       "header": [
         "Position / Leistung",
         "Modell (monatlich / jährlich / einmalig)",
-        "Netto-Betrag (EUR)"
+        "Listenpreis netto (EUR)",
+        "Vereinbart netto (EUR)"
       ],
       "rows": [
         [
-          "",
-          "",
-          ""
+          "____",
+          "____",
+          "____",
+          "____"
         ],
         [
-          "",
-          "",
-          ""
+          "____",
+          "____",
+          "____",
+          "____"
         ],
         [
-          "",
-          "",
-          ""
+          "____",
+          "____",
+          "____",
+          "____"
         ],
         [
-          "",
-          "",
-          ""
+          "____",
+          "____",
+          "____",
+          "____"
         ],
         [
           "**Summe (netto)**",
           "",
+          "____ EUR",
           "____ EUR"
         ]
       ]
+    },
+    {
+      "t": "note",
+      "text": "Listenpreis ist der Preis der NexAI-Preisliste am Tag der Unterzeichnung. Weicht der vereinbarte Betrag vom Listenpreis ab und hat für NexAI kein Gesellschafter unterschrieben, wird der Vertrag erst wirksam, wenn ein Gesellschafter von NexAI ihn in Textform genehmigt; verweigert NexAI die Genehmigung, kommt der Vertrag nicht zustande (Ziffer 16)."
     },
     {
       "t": "fill",
@@ -839,6 +849,15 @@
       "text": "Die Parteien bestätigen die Richtigkeit der vorstehenden Angaben. Dieser Leistungsschein wird mit beidseitiger Unterzeichnung wirksam und ist Bestandteil des Rahmenvertrags."
     },
     {
+      "t": "p",
+      "text": "**Hinweis zur Unterschrift für NexAI.** Für NexAI unterschreibt ein Gesellschafter (jeder ist nach § 720 Abs. 2 BGB allein ermächtigt) oder eine von NexAI bevollmächtigte Person aus dem Vertrieb (Closer oder Vertriebsleitung) mit dem Zusatz „in Vollmacht für NexAI“. Diese Personen sind selbständige Handelsvertreter. Die Vollmacht dieser Personen umfasst nur Verträge mit Unternehmern (§ 14 BGB) mit Sitz in Deutschland und nur den Abschluss in den unveränderten, von NexAI freigegebenen Vertragsdokumenten (Rahmenvertrag, dieser Leistungsschein, Anlagen A bis C, AGB, Vertrag zur Auftragsverarbeitung); Preise, Mengen und Kontingente (Ziffern 5 und 6) nur nach der Preisliste von NexAI. Nicht umfasst sind insbesondere Abweichungen vom Listenpreis, Rabatte, Freimonate, Stundungen, der Verzicht auf Einrichtungsgebühren, Sonderkonditionen und sonstige Zusagen, Abweichungen von den Vorgabewerten dieses Leistungsscheins (etwa Aufbewahrungsfristen über der Vorgabe, Kostendeckel und Spend-Cap), freie Leistungsbeschreibungen, die Ablösesumme (Ziffer 15), Änderungen, Streichungen oder Ergänzungen der Vertragsdokumente einschließlich des Vertrags zur Auftragsverarbeitung und Einträge zu ergänzenden oder abweichenden Subunternehmern, Kauflizenzen und Projektanwendungen (Ziffer 3.4, Anlage E), das Abnahmeprotokoll (Anlage D) sowie die Annahme von Zahlungen. Enthält ein von einer bevollmächtigten Person unterschriebener Vertrag solche Abreden, wird er erst wirksam, wenn ein Gesellschafter von NexAI ihn in Textform genehmigt; verweigert NexAI die Genehmigung, kommt er nicht zustande. Zusagen außerhalb der Vertragsdokumente binden NexAI nur, wenn ein Gesellschafter sie in Textform bestätigt. Personen aus dem Vertrieb von NexAI, auch Closer und die Vertriebsleitung, sind nicht ermächtigt, für NexAI Mängelanzeigen und ähnliche Erklärungen (§ 91 Abs. 2, § 55 Abs. 4 HGB), Abnahmeerklärungen, Kündigungen oder sonstige Erklärungen zum Vertrag entgegenzunehmen. Solche Erklärungen sind an mbt@nex-a-i.com zu richten, Störungsmeldungen auch über die Supportkanäle nach Anlage C Ziffer 3. Jeder Gesellschafter ist auch allein ermächtigt, für NexAI Verträge abzulehnen und ihre Genehmigung zu verweigern."
+    },
+    {
+      "t": "checkbox",
+      "text": "Der Kunde hat den Hinweis zur Unterschrift für NexAI zur Kenntnis genommen.",
+      "checked": false
+    },
+    {
       "t": "spacer",
       "h": 8
     },
@@ -850,15 +869,7 @@
           "lines": [
             "Ort, Datum",
             "",
-            "Maximilian Trenk (Gesellschafter)"
-          ]
-        },
-        {
-          "role": "Für NexAI",
-          "lines": [
-            "Ort, Datum",
-            "",
-            "Jason Brian Merklein (Gesellschafter)"
+            "Name, Funktion (Gesellschafter oder in Vollmacht für NexAI)"
           ]
         },
         {
